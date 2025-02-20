@@ -12,11 +12,12 @@ import cardSources from "./src/data/card/cardSources.json" with { type: "json" }
 import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
 import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
 import characterSources from "./src/data/character/character.json" with { type: "json" };
+import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 
 // Middleware untuk parsing JSON
 app.use(json());
 
-app.get("/api", (req, res) => {
+app.get("/api", (_req, res) => {
   res.json({
     message: "Welcome to DiveIdolyPAPI API!",
     endpoints: {
@@ -29,7 +30,7 @@ app.get("/api", (req, res) => {
 });
 
 // Endpoint untuk semua kartu
-app.get("/api/cards", (req, res) => {
+app.get("/api/cards", (_req, res) => {
   res.json(cardSources);
 });
 
@@ -48,17 +49,37 @@ app.get("/api/cards/:name", (req, res) => {
 });
 
 // Endpoint untuk semua QnA
-app.get("/api/qnas", (req, res) => {
+app.get("/api/qnas", (_req, res) => {
   res.json(qnaSources);
 });
 
+// Endpoint untuk QnA berdasarkan nama karakter
+app.get("/api/qnas/:name", (req, res) => {
+  const source = qnaSources.find(
+    (source) => source.name.toLowerCase() === req.params.name.toLowerCase()
+  );
+  source
+    ? res.json(source.data)
+    : res.status(404).json({ error: "Character not found" });
+});
+
 // Endpoint untuk semua lirik lagu
-app.get("/api/lyrics", (req, res) => {
+app.get("/api/lyrics", (_req, res) => {
   res.json(lyricSources);
 });
 
+// Endpoint untuk lirik berdasarkan judul
+app.get("/api/lyrics/:name", (req, res) => {
+  const source = lyricSources.find(
+    (source) => source.name.toLowerCase() === req.params.name.toLowerCase()
+  );
+  source
+    ? res.json(source.data)
+    : res.status(404).json({ error: "Lyric not found" });
+});
+
 // Endpoint untuk semua karakter
-app.get("/api/characters", (req, res) => {
+app.get("/api/characters", (_req, res) => {
   res.json(characterSources);
 });
 
@@ -76,6 +97,21 @@ app.get("/api/characters/group/:groupName", (req, res) => {
   } else {
     res.status(404).json({ error: "Group not found" });
   }
+});
+
+// Endpoint untuk semua stamp
+app.get("/api/stamp", (_req, res) => {
+  res.json(stampSources);
+});
+
+// Endpoint untuk stamp berdasarkan maskot
+app.get("/api/stamps/:name", (req, res) => {
+  const source = stampSources.find(
+    (source) => source.character.toLowerCase() === req.params.name.toLowerCase()
+  );
+  source
+    ? res.json(source.data)
+    : res.status(404).json({ error: "Lyric not found" });
 });
 
 // Jalankan server (hanya lokal)
