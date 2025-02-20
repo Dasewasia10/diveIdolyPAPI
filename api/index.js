@@ -5,10 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Contoh data
-import cardSources from "../src/data/card/cardSources.json";
-import qnaSources from "../src/data/qna/qnaSources.json";
-import lyricSources from "../src/data/lyrics/lyricsData.json";
-import characterSources from "../src/data/character/character.json";
+import cardSources from "../src/data/card/cardSources.json" assert { type: "json" };
+import qnaSources from "../src/data/qna/qnaSources.json" assert { type: "json" };
+import lyricSources from "../src/data/lyrics/lyricsData.json" assert { type: "json" };
+import characterSources from "../src/data/character/character.json" assert { type: "json" };
 
 // Middleware untuk parsing JSON
 app.use(json());
