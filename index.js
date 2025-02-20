@@ -9,25 +9,25 @@ const PORT = process.env.PORT || 3000;
 
 const cardSources = JSON.parse(
   readFileSync(
-    new URL("../src/data/card/cardSources.json", import.meta.url),
+    new URL("./src/data/card/cardSources.json", import.meta.url),
     "utf8"
   )
 );
 const qnaSources = JSON.parse(
   readFileSync(
-    new URL("../src/data/qna/qnaSources.json", import.meta.url),
+    new URL("./src/data/qna/qnaSources.json", import.meta.url),
     "utf8"
   )
 );
 const lyricSources = JSON.parse(
   readFileSync(
-    new URL("../src/data/lyrics/lyricsData.json", import.meta.url),
+    new URL("./src/data/lyrics/lyricsData.json", import.meta.url),
     "utf8"
   )
 );
 const characterSources = JSON.parse(
   readFileSync(
-    new URL("../src/data/character/character.json", import.meta.url),
+    new URL("./src/data/character/character.json", import.meta.url),
     "utf8"
   )
 );
