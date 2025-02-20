@@ -8,16 +8,28 @@ const PORT = process.env.PORT || 3000;
 // Contoh data
 
 const cardSources = JSON.parse(
-  readFileSync("../src/data/card/cardSources.json", "utf8")
+  readFileSync(
+    new URL("../src/data/card/cardSources.json", import.meta.url),
+    "utf8"
+  )
 );
 const qnaSources = JSON.parse(
-  readFileSync("../src/data/qna/qnaSources.json", "utf8")
+  readFileSync(
+    new URL("../src/data/qna/qnaSources.json", import.meta.url),
+    "utf8"
+  )
 );
 const lyricSources = JSON.parse(
-  readFileSync("../src/data/lyrics/lyricsData.json", "utf8")
+  readFileSync(
+    new URL("../src/data/lyrics/lyricsData.json", import.meta.url),
+    "utf8"
+  )
 );
 const characterSources = JSON.parse(
-  readFileSync("../src/data/character/character.json", "utf8")
+  readFileSync(
+    new URL("../src/data/character/character.json", import.meta.url),
+    "utf8"
+  )
 );
 
 // Middleware untuk parsing JSON
