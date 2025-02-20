@@ -1,17 +1,17 @@
 // index.js
-const express = require("express");
+import express, { json } from "express";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Contoh data
-const cardSources = require("./data/card/cardSources.json");
-const qnaSources = require("./data/qna/qnaSources.json");
-const lyricSources = require("./data/lyrics/lyricsData.json");
-const characterSources = require("./data/character/character.json");
+import cardSources, { filter } from "./data/card/cardSources.json";
+import qnaSources from "./data/qna/qnaSources.json";
+import lyricSources from "./data/lyrics/lyricsData.json";
+import characterSources, { filter as _filter } from "./data/character/character.json";
 
 // Middleware untuk parsing JSON
-app.use(express.json());
+app.use(json());
 
 app.get("/api", (req, res) => {
   res.json({
@@ -33,7 +33,7 @@ app.get("/api/cards", (req, res) => {
 // Endpoint untuk kartu berdasarkan nama karakter
 app.get("/api/cards/:name", (req, res) => {
   const { name } = req.params;
-  const filteredCards = cardSources.filter(
+  const filteredCards = filter(
     (card) => card.name.toLowerCase() === name.toLowerCase()
   );
 
@@ -62,7 +62,7 @@ app.get("/api/characters", (req, res) => {
 // Endpoint untuk karakter berdasarkan grup
 app.get("/api/characters/group/:groupName", (req, res) => {
   const { groupName } = req.params;
-  const matchedCharacters = characterSources.filter(
+  const matchedCharacters = _filter(
     (character) =>
       character.groupName.toLowerCase().replace(/\s/g, "") ===
       groupName.toLowerCase().replace(/\s/g, "")
@@ -83,4 +83,4 @@ if (require.main === module) {
 }
 
 // Ekspor app untuk Vercel
-module.exports = app;
+export default app;
