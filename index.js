@@ -83,6 +83,16 @@ app.get("/api/characters", (_req, res) => {
   res.json(characterSources);
 });
 
+// Endpoint untuk nama karakter tertentu
+app.get("/api/characters/:name", (req, res) => {
+  const source = characterSources.find(
+    (source) => source.name.toLowerCase() === req.params.name.toLowerCase()
+  );
+  source
+    ? res.json(source)
+    : res.status(404).json({ error: "Character not found" });
+});
+
 // Endpoint untuk karakter berdasarkan grup
 app.get("/api/characters/group/:groupName", (req, res) => {
   const { groupName } = req.params;
