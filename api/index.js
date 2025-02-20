@@ -5,12 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Contoh data
-import cardSources, { filter } from "../src/data/card/cardSources.json";
+import cardSources from "../src/data/card/cardSources.json";
 import qnaSources from "../src/data/qna/qnaSources.json";
 import lyricSources from "../src/data/lyrics/lyricsData.json";
-import characterSources, {
-  filter as _filter,
-} from "../src/data/character/character.json";
+import characterSources from "../src/data/character/character.json";
 
 // Middleware untuk parsing JSON
 app.use(json());
@@ -35,7 +33,7 @@ app.get("/api/cards", (req, res) => {
 // Endpoint untuk kartu berdasarkan nama karakter
 app.get("/api/cards/:name", (req, res) => {
   const { name } = req.params;
-  const filteredCards = filter(
+  const filteredCards = cardSources.filter(
     (card) => card.name.toLowerCase() === name.toLowerCase()
   );
 
