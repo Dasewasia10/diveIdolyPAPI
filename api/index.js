@@ -1,3 +1,5 @@
+// index.js
+
 module.exports = (req, res) => {
   res.json({
     message: "Welcome to DiveIdolyPAPI API!",
