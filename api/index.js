@@ -1,14 +1,24 @@
 // index.js
 import express, { json } from "express";
+import { readFileSync } from "fs";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Contoh data
-import cardSources from "../src/data/card/cardSources.json" assert { type: "json" };
-import qnaSources from "../src/data/qna/qnaSources.json" assert { type: "json" };
-import lyricSources from "../src/data/lyrics/lyricsData.json" assert { type: "json" };
-import characterSources from "../src/data/character/character.json" assert { type: "json" };
+
+const cardSources = JSON.parse(
+  readFileSync("../src/data/card/cardSources.json", "utf8")
+);
+const qnaSources = JSON.parse(
+  readFileSync("../src/data/qna/qnaSources.json", "utf8")
+);
+const lyricSources = JSON.parse(
+  readFileSync("../src/data/lyrics/lyricsData.json", "utf8")
+);
+const characterSources = JSON.parse(
+  readFileSync("../src/data/character/character.json", "utf8")
+);
 
 // Middleware untuk parsing JSON
 app.use(json());
