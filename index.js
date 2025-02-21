@@ -1,11 +1,16 @@
-// index.js
 import express, { json } from "express";
-// import { readFileSync } from "fs";
-// import { createRequire } from "module";
-// const require = createRequire(import.meta.url);
+import cors from "cors"; // Import cors
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Middleware untuk parsing JSON dan CORS
+app.use(json());
+app.use(cors({
+  origin: "https://idoly-polaris.vercel.app", // Izinkan akses dari domain ini
+  methods: "GET,POST,PUT,DELETE", // Izinkan metode HTTP tertentu
+  credentials: true, // Izinkan pengiriman cookie atau header otentikasi
+}));
 
 // Contoh data
 import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
