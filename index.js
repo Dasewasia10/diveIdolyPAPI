@@ -125,9 +125,6 @@ app.get("/api/characters/group/:groupName", (req, res) => {
 app.get("/api/stamps", (req, res) => {
   console.log("Mengakses /api/stamps");
   console.log("Mengakses /api/stamps dari", req.headers.origin);
-  res.setHeader("Access-Control-Allow-Origin", "https://idoly-polaris.vercel.app");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
   res.json(stampSources);
 });
 
