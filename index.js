@@ -22,7 +22,7 @@ import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 // Middleware untuk parsing JSON
 app.use(json());
 
-app.get("/api", (_req, res) => {
+app.get("/", (_req, res) => {
   res.json({
     message: "Welcome to DiveIdolyPAPI API!",
     endpoints: {
@@ -30,6 +30,7 @@ app.get("/api", (_req, res) => {
       qnas: "/api/qnas",
       lyrics: "/api/lyrics",
       characters: "/api/characters",
+      stamps: "/api/stamps",
     },
   });
 });
@@ -115,7 +116,7 @@ app.get("/api/characters/group/:groupName", (req, res) => {
 });
 
 // Endpoint untuk semua stamp
-app.get("/api/stamp", (_req, res) => {
+app.get("/api/stamps", (_req, res) => {
   res.json(stampSources);
 });
 
@@ -126,7 +127,7 @@ app.get("/api/stamps/:name", (req, res) => {
   );
   source
     ? res.json(source.data)
-    : res.status(404).json({ error: "Lyric not found" });
+    : res.status(404).json({ error: "Stamp not found" });
 });
 
 // Jalankan server (hanya lokal)
