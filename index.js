@@ -5,14 +5,15 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware untuk parsing JSON dan CORS
-app.use(json());
 app.use(cors({
   origin: "https://idoly-polaris.vercel.app", // Izinkan akses dari domain ini
   methods: "GET,POST,PUT,DELETE", // Izinkan metode HTTP tertentu
   credentials: true, // Izinkan pengiriman cookie atau header otentikasi
 }));
 
-// Contoh data
+app.use(json());
+
+//  data
 import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
 import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
 import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
@@ -121,8 +122,12 @@ app.get("/api/characters/group/:groupName", (req, res) => {
 });
 
 // Endpoint untuk semua stamp
-app.get("/api/stamps", (_req, res) => {
+app.get("/api/stamps", (req, res) => {
   console.log("Mengakses /api/stamps");
+  console.log("Mengakses /api/stamps dari", req.headers.origin);
+  res.setHeader("Access-Control-Allow-Origin", "https://idoly-polaris.vercel.app");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
   res.json(stampSources);
 });
 
