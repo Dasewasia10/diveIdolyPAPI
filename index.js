@@ -22,6 +22,11 @@ import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 // Middleware untuk parsing JSON
 app.use(json());
 
+app.use((req, res, next) => {
+  console.log("CORS Middleware aktif untuk:", req.path);
+  next();
+});
+
 app.get("/", (_req, res) => {
   res.json({
     message: "Welcome to DiveIdolyPAPI API!",
@@ -117,6 +122,7 @@ app.get("/api/characters/group/:groupName", (req, res) => {
 
 // Endpoint untuk semua stamp
 app.get("/api/stamps", (_req, res) => {
+  console.log("Mengakses /api/stamps");
   res.json(stampSources);
 });
 
