@@ -266,7 +266,7 @@ app.get('/api/img/card/source/:chara/:initial/:cosuName/:cosuIndex', (req, res) 
   const { initial } = req.params;
   const { cosuName } = req.params;
   const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/sourceImage/source-${chara}-${initial}-${cosuName}-${cosuIndex}.webp`;
+  const imageUrl = `https://api.diveidolypapi.my.id/sourceImage/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
   
   res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
@@ -277,7 +277,7 @@ app.get('/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex', (req, res)
   const { initial } = req.params;
   const { cosuName } = req.params;
   const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}.webp`;
+  const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
   
   res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
