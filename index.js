@@ -138,6 +138,13 @@ app.get("/api/stamps/:name", (req, res) => {
     : res.status(404).json({ error: "Stamp not found" });
 });
 
+// Mendapatkan data gambar icon
+app.get('/api/img/character/icon/:imageName', (req, res) => {
+  const { imageName } = req.params;
+  const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
+  res.redirect(301, imageUrl); // 301: Permanent Redirect
+});
+
 // Jalankan server (hanya lokal)
 if (require.main === module) {
   app.listen(PORT, () => {
