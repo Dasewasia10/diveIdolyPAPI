@@ -139,11 +139,17 @@ app.get("/api/stamps/:name", (req, res) => {
 });
 
 // Endpoint untuk gambar stamp
-app.get("/api/img/stamp/:imageCharacter/:imageExpression", (req, res) => {
-  const { imageCharacter } = req.params;
-  const { imageExpression } = req.params;
+app.get("/api/img/stamp/:imageCharacter/:imageExpression", async (req, res) => {
+  const { imageCharacter, imageExpression } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+
+  try {
+    const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+    res.set('Content-Type', response.headers['content-type']);
+    res.send(response.data);
+  } catch (error) {
+    res.status(500).send('Error fetching image');
+  }
 });
 
 // Mendapatkan data gambar icon character
