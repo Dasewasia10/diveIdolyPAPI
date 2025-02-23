@@ -138,6 +138,14 @@ app.get("/api/stamps/:name", (req, res) => {
     : res.status(404).json({ error: "Stamp not found" });
 });
 
+// Endpoint untuk gambar stamp
+app.get("/api/img/stamp/:imageCharacter/:imageExpression", (req, res) => {
+  const { imageCharacter } = req.params;
+  const { imageExpression } = req.params;
+  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
+  res.redirect(301, imageUrl); // 301: Permanent Redirect
+});
+
 // Mendapatkan data gambar icon character
 app.get('/api/img/character/icon/:imageName', (req, res) => {
   const { imageName } = req.params;
