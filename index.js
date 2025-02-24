@@ -139,18 +139,44 @@ app.get("/api/stamps/:name", (req, res) => {
 });
 
 // Endpoint untuk gambar stamp
-app.get("/api/img/stamps/:imageCharacter/:imageExpression", (req, res) => {
+app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
   const { imageCharacter } = req.params;
   const { imageExpression } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  
+  try {
+    const response = await fetch(imageUrl);
+    if (!response.ok) {
+      return res.status(404).json({ error: "Image not found" });
+    }
+
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Content-Type", response.headers.get("Content-Type"));
+    response.body.pipe(res);
+  } catch (error) {
+    console.error("Error fetching image:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 // Mendapatkan data gambar icon character
-app.get('/api/img/character/icon/:imageName', (req, res) => {
+app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  
+  try {
+    const response = await fetch(imageUrl);
+    if (!response.ok) {
+      return res.status(404).json({ error: "Image not found" });
+    }
+
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Content-Type", response.headers.get("Content-Type"));
+    response.body.pipe(res);
+  } catch (error) {
+    console.error("Error fetching image:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 // Mendapatkan data gambar banner character
