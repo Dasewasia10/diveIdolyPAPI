@@ -152,7 +152,6 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
 
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", response.headers.get("Content-Type"));
-    response.body.pipe(res);
     res.redirect(301, imageUrl);
   } catch (error) {
     console.error("Error fetching image:", error);
@@ -173,7 +172,6 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
 
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", response.headers.get("Content-Type"));
-    response.body.pipe(res);
     res.redirect(301, imageUrl);
   } catch (error) {
     console.error("Error fetching image:", error);
