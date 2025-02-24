@@ -28,14 +28,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://polaris.diveidolypapi.my.id');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
-  res.setHeader('Access-Control-Allow-Credentials', 'true');
-  next();
-});
-
 app.get("/", (_req, res) => {
   res.json({
     message: "Welcome to DiveIdolyPAPI API!",
@@ -147,24 +139,11 @@ app.get("/api/stamps/:name", (req, res) => {
 });
 
 // Endpoint untuk gambar stamp
-app.get('/api/img/stamps/:imageCharacter/:imageExpression', async (req, res) => {
-  const { imageCharacter, imageExpression } = req.params;
+app.get("/api/img/stamps/:imageCharacter/:imageExpression", (req, res) => {
+  const { imageCharacter } = req.params;
+  const { imageExpression } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-
-  try {
-    const response = await fetch(imageUrl);
-    if (!response.ok) throw new Error('Failed to fetch image');
-
-    // Set header CORS untuk response
-    res.setHeader('Access-Control-Allow-Origin', 'https://polaris.diveidolypapi.my.id');
-    res.setHeader('Content-Type', response.headers.get('Content-Type') || 'image/webp');
-
-    // Stream gambar ke client
-    response.body.pipe(res);
-  } catch (error) {
-    console.error('Error fetching image:', error);
-    res.status(500).json({ error: 'Failed to fetch image' });
-  }
+  res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
 // Mendapatkan data gambar icon character
