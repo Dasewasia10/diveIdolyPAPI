@@ -897,7 +897,7 @@
               "Efek peningkatan tingkat kritikal meningkat sesuai jumlah tahapan"
             ]
           },
-          "ct": 0,
+          "ct": 1,
           "staminaUsed": 563
         },
         "skillTwo": {
@@ -1014,7 +1014,7 @@
               "Mendapatkan skor 1570%, efek meningkat sesuai jumlah tahap fokus"
             ]
           },
-          "ct": 0,
+          "ct": 1,
           "staminaUsed": 565
         },
         "skillTwo": {
@@ -1131,7 +1131,7 @@
               "Mendapatkan skor 1700%, efek meningkat sesuai jumlah stamina yang dikonsumsi oleh skill ini"
             ]
           },
-          "ct": 0,
+          "ct": 1,
           "staminaUsed": 0.5
         },
         "skillTwo": {
@@ -1204,106 +1204,365 @@
       {
         "initialTitle": "mana-004",
         "title": {
-          "japanese": "ただ、手を繋ぐだけ",
-          "global": "Just Hold My Hand",
-          "indo": "Genggam Saja Tanganku"
+          "japanese": "胸に残るショコラの約束",
+          "global": "The chocolate promise that remains in my heart.",
+          "indo": "Janji cokelat yang tersisa di hatiku."
         },
         "description": {
           "japanese": [
-            "今日は、手を握ってほしい",
-            "この間のお化け屋敷の時みたいに、ぎゅっと"
+            "私から君へのバレンタインチョコだよ",
+            "もちろん本気の本気。本命チョコ",
+            "……照れないの。君は鈍いんだから",
+            "これくらいはっきり言わなきゃ伝わらないでしょ？"
           ],
           "global": [
-            "Today, I want you to hold my hand,",
-            "Like you did tightly during the haunted house the other day,"
+            "This is my Valentine's chocolate to you.",
+            "Of course, it's serious. It's my true feelings chocolate.",
+            "...Don't act shy. You're so oblivious.",
+            "If I don't say it clearly, you won't get it, right?"
           ],
           "indo": [
-            "Hari ini, aku ingin kamu menggenggam tanganku,",
-            "Seperti yang kamu lakukan erat saat di rumah hantu waktu itu,"
+            "Ini cokelat Valentine dariku untukmu.",
+            "Tentu saja, ini serius. Cokelat perasaan sejati.",
+            "...Jangan malu-malu. Kamu terlalu lambat mengerti.",
+            "Kalau tidak kukatakan dengan jelas, kamu tidak akan mengerti, kan?"
           ]
         },
-        "releaseDate": "2022-03-26",
-        "category": "Idoly Fes",
-        "costumeTheme": "Fes",
+        "releaseDate": "2023-01-28",
+        "category": "Limited",
+        "costumeTheme": "Valentine",
         "costumeIndex": 0,
-        "type": "Scorer",
-        "attribute": "Dance",
+        "type": "Supporter",
+        "attribute": "Visual",
         "initial": 5,
         "stats": {
-          "dance": 91248,
-          "vocal": 58449,
-          "visual": 66859,
+          "dance": 60552,
+          "vocal": 68962,
+          "visual": 87043,
           "stamina": 5220,
-          "total": 112953
+          "total": 112954
         },
         "skillOne": {
-          "typeSkill": "SP",
-          "name": {
-            "japanese": "最っ高のライブにします！",
-            "global": "We'll make it the best live ever!",
-            "indo": "Kita akan membuatnya menjadi pertunjukan terhebat!"
-          },
-          "description": {
-            "japanese": [
-              "1570%のスコア獲得、集目状態の段階数が多い程効果上昇"
-            ],
-            "global": [
-              "Gain 1570% score, effect increases with the number of focus stages"
-            ],
-            "indo": [
-              "Mendapatkan skor 1570%, efek meningkat sesuai jumlah tahap fokus"
-            ]
-          },
-          "ct": 0,
-          "staminaUsed": 565
-        },
-        "skillTwo": {
           "typeSkill": "A",
           "name": {
-            "japanese": "今日は特別",
-            "global": "Today is special",
-            "indo": "Hari ini spesial"
+            "japanese": "本気の本気の本命チョコ",
+            "global": "Serious, serious, true feelings chocolate",
+            "indo": "Cokelat perasaan sejati yang serius"
           },
           "description": {
             "japanese": [
-              "490%のスコア獲得",
-              "ダンスが高い2人に9段階スコア上昇効果[30ビート]"
+              "540%のスコア獲得",
+              "スコアラータイプ2人に10段階スコア上昇効果[35ビート]",
+              "自身をAスキルチャンス譲渡状態[30ビート]"
             ],
             "global": [
-              "Gain 490% score",
-              "Apply 9-stage score boost effect to 2 members with high dance stats [30 beats]"
+              "Gain 540% score",
+              "Apply 10-stage score boost effect to 2 score-type members [35 beats]",
+              "Put self in A skill chance transfer state [30 beats]"
             ],
             "indo": [
-              "Mendapatkan skor 490%",
-              "Memberikan efek peningkatan skor 9 tahap kepada 2 anggota dengan stat dance tinggi [30 ketukan]"
+              "Mendapatkan skor 540%",
+              "Memberikan efek peningkatan skor 10 tahap kepada 2 anggota tipe skor [35 ketukan]",
+              "Memasukkan diri ke dalam keadaan transfer kesempatan skill A [30 ketukan]"
             ]
           },
-          "ct": 30,
-          "staminaUsed": 158
+          "ct": 50,
+          "staminaUsed": 186
+        },
+        "skillTwo": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "こっそり告白練習",
+            "global": "Secret confession practice",
+            "indo": "Latihan mengungkapkan perasaan diam-diam"
+          },
+          "description": {
+            "japanese": [
+              "誰かがAスキル発動前",
+              "全員に8段階Aスキルスコア上昇効果[33ビート]",
+              "対象1人へAスキルスコア上昇効果譲渡"
+            ],
+            "global": [
+              "Before someone activates an A skill:",
+              "Apply 8-stage A skill score boost effect to all members [33 beats]",
+              "Transfer A skill score boost effect to 1 target"
+            ],
+            "indo": [
+              "Sebelum seseorang mengaktifkan skill A:",
+              "Memberikan efek peningkatan skor skill A 8 tahap kepada semua anggota [33 ketukan]",
+              "Transfer efek peningkatan skor skill A kepada 1 target"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 284
         },
         "skillThree": {
           "typeSkill": "P",
           "name": {
-            "japanese": "Precious memories",
-            "global": "Precious memories",
-            "indo": "Kenangan berharga"
+            "japanese": "早く気持ちを聞かせて？",
+            "global": "Can you tell me your feelings soon?",
+            "indo": "Bisakah kamu segera memberitahuku perasaanmu?"
           },
           "description": {
             "japanese": [
-              "自身に7段階の集目効果[45ビート]",
-              "自身に10段階クリティカル率上昇効果[45ビート]"
+              "ビジュアルタイプ3人に10段階消費スタミナ低下効果[46ビート]",
+              "自身に4段階スキル成功率上昇効果[46ビート]"
             ],
             "global": [
-              "Apply 7-stage focus effect to self [45 beats]",
-              "Apply 10-stage critical rate boost effect to self [45 beats]"
+              "Apply 10-stage stamina consumption reduction effect to 3 visual-type members [46 beats]",
+              "Apply 4-stage skill success rate boost effect to self [46 beats]"
             ],
             "indo": [
-              "Memberikan efek fokus 7 tahap kepada diri sendiri [45 ketukan]",
-              "Memberikan efek peningkatan critical rate 10 tahap kepada diri sendiri [45 ketukan]"
+              "Memberikan efek pengurangan konsumsi stamina 10 tahap kepada 3 anggota tipe visual [46 ketukan]",
+              "Memberikan efek peningkatan tingkat keberhasilan skill 4 tahap kepada diri sendiri [46 ketukan]"
             ]
           },
           "ct": 50,
-          "staminaUsed": 278
+          "staminaUsed": 281
+        },
+        "yell": {
+          "name": {
+            "japanese": "Aスキルスコアアップ",
+            "global": "A skill score up",
+            "indo": "Peningkatan skor skill A"
+          },
+          "description": {
+            "japanese": "Aスキルスコア4.0%上昇",
+            "global": "A skill score +4.0%",
+            "indo": "Skor skill A +4.0%"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-005",
+        "title": {
+          "japanese": "彼女にかかる花霞",
+          "global": "The mist of flowers surrounding her.",
+          "indo": "Kabut bunga yang menyelimutinya."
+        },
+        "description": {
+          "japanese": [
+            "ねえ敏腕マネージャーくん",
+            "きみはほんとに頼もしくなったよね"
+          ],
+          "global": [
+            "Hey, talented manager-kun,",
+            "You've really become someone reliable, haven't you?"
+          ],
+          "indo": [
+            "Hei, manajer berbakat,",
+            "Kamu benar-benar menjadi seseorang yang bisa diandalkan, ya?"
+          ]
+        },
+        "releaseDate": "2023-03-24",
+        "category": "Premium",
+        "costumeTheme": "Premium",
+        "costumeIndex": 1,
+        "type": "Buffer",
+        "attribute": "Vocal",
+        "initial": 5,
+        "stats": {
+          "dance": 67069,
+          "vocal": 84941,
+          "visual": 58239,
+          "stamina": 5800,
+          "total": 110263
+        },
+        "skillOne": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "花びら運ぶ春風",
+            "global": "Petal-carrying spring breeze",
+            "indo": "Angin musim semi yang membawa kelopak bunga"
+          },
+          "description": {
+            "japanese": [
+              "550%のスコア獲得",
+              "スコアラータイプ1人のボーカル上昇をボーカルブーストに状態変化"
+            ],
+            "global": [
+              "Gain 550% score",
+              "Change the vocal boost of 1 score-type member to vocal boost state"
+            ],
+            "indo": [
+              "Mendapatkan skor 550%",
+              "Mengubah peningkatan vokal 1 anggota tipe skor menjadi keadaan boost vokal"
+            ]
+          },
+          "ct": 30,
+          "staminaUsed": 157
+        },
+        "skillTwo": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "あなたと見た景色",
+            "global": "The scenery I saw with you",
+            "indo": "Pemandangan yang kulihat bersamamu"
+          },
+          "description": {
+            "japanese": [
+              "80コンボ以上時",
+              "全員の強化効果を2段階増強",
+              "全員に7段階ボーカル上昇効果[33ビート]"
+            ],
+            "global": [
+              "When combo is 80 or higher:",
+              "Enhance all members' buff effects by 2 stages",
+              "Apply 7-stage vocal boost effect to all members [33 beats]"
+            ],
+            "indo": [
+              "Saat combo 80 atau lebih:",
+              "Tingkatkan efek penguatan semua anggota sebanyak 2 tahap",
+              "Memberikan efek peningkatan vokal 7 tahap kepada semua anggota [33 ketukan]"
+            ]
+          },
+          "ct": 1,
+          "staminaUsed": 552
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "私のもの",
+            "global": "Mine",
+            "indo": "Milikku"
+          },
+          "description": {
+            "japanese": [
+              "自身に7段階ボーカル上昇効果[51ビート]"
+            ],
+            "global": [
+              "Apply 7-stage vocal boost effect to self [51 beats]"
+            ],
+            "indo": [
+              "Memberikan efek peningkatan vokal 7 tahap kepada diri sendiri [51 ketukan]"
+            ]
+          },
+          "ct": 55,
+          "staminaUsed": 293
+        },
+        "yell": {
+          "name": {
+            "japanese": "ボーカルアップ",
+            "global": "Vocal up",
+            "indo": "Peningkatan aksesori"
+          },
+          "description": {
+            "japanese": "ボーカル5.0%上昇",
+            "global": "Vocal +5.0%",
+            "indo": "Tingkat perolehan aksesori +10.0%"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-006",
+        "title": {
+          "japanese": "友と集めた音の欠片",
+          "global": "The fragments of sound collected with friends.",
+          "indo": "Fragmen suara yang dikumpulkan bersama teman-teman."
+        },
+        "description": {
+          "japanese": [
+            "私、遙子ちゃんがいる星見プロに入れて良かった",
+            "あんな素敵な子、絶対にこの事務所から",
+            "逃がしちゃダメだよ？"
+          ],
+          "global": [
+            "I'm glad I joined Hoshimi Pro, where Haruko-chan is.",
+            "Such a wonderful girl must never be let go from this agency, okay?"
+          ],
+          "indo": [
+            "Aku senang bisa bergabung dengan Hoshimi Pro, tempat Haruko-chan berada.",
+            "Gadis yang luar biasa seperti itu tidak boleh dilepaskan dari agensi ini, ya?"
+          ]
+        },
+        "releaseDate": "2023-06-26",
+        "category": "Idoly Fes",
+        "costumeTheme": "Fes",
+        "costumeIndex": 1,
+        "type": "Supporter",
+        "attribute": "Vocal",
+        "initial": 5,
+        "stats": {
+          "dance": 65387,
+          "vocal": 87674,
+          "visual": 57188,
+          "stamina": 5800,
+          "total": 110264
+        },
+        "skillOne": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "二人のすっごいライブ",
+            "global": "An amazing live by the two of us",
+            "indo": "Live yang luar biasa dari kami berdua"
+          },
+          "description": {
+            "japanese": [
+              "380%のスコア獲得、自身の発動したスキル数が多い程効果上昇",
+              "自身がボーカルレーンの時 自身とスコアラータイプ1人のPスキルのCTをリセット"
+            ],
+            "global": [
+              "Gain 380% score, effect increases with the number of skills activated by self",
+              "When self is on the vocal lane: Reset P skill CT for self and 1 score-type member"
+            ],
+            "indo": [
+              "Mendapatkan skor 380%, efek meningkat sesuai jumlah skill yang diaktifkan oleh diri sendiri",
+              "Ketika diri sendiri berada di jalur vokal: Reset CT skill P untuk diri sendiri dan 1 anggota tipe skor"
+            ]
+          },
+          "ct": 40,
+          "staminaUsed": 199
+        },
+        "skillTwo": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "繋いだ手と想い",
+            "global": "Connected hands and feelings",
+            "indo": "Tangan dan perasaan yang terhubung"
+          },
+          "description": {
+            "japanese": [
+              "スコアラータイプ2人に9段階クリティカル係数上昇効果[48ビート]|",
+              "スコアラータイプ2人に4段階Pスキルスコア追加効果[48ビート]"
+            ],
+            "global": [
+              "Apply 9-stage critical coefficient boost effect to 2 score-type members [48 beats]",
+              "Apply 4-stage P skill score bonus effect to 2 score-type members [48 beats]"
+            ],
+            "indo": [
+              "Memberikan efek peningkatan koefisien critical 9 tahap kepada 2 anggota tipe skor [48 ketukan]",
+              "Memberikan efek bonus skor skill P 4 tahap kepada 2 anggota tipe skor [48 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 284
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "未来の君へ",
+            "global": "To the future you",
+            "indo": "Untuk dirimu di masa depan"
+          },
+          "description": {
+            "japanese": [
+              "自身に4段階スキル成功率上昇効果[47ビート]",
+              "[ライブバトルのみ]同じレーンの相手に7段階ボーカル低下効果[47ビート]",
+              "[ライブバトルのみ]同じレーンの相手のスタミナを2000消費"
+            ],
+            "global": [
+              "Apply 4-stage skill success rate boost effect to self [47 beats]",
+              "[Live battle only] Apply 7-stage vocal reduction effect to the opponent in the same lane [47 beats]",
+              "[Live battle only] Consume 2000 stamina from the opponent in the same lane"
+            ],
+            "indo": [
+              "Memberikan efek peningkatan tingkat keberhasilan skill 4 tahap kepada diri sendiri [47 ketukan]",
+              "[Hanya di live battle] Memberikan efek penurunan vokal 7 tahap kepada lawan di jalur yang sama [47 ketukan]",
+              "[Hanya di live battle] Mengonsumsi 2000 stamina dari lawan di jalur yang sama"
+            ]
+          },
+          "ct": 70,
+          "staminaUsed": 598
         },
         "yell": {
           "name": {
@@ -1315,6 +1574,844 @@
             "japanese": "クリティカル500上昇",
             "global": "Critical +500",
             "indo": "Kritikal +500"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-007",
+        "title": {
+          "japanese": "remember shiny days",
+          "global": "remember shiny days",
+          "indo": "kenangan hari cerah"
+        },
+        "description": {
+          "japanese": [
+            "こう見えて私、昔はまあまあ売れっ子の",
+            "アイドルだったんだよねー"
+          ],
+          "global": [
+            "Despite how I look now, I was once a fairly popular idol, you know~"
+          ],
+          "indo": [
+            "Gini-gini dulu aku adalah idol yang cukup populer, lho~"
+          ]
+        },
+        "releaseDate": "2023-10-03",
+        "category": "Event",
+        "costumeTheme": "Event",
+        "costumeIndex": 1,
+        "type": "Supporter",
+        "attribute": "Vocal",
+        "initial": 2,
+        "stats": {
+          "dance": 69172,
+          "vocal": 86623,
+          "visual": 60762,
+          "stamina": 5220,
+          "total": 112954
+        },
+        "skillOne": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "芽衣feat.麻奈",
+            "global": "Mei feat. Mana",
+            "indo": "Mei feat. Mana"
+          },
+          "description": {
+            "japanese": [
+              "480%のスコア獲得|",
+              "自身がボーカルレーンの時 スコアラータイプ1人に5段階スタミナ継続回復効果[37ビート]"
+            ],
+            "global": [
+              "Gain 480% score",
+              "When self is on the vocal lane: Apply 5-stage stamina continuous recovery effect to 1 score-type member [37 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 480%",
+              "Ketika diri sendiri berada di jalur vokal: Memberikan efek pemulihan stamina berkelanjutan 5 tahap kepada 1 anggota tipe skor [37 ketukan]"
+            ]
+          },
+          "ct": 30,
+          "staminaUsed": 154
+        },
+        "skillTwo": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "ぬぼーっとしてるのに",
+            "global": "Even though I seem absent-minded...",
+            "indo": "Meskipun terlihat melamun..."
+          },
+          "description": {
+            "japanese": [
+              "スコアラータイプ2人に14段階消費スタミナ低下効果[42ビート]",
+              "スコアラータイプ2人に8段階ビートスコア上昇効果[42ビート]"
+            ],
+            "global": [
+              "Apply 14-stage stamina consumption reduction effect to 2 score-type members [42 beats]",
+              "Apply 8-stage beat score boost effect to 2 score-type members [42 beats]"
+            ],
+            "indo": [
+              "Memberikan efek pengurangan konsumsi stamina 14 tahap kepada 2 anggota tipe skor [42 ketukan]",
+              "Memberikan efek peningkatan skor beat 8 tahap kepada 2 anggota tipe skor [42 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 268
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "本気でぶつかることの大切さ",
+            "global": "The importance of giving it your all",
+            "indo": "Pentingnya memberikan yang terbaik"
+          },
+          "description": {
+            "japanese": [
+              "自身に4段階スキル成功率上昇効果[35ビート]",
+              "自身に5段階Aスキルスコア上昇効果[35ビート]"
+            ],
+            "global": [
+              "Apply 4-stage skill success rate boost effect to self [35 beats]",
+              "Apply 5-stage A skill score boost effect to self [35 beats]"
+            ],
+            "indo": [
+              "Memberikan efek peningkatan tingkat keberhasilan skill 4 tahap kepada diri sendiri [35 ketukan]",
+              "Memberikan efek peningkatan skor skill A 5 tahap kepada diri sendiri [35 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 306
+        }
+      },
+      {
+        "initialTitle": "mana-008",
+        "title": {
+          "japanese": "未来願う真紅の花",
+          "global": "The crimson flower wishing for the future",
+          "indo": "Bunga merah tua yang berharap untuk masa depan"
+        },
+        "description": {
+          "japanese": [
+            "昔から観ていた舞台に立てて、夢みたい",
+            "これも、みんなが応援してくれたおかげだよ"
+          ],
+          "global": [
+            "Standing on the stage I've watched since I was young feels like a dream.",
+            "This is all thanks to everyone who supported me."
+          ],
+          "indo": [
+            "Berdiri di panggung yang kutonton sejak kecil terasa seperti mimpi.",
+            "Ini semua berkat dukungan dari semua orang."
+          ]
+        },
+        "releaseDate": "2023-12-26",
+        "category": "Idoly Fes",
+        "costumeTheme": "Fes",
+        "costumeIndex": 2,
+        "type": "Supporter",
+        "attribute": "Dance",
+        "initial": 5,
+        "stats": {
+          "dance": 87674,
+          "vocal": 56767,
+          "visual": 65808,
+          "stamina": 5800,
+          "total": 110264
+        },
+        "skillOne": {
+          "typeSkill": "SP",
+          "name": {
+            "japanese": "一緒に年、越しちゃったね",
+            "global": "We ended up spending the New Year together",
+            "indo": "Kita akhirnya melewati tahun baru bersama"
+          },
+          "description": {
+            "japanese": [
+              "1730%のスコア獲得",
+              "[ライブバトルのみ]相手全員の強化効果段階数を50%制限[75ビート]",
+              "全員に7段階コンボスコア上昇効果[78ビート]"
+            ],
+            "global": [
+              "Gain 1730% score",
+              "[Live battle only] Limit the enhancement effect stages of all opponents by 50% [75 beats]",
+              "Apply 7-stage combo score boost effect to all members [78 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 1730%",
+              "[Hanya di live battle] Batasi tahap efek penguatan semua lawan sebesar 50% [75 ketukan]",
+              "Memberikan efek peningkatan skor combo 7 tahap kepada semua anggota [78 ketukan]"
+            ]
+          },
+          "ct": 1,
+          "staminaUsed": 638
+        },
+        "skillTwo": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "きみと撮った思い出",
+            "global": "Memories I took with you",
+            "indo": "Kenangan yang kuabadikan bersamamu"
+          },
+          "description": {
+            "japanese": [
+              "280%のスコア獲得、スキル成功率が高い程効果上昇",
+              "スコアラータイプ1人に5段階スタミナ継続回復効果[35ビート]",
+              "スコアラータイプ1人に4段階スキル成功率上昇効果[35ビート]"
+            ],
+            "global": [
+              "Gain 280% score, effect increases with higher skill success rate",
+              "Apply 5-stage stamina continuous recovery effect to 1 score-type member [35 beats]",
+              "Apply 4-stage skill success rate boost effect to 1 score-type member [35 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 280%, efek meningkat sesuai tingkat keberhasilan skill",
+              "Memberikan efek pemulihan stamina berkelanjutan 5 tahap kepada 1 anggota tipe skor [35 ketukan]",
+              "Memberikan efek peningkatan tingkat keberhasilan skill 4 tahap kepada 1 anggota tipe skor [35 ketukan]"
+            ]
+          },
+          "ct": 30,
+          "staminaUsed": 157
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "未来の私へ",
+            "global": "To the future me",
+            "indo": "Untuk diriku di masa depan"
+          },
+          "description": {
+            "japanese": [
+              "自身に3段階スキル成功率上昇効果[42ビート]",
+              "[ライブバトルのみ]同じレーンの相手に10段階ダンス低下効果[50ビート]"
+            ],
+            "global": [
+              "Apply 3-stage skill success rate boost effect to self [42 beats]",
+              "[Live battle only] Apply 10-stage dance reduction effect to the opponent in the same lane [50 beats]"
+            ],
+            "indo": [
+              "Memberikan efek peningkatan tingkat keberhasilan skill 3 tahap kepada diri sendiri [42 ketukan]",
+              "[Hanya di live battle] Memberikan efek penurunan dance 10 tahap kepada lawan di jalur yang sama [50 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 566
+        },
+        "yell": {
+          "name": {
+            "japanese": "レッスンピースアップ【自主トレ】",
+            "global": "Lesson piece up [Self-training]",
+            "indo": "Peningkatan piece pelatihan [Latihan mandiri]"
+          },
+          "description": {
+            "japanese": "自主トレの獲得レッスンピース7.5%上昇",
+            "global": "Self-training lesson piece acquisition rate +7.5%",
+            "indo": "Tingkat perolehan piece pelatihan mandiri +7.5%"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-009",
+        "title": {
+          "japanese": "回り巡る淡い日々",
+          "global": "Faint days that go round and round",
+          "indo": "Hari-hari samar yang terus berputar"
+        },
+        "description": {
+          "japanese": [
+            "えー？　いいじゃん、来るたび乗ってるんだし",
+            "お姉ちゃんも一緒だから、恥ずかしくないでしょ？",
+            "ね、琴乃！"
+          ],
+          "global": [
+            "Huh? It's fine, isn't it? I ride it every time I come here.",
+            "Since big sis is here, it's not embarrassing, right?",
+            "Right, Kotono?"
+          ],
+          "indo": [
+            "Eh? Tidak apa-apa, kan? Aku naik ini setiap kali datang ke sini.",
+            "Karena kakak ada bersamamu, tidak malu, kan?",
+            "Benar, Kotono?"
+          ]
+        },
+        "releaseDate": "2024-03-24",
+        "category": "Premium",
+        "costumeTheme": "Premium",
+        "costumeIndex": 2,
+        "type": "Buffer",
+        "attribute": "Visual",
+        "initial": 5,
+        "stats": {
+          "dance": 59080,
+          "vocal": 67280,
+          "visual": 90197,
+          "stamina": 5220,
+          "total": 112954
+        },
+        "skillOne": {
+          "typeSkill": "SP",
+          "name": {
+            "japanese": "大好きだよ、琴乃",
+            "global": "I love you, Kotono",
+            "indo": "Aku mencintaimu, Kotono"
+          },
+          "description": {
+            "japanese": [
+              "1850%のスコア獲得",
+              "全員に8段階ビジュアルブースト効果[77ビート]"
+            ],
+            "global": [
+              "Gain 1850% score",
+              "Apply 8-stage visual boost effect to all members [77 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 1850%",
+              "Memberikan efek boost visual 8 tahap kepada semua anggota [77 ketukan]"
+            ]
+          },
+          "ct": 1,
+          "staminaUsed": 562
+        },
+        "skillTwo": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "まだアイドルデビュー前",
+            "global": "Before idol debut",
+            "indo": "Sebelum debut sebagai idol"
+          },
+          "description": {
+            "japanese": [
+              "380%のスコア獲得",
+              "スコアラータイプ2人に6段階ビジュアル上昇効果[42ビート]",
+              "スコアラータイプ2人に6段階クリティカル率上昇効果[42ビート]"
+            ],
+            "global": [
+              "Gain 380% score",
+              "Apply 6-stage visual boost effect to 2 score-type members [42 beats]",
+              "Apply 6-stage critical rate boost effect to 2 score-type members [42 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 380%",
+              "Memberikan efek peningkatan visual 6 tahap kepada 2 anggota tipe skor [42 ketukan]",
+              "Memberikan efek peningkatan tingkat critical 6 tahap kepada 2 anggota tipe skor [42 ketukan]"
+            ]
+          },
+          "ct": 30,
+          "staminaUsed": 157
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "生まれる前から大切な妹",
+            "global": "My precious little sister since before I was born",
+            "indo": "Adik perempuan yang berharga sejak sebelum aku lahir"
+          },
+          "description": {
+            "japanese": [
+              "自身に7段階ビジュアルブースト効果[42ビート]"
+            ],
+            "global": [
+              "Apply 7-stage visual boost effect to self [42 beats]"
+            ],
+            "indo": [
+              "Memberikan efek boost visual 7 tahap kepada diri sendiri [42 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 566
+        },
+        "yell": {
+          "name": {
+            "japanese": "ビジュアルアップ",
+            "global": "Visual up",
+            "indo": "Peningkatan visual"
+          },
+          "description": {
+            "japanese": "ビジュアル5.0%上昇",
+            "global": "Visual +5.0%",
+            "indo": "Visual +5.0%"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-010",
+        "title": {
+          "japanese": "隙間に覗く少女の顔",
+          "global": "The girl's face peeking through the gap",
+          "indo": "Wajah gadis yang mengintip dari celah"
+        },
+        "description": {
+          "japanese": [
+            "ねぇ、どうかな？",
+            "……今だけは、私が、きみの花嫁だよ"
+          ],
+          "global": [
+            "Hey, how is it?",
+            "...Just for now, I am your bride."
+          ],
+          "indo": [
+            "Hei, bagaimana menurutmu?",
+            "...Untuk saat ini, aku adalah pengantinmu."
+          ]
+        },
+        "releaseDate": "2024-05-28",
+        "category": "Limited",
+        "costumeTheme": "Wedding",
+        "costumeIndex": 0,
+        "type": "Buffer",
+        "attribute": "Dance",
+        "initial": 5,
+        "stats": {
+          "dance": 85361,
+          "vocal": 58449,
+          "visual": 66439,
+          "stamina": 5800,
+          "total": 110263
+        },
+        "skillOne": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "ベール上げる、きみの手",
+            "global": "The hand that lifts the veil",
+            "indo": "Tangan yang mengangkat kerudung"
+          },
+          "description": {
+            "japanese": [
+              "410%のスコア獲得",
+              "自身に8段階ダンス上昇効果[41ビート]",
+              "スコアラータイプ2人の強化効果を10延長"
+            ],
+            "global": [
+              "Gain 410% score",
+              "Apply 8-stage dance boost effect to self [41 beats]",
+              "Extend the enhancement effects of 2 score-type members by 10 stages"
+            ],
+            "indo": [
+              "Mendapatkan skor 410%",
+              "Memberikan efek peningkatan dance 8 tahap kepada diri sendiri [41 ketukan]",
+              "Memperpanjang efek penguatan 2 anggota tipe skor sebanyak 10 tahap"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 186
+        },
+        "skillTwo": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "私のパートナーさん",
+            "global": "My partner",
+            "indo": "Jodohku"
+          },
+          "description": {
+            "japanese": [
+              "530%のスコア獲得",
+              "自身がダンスレーンの時 ダンスタイプ2人に4段階ダンスブースト効果[34ビート] とダンス上昇効果譲渡"
+            ],
+            "global": [
+              "Gain 530% score",
+              "When self is on the dance lane: Apply 4-stage dance boost effect and transfer dance boost effect to 2 dance-type members [34 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 530%",
+              "Ketika diri sendiri berada di jalur dance: Memberikan efek boost dance 4 tahap dan mentransfer efek peningkatan dance kepada 2 anggota tipe dance [34 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 198
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "二人の共同作業",
+            "global": "Our collaboration",
+            "indo": "Kolaborasi kami berdua"
+          },
+          "description": {
+            "japanese": [
+              "自身に7段階ダンスブースト効果[43ビート]"
+            ],
+            "global": [
+              "Apply 7-stage dance boost effect to self [43 beats]"
+            ],
+            "indo": [
+              "Memberikan efek boost dance 7 tahap kepada diri sendiri [43 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 566
+        },
+        "yell": {
+          "name": {
+            "japanese": "ダンスアップ",
+            "global": "Dance up",
+            "indo": "Peningkatan dance"
+          },
+          "description": {
+            "japanese": "ダンス5.0%上昇",
+            "global": "Dance +5.0%",
+            "indo": "Dance +5.0%"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-011",
+        "title": {
+          "japanese": "きみと過ごしたシーパラ",
+          "global": "Sea Paradise spent with you",
+          "indo": "Sea Paradise yang kulewati bersamamu"
+        },
+        "description": {
+          "japanese": [
+            "いつかまた、ここで里帰りライブをやろうね"
+          ],
+          "global": [
+            "Someday, let's do a homecoming live here again."
+          ],
+          "indo": [
+            "Suatu hari nanti, mari lakukan homecoming live di sini lagi."
+          ]
+        },
+        "releaseDate": "2024-09-25",
+        "category": "Event",
+        "costumeTheme": "Event",
+        "costumeIndex": 2,
+        "type": "Buffer",
+        "attribute": "Dance",
+        "initial": 2,
+        "stats": {
+          "dance": 85361,
+          "vocal": 58870,
+          "visual": 66018,
+          "stamina": 5800,
+          "total": 110264
+        },
+        "skillOne": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "思い出が増える島",
+            "global": "The island where memories grow",
+            "indo": "Pulau tempat kenangan bertambah"
+          },
+          "description": {
+            "japanese": [
+              "500%のスコア獲得",
+              "自身がダンスレーンの時 スコアラータイプ1人に4段階クリティカル率上昇効果[40ビート]"
+            ],
+            "global": [
+              "Gain 500% score",
+              "When self is on the dance lane: Apply 4-stage critical rate boost effect to 1 score-type member [40 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 500%",
+              "Ketika diri sendiri berada di jalur dance: Memberikan efek peningkatan tingkat critical 4 tahap kepada 1 anggota tipe skor [40 ketukan]"
+            ]
+          },
+          "ct": 30,
+          "staminaUsed": 152
+        },
+        "skillTwo": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "イルカさんとの共演",
+            "global": "Performing with dolphins",
+            "indo": "Tampil bersama lumba-lumba"
+          },
+          "description": {
+            "japanese": [
+              "ダンスタイプ2人に5段階クリティカル率上昇効果[43ビート]と強化効果を7延長"
+            ],
+            "global": [
+              "Apply 5-stage critical rate boost effect and extend enhancement effects by 7 stages to 2 dance-type members [43 beats]"
+            ],
+            "indo": [
+              "Memberikan efek peningkatan tingkat critical 5 tahap dan memperpanjang efek penguatan sebanyak 7 tahap kepada 2 anggota tipe dance [43 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 250
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "大好きな人の笑顔",
+            "global": "The smile of someone I love",
+            "indo": "Senyuman orang yang kucintai"
+          },
+          "description": {
+            "japanese": [
+              "100%のスコア獲得",
+              "ダンスタイプ1人に3段階ダンス上昇効果[45ビート]"
+            ],
+            "global": [
+              "Gain 100% score",
+              "Apply 3-stage dance boost effect to 1 dance-type member [45 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 100%",
+              "Memberikan efek peningkatan dance 3 tahap kepada 1 anggota tipe dance [45 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 566
+        }
+      },
+      {
+        "initialTitle": "mana-012",
+        "title": {
+          "japanese": "輝き結ぶバースデー",
+          "global": "The birthday that ties together brilliance",
+          "indo": "Ulang tahun yang mengikat kilauan"
+        },
+        "description": {
+          "japanese": [
+            "これから先、私は何度も誕生日を迎えるけど",
+            "今日のこの光を、一生忘れないよ"
+          ],
+          "global": [
+            "From now on, I'll celebrate many more birthdays,",
+            "But I'll never forget this light today for the rest of my life."
+          ],
+          "indo": [
+            "Mulai sekarang, aku akan merayakan banyak ulang tahun lagi,",
+            "Tapi cahaya hari ini tidak akan pernah kulupakan seumur hidupku."
+          ]
+        },
+        "releaseDate": "2024-10-09",
+        "category": "Birthday",
+        "costumeTheme": "Birthday",
+        "costumeIndex": 1,
+        "type": "Scorer",
+        "attribute": "Vocal",
+        "initial": 5,
+        "stats": {
+          "dance": 67280,
+          "vocal": 89776,
+          "visual": 59500,
+          "stamina": 5220,
+          "total": 112954
+        },
+        "skillOne": {
+          "typeSkill": "SP",
+          "name": {
+            "japanese": "一生忘れないよ",
+            "global": "I'll never forget it for the rest of my life",
+            "indo": "Aku tidak akan pernah melupakannya seumur hidupku"
+          },
+          "description": {
+            "japanese": [
+              "1700%のスコア獲得、このスキルで消費したスタミナが多い程効果上昇"
+            ],
+            "global": [
+              "Gain 1700% score, effect increases with the amount of stamina consumed by this skill"
+            ],
+            "indo": [
+              "Mendapatkan skor 1700%, efek meningkat sesuai jumlah stamina yang dikonsumsi oleh skill ini"
+            ]
+          },
+          "ct": 1,
+          "staminaUsed": 0.5
+        },
+        "skillTwo": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "最高のバースデーライブ",
+            "global": "The best birthday live",
+            "indo": "Live ulang tahun terbaik"
+          },
+          "description": {
+            "japanese": [
+              "440%のスコア獲得、残スタミナが多い程効果上昇",
+              "自身に6段階スタミナ継続回復効果[44ビート]"
+            ],
+            "global": [
+              "Gain 440% score, effect increases with remaining stamina",
+              "Apply 6-stage stamina continuous recovery effect to self [44 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 440%, efek meningkat sesuai sisa stamina",
+              "Memberikan efek pemulihan stamina berkelanjutan 6 tahap kepada diri sendiri [44 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 187
+        },
+        "skillThree": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "親友に贈る歌",
+            "global": "A song for my best friend",
+            "indo": "Lagu untuk sahabatku"
+          },
+          "description": {
+            "japanese": [
+              "350%のスコア獲得、残スタミナが多い程効果上昇",
+              "自身がボーカルレーンの時 自身に7段階ボーカルブースト効果[42ビート]と5段階スキル成功率上昇効果[42ビート]"
+            ],
+            "global": [
+              "Gain 350% score, effect increases with remaining stamina",
+              "When self is on the vocal lane: Apply 7-stage vocal boost effect and 5-stage skill success rate boost effect to self [42 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 350%, efek meningkat sesuai sisa stamina",
+              "Ketika diri sendiri berada di jalur vokal: Memberikan efek boost vokal 7 tahap dan efek peningkatan tingkat keberhasilan skill 5 tahap kepada diri sendiri [42 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 206
+        },
+        "yell": {
+          "name": {
+            "japanese": "スタミナアップ",
+            "global": "Stamina up",
+            "indo": "Peningkatan stamina"
+          },
+          "description": {
+            "japanese": "スタミナ350上昇",
+            "global": "Stamina +350",
+            "indo": "Stamina +350"
+          }
+        }
+      },
+      {
+        "initialTitle": "mana-013",
+        "title": {
+          "japanese": "絆が繋ぐ姉妹の奇跡",
+          "global": "The miracle of sisters connected by bonds",
+          "indo": "Keajaiban saudara perempuan yang terhubung oleh ikatan"
+        },
+        "description": {
+          "japanese": [
+            "琴乃の髪はまっすぐで綺麗だね～",
+            "せっかくだし、もうちょっと伸ばせばいいのに"
+          ],
+          "global": [
+            "Kotono's hair is so straight and beautiful~",
+            "Since it's such a good opportunity, you should grow it out a little more."
+          ],
+          "indo": [
+            "Rambut Kotono lurus dan cantik~",
+            "Mumpung ada kesempatan, kamu harus menumbuhkannya sedikit lebih panjang."
+          ]
+        },
+        "releaseDate": "2025-02-12",
+        "category": "Evolution",
+        "costumeTheme": "Link",
+        "costumeIndex": 0,
+        "type": "Buffer",
+        "attribute": "Visual",
+        "initial": 5,
+        "stats": {
+          "dance": 58029,
+          "vocal": 66649,
+          "visual": 85571,
+          "stamina": 5800,
+          "total": 110263
+        },
+        "skillOne": {
+          "typeSkill": "A",
+          "name": {
+            "japanese": "誰よりも大切で自慢の妹",
+            "global": "My precious and proud little sister, more than anyone else",
+            "indo": "Adik perempuan yang paling berharga dan kubanggakan, lebih dari siapa pun"
+          },
+          "description": {
+            "japanese": [
+              "460%のスコア獲得",
+              "ビジュアルタイプ3人に4段階ビジュアル上昇効果[36ビート]"
+            ],
+            "global": [
+              "Gain 460% score",
+              "Apply 4-stage visual boost effect to 3 visual-type members [36 beats]"
+            ],
+            "indo": [
+              "Mendapatkan skor 460%",
+              "Memberikan efek peningkatan visual 4 tahap kepada 3 anggota tipe visual [36 ketukan]"
+            ]
+          },
+          "ct": 30,
+          "staminaUsed": 149
+        },
+        "skillTwo": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "あの日のお揃いのヘアゴム",
+            "global": "The matching hair ties from that day",
+            "indo": "Ikatan rambut yang serupa dari hari itu"
+          },
+          "description": {
+            "japanese": [
+              "80コンボ以上時",
+              "スコアラータイプ2人の強化効果を2段階増強",
+              "スコアラータイプ2人の強化効果を6延長"
+            ],
+            "global": [
+              "When combo is 80 or higher:",
+              "Enhance the enhancement effects of 2 score-type members by 2 stages",
+              "Extend the enhancement effects of 2 score-type members by 6 stages"
+            ],
+            "indo": [
+              "Saat combo 80 atau lebih:",
+              "Tingkatkan efek penguatan 2 anggota tipe skor sebanyak 2 tahap",
+              "Perpanjang efek penguatan 2 anggota tipe skor sebanyak 6 tahap"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 333
+        },
+        "skillThree": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "夢をもう少しだけ",
+            "global": "Just a little more for the dream",
+            "indo": "Sedikit lagi demi mimpi"
+          },
+          "description": {
+            "japanese": [
+              "自身に4段階ビジュアルブースト効果[45ビート]",
+              "[ライブバトルのみ]同じレーンの相手に9段階ビジュアル低下効果[45ビート]"
+            ],
+            "global": [
+              "Apply 4-stage visual boost effect to self [45 beats]",
+              "[Live battle only] Apply 9-stage visual reduction effect to the opponent in the same lane [45 beats]"
+            ],
+            "indo": [
+              "Memberikan efek boost visual 4 tahap kepada diri sendiri [45 ketukan]",
+              "[Hanya di live battle] Memberikan efek penurunan visual 9 tahap kepada lawan di jalur yang sama [45 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 501
+        },
+        "skillFour": {
+          "typeSkill": "P",
+          "name": {
+            "japanese": "姉妹で歌う奇跡の歌",
+            "global": "The miracle song sung by sisters",
+            "indo": "Lagu keajaiban yang dinyanyikan oleh saudara perempuan"
+          },
+          "description": {
+            "japanese": [
+              "全員にビジュアル上昇超化効果[45ビート]"
+            ],
+            "global": [
+              "Apply super visual boost effect to all members [45 beats]"
+            ],
+            "indo": [
+              "Memberikan efek super boost visual kepada semua anggota [45 ketukan]"
+            ]
+          },
+          "ct": 50,
+          "staminaUsed": 263
+        },
+        "yell": {
+          "name": {
+            "japanese": "ビジュアルアップ",
+            "global": "Visual up",
+            "indo": "Peningkatan visual"
+          },
+          "description": {
+            "japanese": "ビジュアル5.0%上昇",
+            "global": "Visual +5.0%",
+            "indo": "Visual +5.0%"
           }
         }
       }
