@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware untuk parsing JSON dan CORS
 app.use(cors({
-  origin: ["https://polaris.diveidolypapi.my.id", "https://polaris.diveidolypapi.my.id/", "https://polaris.diveidolypapi.my.id/#/"], // Izinkan akses dari domain ini
+  origin: "https://polaris.diveidolypapi.my.id", // Izinkan akses dari domain ini
   methods: "GET,POST,PUT,DELETE", // Izinkan metode HTTP tertentu
   headers: "Content-Type",
   credentials: true, // Izinkan pengiriman cookie atau header otentikasi
@@ -144,70 +144,42 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
   const { imageCharacter } = req.params;
   const { imageExpression } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  
-  try {
-    const response = await fetch(imageUrl);
-    if (!response.ok) {
-      return res.status(404).json({ error: "Image not found" });
-    }
-
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", response.headers.get("Content-Type"));
-    res.redirect(301, imageUrl);
-    response.body.pipe(res);
-  } catch (error) {
-    console.error("Error fetching image:", error);
-    res.status(500).json({ error: "Internal server error" });
-  }
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar icon character
 app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
-  
-  try {
-    const response = await fetch(imageUrl);
-    if (!response.ok) {
-      return res.status(404).json({ error: "Image not found" });
-    }
-
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", response.headers.get("Content-Type"));
-    res.redirect(301, imageUrl);
-    response.body.pipe(res);
-  } catch (error) {
-    console.error("Error fetching image:", error);
-    res.status(500).json({ error: "Internal server error" });
-  }
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar banner character
 app.get('/api/img/character/banner/:imageName', (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/bannerCharacter/banner-${imageName}.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar sprite1 character
 app.get('/api/img/character/sprite1/:imageName', (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/spriteCharacter/sprite-${imageName}-01.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar sprite2 character
 app.get('/api/img/character/sprite2/:imageName', (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/spriteCharacter/sprite-${imageName}-02.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar group circle
 app.get('/api/img/group/circle/:imageName', (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/idolGroup/group-${imageName}-circle.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar cosu card
@@ -217,7 +189,7 @@ app.get('/api/img/card/cosu/:chara/:cosuName/:cosuIndex', (req, res) => {
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/costumeIcon/cosu-${chara}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar figure card
@@ -228,7 +200,7 @@ app.get('/api/img/card/figureB/:chara/:initial/:cosuName/:cosuIndex', (req, res)
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/figureImageB/figure-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar icon card
@@ -239,7 +211,7 @@ app.get('/api/img/card/thumb/:chara/:initial/:cosuName/:cosuIndex', (req, res) =
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconImage/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar iconB card
@@ -250,7 +222,7 @@ app.get('/api/img/card/thumbB/:chara/:initial/:cosuName/:cosuIndex', (req, res) 
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconImageB/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar iconE card
@@ -261,7 +233,7 @@ app.get('/api/img/card/thumbE/:chara/:initial/:cosuName/:cosuIndex', (req, res) 
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconImageE/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar vertical card
@@ -272,7 +244,7 @@ app.get('/api/img/card/vertical/:chara/:initial/:cosuName/:cosuIndex', (req, res
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/verticalImage/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar verticalB card
@@ -283,7 +255,7 @@ app.get('/api/img/card/verticalB/:chara/:initial/:cosuName/:cosuIndex', (req, re
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/verticalImageB/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar verticalE card
@@ -294,7 +266,7 @@ app.get('/api/img/card/verticalE/:chara/:initial/:cosuName/:cosuIndex', (req, re
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/verticalImageE/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar source card
@@ -305,7 +277,7 @@ app.get('/api/img/card/source/:chara/:initial/:cosuName/:cosuIndex', (req, res) 
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/sourceImage/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar sourceE card
@@ -316,7 +288,7 @@ app.get('/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex', (req, res)
   const { cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  res.sendFile(imageUrl);
 });
 
 // Jalankan server (hanya lokal)
