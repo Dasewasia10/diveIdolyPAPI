@@ -1,6 +1,13 @@
 import express, { json } from "express";
 import cors from "cors"; // Import cors
 
+//  data
+import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
+import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
+import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
+import characterSources from "./src/data/character/character.json" with { type: "json" };
+import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -11,15 +18,6 @@ app.use(cors({
   headers: "Content-Type",
   credentials: true, // Izinkan pengiriman cookie atau header otentikasi
 }));
-
-app.use(json());
-
-//  data
-import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
-import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
-import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
-import characterSources from "./src/data/character/character.json" with { type: "json" };
-import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 
 // Middleware untuk parsing JSON
 app.use(json());
@@ -143,8 +141,14 @@ app.get("/api/stamps/:name", (req, res) => {
 app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
   const { imageCharacter } = req.params;
   const { imageExpression } = req.params;
+  console.log(`Requested image: stamp_${imageCharacter}-${imageExpression}.webp`);
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  res.sendFile(imageUrl);
+  res.sendFile(imageUrl, (err) => {
+    if (err) {
+      console.error("Error sending file:", err);
+      res.status(500).send("Internal Server Error");
+    }
+  });
 });
 
 // Mendapatkan data gambar icon character
