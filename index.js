@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware untuk parsing JSON dan CORS
 app.use(cors({
-  origin: "https://polaris.diveidolypapi.my.id", // Izinkan akses dari domain ini
+  origin: ["https://polaris.diveidolypapi.my.id", "https://diveidolypapi.my.id", "https://api.diveidolypapi.my.id"], // Izinkan akses dari domain ini
   methods: "GET,POST,PUT,DELETE", // Izinkan metode HTTP tertentu
   headers: "Content-Type",
   credentials: true, // Izinkan pengiriman cookie atau header otentikasi
