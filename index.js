@@ -12,8 +12,6 @@ app.use(cors({
   credentials: true, // Izinkan pengiriman cookie atau header otentikasi
 }));
 
-app.use(json());
-
 //  data
 import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
 import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
@@ -153,7 +151,20 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  try {
+    const response = await fetch(imageUrl);
+    const buffer = await response.buffer();
+    
+    // Set header CORS dan content-type
+    res.set({
+      'Access-Control-Allow-Origin': 'https://polaris.diveidolypapi.my.id',
+      'Content-Type': response.headers.get('content-type')
+    });
+    
+    res.send(buffer);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch image" });
+  }
 });
 
 // Mendapatkan data gambar banner character
