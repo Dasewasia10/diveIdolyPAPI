@@ -1,54 +1,78 @@
-import express, { json } from "express";
+import express from "express";
 import cors from "cors";
-import fetch from 'node-fetch'; // Pastikan package ini terinstall
+import fetch from "node-fetch";
+import { readFile } from "fs/promises";
 
-// data
-import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
-import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
-import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
-import characterSources from "./src/data/character/character.json" with { type: "json" };
-import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
+// Load data tanpa import langsung
+const loadJSON = async (path) => {
+  try {
+    const data = await readFile(new URL(path, import.meta.url));
+    return JSON.parse(data);
+  } catch (err) {
+    console.error("Error loading JSON:", err);
+    return null;
+  }
+};
+
+const cardSources = await loadJSON("./src/data/card/cardSources.json");
+const qnaSources = await loadJSON("./src/data/qna/qnaSources.json");
+const lyricSources = await loadJSON("./src/data/lyrics/lyricsData.json");
+const characterSources = await loadJSON("./src/data/character/character.json");
+const stampSources = await loadJSON("./src/data/stamps/stamps.json");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware untuk parsing JSON dan CORS
-app.use(cors({
-  origin: ["https://polaris.diveidolypapi.my.id", "https://diveidolypapi.my.id", "https://api.diveidolypapi.my.id", "https://www.diveidolypapi.my.id"],
+// Enhanced CORS configuration
+const corsOptions = {
+  origin: [
+    "https://polaris.diveidolypapi.my.id",
+    "https://diveidolypapi.my.id",
+    "https://api.diveidolypapi.my.id",
+    "https://www.diveidolypapi.my.id",
+  ],
   methods: "GET,POST,PUT,DELETE",
-  headers: "Content-Type",
+  allowedHeaders: "Content-Type",
   credentials: true,
-}));
+  optionsSuccessStatus: 200, // Beberapa browser membutuhkan ini
+};
 
-// Middleware untuk parsing JSON
-app.use(json());
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // Enable preflight for all routes
 
-app.use((req, res, next) => {
-  console.log("CORS Middleware aktif untuk:", req.path);
-  next();
+app.use(express.json());
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error("Server Error:", err);
+  res.status(500).json({ error: "Internal Server Error" });
 });
 
-// Fungsi helper untuk mengambil gambar dari CDN
+// Fungsi helper untuk fetch gambar
 async function fetchImageFromCDN(url, res) {
   try {
     const response = await fetch(url);
-    
+
     if (!response.ok) {
       throw new Error(`Failed to fetch image: ${response.statusText}`);
     }
-    
-    // Set header dari response asli
-    const contentType = response.headers.get('content-type');
-    const contentLength = response.headers.get('content-length');
-    
-    if (contentType) res.setHeader('Content-Type', contentType);
-    if (contentLength) res.setHeader('Content-Length', contentLength);
-    
-    // Stream data langsung ke client
+
+    // Set CORS headers
+    res.setHeader("Access-Control-Allow-Origin", corsOptions.origin.join(", "));
+    res.setHeader("Access-Control-Allow-Methods", corsOptions.methods);
+
+    // Copy headers from CDN response
+    const contentType = response.headers.get("content-type");
+    const contentLength = response.headers.get("content-length");
+
+    if (contentType) res.setHeader("Content-Type", contentType);
+    if (contentLength) res.setHeader("Content-Length", contentLength);
+
+    // Stream data
     response.body.pipe(res);
   } catch (error) {
-    console.error('Error fetching image:', error);
-    res.status(500).json({ error: 'Failed to fetch image' });
+    console.error("Error fetching image:", error);
+    res.status(500).json({ error: "Failed to fetch image" });
   }
 }
 
@@ -164,116 +188,146 @@ app.get("/api/stamps/:name", (req, res) => {
 });
 
 // Endpoint untuk gambar stamp
-app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
-  const { imageCharacter, imageExpression } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/stamps/:imageCharacter/:imageExpression",
+  async (req, res) => {
+    const { imageCharacter, imageExpression } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar icon character
-app.get('/api/img/character/icon/:imageName', async (req, res) => {
+app.get("/api/img/character/icon/:imageName", async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
   await fetchImageFromCDN(imageUrl, res);
 });
 
 // Mendapatkan data gambar banner character
-app.get('/api/img/character/banner/:imageName', async (req, res) => {
+app.get("/api/img/character/banner/:imageName", async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/bannerCharacter/banner-${imageName}.png`;
   await fetchImageFromCDN(imageUrl, res);
 });
 
 // Mendapatkan data gambar sprite1 character
-app.get('/api/img/character/sprite1/:imageName', async (req, res) => {
+app.get("/api/img/character/sprite1/:imageName", async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/spriteCharacter/sprite-${imageName}-01.png`;
   await fetchImageFromCDN(imageUrl, res);
 });
 
 // Mendapatkan data gambar sprite2 character
-app.get('/api/img/character/sprite2/:imageName', async (req, res) => {
+app.get("/api/img/character/sprite2/:imageName", async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/spriteCharacter/sprite-${imageName}-02.png`;
   await fetchImageFromCDN(imageUrl, res);
 });
 
 // Mendapatkan data gambar group circle
-app.get('/api/img/group/circle/:imageName', async (req, res) => {
+app.get("/api/img/group/circle/:imageName", async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/idolGroup/group-${imageName}-circle.png`;
   await fetchImageFromCDN(imageUrl, res);
 });
 
 // Mendapatkan data gambar cosu card
-app.get('/api/img/card/cosu/:chara/:cosuName/:cosuIndex', async (req, res) => {
+app.get("/api/img/card/cosu/:chara/:cosuName/:cosuIndex", async (req, res) => {
   const { chara, cosuName, cosuIndex } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/costumeIcon/cosu-${chara}-${cosuName}-${cosuIndex}.png`;
   await fetchImageFromCDN(imageUrl, res);
 });
 
 // Mendapatkan data gambar figure card
-app.get('/api/img/card/figureB/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/figureImageB/figure-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/figureB/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/figureImageB/figure-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar icon card
-app.get('/api/img/card/thumb/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconImage/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/thumb/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/iconImage/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar iconB card
-app.get('/api/img/card/thumbB/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconImageB/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/thumbB/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/iconImageB/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar iconE card
-app.get('/api/img/card/thumbE/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconImageE/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/thumbE/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/iconImageE/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar vertical card
-app.get('/api/img/card/vertical/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/verticalImage/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/vertical/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/verticalImage/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar verticalB card
-app.get('/api/img/card/verticalB/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/verticalImageB/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/verticalB/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/verticalImageB/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar verticalE card
-app.get('/api/img/card/verticalE/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/verticalImageE/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/verticalE/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/verticalImageE/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar source card
-app.get('/api/img/card/source/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/sourceImage/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/source/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/sourceImage/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Mendapatkan data gambar sourceE card
-app.get('/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex', async (req, res) => {
-  const { chara, initial, cosuName, cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
-  await fetchImageFromCDN(imageUrl, res);
-});
+app.get(
+  "/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex",
+  async (req, res) => {
+    const { chara, initial, cosuName, cosuIndex } = req.params;
+    const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
+    await fetchImageFromCDN(imageUrl, res);
+  }
+);
 
 // Jalankan server (hanya lokal)
 if (require.main === module) {
