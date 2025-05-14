@@ -162,7 +162,16 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
   
-  res.sendFile(imageUrl);
+  try {
+    const response = await fetch(imageUrl);
+    if (!response.ok) throw new Error("Image not found");
+
+    res.setHeader("Content-Type", "image/png");
+    response.body.pipe(res);
+  } catch (err) {
+    console.error("Failed to fetch image:", err);
+    res.status(500).send("Error retrieving image");
+  }
 });
 
 // Mendapatkan data gambar banner character
