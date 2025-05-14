@@ -145,16 +145,7 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
   const { imageExpression } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
   
-  try {
-    const response = await fetch(imageUrl);
-    if (!response.ok) throw new Error("Image not found");
-
-    res.setHeader("Content-Type", "image/webp");
-    response.body.pipe(res);
-  } catch (err) {
-    console.error("Failed to fetch image:", err);
-    res.status(500).send("Error retrieving image");
-  }
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar icon character
@@ -162,16 +153,7 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
   
-  try {
-    const response = await fetch(imageUrl);
-    if (!response.ok) throw new Error("Image not found");
-
-    res.setHeader("Content-Type", "image/png");
-    response.body.pipe(res);
-  } catch (err) {
-    console.error("Failed to fetch image:", err);
-    res.status(500).send("Error retrieving image");
-  }
+  res.sendFile(imageUrl);
 });
 
 // Mendapatkan data gambar banner character
