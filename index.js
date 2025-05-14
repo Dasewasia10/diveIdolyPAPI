@@ -143,7 +143,16 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
   console.log(`Requested image: stamp_${imageCharacter}-${imageExpression}.webp`);
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
 
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  try {
+    const response = await fetch(imageUrl);
+    const buffer = await response.buffer();
+    
+    res.setHeader('Content-Type', response.headers.get('content-type'));
+    res.setHeader('Access-Control-Allow-Origin', 'https://polaris.diveidolypapi.my.id');
+    res.send(buffer);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch image' });
+  }
 });
 
 // Mendapatkan data gambar icon character
@@ -151,7 +160,16 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
 
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  try {
+    const response = await fetch(imageUrl);
+    const buffer = await response.buffer();
+    
+    res.setHeader('Content-Type', response.headers.get('content-type'));
+    res.setHeader('Access-Control-Allow-Origin', 'https://polaris.diveidolypapi.my.id');
+    res.send(buffer);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch image' });
+  }
 });
 
 // Mendapatkan data gambar banner character
