@@ -291,6 +291,37 @@ app.get('/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex', (req, res)
   res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
+// Di server Express Anda (backend)
+app.get('/api/proxy/image', async (req, res) => {
+  const { url } = req.query;
+  
+  if (!url) {
+    return res.status(400).json({ error: 'URL parameter is required' });
+  }
+
+  try {
+    const response = await fetch(url.toString(), {
+      headers: {
+        'Origin': 'https://polaris.diveidolypapi.my.id' // Sesuaikan dengan domain Anda
+      }
+    });
+    
+    const contentType = response.headers.get('content-type');
+    const buffer = await response.buffer();
+    
+    res.set({
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': contentType || 'image/png',
+      'Cache-Control': 'public, max-age=86400'
+    });
+    
+    res.send(buffer);
+  } catch (error) {
+    console.error('Proxy error:', error);
+    res.status(500).json({ error: 'Failed to fetch image' });
+  }
+});
+
 // Jalankan server (hanya lokal)
 if (require.main === module) {
   app.listen(PORT, () => {
