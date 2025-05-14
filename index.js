@@ -139,16 +139,20 @@ app.get("/api/stamps/:name", (req, res) => {
 
 // Endpoint untuk gambar stamp
 app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
-  const { imageCharacter } = req.params;
-  const { imageExpression } = req.params;
+  const { imageCharacter, imageExpression } = req.params;
   console.log(`Requested image: stamp_${imageCharacter}-${imageExpression}.webp`);
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  res.sendFile(imageUrl, (err) => {
-    if (err) {
-      console.error("Error sending file:", err);
-      res.status(500).send("Internal Server Error");
-    }
-  });
+  
+  try {
+    const response = await fetch(imageUrl);
+    if (!response.ok) throw new Error("Image not found");
+
+    res.setHeader("Content-Type", "image/webp");
+    response.body.pipe(res);
+  } catch (err) {
+    console.error("Failed to fetch image:", err);
+    res.status(500).send("Error retrieving image");
+  }
 });
 
 // Mendapatkan data gambar icon character
