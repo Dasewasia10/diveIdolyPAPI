@@ -1,6 +1,5 @@
 import express, { json } from "express";
 import cors from "cors"; // Import cors
-import fetch from 'node-fetch'; // Pastikan package ini terinstall
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -152,33 +151,7 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
   
-  try {
-    const response = await fetch(imageUrl);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch image: ${response.statusText}`);
-    }
-    
-    // Salin header yang relevan dari response asli
-    const headers = {
-      'Content-Type': response.headers.get('content-type'),
-      'Cache-Control': response.headers.get('cache-control') || 'public, max-age=86400',
-      'Access-Control-Allow-Origin': 'https://polaris.diveidolypapi.my.id',
-      'Access-Control-Allow-Methods': 'GET'
-    };
-    
-    // Set header
-    res.set(headers);
-    
-    // Stream data langsung ke client
-    response.body.pipe(res);
-  } catch (error) {
-    console.error('Proxy error:', error);
-    res.status(500).json({ 
-      error: "Failed to fetch image",
-      details: error.message 
-    });
-  }
+  res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
 // Mendapatkan data gambar banner character
