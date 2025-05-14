@@ -28,7 +28,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// Fungsi helper untuk mengambil gambar dari CDN
+// Fungsi helper untuk fetch gambar
 async function fetchImageFromCDN(url, res) {
   try {
     const response = await fetch(url);
@@ -37,14 +37,18 @@ async function fetchImageFromCDN(url, res) {
       throw new Error(`Failed to fetch image: ${response.statusText}`);
     }
     
-    // Set header dari response asli
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', corsOptions.origin.join(', '));
+    res.setHeader('Access-Control-Allow-Methods', corsOptions.methods);
+    
+    // Copy headers from CDN response
     const contentType = response.headers.get('content-type');
     const contentLength = response.headers.get('content-length');
     
     if (contentType) res.setHeader('Content-Type', contentType);
     if (contentLength) res.setHeader('Content-Length', contentLength);
     
-    // Stream data langsung ke client
+    // Stream data
     response.body.pipe(res);
   } catch (error) {
     console.error('Error fetching image:', error);
