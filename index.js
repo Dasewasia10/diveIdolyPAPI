@@ -148,19 +148,20 @@ const generateImageUrl = (basePath, ...params) => {
 // Stamp image endpoint
 app.get("/api/img/stamps/:character/:expression", async (req, res) => {
   const { character, expression } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${character.toLowerCase()}-${expression.toLowerCase()}.webp`;
+  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${character}-${expression}.webp`;
   
-  try {
-    // Cek apakah gambar ada
-    const response = await fetch(imageUrl, { method: 'HEAD' });
-    if (response.ok) {
-      res.set('Cache-Control', 'public, max-age=31536000');
-      res.redirect(301, imageUrl);
-    } else {
-      res.status(404).send('Stamp not found');
-    }
-  } catch (error) {
-    res.status(500).send('Error checking image');
+  // Cek HEAD request dulu
+  const headResponse = await fetch(imageUrl, { method: 'HEAD' });
+  
+  if (headResponse.ok) {
+    // Jika ada, redirect dengan CORS headers
+    res.set({
+      'Access-Control-Allow-Origin': '*',
+      'Cache-Control': 'public, max-age=31536000'
+    });
+    res.redirect(302, imageUrl);
+  } else {
+    res.status(404).send('Stamp not found');
   }
 });
 
