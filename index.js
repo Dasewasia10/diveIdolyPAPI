@@ -143,7 +143,12 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
   const { imageExpression } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  // Tambahkan CORS headers sebelum redirect
+  res.set({
+    'Access-Control-Allow-Origin': 'https://polaris.diveidolypapi.my.id',
+    'Access-Control-Allow-Methods': 'GET'
+  });
+  res.redirect(301, imageUrl);
 });
 
 // Mendapatkan data gambar icon character
@@ -151,7 +156,12 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
   const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
   
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
+  // Tambahkan CORS headers sebelum redirect
+  res.set({
+    'Access-Control-Allow-Origin': 'https://polaris.diveidolypapi.my.id',
+    'Access-Control-Allow-Methods': 'GET'
+  });
+  res.redirect(301, imageUrl);
 });
 
 // Mendapatkan data gambar banner character
