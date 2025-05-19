@@ -145,7 +145,7 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
   
   // Tambahkan CORS headers sebelum redirect
   res.set({
-    'Access-Control-Allow-Origin': 'https://polaris.diveidolypapi.my.id',
+    "Access-Control-Allow-Origin": "*",
     'Access-Control-Allow-Methods': 'GET'
   });
   res.redirect(301, imageUrl);
@@ -158,7 +158,7 @@ app.get('/api/img/character/icon/:imageName', async (req, res) => {
   
   // Tambahkan CORS headers sebelum redirect
   res.set({
-    'Access-Control-Allow-Origin': 'https://polaris.diveidolypapi.my.id',
+    "Access-Control-Allow-Origin": "*",
     'Access-Control-Allow-Methods': 'GET'
   });
   res.redirect(301, imageUrl);
