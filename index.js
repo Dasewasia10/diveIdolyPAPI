@@ -137,43 +137,21 @@ app.get("/api/stamps/:name", (req, res) => {
     : res.status(404).json({ error: "Stamp not found" });
 });
 
-// Utility function for image URLs
-const generateImageUrl = (basePath, ...params) => {
-  const formattedParams = params.map(p => 
-    p.toLowerCase().replace(/\s+/g, "")
-  );
-  return `https://api.diveidolypapi.my.id/${basePath}/${formattedParams.join('-')}`;
-};
-
-// Stamp image endpoint
-app.get("/api/img/stamps/:character/:expression", async (req, res) => {
-  const { character, expression } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${character}-${expression}.webp`;
+// Endpoint untuk gambar stamp
+app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
+  const { imageCharacter } = req.params;
+  const { imageExpression } = req.params;
+  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
   
-  // Cek HEAD request dulu
-  const headResponse = await fetch(imageUrl, { method: 'HEAD' });
-  
-  if (headResponse.ok) {
-    // Jika ada, redirect dengan CORS headers
-    res.set({
-      'Access-Control-Allow-Origin': '*',
-      'Cache-Control': 'public, max-age=31536000'
-    });
-    res.redirect(302, imageUrl);
-  } else {
-    res.status(404).send('Stamp not found');
-  }
+  res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
-// Character icon endpoint
-app.get("/api/img/character/icon/:name", (req, res) => {
-  const { name } = req.params;
-  const imageUrl = generateImageUrl(
-    "iconCharacter",
-    `chara`,
-    name
-  ) + ".png";
-  res.redirect(301, imageUrl);
+// Mendapatkan data gambar icon character
+app.get('/api/img/character/icon/:imageName', async (req, res) => {
+  const { imageName } = req.params;
+  const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
+  
+  res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
 // Mendapatkan data gambar banner character
