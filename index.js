@@ -146,14 +146,22 @@ const generateImageUrl = (basePath, ...params) => {
 };
 
 // Stamp image endpoint
-app.get("/api/img/stamps/:character/:expression", (req, res) => {
+app.get("/api/img/stamps/:character/:expression", async (req, res) => {
   const { character, expression } = req.params;
-  const imageUrl = generateImageUrl(
-    "stampChat",
-    `stamp_${character}`,
-    expression
-  ) + ".webp";
-  res.redirect(301, imageUrl);
+  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${character.toLowerCase()}-${expression.toLowerCase()}.webp`;
+  
+  try {
+    // Cek apakah gambar ada
+    const response = await fetch(imageUrl, { method: 'HEAD' });
+    if (response.ok) {
+      res.set('Cache-Control', 'public, max-age=31536000');
+      res.redirect(301, imageUrl);
+    } else {
+      res.status(404).send('Stamp not found');
+    }
+  } catch (error) {
+    res.status(500).send('Error checking image');
+  }
 });
 
 // Character icon endpoint
