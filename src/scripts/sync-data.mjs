@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 // --- KONFIGURASI ---
 // 1. URL R2 Base (Root Domain)
-const R2_DOMAIN = "https://pub-7d42172645514f5eb523da447a6bbf58.r2.dev"; 
+const R2_DOMAIN = "https://api.diveidolypapi.my.id"; 
 
 // 2. URL GitHub (Perhatikan Case Sensitive!)
 const BASE_URL = "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/main";
@@ -205,7 +205,6 @@ async function main() {
         
         source: {
             initialImage: iconUrl,
-            color: typeSkill === "SP" ? "rainbow" : (typeSkill === "P" ? "yellow" : "blue")
         }
       };
     };
