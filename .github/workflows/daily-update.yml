@@ -1,0 +1,36 @@
+name: Update Data from Master
+
+# Kapan robot ini bekerja?
+on:
+  schedule:
+    # Jalan setiap jam 00:00 UTC (sekitar jam 7 pagi WIB)
+    - cron: '0 0 * * *'
+  # Agar bisa dijalankan manual tombol klik buat ngetes
+  workflow_dispatch:
+
+permissions:
+  contents: write # Robot butuh izin nulis ke repo
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo kamu
+      uses: actions/checkout@v3
+
+    - name: Siapkan Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Jalankan Script Sync
+      run: node scripts/sync-data.js
+
+    - name: Commit dan Push jika ada perubahan
+      run: |
+        git config --global user.name 'GitHub Action Bot'
+        git config --global user.email 'action@github.com'
+        git add .
+        # Cek apakah ada perubahan, kalau tidak ada, jangan commit
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Sinkronisasi data dari MalitsPlus" && git push)
