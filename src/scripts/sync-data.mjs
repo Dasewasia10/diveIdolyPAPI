@@ -13,6 +13,219 @@ const BASE_URL = "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/m
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// --- TRANSLATION SYSTEM V2 ---
+
+// 1. KAMUS KATA (KEYWORDS)
+// Digunakan untuk mengganti kata benda/sifat spesifik setelah pola kalimat diproses
+const KEYWORDS = {
+  // Roles & Types
+  "スコアラータイプ": { en: "Scorer Type", id: "Tipe Scorer" },
+  "バッファータイプ": { en: "Buffer Type", id: "Tipe Buffer" },
+  "サポータータイプ": { en: "Supporter Type", id: "Tipe Supporter" },
+  "ダンスタイプ": { en: "Dance Type", id: "Tipe Dance" },
+  "ボーカルタイプ": { en: "Vocal Type", id: "Tipe Vocal" },
+  "ビジュアルタイプ": { en: "Visual Type", id: "Tipe Visual" },
+  "スコアラー": { en: "Scorer", id: "Scorer" },
+  "バッファー": { en: "Buffer", id: "Buffer" },
+  "サポーター": { en: "Supporter", id: "Supporter" },
+  "センター": { en: "Center", id: "Center" },
+
+  // Targets (Advanced)
+  "自身": { en: "Self", id: "Diri Sendiri" },
+  "全員": { en: "All", id: "Semua" },
+  "隣接するアイドル": { en: "Neighbors", id: "Idol Sebelah" },
+  "隣接アイドル": { en: "Neighbors", id: "Idol Sebelah" },
+  "スタミナが低い": { en: "Lowest Stamina", id: "Stamina Terendah" },
+  "同じレーンの相手": { en: "Opponent in same lane", id: "Lawan di lane sama" },
+  "相手": { en: "Opponent", id: "Lawan" },
+  "人": { en: " allies", id: " orang" }, // Counter suffix
+
+  // Stats
+  "ボーカル": { en: "Vocal", id: "Vokal" },
+  "ダンス": { en: "Dance", id: "Dance" },
+  "ビジュアル": { en: "Visual", id: "Visual" },
+  "スタミナ": { en: "Stamina", id: "Stamina" },
+  "スコア": { en: "Score", id: "Skor" },
+  "クリティカル率": { en: "Crit Rate", id: "Rate Critical" },
+  "クリティカル係数": { en: "Crit Damage", id: "Damage Critical" },
+  "スキル成功率": { en: "Skill Success Rate", id: "Rate Sukses Skill" },
+  
+  // Buffs/Effects
+  "集目": { en: "Focus", id: "Fokus" },
+  "テンションUP": { en: "Tension Up", id: "Tension Up" },
+  "ステルス": { en: "Stealth", id: "Stealth" },
+  "不調": { en: "Slump", id: "Slump" },
+  "強化効果": { en: "Buffs", id: "Buff" },
+  "低下効果": { en: "Debuffs", id: "Debuff" },
+  "コンボ継続": { en: "Combo Continuation", id: "Kelanjutan Kombo" },
+  "ブースト": { en: "Boost", id: "Boost" },
+  
+  // Actions/Logic
+  "上昇": { en: "Up", id: "Naik" },
+  "低下": { en: "Down", id: "Turun" },
+  "回復": { en: "Recover", id: "Pulihkan" },
+  "消費": { en: "Consume", id: "Konsumsi" },
+  "削減": { en: "Reduce", id: "Kurangi" },
+  "延長": { en: "Extend", id: "Perpanjang" },
+  "増強": { en: "Enhance", id: "Perkuat" },
+  "リセット": { en: "Reset", id: "Reset" },
+  "上限解放": { en: "Limit Break", id: "Limit Break" },
+  "追加": { en: "Add", id: "Tambah" },
+  "獲得": { en: "Gain", id: "Dpt" },
+  
+  // Misc
+  "プロモーション": { en: "Promotion", id: "Promosi" },
+  "マネージャー経験値": { en: "Manager Exp", id: "Exp Manajer" },
+  "コイン": { en: "Coin", id: "Koin" },
+  "アクセサリ": { en: "Accessory", id: "Aksesoris" },
+  "ライブ中1回のみ": { en: "Once per Live", id: "1x per Live" },
+};
+
+// 2. POLA KALIMAT (PATTERNS)
+// Regex canggih untuk menangkap struktur kalimat
+const PATTERNS = [
+  // --- SCORING ---
+  // 460%のスコア獲得 -> Gain 460% Score
+  {
+    regex: /(\d+)%のスコア獲得/,
+    en: "Gain $1% Score",
+    id: "Perolehan Skor $1%"
+  },
+  // Condition Scaling: ...が多い程効果上昇 -> effect increases the more ...
+  {
+    regex: /、(.+)が多い程効果上昇/,
+    en: ", effect increases the more $1",
+    id: ", efek meningkat seiring banyaknya $1"
+  },
+  {
+    regex: /、(.+)が少ない程効果上昇/,
+    en: ", effect increases the less $1",
+    id: ", efek meningkat semakin sedikit $1"
+  },
+
+  // --- BUFFS & DEBUFFS ---
+  // Pattern: [Target] ni [Amount] dankai [Effect] kouka [Duration]
+  // 自身に4段階クリティカル率上昇効果[40ビート] -> Grants 4 levels of Crit Rate Up to Self [40 Beats]
+  {
+    regex: /(.+)に(\d+)段階(.+)効果\[(\d+)ビート\]/,
+    en: "Grants $2 lvls of $3 to $1 [$4 Beats]",
+    id: "Memberi $1 $3 $2 tingkat [$4 Beat]"
+  },
+  // Same but no duration
+  {
+    regex: /(.+)に(\d+)段階(.+)効果/,
+    en: "Grants $2 lvls of $3 to $1",
+    id: "Memberi $1 $3 $2 tingkat"
+  },
+  // Target's Stat Up/Down: [Target] no [Stat] [Amount] dankai [Action]
+  // 全員のダンス3段階上昇 -> Raises All's Dance by 3 levels
+  {
+    regex: /(.+)の(.+)(\d+)段階(上昇|低下)/,
+    en: "$4 $1's $2 by $3 lvls",
+    id: "$4 $2 $1 sbsr $3 tkt"
+  },
+
+  // --- RECOVERY & CT ---
+  // Stamina Recovery: [Target] no Stamina wo [Amount] kaifuku
+  {
+    regex: /(.+)のスタミナを(\d+)回復/,
+    en: "Recover $2 Stamina to $1",
+    id: "Pulihkan $2 Stamina kpd $1"
+  },
+  // CT Reduction: [Target] no CT wo [Amount] sakugen
+  {
+    regex: /(.+)のCTを(\d+)(削減|減少)/,
+    en: "Reduce $1's CT by $2",
+    id: "Kurangi CT $1 sbyk $2"
+  },
+  
+  // --- CONDITIONS ---
+  // Lane Condition: [Self] ga [Type] lane no toki
+  {
+    regex: /自身が(.+)レーンの時/,
+    en: "When Self is in $1 Lane",
+    id: "Saat Diri Sendiri di Lane $1"
+  },
+  // Stat Condition: Stamina 80% ijou no toki
+  {
+    regex: /スタミナ(\d+)%以上の時/,
+    en: "When Stamina is $1% or more",
+    id: "Saat Stamina $1% atau lebih"
+  },
+  {
+    regex: /スタミナ(\d+)%以下の時/,
+    en: "When Stamina is $1% or less",
+    id: "Saat Stamina $1% atau kurang"
+  },
+  // Combo Condition: 80 combo ijou ji
+  {
+    regex: /(\d+)コンボ以上時/,
+    en: "When Combo is $1 or more",
+    id: "Saat Kombo $1 atau lebih"
+  },
+  // Critical Condition
+  {
+    regex: /クリティカル発動時/,
+    en: "On Critical Hit",
+    id: "Saat Critical aktif"
+  },
+  // Live Battle Only
+  {
+    regex: /\[ライブバトルのみ\]/,
+    en: "[Live Battle Only]",
+    id: "[Khusus Live Battle]"
+  },
+
+  // --- OTHERS ---
+  // Yell/Passive: [Type] up [Amount]%
+  {
+    regex: /(.+)(\d+\.\d+)%上昇/,
+    en: "$1 Up $2%",
+    id: "$1 Naik $2%"
+  },
+  // Beat Duration: [40 beat]
+  {
+    regex: /\[(\d+)ビート\]/,
+    en: "[$1 Beats]",
+    id: "[$1 Beat]"
+  }
+];
+
+const translateText = (text, lang) => {
+  if (!text) return "";
+  // Jika bahasa jepang, kembalikan aslinya
+  if (lang === 'japanese') return text;
+
+  let translated = text;
+
+  // 1. PHASE 1: Pattern Replacement
+  PATTERNS.forEach(pat => {
+      // Kita lakukan replace berulang kali jika ada multiple sentences
+      // Menggunakan callback function di replace untuk menangkap grup regex ($1, $2, dst)
+      translated = translated.replace(new RegExp(pat.regex, 'g'), (match, ...args) => {
+          let template = pat[lang];
+          // Ganti $1, $2, dst dengan hasil capture
+          // args berisi [capture1, capture2, ..., offset, string]
+          for (let i = 0; i < args.length - 2; i++) {
+              template = template.replace(`$${i + 1}`, args[i]);
+          }
+          return template;
+      });
+  });
+
+  // 2. PHASE 2: Keyword Replacement
+  Object.keys(KEYWORDS).forEach(jpKey => {
+      const targetWord = KEYWORDS[jpKey][lang] || KEYWORDS[jpKey]['en']; 
+      // Replace All secara aman
+      translated = translated.split(jpKey).join(targetWord);
+  });
+
+  // 3. Cleanup (Spasi berlebih, tanda baca aneh)
+  translated = translated.replace(/\s+/g, ' ').trim();
+  
+  return translated;
+};
+
 // --- MAPPING ICON SKILL (NORMAL) ---
 // Mencocokkan 'type' dari SkillEfficacy.json ke nama file di skill_names.txt
 const ICON_MAP = {
@@ -111,12 +324,12 @@ const GLOSSARY = [
   { jp: /一日署長/g, en: "Police Chief", id: "Kepala Polisi" },
 ];
 
-const translateText = (text, lang) => {
-  if (!text) return "";
-  let translated = text;
-  GLOSSARY.forEach(entry => { translated = translated.replace(entry.jp, entry[lang]); });
-  return translated.replace(/\s+/g, ' ').trim().replace(/\[ /g, '[').replace(/ \]/g, ']');
-};
+// const translateText = (text, lang) => {
+//   if (!text) return "";
+//   let translated = text;
+//   GLOSSARY.forEach(entry => { translated = translated.replace(entry.jp, entry[lang]); });
+//   return translated.replace(/\s+/g, ' ').trim().replace(/\[ /g, '[').replace(/ \]/g, ']');
+// };
 
 // --- MAPPERS ---
 const charIdToName = {
