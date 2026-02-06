@@ -108,15 +108,16 @@ async function main() {
 
   try {
     // FIX: Menggunakan CamelCase (Huruf Besar Awal) agar sesuai dengan repo GitHub
-    const [cardsRes, skillsRes, paramsRes, rarityRes, abilityRes, efficacyRes, costumeRes, costumeTypeRes] = await Promise.all([
+    const [cardsRes, skillsRes, paramsRes, rarityRes, abilityRes, actAbilityRes , efficacyRes, costumeRes, costumeTypeRes] = await Promise.all([
       fetch(`${BASE_URL}/Card.json`),
       fetch(`${BASE_URL}/Skill.json`),
       fetch(`${BASE_URL}/CardParameter.json`),
       fetch(`${BASE_URL}/CardRarity.json`),
       fetch(`${BASE_URL}/LiveAbility.json`),
+      fetch(`${BASE_URL}/ActivityAbility.json`),
       fetch(`${BASE_URL}/SkillEfficacy.json`),
-      fetch(`${BASE_URL}/Costume.json`),      // DATA BARU
-      fetch(`${BASE_URL}/CostumeType.json`)   // DATA BARU
+      fetch(`${BASE_URL}/Costume.json`),      
+      fetch(`${BASE_URL}/CostumeType.json`)   
     ]);
 
     // Cek status response sebelum parse
@@ -127,6 +128,7 @@ async function main() {
     const paramsRaw = await paramsRes.json();
     const rarityRaw = await rarityRes.json();
     const abilitiesRaw = await abilityRes.json();
+    const actAbilitiesRaw = await actAbilityRes.json();
     const efficacyRaw = await efficacyRes.json();
     const costumeRaw = await costumeRes.json();
     const costumeTypeRaw = await costumeTypeRes.json();
@@ -145,6 +147,10 @@ async function main() {
 
     const abilityMap = {};
     abilitiesRaw.forEach(a => { abilityMap[a.id] = a; });
+
+    // INDEXING ActivityAbility (NEW)
+    const actAbilityMap = {};
+    actAbilitiesRaw.forEach(a => { actAbilityMap[a.id] = a; });
 
     const efficacyMap = {};
     efficacyRaw.forEach(e => { efficacyMap[e.id] = e; });
@@ -209,14 +215,30 @@ async function main() {
       };
     };
 
-    const processYell = (liveAbilityId) => {
-      if (!liveAbilityId) return undefined;
-      const abilityData = abilityMap[liveAbilityId];
+    const processYell = (liveAbilityId, activityAbilityId) => {
+      let abilityData = null;
+      
+      if (liveAbilityId && abilityMap[liveAbilityId]) {
+          abilityData = abilityMap[liveAbilityId];
+      } 
+      else if (activityAbilityId && actAbilityMap[activityAbilityId]) {
+          abilityData = actAbilityMap[activityAbilityId];
+      }
+
       if (!abilityData) return undefined;
+
       const levelData = abilityData.levels[abilityData.levels.length - 1];
       const desc = levelData ? levelData.description : abilityData.description;
       
-      // FIX: Menambahkan folder /iconSkillYell/
+      // FIX: Mapping ID Data -> ID Gambar
+      // aab-xxx -> act-xxx
+      // lba-xxx -> live-xxx
+      let imageId = abilityData.id;
+      imageId = imageId.replace("aab-", "act-");
+      imageId = imageId.replace("lba-", "live-");
+
+      const imageName = `img_icon_yell_${imageId}.png`;
+
       return {
         name: { 
             japanese: abilityData.name, 
@@ -229,7 +251,7 @@ async function main() {
             indo: translateText(desc, 'id') 
         },
         source: {
-             initialImage: `${R2_DOMAIN}/iconSkillYell/img_icon_yell_${abilityData.id}.png`
+             initialImage: `${R2_DOMAIN}/iconSkillYell/${imageName}`
         }
       };
     };
@@ -341,7 +363,8 @@ async function main() {
             skillTwo: processSkill(card.skillId2),
             skillThree: processSkill(card.skillId3),
             skillFour: processSkill(card.skillId4),
-            yell: processYell(card.liveAbilityId),
+            
+            yell: processYell(card.liveAbilityId, card.activityAbilityId),
 
             images: images
         });
