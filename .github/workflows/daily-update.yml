@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # Robot butuh izin nulis ke repo
+  contents: write 
 
 jobs:
   update-data:
@@ -25,7 +25,7 @@ jobs:
         node-version: '18'
 
     - name: Jalankan Script Sync
-      run: node scripts/sync-data.js
+      run: node src/scripts/sync-data.mjs
 
     - name: Commit dan Push jika ada perubahan
       run: |
