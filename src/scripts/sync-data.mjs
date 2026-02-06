@@ -13,6 +13,54 @@ const BASE_URL = "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/m
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// --- MAPPING ICON SKILL (NORMAL) ---
+// Mencocokkan 'type' dari SkillEfficacy.json ke nama file di skill_names.txt
+const ICON_MAP = {
+    // Basic Status Up
+    1: "score-up",
+    2: "vocal-up",
+    3: "dance-up",
+    4: "visual-up",
+    5: "stamina-recovery", 
+    6: "critical-rate-up",
+    7: "critical-score-up", // Atau critical-coefficient-up
+    8: "draw-critical-rate-up", // Sepertinya visual higher
+    9: "beat-score-up",
+    
+    // Status Down
+    11: "vocal-down",
+    12: "dance-down",
+    13: "visual-down",
+    15: "stamina-consumption-increase",
+
+    // Special & Active Buffs
+    19: "active-skill-score-up",
+    20: "special-skill-score-up",
+    21: "a-skill-level-up", // Assumption
+    27: "combo-score-up",
+    28: "tension-up",
+    29: "focus", // Shuumoku
+    30: "stealth",
+    31: "mental-up", // Spirit/Mental
+    32: "stamina-consumption-reduction",
+    33: "ct-reduction",
+    34: "skill-success-rate-up",
+    
+    // Complex Effects
+    45: "audience-amount-increase",
+    46: "audience-amount-reduction",
+    53: "score-multiplier-add", // SP score add
+    60: "active-score-multiplier-add",
+    64: "passive-skill-score-up",
+    
+    // Debuff Removal/Protection
+    101: "remove-buffs",
+    102: "remove-debuffs",
+    103: "protection", // Block debuff
+    107: "slump", // Fuchou
+    108: "weakness-effect-reflection"
+};
+
 // --- GLOSSARY TRANSLATE ---
 const GLOSSARY = [
   { jp: /ビート/g, en: " Beats", id: " Beat" },
@@ -179,7 +227,7 @@ async function main() {
       return { vocal, dance, visual, stamina, total: vocal + dance + visual };
     };
 
-    // --- PROSES SKILL ---
+    // --- PROSES SKILL UTAMA ---
     const processSkill = (skillId) => {
       if (!skillId) return undefined;
       const skillData = skillsRaw.find(s => s.id === skillId);
@@ -188,10 +236,30 @@ async function main() {
       if (!levelData) return undefined;
 
       const typeSkill = mapSkillType(skillData.categoryType);
-
-      // Gunakan assetId untuk icon skill agar unik
-      // FIX: Menambahkan folder /iconSkillYell/
-      const iconUrl = `${R2_DOMAIN}/iconSkillYell/img_icon_skill_${skillData.assetId}.png`;
+      
+      let iconUrl = "";
+      
+      // LOGIKA PENAMAAN FILE ICON
+      if (typeSkill === "SP") {
+          // SP biasanya punya icon unik (sesuai Asset ID)
+          iconUrl = `${R2_DOMAIN}/iconSkillYell/img_icon_skill_${skillData.assetId}.png`;
+      } else {
+          // Skill A & P biasanya menggunakan icon generik berdasarkan Efficacy (Efek)
+          let suffix = "unknown";
+          
+          // Ambil Efficacy pertama
+          if (levelData.skillDetails && levelData.skillDetails.length > 0) {
+              const effId = levelData.skillDetails[0].efficacyId;
+              const effData = efficacyMap[effId];
+              
+              if (effData && ICON_MAP[effData.type]) {
+                  suffix = ICON_MAP[effData.type];
+              }
+          }
+          
+          // Format: img_icon_skill-normal_[SUFFIX].png
+          iconUrl = `${R2_DOMAIN}/iconSkillYell/img_icon_skill-normal_${suffix}.png`;
+      }
 
       return {
         typeSkill: typeSkill,
@@ -211,6 +279,10 @@ async function main() {
         
         source: {
             initialImage: iconUrl,
+            // Untuk sekarang biarkan undefined, karena aset gambarnya sepertinya sudah digabung
+            topRightImage: undefined, 
+            bottomRightImage: undefined,
+            color: typeSkill === "SP" ? "rainbow" : (typeSkill === "P" ? "yellow" : "blue")
         }
       };
     };
