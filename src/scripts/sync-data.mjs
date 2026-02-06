@@ -51,7 +51,16 @@ const GLOSSARY = [
   { jp: /以下/g, en: " or less ", id: " atau kurang " },
   { jp: /成功率/g, en: "Success Rate", id: "Rate Sukses" },
   { jp: /上昇/g, en: " Up", id: " Naik" }, 
-  { jp: /効果/g, en: " Effect", id: " Efek" }
+  { jp: /効果/g, en: " Effect", id: " Efek" },
+  
+  // --- GLOSSARY KOSTUM BARU ---
+  { jp: /私服/g, en: "Casual", id: "Kasual" },
+  { jp: /アイドル衣装/g, en: "Idol Outfit", id: "Kostum Idol" },
+  { jp: /水着/g, en: "Swimsuit", id: "Baju Renang" },
+  { jp: /パジャマ/g, en: "Pajamas", id: "Piyama" },
+  { jp: /制服/g, en: "School Uniform", id: "Seragam Sekolah" },
+  { jp: /親善大使/g, en: "Ambassador", id: "Duta Persahabatan" },
+  { jp: /一日署長/g, en: "Police Chief", id: "Kepala Polisi" },
 ];
 
 const translateText = (text, lang) => {
@@ -99,13 +108,15 @@ async function main() {
 
   try {
     // FIX: Menggunakan CamelCase (Huruf Besar Awal) agar sesuai dengan repo GitHub
-    const [cardsRes, skillsRes, paramsRes, rarityRes, abilityRes, efficacyRes] = await Promise.all([
+    const [cardsRes, skillsRes, paramsRes, rarityRes, abilityRes, efficacyRes, costumeRes, costumeTypeRes] = await Promise.all([
       fetch(`${BASE_URL}/Card.json`),
       fetch(`${BASE_URL}/Skill.json`),
       fetch(`${BASE_URL}/CardParameter.json`),
       fetch(`${BASE_URL}/CardRarity.json`),
       fetch(`${BASE_URL}/LiveAbility.json`),
-      fetch(`${BASE_URL}/SkillEfficacy.json`)
+      fetch(`${BASE_URL}/SkillEfficacy.json`),
+      fetch(`${BASE_URL}/Costume.json`),      // DATA BARU
+      fetch(`${BASE_URL}/CostumeType.json`)   // DATA BARU
     ]);
 
     // Cek status response sebelum parse
@@ -117,6 +128,8 @@ async function main() {
     const rarityRaw = await rarityRes.json();
     const abilitiesRaw = await abilityRes.json();
     const efficacyRaw = await efficacyRes.json();
+    const costumeRaw = await costumeRes.json();
+    const costumeTypeRaw = await costumeTypeRes.json();
 
     // Indexing
     const paramMap = {};
@@ -135,6 +148,14 @@ async function main() {
 
     const efficacyMap = {};
     efficacyRaw.forEach(e => { efficacyMap[e.id] = e; });
+
+    // Indexing Costume (NEW)
+    const costumeMap = {};
+    costumeRaw.forEach(c => { costumeMap[c.id] = c; });
+
+    // Indexing Costume Type (NEW)
+    const costumeTypeMap = {};
+    costumeTypeRaw.forEach(t => { costumeTypeMap[t.id] = t.name; });
 
     const calculateStats = (card) => {
       const rarityData = rarityMap[card.initialRarity];
@@ -164,7 +185,7 @@ async function main() {
 
       // Gunakan assetId untuk icon skill agar unik
       // FIX: Menambahkan folder /iconSkillYell/
-      const iconUrl = `${R2_DOMAIN}/iconSkillYell/img_skill_icon_${skillData.assetId}.png`;
+      const iconUrl = `${R2_DOMAIN}/iconSkillYell/img_icon_skill_${skillData.assetId}.png`;
 
       return {
         typeSkill: typeSkill,
@@ -209,7 +230,7 @@ async function main() {
             indo: translateText(desc, 'id') 
         },
         source: {
-             initialImage: `${R2_DOMAIN}/iconSkillYell/img_yell_icon_${abilityData.id}.png`
+             initialImage: `${R2_DOMAIN}/iconSkillYell/img_icon_yell_${abilityData.id}.png`
         }
       };
     };
@@ -217,6 +238,7 @@ async function main() {
     const groupedData = {};
 
     cardsRaw.forEach(card => {
+        // Filter Rarity 1 jika tidak diperlukan (Rarity 1 biasanya cuma material/xp)
         if (card.initialRarity < 2) return; 
 
         const charName = charIdToName[card.characterId] || "Other";
@@ -228,20 +250,66 @@ async function main() {
         const assetId = card.assetId;
         const rarity = card.initialRarity;
         
-        // Logika Link Card / Evolved
+        // --- LOGIKA INDEKS GAMBAR (REVISI) ---
+        // Link Card ditandai dengan "link" di ID DAN punya skill 4
         const isLinkCard = assetId.includes("link") && card.skillId4 !== "";
-        const hasEvolvedArt = (rarity === 3 || rarity === 4) || (rarity === 5 && isLinkCard);
+        
+        let baseIndex = 1;      // Default index untuk Base Art
+        let evolvedIndex = null; // Default index untuk Evolved Art (null jika tidak ada)
 
-        // FIX: Folder cards (asumsi gambar kartu ada di /cards/)
+        if (rarity < 5) {
+            // KASUS 1: Rarity 2, 3, 4
+            // Base = 0, Evolved = 1
+            baseIndex = 0;
+            evolvedIndex = 1;
+        } else if (rarity === 5 && isLinkCard) {
+            // KASUS 2: Rarity 5 Link/Awakening
+            // Base = 1, Evolved = 2
+            baseIndex = 1;
+            evolvedIndex = 2;
+        } else {
+            // KASUS 3: Rarity 5 Standard (Fes/Regular)
+            // Base = 1, Tidak ada Evolved Art
+            baseIndex = 1;
+            evolvedIndex = null;
+        }
+
+        const hasEvolvedArt = evolvedIndex !== null;
         const R2_CARDS = `${R2_DOMAIN}/cards`;
+        const R2_COSTUMES = `${R2_DOMAIN}/costumeIcon`;
+
+        // --- LOGIKA KOSTUM ---
+        let costumeTheme = "Idol Outfit";
+        let costumeImageUrl = null;
+
+        // Cari data kostum berdasarkan rewardCostumeId di Card.json
+        if (card.rewardCostumeId) {
+            const costumeData = costumeMap[card.rewardCostumeId];
+            if (costumeData) {
+                // 1. Tentukan Nama Tema (Casual, Swimsuit, dll)
+                const typeNameJp = costumeTypeMap[costumeData.costumeTypeId];
+                if (typeNameJp) {
+                    costumeTheme = translateText(typeNameJp, 'en'); // Default ke Inggris
+                }
+
+                // 2. Generate Link Gambar Kostum
+                // Format asumsi: img_costume_[bodyAssetId].png
+                // Contoh bodyAssetId: "ai-anni-00"
+                costumeImageUrl = `${R2_COSTUMES}/img_cos_thumb_${costumeData.bodyAssetId}.png`;
+            }
+        }
 
         const images = {
-            icon: `${R2_CARDS}/img_card_thumb_1_${assetId}.png`,
-            fullNormal: `${R2_CARDS}/img_card_full_1_${assetId}.png`,
-            upperNormal: `${R2_CARDS}/img_card_upper_1_${assetId}.png`,
+            // Perhatikan ekstensi file: thumb/upper = .png, full = .webp
+            icon: `${R2_CARDS}/img_card_thumb_${baseIndex}_${assetId}.png`,
+            fullNormal: `${R2_CARDS}/img_card_full_${baseIndex}_${assetId}.webp`,
+            upperNormal: `${R2_CARDS}/img_card_upper_${baseIndex}_${assetId}.png`,
             
-            fullEvolved: hasEvolvedArt ? `${R2_CARDS}/img_card_full_2_${assetId}.png` : null,
-            upperEvolved: hasEvolvedArt ? `${R2_CARDS}/img_card_upper_2_${assetId}.png` : null
+            // Link Evolved (jika ada)
+            fullEvolved: hasEvolvedArt ? `${R2_CARDS}/img_card_full_${evolvedIndex}_${assetId}.webp` : null,
+            upperEvolved: hasEvolvedArt ? `${R2_CARDS}/img_card_upper_${evolvedIndex}_${assetId}.png` : null,
+            
+            costume: costumeImageUrl
         };
 
         groupedData[charName].data.push({
@@ -259,7 +327,7 @@ async function main() {
             },
             releaseDate: formattedDate,
             category: card.initialRarity === 5 ? "Nonlimited" : "General",
-            costumeTheme: "Idol Outfit",
+            costumeTheme: costumeTheme,
             costumeIndex: 0,
             type: mapType(card.type),
             attribute: mapAttribute(card),
