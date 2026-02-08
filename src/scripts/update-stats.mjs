@@ -156,6 +156,15 @@ async function main() {
             "suz-05-seik-00",
             "smr-05-seik-00",
             "kor-05-nurs-00",
+            "ngs-05-mizg-01",
+            "hrk-05-mizg-01",
+            "rui-05-mizg-01",
+            "suz-05-mizg-01",
+            "yu-05-mizg-01",
+            "mei-05-mizg-02",
+            "ski-05-mizg-02",
+            "smr-05-mizg-01",
+
             // Tambahkan ID Permanent lainnya di sini
         ],
         "Limited": [
@@ -192,6 +201,13 @@ async function main() {
                 return categoryName;
             }
         }
+
+        // 2. CEK RARITY RENDAH (BLOCKER) [PERBAIKAN DI SINI]
+        // Jika rarity di bawah 5, langsung kembalikan "General".
+        // Ini mencegah kartu *2 tema Xmas/Wedd dianggap "Limited" Gacha.
+        if (rarity < 5) {
+            return "General";
+        }
         
         // 1. Cek Special Types (Prioritas Tinggi)
         if (assetId.includes("fes")) return "Idol Fest";
@@ -201,7 +217,7 @@ async function main() {
         
         // 2. Cek Limited Seasonal (Bisa ditambah sesuai list costume.txt)
         const limitedCodes = [
-            "xmas", "halw", "newy", "vlnt", "wedd", "mizg", "pair", "arab", "kait", "past", "chia", "seik", "adlt", "mnab", "buny", "nurs", "kiok", "akma", "alic", "ster", 
+            "xmas", "newy", "vlnt", "wedd", "mizg", "pair", "arab", "kait", "past", "chia", "seik", "adlt", "mnab", "buny", "nurs", "kiok", "akma", "alic", "ster", 
             "miku", "kion", "trbl", "hruh", "goch" // Collab
         ];
         
