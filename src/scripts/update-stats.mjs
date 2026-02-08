@@ -141,7 +141,82 @@ async function main() {
     const costumeMap = {}; costumeRaw.forEach(c => costumeMap[c.id] = c);
     const costumeTypeMap = {}; costumeTypeRaw.forEach(t => costumeTypeMap[t.id] = t.name);
 
-    
+    // --- PENGECUALIAN KATEGORI (MANUAL OVERRIDE - GROUPED) ---
+    const CATEGORY_EXCEPTIONS = {
+        "Permanent": [
+            "yu-05-wedd-01",
+            "rio-05-wedd-00",
+            "mhk-05-wedd-00",
+            "aoi-05-wedd-00",
+            "aoi-05-vlnt-00",
+            "yu-05-vlnt-00",
+            "skr-05-anml-00",
+            "rei-05-chia-00",
+            "kan-05-chia-00",
+            "suz-05-seik-00",
+            "smr-05-seik-00",
+            "kor-05-nurs-00",
+            // Tambahkan ID Permanent lainnya di sini
+        ],
+        "Limited": [
+            "suz-05-anml-00",
+            "mei-05-rock-00",
+            "ngs-05-maid-01",
+            "smr-05-pajm-00",
+            "szk-05-pajm-00",
+            "kan-05-poli-00",
+            "kor-05-poli-00",
+            "mna-05-idol-00",
+            "hrk-05-idol-03",
+            "skr-05-idol-03",
+            "kan-05-idol-00",
+            "kor-05-idol-00",
+            "mhk-05-idol-00",
+            "kan-05-idol-03",
+            "mhk-05-idol-03",
+            "rui-05-idol-04",
+            "yu-05-idol-04",
+            // Tambahkan ID yang seharusnya Limited tapi salah terdeteksi (opsional)
+        ],
+        "Event Reward": [
+            // Tambahkan ID kartu hadiah event di sini jika perlu
+        ]
+    };
+
+    const getCardCategory = (assetId, rarity) => {
+        // 0. CEK MANUAL OVERRIDE (Prioritas Tertinggi)
+        // Loop setiap kategori (Permanent, Limited, dll)
+        for (const [categoryName, idList] of Object.entries(CATEGORY_EXCEPTIONS)) {
+            // Jika ID kartu ini ada di dalam list tersebut, langsung return nama kategorinya
+            if (idList.includes(assetId)) {
+                return categoryName;
+            }
+        }
+        
+        // 1. Cek Special Types (Prioritas Tinggi)
+        if (assetId.includes("fes")) return "Idol Fest";
+        if (assetId.includes("link")) return "Kizuna";
+        if (assetId.includes("prem")) return "Premium";
+        if (assetId.includes("birt")) return "Birthday";
+        
+        // 2. Cek Limited Seasonal (Bisa ditambah sesuai list costume.txt)
+        const limitedCodes = [
+            "xmas", "halw", "newy", "vlnt", "wedd", "mizg", "pair", "arab", "kait", "past", "chia", "seik", "adlt", "mnab", "buny", "nurs", "kiok", "akma", "alic", "ster", 
+            "miku", "kion", "trbl", "hruh", "goch" // Collab
+        ];
+        
+        // Cek apakah ID mengandung salah satu kode limited
+        const isLimited = limitedCodes.some(code => assetId.includes(code));
+        if (isLimited) return "Limited";
+
+        // 3. Fallback General/Permanent
+        // Kartu bintang 5 yang tidak masuk kategori di atas biasanya Permanent
+        if (rarity === 5) return "Permanent";
+        
+        // Rarity rendah (2, 3, 4)
+        return "General"; 
+    };
+
     // --- HELPER CALCULATE STATS (Weighted Total) ---
     const calculateStats = (card) => {
         const TARGET_LEVEL = 200;
@@ -230,6 +305,8 @@ async function main() {
 
         const cachedCard = existingDataMap.get(card.assetId);
 
+        const category = getCardCategory(card.assetId, card.initialRarity);
+
         // --- UPDATE LOGIC ---
         // 1. Gambar & Kostum (Selalu update path/logic)
         const assetId = card.assetId;
@@ -288,7 +365,7 @@ async function main() {
             
             // --- DATA TEKNIS (Always Update) ---
             releaseDate: !isNaN(new Date(parseInt(card.releaseDate))) ? new Date(parseInt(card.releaseDate)).toISOString().split('T')[0] : "1970-01-01",
-            category: rarity === 5 ? "Nonlimited" : "General",
+            category: category,
             costumeTheme, 
             costumeIndex: 0,
             type: mapType(card.type), 
