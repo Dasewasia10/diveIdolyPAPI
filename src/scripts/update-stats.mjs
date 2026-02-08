@@ -42,6 +42,65 @@ const ICON_MAP = {
     101: "remove-buffs", 102: "remove-debuffs", 103: "protection", 107: "slump", 108: "weakness-effect-reflection"
 };
 
+// --- MAPPING TEMA KOSTUM (Dari Unique ID) ---
+const COSTUME_CODE_MAP = {
+    "eve": "Event",
+    "idol": "Idol Outfit",
+    "mizg": "Swimsuit",
+    "casl": "Casual",
+    "fest": "Idol Fest",
+    "birt": "Birthday",
+    "schl": "School",
+    "prem": "Premium Gacha",
+    "xmas": "Christmas",
+    "miku": "Hatsune Miku",
+    "wedd": "Wedding",
+    "vlnt": "Valentine",
+    "yukt": "Yukata",
+    "newy": "New Year",
+    "goch": "Gochiusa",
+    "pair": "Pair",
+    "link": "Kizuna",
+    "flow": "Flower",
+    "anml": "Animal",
+    "frut": "Fruit",
+    "arab": "Bedlah",
+    "chna": "China",
+    "kait": "Kaito",
+    "rock": "Rock",
+    "circ": "Circuit",
+    "past": "Past",
+    "sush": "Love Live Sunshine",
+    "chia": "Cheerleader",
+    "chsk": "ChisaSaki",
+    "hruh": "Haruhi",
+    "maid": "Maid",
+    "pajm": "Pajama",
+    "seik": "Uniform",
+    "adlt": "Adult",
+    "mnab": "About Mana",
+    "sail": "Sailor",
+    "buny": "Bunny Suit",
+    "poli": "Police",
+    "kion": "K-On",
+    "trbl": "To Love Ru Darkness",
+    "nurs": "Nurse",
+    "add": "Add",
+    "kiok": "Memories of the Starry Sky",
+    "akma": "Akuma",
+    "onep": "Onepiece Dress",
+    "halw": "Halloween",
+    "date": "Date",
+    "sucu": "Succubus",
+    "kifj": "Lady",
+    "waso": "Wasshoi",
+    "magi": "Magical Girl",
+    "angl": "Angel",
+    "alic": "Alice",
+    "yuru": "Yuru",
+    "ster": "Sister"
+};
+
 async function main() {
     console.log("🚀 Memulai Update Stats & Data Teknis (Tanpa Menimpa Terjemahan)...");
 
@@ -83,31 +142,31 @@ async function main() {
     const costumeTypeMap = {}; costumeTypeRaw.forEach(t => costumeTypeMap[t.id] = t.name);
 
     
-// --- HELPER CALCULATE STATS (Weighted Total) ---
-const calculateStats = (card) => {
-    const TARGET_LEVEL = 200;
-    const rarityData = rarityMap[10];
-    if (!rarityData) return { vocal: 0, dance: 0, visual: 0, stamina: 0, total: 0 };
+    // --- HELPER CALCULATE STATS (Weighted Total) ---
+    const calculateStats = (card) => {
+        const TARGET_LEVEL = 200;
+        const rarityData = rarityMap[10];
+        if (!rarityData) return { vocal: 0, dance: 0, visual: 0, stamina: 0, total: 0 };
 
-    const bonusMultiplier = rarityData.bonusPermil / 1000;
-    const paramData = paramMap[card.cardParameterId]?.[TARGET_LEVEL];
-    
-    if (!paramData) return { vocal: 0, dance: 0, visual: 0, stamina: 0, total: 0 };
-    
-    const vocal = Math.floor(paramData.value * (card.vocalRatioPermil / 1000) * bonusMultiplier);
-    const dance = Math.floor(paramData.value * (card.danceRatioPermil / 1000) * bonusMultiplier);
-    const visual = Math.floor(paramData.value * (card.visualRatioPermil / 1000) * bonusMultiplier);
-    const stamina = Math.floor(paramData.staminaValue * (card.staminaRatioPermil / 1000) * bonusMultiplier);
+        const bonusMultiplier = rarityData.bonusPermil / 1000;
+        const paramData = paramMap[card.cardParameterId]?.[TARGET_LEVEL];
+        
+        if (!paramData) return { vocal: 0, dance: 0, visual: 0, stamina: 0, total: 0 };
+        
+        const vocal = Math.floor(paramData.value * (card.vocalRatioPermil / 1000) * bonusMultiplier);
+        const dance = Math.floor(paramData.value * (card.danceRatioPermil / 1000) * bonusMultiplier);
+        const visual = Math.floor(paramData.value * (card.visualRatioPermil / 1000) * bonusMultiplier);
+        const stamina = Math.floor(paramData.staminaValue * (card.staminaRatioPermil / 1000) * bonusMultiplier);
 
-    const mental = 100;
-    const critical = 100;
-    
-    // Rumus: (Vocal * 0.5) + (Dance * 0.5) + (Visual * 0.5) + critical + mental
-    const weightedTotal = Math.floor((vocal * 0.5) + (dance * 0.5) + (visual * 0.5) + (stamina * 0.8) + (critical * 2) + (mental * 3)
-    );
+        const mental = 100;
+        const critical = 100;
+        
+        // Rumus: (Vocal * 0.5) + (Dance * 0.5) + (Visual * 0.5) + critical + mental
+        const weightedTotal = Math.floor((vocal * 0.5) + (dance * 0.5) + (visual * 0.5) + (stamina * 0.8) + (critical * 2) + (mental * 3)
+        );
 
-    return { vocal, dance, visual, stamina, total: weightedTotal };
-};
+        return { vocal, dance, visual, stamina, total: weightedTotal };
+    };
 
     // 4. HELPER UPDATE SKILL (Gabungkan Data Teknis Baru + Teks Lama)
     const updateSkill = (skillId, oldSkillData) => {
@@ -180,16 +239,27 @@ const calculateStats = (card) => {
         if(rarity<5) { bIdx=0; eIdx=1; } else if(rarity===5 && isLink) { bIdx=1; eIdx=2; } else { bIdx=1; eIdx=null; }
         const hasAwk = eIdx !== null;
         
-        let costumeTheme = cachedCard?.costumeTheme || "Idol Outfit";
+        // --- UPDATE LOGIC ---
+        
+        // A. Tentukan Tema Kostum dari Asset ID (Prioritas Utama)
+        // Contoh: "ai-05-birt-02" -> split -> cek "birt" -> "Birthday"
+        let costumeTheme = "Idol Outfit"; // Default fallback
+        const idParts = card.assetId.split('-');
+        
+        for (const part of idParts) {
+            if (COSTUME_CODE_MAP[part]) {
+                costumeTheme = COSTUME_CODE_MAP[part];
+                break; // Ketemu, stop loop
+            }
+        }
+
+        // B. Tentukan URL Gambar Kostum (Tetap butuh rewardCostumeId)
         let costumeImageUrl = null;
         if (card.rewardCostumeId) {
             const costumeData = costumeMap[card.rewardCostumeId];
             if (costumeData) {
+                // Ambil Icon Kostum
                 costumeImageUrl = `${R2_DOMAIN}/costumeIcon/img_cos_thumb_${costumeData.bodyAssetId}.png`;
-                if (!cachedCard?.costumeTheme) { // Hanya update tema jika belum ada (atau mau diupdate paksa silakan)
-                    const typeNameJp = costumeTypeMap[costumeData.costumeTypeId];
-                    if (typeNameJp) costumeTheme = typeNameJp; 
-                }
             }
         }
 
