@@ -18,6 +18,7 @@ import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
 import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
 import characterSources from "./src/data/character/character.json" with { type: "json" };
 import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
+import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 
 // Middleware untuk parsing JSON
 app.use(json());
@@ -36,6 +37,7 @@ app.get("/", (_req, res) => {
       lyrics: "/api/lyrics",
       characters: "/api/characters",
       stamps: "/api/stamps",
+      messages: "/api/messages/index.json",
     },
   });
 });
@@ -299,6 +301,41 @@ app.get('/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex', (req, res)
   const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
   
   res.redirect(301, imageUrl); // 301: Permanent Redirect
+});
+
+// --- Endpoint Messages ---
+
+// 1. Get Message Index (List Group & Titles)
+app.get("/api/messages/index.json", (_req, res) => {
+  res.json(messageIndex);
+});
+
+// 2. Get Message Detail by ID
+// Karena file detail jumlahnya banyak dan dinamis, kita pakai dynamic import atau fs.readFile
+// Tapi karena Vercel Serverless perlu tahu file apa yang di-include, import statis agak susah.
+// Solusi terbaik untuk Vercel + JSON statis banyak: Baca file pakai fs
+import fs from 'fs';
+import path from 'path';
+
+app.get("/api/messages/detail/:id.json", (req, res) => {
+  const { id } = req.params;
+  
+  // Pastikan ID aman (alfanumerik + strip)
+  const safeId = id.replace(/[^a-zA-Z0-9-]/g, ""); 
+  const filePath = path.join(process.cwd(), "src/data/messages/detail", `${safeId}.json`);
+
+  try {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const data = JSON.parse(fileContent);
+      res.json(data);
+    } else {
+      res.status(404).json({ error: "Message detail not found" });
+    }
+  } catch (error) {
+    console.error("Error reading message detail:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 });
 
 // Di server Express Anda (backend)
