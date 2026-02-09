@@ -180,7 +180,7 @@ const syncMessages = async () => {
               text: d.text || d.choiceText,
               isChoice: !!d.choiceText,
               stamp: d.stampAssetId ? `${R2_DOMAIN}/stampChat/stamp_${d.stampAssetId}.webp` : null,
-              image: d.imageAssetId ? `${R2_DOMAIN}/images/${d.imageAssetId}.png` : null,
+              image: d.imageAssetId ? `${R2_DOMAIN}/messagePictures/img_message_picture_${d.imageAssetId}.png` : null,
               nextIds: d.nextMessageDetailIds || [],
               delay: d.delayMinutes || 0
             };
