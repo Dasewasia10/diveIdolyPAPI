@@ -301,12 +301,12 @@ async function main() {
 
         const lData = aData.levels[aData.levels.length - 1];
         const descRaw = lData ? lData.description : aData.description;
-        let imageId = aData.id.replace("aab-", "act-").replace("lba-", "live-");
+        let imageId = aData.id.replace("aab-", "act_").replace("lba-", "live_").replace(/_/g, "-");
 
         return {
             name: oldYellData?.name || { japanese: aData.name, global: aData.name, indo: aData.name },
             description: oldYellData?.description || { japanese: descRaw, global: descRaw, indo: descRaw },
-            source: { initialImage: `${R2_DOMAIN}/iconSkillYell/img_icon_yell_${imageId}.png` }
+            source: { initialImage: `${R2_DOMAIN}/iconSkillYell/img_icon_yell-${imageId}.png` }
         };
     };
 
