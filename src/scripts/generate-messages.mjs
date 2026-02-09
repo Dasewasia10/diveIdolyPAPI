@@ -17,7 +17,7 @@ const charIdToName = {
   "char-mna": "Mana Nagase", "char-ktn": "Kotono Nagase", "char-skr": "Sakura Kawasaki",
   "char-rei": "Rei Ichinose", "char-ngs": "Nagisa Ibuki", "char-hrk": "Haruko Saeki",
   "char-ski": "Saki Shiraishi", "char-suz": "Suzu Narumiya", "char-mei": "Mei Hayasaka",
-  "char-szk": "Shizuku Hyodo", "char-rui": "Rui Tendo", "char-yu": "Yuu Suzumura",
+  "char-szk": "Shizuku Hyodo", "char-rui": "Rui Tendo", "char-yu": "Yu Suzumura",
   "char-smr": "Sumire Okuyama", "char-rio": "Rio Kanzaki", "char-aoi": "Aoi Igawa",
   "char-ai": "Ai Komiyama", "char-kkr": "Kokoro Akazaki", "char-chs": "Chisa Shiraishi",
   "char-mhk": "Miho", "char-kan": "Kana", "char-kor": "Fran", 
