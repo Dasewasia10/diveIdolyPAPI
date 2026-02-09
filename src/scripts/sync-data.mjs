@@ -265,11 +265,11 @@ async function main() {
         const visual = Math.floor(paramData.value * (card.visualRatioPermil / 1000) * bonusMultiplier);
         const stamina = Math.floor(paramData.staminaValue * (card.staminaRatioPermil / 1000) * bonusMultiplier);
 
-        const mental = Math.floor((100) * 2);
-        const critical = Math.floor((100) * 3);
+        const mental = 100;
+        const critical = 100;
         
         // Rumus: (Vocal * 0.5) + (Dance * 0.5) + (Visual * 0.5) + critical + mental
-        const weightedTotal = Math.floor((vocal * 0.5) + (dance * 0.5) + (visual * 0.5) + critical + mental
+        const weightedTotal = Math.floor((vocal * 0.5) + (dance * 0.5) + (visual * 0.5) + (stamina * 0.8) + (critical * 2) + (mental * 3)
         );
 
         return { vocal, dance, visual, stamina, total: weightedTotal };

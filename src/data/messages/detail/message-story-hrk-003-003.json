@@ -1,0 +1,87 @@
+{
+  "id": "message-story-hrk-003-003",
+  "groupId": "message_group_hrk",
+  "name": "キャンプのお仕事③",
+  "characterId": "char-hrk",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-hrk",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-hrk.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": "https://api.diveidolypapi.my.id/stampChat/stamp_gyogyo-greeting.webp",
+      "image": null,
+      "nextIds": [
+        "2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-hrk",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-hrk.png"
+      },
+      "text": "打ち合わせ終わったよー電話するね",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3-1",
+        "3-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "icon": null
+      },
+      "text": "はい、お願いします",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "icon": null
+      },
+      "text": "はい、待ってますよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "4",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-hrk",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-hrk.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "message-story-rui-001-003",
+  "groupId": "message_group_rui",
+  "name": "夜遊び禁止③",
+  "characterId": "char-rui",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rui",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png"
+      },
+      "text": "いま、お電話してもいいですか？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "2-1",
+        "2-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "icon": null
+      },
+      "text": "あぁ、大丈夫だよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "icon": null
+      },
+      "text": "いいよ、話そう",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rui",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}

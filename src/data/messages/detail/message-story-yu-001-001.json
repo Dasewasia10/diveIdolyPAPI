@@ -1,0 +1,71 @@
+{
+  "id": "message-story-yu-001-001",
+  "groupId": "message_group_yu",
+  "name": "はんなりとこてこて①",
+  "characterId": "char-yu",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-yu",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png"
+      },
+      "text": "ちょっとお電話してもいいですかぁ",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "2-1",
+        "2-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "icon": null
+      },
+      "text": "どうした？",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "icon": null
+      },
+      "text": "もちろん。話そう",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-yu",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}
