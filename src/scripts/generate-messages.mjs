@@ -12,6 +12,19 @@ const BASE_URL = "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/m
 const OUTPUT_DIR = path.join(__dirname, "../data/messages");
 const R2_DOMAIN = "https://api.diveidolypapi.my.id";
 
+// --- MAPPING DATA ---
+const charIdToName = {
+  "char-mna": "Mana Nagase", "char-ktn": "Kotono Nagase", "char-skr": "Sakura Kawasaki",
+  "char-rei": "Rei Ichinose", "char-ngs": "Nagisa Ibuki", "char-hrk": "Haruko Saeki",
+  "char-ski": "Saki Shiraishi", "char-suz": "Suzu Narumiya", "char-mei": "Mei Hayasaka",
+  "char-szk": "Shizuku Hyodo", "char-rui": "Rui Tendo", "char-yu": "Yuu Suzumura",
+  "char-smr": "Sumire Okuyama", "char-rio": "Rio Kanzaki", "char-aoi": "Aoi Igawa",
+  "char-ai": "Ai Komiyama", "char-kkr": "Kokoro Akazaki", "char-chs": "Chisa Shiraishi",
+  "char-mhk": "Miho", "char-kan": "Kana", "char-kor": "Fran", 
+  "char-cca": "Cocoa", "char-chk": "Chika", "char-chn": "Chino", 
+  "char-rik": "Riko", "char-stm": "Satomi Hashimoto", "char-yo": "Yo", 
+};
+
 // --- FUNGSI FETCH ---
 const fetchData = (url) => {
   return new Promise((resolve, reject) => {
@@ -43,18 +56,40 @@ const fetchData = (url) => {
 
 // --- HELPER: Generate Icon URL ---
 const getCharacterIconUrl = (characterId) => {
-  if (!characterId) return `${R2_DOMAIN}/iconCharacter/chara-avatar.png`;
-  const formattedId = characterId.replace("char-", "chara-");
-  return `${R2_DOMAIN}/iconCharacter/${formattedId}.png`;
+  if (!characterId) return `${R2_DOMAIN}/assets/icon/icon_manager.png`;
+  
+  // 1. Ambil nama penuh dari mapping
+  const fullName = charIdToName[characterId];
+  
+  // 2. Ambil kata pertama (FirstName) dan lowercase
+  let formattedName = "";
+  if (fullName) {
+    formattedName = fullName.split(" ")[0].toLowerCase();
+  } else {
+    // Fallback jika ID tidak ada di mapping (misal karakter baru/NPC)
+    formattedName = characterId.replace("char-", "");
+  }
+
+  // 3. Return URL
+  return `${R2_DOMAIN}/iconCharacter/chara-${formattedName}.png`;
 };
 
-// --- BARU: Helper untuk Group Icon ---
+// --- HELPER: Generate Speaker Name ---
+const getSpeakerName = (characterId) => {
+    if (!characterId) return "Manager";
+    const fullName = charIdToName[characterId];
+    if (fullName) {
+        // Ambil kata pertama saja, biarkan huruf besar (Mana, Satomi, dll)
+        return fullName.split(" ")[0]; 
+    }
+    return characterId; // Fallback
+};
+
+// --- HELPER: Group Icon ---
 const getGroupIconUrl = (groupId) => {
   if (!groupId) return null;
-  // Contoh: "message_group_ai" -> "ai"
   const suffix = groupId.replace("message_group_", "");
-  // Hasil: "img_message_icon_ai.png"
-  return `${R2_DOMAIN}/iconMessages/img_message_icon_${suffix}.png`;
+  return `${R2_DOMAIN}/iconMessageGroup/img_message_icon_${suffix}.png`;
 };
 
 // --- FUNGSI UTAMA ---
@@ -85,8 +120,6 @@ const syncMessages = async () => {
     });
 
     const indexData = [];
-    
-    // Sort Group
     const sortedGroups = rawGroups.sort((a, b) => (a.sort_id || 0) - (b.sort_id || 0));
 
     let processedCount = 0;
@@ -97,13 +130,11 @@ const syncMessages = async () => {
 
       processedCount++;
 
-      // A. Payload Index (Sidebar)
+      // A. Index Data
       const groupPayload = {
         id: group.id,
-        title: group.title,
-        // BARU: Icon khusus untuk Group/DM (List Menu)
-        groupIcon: getGroupIconUrl(group.id), 
-        // Array characterIds tetap disimpan untuk keperluan fallback/filter
+        title: group.name,
+        groupIcon: getGroupIconUrl(group.id),
         characterIds: group.character_ids || [], 
         messages: groupMessages.map((msg) => ({
           id: msg.id,
@@ -115,7 +146,7 @@ const syncMessages = async () => {
 
       indexData.push(groupPayload);
 
-      // B. File Detail
+      // B. Detail Data
       groupMessages.forEach((msg) => {
         const rawDetails = msg.details || [];
 
@@ -127,12 +158,24 @@ const syncMessages = async () => {
           
           details: rawDetails.map((d) => {
             const isPlayer = d.characterId === "" || !d.characterId;
+            
+            // Logic Nama Speaker Baru
+            let displayName = "Unknown";
+            if (isPlayer) {
+                displayName = "Manager";
+            } else if (d.speakerName) {
+                displayName = d.speakerName; // Jika ada override di data
+            } else {
+                displayName = getSpeakerName(d.characterId); // Gunakan mapping baru
+            }
+
             return {
               id: d.messageDetailId,
               speaker: {
                 isPlayer: isPlayer,
                 characterId: d.characterId || "manager",
-                icon: isPlayer ? null : getCharacterIconUrl(d.characterId)
+                name: displayName, // Properti nama untuk ditampilkan di UI
+                icon: isPlayer ? null : getCharacterIconUrl(d.characterId) // Icon url logic baru
               },
               text: d.text || d.choiceText,
               isChoice: !!d.choiceText,
