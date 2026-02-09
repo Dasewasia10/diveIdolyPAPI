@@ -301,7 +301,7 @@ async function main() {
 
         const lData = aData.levels[aData.levels.length - 1];
         const descRaw = lData ? lData.description : aData.description;
-        let imageId = aData.id.replace("aab-", "act_").replace("lba-", "live_").replace(/_/g, "-");
+        let imageId = aData.id.replace(/_/g, "-").replace("aab-", "act_").replace("lba-", "live_");
 
         return {
             name: oldYellData?.name || { japanese: aData.name, global: aData.name, indo: aData.name },
