@@ -16,6 +16,7 @@ import characterSources from "./src/data/character/character.json" with { type: 
 import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
+import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 
 // ==========================================
 // 2. MIDDLEWARE CONFIGURATION
@@ -251,6 +252,31 @@ app.get("/api/lovestory/stories/:id.json", (req, res) => {
   }
 });
 
+// ==========================================
+// IDOLY WORDLE ENDPOINT
+// ==========================================
+
+app.get("/api/wordle/daily", (_req, res) => {
+  // 1. Hitung hari ke-berapa sejak Epoch (UTC)
+  // 86400000 ms = 1 hari
+  const now = new Date();
+  // Gunakan offset waktu Jepang/Indonesia jika mau, tapi UTC lebih standar
+  const dayIndex = Math.floor(now.getTime() / 86400000); 
+  
+  // 2. Pilih kata berdasarkan index hari (Looping jika array habis)
+  const wordIndex = dayIndex % wordleWords.length;
+  const word = wordleWords[wordIndex].toUpperCase();
+
+  // 3. Kirim ke frontend
+  // Kita encode Base64 sederhana agar tidak terbaca langsung di Network tab browser (biar gak gampang nyontek)
+  const encodedWord = Buffer.from(word).toString('base64');
+
+  res.json({
+    date: new Date().toISOString().split('T')[0], // Tanggal hari ini
+    length: word.length, // Panjang kata (untuk bikin grid)
+    hash: encodedWord // Kata yang di-encode
+  });
+});
 
 // ==========================================
 // 4. UTILITY ENDPOINTS

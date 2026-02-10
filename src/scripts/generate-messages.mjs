@@ -128,7 +128,7 @@ const parseRecursive = (lines, startIndex, lengthToParse, assetId) => {
             const parts = trimmed.split("choices=[choice");
             parts.shift(); // hapus bagian awal tag
             parts.forEach(p => {
-                const textAttr = getAttr(`text=${p}`, "text");
+                const textAttr = getAttr(p, "text");
                 if (textAttr) pendingChoiceTexts.push(textAttr);
             });
         }
