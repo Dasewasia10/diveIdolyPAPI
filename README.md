@@ -1,7 +1,3 @@
-### 2. `README.md` (English Version)
-
-Saya telah menerjemahkan dan memformat ulang dokumen ini. Bagian yang penting (endpoint baru) sudah dimasukkan.
-
 ```markdown
 # DiveIdolyPAPI API Documentation
 
