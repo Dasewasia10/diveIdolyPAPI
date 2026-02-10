@@ -75,28 +75,43 @@
       "text": "まだ姿を消しているのだろうか"
     },
     {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "鈴の音が聞こえた気がする"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs006.wav",
-      "text": "鈴、つけたままだと\nやっぱり分かっちゃうよね\n……でも、宝物だから"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs007.wav",
-      "text": "そんにゃに探してくれてるの？\n……子猫の頃、私が迷子になった時も\nそうやって探してくれたっけ"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=耳を澄ませる",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "鈴の音が聞こえた気がする"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs006.wav",
+              "text": "鈴、つけたままだと\nやっぱり分かっちゃうよね\n……でも、宝物だから"
+            }
+          ]
+        },
+        {
+          "text": "text=周りを見回す",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs007.wav",
+              "text": "そんにゃに探してくれてるの？\n……子猫の頃、私が迷子になった時も\nそうやって探してくれたっけ"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -171,6 +186,19 @@
       "text": "私達がついてる！\nもしもの時は、私達が止めてみせる！\nだから……！"
     },
     {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=一緒に帰ろう",
+          "route": []
+        },
+        {
+          "text": "text=そばにいてほしい",
+          "route": []
+        }
+      ]
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -206,7 +234,7 @@
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "一同",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-chs001.wav",
       "text": "はああっ！"
     },

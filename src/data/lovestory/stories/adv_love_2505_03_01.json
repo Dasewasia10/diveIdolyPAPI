@@ -59,20 +59,35 @@
       "text": "ルイの尻尾が、足に絡みついてきた！\n寝ぼけているのだろうか"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui004.wav",
-      "text": "ん……何ぃ……？\n…………まだ朝じゃない……\nもう……すぅ……すぅ……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui005.wav",
-      "text": "ん～……ごちそう……おいひい……\nほら、チサも……ふふふ……"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=ルイを起こす",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui004.wav",
+              "text": "ん……何ぃ……？\n…………まだ朝じゃない……\nもう……すぅ……すぅ……"
+            }
+          ]
+        },
+        {
+          "text": "text=様子を見る",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui005.wav",
+              "text": "ん～……ごちそう……おいひい……\nほら、チサも……ふふふ……"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -131,20 +146,35 @@
       "text": "えっと、おはようございます\n昨日はよく眠れましたか？"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs005.wav",
-      "text": "ふふ、良かったです\n慣れない場所で大丈夫かなって\nちょっとだけ心配だったので"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs006.wav",
-      "text": "えぇ！？"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=おかげさまで",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs005.wav",
+              "text": "ふふ、良かったです\n慣れない場所で大丈夫かなって\nちょっとだけ心配だったので"
+            }
+          ]
+        },
+        {
+          "text": "text=ルイが隣で寝てた",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs006.wav",
+              "text": "えぇ！？"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -211,28 +241,48 @@
       "text": "そうだね。私も、それは聞きたかった……\nどうして魔法少女さん達より\n私達を選んでくれたんですか……？"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui009.wav",
-      "text": "ふぅん、思ったより心が動かされてた\nっていうこと？\nふふ、悪い気はしないわね"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs011.wav",
-      "text": "私が……。サキュバス自体は、人間さんから\nすれば、悪い子に見えるんでしょうか……\nでも……そうですね。ありがとうございます"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui010.wav",
-      "text": "興味本位っていうこと？"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=ルイが魅力的だから",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui009.wav",
+              "text": "ふぅん、思ったより心が動かされてた\nっていうこと？\nふふ、悪い気はしないわね"
+            }
+          ]
+        },
+        {
+          "text": "text=チサが悪い子に見えなくて",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs011.wav",
+              "text": "私が……。サキュバス自体は、人間さんから\nすれば、悪い子に見えるんでしょうか……\nでも……そうですね。ありがとうございます"
+            }
+          ]
+        },
+        {
+          "text": "text=二人のことが知りたいから",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui010.wav",
+              "text": "興味本位っていうこと？"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -427,28 +477,43 @@
       "text": "す、すみません、注目されてるのは\n私ですし、{user}さんは\n気にせず離れていて下さい……！"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs024.wav",
-      "text": "は、はい！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs025.wav",
-      "text": "ふぇ～！？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs026.wav",
-      "text": "うぅ、優し過ぎますよぉ\n私の方が誘惑されちゃってる気が……\nと、とりあえず、ここを離れましょう"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=分かった",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs024.wav",
+              "text": "は、はい！"
+            }
+          ]
+        },
+        {
+          "text": "text=それは出来ない",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs025.wav",
+              "text": "ふぇ～！？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs026.wav",
+              "text": "うぅ、優し過ぎますよぉ\n私の方が誘惑されちゃってる気が……\nと、とりあえず、ここを離れましょう"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -603,28 +668,48 @@
       "text": "……？"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui028.wav",
-      "text": "え………………\nあぁ、花火のこと？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui029.wav",
-      "text": "パパ……お父様みたいなことを言うのね\n変なの。人間の考えることは\nよく分からないわ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui030.wav",
-      "text": "私達についてきたくせに\n魔法少女達のことを気にするのね\n……まぁ、家族なら当然ではあるけれど"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=綺麗だと思って",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui028.wav",
+              "text": "え………………\nあぁ、花火のこと？"
+            }
+          ]
+        },
+        {
+          "text": "text=なんでもない",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui029.wav",
+              "text": "パパ……お父様みたいなことを言うのね\n変なの。人間の考えることは\nよく分からないわ"
+            }
+          ]
+        },
+        {
+          "text": "text=すみれのことが気になって",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui030.wav",
+              "text": "私達についてきたくせに\n魔法少女達のことを気にするのね\n……まぁ、家族なら当然ではあるけれど"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -657,6 +742,19 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs027.wav",
       "text": "{user}さんは\nどちらと契約したいですか？"
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=ルイ",
+          "route": []
+        },
+        {
+          "text": "text=チサ",
+          "route": []
+        }
+      ]
     }
   ]
 }

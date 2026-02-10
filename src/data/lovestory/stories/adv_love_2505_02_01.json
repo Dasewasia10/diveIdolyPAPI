@@ -59,20 +59,35 @@
       "text": "ごめんね、お兄ちゃん。いろいろ急で……\n本当はこういうことに巻き込みたくなくて\n内緒にしてたんだけど……聞いてくれる？"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr004.wav",
-      "text": "うん、私と渚ちゃんのこと\nそれと、あのサキュバス達のことかな"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr005.wav",
-      "text": "そうだよ！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=すみれ達のことだよね？",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr004.wav",
+              "text": "うん、私と渚ちゃんのこと\nそれと、あのサキュバス達のことかな"
+            }
+          ]
+        },
+        {
+          "text": "text=ヴィオレットのことだよね？",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr005.wav",
+              "text": "そうだよ！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -147,20 +162,35 @@
       "text": "お兄ちゃん、気を付けてね\nなぜか、あの子達\nお兄ちゃんを狙ってるみたいだったから"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr011.wav",
-      "text": "うん、私達も頑張るね\n正義の魔法少女として\nお兄ちゃんを守ってみせるよ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-ngs007.wav",
-      "text": "そうは見えにゃかった、っていうこと？\nうーん、{user}君は\n本当に優しい人だから、そう感じたのかもね"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=分かった",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr011.wav",
+              "text": "うん、私達も頑張るね\n正義の魔法少女として\nお兄ちゃんを守ってみせるよ"
+            }
+          ]
+        },
+        {
+          "text": "text=そんなに悪い子だった？",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-ngs007.wav",
+              "text": "そうは見えにゃかった、っていうこと？\nうーん、{user}君は\n本当に優しい人だから、そう感じたのかもね"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -259,20 +289,35 @@
       "text": "すみれが誇らしげに胸を張っている"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr018.wav",
-      "text": "えへへ、先輩魔法少女の山田さん……\nじゃなかった、フランツィスカさんに\n一杯修行をつけてもらったんだ～"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr019.wav",
-      "text": "魔界に帰ってもらったよ\n私の魔法は、聖なる力でサキュバスを\n送り返すことが出来るの"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=すみれは凄いんだね",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr018.wav",
+              "text": "えへへ、先輩魔法少女の山田さん……\nじゃなかった、フランツィスカさんに\n一杯修行をつけてもらったんだ～"
+            }
+          ]
+        },
+        {
+          "text": "text=やられた子はどうなるの？",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr019.wav",
+              "text": "魔界に帰ってもらったよ\n私の魔法は、聖なる力でサキュバスを\n送り返すことが出来るの"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -403,28 +448,48 @@
       "text": "伝説の魔神、リオ様を知らない？\n魔界のことわざは人間には高尚過ぎたかしら\nふふふ。ねぇ、今どんな気分？"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui008.wav",
-      "text": "ふふふ、それはそうでしょうね\nお父様に罰せられたキリコみたいに\nここでひどい目に遭わせてもいいけれど"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-chs005.wav",
-      "text": "あの魔法少女の子、妹さんなんでしたっけ\n私も、戦わないで逃げてきたから\n怪我とかはしてないと思うけど……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui009.wav",
-      "text": "人間風情が、生意気ね\nひざまずかせて\n靴でも舐めさせてやろうかしら"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=怖い",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui008.wav",
+              "text": "ふふふ、それはそうでしょうね\nお父様に罰せられたキリコみたいに\nここでひどい目に遭わせてもいいけれど"
+            }
+          ]
+        },
+        {
+          "text": "text=すみれが心配",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-chs005.wav",
+              "text": "あの魔法少女の子、妹さんなんでしたっけ\n私も、戦わないで逃げてきたから\n怪我とかはしてないと思うけど……"
+            }
+          ]
+        },
+        {
+          "text": "text=別に怖くない",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui009.wav",
+              "text": "人間風情が、生意気ね\nひざまずかせて\n靴でも舐めさせてやろうかしら"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -579,36 +644,51 @@
       "text": "すみれとルイが見つめてくる……\n大きな選択になりそうだ"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr028.wav",
-      "text": "うん、帰ろう？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui018.wav",
-      "text": "そう。なら……覚えておきなさい\nここから先は、お前の意思は問わないわ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rui",
-      "speakerName": "ルイ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui019.wav",
-      "text": "あなた……\nそう、言ってみるものね\nいいわ、私達と一緒に行きましょう……！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr029.wav",
-      "text": "そんな、どうして行っちゃうの……！？\nでも、お兄ちゃんが悪い道に進むなら……\n魔法少女として、絶対に止めてみせるから！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "text=すみれ達と帰る",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr028.wav",
+              "text": "うん、帰ろう？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui018.wav",
+              "text": "そう。なら……覚えておきなさい\nここから先は、お前の意思は問わないわ"
+            }
+          ]
+        },
+        {
+          "text": "text=ルイ達のことが知りたい",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-rui019.wav",
+              "text": "あなた……\nそう、言ってみるものね\nいいわ、私達と一緒に行きましょう……！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr029.wav",
+              "text": "そんな、どうして行っちゃうの……！？\nでも、お兄ちゃんが悪い道に進むなら……\n魔法少女として、絶対に止めてみせるから！"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
