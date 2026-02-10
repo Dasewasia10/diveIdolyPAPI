@@ -1,4 +1,3 @@
-```markdown
 # DiveIdolyPAPI API Documentation
 
 ## Overview
@@ -122,5 +121,3 @@ Error responses include an error message in the following format:
 ## Cache Policy
 
 * **Image Proxy:** Images fetched via the proxy are cached with a `max-age` of 86400 seconds (24 hours).
-
-```
