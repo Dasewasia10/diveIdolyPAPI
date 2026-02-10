@@ -1,0 +1,75 @@
+{
+  "id": "message-story-ski-001-003",
+  "groupId": "message_group_ski",
+  "name": "寮の惨状③",
+  "characterId": "char-ski",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-ski",
+        "name": "Saki",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png"
+      },
+      "text": "お電話してもよろしいでしょうか",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "2-1",
+        "2-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "ああ大丈夫だよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "そうだな、話せるよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-ski",
+        "name": "Saki",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}

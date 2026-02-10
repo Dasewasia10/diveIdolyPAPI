@@ -1,0 +1,75 @@
+{
+  "id": "message-story-rio-000-001",
+  "groupId": "message_group_rio",
+  "name": "会食①",
+  "characterId": "char-rio",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rio",
+        "name": "Rio",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rio.png"
+      },
+      "text": "電話してもいいかしら？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "2-1",
+        "2-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "もちろんです",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "はい、大丈夫ですよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rio",
+        "name": "Rio",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rio.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}

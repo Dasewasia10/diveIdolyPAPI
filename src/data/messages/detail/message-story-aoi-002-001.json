@@ -1,0 +1,75 @@
+{
+  "id": "message-story-aoi-002-001",
+  "groupId": "message_group_aoi",
+  "name": "沸点が低い①",
+  "characterId": "char-aoi",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-aoi",
+        "name": "Aoi",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-aoi.png"
+      },
+      "text": "今電話していいかい？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "2-1",
+        "2-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "もちろん",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "ああ、今はOKだよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-aoi",
+        "name": "Aoi",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-aoi.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "message-skr-tutorial-001",
+  "groupId": "message_group_skr",
+  "name": "今日のレッスンは？",
+  "characterId": "char-skr",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-skr",
+        "name": "Sakura",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-sakura.png"
+      },
+      "text": "{user}さん今日はレッスン見に来てくれますか？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "もちろん。その予定だよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}

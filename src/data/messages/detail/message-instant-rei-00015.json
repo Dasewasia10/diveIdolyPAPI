@@ -1,0 +1,247 @@
+{
+  "id": "message-instant-rei-00015",
+  "groupId": "message_group_rei",
+  "name": "差し入れ",
+  "characterId": "char-rei",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": "https://api.diveidolypapi.my.id/stampChat/stamp_gyogyo-greeting.webp",
+      "image": null,
+      "nextIds": [
+        "2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "10",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": "https://api.diveidolypapi.my.id/stampChat/stamp_gyogyo-bow.webp",
+      "image": null,
+      "nextIds": [
+        "11"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "11",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "{user}さんの経験値に期待しています",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    },
+    {
+      "id": "2",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "{user}さん、明日時間ありますか？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3-1",
+        "3-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "大丈夫だけど？",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "何かあるのか？",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "4",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "スタッフさんの差し入れを買うのにつき合っていただけませんか？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "5-1",
+        "5-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "5-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "いいぞ、行こう！",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "6"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "5-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "ああ、分かった",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "6"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "6",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "ありがとうございます",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "7"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "7",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "差し入れをもらう機会は多いのですが",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "8"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "8",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rei",
+        "name": "Rei",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png"
+      },
+      "text": "現場のスタッフさんに喜ばれるものは、また違うのかもと思ったので",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "9-1",
+        "9-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "9-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "いい着眼点だな",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "10"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "9-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "まあそうだろうなあ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "10"
+      ],
+      "delay": 0
+    }
+  ]
+}

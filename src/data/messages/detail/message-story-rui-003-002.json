@@ -1,0 +1,92 @@
+{
+  "id": "message-story-rui-003-002",
+  "groupId": "message_group_rui",
+  "name": "眠り姫②",
+  "characterId": "char-rui",
+  "details": [
+    {
+      "id": "1",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rui",
+        "name": "Rui",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": "https://api.diveidolypapi.my.id/stampChat/stamp_nabe-greeting.webp",
+      "image": null,
+      "nextIds": [
+        "2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "2",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rui",
+        "name": "Rui",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png"
+      },
+      "text": "ちょっとお電話できますか？",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "3-1",
+        "3-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "構わないよ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "OKだ",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "4",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-rui",
+        "name": "Rui",
+        "icon": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png"
+      },
+      "text": "",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [],
+      "delay": 0
+    }
+  ]
+}
