@@ -19,6 +19,7 @@ import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json"
 import characterSources from "./src/data/character/character.json" with { type: "json" };
 import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
+import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 
 // Middleware untuk parsing JSON
 app.use(json());
@@ -38,6 +39,7 @@ app.get("/", (_req, res) => {
       characters: "/api/characters",
       stamps: "/api/stamps",
       messages: "/api/messages/index.json",
+      lovestory: "/api/lovestory/index.json",
     },
   });
 });
@@ -334,6 +336,40 @@ app.get("/api/messages/detail/:id.json", (req, res) => {
     }
   } catch (error) {
     console.error("Error reading message detail:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+// ==========================================
+// ENDPOINT LOVE STORY (MOSHIKOI & MINTSUKU)
+// ==========================================
+
+// 1. Get List Event & Episode (Untuk Menu Sidebar)
+app.get("/api/lovestory/index.json", (_req, res) => {
+  // Mengembalikan file index.json yang sudah digenerate script
+  res.json(loveStoryIndex);
+});
+
+// 2. Get Detail Script per Episode
+app.get("/api/lovestory/stories/:id.json", (req, res) => {
+  const { id } = req.params;
+  
+  // Sanitasi ID agar aman (hanya huruf, angka, underscore)
+  // Contoh ID: adv_love_2305_01_01
+  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); 
+  
+  const filePath = path.join(process.cwd(), "src/data/lovestory/stories", `${safeId}.json`);
+
+  try {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const data = JSON.parse(fileContent);
+      res.json(data);
+    } else {
+      res.status(404).json({ error: "Story script not found" });
+    }
+  } catch (error) {
+    console.error("Error reading story file:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });

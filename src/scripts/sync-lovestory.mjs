@@ -8,258 +8,354 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const GITHUB_BASE = "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/main";
-const R2_DOMAIN = "https://api.diveidolypapi.my.id"; 
+const R2_DOMAIN = "https://api.diveidolypapi.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/lovestoryTxt`;
 const R2_VOICE_URL = `${R2_DOMAIN}/lovestoryVoice`;
-
 const OUTPUT_DIR = path.join(__dirname, "../data/lovestory");
 
-// --- MAPPING SPEAKER (Lengkap) ---
+// --- DAFTAR FILE ---
+const FILE_LIST = [
+    // 2305
+    "adv_love_2305_01_01.txt", "adv_love_2305_02_01.txt", "adv_love_2305_03_01.txt", "adv_love_2305_04_01.txt",
+    "adv_love_2305_05_01.txt", "adv_love_2305_06_01.txt", "adv_love_2305_07_01.txt",
+    "adv_love_2305_08_01.txt", "adv_love_2305_08_02.txt", "adv_love_2305_08_03.txt",
+    // 2311
+    "adv_love_2311_01_01.txt", "adv_love_2311_02_01.txt", "adv_love_2311_03_01.txt", "adv_love_2311_04_01.txt",
+    "adv_love_2311_05_01.txt", "adv_love_2311_06_01.txt", "adv_love_2311_07_01.txt",
+    "adv_love_2311_08_01.txt", "adv_love_2311_08_02.txt", "adv_love_2311_08_03.txt",
+    // 2405
+    "adv_love_2405_01_01.txt", "adv_love_2405_02_01.txt", "adv_love_2405_03_01.txt", "adv_love_2405_04_01.txt",
+    "adv_love_2405_05_01.txt", "adv_love_2405_06_01.txt", "adv_love_2405_07_01.txt",
+    "adv_love_2405_08_01.txt", "adv_love_2405_08_02.txt", "adv_love_2405_08_03.txt",
+    // 2411
+    "adv_love_2411_01_01.txt", "adv_love_2411_02_01.txt", "adv_love_2411_03_01.txt", "adv_love_2411_04_01.txt",
+    "adv_love_2411_05_01.txt", "adv_love_2411_06_01.txt", "adv_love_2411_07_01.txt",
+    "adv_love_2411_08_01.txt", "adv_love_2411_08_02.txt", "adv_love_2411_08_03.txt",
+    // 2505
+    "adv_love_2505_01_01.txt", "adv_love_2505_02_01.txt", "adv_love_2505_03_01.txt", "adv_love_2505_03_02.txt",
+    "adv_love_2505_04_01.txt", "adv_love_2505_04_02.txt", "adv_love_2505_04_03.txt", "adv_love_2505_04_04.txt",
+    "adv_love_2505_05_01.txt", "adv_love_2505_05_02.txt", "adv_love_2505_05_03.txt", "adv_love_2505_05_04.txt",
+    "adv_love_2505_05_05.txt", "adv_love_2505_05_06.txt", "adv_love_2505_05_07.txt", "adv_love_2505_05_08.txt",
+    "adv_love_2505_05_09.txt", "adv_love_2505_05_10.txt"
+];
+
+// --- MAPPING SPEAKER CODE ---
+// Digunakan hanya jika 'name' tidak tersedia di [message]
 const SPEAKER_MAP = {
     "rio": "Rio Kanzaki", "aoi": "Aoi Igawa", "ai": "Ai Komiyama", "kkr": "Kokoro Akazaki",
     "rui": "Rui Tendo", "yu": "Yuu Suzumura", "smr": "Sumire Okuyama",
     "mna": "Mana Nagase", "ktn": "Kotono Nagase", "skr": "Sakura Kawasaki",
     "rei": "Rei Ichinose", "ngs": "Nagisa Ibuki", "hrk": "Haruko Saeki",
     "ski": "Saki Shiraishi", "suz": "Suzu Narumiya", "mei": "Mei Hayasaka",
-    "szk": "Shizuku Hyodo",
-    "chs": "Chisa Shiraishi", "chk": "Chika", "cca": "Cocoa", 
-    "chn": "Chino", "mhk": "Miho", "kan": "Kana", "kor": "Fran",
-    "mana": "Mana Nagase",
-    "tencho": "Manager", "saegusa": "Saegusa", "asakura": "Asakura", "koh": "Kohei" 
+    "szk": "Shizuku Hyodo", "chs": "Chisa Shiraishi", "chk": "Chika", "cca": "Cocoa",
+    "chn": "Chino", "mhk": "Miho", "kan": "Kana", "kor": "Fran", "mana": "Mana Nagase",
+    "tencho": "Manager", "saegusa": "Saegusa", "asakura": "Asakura", 
+    "koh": "Kohei" // Updated
 };
 
-// --- HELPER: RESOLVE FILENAME (Format Fixer) ---
-const resolveFilename = (assetId) => {
-    if (assetId.startsWith("love_")) return `adv_${assetId}`;
-    if (assetId.startsWith("love-story-")) {
-        const regex = /love-story-(\d{2})-(\d{2})\d{2}-(\d{3})(?:-(\d{3}))?/;
-        const match = assetId.match(regex);
-        if (match) {
-            const [_, year, month, ep, sc] = match;
-            const scene = sc ? parseInt(sc, 10).toString().padStart(2, "0") : "01";
-            const episode = parseInt(ep, 10).toString().padStart(2, "0");
-            return `adv_love_${year}${month}_${episode}_${scene}`;
-        }
-    }
-    return assetId;
+// --- MAPPING NAMA FILE ICON (Kode -> Filename Lowercase) ---
+const ICON_MAP = {
+    // LizNoir
+    "rio": "rio", "aoi": "aoi", "ai": "ai", "kkr": "kokoro",
+    // TRINITYAiLE
+    "rui": "rui", "yu": "yu", "smr": "sumire",
+    // Hoshimi
+    "mna": "mana", "ktn": "kotono", "skr": "sakura",
+    "rei": "rei", "ngs": "nagisa", "hrk": "haruko",
+    "ski": "saki", "suz": "suzu", "mei": "mei",
+    "szk": "shizuku",
+    // IIIX
+    "chs": "chisa", "chk": "chika", "cca": "cocoa", 
+    "chn": "chino", "mhk": "miho", "kan": "kana", "kor": "fran",
+    // Others
+    "mana": "mana",
+    "saegusa": "saegusa",
+    "asakura": "asakura",
+    "koh": "kohei",
+    "stm": "satomi" 
 };
 
 // --- FUNGSI FETCH ---
 const fetchData = (url) => {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return fetchData(res.headers.location).then(resolve).catch(reject);
-      }
-      if (res.statusCode !== 200) {
-        if (url.endsWith(".txt")) {
-            console.warn(`[WARN] File not found: ${url}`);
-            resolve(null);
-            return;
-        }
-        reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
-        return;
-      }
-      let stream = res;
-      if (res.headers["content-encoding"] === "gzip") stream = res.pipe(zlib.createGunzip());
-      else if (res.headers["content-encoding"] === "deflate") stream = res.pipe(zlib.createInflate());
+    return new Promise((resolve, reject) => {
+        https.get(url, (res) => {
+            if (res.statusCode !== 200) {
+                console.warn(`[FAIL] ${url} (${res.statusCode})`);
+                resolve(null);
+                return;
+            }
+            let stream = res;
+            if (res.headers["content-encoding"] === "gzip") stream = res.pipe(zlib.createGunzip());
+            else if (res.headers["content-encoding"] === "deflate") stream = res.pipe(zlib.createInflate());
 
-      let data = "";
-      stream.on("data", (chunk) => (data += chunk));
-      stream.on("end", () => {
-        try {
-            if (url.endsWith(".json")) resolve(JSON.parse(data));
-            else resolve(data);
-        } catch (e) {
-          reject(e);
-        }
-      });
-      stream.on("error", reject);
-    }).on("error", reject);
-  });
+            let data = "";
+            stream.on("data", (chunk) => (data += chunk));
+            stream.on("end", () => resolve(data));
+            stream.on("error", reject);
+        }).on("error", reject);
+    });
 };
 
-// --- CORE PARSER LOGIC ---
-const parseAdvScript = (rawText, assetId) => {
+// --- ROBUST ATTRIBUTE EXTRACTOR ---
+// Mampu mengambil key="value" maupun key=value (dengan spasi)
+const getAttr = (line, key) => {
+    // Regex: key (spasi*) = (spasi*) "isi" ATAU isi
+    // Menangkap value sampai ketemu spasi yang diikuti key= lain atau akhir string/tag
+    const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`, "i");
+    const match = line.match(regex);
+    
+    if (match) {
+        return match[1] || match[2]; 
+    }
+    return null;
+};
+
+// --- PARSER ---
+const parseScript = (rawText, assetId, isDebug = false) => {
     if (!rawText) return [];
     
-    const lines = rawText.split(/\r?\n/); // Handle CRLF & LF
+    const lines = rawText.replace(/\r\n/g, "\n").split("\n");
     const scriptData = [];
     
-    // Helper untuk mengekstrak atribut secara aman (dengan atau tanpa kutip)
-    const getAttr = (line, key) => {
-        // Regex: key = "value"  ATAU  key=value
-        const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`);
-        const match = line.match(regex);
-        if (match) return match[1] || match[2]; // Return group 1 (quoted) or 2 (unquoted)
-        return null;
+    // Buffer untuk satu blok dialog
+    // Kita menahan push sampai ketemu [message] berikutnya atau [select]/[jump]
+    // agar [voice] yang mungkin ada di baris setelah [message] bisa digabung.
+    let currentDialog = null;
+
+    const flushBuffer = () => {
+        if (currentDialog) {
+            // Push jika ada konten
+            scriptData.push(currentDialog);
+            currentDialog = null;
+        }
     };
 
-    lines.forEach((line) => {
+    lines.forEach(line => {
         const trimmed = line.trim();
         if (!trimmed) return;
 
-        // 1. Tag [message ...] -> Dialog Baru
-        if (trimmed.startsWith("[message")) {
-            const windowVal = getAttr(trimmed, "window");
-            const voiceVal = getAttr(trimmed, "voice");
+        // 1. Tag [message] atau [narration]
+        if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
+            flushBuffer();
+
+            const isNarration = trimmed.startsWith("[narration");
             
-            let speakerCode = "unknown";
-            
-            // Logic Speaker dari Voice File
-            if (voiceVal) {
-                // voiceVal: "sud_vo_adv_love_2305_01_01-hrk001"
-                const parts = voiceVal.split("-");
-                const lastPart = parts[parts.length - 1]; // "hrk001"
-                // Hapus angka dan ekstensi file (jika ada di string raw)
-                const code = lastPart.replace(/[0-9.]/g, "").replace("wav", ""); 
-                if (code) speakerCode = code;
+            // Ambil text (jika inline)
+            let inlineText = getAttr(trimmed, "text");
+            if (inlineText) inlineText = inlineText.replace(/\\n/g, "\n");
+
+            // Ambil Nama Tampilan (langsung dari atribut name)
+            let displayName = getAttr(trimmed, "name") || ""; 
+
+            // Ambil Kode Speaker & Icon
+            let speakerCode = getAttr(trimmed, "window"); // misal: "rei"
+            let iconUrl = null;
+
+            // Jika ada thumbnail, ambil kode dari sana
+            const thumbRaw = getAttr(trimmed, "thumbnial"); // Typo asli game
+            if (thumbRaw) {
+                // img_chr_adv_rei-00 -> rei
+                const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
+                if (match) speakerCode = match[1];
             }
 
-            // Logic Speaker dari Window (Prioritas)
-            if (windowVal && windowVal !== "") {
-                speakerCode = windowVal;
+            // Jika kode masih kosong dan bukan narasi, set unknown
+            if (!speakerCode && !isNarration) speakerCode = "unknown";
+            // Jika narasi, set null agar UI tidak menampilkan kotak nama
+            if (isNarration) speakerCode = null;
+
+            // Bersihkan kode (lowercase)
+            if (speakerCode) speakerCode = speakerCode.toLowerCase();
+
+            // Mapping Nama jika kosong (Fallback)
+            if (!displayName && speakerCode && SPEAKER_MAP[speakerCode]) {
+                displayName = SPEAKER_MAP[speakerCode];
             }
 
-            const speakerName = SPEAKER_MAP[speakerCode] || speakerCode.toUpperCase();
-            const voiceUrl = voiceVal ? `${R2_VOICE_URL}/${assetId}/${voiceVal}.wav` : null;
+            // --- MAPPING ICON ---
+            if (speakerCode && ICON_MAP[speakerCode]) {
+                // Gunakan mapping: rei -> rei, hrk -> haruko, kkr -> kokoro
+                iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[speakerCode]}.png`;
+            } else if (speakerCode && speakerCode !== "unknown" && speakerCode !== "narration" && speakerCode !== "mob") {
+                // Fallback jika tidak ada di map (gunakan kode aslinya)
+                iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
+            }
 
-            scriptData.push({
+            // Cek Voice
+            const voiceFile = getAttr(trimmed, "voice");
+            const voiceUrl = voiceFile ? `${R2_VOICE_URL}/${assetId}/${voiceFile}.wav` : null;
+
+            currentDialog = {
                 type: "dialogue",
                 speakerCode,
-                speakerName,
+                speakerName: displayName,
+                iconUrl,
                 voiceUrl,
-                text: "" // Placeholder, diisi di step 4
-            });
+                text: inlineText || "" 
+            };
             return;
         }
 
-        // 2. Tag [select ...] -> Pilihan
+        // 2. Tag [voice] (Merge ke dialog sebelumnya)
+        if (trimmed.startsWith("[voice")) {
+            if (currentDialog) {
+                const voiceFile = getAttr(trimmed, "voice");
+                const actorId = getAttr(trimmed, "actorId"); // kode seperti "rei"
+
+                // Update Voice URL
+                if (voiceFile) {
+                    currentDialog.voiceUrl = `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.wav`;
+                }
+
+                // Update Info Speaker jika sebelumnya unknown
+                if (actorId) {
+                    const code = actorId.toLowerCase();
+                    
+                    if (currentDialog.speakerCode === "unknown" || !currentDialog.speakerCode) {
+                        currentDialog.speakerCode = code;
+                    }
+
+                    // Update Icon jika belum ada (gunakan ICON_MAP)
+                    if (!currentDialog.iconUrl && ICON_MAP[code]) {
+                        currentDialog.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
+                    }
+
+                    // Update Nama jika belum ada
+                    if (!currentDialog.speakerName && SPEAKER_MAP[code]) {
+                        currentDialog.speakerName = SPEAKER_MAP[code];
+                    }
+                }
+            }
+            return;
+        }
+
+        // 3. Tag [narration] -> Dialog tanpa speaker
+        if (trimmed.startsWith("[narration")) {
+            flushBuffer();
+            let text = getAttr(trimmed, "text") || "";
+            text = text.replace(/\\n/g, "\n");
+
+            currentDialog = {
+                type: "dialogue",
+                speakerCode: "narration",
+                speakerName: "",
+                iconUrl: null,
+                voiceUrl: null,
+                text: text
+            };
+            return;
+        }
+
+        // 4. Tag Pilihan [select]
         if (trimmed.startsWith("[select")) {
+            flushBuffer();
             scriptData.push({
                 type: "choice",
-                text: getAttr(trimmed, "label") || "Choice",
+                text: getAttr(trimmed, "label") || "Select",
                 nextLabel: getAttr(trimmed, "next")
             });
             return;
         }
 
-        // 3. Tag [label] & [jump] -> Navigasi
-        if (trimmed.startsWith("[label")) {
-            scriptData.push({ type: "anchor", labelName: getAttr(trimmed, "name") });
-            return;
-        }
+        // 5. Tag Navigasi
         if (trimmed.startsWith("[jump")) {
+            flushBuffer();
             scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
             return;
         }
-
-        // 4. Skip tag sistem lain ([background], [actor], dll)
-        if (trimmed.startsWith("[")) {
-            return; 
+        if (trimmed.startsWith("[label")) {
+            flushBuffer();
+            scriptData.push({ type: "anchor", labelName: getAttr(trimmed, "name") });
+            return;
         }
 
-        // 5. Teks Dialog (Baris tanpa bracket)
-        // Cari dialog aktif terakhir
-        // Kita loop mundur untuk mencari dialog terakhir yg belum kena 'choice' atau 'jump'
-        const lastItem = scriptData[scriptData.length - 1];
-        
-        if (lastItem && lastItem.type === "dialogue") {
-            // Append text (handle multiline dengan spasi/newline)
-            const cleanText = trimmed.replace(/\\n/g, "\n");
-            if (lastItem.text) {
-                lastItem.text += "\n" + cleanText;
-            } else {
-                lastItem.text = cleanText;
+        // 6. Teks baris (Fallback jika text tidak di dalam atribut)
+        if (!trimmed.startsWith("[")) {
+            // Jika ada dialog aktif, tambahkan teksnya
+            if (currentDialog) {
+                const cleanText = trimmed.replace(/\\n/g, "\n");
+                // Cek agar tidak menambahkan sampah
+                if (!cleanText.includes("=")) {
+                    currentDialog.text = currentDialog.text 
+                        ? `${currentDialog.text}\n${cleanText}` 
+                        : cleanText;
+                }
             }
         }
     });
 
-    // 6. CLEANUP: Hapus dialog kosong yang tidak punya suara
-    // (Kadang ada tag message kosong untuk setup sistem)
-    return scriptData.filter(item => {
-        if (item.type === "dialogue") {
-            // Keep jika ada teks ATAU ada suara
-            return (item.text && item.text.trim().length > 0) || item.voiceUrl;
-        }
-        return true;
-    });
+    flushBuffer(); // Sisa buffer terakhir
+    return scriptData;
 };
 
-// --- MAIN SYNC ---
-const syncLoveStory = async () => {
+// --- MAIN PROCESS ---
+const generateLoveStory = async () => {
+    // Setup Folder
     if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     const storiesDir = path.join(OUTPUT_DIR, "stories");
     if (!fs.existsSync(storiesDir)) fs.mkdirSync(storiesDir, { recursive: true });
 
-    console.log("Fetching Metadata...");
-    
-    try {
-        const episodes = await fetchData(`${GITHUB_BASE}/LoveStoryEpisode.json`);
-        if (!episodes) throw new Error("Gagal mengambil LoveStoryEpisode.json");
+    const groupedEvents = {};
+    let totalFilesProcessed = 0;
 
-        const storyGroups = {};
-        episodes.forEach(ep => {
-            if (!storyGroups[ep.loveId]) storyGroups[ep.loveId] = [];
-            storyGroups[ep.loveId].push(ep);
-        });
+    console.log(`Processing ${FILE_LIST.length} files...`);
 
-        const indexData = [];
+    for (let i = 0; i < FILE_LIST.length; i++) {
+        const fileName = FILE_LIST[i];
+        const regex = /adv_love_(\d{4})_(\d{2})_(\d{2})\.txt/;
+        const match = fileName.match(regex);
 
-        for (const [loveId, episodeList] of Object.entries(storyGroups)) {
-            episodeList.sort((a, b) => a.episode - b.episode);
-            const title = `Event Story ${loveId}`;
+        if (!match) continue;
 
-            indexData.push({
-                id: loveId,
-                title: title,
-                episodeCount: episodeList.length,
-                episodes: episodeList.map(e => ({
-                    id: e.storyId,
-                    episode: e.episode,
-                    title: `Episode ${e.episode}`
-                }))
-            });
+        const [_, eventId, episode, part] = match;
+        const assetId = fileName.replace(".txt", "");
+        
+        const rawContent = await fetchData(`${R2_TEXT_URL}/${fileName}`);
 
-            for (const ep of episodeList) {
-                if (!ep.assetId) continue;
-
-                // FIX NAMA FILE
-                const realFileName = resolveFilename(ep.assetId);
-                const txtUrl = `${R2_TEXT_URL}/${realFileName}.txt`;
-                
-                console.log(`Processing: ${realFileName}...`);
-                
-                const rawScript = await fetchData(txtUrl);
-                
-                if (rawScript) {
-                    const parsedScript = parseAdvScript(rawScript, realFileName);
-                    
-                    fs.writeFileSync(
-                        path.join(storiesDir, `${ep.storyId}.json`),
-                        JSON.stringify({
-                            id: ep.storyId,
-                            title: `Episode ${ep.episode}`,
-                            script: parsedScript
-                        }, null, 2)
-                    );
-                } else {
-                    console.log(`Skipping ${realFileName} (File not found on R2)`);
-                }
-            }
+        if (!rawContent) {
+            console.log(`[SKIP] 404: ${fileName}`);
+            continue;
         }
 
+        // Parse dengan Debug untuk file pertama
+        const script = parseScript(rawContent, assetId, i === 0);
+        
+        if (i === 0 && script.length > 0) {
+             console.log(`[SUCCESS] Parsed ${fileName}`);
+             console.log("Sample Data:", JSON.stringify(script[0], null, 2));
+        }
+
+        const jsonFileName = `${assetId}.json`;
         fs.writeFileSync(
-            path.join(OUTPUT_DIR, "index.json"),
-            JSON.stringify(indexData, null, 2)
+            path.join(storiesDir, jsonFileName),
+            JSON.stringify({
+                id: assetId,
+                title: `Episode ${parseInt(episode)} Part ${parseInt(part)}`,
+                script
+            }, null, 2)
         );
+        
+        totalFilesProcessed++;
 
-        console.log("[SUCCESS] Love Story Sync Complete.");
+        if (!groupedEvents[eventId]) {
+            groupedEvents[eventId] = {
+                id: eventId,
+                title: eventId === "2505" ? "Mintsuku 2025 (May)" : `Moshikoi 20${eventId.substring(0,2)} (${eventId.substring(2)})`,
+                episodes: []
+            };
+        }
 
-    } catch (error) {
-        console.error("[ERROR]", error);
+        groupedEvents[eventId].episodes.push({
+            id: assetId, 
+            title: `Ep ${parseInt(episode)} - ${parseInt(part)}`,
+            fileName: jsonFileName
+        });
     }
+
+    const indexData = Object.values(groupedEvents).sort((a, b) => a.id.localeCompare(b.id));
+    fs.writeFileSync(path.join(OUTPUT_DIR, "index.json"), JSON.stringify(indexData, null, 2));
+
+    console.log(`[DONE] Generated ${indexData.length} Events from ${totalFilesProcessed} files.`);
 };
 
-syncLoveStory();
+generateLoveStory();
