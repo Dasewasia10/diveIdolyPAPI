@@ -5,11 +5,8 @@ DiveIdolyPAPI is a RESTful API service dedicated to providing data and assets fo
 
 ## Base URL
 
-```
-
 [https://diveidolypapi.my.id](https://www.google.com/search?q=https://diveidolypapi.my.id)
 
-```
 
 ## Endpoints
 
