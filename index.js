@@ -256,25 +256,30 @@ app.get("/api/lovestory/stories/:id.json", (req, res) => {
 // IDOLY WORDLE ENDPOINT
 // ==========================================
 
-app.get("/api/wordle/daily", (_req, res) => {
-  // 1. Hitung hari ke-berapa sejak Epoch (UTC)
-  // 86400000 ms = 1 hari
-  const now = new Date();
-  // Gunakan offset waktu Jepang/Indonesia jika mau, tapi UTC lebih standar
-  const dayIndex = Math.floor(now.getTime() / 86400000); 
+app.get("/api/wordle/daily", (req, res) => {
+  let dayIndex;
+
+  // 1. Cek apakah Client mengirimkan index hari lokal mereka
+  if (req.query.day) {
+    dayIndex = parseInt(req.query.day);
+  } else {
+    // Fallback: Jika tidak ada param, pakai waktu Server (UTC)
+    const now = new Date();
+    dayIndex = Math.floor(now.getTime() / 86400000);
+  }
   
-  // 2. Pilih kata berdasarkan index hari (Looping jika array habis)
-  const wordIndex = dayIndex % wordleWords.length;
+  // 2. Pilih kata berdasarkan index hari
+  // Menggunakan Math.abs untuk mencegah error jika user mengotak-atik tanggal jadi minus
+  const wordIndex = Math.abs(dayIndex) % wordleWords.length;
   const word = wordleWords[wordIndex].toUpperCase();
 
   // 3. Kirim ke frontend
-  // Kita encode Base64 sederhana agar tidak terbaca langsung di Network tab browser (biar gak gampang nyontek)
   const encodedWord = Buffer.from(word).toString('base64');
 
   res.json({
-    date: new Date().toISOString().split('T')[0], // Tanggal hari ini
-    length: word.length, // Panjang kata (untuk bikin grid)
-    hash: encodedWord // Kata yang di-encode
+    dayIndex: dayIndex, // Kirim balik ID harinya untuk validasi di frontend
+    length: word.length,
+    hash: encodedWord
   });
 });
 
