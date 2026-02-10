@@ -18,6 +18,8 @@ import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 
+import banners from "./src/data/gacha/banners.json" with { type: "json" };
+
 // ==========================================
 // 2. MIDDLEWARE CONFIGURATION
 // ==========================================
@@ -275,6 +277,87 @@ app.get("/api/wordle/daily", (_req, res) => {
     date: new Date().toISOString().split('T')[0], // Tanggal hari ini
     length: word.length, // Panjang kata (untuk bikin grid)
     hash: encodedWord // Kata yang di-encode
+  });
+});
+
+// ==========================================
+// GACHA SYSTEM
+// ==========================================
+
+// 1. Get Active Banners
+app.get("/api/gacha/banners", (_req, res) => {
+  res.json(banners);
+});
+
+// 2. Perform Gacha Pull
+app.post("/api/gacha/pull", (req, res) => {
+  const { bannerId, amount } = req.body; // amount: 1 or 10
+  
+  const banner = banners.find(b => b.id === bannerId);
+  if (!banner) return res.status(404).json({ error: "Banner not found" });
+
+  const results = [];
+  
+  // Pisahkan kolam kartu (Card Pools)
+  // Asumsi: cardSources punya properti 'rarity' (integer 3, 4, 5)
+  const pool5 = cardSources.filter(c => c.rarity === 5);
+  const pool4 = cardSources.filter(c => c.rarity === 4);
+  const pool3 = cardSources.filter(c => c.rarity === 3); // Jika tidak ada data 3*, buat dummy
+
+  // Rate Config
+  const rate5 = banner.rates["5"];
+  const rate4 = banner.rates["4"];
+  // Rate 3 adalah sisanya
+
+  for (let i = 0; i < amount; i++) {
+    const rng = Math.random(); // 0.0 - 1.0
+    let rarity = 3;
+    let selectedCard = null;
+
+    // LOGIC: Guaranteed 4* on 10th pull (jika i === 9 dan amount === 10)
+    // Tapi di Idoly Pride, guaranteed slot itu 4* OR 5*.
+    // Jadi logicnya: Roll 5* dulu, kalau gagal baru paksa 4*.
+    const isGuaranteedSlot = (amount === 10 && i === 9);
+
+    if (rng < rate5) {
+      // --- DAPAT 5 STAR ---
+      rarity = 5;
+      
+      // Cek Pickup (50% chance kalau rate up standard)
+      const isPickup = Math.random() < 0.5; 
+      if (isPickup && banner.pickupIds.length > 0) {
+          // Ambil dari list pickup
+          const pickupId = banner.pickupIds[Math.floor(Math.random() * banner.pickupIds.length)];
+          selectedCard = cardSources.find(c => c.id === pickupId) || pool5[0];
+      } else {
+          // Spook (Acak dari pool 5)
+          selectedCard = pool5[Math.floor(Math.random() * pool5.length)];
+      }
+
+    } else if (rng < rate5 + rate4 || isGuaranteedSlot) {
+      // --- DAPAT 4 STAR ---
+      rarity = 4;
+      selectedCard = pool4[Math.floor(Math.random() * pool4.length)];
+      
+      // Fallback jika data 4* kosong
+      if (!selectedCard) selectedCard = { id: "dummy_4", name: "Generic 4 Star", rarity: 4 };
+
+    } else {
+      // --- DAPAT 3 STAR ---
+      rarity = 3;
+      selectedCard = pool3[Math.floor(Math.random() * pool3.length)];
+      
+      // Fallback jika data 3* kosong (biasanya foto manager/mob)
+      if (!selectedCard) selectedCard = { id: "dummy_3", name: "Generic 3 Star", rarity: 3 };
+    }
+
+    // Tambahkan properti isNew nanti di frontend (localStorage check)
+    results.push(selectedCard);
+  }
+
+  res.json({
+    results: results,
+    bannerId: bannerId
   });
 });
 
