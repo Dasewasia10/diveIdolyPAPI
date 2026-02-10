@@ -1,18 +1,14 @@
-import express, { json } from "express";
-import cors from "cors"; // Import cors
+import express from "express";
+import cors from "cors";
+import fs from "fs";
+import path from "path";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware untuk parsing JSON dan CORS
-app.use(cors({
-  origin: ["https://polaris.diveidolypapi.my.id", "https://polaris.diveidolypapi.my.id/", "https://polaris.diveidolypapi.my.id/#/"], // Izinkan akses dari domain ini
-  methods: "GET,POST,PUT,DELETE", // Izinkan metode HTTP tertentu
-  headers: "Content-Type",
-  credentials: true, // Izinkan pengiriman cookie atau header otentikasi
-}));
-
-//  data
+// ==========================================
+// 1. DATA IMPORTS
+// ==========================================
 import cardSources from "./src/data/card/cardSources.json" with { type: "json" };
 import qnaSources from "./src/data/qna/qnaSources.json" with { type: "json" };
 import lyricSources from "./src/data/lyrics/lyricsData.json" with { type: "json" };
@@ -21,14 +17,31 @@ import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 
-// Middleware untuk parsing JSON
-app.use(json());
+// ==========================================
+// 2. MIDDLEWARE CONFIGURATION
+// ==========================================
 
-app.use((req, res, next) => {
-  console.log("CORS Middleware aktif untuk:", req.path);
-  next();
-});
+const allowedOrigins = [
+  "https://polaris.diveidolypapi.my.id",
+  "https://polaris.diveidolypapi.my.id/",
+  "http://localhost:5173" // [NOTE]: Kept for local development testing
+];
 
+app.use(cors({
+  origin: allowedOrigins,
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type",
+  credentials: true,
+}));
+
+// Middleware for parsing JSON body
+app.use(express.json());
+
+// ==========================================
+// 3. API ROUTES
+// ==========================================
+
+// --- Root Endpoint ---
 app.get("/", (_req, res) => {
   res.json({
     message: "Welcome to DiveIdolyPAPI API!",
@@ -39,109 +52,101 @@ app.get("/", (_req, res) => {
       characters: "/api/characters",
       stamps: "/api/stamps",
       messages: "/api/messages/index.json",
-      lovestory: "/api/lovestory/index.json",
+      lovestory: "/api/lovestory/index.json" // New Endpoint
     },
   });
 });
 
-// Endpoint untuk semua kartu
+// --- Card Endpoints ---
 app.get("/api/cards", (_req, res) => {
   res.json(cardSources);
 });
 
-// Endpoint untuk kartu berdasarkan nama karakter
 app.get("/api/cards/:name", (req, res) => {
   const { name } = req.params;
-  const filteredCards = cardSources.filter(
-    (card) => card.name.toLowerCase() === name.toLowerCase()
+  const filteredCards = cardSources.filter((card) =>
+    card.name.toLowerCase().includes(name.toLowerCase())
   );
 
   if (filteredCards.length > 0) {
     res.json(filteredCards);
   } else {
-    res.status(404).json({ error: "Character not found" });
+    res.status(404).json({ error: "Character cards not found" });
   }
 });
 
-// Endpoint untuk semua QnA
+// --- QnA Endpoints ---
 app.get("/api/qnas", (_req, res) => {
   res.json(qnaSources);
 });
 
-// Endpoint untuk QnA berdasarkan nama karakter
 app.get("/api/qnas/:name", (req, res) => {
-  const source = qnaSources.find(
-    (source) => source.name.toLowerCase() === req.params.name.toLowerCase()
+  const { name } = req.params;
+  const filteredQnas = qnaSources.filter((qna) =>
+    qna.name.toLowerCase().includes(name.toLowerCase())
   );
-  source
-    ? res.json(source.data)
-    : res.status(404).json({ error: "Character not found" });
+
+  if (filteredQnas.length > 0) {
+    res.json(filteredQnas);
+  } else {
+    res.status(404).json({ error: "Character QnA not found" });
+  }
 });
 
-// Endpoint untuk semua lirik lagu
+// --- Lyrics Endpoints ---
 app.get("/api/lyrics", (_req, res) => {
   res.json(lyricSources);
 });
 
-// Endpoint untuk lirik berdasarkan judul
 app.get("/api/lyrics/:name", (req, res) => {
-  const source = lyricSources.find(
-    (source) => source.name.toLowerCase() === req.params.name.toLowerCase()
+  const { name } = req.params;
+  const filteredLyrics = lyricSources.filter((lyric) =>
+    lyric.songName.toLowerCase().includes(name.toLowerCase())
   );
-  source
-    ? res.json(source.data)
-    : res.status(404).json({ error: "Lyric not found" });
+
+  if (filteredLyrics.length > 0) {
+    res.json(filteredLyrics);
+  } else {
+    res.status(404).json({ error: "Lyrics not found" });
+  }
 });
 
-// Endpoint untuk semua karakter
+// --- Character Endpoints ---
 app.get("/api/characters", (_req, res) => {
   res.json(characterSources);
 });
 
-// Endpoint untuk nama karakter tertentu
 app.get("/api/characters/:name", (req, res) => {
-  const source = characterSources.find(
-    (source) => source.name.toLowerCase() === req.params.name.toLowerCase()
+  const { name } = req.params;
+  const character = characterSources.find(
+    (char) => char.name.toLowerCase() === name.toLowerCase()
   );
-  source
-    ? res.json(source)
-    : res.status(404).json({ error: "Character not found" });
+
+  if (character) {
+    res.json(character);
+  } else {
+    res.status(404).json({ error: "Character not found" });
+  }
 });
 
-// Endpoint untuk karakter berdasarkan grup
 app.get("/api/characters/group/:groupName", (req, res) => {
   const { groupName } = req.params;
-  const matchedCharacters = _filter(
-    (character) =>
-      character.groupName.toLowerCase().replace(/\s/g, "") ===
-      groupName.toLowerCase().replace(/\s/g, "")
+  const characters = characterSources.filter(
+    (char) => char.group.toLowerCase() === groupName.toLowerCase()
   );
 
-  if (matchedCharacters.length > 0) {
-    res.json(matchedCharacters);
+  if (characters.length > 0) {
+    res.json(characters);
   } else {
     res.status(404).json({ error: "Group not found" });
   }
 });
 
-// Endpoint untuk semua stamp
-app.get("/api/stamps", (req, res) => {
-  console.log("Mengakses /api/stamps");
-  console.log("Mengakses /api/stamps dari", req.headers.origin);
+// --- Stamp Endpoints ---
+app.get("/api/stamps", (_req, res) => {
   res.json(stampSources);
 });
 
-// Endpoint untuk stamp berdasarkan maskot
-app.get("/api/stamps/:name", (req, res) => {
-  const source = stampSources.find(
-    (source) => source.character.toLowerCase() === req.params.name.toLowerCase()
-  );
-  source
-    ? res.json(source.data)
-    : res.status(404).json({ error: "Stamp not found" });
-});
-
-// Endpoint untuk gambar stamp
 app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
   const { imageCharacter } = req.params;
   const { imageExpression } = req.params;
@@ -155,6 +160,7 @@ app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => 
   res.redirect(301, imageUrl);
 });
 
+// -- Image of character details ===
 // Mendapatkan data gambar icon character
 app.get('/api/img/character/icon/:imageName', async (req, res) => {
   const { imageName } = req.params;
@@ -189,140 +195,18 @@ app.get('/api/img/character/sprite2/:imageName', (req, res) => {
   res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
-// Mendapatkan data gambar group circle
-app.get('/api/img/group/circle/:imageName', (req, res) => {
-  const { imageName } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/idolGroup/group-${imageName}-circle.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
+// --- Message System Endpoints (Dynamic File Reading) ---
 
-// Mendapatkan data gambar cosu card
-app.get('/api/img/card/cosu/:chara/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/costumeIcon/cosu-${chara}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar figure card
-app.get('/api/img/card/figureB/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/figureImageB/figure-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar icon card
-app.get('/api/img/card/thumb/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconImage/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar iconB card
-app.get('/api/img/card/thumbB/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconImageB/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar iconE card
-app.get('/api/img/card/thumbE/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconImageE/icon-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar vertical card
-app.get('/api/img/card/vertical/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/verticalImage/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar verticalB card
-app.get('/api/img/card/verticalB/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/verticalImageB/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar verticalE card
-app.get('/api/img/card/verticalE/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/verticalImageE/vertical-${chara}-${initial}-${cosuName}-${cosuIndex}.png`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar source card
-app.get('/api/img/card/source/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/sourceImage/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar sourceE card
-app.get('/api/img/card/sourceE/:chara/:initial/:cosuName/:cosuIndex', (req, res) => {
-  const { chara } = req.params;
-  const { initial } = req.params;
-  const { cosuName } = req.params;
-  const { cosuIndex } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/sourceImageE/source-${chara}-${initial}-${cosuName}-${cosuIndex}-full.webp`;
-  
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// --- Endpoint Messages ---
-
-// 1. Get Message Index (List Group & Titles)
+// 1. Get Message Index
 app.get("/api/messages/index.json", (_req, res) => {
   res.json(messageIndex);
 });
 
-// 2. Get Message Detail by ID
-// Karena file detail jumlahnya banyak dan dinamis, kita pakai dynamic import atau fs.readFile
-// Tapi karena Vercel Serverless perlu tahu file apa yang di-include, import statis agak susah.
-// Solusi terbaik untuk Vercel + JSON statis banyak: Baca file pakai fs
-import fs from 'fs';
-import path from 'path';
-
+// 2. Get Message Details
 app.get("/api/messages/detail/:id.json", (req, res) => {
   const { id } = req.params;
   
-  // Pastikan ID aman (alfanumerik + strip)
+  // [SUGGESTION]: Always sanitize input when using file system operations
   const safeId = id.replace(/[^a-zA-Z0-9-]/g, ""); 
   const filePath = path.join(process.cwd(), "src/data/messages/detail", `${safeId}.json`);
 
@@ -335,29 +219,22 @@ app.get("/api/messages/detail/:id.json", (req, res) => {
       res.status(404).json({ error: "Message detail not found" });
     }
   } catch (error) {
-    console.error("Error reading message detail:", error);
+    console.error("Error reading message file:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
-// ==========================================
-// ENDPOINT LOVE STORY (MOSHIKOI & MINTSUKU)
-// ==========================================
+// --- Love Story Endpoints (Dynamic File Reading) ---
 
-// 1. Get List Event & Episode (Untuk Menu Sidebar)
+// 1. Get Love Story Index
 app.get("/api/lovestory/index.json", (_req, res) => {
-  // Mengembalikan file index.json yang sudah digenerate script
   res.json(loveStoryIndex);
 });
 
-// 2. Get Detail Script per Episode
+// 2. Get Love Story Script Details
 app.get("/api/lovestory/stories/:id.json", (req, res) => {
   const { id } = req.params;
-  
-  // Sanitasi ID agar aman (hanya huruf, angka, underscore)
-  // Contoh ID: adv_love_2305_01_01
-  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); 
-  
+  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_love_...
   const filePath = path.join(process.cwd(), "src/data/lovestory/stories", `${safeId}.json`);
 
   try {
@@ -374,7 +251,13 @@ app.get("/api/lovestory/stories/:id.json", (req, res) => {
   }
 });
 
-// Di server Express Anda (backend)
+
+// ==========================================
+// 4. UTILITY ENDPOINTS
+// ==========================================
+
+// --- Image Proxy ---
+// [NOTE]: This proxy fetches external images and serves them with CORS headers
 app.get('/api/proxy/image', async (req, res) => {
   const { url } = req.query;
   
@@ -385,32 +268,38 @@ app.get('/api/proxy/image', async (req, res) => {
   try {
     const response = await fetch(url.toString(), {
       headers: {
-        'Origin': 'https://polaris.diveidolypapi.my.id' // Sesuaikan dengan domain Anda
+        // [SUGGESTION]: Hardcoding the origin here might limit the proxy if you change domains.
+        // It's generally safer to just forward the request or use a generic User-Agent.
+        'Origin': 'https://polaris.diveidolypapi.my.id' 
       }
     });
     
+    if (!response.ok) {
+        throw new Error(`Failed to fetch image: ${response.statusText}`);
+    }
+
     const contentType = response.headers.get('content-type');
-    const buffer = await response.buffer();
-    
+    const buffer = await response.arrayBuffer(); // [NOTE]: changed .buffer() to .arrayBuffer() for standard Fetch API
+    const nodeBuffer = Buffer.from(buffer);
+
     res.set({
       'Access-Control-Allow-Origin': '*',
       'Content-Type': contentType || 'image/png',
       'Cache-Control': 'public, max-age=86400'
     });
     
-    res.send(buffer);
+    res.send(nodeBuffer);
   } catch (error) {
     console.error('Proxy error:', error);
     res.status(500).json({ error: 'Failed to fetch image' });
   }
 });
 
-// Jalankan server (hanya lokal)
-if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-}
+// ==========================================
+// 5. SERVER START
+// ==========================================
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
-// Ekspor app untuk Vercel
 export default app;
