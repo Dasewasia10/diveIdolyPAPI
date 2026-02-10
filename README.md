@@ -5,7 +5,6 @@ DiveIdolyPAPI is a RESTful API service dedicated to providing data and assets fo
 
 ## Base URL
 
-[DiveIdolyPAPI](https://diveidolypapi.my.id)
 https://diveidolypapi.my.id
 
 ## Endpoints
@@ -68,7 +67,7 @@ https://diveidolypapi.my.id
 
 **Get all cards:**
 ```javascript
-fetch('[https://diveidolypapi.my.id/api/cards](https://diveidolypapi.my.id/api/cards)')
+fetch('https://diveidolypapi.my.id/api/cards')
   .then(response => response.json())
   .then(data => console.log(data));
 
@@ -77,7 +76,7 @@ fetch('[https://diveidolypapi.my.id/api/cards](https://diveidolypapi.my.id/api/c
 **Get character by name:**
 
 ```javascript
-fetch('[https://diveidolypapi.my.id/api/characters/Kotono](https://diveidolypapi.my.id/api/characters/Kotono)')
+fetch('https://diveidolypapi.my.id/api/characters/Kotono')
   .then(response => response.json())
   .then(data => console.log(data));
 
@@ -86,7 +85,7 @@ fetch('[https://diveidolypapi.my.id/api/characters/Kotono](https://diveidolypapi
 **Get a Love Story script:**
 
 ```javascript
-fetch('[https://diveidolypapi.my.id/api/lovestory/stories/adv_love_2305_01_01.json](https://diveidolypapi.my.id/api/lovestory/stories/adv_love_2305_01_01.json)')
+fetch('https://diveidolypapi.my.id/api/lovestory/stories/adv_love_2305_01_01.json')
   .then(response => response.json())
   .then(data => console.log(data));
 
