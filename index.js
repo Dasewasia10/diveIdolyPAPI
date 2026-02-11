@@ -17,6 +17,7 @@ import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
+import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 
 // ==========================================
 // 2. MIDDLEWARE CONFIGURATION
@@ -281,6 +282,90 @@ app.get("/api/wordle/daily", (req, res) => {
     length: word.length,
     hash: encodedWord
   });
+});
+
+// ==========================================
+// GACHA DATA ENDPOINTS
+// ==========================================
+
+// Helper: Flatten Card Sources menjadi array kartu tunggal
+// (Mirip yang kita lakukan di frontend, tapi di backend)
+const getAllCardsFlat = () => {
+    return cardSources.flatMap(source => source.data.map(card => ({
+        ...card,
+        sourceName: source.name // Keep track nama chara
+    })));
+};
+
+// 1. List Semua Banner (Untuk Menu Select Banner)
+app.get("/api/gachas", (_req, res) => {
+    // Kirim data ringkas saja (ID, Nama, Gambar, Tanggal)
+    const list = gachaList.map(g => ({
+        id: g.id,
+        name: g.name,
+        assetId: g.assetId,
+        startAt: g.startAt,
+        pickupCount: g.pickupCardIds.length
+    }));
+    res.json(list);
+});
+
+// 2. Simulasi Data Pool untuk Banner Tertentu
+app.get("/api/gachas/:id/pool", (req, res) => {
+    const { id } = req.params;
+    const banner = gachaList.find(g => g.id === id);
+
+    if (!banner) {
+        return res.status(404).json({ error: "Banner not found" });
+    }
+
+    const allCards = getAllCardsFlat();
+    const bannerDate = new Date(banner.startAt).getTime();
+
+    // A. Identifikasi Rate Up Cards
+    // pickupCardIds di Gacha.json biasanya berupa ID angka atau string.
+    // Kita harus mencocokkannya dengan `uniqueId` atau `id` di cardSources.
+    // [NOTE]: Ini bagian tricky. MalitsPlus mungkin pakai ID angka (misal "1001"), 
+    // sedangkan cardSources kita pakai "smr-05-nurs-00". 
+    // Jika mapping ID belum ada, kita mungkin perlu logic pencocokan manual atau asumsi.
+    // TAPI, jika uniqueId di cardSources kamu sudah sinkron dengan ID game asli, aman.
+    
+    // Anggaplah pickupCardIds berisi uniqueId yang valid untuk sekarang.
+    const rateUpCards = allCards.filter(c => banner.pickupCardIds.includes(c.uniqueId));
+
+    // B. Bentuk Standard Pool (Time Travel Logic)
+    const standardPool = allCards.filter(c => {
+        // 1. Cek Tanggal Rilis (Harus sebelum atau sama dengan banner)
+        // Pastikan format tanggal di cardSources ("YYYY-MM-DD") bisa diparse
+        const releaseDate = new Date(c.releaseDate).getTime();
+        if (releaseDate > bannerDate) return false; // Kartu masa depan, skip
+
+        // 2. Cek Kategori
+        // Kartu Limited lama TIDAK masuk pool banner baru (kecuali dia Rate Up)
+        const isLimited = c.category && c.category.toLowerCase().includes("limited");
+        
+        // Jika dia Rate Up di banner ini, loloskan walau limited
+        if (banner.pickupCardIds.includes(c.uniqueId)) return true;
+
+        // Jika tidak Rate Up, dia harus Permanent/Initial agar masuk pool
+        if (isLimited) return false; 
+
+        return true;
+    });
+
+    // C. Response
+    // Kita kirim data yang sudah matang ke frontend
+    res.json({
+        bannerInfo: {
+            id: banner.id,
+            name: banner.name,
+            assetId: banner.assetId,
+            startAt: banner.startAt
+        },
+        rateUpCards: rateUpCards,
+        // Standard Pool sudah bersih dari kartu masa depan & kartu limited nyasar
+        pool: standardPool 
+    });
 });
 
 // ==========================================
