@@ -323,10 +323,10 @@ const getGachaCategory = (gacha) => {
   const id = (gacha.id || "").toLowerCase();
 
   // Urutan pengecekan penting!
-  if (name.includes("premium") || name.includes("プレミアム")) return "Premium";
-  if (name.includes("kizuna") || name.includes("絆")) return "Kizuna";
-  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday")) return "Birthday";
-  if (name.includes("fest") || name.includes("フェス") || id.includes("fes")) return "Fest";
+  if (name.includes("premium") || name.includes("プレミアム") || pickupCardIds[0].includes("prem")) return "Premium";
+  if (name.includes("kizuna") || name.includes("絆") || pickupCardIds[0].includes("link")) return "Kizuna";
+  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday") || pickupCardIds[0].includes("link")) return "birt";
+  if (name.includes("fest") || name.includes("フェス") || id.includes("fes") || pickupCardIds[0].includes("fest")) return "Fest";
   if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
   if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
   
@@ -334,7 +334,7 @@ const getGachaCategory = (gacha) => {
   // Tapi nama lebih akurat biasanya.
   if (name.includes("pick up") || name.includes("ピックアップ")) return "Rate Up";
   
-  return "Limited";
+  return "Standard";
 };
 
 // ==========================================
@@ -356,6 +356,7 @@ app.get("/api/gachas", (_req, res) => {
       .filter(g => {
           // Buang banner sampah (Ticket, Item Pack, Button Badge, dll)
           if (!g.name) return false;
+          if (g.pickupCardIds[0].includes("eve")) return false;
           if (g.name.includes("パック") || g.name.includes("Pack")) return false; // Pack Item
           if (g.name.includes("Ticket") || g.name.includes("チケット")) return false; // Ticket Only
           if (g.id.includes("pickup") || g.name.includes("リリース記念\nガチャ")) return false; // Promo Pickup Gacha
