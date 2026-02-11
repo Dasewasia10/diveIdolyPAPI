@@ -19,6 +19,9 @@ import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json"
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 
+
+const STORAGE_DIR = path.join(__dirname, "./src/data/music"); 
+
 // ==========================================
 // 2. MIDDLEWARE CONFIGURATION
 // ==========================================
@@ -54,7 +57,8 @@ app.get("/", (_req, res) => {
       characters: "/api/characters",
       stamps: "/api/stamps",
       messages: "/api/messages/index.json",
-      lovestory: "/api/lovestory/index.json" // New Endpoint
+      lovestory: "/api/lovestory/index.json", // New Endpoint
+      musicRouter: "/api/music"
     },
   });
 });
@@ -500,6 +504,42 @@ app.get("/api/gachas/:id/pool", (req, res) => {
         rateUpCards: rateUpCards,
         pool: standardPool
     });
+});
+
+// ==========================================
+// CHART MUSIC ENDPOINTS
+// ==========================================
+
+// 1. Endpoint: Get All Songs
+// GET /api/music/songs
+router.get('/songs', (req, res) => {
+    const filePath = path.join(STORAGE_DIR, "ProcessedSongList.json");
+    
+    // Cek file ada atau tidak
+    if (!fs.existsSync(filePath)) {
+        return res.status(404).json({ error: "Data not found. Run sync script first." });
+    }
+    
+    res.sendFile(filePath);
+});
+
+// 2. Endpoint: Get Specific Chart
+// GET /api/music/charts/:chartId
+router.get('/charts/:chartId', (req, res) => {
+    const chartId = req.params.chartId;
+    
+    // Validasi keamanan sederhana (mencegah directory traversal)
+    if (!chartId || chartId.includes('..') || !chartId.startsWith('chart-')) {
+        return res.status(400).json({ error: "Invalid Chart ID" });
+    }
+
+    const filePath = path.join(STORAGE_DIR, "charts", `${chartId}.json`);
+
+    if (!fs.existsSync(filePath)) {
+        return res.status(404).json({ error: "Chart not found" });
+    }
+
+    res.sendFile(filePath);
 });
 
 // ==========================================
