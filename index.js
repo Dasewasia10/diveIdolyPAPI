@@ -288,87 +288,143 @@ app.get("/api/wordle/daily", (req, res) => {
 // GACHA DATA ENDPOINTS
 // ==========================================
 
-// Helper: Flatten Card Sources menjadi array kartu tunggal
-// (Mirip yang kita lakukan di frontend, tapi di backend)
-const getAllCardsFlat = () => {
-    return cardSources.flatMap(source => source.data.map(card => ({
-        ...card,
-        sourceName: source.name // Keep track nama chara
-    })));
+// 1. Ekstrak Tanggal dari ID jika startAt error
+// Format umum ID: gacha-name-YY-MMDD atau gacha-name-YYYY-MM-DD
+const parseGachaDate = (gacha) => {
+  // Prioritas 1: Gunakan startAt jika valid
+  if (gacha.startAt) {
+    const date = new Date(gacha.startAt);
+    if (!isNaN(date.getTime())) return date.getTime();
+  }
+
+  // Prioritas 2: Regex ID (Format YY-MMDD) -> Contoh: 21-0813
+  const regexShort = /-(\d{2})-(\d{2})(\d{2})/;
+  const matchShort = gacha.id.match(regexShort);
+  if (matchShort) {
+    const year = 2000 + parseInt(matchShort[1]);
+    const month = parseInt(matchShort[2]) - 1; // JS Month 0-11
+    const day = parseInt(matchShort[3]);
+    return new Date(year, month, day).getTime();
+  }
+
+  // Prioritas 3: Regex ID (Format YYYY-MM-DD)
+  const regexLong = /-(\d{4})-(\d{2})-(\d{2})/;
+  const matchLong = gacha.id.match(regexLong);
+  if (matchLong) {
+    return new Date(matchLong[1], matchLong[2] - 1, matchLong[3]).getTime();
+  }
+
+  return 0; // Gagal parse (biasanya banner permanen tanpa tanggal spesifik)
 };
 
-// 1. List Semua Banner (Untuk Menu Select Banner)
+// 2. Tentukan Kategori Banner
+const getGachaCategory = (gacha) => {
+  const name = (gacha.name || "").toLowerCase();
+  const id = (gacha.id || "").toLowerCase();
+
+  // Urutan pengecekan penting!
+  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday")) return "Birthday";
+  if (name.includes("fes") || name.includes("フェス") || id.includes("fes")) return "Fes";
+  if (name.includes("premium") || name.includes("プレミアム")) return "Premium";
+  if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
+  
+  // Default logic gachaType MalitsPlus (Type 1 usually perm, 2 limited)
+  // Tapi nama lebih akurat biasanya.
+  if (name.includes("pick up") || name.includes("ピックアップ")) return "Rate Up";
+  
+  return "Standard";
+};
+
+// ==========================================
+// GACHA ENDPOINTS
+// ==========================================
+
+// 1. LIST BANNER (Dengan Tanggal yang Benar)
 app.get("/api/gachas", (_req, res) => {
-    // Kirim data ringkas saja (ID, Nama, Gambar, Tanggal)
-    const list = gachaList.map(g => ({
-        id: g.id,
-        name: g.name,
-        assetId: g.assetId,
-        startAt: g.startAt,
-        pickupCount: g.pickupCardIds.length
-    }));
+    const list = gachaList
+      .filter(g => {
+          // Buang banner sampah (Ticket, Item Pack, Button Badge, dll)
+          if (!g.name) return false;
+          if (g.name.includes("パック") || g.name.includes("Pack")) return false; // Pack Item
+          if (g.name.includes("Ticket") || g.name.includes("チケット")) return false; // Ticket Only
+          if (g.id.includes("toy-buttonbadge")) return false;
+          return true;
+      })
+      .map(g => {
+          const timestamp = parseGachaDate(g);
+          return {
+              id: g.id,
+              name: g.name,
+              assetId: g.assetId || g.bannerAssetId, // Fallback field
+              startAt: timestamp > 0 ? new Date(timestamp).toISOString() : null, // Kirim ISO String
+              category: getGachaCategory(g),
+              pickupCount: g.pickupCardIds ? g.pickupCardIds.length : 0
+          };
+      })
+      // Urutkan: Terbaru di atas
+      .sort((a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime());
+
     res.json(list);
 });
 
-// 2. Simulasi Data Pool untuk Banner Tertentu
+// 2. GACHA POOL SIMULATION
 app.get("/api/gachas/:id/pool", (req, res) => {
     const { id } = req.params;
     const banner = gachaList.find(g => g.id === id);
 
-    if (!banner) {
-        return res.status(404).json({ error: "Banner not found" });
-    }
+    if (!banner) return res.status(404).json({ error: "Banner not found" });
 
     const allCards = getAllCardsFlat();
-    const bannerDate = new Date(banner.startAt).getTime();
+    const bannerDate = parseGachaDate(banner);
+    const category = getGachaCategory(banner);
 
-    // A. Identifikasi Rate Up Cards
-    // pickupCardIds di Gacha.json biasanya berupa ID angka atau string.
-    // Kita harus mencocokkannya dengan `uniqueId` atau `id` di cardSources.
-    // [NOTE]: Ini bagian tricky. MalitsPlus mungkin pakai ID angka (misal "1001"), 
-    // sedangkan cardSources kita pakai "smr-05-nurs-00". 
-    // Jika mapping ID belum ada, kita mungkin perlu logic pencocokan manual atau asumsi.
-    // TAPI, jika uniqueId di cardSources kamu sudah sinkron dengan ID game asli, aman.
-    
-    const cleanPickupIds = banner.pickupCardIds.map(id => id.replace(/^card-/, ""));
+    // A. RATE UP CARDS
+    const cleanPickupIds = (banner.pickupCardIds || []).map(pid => pid.replace(/^card-/, ""));
+    const rateUpCards = allCards.filter(c => 
+        banner.pickupCardIds?.includes(c.uniqueId) || cleanPickupIds.includes(c.uniqueId)
+    );
 
-    const rateUpCards = allCards.filter(c => {
-        // Cek apakah ID kartu ada di list pickup (baik raw ID maupun clean ID)
-        return banner.pickupCardIds.includes(c.uniqueId) || cleanPickupIds.includes(c.uniqueId);
-    });
-    
-    // B. Bentuk Standard Pool (Time Travel Logic)
+    // B. STANDARD POOL LOGIC
     const standardPool = allCards.filter(c => {
-        // 1. Cek Tanggal Rilis (Harus sebelum atau sama dengan banner)
-        // Pastikan format tanggal di cardSources ("YYYY-MM-DD") bisa diparse
-        const releaseDate = new Date(c.releaseDate).getTime();
-        if (releaseDate > bannerDate) return false; // Kartu masa depan, skip
+        // 1. FILTER: Kartu Event tidak masuk Gacha
+        // Cek field 'category' di cardSources atau 'obtainMessage' jika ada indikasi event
+        if (c.category && c.category.toLowerCase().includes("event")) return false;
+        if (c.sourceName === "Event Reward") return false; // Jika ada field ini
 
-        // 2. Cek Kategori
-        // Kartu Limited lama TIDAK masuk pool banner baru (kecuali dia Rate Up)
-        const isLimited = c.category && c.category.toLowerCase().includes("limited");
-        
-        // Jika dia Rate Up di banner ini, loloskan walau limited
-        if (banner.pickupCardIds.includes(c.uniqueId)) return true;
+        // 2. FILTER: Tanggal Rilis (Time Travel)
+        // Kartu harus rilis SEBELUM atau SAMA DENGAN banner
+        const cardDate = new Date(c.releaseDate).getTime();
+        if (cardDate > bannerDate) return false;
 
-        // Jika tidak Rate Up, dia harus Permanent/Initial agar masuk pool
-        if (isLimited) return false; 
+        // 3. FILTER: Limited/Fes
+        // Jika banner ini ADALAH Fes, maka kartu Fes lama BOLEH masuk (biasanya).
+        // Jika banner Standard, kartu Fes/Limited TIDAK boleh masuk.
+        const isCardLimited = c.category && (c.category.toLowerCase().includes("limited") || c.category.toLowerCase().includes("fes"));
+        const isCardRateUp = cleanPickupIds.includes(c.uniqueId);
 
-        return true;
+        // Jika kartu ini Rate Up, loloskan apapun statusnya
+        if (isCardRateUp) return true;
+
+        // Jika kartu ini Limited/Fes TAPI tidak Rate Up, cek jenis bannernya
+        if (isCardLimited) {
+            // Logika Idoly Pride: Fes Banner biasanya berisi kartu Fes lama, tapi Limited Banner tidak berisi Limited lama.
+            if (category === "Fes" && c.category.toLowerCase().includes("fes")) return true;
+            return false; // Buang Limited/Fes nyasar
+        }
+
+        return true; // Kartu Permanent lolos
     });
 
-    // C. Response
-    // Kita kirim data yang sudah matang ke frontend
     res.json({
         bannerInfo: {
             id: banner.id,
             name: banner.name,
-            assetId: banner.assetId,
-            startAt: banner.startAt
+            assetId: banner.assetId || banner.bannerAssetId,
+            startAt: new Date(bannerDate).toISOString(),
+            category: category
         },
         rateUpCards: rateUpCards,
-        // Standard Pool sudah bersih dari kartu masa depan & kartu limited nyasar
-        pool: standardPool 
+        pool: standardPool
     });
 });
 
