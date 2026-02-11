@@ -5,7 +5,7 @@ import path from 'path';
 // --- KONFIGURASI ---
 const GITHUB_BASE_URL = "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/main";
 // Simpan di folder 'storage' di dalam repo backend ini sendiri
-const STORAGE_DIR = path.join(__dirname, "../data/music"); 
+const STORAGE_DIR = path.join(process.cwd(), "src/data/music");
 const CHARTS_DIR = path.join(STORAGE_DIR, "charts");
 
 // Interface Sederhana

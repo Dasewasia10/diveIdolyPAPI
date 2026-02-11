@@ -20,7 +20,7 @@ import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 
 
-const STORAGE_DIR = path.join(__dirname, "./src/data/music"); 
+const STORAGE_DIR = path.join(process.cwd(), "src/data/music");
 
 // ==========================================
 // 2. MIDDLEWARE CONFIGURATION
