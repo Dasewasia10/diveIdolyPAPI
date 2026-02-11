@@ -321,6 +321,8 @@ const getGachaCategory = (gacha) => {
     ? gacha.pickupCardIds[0].toLowerCase() 
     : "";
 
+  const standardPollLength = (gacha.pickupCardIds && gacha.pickupCardIds.length === 1);
+
   // --- LOGIKA DETEKSI KATEGORI ---
 
   // 1. PREMIUM (Bayar pake uang asli / red diamond)
@@ -346,7 +348,7 @@ const getGachaCategory = (gacha) => {
   if (id.includes("lm-") || name.includes("limited")) return "Limited";
 
   // 7. STANDARD / DIAMOND
-  if (name.includes("★5アイドル\n1人確定ガチャ") || (banner.pickupCardIds && banner.pickupCardIds.length === 1)) return "Standard";
+  if (name.includes("★5アイドル\n1人確定ガチャ") || (standardPollLength)) return "Standard";
   if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
   
   // Default fallback
