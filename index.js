@@ -525,7 +525,7 @@ app.get('/api/music/songs', (req, res) => {
 
 // 2. Endpoint: Get Specific Chart
 // GET /api/music/charts/:chartId
-app.get('/charts/:chartId', (req, res) => {
+app.get('/api/music/charts/:chartId', (req, res) => {
     const chartId = req.params.chartId;
     
     // Validasi keamanan sederhana (mencegah directory traversal)
