@@ -430,15 +430,12 @@ app.get("/api/gachas/:id/pool", (req, res) => {
         banner.pickupCardIds?.includes(c.uniqueId) || cleanPickupIds.includes(c.uniqueId)
     );
 
-    // --- PERSIAPAN LOGIKA BIRTHDAY ---
-    let birthdayCharPrefix = "";
-    if (category === "Birthday" || category === "birt") {
-        if (cleanPickupIds.length > 0) {
-            const parts = cleanPickupIds[0].split("-");
-            if (parts.length > 0) {
-                birthdayCharPrefix = parts[0]; 
-            }
-        }
+    // --- ATURAN SPARK (EXCHANGE POINT) ---
+    // Birthday & Kizuna = 100 Pt
+    // Sisanya (Standard, Limited, Fes) = 200 Pt
+    let exchangeLimit = 200;
+    if (category === "Birthday" || category === "birt" || category === "Kizuna") {
+        exchangeLimit = 100;
     }
 
     // 2. FILTER STANDARD POOL
@@ -470,26 +467,8 @@ app.get("/api/gachas/:id/pool", (req, res) => {
         const isBirthday = cardCat.includes("birthday") || uid.includes("birt");
         const isLimited = (cardCat.includes("limited") || uid.includes("lm-")) && !isFes && !isKizuna && !isBirthday;
 
-        // --- ATURAN KHUSUS: BIRTHDAY BANNER ---
-        if (category === "Birthday" || category === "birt") {
-            // LOGIKA UNTUK BINTANG 5: SANGAT KETAT
-            if (Number(c.initial) === 5) {
-                // Syarat 1: Harus karakter yang sama (cek prefix nama, misal "rui-")
-                if (!c.uniqueId.startsWith(birthdayCharPrefix + "-")) return false;
-                
-                // Syarat 2: Boleh masuk jika itu Birthday Card ATAU Standard Card
-                if (isBirthday) return true;
-                if (!isFes && !isKizuna && !isLimited) return true;
+        // --- ATURAN POOL BERDASARKAN KATEGORI ---
 
-                return false; // Kalo Kizuna/Limited/Fes karakter itu, tetep gak masuk (kecuali rate up)
-            }
-            
-            // LOGIKA UNTUK BINTANG 4 & 3:
-            // Lanjut ke filter standar di bawah ("fall through").
-            // Artinya: Karakter lain BOLEH masuk, asalkan memenuhi syarat umum (bukan limited/fes).
-        }
-
-        // --- ATURAN BANNER LAINNYA ---
         if (isBirthday) return false; // Birthday orang lain jangan masuk
 
         // Kartu Fes hanya di Banner Fest
@@ -513,7 +492,8 @@ app.get("/api/gachas/:id/pool", (req, res) => {
             name: banner.name,
             assetId: banner.assetId || banner.bannerAssetId,
             startAt: new Date(bannerDate).toISOString(),
-            category: category
+            category: category,
+            exchangeLimit: exchangeLimit
         },
         rateUpCards: rateUpCards,
         pool: standardPool
