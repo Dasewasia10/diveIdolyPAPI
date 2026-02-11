@@ -288,50 +288,67 @@ app.get("/api/wordle/daily", (req, res) => {
 // GACHA DATA ENDPOINTS
 // ==========================================
 
-// 1. Ekstrak Tanggal dari ID jika startAt error
-// Format umum ID: gacha-name-YY-MMDD atau gacha-name-YYYY-MM-DD
+// 1. Ekstrak Tanggal (Tidak berubah, tetap gunakan yang tadi)
 const parseGachaDate = (gacha) => {
-  // Prioritas 1: Gunakan startAt jika valid
   if (gacha.startAt) {
     const date = new Date(gacha.startAt);
     if (!isNaN(date.getTime())) return date.getTime();
   }
-
-  // Prioritas 2: Regex ID (Format YY-MMDD) -> Contoh: 21-0813
   const regexShort = /-(\d{2})-(\d{2})(\d{2})/;
   const matchShort = gacha.id.match(regexShort);
   if (matchShort) {
     const year = 2000 + parseInt(matchShort[1]);
-    const month = parseInt(matchShort[2]) - 1; // JS Month 0-11
+    const month = parseInt(matchShort[2]) - 1; 
     const day = parseInt(matchShort[3]);
     return new Date(year, month, day).getTime();
   }
-
-  // Prioritas 3: Regex ID (Format YYYY-MM-DD)
   const regexLong = /-(\d{4})-(\d{2})-(\d{2})/;
   const matchLong = gacha.id.match(regexLong);
   if (matchLong) {
     return new Date(matchLong[1], matchLong[2] - 1, matchLong[3]).getTime();
   }
-
-  return 0; // Gagal parse (biasanya banner permanen tanpa tanggal spesifik)
+  return 0; 
 };
 
-// 2. Tentukan Kategori Banner
+// 2. Tentukan Kategori Banner (FIXED & SAFER)
 const getGachaCategory = (gacha) => {
   const name = (gacha.name || "").toLowerCase();
   const id = (gacha.id || "").toLowerCase();
-
-  // Urutan pengecekan penting!
-  if (name.includes("premium") || name.includes("プレミアム") || pickupCardIds.includes("prem")) return "Premium";
-  if (name.includes("kizuna") || name.includes("絆") || pickupCardIds.includes("link")) return "Kizuna";
-  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday") || pickupCardIds.includes("birt")) return "Birthday";
-  if (name.includes("fest") || name.includes("フェス") || id.includes("fes") || pickupCardIds.includes("fest")) return "Fest";
-  if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
-  if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
   
-  // Default logic gachaType MalitsPlus (Type 1 usually perm, 2 limited)
-  // Tapi nama lebih akurat biasanya.
+  // AMBIL ID KARTU PERTAMA DENGAN AMAN
+  // Jika array ada isinya, ambil elemen pertama. Jika tidak, string kosong.
+  const firstCardId = (gacha.pickupCardIds && gacha.pickupCardIds.length > 0) 
+    ? gacha.pickupCardIds[0].toLowerCase() 
+    : "";
+
+  // --- LOGIKA DETEKSI KATEGORI ---
+
+  // 1. PREMIUM (Bayar pake uang asli / red diamond)
+  if (name.includes("premium") || name.includes("プレミアム") || firstCardId.includes("prem")) return "Premium";
+
+  // 2. KIZUNA / LINK (Karakter pasangan)
+  // ID Kartu Kizuna biasanya mengandung 'link'
+  if (name.includes("kizuna") || name.includes("絆") || firstCardId.includes("link")) return "Kizuna";
+
+  // 3. BIRTHDAY
+  // ID Kartu Birthday biasanya mengandung 'birt'
+  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday") || firstCardId.includes("birt")) return "Birthday";
+
+  // 4. FES (Festival - Rate Up x2)
+  // ID Kartu Fes biasanya mengandung 'fest'
+  if (name.includes("fest") || name.includes("フェス") || id.includes("fes") || firstCardId.includes("fest")) return "Fest";
+
+  // 5. RERUN / REVIVAL
+  if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
+
+  // 6. LIMITED (Event Gacha)
+  // ID Gacha limited biasanya ada 'lm-' (Limited)
+  if (id.includes("lm-") || name.includes("limited")) return "Limited";
+
+  // 7. STANDARD / DIAMOND
+  if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
+  
+  // Default fallback
   if (name.includes("pick up") || name.includes("ピックアップ")) return "Rate Up";
   
   return "Standard";
@@ -350,17 +367,28 @@ const getAllCardsFlat = () => {
   );
 };
 
-// 1. LIST BANNER (Dengan Tanggal yang Benar)
+// 1. LIST BANNER (Fixed Filter Logic)
 app.get("/api/gachas", (_req, res) => {
     const list = gachaList
       .filter(g => {
-          // Buang banner sampah (Ticket, Item Pack, Button Badge, dll)
+          // Safety check
           if (!g.name) return false;
-          if (g.pickupCardIds.includes("eve")) return false;
-          if (g.name.includes("パック") || g.name.includes("Pack")) return false; // Pack Item
-          if (g.name.includes("Ticket") || g.name.includes("チケット")) return false; // Ticket Only
-          if (g.id.includes("pickup") || g.name.includes("リリース記念\nガチャ")) return false; // Promo Pickup Gacha
+          
+          // Ambil ID kartu pertama untuk pengecekan
+          const firstCardId = (g.pickupCardIds && g.pickupCardIds.length > 0) 
+            ? g.pickupCardIds[0].toLowerCase() 
+            : "";
+
+          // Filter Sampah
+          if (g.name.includes("パック") || g.name.includes("Pack")) return false; 
+          if (g.name.includes("Ticket") || g.name.includes("チケット")) return false; 
+          if (g.id.includes("pickup") || g.name.includes("リリース記念\nガチャ")) return false; 
           if (g.id.includes("toy-buttonbadge")) return false;
+
+          // Filter Kartu Event Reward (Biasanya kodenya 'eve')
+          // Kartu event tidak ada di gacha, jadi banner yg isinya kartu 'eve' itu aneh/salah data
+          if (firstCardId.includes("eve")) return false;
+
           return true;
       })
       .map(g => {
@@ -368,13 +396,13 @@ app.get("/api/gachas", (_req, res) => {
           return {
               id: g.id,
               name: g.name,
-              assetId: g.assetId || g.bannerAssetId, // Fallback field
-              startAt: timestamp > 0 ? new Date(timestamp).toISOString() : null, // Kirim ISO String
-              category: getGachaCategory(g),
+              assetId: g.assetId || g.bannerAssetId, 
+              startAt: timestamp > 0 ? new Date(timestamp).toISOString() : null, 
+              // Panggil fungsi kategori dengan parameter 'g'
+              category: getGachaCategory(g), 
               pickupCount: g.pickupCardIds ? g.pickupCardIds.length : 0
           };
       })
-      // Urutkan: Terbaru di atas
       .sort((a, b) => new Date(b.startAt).getTime() - new Date(a.startAt).getTime());
 
     res.json(list);
