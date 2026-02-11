@@ -57,7 +57,7 @@ app.get("/", (_req, res) => {
       characters: "/api/characters",
       stamps: "/api/stamps",
       messages: "/api/messages/index.json",
-      lovestory: "/api/lovestory/index.json", // New Endpoint
+      lovestory: "/api/lovestory/index.json", 
       musicRouter: "/api/music"
     },
   });
@@ -512,7 +512,7 @@ app.get("/api/gachas/:id/pool", (req, res) => {
 
 // 1. Endpoint: Get All Songs
 // GET /api/music/songs
-router.get('/songs', (req, res) => {
+app.get('/api/music/songs', (req, res) => { 
     const filePath = path.join(STORAGE_DIR, "ProcessedSongList.json");
     
     // Cek file ada atau tidak
@@ -525,7 +525,7 @@ router.get('/songs', (req, res) => {
 
 // 2. Endpoint: Get Specific Chart
 // GET /api/music/charts/:chartId
-router.get('/charts/:chartId', (req, res) => {
+app.get('/charts/:chartId', (req, res) => {
     const chartId = req.params.chartId;
     
     // Validasi keamanan sederhana (mencegah directory traversal)
