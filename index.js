@@ -323,9 +323,11 @@ const getGachaCategory = (gacha) => {
   const id = (gacha.id || "").toLowerCase();
 
   // Urutan pengecekan penting!
-  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday")) return "Birthday";
-  if (name.includes("fes") || name.includes("フェス") || id.includes("fes")) return "Fes";
   if (name.includes("premium") || name.includes("プレミアム")) return "Premium";
+  if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday")) return "Birthday";
+  if (name.includes("fest") || name.includes("フェス") || id.includes("fes")) return "Fest";
+  if (name.includes("kizuna") || name.includes("絆")) return "Kizuna";
+  if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
   if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
   
   // Default logic gachaType MalitsPlus (Type 1 usually perm, 2 limited)
@@ -347,6 +349,7 @@ app.get("/api/gachas", (_req, res) => {
           if (!g.name) return false;
           if (g.name.includes("パック") || g.name.includes("Pack")) return false; // Pack Item
           if (g.name.includes("Ticket") || g.name.includes("チケット")) return false; // Ticket Only
+          if (g.id.includes("pickup") || g.name.includes("リリース記念\nガチャ")) return false; // Promo Pickup Gacha
           if (g.id.includes("toy-buttonbadge")) return false;
           return true;
       })
