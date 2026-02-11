@@ -353,8 +353,6 @@ const getGachaCategory = (gacha) => {
   
   // Default fallback
   if (name.includes("pick up") || name.includes("ピックアップ")) return "Rate Up";
-  
-  return "Standard";
 };
 
 // ==========================================
