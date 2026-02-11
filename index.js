@@ -440,24 +440,26 @@ app.get("/api/gachas/:id/pool", (req, res) => {
 
     // 2. FILTER STANDARD POOL
     const standardPool = allCards.filter(c => {
-        // Safety check untuk costumeTheme (pakai || "" agar tidak error jika null)
-        if ((c.costumeTheme || "").toLowerCase().includes("event")) return false;
-        
-        // Filter Hardcoded (Collab/Special Cards)
-        // Pastikan uniqueId ada sebelum di-cek
         const uid = (c.uniqueId || "").toLowerCase();
-        if (uid.includes("02-miku")) return false;
-        if (uid.includes("02-goch")) return false;
-        if (uid.includes("02-sush")) return false;
-        if (uid.includes("02-kion")) return false;
-        if (uid.includes("02-trbl")) return false;
+        const costume = (c.costumeTheme || "").toLowerCase();
+
+        // --- RULE 0: RATE UP (PRIORITAS TERTINGGI) ---
+        // Jika kartu ini adalah Rate Up di banner ini, WAJIB MASUK.
+        // Tidak peduli dia collab, event, limited, atau alien sekalipun.
+        if (cleanPickupIds.includes(c.uniqueId)) return true;
+
+        // --- RULE 1: FILTER COLLAB & EVENT (STRICT EXCLUDE) ---
+        // Kartu Collab tidak boleh muncul di pool manapun kecuali dia Rate Up (sudah lolos di Rule 0).
+        // Kita gunakan .includes() tanpa prefix '02-' agar menangkap semua variasi ID.
+        const collabKeywords = ["miku", "goch", "sush", "kion", "trbl"];
+        if (collabKeywords.some(keyword => uid.includes(keyword))) return false;
+
+        // Filter Kartu Event Reward
+        if (costume.includes("event")) return false;
 
         // Filter Tanggal
         const cardDate = new Date(c.releaseDate).getTime();
         if (cardDate > bannerDate) return false;
-        
-        // Rule 0: Rate Up Selalu Masuk
-        if (cleanPickupIds.includes(c.uniqueId)) return true;
 
         // C. CEK TIPE KARTU
         const cardCat = (c.category || "").toLowerCase();
