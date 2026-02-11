@@ -17,6 +17,8 @@ import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
+import gachaList from "./src/data/gacha/Gacha.json" with { type: "json" };
+import gachaButtons from "./src/data/gacha/GachaButton.json" with { type: "json" };
 
 // ==========================================
 // 2. MIDDLEWARE CONFIGURATION
@@ -281,6 +283,31 @@ app.get("/api/wordle/daily", (req, res) => {
     length: word.length,
     hash: encodedWord
   });
+});
+
+// ==========================================
+// GACHA DATA ENDPOINTS
+// ==========================================
+
+// 1. Get All Banners
+app.get("/api/gacha/banners", (_req, res) => {
+  // Kita gabungkan data Gacha dengan Button-nya biar frontend enak
+  const fullBanners = gachaList.map(gacha => {
+    // Cari button yang connect ke gachaId ini (ambil yang 10x draw biar gampang)
+    const button = gachaButtons.find(btn => btn.gachaId === gacha.id && btn.drawCount === 10);
+    
+    return {
+      ...gacha,
+      // Tambahkan info button (biar tau cost-nya berapa, dsb)
+      buttonInfo: button || null
+    };
+  });
+  
+  // Filter banner yang valid (misal yang punya pickupCardIds)
+  const validBanners = fullBanners.filter(g => g.pickupCardIds && g.pickupCardIds.length > 0);
+
+  // Sort dari yang terbaru (biasanya ID atau order bisa jadi patokan, atau nanti di frontend sort by date)
+  res.json(validBanners.reverse()); 
 });
 
 // ==========================================
