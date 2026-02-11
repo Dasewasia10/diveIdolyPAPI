@@ -341,6 +341,15 @@ const getGachaCategory = (gacha) => {
 // GACHA ENDPOINTS
 // ==========================================
 
+const getAllCardsFlat = () => {
+  return cardSources.flatMap((source) =>
+    source.data.map((card) => ({
+      ...card,
+      sourceName: source.name,
+    }))
+  );
+};
+
 // 1. LIST BANNER (Dengan Tanggal yang Benar)
 app.get("/api/gachas", (_req, res) => {
     const list = gachaList
