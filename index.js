@@ -388,8 +388,7 @@ app.get("/api/gachas/:id/pool", (req, res) => {
     const standardPool = allCards.filter(c => {
         // 1. FILTER: Kartu Event tidak masuk Gacha
         // Cek field 'category' di cardSources atau 'obtainMessage' jika ada indikasi event
-        if (c.category && c.category.toLowerCase().includes("event")) return false;
-        if (c.sourceName === "Event Reward") return false; // Jika ada field ini
+        if (c.costumeTheme && c.costumeTheme.toLowerCase().includes("event")) return false;
 
         // 2. FILTER: Tanggal Rilis (Time Travel)
         // Kartu harus rilis SEBELUM atau SAMA DENGAN banner
@@ -399,7 +398,7 @@ app.get("/api/gachas/:id/pool", (req, res) => {
         // 3. FILTER: Limited/Fes
         // Jika banner ini ADALAH Fes, maka kartu Fes lama BOLEH masuk (biasanya).
         // Jika banner Standard, kartu Fes/Limited TIDAK boleh masuk.
-        const isCardLimited = c.category && (c.category.toLowerCase().includes("limited") || c.category.toLowerCase().includes("fes"));
+        const isCardLimited = c.category && (c.category.toLowerCase().includes("limited") || c.category.toLowerCase().includes("fest"));
         const isCardRateUp = cleanPickupIds.includes(c.uniqueId);
 
         // Jika kartu ini Rate Up, loloskan apapun statusnya
@@ -408,7 +407,7 @@ app.get("/api/gachas/:id/pool", (req, res) => {
         // Jika kartu ini Limited/Fes TAPI tidak Rate Up, cek jenis bannernya
         if (isCardLimited) {
             // Logika Idoly Pride: Fes Banner biasanya berisi kartu Fes lama, tapi Limited Banner tidak berisi Limited lama.
-            if (category === "Fes" && c.category.toLowerCase().includes("fes")) return true;
+            if (category === "Fest" && c.category.toLowerCase().includes("fest")) return true;
             return false; // Buang Limited/Fes nyasar
         }
 
