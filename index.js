@@ -324,9 +324,9 @@ const getGachaCategory = (gacha) => {
 
   // Urutan pengecekan penting!
   if (name.includes("premium") || name.includes("プレミアム")) return "Premium";
+  if (name.includes("kizuna") || name.includes("絆")) return "Kizuna";
   if (name.includes("birthday") || name.includes("誕生日") || id.includes("birthday")) return "Birthday";
   if (name.includes("fest") || name.includes("フェス") || id.includes("fes")) return "Fest";
-  if (name.includes("kizuna") || name.includes("絆")) return "Kizuna";
   if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
   if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
   
@@ -334,7 +334,7 @@ const getGachaCategory = (gacha) => {
   // Tapi nama lebih akurat biasanya.
   if (name.includes("pick up") || name.includes("ピックアップ")) return "Rate Up";
   
-  return "Standard";
+  return "Limited";
 };
 
 // ==========================================
