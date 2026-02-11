@@ -431,22 +431,22 @@ app.get("/api/gachas/:id/pool", (req, res) => {
         banner.pickupCardIds?.includes(c.uniqueId) || cleanPickupIds.includes(c.uniqueId)
     );
 
-    // --- ATURAN KHUSUS: PREMIUM BANNER ---
-    // Premium Banner hanya berisi kartu Rate Up + Item (Item tidak kita simulasikan)
-    // Jadi pool-nya KOSONG, hanya rate up saja.
-    if (category === "Premium") {
-        return res.json({
-            bannerInfo: {
-                id: banner.id,
-                name: banner.name,
-                assetId: banner.assetId || banner.bannerAssetId,
-                startAt: new Date(bannerDate).toISOString(),
-                category: category
-            },
-            rateUpCards: rateUpCards,
-            pool: [] // Tidak ada kartu lain
-        });
-    }
+    // // --- ATURAN KHUSUS: PREMIUM BANNER ---
+    // // Premium Banner hanya berisi kartu Rate Up + Item (Item tidak kita simulasikan)
+    // // Jadi pool-nya KOSONG, hanya rate up saja.
+    // if (category === "Premium") {
+    //     return res.json({
+    //         bannerInfo: {
+    //             id: banner.id,
+    //             name: banner.name,
+    //             assetId: banner.assetId || banner.bannerAssetId,
+    //             startAt: new Date(bannerDate).toISOString(),
+    //             category: category
+    //         },
+    //         rateUpCards: rateUpCards,
+    //         pool: [] // Tidak ada kartu lain
+    //     });
+    // }
 
     // --- PERSIAPAN LOGIKA BIRTHDAY ---
     let birthdayCharPrefix = "";
