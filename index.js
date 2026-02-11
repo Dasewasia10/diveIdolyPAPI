@@ -472,14 +472,21 @@ app.get("/api/gachas/:id/pool", (req, res) => {
 
         // --- ATURAN KHUSUS: BIRTHDAY BANNER ---
         if (category === "Birthday" || category === "birt") {
-            // Harus karakter yang sama
-            if (!c.uniqueId.startsWith(birthdayCharPrefix + "-")) return false;
-            
-            // Masukkan Birthday lama & Standard char tsb
-            if (isBirthday) return true;
-            if (!isFes && !isKizuna && !isLimited) return true;
+            // LOGIKA UNTUK BINTANG 5: SANGAT KETAT
+            if (Number(c.initial) === 5) {
+                // Syarat 1: Harus karakter yang sama (cek prefix nama, misal "rui-")
+                if (!c.uniqueId.startsWith(birthdayCharPrefix + "-")) return false;
+                
+                // Syarat 2: Boleh masuk jika itu Birthday Card ATAU Standard Card
+                if (isBirthday) return true;
+                if (!isFes && !isKizuna && !isLimited) return true;
 
-            return false;
+                return false; // Kalo Kizuna/Limited/Fes karakter itu, tetep gak masuk (kecuali rate up)
+            }
+            
+            // LOGIKA UNTUK BINTANG 4 & 3:
+            // Lanjut ke filter standar di bawah ("fall through").
+            // Artinya: Karakter lain BOLEH masuk, asalkan memenuhi syarat umum (bukan limited/fes).
         }
 
         // --- ATURAN BANNER LAINNYA ---
