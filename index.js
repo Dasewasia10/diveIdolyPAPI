@@ -330,9 +330,13 @@ app.get("/api/gachas/:id/pool", (req, res) => {
     // Jika mapping ID belum ada, kita mungkin perlu logic pencocokan manual atau asumsi.
     // TAPI, jika uniqueId di cardSources kamu sudah sinkron dengan ID game asli, aman.
     
-    // Anggaplah pickupCardIds berisi uniqueId yang valid untuk sekarang.
-    const rateUpCards = allCards.filter(c => banner.pickupCardIds.includes(c.uniqueId));
+    const cleanPickupIds = banner.pickupCardIds.map(id => id.replace(/^card-/, ""));
 
+    const rateUpCards = allCards.filter(c => {
+        // Cek apakah ID kartu ada di list pickup (baik raw ID maupun clean ID)
+        return banner.pickupCardIds.includes(c.uniqueId) || cleanPickupIds.includes(c.uniqueId);
+    });
+    
     // B. Bentuk Standard Pool (Time Travel Logic)
     const standardPool = allCards.filter(c => {
         // 1. Cek Tanggal Rilis (Harus sebelum atau sama dengan banner)
