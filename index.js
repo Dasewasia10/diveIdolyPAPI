@@ -346,6 +346,7 @@ const getGachaCategory = (gacha) => {
   if (id.includes("lm-") || name.includes("limited")) return "Limited";
 
   // 7. STANDARD / DIAMOND
+  if (name.includes("★5アイドル\n1人確定ガチャ") || (banner.pickupCardIds && banner.pickupCardIds.length === 1)) return "Standard";
   if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
   
   // Default fallback
@@ -388,6 +389,11 @@ app.get("/api/gachas", (_req, res) => {
           // Filter Kartu Event Reward (Biasanya kodenya 'eve')
           // Kartu event tidak ada di gacha, jadi banner yg isinya kartu 'eve' itu aneh/salah data
           if (firstCardId.includes("eve")) return false;
+          if (firstCardId.includes("02-miku")) return false;
+          if (firstCardId.includes("02-goch")) return false;
+          if (firstCardId.includes("02-sush")) return false;
+          if (firstCardId.includes("02-kion")) return false;
+          if (firstCardId.includes("02-trbl")) return false;
 
           return true;
       })
