@@ -84,28 +84,62 @@ async function generateCleanSongList(musicData: any[], questData: any[]) {
   console.log(`✨ Generated ProcessedSongList.json in storage.`);
 }
 
-async function splitChartPatterns(chartData: any[]) {
+// Helper: Cari Quest yang menggunakan chart ini untuk mengambil atributnya
+function findQuestAttributes(chartId: any, questData: any[]) {
+  // Default attributes (Unknown/All Type)
+  let attributes = [0, 0, 0, 0, 0]; 
+
+  if (Array.isArray(questData)) {
+    // Cari quest pertama yang pakai chartId ini
+    const quest = questData.find(q => q.musicChartPatternId === chartId);
+    if (quest) {
+      attributes = [
+        quest.position1AttributeType,
+        quest.position2AttributeType,
+        quest.position3AttributeType,
+        quest.position4AttributeType,
+        quest.position5AttributeType
+      ];
+    }
+  }
+  return attributes;
+}
+
+async function splitChartPatterns(chartData: any[], questData: any) { // <--- Tambah parameter questData
   console.log("✂️  Splitting charts...");
   await ensureDirectoryExists(CHARTS_DIR);
 
-  const chartsMap = new Map<string, any[]>();
-  chartData.forEach((note) => {
-    // Filter type 0 disini jika mau hemat storage
+  const chartsMap = new Map();
+  
+  // 1. Grouping Notes
+  chartData.forEach((note: { type: number; id: any; }) => {
     if (note.type === 0) return; 
-
     if (!chartsMap.has(note.id)) {
       chartsMap.set(note.id, []);
     }
-    chartsMap.get(note.id)?.push(note);
+    chartsMap.get(note.id).push(note);
   });
 
+  // 2. Saving Files dengan Inject Attributes
+  let count = 0;
   for (const [chartId, notes] of chartsMap) {
+    // Cari atribut lane untuk chart ini
+    const laneAttributes = findQuestAttributes(chartId, questData);
+
+    // Struktur File JSON Baru: { attributes: [...], notes: [...] }
+    const fileContent = {
+      id: chartId,
+      attributes: laneAttributes, // [1, 2, 1, 3, 2] (Contoh: Vo, Da, Vo, Vi, Da)
+      notes: notes
+    };
+
     await fs.writeFile(
       path.join(CHARTS_DIR, `${chartId}.json`), 
-      JSON.stringify(notes)
+      JSON.stringify(fileContent)
     );
+    count++;
   }
-  console.log(`✅ Splitted charts saved to ${CHARTS_DIR}`);
+  console.log(`✅ Splitted ${count} charts saved to ${CHARTS_DIR}`);
 }
 
 async function main() {
@@ -119,8 +153,8 @@ async function main() {
     await generateCleanSongList(musicData, questData);
   }
 
-  if (chartData) {
-    await splitChartPatterns(chartData);
+  if (chartData && questData) {
+    await splitChartPatterns(chartData, questData);
   }
   console.log("\n🎉 Music Data Sync Complete (Backend Storage Updated)!");
 }
