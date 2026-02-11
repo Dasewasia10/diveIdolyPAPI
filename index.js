@@ -391,7 +391,7 @@ app.get("/api/gachas", (_req, res) => {
           if (firstCardId.includes("eve")) return false;
 
           // Hapus banner Premium dari daftar gacha
-          if (category === "Premium") return false;
+          if (getGachaCategory(g) === "Premium") return false;
 
           return true;
       })
@@ -424,113 +424,79 @@ app.get("/api/gachas/:id/pool", (req, res) => {
     const category = getGachaCategory(banner);
 
     // 1. SIAPKAN RATE UP CARDS
-    // Bersihkan prefix "card-" agar cocok dengan uniqueId kita
     const cleanPickupIds = (banner.pickupCardIds || []).map(pid => pid.replace(/^card-/, ""));
     
     const rateUpCards = allCards.filter(c => 
         banner.pickupCardIds?.includes(c.uniqueId) || cleanPickupIds.includes(c.uniqueId)
     );
 
-    // // --- ATURAN KHUSUS: PREMIUM BANNER ---
-    // // Premium Banner hanya berisi kartu Rate Up + Item (Item tidak kita simulasikan)
-    // // Jadi pool-nya KOSONG, hanya rate up saja.
-    // if (category === "Premium") {
-    //     return res.json({
-    //         bannerInfo: {
-    //             id: banner.id,
-    //             name: banner.name,
-    //             assetId: banner.assetId || banner.bannerAssetId,
-    //             startAt: new Date(bannerDate).toISOString(),
-    //             category: category
-    //         },
-    //         rateUpCards: rateUpCards,
-    //         pool: [] // Tidak ada kartu lain
-    //     });
-    // }
-
     // --- PERSIAPAN LOGIKA BIRTHDAY ---
     let birthdayCharPrefix = "";
     if (category === "Birthday" || category === "birt") {
-        // Ambil identifier karakter dari ID kartu pertama (misal: "rui" dari "rui-05-birt-01")
         if (cleanPickupIds.length > 0) {
             const parts = cleanPickupIds[0].split("-");
             if (parts.length > 0) {
-                birthdayCharPrefix = parts[0]; // "rui", "mana", "kotono", dll
+                birthdayCharPrefix = parts[0]; 
             }
         }
     }
 
-    // 2. FILTER STANDARD POOL (Time Travel & Category Logic)
+    // 2. FILTER STANDARD POOL
     const standardPool = allCards.filter(c => {
-        if (c.costumeTheme && c.costumeTheme.toLowerCase().includes("event")) return false;
+        // Safety check untuk costumeTheme (pakai || "" agar tidak error jika null)
+        if ((c.costumeTheme || "").toLowerCase().includes("event")) return false;
         
-        if (c.uniqueId && c.uniqueId.includes("02-miku")) return false;
-        if (c.uniqueId && c.uniqueId.includes("02-goch")) return false;
-        if (c.uniqueId && c.uniqueId.includes("02-sush")) return false;
-        if (c.uniqueId && c.uniqueId.includes("02-kion")) return false;
-        if (c.uniqueId && c.uniqueId.includes("02-trbl")) return false;
+        // Filter Hardcoded (Collab/Special Cards)
+        // Pastikan uniqueId ada sebelum di-cek
+        const uid = (c.uniqueId || "").toLowerCase();
+        if (uid.includes("02-miku")) return false;
+        if (uid.includes("02-goch")) return false;
+        if (uid.includes("02-sush")) return false;
+        if (uid.includes("02-kion")) return false;
+        if (uid.includes("02-trbl")) return false;
 
+        // Filter Tanggal
         const cardDate = new Date(c.releaseDate).getTime();
         if (cardDate > bannerDate) return false;
         
+        // Rule 0: Rate Up Selalu Masuk
         if (cleanPickupIds.includes(c.uniqueId)) return true;
 
         // C. CEK TIPE KARTU
         const cardCat = (c.category || "").toLowerCase();
-        const cardId = c.uniqueId.toLowerCase();
-
-        // Definisi Tipe Kartu
-        const isFes = cardCat.includes("fest") || cardCat.includes("fes") || cardId.includes("fes");
-        const isKizuna = cardCat.includes("link") || cardCat.includes("kizuna") || cardId.includes("link");
-        const isBirthday = cardCat.includes("birthday") || cardId.includes("birt");
-        // Limited adalah yg ada tulisan limited, TAPI bukan Fes, bukan Kizuna, bukan Birthday
-        const isLimited = (cardCat.includes("limited") || cardId.includes("lm-")) && !isFes && !isKizuna && !isBirthday;
+        
+        const isFes = cardCat.includes("fest") || cardCat.includes("fes") || uid.includes("fes");
+        const isKizuna = cardCat.includes("link") || cardCat.includes("kizuna") || uid.includes("link");
+        const isBirthday = cardCat.includes("birthday") || uid.includes("birt");
+        const isLimited = (cardCat.includes("limited") || uid.includes("lm-")) && !isFes && !isKizuna && !isBirthday;
 
         // --- ATURAN KHUSUS: BIRTHDAY BANNER ---
         if (category === "Birthday" || category === "birt") {
-            // Syarat 1: Harus karakter yang sama (cek prefix nama)
+            // Harus karakter yang sama
             if (!c.uniqueId.startsWith(birthdayCharPrefix + "-")) return false;
             
-            // Syarat 2: Jika kartu ini Birthday (lama), boleh masuk
+            // Masukkan Birthday lama & Standard char tsb
             if (isBirthday) return true;
-            
-            // Syarat 3: Jika kartu Standard (bukan limited tipe lain), boleh masuk
-            // (Asumsi: Bday banner berisi Standard Char + Bday Char)
             if (!isFes && !isKizuna && !isLimited) return true;
 
             return false;
         }
 
         // --- ATURAN BANNER LAINNYA ---
-        
-        // 1. Kartu Birthday ORANG LAIN tidak boleh masuk ke banner apapun selain banner dia sendiri
-        // (Kecuali ada banner "All Birthday" yg sangat jarang)
-        if (isBirthday) return false;
+        if (isBirthday) return false; // Birthday orang lain jangan masuk
 
-        // 2. Kartu Fes
-        if (isFes) {
-            // Hanya muncul di Banner Fes
-            return category === "Fest";
-        }
+        // Kartu Fes hanya di Banner Fest
+        if (isFes) return category === "Fest";
 
-        // 3. Kartu Kizuna (Link)
-        if (isKizuna) {
-            // Muncul di Banner Kizuna & Fes
-            // TIDAK muncul di Banner Limited biasa
-            if (category === "Kizuna" || category === "Fest") return true;
-            return false;
-        }
+        // Kartu Kizuna hanya di Banner Kizuna & Fest
+        if (isKizuna) return category === "Kizuna" || category === "Fest";
 
-        // 4. Kartu Limited
+        // Kartu Limited di Banner Limited, Kizuna, Fest, Rate Up (tapi bukan Standard/Diamond)
         if (isLimited) {
-            // Muncul di Banner Limited, Kizuna, & Fes
-            // TIDAK muncul di Banner Standard
-            if (category === "Limited" || category === "Kizuna" || category === "Fest" || category === "Rate Up") return true;
-            return false;
+            return category === "Limited" || category === "Kizuna" || category === "Fest" || category === "Rate Up";
         }
 
-        // 5. Kartu Standard
-        // Masuk ke semua banner (kecuali Premium & Birthday yang sudah di-handle di atas)
+        // Standard Cards masuk semua
         return true;
     });
 
