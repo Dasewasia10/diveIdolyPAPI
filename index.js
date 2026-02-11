@@ -338,7 +338,7 @@ const getGachaCategory = (gacha) => {
 
   // 4. FES (Festival - Rate Up x2)
   // ID Kartu Fes biasanya mengandung 'fest'
-  if (name.includes("fest") || name.includes("フェス") || id.includes("fes") || firstCardId.includes("fest")) return "Fest";
+  if (name.includes("フェス") && firstCardId.includes("fest")) return "Fest";
 
   // 5. RERUN / REVIVAL
   if (name.includes("rerun") || name.includes("復刻") || id.includes("rev")) return "Rerun";
@@ -348,7 +348,7 @@ const getGachaCategory = (gacha) => {
   if (id.includes("lm-") || name.includes("limited")) return "Limited";
 
   // 7. STANDARD / DIAMOND
-  if (name.includes("★5アイドル\n1人確定ガチャ") || (standardPollLength)) return "Standard";
+  if (name.includes("★5アイドル\n1人確定ガチャ") && (standardPollLength)) return "Standard";
   if (name.includes("normal") || name.includes("ダイヤガチャ") || id.includes("normal")) return "Diamond";
   
   // Default fallback
