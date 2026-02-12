@@ -18,6 +18,7 @@ import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
+import diaryMana from "./src/data/diaryMana/diaryMana.json" with  { type: "json" };
 
 
 const STORAGE_DIR = path.join(process.cwd(), "src/data/music");
@@ -255,6 +256,11 @@ app.get("/api/lovestory/stories/:id.json", (req, res) => {
     console.error("Error reading story file:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
+});
+
+// 1. Get Mana's Diary Index
+app.get("/api/manaDiary/diaryMana.json", (_req, res) => {
+  res.json(diaryMana);
 });
 
 // ==========================================
