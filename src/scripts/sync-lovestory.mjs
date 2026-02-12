@@ -178,7 +178,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                     type: "bgm",
                     action: "play",
                     // Asumsi nama file di R2 sama dengan ID bgm
-                    src: `${R2_BGM_URL}/${bgmId}.wav` // Atau .mp3 tergantung file Anda
+                    src: `${R2_BGM_URL}/${bgmId}.m4a` // Atau .mp3 tergantung file Anda
                 });
             }
             return;
