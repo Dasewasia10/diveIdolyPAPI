@@ -3,6 +3,16 @@
   "title": "Episode 3 Part 1",
   "script": [
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -22,9 +32,14 @@
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh001.wav",
       "text": "分かります。主人公を食っちゃうぐらいに\n最強なのも格好いいですけど、クールで\nハードボイルドなのが、これまた……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
@@ -35,12 +50,26 @@
       "text": "はぁ……シビれてまうよなぁ\n……それに……ふふっ"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu003.wav",
       "text": "前から思ってたんやけど\n{user}君、静かにしてると\n土方執行官と雰囲気似てるかも？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -51,91 +80,136 @@
       "text": "なな！"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=言われたとおりにしてみる",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh002.wav",
-              "text": "ええ……絶対似てないと思いますけど\nえっと……こ、こうですか？\n……スン……"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu005.wav",
-              "text": "あ、ごめん\n思ってたほど似てへんかったわ\nあはは！"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh003.wav",
-              "text": "やらせておいて酷くありません！？\nっていうか、絶対からかうつもりで\nやらせたでしょ……"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu006.wav",
-              "text": "あはは！"
-            }
-          ]
-        },
-        {
-          "text": "text=やらない",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh004.wav",
-              "text": "や、やらないですよ……恥ずかしい\n大体、土方執行官に俺が\n似てるはずないでしょう"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu007.wav",
-              "text": "そんなん分からんやんか\n漫画原作の実写映画でも\n雰囲気合ってれば似てるように感じるやろ？"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh005.wav",
-              "text": "否定はしないですけど……\nやったらやったで、どうせからかわれる\nだけですよね？"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu008.wav",
-              "text": "ノリが悪いなぁ……\nそりゃあ、すぐからかううちが\n悪いのかもしれへんけど……"
-            }
-          ]
-        }
-      ]
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh002.wav",
+      "text": "ええ……絶対似てないと思いますけど\nえっと……こ、こうですか？\n……スン……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu005.wav",
+      "text": "あ、ごめん\n思ってたほど似てへんかったわ\nあはは！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh003.wav",
+      "text": "やらせておいて酷くありません！？\nっていうか、絶対からかうつもりで\nやらせたでしょ……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu006.wav",
+      "text": "あはは！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh004.wav",
+      "text": "や、やらないですよ……恥ずかしい\n大体、土方執行官に俺が\n似てるはずないでしょう"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu007.wav",
+      "text": "そんなん分からんやんか\n漫画原作の実写映画でも\n雰囲気合ってれば似てるように感じるやろ？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh005.wav",
+      "text": "否定はしないですけど……\nやったらやったで、どうせからかわれる\nだけですよね？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu008.wav",
+      "text": "ノリが悪いなぁ……\nそりゃあ、すぐからかううちが\n悪いのかもしれへんけど……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh006.wav",
       "text": "（鈴村先輩が役者を目指していると\n知ってから、一ヶ月半ほどが過ぎた）"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
@@ -149,17 +223,36 @@
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh007.wav",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "（相変わらず先輩は、俺をからかってばかり\nだけど、その関西弁にはすっかり慣れ\n最近は心地良さすら感じ始めていた）"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.wav"
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh008.wav",
       "text": "ああ……それは分かります\n俺、『裏道バイオレンス』の沖田補佐官が\n身につけている腕時計格好いいなと思ってて"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
@@ -173,9 +266,14 @@
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh009.wav",
       "text": "……前に軽く調べたら……\nあるにはあるんですけど\nうん十万するって出てきました……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
@@ -189,9 +287,14 @@
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh010.wav",
       "text": "う……ま、またそうやってからかって……\nどうせ似合いませんよ\nただ憧れてるってだけで……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
@@ -202,10 +305,15 @@
       "text": "あらら、スマホのアラーム音……\nもう出ないといかん時間や\n今日はここまでやね"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh011.wav",
       "text": "今日もバイトですか？\n最近、シフト増やしてますよね"
     },
@@ -218,6 +326,16 @@
       "text": "年明け以降はあんまバイト入れない\nかもしれなくて……\n今の内に稼いでおきたいんよ"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -226,28 +344,52 @@
       "text": "{user}君と会える時間が\n少なくなるんは、寂しいけど\n……な～んて！"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh012.wav",
-      "text": "（俺と会えないのは、寂しい……\nどこまでが先輩の本心なんだろう\n……ただ……）"
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": null,
+      "voiceUrl": null,
+      "text": "（俺と会えないのは、寂しい……\nどこまでが先輩の本心なんだろう\n……ただ……）"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "unknown",
+      "speakerName": "{user}",
+      "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh013.wav",
       "text": "（先輩がいなくなった後の部室は\nいつも寂しい。……俺、なんだかんだで\n先輩と一緒の時間を、楽しんで……？）"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
+      "bgName": "schoolclass-00-noon"
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh014.wav",
       "text": "……はぁ。俺も帰るか\n一人で過ごすには、静か過ぎる"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_stm-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
+      "bgName": "schoolhallway-00-noon"
     },
     {
       "type": "dialogue",
@@ -261,9 +403,14 @@
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh015.wav",
       "text": "あ……こ、小島先輩……\n先輩なら、用事があるからって先に……\n詳しいことは、俺も知らないですけど"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
+      "bgName": "schoolhallway-00-noon"
     },
     {
       "type": "dialogue",
@@ -274,10 +421,15 @@
       "text": "ああ、じゃあバイトか……\n優のバイト先がある繁華街、最近教師達が\n抜き打ちで見回りしてるらしいんだよね"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
+      "bgName": "schoolhallway-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh016.wav",
       "text": "え！？"
     },
@@ -290,12 +442,31 @@
       "text": "ああ、大丈夫。叶、あんたが優の秘密\n知ってるの、本人に聞いてるから\n……バラしたら承知しないけど"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
+      "bgName": "schoolhallway-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
+      "bgName": "schoolhallway-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "kan",
       "speakerName": "小島叶",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-kan004.wav",
       "text": "あんたも念のため気をつけなよ\nまっ、見るからに真面目君なあんたには\n関係ないかもだけど……じゃあね"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.wav"
     },
     {
       "type": "dialogue",
@@ -306,20 +477,44 @@
       "text": "――駅前"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh017.wav",
-      "text": "（この辺りを、先生が見回りしてるって……\nあ、本当だ。あれは生活指導の……\nしかも、先生達の向かってる先は……？）"
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": null,
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh017.wav",
+      "text": "（この辺りを、先生が見回りしてるって……\nあ、本当だ。あれは生活指導の……\nしかも、先生達の向かってる先は……？）"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "unknown",
+      "speakerName": "{user}",
+      "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh018.wav",
       "text": "（ま、まずい！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -330,6 +525,11 @@
       "text": "ふんふんふ～ん\n――きゃ！？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -338,10 +538,20 @@
       "text": "え、な、何！？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sneak-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh019.wav",
       "text": "しっ！"
     },
@@ -354,91 +564,163 @@
       "text": "……えっ？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh020.wav",
       "text": "はい、けど、うかつでした……\nとっさに隠れたけど、ここ\nすぐ見つかるかも。どうしよう……"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=抱き寄せて優の顔を隠す",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh021.wav",
-              "text": "先生達がこっちに来る……\nすみません先輩っ。もっと近づいて……！\n顔は上げないで下さい！"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu018.wav",
-              "text": "え……ええぇ……！？\nそ、そんなギュッてされたら……\nく、苦しいよ……"
-            }
-          ]
-        },
-        {
-          "text": "text=呪文を唱える",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh022.wav",
-              "text": "そ、そうだ\nこの前漫画で読んだ、気配を消す呪文！\nあれを唱えれば……"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu019.wav",
-              "text": "そっか、そうやな！"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu020.wav",
-              "text": "って、ほんまに消せる訳ないやん！\n漫画読み過ぎやって！\n……うちが言うのも変やけど！"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "yu",
-              "speakerName": "鈴村優",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu021.wav",
-              "text": "ヤバいヤバイ、先生がこっちに……！\nちょっと胸借りるで……！\nうちの顔、上手く隠して！"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh023.wav",
-              "text": "す、鈴村先輩！？\n隠すというかこれはもう抱き合っている\nようにしか見えないと言うか……"
-            }
-          ]
-        }
-      ]
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh021.wav",
+      "text": "先生達がこっちに来る……\nすみません先輩っ。もっと近づいて……！\n顔は上げないで下さい！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu018.wav",
+      "text": "え……ええぇ……！？\nそ、そんなギュッてされたら……\nく、苦しいよ……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh022.wav",
+      "text": "そ、そうだ\nこの前漫画で読んだ、気配を消す呪文！\nあれを唱えれば……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu019.wav",
+      "text": "そっか、そうやな！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu020.wav",
+      "text": "って、ほんまに消せる訳ないやん！\n漫画読み過ぎやって！\n……うちが言うのも変やけど！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu021.wav",
+      "text": "ヤバいヤバイ、先生がこっちに……！\nちょっと胸借りるで……！\nうちの顔、上手く隠して！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh023.wav",
+      "text": "す、鈴村先輩！？\n隠すというかこれはもう抱き合っている\nようにしか見えないと言うか……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh024.wav",
       "text": "（く……どうすればいい！？\nこのままじゃ……！\n頼む……気付かないでくれ……！）"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -449,12 +731,22 @@
       "text": "――せんせー！\nあっちでうちの生徒が\nゲーセン行ったっぽいですよ～"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "kan",
       "speakerName": "小島叶",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-kan006.wav",
       "text": "叶はこのまま帰るんで大丈夫で～す\nはーい、さよなら～"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -465,12 +757,27 @@
       "text": "……あ～！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh025.wav",
       "text": "え？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -481,12 +788,22 @@
       "text": "う、ううん……\n別に……ええんやけど……\n叶さんまで、なんでここに……？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "kan",
       "speakerName": "小島叶",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-kan008.wav",
       "text": "この辺歩いてたら、先生から隠れようと\nしてるあんた達を見つけたってだけ\n……たまたまね！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -497,10 +814,15 @@
       "text": "言っとくけど、助けてやろうとかは\n思ってないし。叶の一芝居がどれぐらい\n通用するかなって思っただけだから"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh026.wav",
       "text": "そうだったんですね……\nでも、おかげで助かりました\nありがとうございます"
     },
@@ -513,12 +835,26 @@
       "text": "これで貸しイチだからね、忘れるなよ？\nそもそも、優が問題起こそうが\n何しようが、叶には関係ないけど……"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "kan",
       "speakerName": "小島叶",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-kan011.wav",
       "text": "事務所の悪評に繋がるようなことは\n叶や他のみんなも迷惑するんだから\n一応、気をつけなよってだけ"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -529,12 +865,27 @@
       "text": "はい、気をつけます\nやっぱ叶さん、頼りになる優しい先輩やわぁ"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "kan",
       "speakerName": "小島叶",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-kan012.wav",
       "text": "は、はぁ？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",
@@ -545,6 +896,11 @@
       "text": "そんな照れないで下さいよぉ、先輩\nこれからも見習って、俳優修業頑張ります"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -553,10 +909,15 @@
       "text": "それに……{user}君も\nほんまにありがとう。おかげで助かったわぁ"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-koh027.wav",
       "text": "い、いえ……\n気付いたら、なんとかしなきゃって\n体が勝手に動いて……"
     },
@@ -567,6 +928,11 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_03_01/sud_vo_adv_love_2411_03_01-yu026.wav",
       "text": "ふふっ\nなんや、漫画の主人公みたいな台詞やな\nでも……ほんまに主人公みたいやった……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shoppingspot-00-noon.webp",
+      "bgName": "shoppingspot-00-noon"
     },
     {
       "type": "dialogue",

@@ -3,6 +3,21 @@
   "title": "Episode 1 Part 1",
   "script": [
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_nightsky-00-night.webp",
+      "bgName": "nightsky-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sneak-01.wav"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_wind-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "？？？",
@@ -19,6 +34,24 @@
       "text": "めずらしく、ついてきたと思ったら……\n情けないわよ、チサ。あなたも『レア物』が\nほしいなら探しなさい。絶対この辺りに……"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_shed-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -27,12 +60,22 @@
       "text": "事情により、妹のすみれと一緒に\n祖父母の家に住むようになって数ヶ月……\n平凡な僕は、ありふれた日々を過ごしていた"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr001.wav",
       "text": "お兄ちゃーん、明日のことなんだけど……\nあ、渚ちゃんってば、ここにいたんだ\nもう、お兄ちゃんにべったりなんだから"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
     },
     {
       "type": "dialogue",
@@ -47,39 +90,53 @@
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr002.wav",
+      "voiceUrl": null,
       "text": "ふふふ、お兄ちゃんも一緒に遊ぶ？\nなーんて。それより、はい\nお夜食の芋煮、持ってきたよ！"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=ありがとう",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "smr",
-              "speakerName": "すみれ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr003.wav",
-              "text": "えへへ、どういたしまして\nおばあちゃんに習って、前よりもーっと\n美味しく作れるようになったんだ～"
-            }
-          ]
-        },
-        {
-          "text": "text=おしるこはないの？",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "smr",
-              "speakerName": "すみれ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr004.wav",
-              "text": "あはは、お兄ちゃんってば\n好みが私に似てきちゃってるよー？\n嬉しいけどね"
-            }
-          ]
-        }
-      ]
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr003.wav",
+      "text": "えへへ、どういたしまして\nおばあちゃんに習って、前よりもーっと\n美味しく作れるようになったんだ～"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr004.wav",
+      "text": "あはは、お兄ちゃんってば\n好みが私に似てきちゃってるよー？\n嬉しいけどね"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
     },
     {
       "type": "dialogue",
@@ -90,12 +147,36 @@
       "text": "それじゃあ、私は母屋に戻るね\n渚ちゃんは～……ここにいたいみたい\nお兄ちゃんのこと、よろしくね"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr006.wav",
+      "voiceUrl": null,
       "text": "あ、いつも言ってるけど、寝る前に\n戸締まりはするんだよ。変な人が来ても\n絶対開けないこと。じゃあ、おやすみなさい"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
     },
     {
       "type": "dialogue",
@@ -122,12 +203,21 @@
       "text": "表で何か凄い音がした……"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "？？？",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs003.wav",
       "text": "いたた……魔力が切れて落ちちゃった……\nうぅ……眠たいし、お腹ペコペコだよ……"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -138,35 +228,45 @@
       "text": "あれ……少し生命エネルギーを感じる……\nす、すみません、もしかして誰かいますか？"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=います",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "？？？",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs005.wav",
-              "text": "あ、やっぱり……！\nあの、良ければ開けていただけませんか？\n実は困ってて、助けてもらえると……"
-            }
-          ]
-        },
-        {
-          "text": "text=いません",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "？？？",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs006.wav",
-              "text": "ふぇ～！？"
-            }
-          ]
-        }
-      ]
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "？？？",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs005.wav",
+      "text": "あ、やっぱり……！\nあの、良ければ開けていただけま��んか？\n実は困ってて、助けてもらえると……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "？？？",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs006.wav",
+      "text": "ふぇ～！？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
+      "bgName": "shed-00-night"
     },
     {
       "type": "dialogue",
@@ -177,6 +277,35 @@
       "text": "どうやら困っているようだ\n開けてみよう"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -185,25 +314,31 @@
       "text": "あっ、開けてくれてありがとうございます\n私、チサっていいます\nえへへ、優しい人間さんで良か……"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs008.wav",
+      "voiceUrl": null,
       "text": "えぇぇぇぇっ！？"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=違います",
-          "route": []
-        },
-        {
-          "text": "text=なんのことですか？",
-          "route": []
-        }
-      ]
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.wav"
     },
     {
       "type": "dialogue",
@@ -212,6 +347,11 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs009.wav",
       "text": "え？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -230,12 +370,41 @@
       "text": "私とキスして下さいっ……！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
       "iconUrl": null,
       "voiceUrl": null,
       "text": "予想外のお願いだ！\nよく見ると、物凄い格好をしている……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.wav"
     },
     {
       "type": "dialogue",
@@ -246,12 +415,21 @@
       "text": "い、いいですか？"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
       "iconUrl": null,
       "voiceUrl": null,
       "text": "後ずさりしても\nチサが追いすがってくる"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -262,12 +440,37 @@
       "text": "待ちなさいっ！！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_occult-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs013.wav",
       "text": "ひゃあっ！？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -278,12 +481,37 @@
       "text": "チサ、よく見つけてくれたわね\nでも、ここまで協力してきて\n抜け駆けだなんて、許さないわよ？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
       "iconUrl": null,
       "voiceUrl": null,
       "text": "また凄い格好の子が現れた\n空から降りてきたように見えたが……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -294,12 +522,37 @@
       "text": "うぅ……で、でも……\n先に見つけたのは私だし……\nそうだよね、{user}さん？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
       "iconUrl": null,
       "voiceUrl": null,
       "text": "チサが腕を絡めて引っ張ってくる……！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -310,12 +563,27 @@
       "text": "この辺りを探そうって言ったのは私でしょ\nあと、あまりベタベタ触らないで\nこの『レア物』は、私のものになるんだから"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs015.wav",
       "text": "ちょ、ちょっと……\nルイちゃんのって決まった訳じゃないよぉ\nそれに、ルイちゃんもベタベタしてるし……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -326,6 +594,20 @@
       "text": "左右から、チサとルイに引っ張られる！\n凄い力で、離してくれない……"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
@@ -334,72 +616,106 @@
       "text": "じゃあ、本人に聞いてみましょうよ\n私もチサも、お前とキスがしたいの\nお前は……どっちとキスがしたい？"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=ルイ",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui006.wav",
-              "text": "ふふっ、そうよね。もちろん私よね？\nでも……ふ～ん、そんなに私と\nキスがしたいんだ？"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui007.wav",
-              "text": "なんて、冗談よ。ふふふっ\n私も、あなたの唇がほしいもの\nしましょう？"
-            }
-          ]
-        },
-        {
-          "text": "text=チサ",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs016.wav",
-              "text": "ですよね、やっぱりルイちゃんが……\nって、えぇぇ！？"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs017.wav",
-              "text": "ふぇ～……ド、ドキドキします……\n両思いの人間さんと、キス……\n一生の『契約』……"
-            }
-          ]
-        },
-        {
-          "text": "text=どちらも選べない",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui008.wav",
-              "text": "どちらも選べない？"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs018.wav",
-              "text": "中には、どんな手を使ってでも\n『契約』させる子もいるから……\n私達としておこう？"
-            }
-          ]
-        }
-      ]
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "ルイ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui006.wav",
+      "text": "ふふっ、そうよね。もちろん私よね？\nでも……ふ～ん、そんなに私と\nキ���がしたいんだ？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "ルイ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui007.wav",
+      "text": "なんて、冗談よ。ふふふっ\n私も、あなたの唇がほしいもの\nしましょう？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "チサ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs016.wav",
+      "text": "ですよね、やっぱりルイちゃんが……\nって、えぇぇ！？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "チサ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs017.wav",
+      "text": "ふぇ～……ド、ドキドキします……\n両思いの人間さんと、キス……\n一生の『契約』……"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.wav"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "ルイ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui008.wav",
+      "text": "どちらも選べない？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "チサ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs018.wav",
+      "text": "中には、どんな手を使ってでも\n『契約』させる子もいるから……\n私達としておこう？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -410,12 +726,27 @@
       "text": "思わず答えてしまった……\n『契約』という言葉に、嫌な予感がしてくる"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui009.wav",
       "text": "あら？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -426,6 +757,21 @@
       "text": "わ、私にも、あなたが必要なんです\nちゃんとキスしてくれなきゃ、いやです……"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -434,28 +780,66 @@
       "text": "尻尾のようなものまで絡ませてきた……！\n拘束されて逃げられない！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui010.wav",
+      "voiceUrl": null,
       "text": "ふふふっ\nさてと、それじゃあ――"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
-      "speakerCode": "smr",
+      "speakerCode": "unknown",
       "speakerName": "？？？",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr007.wav",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "エール・ルミエーーーール！！"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "一同",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs020.wav",
       "text": "きゃあっっ！？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -466,12 +850,37 @@
       "text": "凄い光だ……！\nルイとチサが目を押さえる中\n僕は誰かに手を引っ張られる"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "？？？",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr008.wav",
       "text": "ふぅ。お兄ちゃん、大丈夫？\n契約……キスされたりしてない？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -482,12 +891,22 @@
       "text": "光が収まると、そこには僕の妹……\nすみれが、不思議な服を着て立っていた！\nなぜか肩には飼い猫の渚まで乗っている"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui012.wav",
       "text": "っ、魔法少女……！\nまた邪魔をするの！？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -498,12 +917,45 @@
       "text": "当たり前でしょ！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "？？？",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr010.wav",
+      "voiceUrl": null,
       "text": "魔法少女ヴィオレット、参上！\nエッチなサキュバス達！\n今すぐ魔界に帰りなさいっ！"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.wav"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -514,17 +966,14 @@
       "text": "少女がポーズを決めている\nただ、どう見ても妹のすみれだ"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=すみれだよね？",
-          "route": []
-        },
-        {
-          "text": "text=ヴィオレットって？",
-          "route": []
-        }
-      ]
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.wav"
     },
     {
       "type": "dialogue",
@@ -543,12 +992,22 @@
       "text": "どう見ても、すみれだ"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-smr012.wav",
       "text": "もぉ！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -559,12 +1018,26 @@
       "text": "大変な目になんて遭わせないわよ？\n私達は『気持ちいいこと』をしてあげるだけ\n人間にとっては嬉しいことじゃない？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-chs021.wav",
       "text": "困ってるって言ったら開けてくれたし\nそんな人に、酷いことはしないよぉ\nただ、お互いキスしたいならいいかなって"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -575,12 +1048,41 @@
       "text": "そんなことして開けさせたの！？\nむぅ、お兄ちゃんの優しさに付け込んで……\n二人とも！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-dark-01.wav"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui014.wav",
       "text": "仕方ないわね。やるわよ、チサ\nここまで来て、後には引けない！\nはぁぁぁ……！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -591,12 +1093,35 @@
       "text": "ふぇ！？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-dark-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui015.wav",
       "text": "それくらい調整出来るわよ！\n多少危険な橋を渡らないと\n手に入らないものもあるわっ！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -610,9 +1135,14 @@
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "猫",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": null,
       "voiceUrl": null,
       "text": "にゃー！！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -623,12 +1153,27 @@
       "text": "瞬間、飼い猫の渚がルイに飛びついた！"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rui.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-rui016.wav",
       "text": "……え？"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",
@@ -639,6 +1184,11 @@
       "text": "っ、ありがとう渚ちゃん！\nよし、今のうちに私が……あれ？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
@@ -647,12 +1197,41 @@
       "text": "やめなさい……！\nっ、集中が乱れて……きゃあっ！？"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.wav"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_01_01/sud_vo_adv_love_2505_01_01-ngs001.wav",
       "text": "こらー！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-night.webp",
+      "bgName": "garden-00-night"
     },
     {
       "type": "dialogue",

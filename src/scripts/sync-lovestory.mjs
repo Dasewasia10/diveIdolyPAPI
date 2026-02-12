@@ -11,6 +11,8 @@ const __dirname = path.dirname(__filename);
 const R2_DOMAIN = "https://api.diveidolypapi.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/lovestoryTxt`;
 const R2_VOICE_URL = `${R2_DOMAIN}/lovestoryVoice`;
+const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
+const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 const OUTPUT_DIR = path.join(__dirname, "../data/lovestory");
 
 // --- DAFTAR FILE ---
@@ -117,6 +119,10 @@ const parseScript = (rawText, assetId, isDebug = false) => {
     const lines = rawText.replace(/\r\n/g, "\n").split("\n");
     const scriptData = [];
     
+    // Peta untuk menyimpan ID Background -> Nama File Source
+    // Contoh: "hoshistore-02-noon" -> "env_adv_2d_hoshistore-02-noon"
+    const backgroundMap = {};
+    
     // Buffer untuk satu blok dialog
     // Kita menahan push sampai ketemu [message] berikutnya atau [select]/[jump]
     // agar [voice] yang mungkin ada di baris setelah [message] bisa digabung.
@@ -133,6 +139,59 @@ const parseScript = (rawText, assetId, isDebug = false) => {
     lines.forEach(line => {
         const trimmed = line.trim();
         if (!trimmed) return;
+
+        // 0. PRE-PROCESSING: BACKGROUND GROUP DEFINITION
+        // Format: [backgroundgroup backgrounds=[background id=... src=...] ...]
+        if (trimmed.startsWith("[backgroundgroup")) {
+            // Regex global untuk menangkap semua pasangan id dan src dalam satu baris
+            const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
+            let match;
+            while ((match = bgRegex.exec(trimmed)) !== null) {
+                backgroundMap[match[1]] = match[2];
+            }
+            return;
+        }
+
+        // 1. CHANGE BACKGROUND (Setting or Tween)
+        // Kita anggap tween juga sebagai perpindahan background langsung untuk simplifikasi
+        if (trimmed.startsWith("[backgroundsetting") || trimmed.startsWith("[backgroundtween")) {
+            flushBuffer();
+            const bgId = getAttr(trimmed, "id");
+            
+            if (bgId && backgroundMap[bgId]) {
+                const bgSrc = backgroundMap[bgId];
+                scriptData.push({
+                    type: "background",
+                    src: `${R2_BG_URL}/${bgSrc}.webp`, // Asumsi format PNG/JPG/WEBP
+                    bgName: bgId
+                });
+            }
+            return;
+        }
+
+        // 2. BGM CONTROL
+        if (trimmed.startsWith("[bgmplay")) {
+            flushBuffer();
+            const bgmId = getAttr(trimmed, "bgm");
+            if (bgmId) {
+                scriptData.push({
+                    type: "bgm",
+                    action: "play",
+                    // Asumsi nama file di R2 sama dengan ID bgm
+                    src: `${R2_BGM_URL}/${bgmId}.wav` // Atau .mp3 tergantung file Anda
+                });
+            }
+            return;
+        }
+
+        if (trimmed.startsWith("[bgmstop")) {
+            flushBuffer();
+            scriptData.push({
+                type: "bgm",
+                action: "stop"
+            });
+            return;
+        }
 
         // 1. Tag [message] atau [narration]
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {

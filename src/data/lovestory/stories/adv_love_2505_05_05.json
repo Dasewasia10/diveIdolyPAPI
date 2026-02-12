@@ -3,6 +3,16 @@
   "title": "Episode 5 Part 5",
   "script": [
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.wav"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -17,6 +27,10 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-ngs006.wav",
       "text": "やっぱりそうだよね。ごめんね……\nすみれちゃんに究極魔法は教えられにゃい！\nすみれちゃんが犠牲になるなんておかしいよ"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -43,6 +57,15 @@
       "text": "サキュバスの攻撃をもろに受け\n全身に激痛が走った"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.wav"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -51,17 +74,9 @@
       "text": "お兄ちゃん！？"
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "text=すみれのお兄ちゃんだから",
-          "route": []
-        },
-        {
-          "text": "text=妹を守るのは当たり前",
-          "route": []
-        }
-      ]
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.wav"
     },
     {
       "type": "dialogue",
@@ -96,6 +111,11 @@
       "text": "すみれちゃんの魔法力がどんどん増してる\n……こんなの奇跡が起きたとしか思えない\nでも、それにゃら私も……！"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.wav"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -108,8 +128,12 @@
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-smr017.wav",
+      "voiceUrl": null,
       "text": "温かい……\nお兄ちゃんの想いと、渚ちゃんの力が\n私の中に流れ込んでくる。これなら……"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -131,7 +155,7 @@
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "一同",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-rui007.wav",
       "text": "うわぁぁぁぁ……"
     },
@@ -142,6 +166,24 @@
       "iconUrl": null,
       "voiceUrl": null,
       "text": "ルイとチサは光に呑み込まれて消えていった"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
     },
     {
       "type": "dialogue",
@@ -160,6 +202,11 @@
       "text": "ねえ、お兄ちゃん\n渚ちゃんどこに行ったか知らな……\nあ、お兄ちゃんの膝の上にいたんだね"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -171,9 +218,14 @@
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "猫",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-unknown.png",
+      "iconUrl": null,
       "voiceUrl": null,
       "text": "にゃ～ん"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
     },
     {
       "type": "dialogue",
@@ -184,12 +236,22 @@
       "text": "あの戦いで自分の持つ力を全てすみれに\n返した渚は、猫の姿に戻ってしまった"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
       "iconUrl": null,
       "voiceUrl": null,
       "text": "そして、すみれは魔法少女の力を失い\nサキュバス達の姿もあの日以来見なくなった\nすみれがハルドンさんから聞いた話によると"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
     },
     {
       "type": "dialogue",
@@ -200,12 +262,21 @@
       "text": "三人で起こした奇跡の魔法は\nサキュバス達を魔界に送り返すだけでなく\n魔界と繋がる道を完全に封印したらしい"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-smr021.wav",
       "text": "渚ちゃんが猫の姿に戻ってから\n今日で一年か～。なんだかすっごく\n昔のことみたいに感じるね"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -216,12 +287,22 @@
       "text": "サキュバスが現れなくなって\n私も魔法少女に変身することはなくなったし\nこれが平和な日々って言うんだろうな～"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-smr023.wav",
+      "voiceUrl": null,
       "text": "ねえ、お兄ちゃん。私ね、戦いが終わって\n普通の女の子に戻ったら……お兄ちゃんに\n言おうって決めてたことがあるの"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.wav"
     },
     {
       "type": "dialogue",
@@ -232,6 +313,11 @@
       "text": "すみれが真剣な表情で僕を見つめてくる"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -240,12 +326,32 @@
       "text": "今更言わなくても伝わってるかなって\n思ったんだけど、大事なことだから言うね\n私……お兄ちゃんのことが……大好き"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-smr025.wav",
       "text": "あ、えっと、この大好きは\nそういう意味じゃなくて！"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
     },
     {
       "type": "dialogue",
@@ -264,12 +370,31 @@
       "text": "え！？"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_05/sud_vo_adv_love_2505_05_03-smr027.wav",
+      "voiceUrl": null,
       "text": "お兄ちゃんの妹、すみれが命令する！\n今から私がすることは……\nすぐに忘れなさい！"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
     },
     {
       "type": "dialogue",
@@ -280,6 +405,21 @@
       "text": "そう唱えるとすみれは恥ずかしそうに\n僕の方に顔を近づけ……"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.wav"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -288,12 +428,32 @@
       "text": "……ちゅっ\n……えへへ、だーいすき"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
       "iconUrl": null,
       "voiceUrl": null,
       "text": "ほっぺにキスをしてきたすみれの頭を\n僕は優しく撫でた"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
+      "bgName": "okuyamaliving-00-night"
     },
     {
       "type": "dialogue",
