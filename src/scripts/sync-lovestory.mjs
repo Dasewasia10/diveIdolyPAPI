@@ -78,6 +78,14 @@ const ICON_MAP = {
     "stm": "satomi" 
 };
 
+// --- HELPER BARU: Get Start Time ---
+// Mengambil angka _startTime dari atribut clip={...}
+const getStartTime = (line) => {
+    // Regex ini mencari: _startTime": (angka desimal)
+    const match = line.match(/_startTime\\?":\s*([0-9.]+)/);
+    return match ? parseFloat(match[1]) : null;
+};
+
 // --- HELPER: GET ATTRIBUTE ---
 const getAttr = (line, key) => {
     const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`, "i");
@@ -85,8 +93,6 @@ const getAttr = (line, key) => {
     if (match) return match[1] || match[2];
     return null;
 };
-
-
 
 // Helper khusus untuk mengambil isi text yang mengandung spasi/multiline
 const extractMessageText = (line) => {
@@ -216,15 +222,40 @@ const parseLines = (lines, assetId) => {
         if (trimmed.startsWith("[se")) {
             flushBuffer(); // Simpan dialog sebelumnya jika ada
             const seId = getAttr(trimmed, "se");
+            const seStartTime = getStartTime(trimmed);
+            const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
             
             // Cek apakah ini perintah stop (jarang ada di SE visual novel, tapi buat jaga-jaga)
             // Biasanya formatnya [se stop] atau sejenisnya, tapi di logikamu [se se=name]
             
-            if (seId) {
-                scriptData.push({
-                    type: "sfx", // Tipe baru
-                    src: `${R2_BGM_URL}/${seId}.m4a` // Asumsi ekstensi .m4a karena satu folder dengan BGM. Ubah ke .wav jika perlu.
-                });
+            // if (seId) {
+            //     scriptData.push({
+            //         type: "sfx", // Tipe baru
+            //         src: `${R2_BGM_URL}/${seId}.m4a` // Asumsi ekstensi .m4a karena satu folder dengan BGM. Ubah ke .wav jika perlu.
+            //     });
+            // }
+            if (seId && seSrc) {
+                // Cek apakah ada dialog yang sedang aktif (belum di-flush)
+                // Dan apakah SFX ini punya timestamp yang valid
+                if (currentDialog && currentDialog.startTime !== null && seStartTime !== null && seStartTime >= currentDialog.startTime) {
+                    
+                    // Hitung delay: (Waktu SFX - Waktu Dialog) * 1000 (milidetik)
+                    const delayMs = (seStartTime - currentDialog.startTime) * 1000;
+                    
+                    // Masukkan ke dalam daftar SFX milik dialog tersebut
+                    currentDialog.sfxList.push({
+                        src: seSrc,
+                        delay: delayMs
+                    });
+                } else {
+                    // Jika tidak ada dialog aktif (misal SFX saat layar hitam/transisi)
+                    // Maka jadikan baris script terpisah (seperti sebelumnya)
+                    flushBuffer(); 
+                    scriptData.push({
+                        type: "sfx",
+                        src: seSrc
+                    });
+                }
             }
             continue;
         }
@@ -268,13 +299,19 @@ const parseLines = (lines, assetId) => {
                 iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
             }
 
+            // --- TAMBAHAN BARU: Ambil Start Time ---
+            const startTime = getStartTime(trimmed);
+            // ---------------------------------------
+
             currentDialog = {
                 type: "dialogue",
                 speakerCode,
                 speakerName: displayName,
                 iconUrl,
                 voiceUrl: null, 
-                text: inlineText || "" 
+                text: inlineText || "",
+                startTime: startTime, // Simpan waktu mulai dialog
+                sfxList: [] // Siapkan array untuk SFX paralel
             };
             continue;
         }
