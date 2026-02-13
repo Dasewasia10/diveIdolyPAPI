@@ -86,6 +86,39 @@ const getAttr = (line, key) => {
     return null;
 };
 
+
+
+// Helper khusus untuk mengambil isi text yang mengandung spasi/multiline
+const extractMessageText = (line) => {
+    // Cari posisi dimulainya 'text='
+    const startMatch = line.match(/text=/);
+    if (!startMatch) return null;
+
+    const startIndex = startMatch.index + 5; // panjang "text="
+    let rest = line.substring(startIndex);
+
+    // Cari tanda berhentinya text.
+    // Text berhenti jika bertemu spasi diikuti key lain (name=, voice=, clip=, dll)
+    // ATAU jika bertemu penutup tag ']' di paling akhir (jika tidak ada attribute lain)
+    
+    // List attribute yang mungkin muncul setelah text
+    const nextAttrRegex = /\s+(name|voice|clip|hide|actorId|window|thumbnial|thumbnail)=/i;
+    const nextMatch = rest.match(nextAttrRegex);
+
+    let content = "";
+    if (nextMatch) {
+        // Ambil text sampai sebelum attribute berikutnya dimulai
+        content = rest.substring(0, nextMatch.index);
+    } else {
+        // Jika ini attribute terakhir, ambil sampai ujung, tapi buang ']' penutup di akhir jika ada
+        // Biasanya line diakhiri clip={...}] jadi regex di atas biasanya kena 'clip='
+        // Ini fallback safety
+        content = rest.replace(/\s*\]\s*$/, ""); 
+    }
+
+    return content.trim(); // Hapus spasi berlebih di awal/akhir
+};
+
 // --- HELPER: DETECT MAIN HEROINE ---
 // Menghitung siapa yang paling banyak bicara selain MC
 const detectMainHeroine = (script) => {
@@ -184,7 +217,14 @@ const parseLines = (lines, assetId) => {
             flushBuffer();
 
             const isNarration = trimmed.startsWith("[narration");
-            let inlineText = getAttr(trimmed, "text");
+            // let inlineText = getAttr(trimmed, "text");
+
+            // --- PERUBAHAN DI SINI: Gunakan extractMessageText ---
+            let inlineText = extractMessageText(trimmed); 
+            // Jika extractMessageText gagal (misal kosong), fallback ke getAttr biasa
+            if (!inlineText) inlineText = getAttr(trimmed, "text");
+            // -----------------------------------------------------
+
             if (inlineText) inlineText = inlineText.replace(/\\n/g, "\n");
 
             let displayName = getAttr(trimmed, "name") || ""; 
