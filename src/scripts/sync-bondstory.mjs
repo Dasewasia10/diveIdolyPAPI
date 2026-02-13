@@ -24,7 +24,7 @@ const CHARACTER_NAMES = {
     "rei": "Rei Ichinose", "rio": "Rio Kanzaki", "rui": "Rui Tendo",
     "ski": "Saki Shiraishi", "skr": "Sakura Kawasaki", "smr": "Sumire Okuyama",
     "suz": "Suzu Narumiya", "szk": "Shizuku Hyodo", "yu": "Yuu Suzumura",
-    "kana": "Kana", "miho": "Miho", "fran": "Fran"
+    "kan": "Kana Kojima a.k.a kana", "mhk": "Mihoko Takeda a.k.a miho", "kor": "Kaori (Franziska) Yamada a.k.a fran"
 };
 
 const ICON_MAP = {
