@@ -158,11 +158,6 @@
           "text": "芽衣を迎えに行かない",
           "route": [
             {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -176,6 +171,11 @@
                   "delay": 8433.335610399994
                 }
               ]
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
             },
             {
               "type": "dialogue",
@@ -277,15 +277,6 @@
       "bgName": "env_adv_2d_ricefield-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -296,13 +287,18 @@
       "sfxList": []
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "env_adv_2d_ricefield-00-noon"
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
+      "bgName": "env_adv_2d_ricefield-00-noon"
     },
     {
       "type": "dialogue",
@@ -313,6 +309,10 @@
       "text": "――駄菓子屋",
       "startTime": 131.6000076293,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -884,10 +884,6 @@
       "bgName": "schoolclass-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -896,6 +892,10 @@
       "text": "{user}君\n今何してるかな～とか\nこれ好きそうだな～とか",
       "startTime": 443.9000785947,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",

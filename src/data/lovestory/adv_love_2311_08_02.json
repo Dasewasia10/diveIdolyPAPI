@@ -23,10 +23,6 @@
       "bgName": "outsidehall-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -34,12 +30,11 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_08_02/sud_vo_adv_love_2311_08_02-koh002.wav",
       "text": "（だが、渚の作家としての活動は\nますます忙しくなり、一緒に住んでいながら\n顔を合わせない日も続いていて……）",
       "startTime": 8.3000004451,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cafe-01.m4a",
-          "delay": 10499.999872800001
-        }
-      ]
+      "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "background",
@@ -59,7 +54,12 @@
       "voiceUrl": null,
       "text": "――大学三年生　春",
       "startTime": 17.6666671117,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cafe-01.m4a",
+          "delay": 1133.3332061999997
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -186,11 +186,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -199,6 +194,11 @@
               "text": "本当に正直だな\n確かに、今の俺達はお世辞にも\nうまくいってるとは言えないと思う",
               "startTime": 96.7000009536,
               "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
             },
             {
               "type": "dialogue",
@@ -221,10 +221,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -233,6 +229,10 @@
               "text": "それなら……これからいくらでも\nどうにか出来るって。俺は……宣言通り\n渚を支える編集者を目指すから",
               "startTime": 117.9666660943,
               "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
             },
             {
               "type": "dialogue",
@@ -270,15 +270,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -287,6 +278,15 @@
               "text": "（渚の担当編集をするどころか\n一転して……遠距離恋愛をすることに\nなってしまった）",
               "startTime": 152.3667093273,
               "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
             },
             {
               "type": "dialogue",
@@ -312,10 +312,6 @@
               ]
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -323,16 +319,16 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_08_02/sud_vo_adv_love_2311_08_02-koh012.wav",
               "text": "ん？　渚から郵便物……これは新作小説だな\n遠く離れた二人の恋物語……？\n読んでみるかな",
               "startTime": 162.7667072928,
-              "sfxList": [
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_book-01.m4a",
-                  "delay": 14199.995931100006
-                },
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_letter-01.m4a",
-                  "delay": 19666.62960100001
-                }
-              ]
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_book-01.m4a",
+              "startTime": 176.9667032239
             },
             {
               "type": "dialogue",
@@ -342,7 +338,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_08_02/sud_vo_adv_love_2311_08_02-koh013.wav",
               "text": "（最後のページをめくるとそこには\n一枚のメモが挟まっていた）",
               "startTime": 177.6667154307,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_letter-01.m4a",
+                  "delay": 4766.621463099995
+                }
+              ]
             },
             {
               "type": "dialogue",
@@ -440,10 +441,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -451,16 +448,21 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_08_02/sud_vo_adv_love_2311_08_02-koh019.wav",
               "text": "（渚のことを引きずりながらも……\n慌ただしい生活の中で、少しずつ傷が\n癒されていた、ある日のこと）",
               "startTime": 244.5333556484,
-              "sfxList": [
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cafe-01.m4a",
-                  "delay": 9733.333333399998
-                },
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
-                  "delay": 15933.340454500012
-                }
-              ]
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cafe-01.m4a",
+              "startTime": 254.2666889818
+            },
+            {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+              "startTime": 260.4666961029
             },
             {
               "type": "bgm",
@@ -583,10 +585,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -595,6 +593,10 @@
               "text": "なるほど、そういうことだったのか\nすみれ……ありがとな",
               "startTime": 317.3333983732,
               "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
             },
             {
               "type": "dialogue",

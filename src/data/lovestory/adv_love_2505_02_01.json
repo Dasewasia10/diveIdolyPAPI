@@ -83,6 +83,16 @@
       "bgName": "garden-00-night"
     },
     {
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "渚",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-ngs002.wav",
+      "text": "あ、逃げちゃった……！\nあはは……これ、どうしよう\n困ったにゃー、なんて",
+      "startTime": 32.6681868394,
+      "sfxList": []
+    },
+    {
       "type": "bgm",
       "action": "stop"
     },
@@ -92,24 +102,14 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-ngs002.wav",
-      "text": "あ、逃げちゃった……！\nあはは……これ、どうしよう\n困ったにゃー、なんて",
-      "startTime": 32.6681868394,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
-          "delay": 15028.0710539
-        }
-      ]
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
       "bgName": "shed-00-night"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
+      "startTime": 47.6962578933
     },
     {
       "type": "background",
@@ -132,10 +132,6 @@
       "bgName": "shed-00-night"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -144,6 +140,10 @@
       "text": "ごめんね、お兄ちゃん。いろいろ急で……\n本当はこういうことに巻き込みたくなくて\n内緒にしてたんだけど……聞いてくれる？",
       "startTime": 59.7643286546,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "choice_selection",
@@ -478,6 +478,16 @@
       "bgName": "shed-00-night"
     },
     {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
+      "text": "急に、いろいろなことがあった\nこれからどうなっていくのだろう",
+      "startTime": 231.4576434605,
+      "sfxList": []
+    },
+    {
       "type": "bgm",
       "action": "stop"
     },
@@ -492,19 +502,9 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
     },
     {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "急に、いろいろなことがあった\nこれからどうなっていくのだろう",
-      "startTime": 231.4576434605,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
-          "delay": 5946.667175299979
-        }
-      ]
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+      "startTime": 237.4043106358
     },
     {
       "type": "dialogue",
@@ -537,10 +537,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -549,6 +545,10 @@
       "text": "でも、今はお兄ちゃんが狙われてるって\n分かってるし、最近人間界に入り込んだ子は\n昨日の子達以外はもうやっつけたから大丈夫",
       "startTime": 256.5071240575,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -610,11 +610,6 @@
       "action": "stop"
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -628,6 +623,11 @@
           "delay": 11268.588114800024
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
       "type": "dialogue",
@@ -650,6 +650,16 @@
       "sfxList": []
     },
     {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr022.wav",
+      "text": "お兄ちゃん、離れてて！\n聖なる力を翼に込めて……\nエール・シュヴァリエーーーール！",
+      "startTime": 320.7547195901,
+      "sfxList": []
+    },
+    {
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
@@ -661,16 +671,6 @@
     {
       "type": "bgm",
       "action": "stop"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr022.wav",
-      "text": "お兄ちゃん、離れてて！\n聖なる力を翼に込めて……\nエール・シュヴァリエーーーール！",
-      "startTime": 320.7547195901,
-      "sfxList": []
     },
     {
       "type": "dialogue",
@@ -686,11 +686,6 @@
           "delay": 4800.000000000011
         }
       ]
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_occult-01.m4a"
     },
     {
       "type": "dialogue",
@@ -710,6 +705,11 @@
           "delay": 3703.0672646000085
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_occult-01.m4a"
     },
     {
       "type": "dialogue",
@@ -752,6 +752,16 @@
       "sfxList": []
     },
     {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr024.wav",
+      "text": "っ、お兄ちゃん、お兄ちゃーん！",
+      "startTime": 361.9352786691,
+      "sfxList": []
+    },
+    {
       "type": "bgm",
       "action": "stop"
     },
@@ -763,16 +773,6 @@
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_02_01/sud_vo_adv_love_2505_02_01-smr024.wav",
-      "text": "っ、お兄ちゃん、お兄ちゃーん！",
-      "startTime": 361.9352786691,
-      "sfxList": []
     },
     {
       "type": "background",
@@ -1164,10 +1164,6 @@
       "bgName": "hillpark-00-evening"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
@@ -1179,21 +1175,27 @@
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
           "delay": 9465.857613099957
-        },
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
-          "delay": 12829.134974999988
-        },
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
-          "delay": 14076.697191800009
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
       "bgName": "hillpark-00-evening"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+      "startTime": 594.9191044499
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+      "startTime": 596.1666666667
     },
     {
       "type": "bgm",

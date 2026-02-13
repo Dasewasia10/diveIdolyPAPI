@@ -3,11 +3,6 @@
   "title": "Episode 8 Part 3",
   "script": [
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -16,6 +11,11 @@
       "text": "――大学一年生　二月",
       "startTime": 0,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
     },
     {
       "type": "background",
@@ -77,11 +77,6 @@
       ]
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -90,6 +85,11 @@
       "text": "電話？\n……優さんから……！？\nはい……もしもし……",
       "startTime": 32.2333292007,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
     },
     {
       "type": "background",
@@ -281,10 +281,6 @@
       "bgName": "lovehroom-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -293,6 +289,10 @@
       "text": "（またねと言って切れた電話\nけど結局、「また」は訪れなくて\n平穏な時間だけが流れていった……）",
       "startTime": 150.1333813343,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -310,11 +310,6 @@
       "bgName": "lovehroom-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -328,6 +323,11 @@
           "delay": 1833.3478924000133
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
       "type": "background",
@@ -360,11 +360,6 @@
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
             },
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
-              "startTime": 177.0000328696
-            },
-            {
               "type": "dialogue",
               "speakerCode": "kan",
               "speakerName": "小島叶",
@@ -372,7 +367,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_08_03/sud_vo_adv_love_2411_08_03-kan001.wav",
               "text": "……あ、繋がった\nもしもーし？　久しぶりじゃん\nちゃんと生きてる？",
               "startTime": 177.3667228057,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+                  "delay": 0
+                }
+              ]
             },
             {
               "type": "dialogue",
@@ -474,15 +474,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "kan",
               "speakerName": "小島叶",
@@ -491,6 +482,15 @@
               "text": "え、嘘でしょ？\n優はあんたとも、たまに連絡してるって……\n……あ～……そういうことか……",
               "startTime": 253.5000215526,
               "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
             },
             {
               "type": "dialogue",
@@ -523,10 +523,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "kan",
               "speakerName": "小島叶",
@@ -535,6 +531,10 @@
               "text": "だったら最初から\n身辺のあれこれを徹底管理して\n商品として守ることぐらいはするよ",
               "startTime": 287.8000571564,
               "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
             },
             {
               "type": "dialogue",
@@ -626,6 +626,16 @@
           "text": "電話に出ない",
           "route": [
             {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+              "startTime": 373.7667462026
+            },
+            {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-end-01.m4a",
+              "startTime": 382.1200715252
+            },
+            {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
@@ -638,16 +648,7 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_08_03/sud_vo_adv_love_2411_08_03-koh020.wav",
               "text": "（きっと優さんに関する連絡だろう\n着信音を聞いていると出てしまう気がして\n俺はスマホの電源を切った）",
               "startTime": 373.7667462026,
-              "sfxList": [
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
-                  "delay": 0
-                },
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-end-01.m4a",
-                  "delay": 8353.325322599972
-                }
-              ]
+              "sfxList": []
             },
             {
               "type": "dialogue",

@@ -178,6 +178,11 @@
               "startTime": 89.3
             },
             {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+              "startTime": 93.6999989827
+            },
+            {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_stm-01.m4a"
@@ -191,10 +196,6 @@
               "text": "私が修行に行っている間、絶対外に出ちゃ\nダメだからね？　結界も張って……っと\nそれじゃあ行ってきます！",
               "startTime": 83.2999943416,
               "sfxList": [
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
-                  "delay": 10400.004641099997
-                },
                 {
                   "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a",
                   "delay": 15865.230123499998
@@ -245,11 +246,6 @@
       "bgName": "jungle-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
-      "startTime": 115.3
-    },
-    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -257,7 +253,12 @@
       "voiceUrl": null,
       "text": "近くの雑木林までやって来た\nいつもここで修行をしていたのか",
       "startTime": 115.6000050229,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 0
+        }
+      ]
     },
     {
       "type": "background",
@@ -279,10 +280,6 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -290,12 +287,16 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_03/sud_vo_adv_love_2505_04_03-smr009.wav",
       "text": "ふー……いくよ\n超光速魔法……エール・バンバンっ！",
       "startTime": 119.333341408,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-01.m4a",
-          "delay": 6833.341471400005
-        }
-      ]
+      "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-01.m4a",
+      "startTime": 126.1666828794
     },
     {
       "type": "background",
@@ -367,10 +368,6 @@
       "bgName": "jungle-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -379,6 +376,10 @@
       "text": "まだ私が駆け出しの頃、道端で寒さに震える\n山田さんに一杯のおしるこを奢ってあげたら\nお礼にって魔法を二つ教えてくれたの",
       "startTime": 166.266673724,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -634,15 +635,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -651,6 +643,15 @@
       "text": "ちゅうしゅうできにゃくなる、じゃなくて！\n集中！　出来なくなるから話しかけないでね\n{user}お兄ちゃん！",
       "startTime": 302.1999409358,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "background",
@@ -790,10 +791,6 @@
       "bgName": "jungle-00-noon"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -802,6 +799,10 @@
       "text": "ふふっ、懐かしいな～\n出会った頃はまだ私小学生だったもんね\nお兄ちゃんは中学生、だっけ？",
       "startTime": 375.3998809178,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1007,6 +1008,16 @@
       "bgName": "jungle-00-noon"
     },
     {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
+      "text": "弁当を食べ終わると\nすみれはまたすぐに修行を再開した",
+      "startTime": 471.9331979751,
+      "sfxList": []
+    },
+    {
       "type": "bgm",
       "action": "stop"
     },
@@ -1016,21 +1027,6 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
     },
     {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "弁当を食べ終わると\nすみれはまたすぐに修行を再開した",
-      "startTime": 471.9331979751,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a",
-          "delay": 7866.819318200043
-        }
-      ]
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamahall-00-night.webp",
       "bgName": "okuyamahall-00-night"
@@ -1039,6 +1035,11 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamahall-00-night.webp",
       "bgName": "okuyamahall-00-night"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a",
+      "startTime": 479.8000172933
     },
     {
       "type": "bgm",
@@ -1115,6 +1116,11 @@
       "bgName": "okuyamahall-00-night"
     },
     {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+      "startTime": 527.56668396
+    },
+    {
       "type": "bgm",
       "action": "stop"
     },
@@ -1132,10 +1138,6 @@
       "text": "ただいま～……って、すみれちゃん！？\nこんな時間からどこ行くの？",
       "startTime": 527.0998748143,
       "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
-          "delay": 466.8091456999264
-        },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
           "delay": 8433.475812399935
@@ -1367,10 +1369,6 @@
       "bgName": "okuyamahall-00-night"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -1379,6 +1377,10 @@
       "text": "ハルドンさんに案内され森の奥に進むと……\n昏睡状態のライムさんがいたんだ。数百年前\nから、ずっと眠りについたままにゃんだって",
       "startTime": 649.2331674576,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "choice_selection",
@@ -1448,11 +1450,6 @@
       "action": "stop"
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_wind-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -1469,7 +1466,8 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_wind-01.m4a"
     },
     {
       "type": "dialogue",
@@ -1480,6 +1478,10 @@
       "text": "次の瞬間、爆風が押し寄せた",
       "startTime": 702.1930824279,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1577,10 +1579,6 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -1588,31 +1586,31 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_03/sud_vo_adv_love_2505_05_03-smr004.wav",
       "text": "そんな……今までで一番強い結界だったのに\nお兄ちゃん、渚ちゃん！　こっち！",
       "startTime": 737.259838613,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a",
-          "delay": 11973.516082599985
-        },
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_transform-01.m4a",
-          "delay": 10199.884541899904
-        }
-      ]
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamahall-00-night.webp",
-      "bgName": "okuyamahall-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamahall-00-night.webp",
-      "bgName": "okuyamahall-00-night"
+      "sfxList": []
     },
     {
       "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
+      "action": "stop"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamahall-00-night.webp",
+      "bgName": "okuyamahall-00-night"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a",
+      "startTime": 749.2333546956
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamahall-00-night.webp",
+      "bgName": "okuyamahall-00-night"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_transform-01.m4a",
+      "startTime": 747.4597231549
     },
     {
       "type": "dialogue",
@@ -1632,11 +1630,7 @@
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-dark-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
     },
     {
       "type": "dialogue",
@@ -1646,20 +1640,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_03/sud_vo_adv_love_2505_05_03-smr005.wav",
       "text": "よし、ここなら魔法が思いっきり使える！\n……負けないんだからね、サキュバス達！\nエール・ヴィクトワーーーール！！",
       "startTime": 756.6597272237,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-03.m4a",
-          "delay": 11573.623403000056
-        },
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-cancle-01.m4a",
-          "delay": 11573.623403000056
-        }
-      ]
+      "sfxList": []
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-dark-01.m4a"
     },
     {
       "type": "bgm",
@@ -1675,6 +1661,14 @@
       "startTime": 767.1264030457,
       "sfxList": [
         {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-03.m4a",
+          "delay": 1106.9475809999858
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-cancle-01.m4a",
+          "delay": 1106.9475809999858
+        },
+        {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-04.m4a",
           "delay": 3906.9475809999403
         },
@@ -1683,6 +1677,14 @@
           "delay": 4806.943448600009
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1701,6 +1703,21 @@
           "text": "行く",
           "route": [
             {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
+              "startTime": 784.7001149498
+            },
+            {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
+              "startTime": 785.4334482832
+            },
+            {
+              "type": "sfx",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+              "startTime": 786.0667816164
+            },
+            {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
@@ -1718,20 +1735,7 @@
               "voiceUrl": null,
               "text": "一歩踏み出すと、すみれに足を掴まれた",
               "startTime": 784.5931648256,
-              "sfxList": [
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
-                  "delay": 106.95012420001149
-                },
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
-                  "delay": 840.2834576000942
-                },
-                {
-                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
-                  "delay": 1473.6167908000652
-                }
-              ]
+              "sfxList": []
             }
           ]
         },
@@ -1798,14 +1802,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -1814,6 +1810,14 @@
       "text": "私はまだ戦うよ……絶対にお兄ちゃんを\nあなた達には渡さないんだから！\nお願い、渚ちゃん、究極魔法を教えて……！",
       "startTime": 815.0930488589,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",

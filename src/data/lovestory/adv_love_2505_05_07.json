@@ -97,6 +97,16 @@
       "bgName": "hillpark-00-night"
     },
     {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr012.wav",
+      "text": "たぶん渚ちゃんは、力が暴走した時に\n私達を巻き込まないように逃げちゃったんだ\nお兄ちゃん、一緒に探そう！",
+      "startTime": 45.8999970436,
+      "sfxList": []
+    },
+    {
       "type": "bgm",
       "action": "stop"
     },
@@ -106,24 +116,14 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr012.wav",
-      "text": "たぶん渚ちゃんは、力が暴走した時に\n私達を巻き込まないように逃げちゃったんだ\nお兄ちゃん、一緒に探そう！",
-      "startTime": 45.8999970436,
-      "sfxList": [
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
-          "delay": 11399.979400599996
-        }
-      ]
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
       "bgName": "hoshistation-00-night"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+      "startTime": 57.2999764442
     },
     {
       "type": "dialogue",
@@ -298,10 +298,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -310,6 +306,10 @@
       "text": "渚は悲しそうに微笑んでいる",
       "startTime": 140.4666326841,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "background",
@@ -712,11 +712,6 @@
       "action": "stop"
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_moon-03.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -730,6 +725,11 @@
           "delay": 7566.624355800002
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_moon-03.m4a"
     },
     {
       "type": "background",
@@ -786,20 +786,6 @@
       "bgName": "tokyopark-00-night"
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -811,12 +797,27 @@
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-01.m4a",
           "delay": 0
-        },
-        {
-          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
-          "delay": 5866.722107000043
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
+    },
+    {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
+      "startTime": 350.0334524468
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
     },
     {
       "type": "dialogue",
@@ -849,10 +850,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -864,8 +861,7 @@
     },
     {
       "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -876,6 +872,11 @@
       "text": "あれから渚は、精霊界という場所で\n修行を積み、力をコントロール出来るように\nなっていた。そして、今は――",
       "startTime": 378.3668381687,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "dialogue",
@@ -897,15 +898,6 @@
       ]
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -919,6 +911,15 @@
           "delay": 9633.298912399994
         }
       ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",

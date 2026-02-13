@@ -15,7 +15,7 @@ const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 
 const OUTPUT_DIR = path.join(__dirname, "../data/lovestory");
 
-// --- DAFTAR FILE ---
+// --- DAFTAR FILE (Sesuai list Anda) ---
 const FILE_LIST = [
     // 2305
     "adv_love_2305_01_01.txt", "adv_love_2305_02_01.txt", "adv_love_2305_03_01.txt", "adv_love_2305_04_01.txt",
@@ -122,20 +122,15 @@ const parseLines = (lines, assetId) => {
     const backgroundMap = {}; 
 
     let currentDialog = null;
-    
-    // BUFFER BARU: Untuk menyimpan SFX yang muncul SEBELUM dialog
+    // Buffer untuk menyimpan SFX yang muncul SEBELUM dialog (kasus edge case)
     let pendingSfx = [];
 
-    // Helper untuk push data ke scriptData dan reset state
     const flushBuffer = () => {
-        // Jika ada SFX yang 'menggantung' (tidak terambil oleh dialog), jadikan baris sendiri
+        // Jika ada SFX yang menggantung dan tidak menemukan induk dialog, dorong sebagai standalone
         if (pendingSfx.length > 0) {
-            pendingSfx.forEach(sfxObj => {
-                scriptData.push(sfxObj);
-            });
+            pendingSfx.forEach(sfxObj => scriptData.push(sfxObj));
             pendingSfx = [];
         }
-
         if (currentDialog) {
             scriptData.push(currentDialog);
             currentDialog = null;
@@ -159,7 +154,7 @@ const parseLines = (lines, assetId) => {
 
         // 2. BACKGROUND CHANGE
         if (trimmed.startsWith("[backgroundsetting") || trimmed.startsWith("[backgroundtween")) {
-            flushBuffer(); // Ganti BG = scene baru, flush semua pending
+            flushBuffer(); // FLUSH WAJIB: Background berubah = scene baru
             const bgId = getAttr(trimmed, "id");
             if (bgId && backgroundMap[bgId]) {
                 scriptData.push({
@@ -171,9 +166,9 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 3. BGM
+        // 3. BGM CONTROL
         if (trimmed.startsWith("[bgmplay")) {
-            // Jangan flushBuffer() disini agar SFX transisi tidak terputus
+            flushBuffer(); // FLUSH WAJIB: Memastikan BGM muncul SETELAH dialog sebelumnya selesai
             const bgmId = getAttr(trimmed, "bgm");
             if (bgmId) {
                 scriptData.push({
@@ -185,13 +180,14 @@ const parseLines = (lines, assetId) => {
             continue;
         }
         if (trimmed.startsWith("[bgmstop")) {
+            flushBuffer(); // FLUSH WAJIB
             scriptData.push({ type: "bgm", action: "stop" });
             continue;
         }
 
-        // 4. SFX HANDLING (Improved)
+        // 4. SFX HANDLING (Improved Retroactive & Pending)
         if (trimmed.startsWith("[se")) {
-            // Jangan flushBuffer!
+            // JANGAN flushBuffer di sini agar bisa menempel ke dialog aktif
             const seId = getAttr(trimmed, "se");
             const seStartTime = getStartTime(trimmed);
             const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
@@ -205,37 +201,38 @@ const parseLines = (lines, assetId) => {
 
                 let attached = false;
 
-                // STRATEGI 1: Coba tempel ke Dialog yang SEDANG aktif (Retroactive)
-                if (currentDialog && currentDialog.startTime !== null && seStartTime !== null && seStartTime >= currentDialog.startTime) {
-                    const delayMs = (seStartTime - currentDialog.startTime) * 1000;
-                    currentDialog.sfxList.push({ src: seSrc, delay: delayMs });
-                    attached = true;
+                // STRATEGI 1: Tempel ke Dialog yang SEDANG aktif (belum di-flush)
+                if (currentDialog && currentDialog.startTime !== null && seStartTime !== null) {
+                    // Cek waktu: SFX harus terjadi SETELAH atau BERSAMAAN dengan dialog
+                    // (Toleransi -0.5s jaga-jaga pembulatan float)
+                    if (seStartTime >= (currentDialog.startTime - 0.5)) {
+                        const delayMs = Math.max(0, (seStartTime - currentDialog.startTime) * 1000);
+                        currentDialog.sfxList.push({ src: seSrc, delay: delayMs });
+                        attached = true;
+                    }
                 }
                 
-                // STRATEGI 2: Jika tidak ada dialog aktif, cari Dialog TERAKHIR di scriptData (Retroactive Cross-Tag)
-                // Ini menangani kasus: Dialog -> Background Change -> SFX (agar SFX masuk ke dialog sebelumnya)
+                // STRATEGI 2: Jika tidak ada dialog aktif, cari Dialog TERAKHIR di scriptData (Backtracking)
+                // Ini untuk kasus: Dialog -> Background Change -> SFX (SFX harusnya milik dialog tadi)
                 if (!attached && scriptData.length > 0) {
-                    // Cari dialog terakhir (mundur)
                     for (let j = scriptData.length - 1; j >= 0; j--) {
                         const lastItem = scriptData[j];
-                        // Stop jika ketemu Choice atau Jump (batas scene keras)
-                        if (lastItem.type === 'choice_selection' || lastItem.type === 'jump') break;
+                        // Stop jika ketemu batas scene keras (Pilihan/Jump/Stop BGM)
+                        if (lastItem.type === 'choice_selection' || lastItem.type === 'jump' || (lastItem.type === 'bgm' && lastItem.action === 'stop')) break;
 
                         if (lastItem.type === 'dialogue') {
-                            // Cek waktu. SFX harus terjadi SETELAH dialog mulai.
-                            if (seStartTime !== null && lastItem.startTime !== null && seStartTime >= lastItem.startTime) {
-                                const delayMs = (seStartTime - lastItem.startTime) * 1000;
+                            if (seStartTime !== null && lastItem.startTime !== null && seStartTime >= (lastItem.startTime - 0.5)) {
+                                const delayMs = Math.max(0, (seStartTime - lastItem.startTime) * 1000);
                                 if (!lastItem.sfxList) lastItem.sfxList = [];
                                 lastItem.sfxList.push({ src: seSrc, delay: delayMs });
                                 attached = true;
                             }
-                            break; // Hanya cek dialog paling terakhir
+                            break; // Hanya cek dialog terakhir yang relevan
                         }
                     }
                 }
 
-                // STRATEGI 3: Jika belum nempel juga, simpan di Pending Buffer (Forward Look)
-                // Ini menangani kasus: SFX -> Dialog (SFX ditulis sebelum dialog di file text)
+                // STRATEGI 3: Jika belum nempel juga (mungkin SFX muncul sebelum Text di file), simpan di Pending
                 if (!attached) {
                     pendingSfx.push(sfxItem);
                 }
@@ -245,10 +242,7 @@ const parseLines = (lines, assetId) => {
 
         // 5. DIALOGUE & NARRATION
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
-            // Disini kita TIDAK memanggil flushBuffer() standar, 
-            // karena kita mau memproses pendingSfx untuk dialog INI.
-            
-            // Simpan dialog sebelumnya jika ada
+            // Jangan flushBuffer() standar, kita proses manual
             if (currentDialog) {
                 scriptData.push(currentDialog);
                 currentDialog = null;
@@ -285,7 +279,6 @@ const parseLines = (lines, assetId) => {
 
             const startTime = getStartTime(trimmed);
 
-            // Buat Dialog Baru
             const newDialog = {
                 type: "dialogue",
                 speakerCode,
@@ -298,18 +291,15 @@ const parseLines = (lines, assetId) => {
             };
 
             // CEK PENDING SFX (Forward Attachment)
-            // Apakah ada SFX yang "mengantri" dan waktunya cocok dengan dialog ini?
-            // Kita izinkan SFX muncul sedikit sebelum dialog (toleransi) atau bersamaan/setelahnya.
+            // Cek apakah ada SFX yang "mengantri" dan waktunya cocok dengan dialog ini
             if (pendingSfx.length > 0 && startTime !== null) {
-                const remaining = [];
                 pendingSfx.forEach(sfx => {
-                    // Logic: Jika SFX terjadi SETELAH atau BERSAMAAN dengan dialog ini
-                    if (sfx.startTime !== null && sfx.startTime >= startTime) {
-                        const delayMs = (sfx.startTime - startTime) * 1000;
+                    // Logic: Jika SFX terjadi SETELAH atau BERSAMAAN dengan dialog ini (toleransi 0.5s)
+                    if (sfx.startTime !== null && sfx.startTime >= (startTime - 0.5)) {
+                        const delayMs = Math.max(0, (sfx.startTime - startTime) * 1000);
                         newDialog.sfxList.push({ src: sfx.src, delay: delayMs });
                     } else {
-                        // Jika SFX terjadi JAUH SEBELUM dialog ini, berarti dia yatim piatu (standalone)
-                        // Push langsung ke scriptData agar dimainkan sebelum dialog muncul
+                        // Jika SFX terjadi JAUH SEBELUM dialog ini, berarti dia standalone
                         scriptData.push(sfx); 
                     }
                 });
@@ -330,10 +320,8 @@ const parseLines = (lines, assetId) => {
             const actorId = getAttr(trimmed, "actorId");
             const voiceUrl = voiceFile ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.wav` : null;
 
-            // Cari target dialog (Current atau Last)
             let target = currentDialog;
             if (!target && scriptData.length > 0) {
-                // Cari dialog terakhir untuk ditempelkan voice (jika current null)
                 for (let j = scriptData.length - 1; j >= 0; j--) {
                     if (scriptData[j].type === "dialogue") {
                         target = scriptData[j];
