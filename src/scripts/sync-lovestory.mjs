@@ -220,7 +220,6 @@ const parseLines = (lines, assetId) => {
 
         // --- TAMBAHAN BARU: SOUND EFFECT (SE) ---
         if (trimmed.startsWith("[se")) {
-            flushBuffer(); // Simpan dialog sebelumnya jika ada
             const seId = getAttr(trimmed, "se");
             const seStartTime = getStartTime(trimmed);
             const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
