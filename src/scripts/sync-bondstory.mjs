@@ -184,13 +184,9 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 5. DIALOGUE & NARRATION
+        // 5. DIALOGUE & NARRATION (FIX MERGING)
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
-            if (currentDialog) {
-                scriptData.push(currentDialog);
-                currentDialog = null;
-            }
-
+            
             const isNarration = trimmed.startsWith("[narration");
             let inlineText = extractMessageText(trimmed); 
             if (!inlineText) inlineText = getAttr(trimmed, "text");
@@ -200,6 +196,7 @@ const parseLines = (lines, assetId) => {
             let speakerCode = getAttr(trimmed, "window");
             let iconUrl = null;
 
+            // Resolve Speaker
             const thumbRaw = getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
             if (thumbRaw) {
                 const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
@@ -210,6 +207,42 @@ const parseLines = (lines, assetId) => {
             if (isNarration) speakerCode = null;
             if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
+            // --- LOGIKA MERGING ---
+            // Cek apakah dialog sebelumnya punya speaker yang sama DAN belum punya voice.
+            // Jika ya, kemungkinan ini adalah satu kalimat yang terpecah di file teks.
+            if (currentDialog && 
+                currentDialog.speakerCode === speakerCode && 
+                !currentDialog.voiceUrl && 
+                !isNarration // Narasi jarang digabung, biasanya dialog karakter
+            ) {
+                // GABUNGKAN TEKS
+                // Tambahkan spasi atau newline tergantung preferensi. Newline lebih aman untuk VN.
+                currentDialog.text += "\n" + (inlineText || "");
+                
+                // Jika ada SFX yang "mengantri" di antara pecahan kalimat ini, tempelkan ke dialog gabungan
+                if (pendingSfx.length > 0) {
+                    pendingSfx.forEach(sfx => {
+                        let delayMs = 0;
+                        if (currentDialog.startTime !== null && sfx.startTime !== null) {
+                            delayMs = Math.max(0, (sfx.startTime - currentDialog.startTime) * 1000);
+                        }
+                        currentDialog.sfxList.push({ src: sfx.src, delay: delayMs });
+                    });
+                    pendingSfx = [];
+                }
+                
+                // Jangan buat dialog baru, lanjutkan loop
+                continue; 
+            }
+            // ---------------------
+
+            // Jika tidak di-merge, flush yang lama
+            if (currentDialog) {
+                scriptData.push(currentDialog);
+                currentDialog = null;
+            }
+
+            // Resolve Names & Icons for New Dialog
             if (!displayName && speakerCode && CHARACTER_NAMES[speakerCode]) {
                 displayName = CHARACTER_NAMES[speakerCode];
             }
@@ -233,20 +266,18 @@ const parseLines = (lines, assetId) => {
                 sfxList: []
             };
 
-            // Attach Pending SFX
-            if (pendingSfx.length > 0 && startTime !== null) {
+            // Attach Pending SFX to this new dialog
+            if (pendingSfx.length > 0) {
                 pendingSfx.forEach(sfx => {
-                    if (sfx.startTime !== null && sfx.startTime >= (startTime - 0.5)) {
+                    if (startTime !== null && sfx.startTime !== null && sfx.startTime >= (startTime - 0.5)) {
                         const delayMs = Math.max(0, (sfx.startTime - startTime) * 1000);
                         newDialog.sfxList.push({ src: sfx.src, delay: delayMs });
                     } else {
+                        // SFX terlalu jauh di belakang, jadikan standalone
                         scriptData.push(sfx); 
                     }
                 });
                 pendingSfx = []; 
-            } else if (pendingSfx.length > 0) {
-                pendingSfx.forEach(sfx => scriptData.push(sfx));
-                pendingSfx = [];
             }
 
             currentDialog = newDialog;
