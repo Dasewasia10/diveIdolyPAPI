@@ -218,37 +218,46 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // --- TAMBAHAN BARU: SOUND EFFECT (SE) ---
+        // --- UPDATE BAGIAN SFX (RETROACTIVE FIX) ---
         if (trimmed.startsWith("[se")) {
+            // Jangan flushBuffer di sini
             const seId = getAttr(trimmed, "se");
             const seStartTime = getStartTime(trimmed);
+            // Asumsi file extension .m4a, sesuaikan jika perlu
             const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
-            
-            // Cek apakah ini perintah stop (jarang ada di SE visual novel, tapi buat jaga-jaga)
-            // Biasanya formatnya [se stop] atau sejenisnya, tapi di logikamu [se se=name]
-            
-            // if (seId) {
-            //     scriptData.push({
-            //         type: "sfx", // Tipe baru
-            //         src: `${R2_BGM_URL}/${seId}.m4a` // Asumsi ekstensi .m4a karena satu folder dengan BGM. Ubah ke .wav jika perlu.
-            //     });
-            // }
+
             if (seId && seSrc) {
-                // Cek apakah ada dialog yang sedang aktif (belum di-flush)
-                // Dan apakah SFX ini punya timestamp yang valid
-                if (currentDialog && currentDialog.startTime !== null && seStartTime !== null && seStartTime >= currentDialog.startTime) {
+                // 1. Tentukan target dialog:
+                // Prioritas 1: Dialog yang sedang aktif (belum di-flush)
+                let targetDialog = currentDialog;
+
+                // Prioritas 2: Jika tidak ada yang aktif (karena kepotong tag camera/shake),
+                // Cek elemen terakhir di scriptData
+                if (!targetDialog && scriptData.length > 0) {
+                    const lastItem = scriptData[scriptData.length - 1];
+                    if (lastItem.type === "dialogue") {
+                        targetDialog = lastItem;
+                    }
+                }
+
+                // 2. Cek validasi waktu agar tidak menempel ke dialog yang salah (terlalu jauh)
+                // Kita izinkan toleransi sedikit jika timestamps identik atau sfx sedikit lebih lambat
+                if (targetDialog && targetDialog.startTime !== null && seStartTime !== null && seStartTime >= targetDialog.startTime) {
                     
-                    // Hitung delay: (Waktu SFX - Waktu Dialog) * 1000 (milidetik)
-                    const delayMs = (seStartTime - currentDialog.startTime) * 1000;
+                    // Hitung delay
+                    const delayMs = (seStartTime - targetDialog.startTime) * 1000;
                     
                     // Masukkan ke dalam daftar SFX milik dialog tersebut
-                    currentDialog.sfxList.push({
+                    // Pastikan array sfxList ada (jaga-jaga jika target adalah lastItem yang sudah jadi)
+                    if (!targetDialog.sfxList) targetDialog.sfxList = [];
+                    
+                    targetDialog.sfxList.push({
                         src: seSrc,
                         delay: delayMs
                     });
                 } else {
-                    // Jika tidak ada dialog aktif (misal SFX saat layar hitam/transisi)
-                    // Maka jadikan baris script terpisah (seperti sebelumnya)
+                    // Jika benar-benar tidak ada dialog yang cocok (misal SFX di scene kosong)
+                    // Jadikan baris script terpisah
                     flushBuffer(); 
                     scriptData.push({
                         type: "sfx",
