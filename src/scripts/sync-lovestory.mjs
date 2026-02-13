@@ -78,22 +78,7 @@ const ICON_MAP = {
     "stm": "satomi" 
 };
 
-// --- FETCH HELPER ---
-const fetchData = (url) => {
-    return new Promise((resolve, reject) => {
-        https.get(url, (res) => {
-            if (res.statusCode !== 200) {
-                reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
-                return;
-            }
-            const chunks = [];
-            res.on("data", (chunk) => chunks.push(chunk));
-            res.on("end", () => resolve(Buffer.concat(chunks)));
-        }).on("error", reject);
-    });
-};
-
-// --- HELPER: GET ATTRIBUTE (LEBIH KUAT) ---
+// --- HELPER: GET ATTRIBUTE (ROBUST) ---
 // Menangani format: key="value", key=value, dan spasi yang tidak rapi
 const getAttr = (line, key) => {
     const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`, "i");
@@ -108,7 +93,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
     
     const lines = rawText.replace(/\r\n/g, "\n").split("\n");
     const scriptData = [];
-    const backgroundMap = {}; // Menyimpan ID Background -> Filename
+    const backgroundMap = {}; // ID Background -> Filename
 
     let currentDialog = null;
 
@@ -119,7 +104,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
         }
     };
 
-    lines.forEach((line, index) => {
+    lines.forEach((line) => {
         const trimmed = line.trim();
         if (!trimmed) return;
 
@@ -135,12 +120,12 @@ const parseScript = (rawText, assetId, isDebug = false) => {
 
         // 2. BACKGROUND CHANGE
         if (trimmed.startsWith("[backgroundsetting") || trimmed.startsWith("[backgroundtween")) {
-            flushBuffer(); // Simpan dialog sebelumnya
+            flushBuffer();
             const bgId = getAttr(trimmed, "id");
             if (bgId && backgroundMap[bgId]) {
                 scriptData.push({
                     type: "background",
-                    src: `${R2_BG_URL}/${backgroundMap[bgId]}.webp`, // Asumsi format WebP
+                    src: `${R2_BG_URL}/${backgroundMap[bgId]}.webp`,
                     bgName: bgId
                 });
             }
@@ -149,13 +134,13 @@ const parseScript = (rawText, assetId, isDebug = false) => {
 
         // 3. BGM CONTROL
         if (trimmed.startsWith("[bgmplay")) {
-            flushBuffer(); // Simpan dialog sebelumnya
+            flushBuffer();
             const bgmId = getAttr(trimmed, "bgm");
             if (bgmId) {
                 scriptData.push({
                     type: "bgm",
                     action: "play",
-                    src: `${R2_BGM_URL}/${bgmId}.m4a` // Asumsi format Audio
+                    src: `${R2_BGM_URL}/${bgmId}.m4a`
                 });
             }
             return;
@@ -168,7 +153,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
 
         // 4. DIALOGUE & NARRATION
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
-            flushBuffer(); // Pastikan dialog sebelumnya tersimpan
+            flushBuffer();
 
             const isNarration = trimmed.startsWith("[narration");
             let inlineText = getAttr(trimmed, "text");
@@ -178,7 +163,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
             let speakerCode = getAttr(trimmed, "window");
             let iconUrl = null;
 
-            // Handle Typo "thumbnial" dari file asli
+            // Handle Typo "thumbnial"
             const thumbRaw = getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
             if (thumbRaw) {
                 const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
@@ -201,44 +186,51 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                 iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
             }
 
-            // Init Dialog Object
             currentDialog = {
                 type: "dialogue",
                 speakerCode,
                 speakerName: displayName,
                 iconUrl,
-                voiceUrl: null, // Akan diisi jika baris berikutnya [voice]
+                voiceUrl: null, 
                 text: inlineText || "" 
             };
             return;
         }
 
-        // 5. VOICE HANDLING (DIPERBAIKI)
+        // 5. VOICE HANDLING (PERBAIKAN UTAMA: DEEP SEARCH)
         if (trimmed.startsWith("[voice")) {
             const voiceFile = getAttr(trimmed, "voice");
             const actorId = getAttr(trimmed, "actorId");
             const voiceUrl = voiceFile ? `${R2_VOICE_URL}/${assetId}/${voiceFile}.wav` : null;
 
-            // LOGIKA PENYELAMATAN DATA:
-            // Jika currentDialog null (karena ter-flush oleh [bgmplay] sebelumnya),
-            // Kita cari elemen dialog terakhir di scriptData untuk ditempeli voice ini.
+            // Cari target dialog untuk ditempelkan suara ini
             let target = currentDialog;
             
+            // Jika currentDialog null (karena tertutup event BGM/BG), cari mundur di scriptData
             if (!target && scriptData.length > 0) {
-                const lastItem = scriptData[scriptData.length - 1];
-                if (lastItem.type === "dialogue") {
-                    target = lastItem;
+                // Loop mundur untuk mencari dialog terdekat
+                for (let i = scriptData.length - 1; i >= 0; i--) {
+                    if (scriptData[i].type === "dialogue") {
+                        target = scriptData[i];
+                        break; // Ketemu! Stop loop.
+                    }
+                    // Kita bisa melewati 'bgm', 'background', dll dengan aman.
+                    // Jangan melewati 'choice' atau 'jump' karena itu pembatas scene.
+                    if (scriptData[i].type === "choice_selection" || scriptData[i].type === "jump") {
+                        break; 
+                    }
                 }
             }
 
             if (target) {
                 if (voiceUrl) target.voiceUrl = voiceUrl;
                 
-                // Update info speaker jika sebelumnya 'unknown' tapi di [voice] ada actorId
+                // Update info speaker jika sebelumnya unknown
                 if (actorId) {
                     const code = actorId.toLowerCase();
                     if (target.speakerCode === "unknown" || !target.speakerCode) {
                         target.speakerCode = code;
+                        // Regenerate icon & name based on actorId from voice tag
                         if (!target.iconUrl && ICON_MAP[code]) {
                             target.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
                         }
@@ -247,15 +239,17 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                         }
                     }
                 }
+            } else {
+                if(isDebug) console.warn(`[WARN] Voice orphaned: ${voiceFile}`);
             }
             return;
         }
 
-        // 6. SELECTION / CHOICES (DIPERBAIKI)
+        // 6. SELECTION / CHOICES
         if (trimmed.startsWith("[select")) {
             flushBuffer();
             scriptData.push({
-                type: "choice_selection", // KEMBALI KE PENAMAAN LAMA agar Skip bekerja
+                type: "choice_selection", // PENTING: Gunakan nama tipe ini agar Skip Logic di Frontend bekerja
                 text: getAttr(trimmed, "label") || "Select",
                 nextLabel: getAttr(trimmed, "next")
             });
@@ -291,7 +285,22 @@ const parseScript = (rawText, assetId, isDebug = false) => {
     return scriptData;
 };
 
-// --- MAIN PROCESS ---
+// --- FETCH HELPER ---
+const fetchData = (url) => {
+    return new Promise((resolve, reject) => {
+        https.get(url, (res) => {
+            if (res.statusCode !== 200) {
+                reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
+                return;
+            }
+            const chunks = [];
+            res.on("data", (chunk) => chunks.push(chunk));
+            res.on("end", () => resolve(Buffer.concat(chunks)));
+        }).on("error", reject);
+    });
+};
+
+// --- MAIN EXECUTION ---
 (async () => {
     if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
@@ -314,8 +323,13 @@ const parseScript = (rawText, assetId, isDebug = false) => {
             const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);
             const rawContent = buffer.toString("utf-8");
             
+            // Debug: Print sample for first file
             const script = parseScript(rawContent, assetId, i === 0);
             
+            if (i === 0 && script.length > 0) {
+                 console.log(`[DEBUG] First dialog of ${fileName}:`, JSON.stringify(script.find(x => x.type === 'dialogue'), null, 2));
+            }
+
             const jsonFileName = `${assetId}.json`;
             fs.writeFileSync(
                 path.join(OUTPUT_DIR, jsonFileName),
