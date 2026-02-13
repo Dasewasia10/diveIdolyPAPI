@@ -453,61 +453,61 @@
       "text": "……それに{user}君\nやっと私の顔見て話してくれたね\nそれが嬉しいんだよ、私は"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh019.wav",
-      "text": "……まあ、俺も嬉しい……ですけど\n共通の話で、盛り上がれるのは……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu016.wav",
-      "text": "……ふふっ、良かった\nこれからもよろしくね\n{user}君"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu017.wav",
-      "text": "……なんて言われても困るよね\nでも二人しかいないような部活だもん\nこれからも仲良くしてくれたら嬉しいな"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh020.wav",
-      "text": "……努力はしてみます\n……嫌ではないので……"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "俺も嬉しい",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh019.wav",
+              "text": "……まあ、俺も嬉しい……ですけど\n共通の話で、盛り上がれるのは……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu016.wav",
+              "text": "……ふふっ、良かった\nこれからもよろしくね\n{user}君"
+            }
+          ]
+        },
+        {
+          "text": "特に何も言わない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu017.wav",
+              "text": "……なんて言われても困るよね\nでも二人しかいないような部活だもん\nこれからも仲良くしてくれたら嬉しいな"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh020.wav",
+              "text": "……努力はしてみます\n……嫌ではないので……"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -734,92 +734,77 @@
       "text": "え～？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh027.wav",
-      "text": "そ、そういうつもりじゃなくって……\n誰かが聞き耳立てて顧問に報告されたら\n最悪、廃部もあり得るから……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu024.wav",
-      "text": "あ～、ラブコメじゃお約束だよね\n脇役が偶然聞いて勘違いするパターン\n確かに口が滑ると危ういかも……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "kan",
-      "speakerName": "小島叶",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-kan005.wav",
-      "text": "いやいや、現実にそういうヤツいる？\n漫画の読み過ぎでしょ、二人とも……\nそんなことより！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh028.wav",
-      "text": "古くないですか、しょぼぼんって……\n昭和の漫画のリアクションみたいだ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu025.wav",
-      "text": "ひどーい！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "kan",
-      "speakerName": "小島叶",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-kan006.wav",
-      "text": "いや、漫画のことじゃなくて\nあんたのリアクションが古いって話でしょ\nそんなことより！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "そういうつもりじゃない",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh027.wav",
+              "text": "そ、そういうつもりじゃなくって……\n誰かが聞き耳立てて顧問に報告されたら\n最悪、廃部もあり得るから……"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu024.wav",
+              "text": "あ～、ラブコメじゃお約束だよね\n脇役が偶然聞いて勘違いするパターン\n確かに口が滑ると危ういかも……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "kan",
+              "speakerName": "小島叶",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-kan005.wav",
+              "text": "いやいや、現実にそういうヤツいる？\n漫画の読み過ぎでしょ、二人とも……\nそんなことより！"
+            }
+          ]
+        },
+        {
+          "text": "しょぼぼんって……",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-koh028.wav",
+              "text": "古くないですか、しょぼぼんって……\n昭和の漫画のリアクションみたいだ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-yu025.wav",
+              "text": "ひどーい！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "kan",
+              "speakerName": "小島叶",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kana.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_01_01/sud_vo_adv_love_2411_01_01-kan006.wav",
+              "text": "いや、漫画のことじゃなくて\nあんたのリアクションが古いって話でしょ\nそんなことより！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",

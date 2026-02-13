@@ -122,66 +122,61 @@
       "text": "だから、{user}君が\n芽衣と遊んでくれたらとっても\n嬉しいんだけど……昨日は楽しくなかった？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
-      "bgName": "env_adv_2d_okuyamaliving-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh004.wav",
-      "text": "勘違いだって。俺は別に楽しくなかったよ\n芽衣も、俺なんかと遊んでも楽しくないだろ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
-      "bgName": "env_adv_2d_okuyamaliving-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei007.wav",
-      "text": "う……芽衣だって{user}君と\n遊ぶより愛ちゃんと遊んだ方が\n楽しいけど……愛ちゃん用事あるんだもん"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
-      "bgName": "env_adv_2d_okuyamaliving-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh005.wav",
-      "text": "それは……確かに、楽しかったけど……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-night.webp",
-      "bgName": "env_adv_2d_okuyamaliving-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei008.wav",
-      "text": "良かったー！\nそれなら芽衣と一緒に遊ぼうよ！\n昨日楽しかったならきっと今日も楽しいよ！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "楽しくなかったと答える",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh004.wav",
+              "text": "勘違いだって。俺は別に楽しくなかったよ\n芽衣も、俺なんかと遊んでも楽しくないだろ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei007.wav",
+              "text": "う……芽衣だって{user}君と\n遊ぶより愛ちゃんと遊んだ方が\n楽しいけど……愛ちゃん用事あるんだもん"
+            }
+          ]
+        },
+        {
+          "text": "楽しかったと答える",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh005.wav",
+              "text": "それは……確かに、楽しかったけど……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei008.wav",
+              "text": "良かったー！\nそれなら芽衣と一緒に遊ぼうよ！\n昨日楽しかったならきっと今日も楽しいよ！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -442,66 +437,61 @@
       "text": "じゃあ……はい！"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_jungle-00-noon.webp",
-      "bgName": "env_adv_2d_jungle-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh015.wav",
-      "text": "ありがとう。助かるよ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_jungle-00-noon.webp",
-      "bgName": "env_adv_2d_jungle-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei019.wav",
-      "text": "お礼なんていいよ～\n芽衣が誘ったんだもん！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_jungle-00-noon.webp",
-      "bgName": "env_adv_2d_jungle-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh016.wav",
-      "text": "大丈夫だ\nむしろ手を繋いだ方が歩き辛くないか……？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_jungle-00-noon.webp",
-      "bgName": "env_adv_2d_jungle-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei020.wav",
-      "text": "あはは……そっか\nでも、無理はしないでね？\n転んじゃったら、危ないし！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "手を取る",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh015.wav",
+              "text": "ありがとう。助かるよ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei019.wav",
+              "text": "お礼なんていいよ～\n芽衣が誘ったんだもん！"
+            }
+          ]
+        },
+        {
+          "text": "断る",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-koh016.wav",
+              "text": "大丈夫だ\nむしろ手を繋いだ方が歩き辛くないか……？"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_02_01/sud_vo_adv_love_2405_02_01-mei020.wav",
+              "text": "あはは……そっか\nでも、無理はしないでね？\n転んじゃったら、危ないし！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",

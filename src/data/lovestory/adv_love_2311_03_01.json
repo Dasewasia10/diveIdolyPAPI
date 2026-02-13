@@ -88,35 +88,39 @@
       "text": "行き先は歩きながら決めればいいから\nとりあえず行ってみようよ！\nね、どうかな？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh003.wav",
-      "text": "あくまで恋人のフリだし……\nもう少し経ってからでも\nいいんじゃないか？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs005.wav",
-      "text": "むー。{user}くんは\n分かってないなー\nこういうのは勢いが大事なの！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "ためらう",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh003.wav",
+              "text": "あくまで恋人のフリだし……\nもう少し経ってからでも\nいいんじゃないか？"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs005.wav",
+              "text": "むー。{user}くんは\n分かってないなー\nこういうのは勢いが大事なの！"
+            }
+          ]
+        },
+        {
+          "text": "誘いに乗る",
+          "route": []
+        }
+      ]
     },
     {
       "type": "background",
@@ -276,116 +280,101 @@
       "text": "そうだな。ん……ここの本屋、久しぶりに\n来たけど、小説の品揃えがいいんだな\nそういえば渚が好きだったのは……"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
-      "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh010.wav",
-      "text": "渚は恋愛系が好きだったよな\n……お、これなんて面白そうじゃないか？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs011.wav",
-      "text": "『一組の男女が幾多の困難と\nすれ違いを乗り越え結ばれる\n淡くも甘やかな恋の物語』……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
-      "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs012.wav",
-      "text": "{user}くん、凄い！\n私の好みぴったりだよ～！\nよく覚えてたね！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh011.wav",
-      "text": "それくらい覚えてるって\n本の話とか、恋愛ドラマの話とか\n散々聞かされてたからな"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
-      "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh012.wav",
-      "text": "渚はバトル系が好きだったよな\nこれなんてどうだ？\n『拳法伝説kana』、だってさ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
-      "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs013.wav",
-      "text": "{user}くん、もしかして\n小学生の時に私がたまたまこういう漫画を\n読んでた時のことを覚えてたの？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
-      "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh013.wav",
-      "text": "そうそう、わざわざ学校に持ってきて……\nって、え？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs014.wav",
-      "text": "そうだよ。流行ってるから、って友達に\n借りたの。はぁ……そんな細かいことを\nちゃんと覚えてるのは凄いけど……あ！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
-      "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs015.wav",
-      "text": "これ……私が好きな純愛系の小説だよ！\nしかも好みに、どストライク！\n決めた！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "恋愛系",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh010.wav",
+              "text": "渚は恋愛系が好きだったよな\n……お、これなんて面白そうじゃないか？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs011.wav",
+              "text": "『一組の男女が幾多の困難と\nすれ違いを乗り越え結ばれる\n淡くも甘やかな恋の物語』……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs012.wav",
+              "text": "{user}くん、凄い！\n私の好みぴったりだよ～！\nよく覚えてたね！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh011.wav",
+              "text": "それくらい覚えてるって\n本の話とか、恋愛ドラマの話とか\n散々聞かされてたからな"
+            }
+          ]
+        },
+        {
+          "text": "バトル系",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh012.wav",
+              "text": "渚はバトル系が好きだったよな\nこれなんてどうだ？\n『拳法伝説kana』、だってさ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs013.wav",
+              "text": "{user}くん、もしかして\n小学生の時に私がたまたまこういう漫画を\n読んでた時のことを覚えてたの？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-koh013.wav",
+              "text": "そうそう、わざわざ学校に持ってきて……\nって、え？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs014.wav",
+              "text": "そうだよ。流行ってるから、って友達に\n借りたの。はぁ……そんな細かいことを\nちゃんと覚えてるのは凄いけど……あ！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_03_01/sud_vo_adv_love_2311_03_01-ngs015.wav",
+              "text": "これ……私が好きな純愛系の小説だよ！\nしかも好みに、どストライク！\n決めた！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",

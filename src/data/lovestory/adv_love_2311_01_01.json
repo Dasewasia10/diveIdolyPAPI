@@ -327,30 +327,35 @@
       "text": "ってことは、渚ちゃんは私にとっても\nお姉ちゃんってことだよね！"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
-      "bgName": "lovehroom"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh009.wav",
-      "text": "そういえば前に、妹がほしいって\n言ってたよな？\nおめでとう、渚！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
-      "bgName": "lovehroom"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh010.wav",
-      "text": "おめでとう、すみれ\nお姉ちゃんが出来たな"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "妹が出来た渚を祝福する",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh009.wav",
+              "text": "そういえば前に、妹がほしいって\n言ってたよな？\nおめでとう、渚！"
+            }
+          ]
+        },
+        {
+          "text": "姉が出来たすみれを祝福する",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh010.wav",
+              "text": "おめでとう、すみれ\nお姉ちゃんが出来たな"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -494,145 +499,125 @@
       "text": "なんだよ\n{user}は伊吹さんのこと\n可愛いなって思わないのか？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh014.wav",
-      "text": "そりゃまぁ、可愛いとは思うけど"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs016.wav",
-      "text": "もう！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh015.wav",
-      "text": "え？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs017.wav",
-      "text": "べ、別に怒ってないよ！\n{user}くんが……\nか、可愛いとか言うから……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "鈴木",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-suzuki005.wav",
-      "text": "……二人とも、ほんとに仲いいな"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh016.wav",
-      "text": "ずっと近くにいるから分からないんだよなぁ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh017.wav",
-      "text": "毎日見てると、可愛いとか可愛くないとか\nいまいち……え、渚？\nどうした……？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs018.wav",
-      "text": "もー、聞こえてるんだけどー！\nそういう話は私がいないとこでしてよ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh018.wav",
-      "text": "……いててててて\nな、なんで突然頬を\nつねるんだよ！？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
-      "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs019.wav",
-      "text": "どーせ、私は可愛くないですよっ！\n{user}くんのバカッ！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh019.wav",
-      "text": "って、おい、渚！\nはぁ、説明もなしか……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "鈴木",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-suzuki006.wav",
-      "text": "はは、もうちょっと考えて\n発言した方がいいな\n{user}は"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "可愛いと思う",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh014.wav",
+              "text": "そりゃまぁ、可愛いとは思うけど"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs016.wav",
+              "text": "もう！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh015.wav",
+              "text": "え？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs017.wav",
+              "text": "べ、別に怒ってないよ！\n{user}くんが……\nか、可愛いとか言うから……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "鈴木",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-suzuki005.wav",
+              "text": "……二人とも、ほんとに仲いいな"
+            }
+          ]
+        },
+        {
+          "text": "分からないと言う",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh016.wav",
+              "text": "ずっと近くにいるから分からないんだよなぁ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh017.wav",
+              "text": "毎日見てると、可愛いとか可愛くないとか\nいまいち……え、渚？\nどうした……？"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs018.wav",
+              "text": "もー、聞こえてるんだけどー！\nそういう話は私がいないとこでしてよ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh018.wav",
+              "text": "……いててててて\nな、なんで突然頬を\nつねるんだよ！？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs019.wav",
+              "text": "どーせ、私は可愛くないですよっ！\n{user}くんのバカッ！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh019.wav",
+              "text": "って、おい、渚！\nはぁ、説明もなしか……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "鈴木",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-suzuki006.wav",
+              "text": "はは、もうちょっと考えて\n発言した方がいいな\n{user}は"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -174,79 +174,69 @@
       "text": "そんなのん気なこと言ってる場合じゃないよ\nまたいつ襲われるか分かんないし、お家で\nお兄ちゃんを監禁しておかないと。ね？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr006.wav",
-      "text": "うんうん！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs004.wav",
-      "text": "監禁ってそういうんじゃないよね！？\n猫の私でも分かるにゃー！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr007.wav",
-      "text": "うーん……まあ少しくらいなら大丈夫\nかな。サキュバス達も今日はもう襲って\n来なさそうだし。よし、遊ぼう！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs005.wav",
-      "text": "やったー！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr008.wav",
-      "text": "うーん……まあ少しくらいなら大丈夫\nかな。サキュバス達も今日はもう襲って\n来なさそうだし。よし、遊ぼう！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "監禁される",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr006.wav",
+              "text": "うんうん！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs004.wav",
+              "text": "監禁ってそういうんじゃないよね！？\n猫の私でも分かるにゃー！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr007.wav",
+              "text": "うーん……まあ少しくらいなら大丈夫\nかな。サキュバス達も今日はもう襲って\n来なさそうだし。よし、遊ぼう！"
+            }
+          ]
+        },
+        {
+          "text": "遊びに行く",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs005.wav",
+              "text": "やったー！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr008.wav",
+              "text": "うーん……まあ少しくらいなら大丈夫\nかな。サキュバス達も今日はもう襲って\n来なさそうだし。よし、遊ぼう！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",
@@ -376,53 +366,53 @@
       "action": "stop"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs009.wav",
-      "text": "本当に買ってくれるの！？\nわぁ～、嬉しいなぁ～\nえへへ、{user}君大好き！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr011.wav",
-      "text": "まったく……お兄ちゃんはすぐ渚ちゃんを\n甘やかすんだから……\n今は猫じゃなくて人間なんだからね？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs010.wav",
-      "text": "{user}君のケチ！\n買ってくれたっていいじゃ～ん！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "買ってあげる",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs009.wav",
+              "text": "本当に買ってくれるの！？\nわぁ～、嬉しいなぁ～\nえへへ、{user}君大好き！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr011.wav",
+              "text": "まったく……お兄ちゃんはすぐ渚ちゃんを\n甘やかすんだから……\n今は猫じゃなくて人間なんだからね？"
+            }
+          ]
+        },
+        {
+          "text": "買わない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs010.wav",
+              "text": "{user}君のケチ！\n買ってくれたっていいじゃ～ん！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -517,40 +507,45 @@
       "text": "すみれはじっとこちらを見つめてくる\n本当にねりけしに\nそんなパワーがあるのだろうか"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr014.wav",
-      "text": "わぁ！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr015.wav",
-      "text": "お兄ちゃんのケチー……\nそんなんだからいつまで経っても\nお兄ちゃんには友達も恋人も出来ないんだよ"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "買ってあげる",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr014.wav",
+              "text": "わぁ！"
+            }
+          ]
+        },
+        {
+          "text": "買わない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr015.wav",
+              "text": "お兄ちゃんのケチー……\nそんなんだからいつまで経っても\nお兄ちゃんには友達も恋人も出来ないんだよ"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -596,123 +591,93 @@
       "text": "ええ～！？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs015.wav",
-      "text": "わーい！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr017.wav",
-      "text": "お兄ちゃんのばかぁ……\nそういう感じだからサキュバスに狙われたり\nたぶらかされたりしちゃうんだよ……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs016.wav",
-      "text": "すみれちゃん怒った！？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr018.wav",
-      "text": "べ、別に怒ってないもん！\n正義の魔法少女はお兄ちゃんが変態になった\nくらいじゃ動揺しないんだからね！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr019.wav",
-      "text": "ほっ……良かった。サキュバス達と\nイチャイチャしているお兄ちゃんを見てたら\nあんまり信用出来なくなってたから……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr020.wav",
-      "text": "突然「渚のお兄ちゃんになる」とか\n言い出しそうだな……って\nちょっとだけドキドキしてたの。ごめんね"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs017.wav",
-      "text": "え～、にゃんで～？\n別に減るものじゃないんだから\n私のお兄ちゃんになってくれてもいいじゃん"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mall-00-noon.webp",
-      "bgName": "mall-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr021.wav",
-      "text": "そういう問題じゃなくて！\nダメなものはダメなの！\nお兄ちゃんは……私だけのお兄ちゃんだもん"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "渚のお兄ちゃんにもなる",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs015.wav",
+              "text": "わーい！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr017.wav",
+              "text": "お兄ちゃんのばかぁ……\nそういう感じだからサキュバスに狙われたり\nたぶらかされたりしちゃうんだよ……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs016.wav",
+              "text": "すみれちゃん怒った！？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr018.wav",
+              "text": "べ、別に怒ってないもん！\n正義の魔法少女はお兄ちゃんが変態になった\nくらいじゃ動揺しないんだからね！"
+            }
+          ]
+        },
+        {
+          "text": "すみれだけのお兄ちゃんでいる",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr019.wav",
+              "text": "ほっ……良かった。サキュバス達と\nイチャイチャしているお兄ちゃんを見てたら\nあんまり信用出来なくなってたから……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr020.wav",
+              "text": "突然「渚のお兄ちゃんになる」とか\n言い出しそうだな……って\nちょっとだけドキドキしてたの。ごめんね"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs017.wav",
+              "text": "え～、にゃんで～？\n別に減るものじゃないんだから\n私のお兄ちゃんになってくれてもいいじゃん"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr021.wav",
+              "text": "そういう問題じゃなくて！\nダメなものはダメなの！\nお兄ちゃんは……私だけのお兄ちゃんだもん"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -767,175 +732,143 @@
       "text": "布団を敷き終え、眠りにつこうとした\nその時、部屋の戸がノックされる\n開けた先にいたのは――"
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs018.wav",
-      "text": "こんばんは、{user}君\n寝る前に少し、時間ある？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs019.wav",
-      "text": "一人だと眠れにゃいからいつもみたいに\n{user}君のお布団で\n一緒に寝よ！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "そう言って僕の布団にサッと潜り込む渚"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs020.wav",
-      "text": "ねえ、私を拾って来てすぐに「よく迷子に\nなるから」って君がくれたこの鈴\n覚えてる？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "渚は愛おしそうに首元の鈴を触っている"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs021.wav",
-      "text": "私ね、この鈴にずーっとお願いしてたの\nいつか君とお喋りしたり、遊んだり……\nふわぁ……むにゃむにゃ、にゃにゃにゃ……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "そんな話をしながら、渚はいつの間にか\n眠りに落ちていった"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_shed-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr022.wav",
-      "text": "お兄ちゃん、こんな夜遅くにごめんね……\nえっと……別にそんな大した用事が\nあったとかって訳じゃなくて……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr023.wav",
-      "text": "ただ顔が見たかっただけっていうか……\nまたお兄ちゃんがサキュバス達に\n連れ去られたらどうしようって考えてたら"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr024.wav",
-      "text": "なんだか、不安になっちゃって……\nでも、元気そうなお兄ちゃんの顔を\n見れたからもう大丈夫！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "すみれは心配を掛けないようにと\n無理に明るい笑顔を見せ気丈にふるまう"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-night.webp",
-      "bgName": "shed-00-night"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "渚",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs018.wav",
+              "text": "こんばんは、{user}君\n寝る前に少し、時間ある？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs019.wav",
+              "text": "一人だと眠れにゃいからいつもみたいに\n{user}君のお布団で\n一緒に寝よ！"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "そう言って僕の布団にサッと潜り込む渚"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs020.wav",
+              "text": "ねえ、私を拾って来てすぐに「よく迷子に\nなるから」って君がくれたこの鈴\n覚えてる？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "渚は愛おしそうに首元の鈴を触っている"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-ngs021.wav",
+              "text": "私ね、この鈴にずーっとお願いしてたの\nいつか君とお喋りしたり、遊んだり……\nふわぁ……むにゃむにゃ、にゃにゃにゃ……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "そんな話をしながら、渚はいつの間にか\n眠りに落ちていった"
+            }
+          ]
+        },
+        {
+          "text": "すみれ",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_shed-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr022.wav",
+              "text": "お兄ちゃん、こんな夜遅くにごめんね……\nえっと……別にそんな大した用事が\nあったとかって訳じゃなくて……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr023.wav",
+              "text": "ただ顔が見たかっただけっていうか……\nまたお兄ちゃんがサキュバス達に\n連れ去られたらどうしようって考えてたら"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "smr",
+              "speakerName": "すみれ",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_03_02/sud_vo_adv_love_2505_03_02-smr024.wav",
+              "text": "なんだか、不安になっちゃって……\nでも、元気そうなお兄ちゃんの顔を\n見れたからもう大丈夫！"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "すみれは心配を掛けないようにと\n無理に明るい笑顔を見せ気丈にふるまう"
+            },
+            {
+              "type": "choice_selection",
+              "choices": [
+                {
+                  "text": "手を握る",
+                  "route": []
+                },
+                {
+                  "text": "頭を撫でる",
+                  "route": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",

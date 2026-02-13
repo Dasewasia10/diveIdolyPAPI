@@ -294,100 +294,85 @@
       "text": "なんか、ごまかされた気がするよー\nでもそうだね、芽衣もそろそろ帰ろうかな～\n子供達も帰っちゃったし"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-night.webp",
-      "bgName": "mountainroad-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh010.wav",
-      "text": "それなら俺が送っていくよ\nここからだと少し遠いし\n夜道は歩いて帰るには危ないだろ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-night.webp",
-      "bgName": "mountainroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei006.wav",
-      "text": "え？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-night.webp",
-      "bgName": "mountainroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh011.wav",
-      "text": "俺が心配だから、送って行きたいんだ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-night.webp",
-      "bgName": "mountainroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei007.wav",
-      "text": "……そっか\n……うん、そういうことならお願い！\n二人で帰った方が楽しいしね！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-night.webp",
-      "bgName": "mountainroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh012.wav",
-      "text": "そろそろ暗くなる時間だし\n気を付けて帰るんだぞ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-night.webp",
-      "bgName": "mountainroad-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei008.wav",
-      "text": "せっかくだから{user}君も\n一緒に帰ろうよ！\n二人で帰った方が楽しいよ！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh013.wav",
-      "text": "それもそうだな\nじゃあ、一緒に帰ろうか"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "芽衣を家まで送っていく",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh010.wav",
+              "text": "それなら俺が送っていくよ\nここからだと少し遠いし\n夜道は歩いて帰るには危ないだろ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei006.wav",
+              "text": "え？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh011.wav",
+              "text": "俺が心配だから、送って行きたいんだ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei007.wav",
+              "text": "……そっか\n……うん、そういうことならお願い！\n二人で帰った方が楽しいしね！"
+            }
+          ]
+        },
+        {
+          "text": "芽衣を見送る",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh012.wav",
+              "text": "そろそろ暗くなる時間だし\n気を付けて帰るんだぞ"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei008.wav",
+              "text": "せっかくだから{user}君も\n一緒に帰ろうよ！\n二人で帰った方が楽しいよ！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh013.wav",
+              "text": "それもそうだな\nじゃあ、一緒に帰ろうか"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",
@@ -532,250 +517,190 @@
       "text": "芽衣……{user}君のおかげで\n恋が分かったよ\nこれが……恋なんだね？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh016.wav",
-      "text": "俺に聞かれても……\n芽衣の気持ちは分からないな\n芽衣はどう思うんだ？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei017.wav",
-      "text": "芽衣は……恋かなって思ったけど\nううん……そう言われるとやっぱり\nよく分からなくなってきたよ……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei018.wav",
-      "text": "あ、ここまででいいよ\n家、すぐ近くだから\nまたね、{user}君"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh017.wav",
-      "text": "ああ、またな……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh018.wav",
-      "text": "（この時の選択を後悔した俺は\n後日、芽衣の家を訪れ改めて告白した）"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh019.wav",
-      "text": "芽衣。俺は君のことが好きだ\n俺と恋人になってくれないか？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei019.wav",
-      "text": "ごめん！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh020.wav",
-      "text": "（結局、俺は芽衣に恋を教えることは\n出来なかったが、芽衣とは友達として\n残りの夏休みを過ごした）"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh021.wav",
-      "text": "芽衣。もう一度伝えたいことがあるんだ\n俺は芽衣のことが好きだ\n恋人になりたいぐらい、大好きだ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei020.wav",
-      "text": "……嬉しい。ありがとう\n芽衣も{user}君に\n芽衣の気持ちを伝えるね"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei021.wav",
-      "text": "あの時は{user}君の好きが\n分かんなくてごめんなさい"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei022.wav",
-      "text": "だけど、{user}君と\n一緒にいるうちに\n芽衣も好きとか恋が分かるようになって……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei023.wav",
-      "text": "芽衣の今の好きは……\nあの時の{user}君の好きと\nおんなじ恋の好きだよ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh022.wav",
-      "text": "芽衣……\n絶対に幸せにするから俺と付き合って下さい"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei024.wav",
-      "text": "芽衣も、{user}君のことが\n好き。大大だーい好き！\nこれからよろしくお願いします！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh023.wav",
-      "text": "絶対に幸せにするからな！\n恋人として、これからよろしく……！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei025.wav",
-      "text": "あ、でも……恋人って、付き合うって\nどうしたらいいんだろ……？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
-      "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei026.wav",
-      "text": "芽衣、お付き合いするの初めてだから\n分かんないや……\n{user}君、教えてくれる？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh024.wav",
-      "text": "ふふっ……芽衣らしいな\n俺も詳しくはないが、もちろんだ"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "告白しない",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh016.wav",
+              "text": "俺に聞かれても……\n芽衣の気持ちは分からないな\n芽衣はどう思うんだ？"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei017.wav",
+              "text": "芽衣は……恋かなって思ったけど\nううん……そう言われるとやっぱり\nよく分からなくなってきたよ……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei018.wav",
+              "text": "あ、ここまででいいよ\n家、すぐ近くだから\nまたね、{user}君"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh017.wav",
+              "text": "ああ、またな……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh018.wav",
+              "text": "（この時の選択を後悔した俺は\n後日、芽衣の家を訪れ改めて告白した）"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh019.wav",
+              "text": "芽衣。俺は君のことが好きだ\n俺と恋人になってくれないか？"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei019.wav",
+              "text": "ごめん！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh020.wav",
+              "text": "（結局、俺は芽衣に恋を教えることは\n出来なかったが、芽衣とは友達として\n残りの夏休みを過ごした）"
+            }
+          ]
+        },
+        {
+          "text": "告白する",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh021.wav",
+              "text": "芽衣。もう一度伝えたいことがあるんだ\n俺は芽衣のことが好きだ\n恋人になりたいぐらい、大好きだ"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei020.wav",
+              "text": "……嬉しい。ありがとう\n芽衣も{user}君に\n芽衣の気持ちを伝えるね"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei021.wav",
+              "text": "あの時は{user}君の好きが\n分かんなくてごめんなさい"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei022.wav",
+              "text": "だけど、{user}君と\n一緒にいるうちに\n芽衣も好きとか恋が分かるようになって……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei023.wav",
+              "text": "芽衣の今の好きは……\nあの時の{user}君の好きと\nおんなじ恋の好きだよ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh022.wav",
+              "text": "芽衣……\n絶対に幸せにするから俺と付き合って下さい"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei024.wav",
+              "text": "芽衣も、{user}君のことが\n好き。大大だーい好き！\nこれからよろしくお願いします！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh023.wav",
+              "text": "絶対に幸せにするからな！\n恋人として、これからよろしく……！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei025.wav",
+              "text": "あ、でも……恋人って、付き合うって\nどうしたらいいんだろ……？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-mei026.wav",
+              "text": "芽衣、お付き合いするの初めてだから\n分かんないや……\n{user}君、教えてくれる？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_06_01/sud_vo_adv_love_2405_06_01-koh024.wav",
+              "text": "ふふっ……芽衣らしいな\n俺も詳しくはないが、もちろんだ"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

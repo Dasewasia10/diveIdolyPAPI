@@ -192,30 +192,35 @@
       "action": "stop"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
-      "bgName": "lovehroom"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh006.wav",
-      "text": "俺も終わったよ\nお茶を淹れるから一休みしよう"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
-      "bgName": "lovehroom"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh007.wav",
-      "text": "俺も終わったよ\n息抜きに、どこか出かけないか？"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "休憩を提案する",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh006.wav",
+              "text": "俺も終わったよ\nお茶を淹れるから一休みしよう"
+            }
+          ]
+        },
+        {
+          "text": "外出を提案する",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh007.wav",
+              "text": "俺も終わったよ\n息抜きに、どこか出かけないか？"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -354,220 +359,190 @@
       "text": "でも、受験勉強もそろそろ本格的に\n頑張らないとだし、どうしよう……？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh013.wav",
-      "text": "おめでとう。渚は本当に凄いな\n俺も渚の本が読めるのは嬉しい\n応援してるよ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs014.wav",
-      "text": "うん……ありがとう\n……ね。手、握っていい？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh014.wav",
-      "text": "え？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs015.wav",
-      "text": "{user}くん……\nどこかに行っちゃったりしないよね？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh015.wav",
-      "text": "渚……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh016.wav",
-      "text": "（渚がどんどん離れていく気がしてたけど\nそう思ってたのは俺だけじゃなかった\n渚だって……不安なんだ）"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh017.wav",
-      "text": "もちろんだ\n俺は……ずっと渚のそばにいるから"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs016.wav",
-      "text": "……うん、ありがとう"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh018.wav",
-      "text": "（このままじゃ……いけない\nそんな気がした）"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh019.wav",
-      "text": "いいことだとは思うけど\n今は勉強に専念するべきじゃないか？\n出版社の人も分かってくれるさ"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs017.wav",
-      "text": "……そう……かな\nでも……挑戦してみたい気持ちもあって……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh020.wav",
-      "text": "……俺、なんだか渚がどんどん\n遠くへ行っちゃうように感じるよ\nこのままじゃ、俺達……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs018.wav",
-      "text": "なんで、なんでそんなこと言うの……？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs019.wav",
-      "text": "私、{user}くんに\n背中を押してもらえたから頑張れたんだよ？\nなのに、なのに……"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh021.wav",
-      "text": "……ごめん。でも、一緒にいる時間が\nだんだんなくなっていくのが辛くて……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs020.wav",
-      "text": "そんなの……私だって同じだよっ！\nあ……ごめん、いきなり大声出して"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh022.wav",
-      "text": "い、いや、大丈夫\n俺も言い方が悪かったよ……ごめん"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
-      "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh023.wav",
-      "text": "（その後、俺は悪化してしまった関係を\nなんとかしようと同じ大学を目指さないか\nと提案した）"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh024.wav",
-      "text": "（賛成してはもらえたものの、渚は執筆に\n追われ、俺は渚との関係に悩み、二人とも\n勉強に身が入らないまま時は流れて――）"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "応援する",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh013.wav",
+              "text": "おめでとう。渚は本当に凄いな\n俺も渚の本が読めるのは嬉しい\n応援してるよ"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs014.wav",
+              "text": "うん……ありがとう\n……ね。手、握っていい？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh014.wav",
+              "text": "え？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs015.wav",
+              "text": "{user}くん……\nどこかに行っちゃったりしないよね？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh015.wav",
+              "text": "渚……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh016.wav",
+              "text": "（渚がどんどん離れていく気がしてたけど\nそう思ってたのは俺だけじゃなかった\n渚だって……不安なんだ）"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh017.wav",
+              "text": "もちろんだ\n俺は……ずっと渚のそばにいるから"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs016.wav",
+              "text": "……うん、ありがとう"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh018.wav",
+              "text": "（このままじゃ……いけない\nそんな気がした）"
+            }
+          ]
+        },
+        {
+          "text": "勉強を促す",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh019.wav",
+              "text": "いいことだとは思うけど\n今は勉強に専念するべきじゃないか？\n出版社の人も分かってくれるさ"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs017.wav",
+              "text": "……そう……かな\nでも……挑戦してみたい気持ちもあって……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh020.wav",
+              "text": "……俺、なんだか渚がどんどん\n遠くへ行っちゃうように感じるよ\nこのままじゃ、俺達……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs018.wav",
+              "text": "なんで、なんでそんなこと言うの……？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs019.wav",
+              "text": "私、{user}くんに\n背中を押してもらえたから頑張れたんだよ？\nなのに、なのに……"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh021.wav",
+              "text": "……ごめん。でも、一緒にいる時間が\nだんだんなくなっていくのが辛くて……"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "伊吹渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs020.wav",
+              "text": "そんなの……私だって同じだよっ！\nあ……ごめん、いきなり大声出して"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh022.wav",
+              "text": "い、いや、大丈夫\n俺も言い方が悪かったよ……ごめん"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh023.wav",
+              "text": "（その後、俺は悪化してしまった関係を\nなんとかしようと同じ大学を目指さないか\nと提案した）"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-koh024.wav",
+              "text": "（賛成してはもらえたものの、渚は執筆に\n追われ、俺は渚との関係に悩み、二人とも\n勉強に身が入らないまま時は流れて――）"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

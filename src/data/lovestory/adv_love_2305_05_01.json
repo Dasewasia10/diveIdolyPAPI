@@ -468,30 +468,35 @@
       "text": "あ、でも、これまで通り\n……いや、これまで以上に\n勉強もちゃんと頑張るから"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_themepark-00-night.webp",
-      "bgName": "themepark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh014.wav",
-      "text": "ダンスに集中した方がいいんじゃないか？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_themepark-00-night.webp",
-      "bgName": "themepark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh015.wav",
-      "text": "なんで勉強も頑張ろうと思うんだ？"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "ダンスに集中するよう促す",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh014.wav",
+              "text": "ダンスに集中した方がいいんじゃないか？"
+            }
+          ]
+        },
+        {
+          "text": "勉強を頑張る理由を尋ねる",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh015.wav",
+              "text": "なんで勉強も頑張ろうと思うんだ？"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -749,65 +754,60 @@
       "text": "……って思ったんだけど"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_themepark-00-night.webp",
-      "bgName": "themepark-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh022.wav",
-      "text": "正直言って、東橋大学合格は怜には\n厳しいと思う。ダンスオーディションにも\n挑戦するんだし……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_themepark-00-night.webp",
-      "bgName": "themepark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-rei039.wav",
-      "text": "そんなこと言わなくてもいいじゃない\n……バカっ\n全部分かったうえで言ったのに……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_themepark-00-night.webp",
-      "bgName": "themepark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh023.wav",
-      "text": "ご、ごめん！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_themepark-00-night.webp",
-      "bgName": "themepark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh024.wav",
-      "text": "そうだね、俺も一緒に通えたら嬉しい！\n怜の弱点は分かっているし、勉強頑張ろう！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "現実を伝える",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh022.wav",
+              "text": "正直言って、東橋大学合格は怜には\n厳しいと思う。ダンスオーディションにも\n挑戦するんだし……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-rei039.wav",
+              "text": "そんなこと言わなくてもいいじゃない\n……バカっ\n全部分かったうえで言ったのに……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh023.wav",
+              "text": "ご、ごめん！"
+            }
+          ]
+        },
+        {
+          "text": "嬉しいと伝える",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_05_01/sud_vo_adv_love_2305_05_01-koh024.wav",
+              "text": "そうだね、俺も一緒に通えたら嬉しい！\n怜の弱点は分かっているし、勉強頑張ろう！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",

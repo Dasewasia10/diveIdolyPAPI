@@ -78,8 +78,7 @@ const ICON_MAP = {
     "stm": "satomi" 
 };
 
-// --- HELPER: GET ATTRIBUTE (ROBUST) ---
-// Menangani format: key="value", key=value, dan spasi yang tidak rapi
+// --- HELPER: GET ATTRIBUTE ---
 const getAttr = (line, key) => {
     const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`, "i");
     const match = line.match(regex);
@@ -87,13 +86,11 @@ const getAttr = (line, key) => {
     return null;
 };
 
-// --- PARSER UTAMA ---
-const parseScript = (rawText, assetId, isDebug = false) => {
-    if (!rawText) return [];
-    
-    const lines = rawText.replace(/\r\n/g, "\n").split("\n");
+// --- PARSER UTAMA (REKURSIF) ---
+// Kita menerima array of lines, bukan string mentah, agar mudah dipotong
+const parseLines = (lines, assetId) => {
     const scriptData = [];
-    const backgroundMap = {}; // ID Background -> Filename
+    const backgroundMap = {}; 
 
     let currentDialog = null;
 
@@ -104,9 +101,11 @@ const parseScript = (rawText, assetId, isDebug = false) => {
         }
     };
 
-    lines.forEach((line) => {
+    // Gunakan for loop biasa agar kita bisa memanipulasi index 'i' (untuk skip branch lines)
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
         const trimmed = line.trim();
-        if (!trimmed) return;
+        if (!trimmed) continue;
 
         // 1. BACKGROUND DEFINITION
         if (trimmed.startsWith("[backgroundgroup")) {
@@ -115,7 +114,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
             while ((match = bgRegex.exec(trimmed)) !== null) {
                 backgroundMap[match[1]] = match[2];
             }
-            return;
+            continue;
         }
 
         // 2. BACKGROUND CHANGE
@@ -129,7 +128,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                     bgName: bgId
                 });
             }
-            return;
+            continue;
         }
 
         // 3. BGM CONTROL
@@ -143,12 +142,12 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                     src: `${R2_BGM_URL}/${bgmId}.m4a`
                 });
             }
-            return;
+            continue;
         }
         if (trimmed.startsWith("[bgmstop")) {
             flushBuffer();
             scriptData.push({ type: "bgm", action: "stop" });
-            return;
+            continue;
         }
 
         // 4. DIALOGUE & NARRATION
@@ -163,19 +162,16 @@ const parseScript = (rawText, assetId, isDebug = false) => {
             let speakerCode = getAttr(trimmed, "window");
             let iconUrl = null;
 
-            // Handle Typo "thumbnial"
             const thumbRaw = getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
             if (thumbRaw) {
                 const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
                 if (match) speakerCode = match[1];
             }
 
-            // Fallback Logic
             if (!speakerCode && !isNarration) speakerCode = "unknown";
             if (isNarration) speakerCode = null;
             if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
-            // Mapping Name & Icon
             if (!displayName && speakerCode && SPEAKER_MAP[speakerCode]) {
                 displayName = SPEAKER_MAP[speakerCode];
             }
@@ -194,43 +190,32 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                 voiceUrl: null, 
                 text: inlineText || "" 
             };
-            return;
+            continue;
         }
 
-        // 5. VOICE HANDLING (PERBAIKAN UTAMA: DEEP SEARCH)
+        // 5. VOICE HANDLING (DEEP SEARCH)
         if (trimmed.startsWith("[voice")) {
             const voiceFile = getAttr(trimmed, "voice");
             const actorId = getAttr(trimmed, "actorId");
             const voiceUrl = voiceFile ? `${R2_VOICE_URL}/${assetId}/${voiceFile}.wav` : null;
 
-            // Cari target dialog untuk ditempelkan suara ini
             let target = currentDialog;
-            
-            // Jika currentDialog null (karena tertutup event BGM/BG), cari mundur di scriptData
             if (!target && scriptData.length > 0) {
-                // Loop mundur untuk mencari dialog terdekat
-                for (let i = scriptData.length - 1; i >= 0; i--) {
-                    if (scriptData[i].type === "dialogue") {
-                        target = scriptData[i];
-                        break; // Ketemu! Stop loop.
-                    }
-                    // Kita bisa melewati 'bgm', 'background', dll dengan aman.
-                    // Jangan melewati 'choice' atau 'jump' karena itu pembatas scene.
-                    if (scriptData[i].type === "choice_selection" || scriptData[i].type === "jump") {
+                for (let j = scriptData.length - 1; j >= 0; j--) {
+                    if (scriptData[j].type === "dialogue") {
+                        target = scriptData[j];
                         break; 
                     }
+                    if (scriptData[j].type === "choice_selection" || scriptData[j].type === "jump") break; 
                 }
             }
 
             if (target) {
                 if (voiceUrl) target.voiceUrl = voiceUrl;
-                
-                // Update info speaker jika sebelumnya unknown
                 if (actorId) {
                     const code = actorId.toLowerCase();
                     if (target.speakerCode === "unknown" || !target.speakerCode) {
                         target.speakerCode = code;
-                        // Regenerate icon & name based on actorId from voice tag
                         if (!target.iconUrl && ICON_MAP[code]) {
                             target.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
                         }
@@ -239,33 +224,78 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                         }
                     }
                 }
-            } else {
-                if(isDebug) console.warn(`[WARN] Voice orphaned: ${voiceFile}`);
             }
-            return;
+            continue;
         }
 
-        // 6. SELECTION / CHOICES
-        if (trimmed.startsWith("[select")) {
+        // 6. CHOICE GROUP (LOGIKA BARU UNTUK CABANG)
+        if (trimmed.startsWith("[choicegroup")) {
             flushBuffer();
-            scriptData.push({
-                type: "choice_selection", // PENTING: Gunakan nama tipe ini agar Skip Logic di Frontend bekerja
-                text: getAttr(trimmed, "label") || "Select",
-                nextLabel: getAttr(trimmed, "next")
-            });
-            return;
+            
+            const choices = [];
+            const choiceRegex = /text=([^\]]+)/g;
+            let match;
+            while ((match = choiceRegex.exec(trimmed)) !== null) {
+                choices.push({ text: match[1].trim(), route: [] });
+            }
+
+            // Cek apakah baris berikutnya adalah [branchgroup]
+            // Format biasanya: 
+            // [choicegroup ...]
+            // [branchgroup ...]
+            // [branch ...] -> Konten Pilihan 1
+            // [branch ...] -> Konten Pilihan 2
+            
+            if (i + 1 < lines.length && lines[i+1].trim().startsWith("[branchgroup")) {
+                i++; // Skip [branchgroup] line
+                
+                // Sekarang loop untuk mengambil [branch] sebanyak jumlah choice
+                for (let c = 0; c < choices.length; c++) {
+                    // Cari [branch] berikutnya
+                    while (i + 1 < lines.length && !lines[i+1].trim().startsWith("[branch")) {
+                        i++; // Skip baris kosong atau tidak relevan
+                    }
+                    
+                    if (i + 1 < lines.length) {
+                        i++; // Masuk ke baris [branch]
+                        const branchLine = lines[i].trim();
+                        const lengthStr = getAttr(branchLine, "groupLength");
+                        const length = lengthStr ? parseInt(lengthStr, 10) : 0;
+                        
+                        if (length > 0) {
+                            // Ambil N baris berikutnya sebagai konten branch ini
+                            const branchContentLines = lines.slice(i + 1, i + 1 + length);
+                            
+                            // REKURSIF: Parse konten branch ini
+                            const branchScript = parseLines(branchContentLines, assetId);
+                            choices[c].route = branchScript;
+                            
+                            // Majukan index utama 'i' agar tidak memparse ulang baris-baris ini di loop utama
+                            i += length;
+                        }
+                    }
+                }
+            }
+
+            if (choices.length > 0) {
+                scriptData.push({
+                    type: "choice_selection",
+                    choices: choices
+                });
+            }
+            continue;
         }
 
         // 7. JUMPS & LABELS
         if (trimmed.startsWith("[jump")) {
             flushBuffer();
             scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
-            return;
+            continue;
         }
         if (trimmed.startsWith("[label")) {
             flushBuffer();
             scriptData.push({ type: "anchor", labelName: getAttr(trimmed, "name") });
-            return;
+            continue;
         }
 
         // 8. APPEND TEXT
@@ -279,10 +309,16 @@ const parseScript = (rawText, assetId, isDebug = false) => {
                 }
             }
         }
-    });
+    }
 
     flushBuffer();
     return scriptData;
+};
+
+// --- WRAPPER FOR RAW TEXT ---
+const parseScript = (rawText, assetId, isDebug = false) => {
+    const lines = rawText.replace(/\r\n/g, "\n").split("\n");
+    return parseLines(lines, assetId);
 };
 
 // --- FETCH HELPER ---
@@ -313,7 +349,6 @@ const fetchData = (url) => {
         const fileName = FILE_LIST[i];
         const assetId = fileName.replace(".txt", ""); 
         
-        // Parsing ID (adv_love_2305_01_01) -> Event 2305, Ep 01, Part 01
         const parts = assetId.split("_");
         const eventId = parts[2];
         const episode = parts[3];
@@ -323,13 +358,8 @@ const fetchData = (url) => {
             const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);
             const rawContent = buffer.toString("utf-8");
             
-            // Debug: Print sample for first file
             const script = parseScript(rawContent, assetId, i === 0);
             
-            if (i === 0 && script.length > 0) {
-                 console.log(`[DEBUG] First dialog of ${fileName}:`, JSON.stringify(script.find(x => x.type === 'dialogue'), null, 2));
-            }
-
             const jsonFileName = `${assetId}.json`;
             fs.writeFileSync(
                 path.join(OUTPUT_DIR, jsonFileName),

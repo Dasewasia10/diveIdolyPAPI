@@ -580,66 +580,61 @@
       "text": "（一ノ瀬さん……落ち込んでるな……\nどうしたらいいだろう……？）"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-koh017.wav",
-      "text": "あー、喉が渇いてきたなー\n良かったら一緒にファミレスでも\n行きませんか？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei020.wav",
-      "text": "……行きます"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei021.wav",
-      "text": "暇ならちょっと付き合ってくれませんか？\n無性に甘い物が食べたい気分なんです"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-koh018.wav",
-      "text": "わ、分かりました"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "一ノ瀬さんをファミレスに誘う",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-koh017.wav",
+              "text": "あー、喉が渇いてきたなー\n良かったら一緒にファミレスでも\n行きませんか？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei020.wav",
+              "text": "……行きます"
+            }
+          ]
+        },
+        {
+          "text": "一ノ瀬さんをファミレスに誘わない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei021.wav",
+              "text": "暇ならちょっと付き合ってくれませんか？\n無性に甘い物が食べたい気分なんです"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-koh018.wav",
+              "text": "わ、分かりました"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",
@@ -910,47 +905,51 @@
       "text": "（頑張る怜のために何かしてあげたい\n俺に出来ることは……）"
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-koh029.wav",
-      "text": "バイト探し手伝おうか？\n一緒に求人情報誌を見るよ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei036.wav",
-      "text": "ありがとう\n隙間時間で稼げるバイトはないかしら……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei037.wav",
-      "text": "あっ！\nそういえば{user}\n勉強得意よね？"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "バイト探しを手伝う",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-koh029.wav",
+              "text": "バイト探し手伝おうか？\n一緒に求人情報誌を見るよ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei036.wav",
+              "text": "ありがとう\n隙間時間で稼げるバイトはないかしら……"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_02_01/sud_vo_adv_love_2305_02_01-rei037.wav",
+              "text": "あっ！\nそういえば{user}\n勉強得意よね？"
+            }
+          ]
+        },
+        {
+          "text": "怜の勉強を見てあげる",
+          "route": []
+        }
+      ]
     },
     {
       "type": "background",

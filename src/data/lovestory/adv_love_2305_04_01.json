@@ -164,69 +164,59 @@
       "text": "（やっぱり怜の様子がおかしい\nきっと模試の結果が\nあまり良くなかったのだろう……）"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh008.wav",
-      "text": "怜、模試の結果\n良くなかったんじゃないのか……？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei007.wav",
-      "text": "……っ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh009.wav",
-      "text": "大丈夫だ。まだ受験まで四ヶ月もある\n五月と比べると、出来ることも増えてきた"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh010.wav",
-      "text": "学力は確実に伸びているし\nこのまま頑張ろう\n俺も一緒に模試の見直しをするよ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
-      "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh011.wav",
-      "text": "（何か声を掛けたかったが\n一人で復習したいようだし\nそっとしておこうかな……）"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "追いかける",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh008.wav",
+              "text": "怜、模試の結果\n良くなかったんじゃないのか……？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei007.wav",
+              "text": "……っ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh009.wav",
+              "text": "大丈夫だ。まだ受験まで四ヶ月もある\n五月と比べると、出来ることも増えてきた"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh010.wav",
+              "text": "学力は確実に伸びているし\nこのまま頑張ろう\n俺も一緒に模試の見直しをするよ"
+            }
+          ]
+        },
+        {
+          "text": "そっと見送る",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh011.wav",
+              "text": "（何か声を掛けたかったが\n一人で復習したいようだし\nそっとしておこうかな……）"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",
@@ -751,100 +741,85 @@
       "text": "（俺も怜のために何かしたい\n出来ることはないだろうか……）"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
-      "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei027.wav",
-      "text": "嫌よ。今は顔も見たくないもの"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh021.wav",
-      "text": "（本気で嫌がられてしまった……\nそれなら、買い物にでも誘ってみるか）"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
-      "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh022.wav",
-      "text": "なぁ、怜。今週の土曜、時間あるかな？\n新しいダンスシューズを買いに行かない？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
-      "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei028.wav",
-      "text": "え、ええ。空いてるわよ\nちょうど新しいシューズが\nほしいと思ってたの"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
-      "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh023.wav",
-      "text": "じゃあ決まりだな\nショッピングモールに行こう"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
-      "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "hrk",
-      "speakerName": "佐伯遙子",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-haruko.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-hrk009.wav",
-      "text": "きゃ～\n{user}君やるじゃない！\n怜ちゃん、デート楽しんで来てね！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
-      "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "rei",
-      "speakerName": "一ノ瀬怜",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei029.wav",
-      "text": "ちょっと、遙子さん！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "怜の実家に行くことを提案",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei027.wav",
+              "text": "嫌よ。今は顔も見たくないもの"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh021.wav",
+              "text": "（本気で嫌がられてしまった……\nそれなら、買い物にでも誘ってみるか）"
+            }
+          ]
+        },
+        {
+          "text": "気分転換に買い物に誘う",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh022.wav",
+              "text": "なぁ、怜。今週の土曜、時間あるかな？\n新しいダンスシューズを買いに行かない？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei028.wav",
+              "text": "え、ええ。空いてるわよ\nちょうど新しいシューズが\nほしいと思ってたの"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-koh023.wav",
+              "text": "じゃあ決まりだな\nショッピングモールに行こう"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "hrk",
+              "speakerName": "佐伯遙子",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-haruko.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-hrk009.wav",
+              "text": "きゃ～\n{user}君やるじゃない！\n怜ちゃん、デート楽しんで来てね！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rei",
+              "speakerName": "一ノ瀬怜",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-rei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei029.wav",
+              "text": "ちょっと、遙子さん！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",

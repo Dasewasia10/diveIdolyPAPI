@@ -205,74 +205,69 @@
       "action": "stop"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh009.wav",
-      "text": "……してみてもいいんですか？\nそんな風に言うってことは"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu006.wav",
-      "text": "ほほ～ん、ええ度胸してるなぁ\nいつからそういうキャラになったん？\nこの前はあんなに心配しとったくせに……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh010.wav",
-      "text": "……ごめんなさい、冗談が過ぎました\n聞かなかったことにして下さい……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh011.wav",
-      "text": "しませんよ、する訳ないでしょう\nて言うか、こういう会話を記者に聞かれて\n誤解されたまま記事にされたら……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu007.wav",
-      "text": "大丈夫やって！\n{user}君は\n本当に心配性やなぁ"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "してみてもいいか尋ねる",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh009.wav",
+              "text": "……してみてもいいんですか？\nそんな風に言うってことは"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu006.wav",
+              "text": "ほほ～ん、ええ度胸してるなぁ\nいつからそういうキャラになったん？\nこの前はあんなに心配しとったくせに……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh010.wav",
+              "text": "……ごめんなさい、冗談が過ぎました\n聞かなかったことにして下さい……"
+            }
+          ]
+        },
+        {
+          "text": "しないと答える",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh011.wav",
+              "text": "しませんよ、する訳ないでしょう\nて言うか、こういう会話を記者に聞かれて\n誤解されたまま記事にされたら……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu007.wav",
+              "text": "大丈夫やって！\n{user}君は\n本当に心配性やなぁ"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "bgm",
@@ -404,151 +399,126 @@
       "text": "それとも……どうやってうちを\n口説こうか、作戦立てとったん？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh015.wav",
-      "text": "……もしそうですって言ったら？\n実は、口説き文句考えてました"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu013.wav",
-      "text": "へぇ……ふ～ん……\nじゃあ、口説いてみて？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "{user}",
-      "iconUrl": null,
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh016.wav",
-      "text": "（く……驚かれると思ったのに逆手に\n取られた……！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh017.wav",
-      "text": "し……死が二人を分かつまで一心同体\nそれが、あんたと俺の契約……そうだろ？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu014.wav",
-      "text": "……ぷっ！\nなんやそれ、『裏道バイオレンス』の\n土方執行官の台詞、そのまんまやんか！"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu015.wav",
-      "text": "まあでも、あの名シーン引用したんは\nファンとしてポイント高し！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh018.wav",
-      "text": "あ、あはは……\n満足してもらえたようで、何よりです……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh019.wav",
-      "text": "ち、違いますよ！\nそんなんじゃなくって……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu016.wav",
-      "text": "……うわ～、そんな風に否定されると\nそれはそれでめっちゃショックやわぁ"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "yu",
-      "speakerName": "鈴村優",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu017.wav",
-      "text": "{user}君にとってうちは\n口説く気も起きひん女の子やった……と"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyokissa-00-noon.webp",
-      "bgName": "tokyokissa-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh020.wav",
-      "text": "そ、そうじゃなくて……\nああもう。なんて言えば良かったんだ……"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "試しに肯定してみる",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh015.wav",
+              "text": "……もしそうですって言ったら？\n実は、口説き文句考えてました"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu013.wav",
+              "text": "へぇ……ふ～ん……\nじゃあ、口説いてみて？"
+            },
+            {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "unknown",
+              "speakerName": "{user}",
+              "iconUrl": null,
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh016.wav",
+              "text": "（く……驚かれると思ったのに逆手に\n取られた……！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh017.wav",
+              "text": "し……死が二人を分かつまで一心同体\nそれが、あんたと俺の契約……そうだろ？"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu014.wav",
+              "text": "……ぷっ！\nなんやそれ、『裏道バイオレンス』の\n土方執行官の台詞、そのまんまやんか！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu015.wav",
+              "text": "まあでも、あの名シーン引用したんは\nファンとしてポイント高し！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh018.wav",
+              "text": "あ、あはは……\n満足してもらえたようで、何よりです……"
+            }
+          ]
+        },
+        {
+          "text": "慌てて否定する",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh019.wav",
+              "text": "ち、違いますよ！\nそんなんじゃなくって……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu016.wav",
+              "text": "……うわ～、そんな風に否定されると\nそれはそれでめっちゃショックやわぁ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "yu",
+              "speakerName": "鈴村優",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-yu.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-yu017.wav",
+              "text": "{user}君にとってうちは\n口説く気も起きひん女の子やった……と"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2411_05_01/sud_vo_adv_love_2411_05_01-koh020.wav",
+              "text": "そ、そうじゃなくて……\nああもう。なんて言えば良かったんだ……"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",

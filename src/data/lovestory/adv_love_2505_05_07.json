@@ -152,63 +152,53 @@
       "text": "まだ姿を消しているのだろうか"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
-      "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "鈴の音が聞こえた気がする"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
-      "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
-      "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs006.wav",
-      "text": "鈴、つけたままだと\nやっぱり分かっちゃうよね\n……でも、宝物だから"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
-      "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
-      "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs007.wav",
-      "text": "そんにゃに探してくれてるの？\n……子猫の頃、私が迷子になった時も\nそうやって探してくれたっけ"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "耳を澄ませる",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "鈴の音が聞こえた気がする"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs006.wav",
+              "text": "鈴、つけたままだと\nやっぱり分かっちゃうよね\n……でも、宝物だから"
+            }
+          ]
+        },
+        {
+          "text": "周りを見回す",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "ngs",
+              "speakerName": "渚",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs007.wav",
+              "text": "そんにゃに探してくれてるの？\n……子猫の頃、私が迷子になった時も\nそうやって探してくれたっけ"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -334,6 +324,19 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr016.wav",
       "text": "私達がついてる！\nもしもの時は、私達が止めてみせる！\nだから……！"
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "一緒に帰ろう",
+          "route": []
+        },
+        {
+          "text": "そばにいてほしい",
+          "route": []
+        }
+      ]
     },
     {
       "type": "background",

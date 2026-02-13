@@ -180,66 +180,61 @@
       "text": "それでそれで、どうしてこの町に来たの？\n転校生？"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh005.wav",
-      "text": "いや、学校は関東の方だよ\nあそこがおばあちゃんちだから\n遊びに来たんだ"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh006.wav",
-      "text": "大した理由じゃないよ\nおばあちゃんちがこの辺りだから……"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei007.wav",
-      "text": "この辺りってどの辺！？\n芽衣のお家もここら辺なんだよ！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
-      "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh007.wav",
-      "text": "えっと……あそこら辺……かな"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "遊びに来たと言う",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh005.wav",
+              "text": "いや、学校は関東の方だよ\nあそこがおばあちゃんちだから\n遊びに来たんだ"
+            }
+          ]
+        },
+        {
+          "text": "誤魔化す",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh006.wav",
+              "text": "大した理由じゃないよ\nおばあちゃんちがこの辺りだから……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei007.wav",
+              "text": "この辺りってどの辺！？\n芽衣のお家もここら辺なんだよ！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh007.wav",
+              "text": "えっと……あそこら辺……かな"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
@@ -419,173 +414,133 @@
       "text": "あはは、つめたーい！\n{user}君も早く来なよ！"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh012.wav",
-      "text": "そこまで言うなら……\n少しだけ遊んでもいいかな"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei016.wav",
-      "text": "うんうん！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh013.wav",
-      "text": "つめたっ\nあ、でも、少し気持ちいいかもな"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei017.wav",
-      "text": "でしょ～？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh014.wav",
-      "text": "わっ！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh015.wav",
-      "text": "嫌だよ。濡れたくないし、一人で遊びな"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei018.wav",
-      "text": "残念。でも無理やりは良くないよね\nじゃあそこで見ててね！\n魚を取ってあげるから……"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh016.wav",
-      "text": "あ、おい！\nそこ気を付けないと、滑りそうだぞ"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei019.wav",
-      "text": "大丈夫、大丈夫！\nこうやって川の端の方に魚を追い込んで\n手ですくえば……わぁっ！？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh017.wav",
-      "text": "危ない！"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei020.wav",
-      "text": "ご、ごめんね？"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "mei",
-      "speakerName": "早坂芽衣",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei021.wav",
-      "text": "芽衣のせいで{user}君も\n濡れちゃったね……\n嫌がってたのに、ごめんね？"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_mountainroad-00-noon.webp",
-      "bgName": "mountainroad-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh018.wav",
-      "text": "気にしなくていいよ\nこうなったらとことん遊ぶか\nほら、えいっ！"
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "一緒に遊ぶ",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh012.wav",
+              "text": "そこまで言うなら……\n少しだけ遊んでもいいかな"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei016.wav",
+              "text": "うんうん！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh013.wav",
+              "text": "つめたっ\nあ、でも、少し気持ちいいかもな"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei017.wav",
+              "text": "でしょ～？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh014.wav",
+              "text": "わっ！"
+            }
+          ]
+        },
+        {
+          "text": "断る",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh015.wav",
+              "text": "嫌だよ。濡れたくないし、一人で遊びな"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei018.wav",
+              "text": "残念。でも無理やりは良くないよね\nじゃあそこで見ててね！\n魚を取ってあげるから……"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh016.wav",
+              "text": "あ、おい！\nそこ気を付けないと、滑りそうだぞ"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei019.wav",
+              "text": "大丈夫、大丈夫！\nこうやって川の端の方に魚を追い込んで\n手ですくえば……わぁっ！？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh017.wav",
+              "text": "危ない！"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei020.wav",
+              "text": "ご、ごめんね？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "mei",
+              "speakerName": "早坂芽衣",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-mei021.wav",
+              "text": "芽衣のせいで{user}君も\n濡れちゃったね……\n嫌がってたのに、ごめんね？"
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/adv_love_2405_01_01/sud_vo_adv_love_2405_01_01-koh018.wav",
+              "text": "気にしなくていいよ\nこうなったらとことん遊ぶか\nほら、えいっ！"
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "background",
