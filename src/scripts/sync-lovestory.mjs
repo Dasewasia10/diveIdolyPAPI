@@ -86,6 +86,35 @@ const getAttr = (line, key) => {
     return null;
 };
 
+// --- HELPER: DETECT MAIN HEROINE ---
+// Menghitung siapa yang paling banyak bicara selain MC
+const detectMainHeroine = (script) => {
+    const counts = {};
+    const excluded = ["koh", "mob", "narration", "unknown", "tencho", "staff"]; // Ignore MC & NPC
+
+    script.forEach(line => {
+        if (line.type === "dialogue" && line.speakerCode) {
+            const code = line.speakerCode.toLowerCase();
+            if (!excluded.includes(code)) {
+                counts[code] = (counts[code] || 0) + 1;
+            }
+        }
+    });
+
+    // Cari kode dengan jumlah dialog terbanyak
+    let maxCount = 0;
+    let mainHeroineCode = null;
+
+    for (const [code, count] of Object.entries(counts)) {
+        if (count > maxCount) {
+            maxCount = count;
+            mainHeroineCode = code;
+        }
+    }
+
+    return mainHeroineCode; // Mengembalikan kode, misal "rei"
+};
+
 // --- PARSER UTAMA (REKURSIF) ---
 // Kita menerima array of lines, bukan string mentah, agar mudah dipotong
 const parseLines = (lines, assetId) => {
@@ -197,7 +226,7 @@ const parseLines = (lines, assetId) => {
         if (trimmed.startsWith("[voice")) {
             const voiceFile = getAttr(trimmed, "voice");
             const actorId = getAttr(trimmed, "actorId");
-            const voiceUrl = voiceFile ? `${R2_VOICE_URL}/${assetId}/${voiceFile}.wav` : null;
+            const voiceUrl = voiceFile ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.wav` : null;
 
             let target = currentDialog;
             if (!target && scriptData.length > 0) {
@@ -373,9 +402,24 @@ const fetchData = (url) => {
             totalFilesProcessed++;
 
             if (!groupedEvents[eventId]) {
+                // Deteksi Heroine dari script episode pertama ini
+                const mainHeroineCode = detectMainHeroine(script);
+                const heroineName = mainHeroineCode && SPEAKER_MAP[mainHeroineCode] 
+                    ? SPEAKER_MAP[mainHeroineCode] 
+                    : "Unknown Story";
+
+                // Format Judul
+                let eventTitle = "";
+                if (eventId === "2505") {
+                    eventTitle = "Mintsuku 2025 (Magical Girl & Succubus)";
+                } else {
+                    // Gunakan format: Moshikoi 20YY (Nama Heroine)
+                    eventTitle = `Moshikoi 20${eventId.substring(0,2)} (${heroineName})`;
+                }
+
                 groupedEvents[eventId] = {
                     id: eventId,
-                    title: eventId === "2505" ? "Mintsuku 2025 (May)" : `Moshikoi 20${eventId.substring(0,2)} (${eventId.substring(2)})`,
+                    title: eventTitle,
                     episodes: []
                 };
             }
