@@ -212,6 +212,23 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
+        // --- TAMBAHAN BARU: SOUND EFFECT (SE) ---
+        if (trimmed.startsWith("[se")) {
+            flushBuffer(); // Simpan dialog sebelumnya jika ada
+            const seId = getAttr(trimmed, "se");
+            
+            // Cek apakah ini perintah stop (jarang ada di SE visual novel, tapi buat jaga-jaga)
+            // Biasanya formatnya [se stop] atau sejenisnya, tapi di logikamu [se se=name]
+            
+            if (seId) {
+                scriptData.push({
+                    type: "sfx", // Tipe baru
+                    src: `${R2_BGM_URL}/${seId}.m4a` // Asumsi ekstensi .m4a karena satu folder dengan BGM. Ubah ke .wav jika perlu.
+                });
+            }
+            continue;
+        }
+
         // 4. DIALOGUE & NARRATION
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
             flushBuffer();
