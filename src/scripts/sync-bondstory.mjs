@@ -364,7 +364,7 @@ const fetchData = (url) => {
                 path.join(OUTPUT_DIR, jsonFileName),
                 JSON.stringify({
                     id: assetId,
-                    title: displayTitle,
+                    title: displayTitle + episodeNum,
                     script: scriptData
                 }, null, 2)
             );
