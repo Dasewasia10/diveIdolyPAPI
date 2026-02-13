@@ -64,16 +64,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_08_03/sud_vo_adv_love_2405_08_03-koh003.wav",
       "text": "（そして大学へと進学した俺は\nサークルの新歓に参加した帰り道\n見知った人物に遭遇した）",
       "startTime": 19.3999974371,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 7833.3358961999975
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shibuya-00-night.webp",
       "bgName": "shibuya-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
     },
     {
       "type": "bgm",
@@ -201,6 +202,10 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "mei",
               "speakerName": "早坂芽衣",
@@ -209,10 +214,6 @@
               "text": "いいよ、もう気にしてないから\n{user}君も\n忙しかったんだもんね",
               "startTime": 83.0666585089,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
             },
             {
               "type": "dialogue",
@@ -225,6 +226,11 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "mei",
               "speakerName": "早坂芽衣",
@@ -232,16 +238,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_08_03/sud_vo_adv_love_2405_08_03-mei006.wav",
               "text": "あー……うん、そうだね\n今はちょっと忙しくて……君の時間が\nある時にメッセージを送って欲しいな",
               "startTime": 95.3999877733,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-02.m4a"
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-02.m4a",
+                  "delay": 19666.673807099996
+                }
+              ]
             },
             {
               "type": "dialogue",
@@ -269,6 +271,11 @@
           "text": "告白する",
           "route": [
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -280,8 +287,7 @@
             },
             {
               "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+              "action": "stop"
             },
             {
               "type": "dialogue",
@@ -294,10 +300,6 @@
               "sfxList": []
             },
             {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -308,6 +310,11 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "mei",
               "speakerName": "早坂芽衣",
@@ -316,11 +323,6 @@
               "text": "芽衣も好きだよ\n{user}君は大事な友達だもん\n友達として、大好きだよ",
               "startTime": 151.7666554571,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
             },
             {
               "type": "dialogue",

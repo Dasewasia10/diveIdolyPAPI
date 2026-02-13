@@ -118,6 +118,10 @@
       "bgName": "tokyoyuroom-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -126,10 +130,6 @@
       "text": "こうして電話で他愛ないこと話し合える\n時間も、十分息抜きになってるんよ\nだからそんな卑下せんでも……",
       "startTime": 59.0666657845,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -286,6 +286,15 @@
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -294,15 +303,6 @@
               "text": "（あるぞ……公表せずともある意味合法的に\n優の側にいられて、支えられる方法！\nあとは、俺にその覚悟があるかどうかだ）",
               "startTime": 163.566664767,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
             },
             {
               "type": "dialogue",
@@ -325,6 +325,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "yu",
               "speakerName": "鈴村優",
@@ -333,15 +342,6 @@
               "text": "お願いします\nほな、失礼いたします",
               "startTime": 187.2666535772,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
             },
             {
               "type": "dialogue",
@@ -582,6 +582,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -598,7 +607,7 @@
             {
               "type": "bgm",
               "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
             },
             {
               "type": "dialogue",
@@ -608,32 +617,24 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_08_02/sud_vo_adv_love_2411_08_02-koh024.wav",
               "text": "（そんな関係が数年続くうちに、俺は大学を\n卒業して、地元の高校の教員になった\nそんな、ある日のこと）",
               "startTime": 396.3333650029,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-03.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-open-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cafe-01.m4a"
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-03.m4a",
+                  "delay": 11066.666666599986
+                },
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+                  "delay": 11066.666666599986
+                },
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+                  "delay": 11066.666666599986
+                },
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cafe-01.m4a",
+                  "delay": 11066.666666599986
+                }
+              ]
             },
             {
               "type": "dialogue",
@@ -784,6 +785,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -792,15 +802,6 @@
               "text": "（結局その電話を最後に、俺達の関係は\n悪化してしまい、別れることになった）",
               "startTime": 520.5332856572,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
             },
             {
               "type": "dialogue",
@@ -823,6 +824,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -831,15 +841,6 @@
               "text": "（それでも……別れて良かったんだと\n言い聞かせ、誤魔化している自分がいた\n……そんな、ある日）",
               "startTime": 548.3665416794,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
             },
             {
               "type": "dialogue",
@@ -862,6 +863,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "yu",
               "speakerName": "鈴村優",
@@ -870,15 +880,6 @@
               "text": "だから私は、これからも芝居に恋をし続けて\n一生を過ごすつもりでいるんです\n……その大切な思い出に誓って……",
               "startTime": 585.5665335412,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
             },
             {
               "type": "dialogue",

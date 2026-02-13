@@ -35,7 +35,16 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-koh001.wav",
       "text": "（とうとうこの日が来てしまった……\nプレゼント、喜んでもらえたらいいな\n……あっ、来た！）",
       "startTime": 3.0333332817,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 13599.999479400001
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 15566.666718300003
+        }
+      ]
     },
     {
       "type": "background",
@@ -43,21 +52,18 @@
       "bgName": "tokyotown-01-night"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyotown-01-night.webp",
       "bgName": "tokyotown-01-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
     },
     {
       "type": "bgm",
       "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "dialogue",
@@ -67,17 +73,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-koh002.wav",
       "text": "鈴村先輩、お疲れ様です！\nすみません、ここ、分かりにくかった……\n――うわっ！",
       "startTime": 13.5666679502,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyotown-01-night.webp",
-      "bgName": "tokyotown-01-night"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fall-01.m4a",
+          "delay": 6333.333714800002
+        }
+      ]
     },
     {
       "type": "background",
@@ -85,8 +86,9 @@
       "bgName": "tokyotown-01-night"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fall-01.m4a"
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyotown-01-night.webp",
+      "bgName": "tokyotown-01-night"
     },
     {
       "type": "dialogue",
@@ -139,6 +141,11 @@
           "text": "待ってないと嘘をつく",
           "route": [
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -147,11 +154,6 @@
               "text": "いえ、俺もついさっき着いたところなんで\n全然待ってないです",
               "startTime": 43.366670112,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
             },
             {
               "type": "dialogue",
@@ -243,6 +245,10 @@
       "bgName": "tokyotown-01-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -253,10 +259,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -264,7 +266,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-koh010.wav",
       "text": "いや、なんで誤魔化そうと……え？\n今日、二人だけなんじゃ……\n他に誰か来るんですか？",
       "startTime": 106.2999965788,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 8466.660932599993
+        }
+      ]
     },
     {
       "type": "background",
@@ -275,10 +282,6 @@
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -366,6 +369,15 @@
       "bgName": "tokyotown-01-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "kan",
       "speakerName": "小島叶",
@@ -374,15 +386,6 @@
       "text": "う、うるさいな！\n単に優の先輩だからってだけだし！\nおだてたって何も出てこないからね！",
       "startTime": 156.266670875,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "background",
@@ -430,6 +433,10 @@
       "bgName": "mall-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -438,10 +445,6 @@
       "text": "鈴村先輩の場合\nそのあざむく力を人をからかう方に使うから\nあまり見習ってほしくないような……",
       "startTime": 180.9666545989,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -652,6 +655,15 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_upper-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -660,15 +672,6 @@
       "text": "（願わくば、優さんも俺と同じように\n思ってくれていたらいいな……\nそんな期待すらしたまま、時間は流れ――）",
       "startTime": 302.7666067881,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_upper-01.m4a"
     },
     {
       "type": "background",
@@ -731,6 +734,15 @@
       "bgName": "bar-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -739,15 +751,6 @@
       "text": "せやから、人目もなんも気にせんと\n二人きりでディナー楽しもうな\nめっちゃ美味しいんやって、ここ！",
       "startTime": 352.5999055348,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
       "type": "background",
@@ -777,20 +780,21 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-yu017.wav",
       "text": "ん～！　この鴨のコンフィ美味しい……！\n赤ワインとバルサミコ酢のソースが\nお肉の甘さを引き立ててるんやなぁ",
       "startTime": 374.3332429371,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cup-01.m4a",
+          "delay": 18566.75299379998
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cup-01.m4a",
+          "delay": 21000.086327199995
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_bar-00-night.webp",
       "bgName": "bar-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cup-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cup-01.m4a"
     },
     {
       "type": "dialogue",
@@ -818,6 +822,15 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -826,15 +839,6 @@
       "text": "（それでも、楽しそうな優さんに\n水を差す訳にもいかなくて……\nただただ、時間が過ぎるのを願っていた）",
       "startTime": 406.0332286957,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "background",
@@ -849,16 +853,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-yu019.wav",
       "text": "さて……ディナーも美味しくいただいたし\n今日のメインイベント……\nクリスマスプレゼント交換！",
       "startTime": 416.2998872244,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 9966.775373199995
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_bar-00-night.webp",
       "bgName": "bar-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
     },
     {
       "type": "dialogue",
@@ -868,16 +873,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-yu020.wav",
       "text": "うちからは、はい\n気に入ってくれるとええんやけど……",
       "startTime": 424.6998872244,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 7500.1087064999865
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_bar-00-night.webp",
       "bgName": "bar-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
     },
     {
       "type": "dialogue",
@@ -939,6 +945,11 @@
       "bgName": "bar-00-night"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "yu",
       "speakerName": "鈴村優",
@@ -947,11 +958,6 @@
       "text": "ええ～？　楽しみにしてたのに……\nまあ、ええよ。次会った時に渡してくれれば\n……待ってるからな",
       "startTime": 469.8998689138,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
       "type": "background",
@@ -974,6 +980,15 @@
       "bgName": "bar-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -982,15 +997,6 @@
       "text": "（まざまざと見せつけられた住む世界の\n違いに、俺は頭が真っ白になって……\n結局その日は、何事もなく解散していた）",
       "startTime": 492.3665315115,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
     },
     {
       "type": "background",
@@ -1025,7 +1031,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_06_01/sud_vo_adv_love_2411_06_01-koh034.wav",
       "text": "（何も行動しなかったから愛想尽かされたか\n単に忙しいだけか……理由は分からない\nただ、連絡がないことにモヤモヤしていた）",
       "startTime": 515.8332409027,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_message-01.m4a",
+          "delay": 22300.118879099955
+        }
+      ]
     },
     {
       "type": "background",
@@ -1033,8 +1044,8 @@
       "bgName": "lovehroom-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_message-01.m4a"
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1045,10 +1056,6 @@
       "text": "（……都合のいいやつ。住む世界の違いに\n勝手に落ち込んで、自分から連絡出来ずに\nいるだけのくせに、モヤモヤしてるとか）",
       "startTime": 528.0332449717,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",

@@ -13,6 +13,11 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
+      "type": "sfx",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+      "startTime": 0.39
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -21,10 +26,6 @@
       "text": "あっ、おはようございます\nえへへ……朝ご飯出来てますよ\nどうぞ、座って下さい",
       "startTime": 0.8,
       "sfxList": []
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a"
     },
     {
       "type": "background",
@@ -221,6 +222,15 @@
       "bgName": "vanrui-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -229,15 +239,6 @@
       "text": "あの……お天気もいいので\nちょっとお散歩にでも行きませんか？",
       "startTime": 115.266654555,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "background",
@@ -325,26 +326,13 @@
     },
     {
       "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-weak-01.m4a"
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-weak-01.m4a",
+      "startTime": 172.2333333333
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_balcony-00-noon.webp",
       "bgName": "balcony-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs012.wav",
-      "text": "それじゃあ、翼に魔力を込めて……それ！",
-      "startTime": 169.5999822933,
-      "sfxList": []
     },
     {
       "type": "bgm",
@@ -356,13 +344,28 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_coast-01.m4a"
-    },
-    {
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_wind-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "チサ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs012.wav",
+      "text": "それじゃあ、翼に魔力を込めて……それ！",
+      "startTime": 169.5999822933,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a",
+          "delay": 4340.017706699996
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_coast-01.m4a",
+          "delay": 7033.332316100001
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -385,16 +388,6 @@
       "sfxList": []
     },
     {
-      "type": "dialogue",
-      "speakerCode": "chs",
-      "speakerName": "チサ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs015.wav",
-      "text": "こうして、{user}さんとも\n出会えて、まさか、選んでもらえて……\nこんなに幸せでいいのかなってくらい",
-      "startTime": 199.4332881609,
-      "sfxList": []
-    },
-    {
       "type": "bgm",
       "action": "stop"
     },
@@ -412,9 +405,9 @@
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs016.wav",
-      "text": "あれ？　待って……\nわぁ！？　姿を消すの忘れちゃってた！\n急がないと、誰かに見られ……きゃあ！？",
-      "startTime": 209.6332851091,
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs015.wav",
+      "text": "こうして、{user}さんとも\n出会えて、まさか、選んでもらえて……\nこんなに幸せでいいのかなってくらい",
+      "startTime": 199.4332881609,
       "sfxList": []
     },
     {
@@ -423,8 +416,27 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_wind-01.m4a"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_wind-02.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "チサ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs016.wav",
+      "text": "あれ？　待って……\nわぁ！？　姿を消すの忘れちゃってた！\n急がないと、誰かに見られ……きゃあ！？",
+      "startTime": 209.6332851091,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_wind-02.m4a",
+          "delay": 10399.977620399994
+        }
+      ]
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -434,19 +446,12 @@
       "voiceUrl": null,
       "text": "チサがバランスを崩している！\nこのままじゃ、二人で地面に――",
       "startTime": 220.0332627295,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_down-01.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_down-01.m4a",
+          "delay": 6132.645825600008
+        }
+      ]
     },
     {
       "type": "background",
@@ -457,6 +462,11 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-noon.webp",
       "bgName": "hillpark-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "dialogue",
@@ -466,29 +476,25 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs017.wav",
       "text": "いたた……また落ちちゃった……\nごめんね、大丈夫？\nとっさに魔力で守ったん、だけど……",
       "startTime": 226.6999293962,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hug-01.m4a",
+          "delay": 11566.6768392
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hug-01.m4a",
+          "delay": 13000.070603799997
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hug-01.m4a",
+          "delay": 14433.403937099996
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-noon.webp",
       "bgName": "hillpark-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hug-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hug-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hug-01.m4a"
     },
     {
       "type": "dialogue",
@@ -506,6 +512,15 @@
       "bgName": "hillpark-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_park-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -514,15 +529,6 @@
       "text": "ひゃあ……！？\nど、どど、ど、どうしてこんなことに！？\nと、と、とりあえず離れよっか！？",
       "startTime": 242.9999263445,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_park-01.m4a"
     },
     {
       "type": "background",
@@ -638,6 +644,10 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -646,10 +656,6 @@
       "text": "ねぇ、ちょっとだけ\n大事なお話をしてもいいかな？\n私の、生まれのことなんだけど……",
       "startTime": 322.5999039647,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -667,6 +673,11 @@
       "bgName": "hillpark-00-evening"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -675,11 +686,6 @@
       "text": "私ね……\n人間とサキュバスのハーフなんだ",
       "startTime": 346.2999263442,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
     },
     {
       "type": "dialogue",
@@ -737,6 +743,10 @@
       "bgName": "hillpark-00-evening"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -745,10 +755,6 @@
       "text": "だからかな、人間さんの生命エネルギーを\n吸い取るだけ吸い取って、使い捨てみたいに\nするのは好きじゃなくて……",
       "startTime": 389.1332311946,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -929,6 +935,10 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -939,10 +949,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -950,7 +956,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_02/sud_vo_adv_love_2505_04_02-chs043.wav",
       "text": "私も、{user}さんみたいに\nなれたら……\n何か、変えることが――",
       "startTime": 526.5998429297,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 6167.414593999979
+        }
+      ]
     },
     {
       "type": "background",
@@ -958,8 +969,9 @@
       "bgName": "hillpark-00-evening"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
     },
     {
       "type": "dialogue",
@@ -970,11 +982,6 @@
       "text": "――見つけたよ、サキュバス！",
       "startTime": 532.7331966081,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
     },
     {
       "type": "background",
@@ -1038,6 +1045,10 @@
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a",
           "delay": 5133.332697500009
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 5958.838812599993
         }
       ]
     },
@@ -1045,10 +1056,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-evening.webp",
       "bgName": "hillpark-00-evening"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -1120,6 +1127,11 @@
       "bgName": "hillpark-00-evening"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_rival-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -1128,11 +1140,6 @@
       "text": "ま、待って、私達は……\nそんな、争うつもりなんて……",
       "startTime": 599.9744938848,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_rival-01.m4a"
     },
     {
       "type": "background",

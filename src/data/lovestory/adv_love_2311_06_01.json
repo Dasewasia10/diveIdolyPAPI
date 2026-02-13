@@ -8,6 +8,11 @@
       "bgName": "hillpark-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_park-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -16,11 +21,6 @@
       "text": "――高校三年生　春休み",
       "startTime": 0,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_park-01.m4a"
     },
     {
       "type": "dialogue",
@@ -55,7 +55,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs002.wav",
       "text": "う……ヤなこと思い出させないでよ、も～",
       "startTime": 13.6999995827,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 5033.333369100001
+        }
+      ]
     },
     {
       "type": "background",
@@ -63,12 +68,13 @@
       "bgName": "hillpark-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a"
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
       "type": "dialogue",
@@ -86,11 +92,6 @@
       ]
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-noon.webp",
       "bgName": "hillpark-00-noon"
@@ -103,16 +104,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_06_01/sud_vo_adv_love_2311_06_01-ngs004.wav",
       "text": "……え？　き、金賞ですか！？\nありがとうございます！\n詳しくはまた後日……はい、はい……！",
       "startTime": 26.1666682839,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 11896.665303699998
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hillpark-00-noon.webp",
       "bgName": "hillpark-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a"
     },
     {
       "type": "dialogue",
@@ -195,6 +197,10 @@
       "bgName": "hillpark-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -203,10 +209,6 @@
       "text": "（渚が賞を受賞して、交際も順調\n何もかもがうまくいっていると\n思っていたんだけれど……）",
       "startTime": 69.1333448689,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "background",
@@ -219,6 +221,10 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -227,10 +233,6 @@
       "text": "……ふぅ、これで課題はオッケーっと\n疲れた～！",
       "startTime": 78.7333443603,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "choice_selection",
@@ -313,6 +315,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -321,10 +327,6 @@
       "text": "（一緒にいてもあまり話せてないし……\nむしろ付き合う前より渚が遠くに感じるな）",
       "startTime": 113.1811109823,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "background",
@@ -402,6 +404,10 @@
       "bgName": "hillpark-00-evening"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -410,10 +416,6 @@
       "text": "それに昨日、文芸雑誌に連載を持って\nみないかって声を掛けてもらって……\nまだまだ忙しそうなんだよね",
       "startTime": 154.6008786164,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -532,6 +534,11 @@
           "text": "勉強を促す",
           "route": [
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -540,11 +547,6 @@
               "text": "いいことだとは思うけど\n今は勉強に専念するべきじゃないか？\n出版社の人も分かってくれるさ",
               "startTime": 225.7342072449,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
             },
             {
               "type": "dialogue",
@@ -577,6 +579,10 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "ngs",
               "speakerName": "伊吹渚",
@@ -585,10 +591,6 @@
               "text": "私、{user}くんに\n背中を押してもらえたから頑張れたんだよ？\nなのに、なのに……",
               "startTime": 251.7929319027,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
             },
             {
               "type": "dialogue",

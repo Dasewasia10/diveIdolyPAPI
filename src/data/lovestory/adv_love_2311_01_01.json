@@ -38,6 +38,11 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -46,11 +51,6 @@
       "text": "ふふ、おはよう",
       "startTime": 8.9730840922,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "dialogue",
@@ -115,16 +115,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs005.wav",
       "text": "あ、ここまた寝ぐせついてる～！\nいつもおんなじとこだよね\nふふ、可愛い",
       "startTime": 36.8157550735,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 8617.578259799999
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
     },
     {
       "type": "dialogue",
@@ -144,16 +145,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-ngs006.wav",
       "text": "えー、遠慮しなくていいのに～\nほらほら、私が直してあげるから\nじっとしてて！",
       "startTime": 49.1013685785,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+          "delay": 7666.665903800002
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -241,6 +243,10 @@
       "bgName": "lovehroom"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -249,10 +255,6 @@
       "text": "あー、もー、まだ寝ぐせ直ってない！\n直してあげるからこっち来て！",
       "startTime": 98.3537938519,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "background",
@@ -312,16 +314,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-smr005.wav",
       "text": "二人とも息ぴったりだね！",
       "startTime": 122.8006046855,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 5786.916287799997
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
     },
     {
       "type": "dialogue",
@@ -493,6 +496,15 @@
       "bgName": "lovehroom"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -501,15 +513,6 @@
       "text": "あ、そっか。えへへ\n失礼しました～",
       "startTime": 186.2201963351,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
       "type": "background",
@@ -597,10 +600,6 @@
           "text": "可愛いと思う",
           "route": [
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -608,7 +607,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_01_01/sud_vo_adv_love_2311_01_01-koh014.wav",
               "text": "そりゃまぁ、可愛いとは思うけど",
               "startTime": 231.5643571462,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+                  "delay": 0
+                }
+              ]
             },
             {
               "type": "bgm",

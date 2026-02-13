@@ -98,6 +98,15 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -106,15 +115,6 @@
       "text": "そ、そうだな\n人数が多い方が盛り上がるし……！\n花火大会、楽しみにしてるよ",
       "startTime": 59.2000000517,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "background",
@@ -256,6 +256,15 @@
       "bgName": "hoshimifes-00-evening"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -264,15 +273,6 @@
       "text": "ううん！　芽衣、射的やりたい！\n{user}君が教えてくれたら\n出来る気がする！　さあ、れっつごー！",
       "startTime": 136.5000005603,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
     },
     {
       "type": "background",
@@ -339,6 +339,11 @@
       "action": "stop"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -346,42 +351,32 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_04_01/sud_vo_adv_love_2405_04_01-mei011.wav",
       "text": "右……？　うーん……こんな感じかな……？\nどう？　芽衣、ちゃんと出来てる？\n自分では分かんないや……",
       "startTime": 178.8333389799,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshimifes-00-evening.webp",
-      "bgName": "hoshimifes-00-evening"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshimifes-00-evening.webp",
-      "bgName": "hoshimifes-00-evening"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a",
+          "delay": 18033.32768680002
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a",
+          "delay": 20299.994353399994
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a",
+          "delay": 21333.327686800003
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a",
+          "delay": 22299.994353399994
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_heart-02.m4a",
+          "delay": 19199.9943534
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 16588.061020100013
+        }
+      ]
     },
     {
       "type": "background",
@@ -389,8 +384,14 @@
       "bgName": "hoshimifes-00-evening"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshimifes-00-evening.webp",
+      "bgName": "hoshimifes-00-evening"
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshimifes-00-evening.webp",
+      "bgName": "hoshimifes-00-evening"
     },
     {
       "type": "dialogue",
@@ -418,6 +419,15 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -431,15 +441,6 @@
           "delay": 7966.661020199979
         }
       ]
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
       "type": "background",
@@ -532,6 +533,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -542,10 +547,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -553,7 +554,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_04_01/sud_vo_adv_love_2405_04_01-koh016.wav",
       "text": "いいと思う。俺も芽衣の浴衣姿見たいし……\n来年も一緒に――",
       "startTime": 287.5333328764,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 10966.669158100047
+        }
+      ]
     },
     {
       "type": "background",
@@ -566,10 +572,6 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -580,6 +582,15 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -588,15 +599,6 @@
       "text": "ちょ、人混みを走ると危ないって！",
       "startTime": 299.0332982898,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "background",
@@ -674,6 +676,10 @@
       "bgName": "hoshimifes-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ai",
       "speakerName": "小美山愛",
@@ -682,10 +688,6 @@
       "text": "……二人はすっごく仲いいんですね\nもしかして……\n芽衣ちゃんと付き合ってたり……？",
       "startTime": 341.5999669909,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -730,16 +732,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_04_01/sud_vo_adv_love_2405_04_01-ai003.wav",
       "text": "わ、私もそんなに分かんないかなぁ\nだけど……せっかくのデートを邪魔する\n訳にはいかないよね",
       "startTime": 365.5333003242,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 17666.699675799977
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshimifes-00-night.webp",
       "bgName": "hoshimifes-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -812,6 +815,15 @@
       "bgName": "hoshimifes-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_park-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -820,15 +832,6 @@
       "text": "任せて～！　芽衣達お気に入りの\n場所だから、きっと気に入るはずだよ～！",
       "startTime": 413.4666275541,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_park-01.m4a"
     },
     {
       "type": "background",
@@ -858,16 +861,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_04_01/sud_vo_adv_love_2405_04_01-mei027.wav",
       "text": "愛ちゃんとお祭りに来た時は\nいつもそこで花火を見てるんだけど……\nきゃっ！",
       "startTime": 427.3999608874,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_tuf-01.m4a",
+          "delay": 4600.039112599972
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_countryroad-00-night.webp",
       "bgName": "countryroad-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_tuf-01.m4a"
     },
     {
       "type": "dialogue",
@@ -885,6 +889,10 @@
       "bgName": "countryroad-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -893,10 +901,6 @@
       "text": "大丈夫。ちょっと躓いちゃっただけだよ\n支えてくれてありがと……いたっ\nえへへ……ちょっと足を挫いちゃったみたい",
       "startTime": 437.1332942207,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -966,16 +970,17 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_04_01/sud_vo_adv_love_2405_04_01-mei031.wav",
               "text": "うん……そうだね\nもし、また来年一緒に\n見ることが出来たら……芽衣と……",
               "startTime": 485.8999730944,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fireworks-01.m4a",
+                  "delay": 12566.689503199996
+                }
+              ]
             },
             {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fireworks-01.m4a"
             },
             {
               "type": "dialogue",
@@ -1030,16 +1035,17 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_04_01/sud_vo_adv_love_2405_04_01-koh027.wav",
               "text": "これぐらいなら平気だよ\nそれに、芽衣をこのまま歩かせる訳にも\nいかないだろ。ほら、背中に乗って",
               "startTime": 515.4333186347,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+                  "delay": 16307.684783199988
+                }
+              ]
             },
             {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
             },
             {
               "type": "dialogue",

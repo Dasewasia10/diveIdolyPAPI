@@ -13,6 +13,10 @@
       "bgName": "tokyokohroom-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "猫",
@@ -30,10 +34,6 @@
           "delay": 0
         }
       ]
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -61,6 +61,10 @@
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
           "delay": 0
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fire-02.m4a",
+          "delay": 1166.6664760000006
         }
       ]
     },
@@ -73,10 +77,6 @@
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fire-02.m4a"
     },
     {
       "type": "dialogue",
@@ -129,6 +129,15 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_shed-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -137,15 +146,6 @@
       "text": "……お兄ちゃん\n少しだけ、ここで待ってて\nすぐに元気にしてみせるから",
       "startTime": 31.4333316088,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_shed-01.m4a"
     },
     {
       "type": "background",
@@ -180,16 +180,17 @@
       "voiceUrl": null,
       "text": "…………体が重い",
       "startTime": 45.7000013273,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
+          "delay": 2399.9986409000016
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_shed-00-noon.webp",
       "bgName": "shed-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a"
     },
     {
       "type": "dialogue",
@@ -248,11 +249,13 @@
             },
             {
               "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+              "startTime": 69.7333246313
             },
             {
               "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+              "startTime": 70.3999987843
             },
             {
               "type": "dialogue",
@@ -276,11 +279,8 @@
             },
             {
               "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+              "startTime": 77.2666690113
             },
             {
               "type": "dialogue",
@@ -290,7 +290,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs004.wav",
               "text": "ふにゃあ！？\nもう、乱暴だにゃあ\nそれっ、もう一度乗っちゃえ～",
               "startTime": 77.2666690113,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+                  "delay": 4766.664290199998
+                }
+              ]
             }
           ]
         }
@@ -303,21 +308,8 @@
     },
     {
       "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-open-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-smr004.wav",
-      "text": "お兄ちゃん、渚ちゃん、おはよう――\n……って、朝から何くっついてるの！？\nもう！　ダメだってば～～！",
-      "startTime": 86.3000028532,
-      "sfxList": []
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+      "startTime": 85.5333333134
     },
     {
       "type": "bgm",
@@ -327,6 +319,21 @@
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-smr004.wav",
+      "text": "お兄ちゃん、渚ちゃん、おはよう――\n……って、朝から何くっついてるの！？\nもう！　ダメだってば～～！",
+      "startTime": 86.3000028532,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+          "delay": 0
+        }
+      ]
     },
     {
       "type": "background",
@@ -364,6 +371,11 @@
       "bgName": "garden-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -372,11 +384,6 @@
       "text": "ごめんね、今のままじゃ、あのルイちゃん\nって子には勝てないと思うから……\nもっともっと強くなって、戻って来るね！",
       "startTime": 116.1333194018,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
     },
     {
       "type": "dialogue",
@@ -430,16 +437,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-smr008.wav",
       "text": "からの～、エール・レプリュム！\n渚ちゃん、おじいちゃんとおばあちゃんに\n見つかっちゃダメだからね？　それじゃあ！",
       "startTime": 129.9666308643,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_wind-02.m4a",
+          "delay": 8966.699385400005
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_garden-00-noon.webp",
       "bgName": "garden-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_wind-02.m4a"
     },
     {
       "type": "dialogue",
@@ -482,16 +490,6 @@
       "sfxList": []
     },
     {
-      "type": "dialogue",
-      "speakerCode": null,
-      "speakerName": "",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "渚は、やけに自信満々だ",
-      "startTime": 158.76657695,
-      "sfxList": []
-    },
-    {
       "type": "bgm",
       "action": "stop"
     },
@@ -501,9 +499,19 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sneak-01.m4a"
     },
     {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
-      "bgName": "schoolyard-00-noon"
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
+      "text": "渚は、やけに自信満々だ",
+      "startTime": 158.76657695,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
+          "delay": 4933.336385100006
+        }
+      ]
     },
     {
       "type": "background",
@@ -516,8 +524,14 @@
       "bgName": "schoolyard-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a"
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_zawa-01.m4a"
     },
     {
       "type": "dialogue",
@@ -528,11 +542,6 @@
       "text": "じー……\nきょろきょろ……\nじーーーーーーーーー……",
       "startTime": 163.6999133351,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_zawa-01.m4a"
     },
     {
       "type": "background",
@@ -550,6 +559,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -558,10 +571,6 @@
       "text": "放っておくと騒ぎになりそうだ\n理由をつけて、授業を抜け出そう……",
       "startTime": 176.0332405649,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "background",
@@ -611,7 +620,16 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs011.wav",
       "text": "わぁ！？　{user}君！\nこっそりこそこそ見守ってたのに\nにゃんで分かったの？",
       "startTime": 206.9332578583,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 10500.075443199989
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 11520.0754432
+        }
+      ]
     },
     {
       "type": "background",
@@ -619,12 +637,8 @@
       "bgName": "schoolyard-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -635,10 +649,6 @@
       "text": "ん？　にゃんか足音が聞こえる\n体の大きな……大人の人間……？\n沢山集まってきてるみたいだけど",
       "startTime": 214.1666003468,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -682,10 +692,6 @@
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
             },
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "ngs",
               "speakerName": "渚",
@@ -693,7 +699,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs014.wav",
               "text": "わぁっ！？\nきゅ、急に前足引っ張らにゃいでよ～！？",
               "startTime": 244.4332710825,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
+                  "delay": 0
+                }
+              ]
             },
             {
               "type": "dialogue",
@@ -741,7 +752,20 @@
       "voiceUrl": null,
       "text": "……渚はどこだろう",
       "startTime": 261.5332639619,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 5300.069339599986
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_down-01.m4a",
+          "delay": 6000.0693396000315
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 2566.654459599988
+        }
+      ]
     },
     {
       "type": "background",
@@ -752,18 +776,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistation-00-noon.webp",
       "bgName": "hoshistation-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_down-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
     },
     {
       "type": "dialogue",
@@ -773,16 +785,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs016.wav",
       "text": "あ、学校終わった？　んしょ……！\n結局サキュバス達、来にゃかったね\nさすがにもう昼間に無茶はしにゃいのかな？",
       "startTime": 264.0999184215,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
+          "delay": 14266.748213300049
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistation-00-noon.webp",
       "bgName": "hoshistation-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a"
     },
     {
       "type": "background",
@@ -841,7 +854,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs020.wav",
       "text": "……あ、でもすみれちゃんが\nそんにゃエッチなことダメって言ってたっけ\nあはは……人間の姿って難しいね",
       "startTime": 307.0332436168,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 17600.089724399993
+        }
+      ]
     },
     {
       "type": "background",
@@ -854,8 +872,9 @@
       "bgName": "hoshistation-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
       "type": "dialogue",
@@ -865,21 +884,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs021.wav",
       "text": "っ！　待って、にゃんか感じる……！\nこっち……！",
       "startTime": 320.1665403292,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 7906.792972299968
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshiarcade-00-noon.webp",
       "bgName": "hoshiarcade-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
     },
     {
       "type": "background",
@@ -919,7 +934,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs023.wav",
       "text": "ねぇねぇ、これ何かなぁ？\nおさかにゃの形だけど、匂いは違くて……\nでも…………美味しそう",
       "startTime": 345.7665118462,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hungry-01.m4a",
+          "delay": 12833.488122000006
+        }
+      ]
     },
     {
       "type": "background",
@@ -927,8 +947,8 @@
       "bgName": "hoshiarcade-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_hungry-01.m4a"
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -939,10 +959,6 @@
       "text": "人間の姿ににゃってから、食べる物も\n変わっちゃったんだよね。今は猫缶より\nお刺身を乗せたご飯が美味しいし",
       "startTime": 360.2998655247,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1079,16 +1095,6 @@
       "bgName": "hoshiarcade-00-noon"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs032.wav",
-      "text": "出会った日から、ずっとお世話してくれて\nありがとう。こうして言葉で伝えられる日が\n来たことだけは、サキュバス達に感謝かにゃ",
-      "startTime": 456.1998451795,
-      "sfxList": []
-    },
-    {
       "type": "bgm",
       "action": "stop"
     },
@@ -1107,14 +1113,24 @@
       "speakerCode": "ngs",
       "speakerName": "渚",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs033.wav",
-      "text": "結局、今日も一杯遊んじゃったね\nまぁ、おうちはサキュバス達にバレてるし\nこうして出歩いてた方が安全かもね",
-      "startTime": 469.2665240532,
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs032.wav",
+      "text": "出会った日から、ずっとお世話してくれて\nありがとう。こうして言葉で伝えられる日が\n来たことだけは、サキュバス達に感謝かにゃ",
+      "startTime": 456.1998451795,
       "sfxList": []
     },
     {
       "type": "bgm",
       "action": "stop"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "渚",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs033.wav",
+      "text": "結局、今日も一杯遊んじゃったね\nまぁ、おうちはサキュバス達にバレてるし\nこうして出歩いてた方が安全かもね",
+      "startTime": 469.2665240532,
+      "sfxList": []
     },
     {
       "type": "dialogue",
@@ -1136,6 +1152,11 @@
       ]
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_rival-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
@@ -1143,16 +1164,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-chs001.wav",
       "text": "ごめんなさい……！\nえーいっ！",
       "startTime": 492.8331764784,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_rival-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_teleportation-01.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_teleportation-01.m4a",
+          "delay": 3066.6727702000003
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -1264,6 +1281,10 @@
       ]
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -1272,10 +1293,6 @@
       "text": "渚を守らなければ",
       "startTime": 555.6665240534,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1328,10 +1345,6 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-dark-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -1339,7 +1352,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_04_04/sud_vo_adv_love_2505_04_04-ngs041.wav",
       "text": "そうだよ……私の大切な人達を\n傷つけるやつは、許さにゃい……！\n絶対に、許さにゃいからっ！",
       "startTime": 590.4998411107,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-dark-01.m4a",
+          "delay": 9833.435224699997
+        }
+      ]
     },
     {
       "type": "dialogue",
@@ -1384,6 +1402,10 @@
       ]
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -1403,10 +1425,6 @@
       ]
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -1415,6 +1433,10 @@
       "text": "はぁ……はぁ……\nあれ、私……にゃにを……",
       "startTime": 617.0999713192,
       "sfxList": []
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -1428,6 +1450,10 @@
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-coast-single-01.m4a",
           "delay": 4833.292809199975
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
+          "delay": 3700.0040693000074
         }
       ]
     },
@@ -1436,8 +1462,9 @@
       "action": "stop"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
     },
     {
       "type": "dialogue",
@@ -1448,15 +1475,6 @@
       "text": "お兄ちゃん、渚ちゃん、大丈夫！？",
       "startTime": 632.7999875954,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
     },
     {
       "type": "background",

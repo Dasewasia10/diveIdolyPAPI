@@ -128,6 +128,11 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -136,11 +141,6 @@
               "text": "おーい、渚……\nそろそろ離れてくれないか……？",
               "startTime": 43.8666716258,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
             },
             {
               "type": "dialogue",
@@ -211,6 +211,11 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -219,11 +224,6 @@
               "text": "わ、分かったよ！\nほら……ぎゅーー",
               "startTime": 76.3666723888,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
             },
             {
               "type": "dialogue",
@@ -489,6 +489,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -497,10 +501,6 @@
       "text": "まだ、ね",
       "startTime": 172.6999899546,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "background",
@@ -753,16 +753,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_05_01/sud_vo_adv_love_2311_05_01-koh019.wav",
       "text": "おめでとう、渚\nそれと、お疲れ様",
       "startTime": 289.3999970754,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_paper-01.m4a",
+          "delay": 11033.332188900033
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_paper-01.m4a"
     },
     {
       "type": "dialogue",
@@ -778,6 +779,10 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -796,7 +801,8 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
     },
     {
       "type": "dialogue",
@@ -806,21 +812,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_05_01/sud_vo_adv_love_2311_05_01-koh021.wav",
       "text": "（これは……）",
       "startTime": 308.7999807994,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_paper-01.m4a",
+          "delay": 3033.315245200015
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_paper-01.m4a"
     },
     {
       "type": "dialogue",

@@ -38,6 +38,11 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -46,11 +51,6 @@
       "text": "（俺、なんかしてしまったかな……）",
       "startTime": 9.3333331864,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
       "type": "background",
@@ -65,16 +65,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2305_08_03/sud_vo_adv_love_2305_08_03-koh003.wav",
       "text": "（卒業したらもう会うこともなくなるし……\n話し掛けてみるか）",
       "startTime": 12.5666663926,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 5843.333651099998
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolhallway-00-noon.webp",
       "bgName": "schoolhallway-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a"
     },
     {
       "type": "dialogue",
@@ -221,6 +222,10 @@
       "bgName": "schoolhallway-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -229,10 +234,6 @@
       "text": "（どうしてこんなに\n冷たくなったんだろうか……？\n心当たりが全くないぞ……）",
       "startTime": 75.3333339494,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -335,10 +336,6 @@
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
             },
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -346,7 +343,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2305_08_03/sud_vo_adv_love_2305_08_03-koh012.wav",
               "text": "ああ、それじゃあ、また……",
               "startTime": 125.3333512424,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+                  "delay": 3183.3134334999895
+                }
+              ]
             },
             {
               "type": "dialogue",

@@ -15,16 +15,17 @@
       "voiceUrl": null,
       "text": "――三月八日　高校卒業式の日",
       "startTime": 0,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_chime-03.m4a",
+          "delay": 2133.333377
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
       "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_chime-03.m4a"
     },
     {
       "type": "dialogue",
@@ -127,6 +128,10 @@
       "bgName": "schoolclass-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rei",
       "speakerName": "一ノ瀬怜",
@@ -135,10 +140,6 @@
       "text": "やっぱりダンスは好きだから\n医者になるための\n勉強もしながら続けようと思っているわ",
       "startTime": 52.6666601617,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -231,6 +232,10 @@
       "bgName": "schoolclass-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rei",
       "speakerName": "一ノ瀬怜",
@@ -239,10 +244,6 @@
       "text": "ふふっ、そうね\nこの一年ずーっと隣に居てくれたわよね",
       "startTime": 103.066667028,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -390,6 +391,11 @@
           "text": "告白しない",
           "route": [
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -398,11 +404,6 @@
               "text": "これからもよろしくな",
               "startTime": 200.933347936,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
             },
             {
               "type": "dialogue",
@@ -455,6 +456,10 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -463,10 +468,6 @@
               "text": "どんな選択をしても\n怜ならきっと大丈夫だよ\n自分で選んだ道をしっかり進んでいける",
               "startTime": 235.9333581085,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
             },
             {
               "type": "dialogue",

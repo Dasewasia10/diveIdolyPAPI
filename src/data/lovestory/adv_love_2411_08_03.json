@@ -3,6 +3,11 @@
   "title": "Episode 8 Part 3",
   "script": [
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -11,11 +16,6 @@
       "text": "――大学一年生　二月",
       "startTime": 0,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
     },
     {
       "type": "background",
@@ -45,16 +45,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_08_03/sud_vo_adv_love_2411_08_03-koh002.wav",
       "text": "（結論を言えば、ただのゴシップだった\n二人が共演した番組の打ち上げ中に\nたまたま撮られたものだったらしい）",
       "startTime": 12.8000005087,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 16933.3316166
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a"
     },
     {
       "type": "bgm",
@@ -76,6 +77,11 @@
       ]
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -84,11 +90,6 @@
       "text": "電話？\n……優さんから……！？\nはい……もしもし……",
       "startTime": 32.2333292007,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
     },
     {
       "type": "background",
@@ -280,6 +281,10 @@
       "bgName": "lovehroom-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -288,10 +293,6 @@
       "text": "（またねと言って切れた電話\nけど結局、「また」は訪れなくて\n平穏な時間だけが流れていった……）",
       "startTime": 150.1333813343,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -309,6 +310,11 @@
       "bgName": "lovehroom-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -316,21 +322,17 @@
       "voiceUrl": null,
       "text": "――優のスキャンダルが世に出て数年後",
       "startTime": 163.2666666667,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 1833.3478924000133
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a"
     },
     {
       "type": "bgm",
@@ -359,7 +361,8 @@
             },
             {
               "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+              "startTime": 177.0000328696
             },
             {
               "type": "dialogue",
@@ -471,6 +474,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "kan",
               "speakerName": "小島叶",
@@ -479,15 +491,6 @@
               "text": "え、嘘でしょ？\n優はあんたとも、たまに連絡してるって……\n……あ～……そういうことか……",
               "startTime": 253.5000215526,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_contact-01.m4a"
             },
             {
               "type": "dialogue",
@@ -520,6 +523,10 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "kan",
               "speakerName": "小島叶",
@@ -528,10 +535,6 @@
               "text": "だったら最初から\n身辺のあれこれを徹底管理して\n商品として守ることぐらいはするよ",
               "startTime": 287.8000571564,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
             },
             {
               "type": "dialogue",
@@ -623,14 +626,6 @@
           "text": "電話に出ない",
           "route": [
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-end-01.m4a"
-            },
-            {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
@@ -643,7 +638,16 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2411_08_03/sud_vo_adv_love_2411_08_03-koh020.wav",
               "text": "（きっと優さんに関する連絡だろう\n着信音を聞いていると出てしまう気がして\n俺はスマホの電源を切った）",
               "startTime": 373.7667462026,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+                  "delay": 0
+                },
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-end-01.m4a",
+                  "delay": 8353.325322599972
+                }
+              ]
             },
             {
               "type": "dialogue",

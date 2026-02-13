@@ -10,7 +10,6 @@ const __dirname = path.dirname(__filename);
 const R2_DOMAIN = "https://api.diveidolypapi.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/lovestoryTxt`;
 const R2_VOICE_URL = `${R2_DOMAIN}/lovestoryVoice`;
-// Menggunakan path yang Anda minta sebelumnya
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 
@@ -42,8 +41,6 @@ const FILE_LIST = [
     "adv_love_2505_05_09.txt", "adv_love_2505_05_10.txt"
 ];
 
-// --- MAPPING SPEAKER CODE ---
-// Digunakan hanya jika 'name' tidak tersedia di [message]
 const SPEAKER_MAP = {
     "rio": "Rio Kanzaki", "aoi": "Aoi Igawa", "ai": "Ai Komiyama", "kkr": "Kokoro Akazaki",
     "rui": "Rui Tendo", "yu": "Yuu Suzumura", "smr": "Sumire Okuyama",
@@ -53,40 +50,27 @@ const SPEAKER_MAP = {
     "szk": "Shizuku Hyodo", "chs": "Chisa Shiraishi", "chk": "Chika", "cca": "Cocoa",
     "chn": "Chino", "mhk": "Miho", "kan": "Kana", "kor": "Fran", "mana": "Mana Nagase",
     "tencho": "Manager", "saegusa": "Saegusa", "asakura": "Asakura", 
-    "koh": "Kohei" // Updated
+    "koh": "Kohei" 
 };
 
-// --- MAPPING NAMA FILE ICON (Kode -> Filename Lowercase) ---
 const ICON_MAP = {
-    // LizNoir
     "rio": "rio", "aoi": "aoi", "ai": "ai", "kkr": "kokoro",
-    // TRINITYAiLE
     "rui": "rui", "yu": "yu", "smr": "sumire",
-    // Hoshimi
     "mna": "mana", "ktn": "kotono", "skr": "sakura",
     "rei": "rei", "ngs": "nagisa", "hrk": "haruko",
     "ski": "saki", "suz": "suzu", "mei": "mei",
     "szk": "shizuku",
-    // IIIX
     "chs": "chisa", "chk": "chika", "cca": "cocoa", 
     "chn": "chino", "mhk": "miho", "kan": "kana", "kor": "fran",
-    // Others
-    "mana": "mana",
-    "saegusa": "saegusa",
-    "asakura": "asakura",
-    "koh": "kohei",
-    "stm": "satomi" 
+    "mana": "mana", "saegusa": "saegusa", "asakura": "asakura", "koh": "kohei", "stm": "satomi" 
 };
 
-// --- HELPER BARU: Get Start Time ---
-// Mengambil angka _startTime dari atribut clip={...}
+// --- HELPERS ---
 const getStartTime = (line) => {
-    // Regex ini mencari: _startTime": (angka desimal)
     const match = line.match(/_startTime\\?":\s*([0-9.]+)/);
     return match ? parseFloat(match[1]) : null;
 };
 
-// --- HELPER: GET ATTRIBUTE ---
 const getAttr = (line, key) => {
     const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`, "i");
     const match = line.match(regex);
@@ -94,43 +78,25 @@ const getAttr = (line, key) => {
     return null;
 };
 
-// Helper khusus untuk mengambil isi text yang mengandung spasi/multiline
 const extractMessageText = (line) => {
-    // Cari posisi dimulainya 'text='
     const startMatch = line.match(/text=/);
     if (!startMatch) return null;
-
-    const startIndex = startMatch.index + 5; // panjang "text="
+    const startIndex = startMatch.index + 5; 
     let rest = line.substring(startIndex);
-
-    // Cari tanda berhentinya text.
-    // Text berhenti jika bertemu spasi diikuti key lain (name=, voice=, clip=, dll)
-    // ATAU jika bertemu penutup tag ']' di paling akhir (jika tidak ada attribute lain)
-    
-    // List attribute yang mungkin muncul setelah text
     const nextAttrRegex = /\s+(name|voice|clip|hide|actorId|window|thumbnial|thumbnail)=/i;
     const nextMatch = rest.match(nextAttrRegex);
-
     let content = "";
     if (nextMatch) {
-        // Ambil text sampai sebelum attribute berikutnya dimulai
         content = rest.substring(0, nextMatch.index);
     } else {
-        // Jika ini attribute terakhir, ambil sampai ujung, tapi buang ']' penutup di akhir jika ada
-        // Biasanya line diakhiri clip={...}] jadi regex di atas biasanya kena 'clip='
-        // Ini fallback safety
         content = rest.replace(/\s*\]\s*$/, ""); 
     }
-
-    return content.trim(); // Hapus spasi berlebih di awal/akhir
+    return content.trim(); 
 };
 
-// --- HELPER: DETECT MAIN HEROINE ---
-// Menghitung siapa yang paling banyak bicara selain MC
 const detectMainHeroine = (script) => {
     const counts = {};
-    const excluded = ["koh", "mob", "narration", "unknown", "tencho", "staff"]; // Ignore MC & NPC
-
+    const excluded = ["koh", "mob", "narration", "unknown", "tencho", "staff"]; 
     script.forEach(line => {
         if (line.type === "dialogue" && line.speakerCode) {
             const code = line.speakerCode.toLowerCase();
@@ -139,43 +105,49 @@ const detectMainHeroine = (script) => {
             }
         }
     });
-
-    // Cari kode dengan jumlah dialog terbanyak
     let maxCount = 0;
     let mainHeroineCode = null;
-
     for (const [code, count] of Object.entries(counts)) {
         if (count > maxCount) {
             maxCount = count;
             mainHeroineCode = code;
         }
     }
-
-    return mainHeroineCode; // Mengembalikan kode, misal "rei"
+    return mainHeroineCode;
 };
 
-// --- PARSER UTAMA (REKURSIF) ---
-// Kita menerima array of lines, bukan string mentah, agar mudah dipotong
+// --- PARSER ---
 const parseLines = (lines, assetId) => {
     const scriptData = [];
     const backgroundMap = {}; 
 
     let currentDialog = null;
+    
+    // BUFFER BARU: Untuk menyimpan SFX yang muncul SEBELUM dialog
+    let pendingSfx = [];
 
+    // Helper untuk push data ke scriptData dan reset state
     const flushBuffer = () => {
+        // Jika ada SFX yang 'menggantung' (tidak terambil oleh dialog), jadikan baris sendiri
+        if (pendingSfx.length > 0) {
+            pendingSfx.forEach(sfxObj => {
+                scriptData.push(sfxObj);
+            });
+            pendingSfx = [];
+        }
+
         if (currentDialog) {
             scriptData.push(currentDialog);
             currentDialog = null;
         }
     };
 
-    // Gunakan for loop biasa agar kita bisa memanipulasi index 'i' (untuk skip branch lines)
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         const trimmed = line.trim();
         if (!trimmed) continue;
 
-        // 1. BACKGROUND DEFINITION
+        // 1. BACKGROUND DEF
         if (trimmed.startsWith("[backgroundgroup")) {
             const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
             let match;
@@ -187,7 +159,7 @@ const parseLines = (lines, assetId) => {
 
         // 2. BACKGROUND CHANGE
         if (trimmed.startsWith("[backgroundsetting") || trimmed.startsWith("[backgroundtween")) {
-            flushBuffer();
+            flushBuffer(); // Ganti BG = scene baru, flush semua pending
             const bgId = getAttr(trimmed, "id");
             if (bgId && backgroundMap[bgId]) {
                 scriptData.push({
@@ -199,9 +171,9 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 3. BGM CONTROL
+        // 3. BGM
         if (trimmed.startsWith("[bgmplay")) {
-            flushBuffer();
+            // Jangan flushBuffer() disini agar SFX transisi tidak terputus
             const bgmId = getAttr(trimmed, "bgm");
             if (bgmId) {
                 scriptData.push({
@@ -213,74 +185,78 @@ const parseLines = (lines, assetId) => {
             continue;
         }
         if (trimmed.startsWith("[bgmstop")) {
-            flushBuffer();
             scriptData.push({ type: "bgm", action: "stop" });
             continue;
         }
 
-        // --- UPDATE BAGIAN SFX (RETROACTIVE FIX) ---
+        // 4. SFX HANDLING (Improved)
         if (trimmed.startsWith("[se")) {
-            // Jangan flushBuffer di sini
+            // Jangan flushBuffer!
             const seId = getAttr(trimmed, "se");
             const seStartTime = getStartTime(trimmed);
-            // Asumsi file extension .m4a, sesuaikan jika perlu
             const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
 
             if (seId && seSrc) {
-                // 1. Tentukan target dialog:
-                // Prioritas 1: Dialog yang sedang aktif (belum di-flush)
-                let targetDialog = currentDialog;
+                const sfxItem = {
+                    type: "sfx",
+                    src: seSrc,
+                    startTime: seStartTime
+                };
 
-                // Prioritas 2: Jika tidak ada yang aktif (karena kepotong tag camera/shake),
-                // Cek elemen terakhir di scriptData
-                if (!targetDialog && scriptData.length > 0) {
-                    const lastItem = scriptData[scriptData.length - 1];
-                    if (lastItem.type === "dialogue") {
-                        targetDialog = lastItem;
+                let attached = false;
+
+                // STRATEGI 1: Coba tempel ke Dialog yang SEDANG aktif (Retroactive)
+                if (currentDialog && currentDialog.startTime !== null && seStartTime !== null && seStartTime >= currentDialog.startTime) {
+                    const delayMs = (seStartTime - currentDialog.startTime) * 1000;
+                    currentDialog.sfxList.push({ src: seSrc, delay: delayMs });
+                    attached = true;
+                }
+                
+                // STRATEGI 2: Jika tidak ada dialog aktif, cari Dialog TERAKHIR di scriptData (Retroactive Cross-Tag)
+                // Ini menangani kasus: Dialog -> Background Change -> SFX (agar SFX masuk ke dialog sebelumnya)
+                if (!attached && scriptData.length > 0) {
+                    // Cari dialog terakhir (mundur)
+                    for (let j = scriptData.length - 1; j >= 0; j--) {
+                        const lastItem = scriptData[j];
+                        // Stop jika ketemu Choice atau Jump (batas scene keras)
+                        if (lastItem.type === 'choice_selection' || lastItem.type === 'jump') break;
+
+                        if (lastItem.type === 'dialogue') {
+                            // Cek waktu. SFX harus terjadi SETELAH dialog mulai.
+                            if (seStartTime !== null && lastItem.startTime !== null && seStartTime >= lastItem.startTime) {
+                                const delayMs = (seStartTime - lastItem.startTime) * 1000;
+                                if (!lastItem.sfxList) lastItem.sfxList = [];
+                                lastItem.sfxList.push({ src: seSrc, delay: delayMs });
+                                attached = true;
+                            }
+                            break; // Hanya cek dialog paling terakhir
+                        }
                     }
                 }
 
-                // 2. Cek validasi waktu agar tidak menempel ke dialog yang salah (terlalu jauh)
-                // Kita izinkan toleransi sedikit jika timestamps identik atau sfx sedikit lebih lambat
-                if (targetDialog && targetDialog.startTime !== null && seStartTime !== null && seStartTime >= targetDialog.startTime) {
-                    
-                    // Hitung delay
-                    const delayMs = (seStartTime - targetDialog.startTime) * 1000;
-                    
-                    // Masukkan ke dalam daftar SFX milik dialog tersebut
-                    // Pastikan array sfxList ada (jaga-jaga jika target adalah lastItem yang sudah jadi)
-                    if (!targetDialog.sfxList) targetDialog.sfxList = [];
-                    
-                    targetDialog.sfxList.push({
-                        src: seSrc,
-                        delay: delayMs
-                    });
-                } else {
-                    // Jika benar-benar tidak ada dialog yang cocok (misal SFX di scene kosong)
-                    // Jadikan baris script terpisah
-                    flushBuffer(); 
-                    scriptData.push({
-                        type: "sfx",
-                        src: seSrc
-                    });
+                // STRATEGI 3: Jika belum nempel juga, simpan di Pending Buffer (Forward Look)
+                // Ini menangani kasus: SFX -> Dialog (SFX ditulis sebelum dialog di file text)
+                if (!attached) {
+                    pendingSfx.push(sfxItem);
                 }
             }
             continue;
         }
 
-        // 4. DIALOGUE & NARRATION
+        // 5. DIALOGUE & NARRATION
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
-            flushBuffer();
+            // Disini kita TIDAK memanggil flushBuffer() standar, 
+            // karena kita mau memproses pendingSfx untuk dialog INI.
+            
+            // Simpan dialog sebelumnya jika ada
+            if (currentDialog) {
+                scriptData.push(currentDialog);
+                currentDialog = null;
+            }
 
             const isNarration = trimmed.startsWith("[narration");
-            // let inlineText = getAttr(trimmed, "text");
-
-            // --- PERUBAHAN DI SINI: Gunakan extractMessageText ---
             let inlineText = extractMessageText(trimmed); 
-            // Jika extractMessageText gagal (misal kosong), fallback ke getAttr biasa
             if (!inlineText) inlineText = getAttr(trimmed, "text");
-            // -----------------------------------------------------
-
             if (inlineText) inlineText = inlineText.replace(/\\n/g, "\n");
 
             let displayName = getAttr(trimmed, "name") || ""; 
@@ -307,37 +283,63 @@ const parseLines = (lines, assetId) => {
                 iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
             }
 
-            // --- TAMBAHAN BARU: Ambil Start Time ---
             const startTime = getStartTime(trimmed);
-            // ---------------------------------------
 
-            currentDialog = {
+            // Buat Dialog Baru
+            const newDialog = {
                 type: "dialogue",
                 speakerCode,
                 speakerName: displayName,
                 iconUrl,
                 voiceUrl: null, 
                 text: inlineText || "",
-                startTime: startTime, // Simpan waktu mulai dialog
-                sfxList: [] // Siapkan array untuk SFX paralel
+                startTime: startTime,
+                sfxList: []
             };
+
+            // CEK PENDING SFX (Forward Attachment)
+            // Apakah ada SFX yang "mengantri" dan waktunya cocok dengan dialog ini?
+            // Kita izinkan SFX muncul sedikit sebelum dialog (toleransi) atau bersamaan/setelahnya.
+            if (pendingSfx.length > 0 && startTime !== null) {
+                const remaining = [];
+                pendingSfx.forEach(sfx => {
+                    // Logic: Jika SFX terjadi SETELAH atau BERSAMAAN dengan dialog ini
+                    if (sfx.startTime !== null && sfx.startTime >= startTime) {
+                        const delayMs = (sfx.startTime - startTime) * 1000;
+                        newDialog.sfxList.push({ src: sfx.src, delay: delayMs });
+                    } else {
+                        // Jika SFX terjadi JAUH SEBELUM dialog ini, berarti dia yatim piatu (standalone)
+                        // Push langsung ke scriptData agar dimainkan sebelum dialog muncul
+                        scriptData.push(sfx); 
+                    }
+                });
+                pendingSfx = []; // Kosongkan buffer
+            } else if (pendingSfx.length > 0) {
+                // Jika dialog ini tidak punya startTime, flush semua pending sebagai standalone
+                pendingSfx.forEach(sfx => scriptData.push(sfx));
+                pendingSfx = [];
+            }
+
+            currentDialog = newDialog;
             continue;
         }
 
-        // 5. VOICE HANDLING (DEEP SEARCH)
+        // 6. VOICE
         if (trimmed.startsWith("[voice")) {
             const voiceFile = getAttr(trimmed, "voice");
             const actorId = getAttr(trimmed, "actorId");
             const voiceUrl = voiceFile ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.wav` : null;
 
+            // Cari target dialog (Current atau Last)
             let target = currentDialog;
             if (!target && scriptData.length > 0) {
+                // Cari dialog terakhir untuk ditempelkan voice (jika current null)
                 for (let j = scriptData.length - 1; j >= 0; j--) {
                     if (scriptData[j].type === "dialogue") {
                         target = scriptData[j];
                         break; 
                     }
-                    if (scriptData[j].type === "choice_selection" || scriptData[j].type === "jump") break; 
+                    if (scriptData[j].type === "choice_selection") break; 
                 }
             }
 
@@ -359,10 +361,9 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 6. CHOICE GROUP (LOGIKA BARU UNTUK CABANG)
+        // 7. CHOICE
         if (trimmed.startsWith("[choicegroup")) {
             flushBuffer();
-            
             const choices = [];
             const choiceRegex = /text=([^\]]+)/g;
             let match;
@@ -370,54 +371,33 @@ const parseLines = (lines, assetId) => {
                 choices.push({ text: match[1].trim(), route: [] });
             }
 
-            // Cek apakah baris berikutnya adalah [branchgroup]
-            // Format biasanya: 
-            // [choicegroup ...]
-            // [branchgroup ...]
-            // [branch ...] -> Konten Pilihan 1
-            // [branch ...] -> Konten Pilihan 2
-            
             if (i + 1 < lines.length && lines[i+1].trim().startsWith("[branchgroup")) {
-                i++; // Skip [branchgroup] line
-                
-                // Sekarang loop untuk mengambil [branch] sebanyak jumlah choice
+                i++; 
                 for (let c = 0; c < choices.length; c++) {
-                    // Cari [branch] berikutnya
                     while (i + 1 < lines.length && !lines[i+1].trim().startsWith("[branch")) {
-                        i++; // Skip baris kosong atau tidak relevan
+                        i++;
                     }
-                    
                     if (i + 1 < lines.length) {
-                        i++; // Masuk ke baris [branch]
+                        i++; 
                         const branchLine = lines[i].trim();
                         const lengthStr = getAttr(branchLine, "groupLength");
                         const length = lengthStr ? parseInt(lengthStr, 10) : 0;
-                        
                         if (length > 0) {
-                            // Ambil N baris berikutnya sebagai konten branch ini
                             const branchContentLines = lines.slice(i + 1, i + 1 + length);
-                            
-                            // REKURSIF: Parse konten branch ini
                             const branchScript = parseLines(branchContentLines, assetId);
                             choices[c].route = branchScript;
-                            
-                            // Majukan index utama 'i' agar tidak memparse ulang baris-baris ini di loop utama
                             i += length;
                         }
                     }
                 }
             }
-
             if (choices.length > 0) {
-                scriptData.push({
-                    type: "choice_selection",
-                    choices: choices
-                });
+                scriptData.push({ type: "choice_selection", choices: choices });
             }
             continue;
         }
 
-        // 7. JUMPS & LABELS
+        // 8. JUMPS
         if (trimmed.startsWith("[jump")) {
             flushBuffer();
             scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
@@ -429,7 +409,7 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 8. APPEND TEXT
+        // 9. TEXT APPEND
         if (!trimmed.startsWith("[")) {
             if (currentDialog) {
                 const cleanText = trimmed.replace(/\\n/g, "\n");
@@ -446,13 +426,13 @@ const parseLines = (lines, assetId) => {
     return scriptData;
 };
 
-// --- WRAPPER FOR RAW TEXT ---
+// --- WRAPPER ---
 const parseScript = (rawText, assetId, isDebug = false) => {
     const lines = rawText.replace(/\r\n/g, "\n").split("\n");
     return parseLines(lines, assetId);
 };
 
-// --- FETCH HELPER ---
+// --- FETCH ---
 const fetchData = (url) => {
     return new Promise((resolve, reject) => {
         https.get(url, (res) => {
@@ -467,7 +447,7 @@ const fetchData = (url) => {
     });
 };
 
-// --- MAIN EXECUTION ---
+// --- MAIN ---
 (async () => {
     if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
@@ -504,18 +484,15 @@ const fetchData = (url) => {
             totalFilesProcessed++;
 
             if (!groupedEvents[eventId]) {
-                // Deteksi Heroine dari script episode pertama ini
                 const mainHeroineCode = detectMainHeroine(script);
                 const heroineName = mainHeroineCode && SPEAKER_MAP[mainHeroineCode] 
                     ? SPEAKER_MAP[mainHeroineCode] 
                     : "Unknown Story";
 
-                // Format Judul
                 let eventTitle = "";
                 if (eventId === "2505") {
                     eventTitle = "Mintsuku 2025 (Magical Girl & Succubus)";
                 } else {
-                    // Gunakan format: Moshikoi 20YY (Nama Heroine)
                     eventTitle = `Moshikoi 20${eventId.substring(0,2)} (${heroineName})`;
                 }
 

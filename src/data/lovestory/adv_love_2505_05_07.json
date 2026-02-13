@@ -97,16 +97,6 @@
       "bgName": "hillpark-00-night"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "smr",
-      "speakerName": "すみれ",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr012.wav",
-      "text": "たぶん渚ちゃんは、力が暴走した時に\n私達を巻き込まないように逃げちゃったんだ\nお兄ちゃん、一緒に探そう！",
-      "startTime": 45.8999970436,
-      "sfxList": []
-    },
-    {
       "type": "bgm",
       "action": "stop"
     },
@@ -116,13 +106,24 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "すみれ",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr012.wav",
+      "text": "たぶん渚ちゃんは、力が暴走した時に\n私達を巻き込まないように逃げちゃったんだ\nお兄ちゃん、一緒に探そう！",
+      "startTime": 45.8999970436,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 11399.979400599996
+        }
+      ]
+    },
+    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
       "bgName": "hoshistation-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -152,20 +153,21 @@
       "voiceUrl": null,
       "text": "渚はどこに行ったのだろう",
       "startTime": 62.8666428566,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
+          "delay": 7833.357651999997
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 4333.3571434000005
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
     },
     {
       "type": "background",
@@ -204,6 +206,10 @@
                 {
                   "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
                   "delay": 166.70827859999804
+                },
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+                  "delay": 2566.7133648999966
                 }
               ]
             },
@@ -211,10 +217,6 @@
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
             },
             {
               "type": "dialogue",
@@ -238,7 +240,8 @@
             },
             {
               "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+              "startTime": 87.1666153908
             },
             {
               "type": "dialogue",
@@ -295,6 +298,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -303,10 +310,6 @@
       "text": "渚は悲しそうに微笑んでいる",
       "startTime": 140.4666326841,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "background",
@@ -433,7 +436,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs012.wav",
       "text": "二人とも……っ、いいのかにゃ……\n私……っ……いいのかにゃ……\n二人のそばにいても……一緒にいても……",
       "startTime": 192.6333105406,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a",
+          "delay": 19300.0390686
+        }
+      ]
     },
     {
       "type": "background",
@@ -449,10 +457,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a"
     },
     {
       "type": "bgm",
@@ -466,7 +470,24 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr017.wav",
       "text": "当たり前でしょ！",
       "startTime": 207.1333085061,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 7566.70776979999
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a",
+          "delay": 7033.373005800002
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 8566.708246600001
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a",
+          "delay": 7800.0411031
+        }
+      ]
     },
     {
       "type": "background",
@@ -474,25 +495,9 @@
       "bgName": "tokyopark-00-night"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a"
-    },
-    {
       "type": "bgm",
       "action": "play",
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_rival-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_fly-01.m4a"
     },
     {
       "type": "background",
@@ -527,7 +532,16 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr018.wav",
       "text": "っ……！　こんな時に……！\nいいよ、家族の幸せな時間に水を差す\n悪いサキュバス達。ここでやっつけてあげる",
       "startTime": 224.5666916845,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-dark-01.m4a",
+          "delay": 12899.978637700002
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-03.m4a",
+          "delay": 13292.700131999993
+        }
+      ]
     },
     {
       "type": "background",
@@ -538,14 +552,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-dark-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-03.m4a"
     },
     {
       "type": "dialogue",
@@ -570,7 +576,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr019.wav",
       "text": "同時攻撃……！\nでも……力が足りなくたって……\n私達は決めたから……！",
       "startTime": 239.5666794774,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
+          "delay": 11669.986172000023
+        }
+      ]
     },
     {
       "type": "background",
@@ -581,10 +592,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a"
     },
     {
       "type": "dialogue",
@@ -628,16 +635,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs014.wav",
       "text": "ねえ、{user}君\nもしもだよ？　もしも、私が君に\n惹かれてる理由が、そういうことにゃら……",
       "startTime": 261.5000351901,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 13566.662597700031
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -647,7 +655,12 @@
       "voiceUrl": null,
       "text": "渚が、顔を寄せてくる",
       "startTime": 275.0666977878,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a",
+          "delay": 18633.299160399987
+        }
+      ]
     },
     {
       "type": "background",
@@ -658,10 +671,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_bell-04.m4a"
     },
     {
       "type": "bgm",
@@ -703,6 +712,11 @@
       "action": "stop"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_moon-03.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
@@ -710,17 +724,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-smr021.wav",
       "text": "そっか、本当にサキュバスの力が\n体に宿ってるなら、お兄ちゃんから\n生命エネルギーを……！",
       "startTime": 305.7667059257,
-      "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_moon-03.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
-      "bgName": "tokyopark-00-night"
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_transform-02.m4a",
+          "delay": 7566.624355800002
+        }
+      ]
     },
     {
       "type": "background",
@@ -728,8 +737,9 @@
       "bgName": "tokyopark-00-night"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_transform-02.m4a"
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
       "type": "dialogue",
@@ -739,7 +749,16 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2505_05_07/sud_vo_adv_love_2505_05_04-ngs016.wav",
       "text": "わっ、にゃんか力が溢れてくる……！\nでも……前より安定してる気がする\nえへへ、家族の愛の力かにゃ？",
       "startTime": 316.5333970065,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-dark-01.m4a",
+          "delay": 25653.28288439997
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
+          "delay": 25653.28288439997
+        }
+      ]
     },
     {
       "type": "background",
@@ -750,14 +769,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
       "bgName": "tokyopark-00-night"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-dark-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a"
     },
     {
       "type": "dialogue",
@@ -775,6 +786,20 @@
       "bgName": "tokyopark-00-night"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -786,26 +811,12 @@
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_spell-power-01.m4a",
           "delay": 0
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a",
+          "delay": 5866.722107000043
         }
       ]
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_vanish-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_coast-02.m4a"
     },
     {
       "type": "dialogue",
@@ -838,6 +849,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -849,7 +864,8 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "dialogue",
@@ -860,11 +876,6 @@
       "text": "あれから渚は、精霊界という場所で\n修行を積み、力をコントロール出来るように\nなっていた。そして、今は――",
       "startTime": 378.3668381687,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "dialogue",
@@ -886,6 +897,15 @@
       ]
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
@@ -899,15 +919,6 @@
           "delay": 9633.298912399994
         }
       ]
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_spell-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",

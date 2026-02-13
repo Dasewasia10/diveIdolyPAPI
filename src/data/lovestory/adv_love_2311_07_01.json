@@ -172,6 +172,11 @@
               "action": "stop"
             },
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -180,11 +185,6 @@
               "text": "これからずっと小説だけで\n食べていけるとは限らないだろ？",
               "startTime": 67.4666705531,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
             },
             {
               "type": "dialogue",
@@ -217,6 +217,10 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -225,10 +229,6 @@
               "text": "デビュー作が売れたのは本当に凄いけど\n出版業界の状況を考えると、これからも\n同じようにうまくいくとは限らない",
               "startTime": 90.0333479009,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
             },
             {
               "type": "dialogue",
@@ -335,6 +335,10 @@
       "bgName": "schoolclass-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -343,10 +347,6 @@
       "text": "そっか……うーん、でもなぁ……",
       "startTime": 159.8000135503,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -409,6 +409,10 @@
       "bgName": "schoolclass-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -417,10 +421,6 @@
       "text": "ほ、ほんと……？　ほんとのほんとに……？",
       "startTime": 194.366676148,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -538,16 +538,6 @@
       "bgName": "schoolclass-00-noon"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "ngs",
-      "speakerName": "伊吹渚",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_07_01/sud_vo_adv_love_2311_07_01-ngs016.wav",
-      "text": "うん！　まずは模試の復習から\nよろしくね！",
-      "startTime": 245.2333489184,
-      "sfxList": []
-    },
-    {
       "type": "bgm",
       "action": "stop"
     },
@@ -557,13 +547,24 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_07_01/sud_vo_adv_love_2311_07_01-ngs016.wav",
+      "text": "うん！　まずは模試の復習から\nよろしくね！",
+      "startTime": 245.2333489184,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_paper-01.m4a",
+          "delay": 6066.651081600014
+        }
+      ]
+    },
+    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_paper-01.m4a"
     },
     {
       "type": "dialogue",
@@ -588,16 +589,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2311_07_01/sud_vo_adv_love_2311_07_01-koh024.wav",
       "text": "（渚は小説の執筆と同時並行で本当に\n大変そうだったけど、俺も出来る限り\n支えるようにしていた。それと……）",
       "startTime": 257.5000277921,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+          "delay": 9633.305541200003
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_lovehroom-00-noon.webp",
       "bgName": "lovehroom"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -917,6 +919,10 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -925,10 +931,6 @@
       "text": "（もし、別々の大学になったら……\nどうなるんだろう？　もちろん、俺達なら\n離れても大丈夫だと信じてる。でも……）",
       "startTime": 427.4999260668,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",

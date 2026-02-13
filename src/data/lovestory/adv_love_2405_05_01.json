@@ -63,10 +63,6 @@
           "text": "芽衣を迎えに行く",
           "route": [
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -74,7 +70,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_05_01/sud_vo_adv_love_2405_05_01-koh003.wav",
               "text": "（よし、ここまで来たし芽衣の家まで\n迎えに行ってみよう！）",
               "startTime": 20.2666666786,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+                  "delay": 4316.666642800002
+                }
+              ]
             },
             {
               "type": "bgm",
@@ -157,6 +158,11 @@
           "text": "芽衣を迎えに行かない",
           "route": [
             {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "unknown",
               "speakerName": "{user}",
@@ -170,11 +176,6 @@
                   "delay": 8433.335610399994
                 }
               ]
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
             },
             {
               "type": "dialogue",
@@ -276,6 +277,15 @@
       "bgName": "env_adv_2d_ricefield-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -286,18 +296,13 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
       "bgName": "env_adv_2d_ricefield-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -308,10 +313,6 @@
       "text": "――駄菓子屋",
       "startTime": 131.6000076293,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -451,16 +452,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_05_01/sud_vo_adv_love_2405_05_01-koh014.wav",
       "text": "焦らなくてもアイスは逃げないって",
       "startTime": 204.8999961969,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-03.m4a",
+          "delay": 5866.678099000012
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
       "bgName": "env_adv_2d_ricefield-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-03.m4a"
     },
     {
       "type": "dialogue",
@@ -685,10 +687,6 @@
           "text": "当たりを引いた",
           "route": [
             {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-03.m4a"
-            },
-            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -696,7 +694,12 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_05_01/sud_vo_adv_love_2405_05_01-koh022.wav",
               "text": "俺は当たりだったよ\n芽衣はどうだった？",
               "startTime": 328.3000684221,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-03.m4a",
+                  "delay": 933.2664368999986
+                }
+              ]
             },
             {
               "type": "bgm",
@@ -881,6 +884,10 @@
       "bgName": "schoolclass-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -889,10 +896,6 @@
       "text": "{user}君\n今何してるかな～とか\nこれ好きそうだな～とか",
       "startTime": 443.9000785947,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",

@@ -8,6 +8,11 @@
       "bgName": "schoolclass-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -16,11 +21,6 @@
       "text": "――高校三年生　八月前半　学校",
       "startTime": 0,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
       "type": "dialogue",
@@ -105,16 +105,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei003.wav",
       "text": "はーあ、そんなセリフ私も言ってみたい\nあ、先生に呼ばれたからもらってくるわ",
       "startTime": 39.300001073,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 12199.998927000002
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_schoolclass-00-noon.webp",
       "bgName": "schoolclass-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a"
     },
     {
       "type": "dialogue",
@@ -136,6 +137,11 @@
       "action": "stop"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rei",
       "speakerName": "一ノ瀬怜",
@@ -144,11 +150,6 @@
       "text": "あ……うん……まあまあいい感じ\n自己採点通りだったわよ",
       "startTime": 55.3666715544,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
       "type": "dialogue",
@@ -208,7 +209,8 @@
           "route": [
             {
               "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a"
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+              "startTime": 95.2333420357
             },
             {
               "type": "dialogue",
@@ -473,6 +475,11 @@
       "bgName": "hoshistore-02-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "hrk",
       "speakerName": "佐伯遙子",
@@ -481,11 +488,6 @@
       "text": "{user}君\nカッコいいこと言うわね～",
       "startTime": 199.1666896105,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
       "type": "dialogue",
@@ -534,20 +536,21 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei014.wav",
       "text": "ふふっ、ありがとう\n……少しずつ落ち着いてきました\nよし、今ならお父さんに話せる気がする",
       "startTime": 216.9333633979,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 19006.627446900013
+        },
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-dialtone-01.m4a",
+          "delay": 19433.305303300018
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
       "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-dialtone-01.m4a"
     },
     {
       "type": "dialogue",
@@ -590,6 +593,10 @@
       "bgName": "hoshistore-02-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rei",
       "speakerName": "一ノ瀬怜",
@@ -598,10 +605,6 @@
       "text": "D判定……\nで、でもね、マークミスしてなかったら\nCだったの",
       "startTime": 252.8667099551,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "dialogue",
@@ -795,16 +798,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2305_04_01/sud_vo_adv_love_2305_04_01-rei024.wav",
       "text": "本当ですか……！？　ありがとうございます\nでも、その、彼氏とか……\n大丈夫ですか……？",
       "startTime": 348.5000819442,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-01.m4a",
+          "delay": 19703.24732019998
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
       "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-01.m4a"
     },
     {
       "type": "dialogue",
@@ -995,6 +999,11 @@
       "bgName": "mall-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -1003,11 +1012,6 @@
       "text": "――その週の土曜日",
       "startTime": 453.1667587832,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
       "type": "dialogue",
@@ -1174,6 +1178,11 @@
       "bgName": "mall-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rei",
       "speakerName": "一ノ瀬怜",
@@ -1182,11 +1191,6 @@
       "text": "大丈夫よ、ありがとう\n今日は、心配して誘ってくれたんだよね？",
       "startTime": 533.600134841,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_sad-01.m4a"
     },
     {
       "type": "dialogue",

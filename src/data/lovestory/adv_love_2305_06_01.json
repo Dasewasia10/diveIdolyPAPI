@@ -143,6 +143,10 @@
       "bgName": "hospital-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -153,13 +157,14 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hospital-00-noon.webp",
       "bgName": "hospital-00-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
     },
     {
       "type": "dialogue",
@@ -170,11 +175,6 @@
       "text": "私の気持ちも知らないで\n勝手なこと言わないで……！",
       "startTime": 63.0333413401,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
     },
     {
       "type": "dialogue",
@@ -307,6 +307,10 @@
       "bgName": "hospital-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
@@ -315,10 +319,6 @@
       "text": "（泣いている怜に対して、俺はなんて言葉を\n掛けたらいいんだろうか……？）",
       "startTime": 154.3000080068,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "choice_selection",
@@ -512,6 +512,15 @@
               "sfxList": []
             },
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "rei",
               "speakerName": "一ノ瀬怜",
@@ -520,15 +529,6 @@
               "text": "{user}が\n悪いんだからねっ……！\nその気にさせて……優しくして……うわぁん",
               "startTime": 279.2666645009,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_trouble-01.m4a"
             },
             {
               "type": "dialogue",
@@ -724,6 +724,10 @@
           "text": "一人でテーマパークに行く",
           "route": [
             {
+              "type": "bgm",
+              "action": "stop"
+            },
+            {
               "type": "dialogue",
               "speakerCode": "koh",
               "speakerName": "{user}",
@@ -732,10 +736,6 @@
               "text": "なんとか再オーディションを受けさせて\nもらう方法は……あっ、そうだ！",
               "startTime": 396.1666360179,
               "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
             },
             {
               "type": "bgm",
@@ -1068,16 +1068,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2305_06_01/sud_vo_adv_love_2305_06_01-rei033.wav",
       "text": "この間はあんなこと言ってきたくせに……\n遙子さんにも手を出してるなんて、最っ低",
       "startTime": 561.733400341,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 17999.99534259996
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_hoshistore-02-noon.webp",
       "bgName": "hoshistore-02-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a"
     },
     {
       "type": "dialogue",
@@ -1095,6 +1096,15 @@
       "bgName": "hoshistore-02-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -1103,15 +1113,6 @@
       "text": "ちょ、ちょっと、遙子さん……！\n怜、俺の話を聞いてくれ",
       "startTime": 581.4667296054,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
       "type": "dialogue",
@@ -1144,6 +1145,10 @@
       "bgName": "hoshistore-02-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
@@ -1155,7 +1160,8 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "dialogue",
@@ -1166,11 +1172,6 @@
       "text": "もう元気よ\nいろいろ気に掛けてくれてありがとう",
       "startTime": 602.833331168,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
       "type": "background",
@@ -1208,6 +1209,10 @@
       "bgName": "hoshistore-02-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rei",
       "speakerName": "一ノ瀬怜",
@@ -1216,10 +1221,6 @@
       "text": "別に行きたくなかったら\n全然断ってくれていいのよ。私がたまたま\n偶然、暇だから誘っただけだし……",
       "startTime": 619.9999164544,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
     },
     {
       "type": "choice_selection",

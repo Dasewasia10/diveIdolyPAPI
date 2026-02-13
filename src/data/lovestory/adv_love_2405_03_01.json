@@ -50,16 +50,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_03_01/sud_vo_adv_love_2405_03_01-koh002.wav",
       "text": "いつもだったらもう芽衣が来てる\n時間だけど……今日は遅いな……\nって、何そわそわしてるんだ俺は",
       "startTime": 13.0333333056,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a",
+          "delay": 10266.6666944
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_okuyamaliving-00-noon.webp",
       "bgName": "env_adv_2d_okuyamaliving-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-living-single-01.m4a"
     },
     {
       "type": "dialogue",
@@ -267,7 +268,12 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_03_01/sud_vo_adv_love_2405_03_01-mei008.wav",
       "text": "いっつも新作ドーナツは人気で\nすぐ売り切れちゃうんだよ！\n早く行こー！　急いで急いで！",
       "startTime": 122.0333312711,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 7033.3353956000055
+        }
+      ]
     },
     {
       "type": "background",
@@ -275,8 +281,13 @@
       "bgName": "env_adv_2d_okuyamaliving-00-noon"
     },
     {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_gasa-02.m4a"
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
       "type": "dialogue",
@@ -287,15 +298,6 @@
       "text": "ちょ、ちょっと芽衣！　分かったから\n手を引っ張らないでくれ……！",
       "startTime": 129.7333058398,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
       "type": "background",
@@ -477,6 +479,15 @@
       "bgName": "donutsshop-00-noon"
     },
     {
+      "type": "bgm",
+      "action": "stop"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "mei",
       "speakerName": "早坂芽衣",
@@ -485,15 +496,6 @@
       "text": "良かった～！\n今日はお小遣い持って来たから\n芽衣のオススメを沢山食べてもらうよ！",
       "startTime": 231.2666279834,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
       "type": "background",
@@ -533,26 +535,17 @@
       "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_03_01/sud_vo_adv_love_2405_03_01-mei017.wav",
       "text": "うん！　いつも愛ちゃんと一緒に来て\n食べさせ合いっこしてるよ！\nいろんな味を食べたいもん",
       "startTime": 260.7999613167,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_rain-02.m4a",
+          "delay": 15433.372016600004
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_ricefield-00-noon.webp",
       "bgName": "ricefield-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_rain-02.m4a"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_03_01/sud_vo_adv_love_2405_03_01-koh017.wav",
-      "text": "そっか……そうだよな\nごめん、変なこと聞いて\nあれ……雨？　うわ、夕立だ",
-      "startTime": 267.5999613167,
-      "sfxList": []
     },
     {
       "type": "bgm",
@@ -564,13 +557,24 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
     },
     {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_03_01/sud_vo_adv_love_2405_03_01-koh017.wav",
+      "text": "そっか……そうだよな\nごめん、変なこと聞いて\nあれ……雨？　うわ、夕立だ",
+      "startTime": 267.5999613167,
+      "sfxList": [
+        {
+          "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_rain-02.m4a",
+          "delay": 13066.66666670003
+        }
+      ]
+    },
+    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_busstop-00-noon.webp",
       "bgName": "busstop-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_rain-02.m4a"
     },
     {
       "type": "background",
@@ -1086,16 +1090,17 @@
               "voiceUrl": "https://api.diveidolypapi.my.id/lovestoryVoice/sud_vo_adv_love_2405_03_01/sud_vo_adv_love_2405_03_01-mei035.wav",
               "text": "……ぷっ……くっ……あはははっ、何それ\nブワッと！　って言われても分かんないよ\nなんだ、君も恋を知らないんだね。あははっ",
               "startTime": 532.6666869838,
-              "sfxList": []
+              "sfxList": [
+                {
+                  "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_rain-02.m4a",
+                  "delay": 14100.000000000022
+                }
+              ]
             },
             {
               "type": "bgm",
               "action": "play",
               "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tears-01.m4a"
-            },
-            {
-              "type": "sfx",
-              "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_rain-02.m4a"
             },
             {
               "type": "dialogue",
