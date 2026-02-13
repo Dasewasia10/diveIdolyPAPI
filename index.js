@@ -239,7 +239,7 @@ app.get("/api/lovestory/index.json", (_req, res) => {
 });
 
 // 2. Get Love Story Script Details
-app.get("/api/lovestory/stories/:id.json", (req, res) => {
+app.get("/api/lovestory/:id.json", (req, res) => {
   const { id } = req.params;
   const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_love_...
   const filePath = path.join(process.cwd(), "src/data/lovestory/stories", `${safeId}.json`);
