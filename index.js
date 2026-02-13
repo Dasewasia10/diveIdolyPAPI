@@ -242,7 +242,7 @@ app.get("/api/lovestory/index.json", (_req, res) => {
 app.get("/api/lovestory/stories/:id.json", (req, res) => {
   const { id } = req.params;
   const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_love_...
-  const filePath = path.join(process.cwd(), "src/data/stories", `${safeId}.json`);
+  const filePath = path.join(process.cwd(), "src/data/lovestory", `${safeId}.json`);
 
   try {
     if (fs.existsSync(filePath)) {
