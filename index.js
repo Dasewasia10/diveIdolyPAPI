@@ -16,6 +16,7 @@ import characterSources from "./src/data/character/character.json" with { type: 
 import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
+import bondStoryIndex from "./src/data/bondstory/index_bond.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 import diaryMana from "./src/data/diaryMana/diaryMana.json" with  { type: "json" };
@@ -59,6 +60,7 @@ app.get("/", (_req, res) => {
       stamps: "/api/stamps",
       messages: "/api/messages/index.json",
       lovestory: "/api/lovestory/index.json", 
+      bondstory: "/api/lovestory/index_bond.json", 
       musicRouter: "/api/music"
     },
   });
@@ -243,6 +245,34 @@ app.get("/api/lovestory/stories/:id.json", (req, res) => {
   const { id } = req.params;
   const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_love_...
   const filePath = path.join(process.cwd(), "src/data/lovestory", `${safeId}.json`);
+
+  try {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const data = JSON.parse(fileContent);
+      res.json(data);
+    } else {
+      res.status(404).json({ error: "Story script not found" });
+    }
+  } catch (error) {
+    console.error("Error reading story file:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+
+// --- Bond Story Endpoints (Dynamic File Reading) ---
+
+// 1. Get Bond Story Index
+app.get("/api/bondstory/index_bond.json", (_req, res) => {
+  res.json(bondStoryIndex);
+});
+
+// 2. Get Bond Story Script Details
+app.get("/api/bondstory/stories/:id.json", (req, res) => {
+  const { id } = req.params;
+  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_bond_...
+  const filePath = path.join(process.cwd(), "src/data/bondstory", `${safeId}.json`);
 
   try {
     if (fs.existsSync(filePath)) {
