@@ -288,6 +288,60 @@ app.get("/api/bondstory/stories/:id.json", (req, res) => {
   }
 });
 
+// --- Main Story Endpoints (Dynamic File Reading) ---
+
+// 1. Get Main Story Index
+app.get("/api/mainstory/index_main.json", (_req, res) => {
+  res.json(mainStoryIndex);
+});
+
+// 2. Get Main Story Script Details
+app.get("/api/mainstory/stories/:id.json", (req, res) => {
+  const { id } = req.params;
+  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_main_...
+  const filePath = path.join(process.cwd(), "src/data/mainstory", `${safeId}.json`);
+
+  try {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const data = JSON.parse(fileContent);
+      res.json(data);
+    } else {
+      res.status(404).json({ error: "Story script not found" });
+    }
+  } catch (error) {
+    console.error("Error reading story file:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+// --- Extra Story Endpoints (Dynamic File Reading) ---
+
+// 1. Get Extra Story Index
+app.get("/api/extrastory/index_extra.json", (_req, res) => {
+  res.json(extraStoryIndex);
+});
+
+// 2. Get Extra Story Script Details
+app.get("/api/extrastory/stories/:id.json", (req, res) => {
+  const { id } = req.params;
+  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_extra_...
+  const filePath = path.join(process.cwd(), "src/data/extrastory", `${safeId}.json`);
+
+  try {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const data = JSON.parse(fileContent);
+      res.json(data);
+    } else {
+      res.status(404).json({ error: "Story script not found" });
+    }
+  } catch (error) {
+    console.error("Error reading story file:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
 // 1. Get Mana's Diary Index
 app.get("/api/manaDiary/diaryMana.json", (_req, res) => {
   res.json(diaryMana);
