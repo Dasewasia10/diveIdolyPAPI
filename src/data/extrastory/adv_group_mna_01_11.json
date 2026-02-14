@@ -38,11 +38,13 @@
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_knock-01.m4a",
-          "delay": 3197.505760192867
+          "delay": 3197.505760192867,
+          "startTime": 6.8308390935262
         },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
-          "delay": 4400
+          "delay": 4400,
+          "startTime": 8.033333333333333
         }
       ]
     },
@@ -97,7 +99,8 @@
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
-          "delay": 2400.0000000000005
+          "delay": 2400.0000000000005,
+          "startTime": 15.366666666666667
         }
       ]
     },
@@ -107,14 +110,9 @@
       "bgName": "livestage-00-noon"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "司会者",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "sundance対長瀬麻奈、勝者は……",
-      "startTime": 17.666666666666668,
-      "sfxList": []
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_livestage-00-noon.webp",
+      "bgName": "livestage-00-noon"
     },
     {
       "type": "background",
@@ -127,12 +125,13 @@
       "speakerName": "司会者",
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-host001.m4a",
-      "text": "長瀬麻奈！",
+      "text": "sundance対長瀬麻奈、勝者は……\n長瀬麻奈！",
       "startTime": 21.966666666666665,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-          "delay": 233.33333333333428
+          "delay": 233.33333333333428,
+          "startTime": 22.2
         }
       ]
     },
@@ -163,7 +162,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-host002.m4a",
       "text": "長瀬さんはデビュー以来、連勝記録を伸ばしています\n凄いですね！",
-      "startTime": 28.033333333333335,
+      "startTime": 31.366666666666667,
       "sfxList": []
     },
     {
@@ -203,17 +202,24 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna003.m4a",
       "text": "これまで通りステージで歌います！\nファンのみなさんのために歌うだけです！",
-      "startTime": 40.9,
+      "startTime": 43,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-          "delay": 2100.0000000000014
+          "delay": 2100.0000000000014,
+          "startTime": 43
         },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
-          "delay": 6566.66666666667
+          "delay": 4466.666666666669,
+          "startTime": 47.46666666666667
         }
       ]
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
       "type": "background",
@@ -227,7 +233,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh001.m4a",
       "text": "お疲れ、麻奈\nほら、タオル",
-      "startTime": 47.96666666666667,
+      "startTime": 49.733333333333334,
       "sfxList": []
     },
     {
@@ -237,7 +243,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna004.m4a",
       "text": "ありがとう\n……っと",
-      "startTime": 51.166666666666664,
+      "startTime": 52.6,
       "sfxList": []
     },
     {
@@ -267,23 +273,13 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna005.m4a",
       "text": "大丈夫だよ。ちょっと力が抜けちゃっただけ\nライブが終わって緊張が緩んだから",
-      "startTime": 59,
+      "startTime": 62.8,
       "sfxList": []
     },
     {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
       "bgName": "stagesleeves-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "koh",
-      "speakerName": "{user}",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": null,
-      "text": "（……明らかに麻奈は疲れている。オーバーワークだ）",
-      "startTime": 65.53333333333333,
-      "sfxList": []
     },
     {
       "type": "background",
@@ -296,7 +292,7 @@
       "speakerName": "{user}",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh003.m4a",
-      "text": "（だけど今、麻奈にはいい仕事が沢山舞い込んでくる）",
+      "text": "（……明らかに麻奈は疲れている。オーバーワークだ）\n（だけど今、麻奈にはいい仕事が沢山舞い込んでくる）",
       "startTime": 69.86666666666666,
       "sfxList": []
     },
@@ -307,7 +303,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh004.m4a",
       "text": "（麻奈も仕事は絶対断らない。飛躍のチャンスだ）\n（……でも、このままで本当にいいのか？）",
-      "startTime": 73.73333333333333,
+      "startTime": 78.53333333333333,
       "sfxList": []
     },
     {
@@ -322,7 +318,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna006.m4a",
       "text": "何深刻な顔してるの？\nもしかして疲れた？",
-      "startTime": 82.2,
+      "startTime": 84.6,
       "sfxList": []
     },
     {
@@ -332,7 +328,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh005.m4a",
       "text": "俺は疲れてないよ\n麻奈の体が気になるんだ",
-      "startTime": 86.4,
+      "startTime": 88.53333333333333,
       "sfxList": []
     },
     {
@@ -371,13 +367,18 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_hoshimi-01.m4a"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_office-00-noon.webp",
+      "bgName": "env_adv_3d_office-00-000-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "hrk",
       "speakerName": "佐伯遙子",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-haruko.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-hrk001.m4a",
       "text": "わっ！　凄い、LizNoirが東京レイーズを\n満員にしたって！　ニュースで取り上げられてます",
-      "startTime": 98.8,
+      "startTime": 102.86666666666666,
       "sfxList": []
     },
     {
@@ -397,7 +398,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj001.m4a",
       "text": "東京レイーズは老舗の大規模な箱だ\n……若手アイドルが満員にするのは異例のことだ",
-      "startTime": 109.16666666666667,
+      "startTime": 113.46666666666667,
       "sfxList": []
     },
     {
@@ -407,7 +408,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh007.m4a",
       "text": "LizNoirって\n昔、三枝さんの育てたグループでしたよね？",
-      "startTime": 117.23333333333333,
+      "startTime": 119.03333333333333,
       "sfxList": []
     },
     {
@@ -417,7 +418,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-haruko.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-hrk002.m4a",
       "text": "そう。デビューから三年足らずで満員なんて\n新記録樹立ですよ！　おめでとうございます",
-      "startTime": 122.43333333333334,
+      "startTime": 126.2,
       "sfxList": []
     },
     {
@@ -427,7 +428,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj002.m4a",
       "text": "よしてくれ。記録は彼女達が努力した成果だ\n俺は何もしていない",
-      "startTime": 129.83333333333334,
+      "startTime": 134.93333333333334,
       "sfxList": []
     },
     {
@@ -437,7 +438,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj003.m4a",
       "text": "それより{user}\n今日から一週間は遙子のマネジメントを頼む",
-      "startTime": 136.83333333333334,
+      "startTime": 138.53333333333333,
       "sfxList": []
     },
     {
@@ -447,7 +448,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh008.m4a",
       "text": "え？\n俺が遙子さんの担当ですか？",
-      "startTime": 142.7,
+      "startTime": 143.5,
       "sfxList": []
     },
     {
@@ -457,7 +458,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj004.m4a",
       "text": "ああ、お前はもうバイトじゃない\nいろんな現場を見た方がいいと思ってな",
-      "startTime": 146.26666666666668,
+      "startTime": 149.9,
       "sfxList": []
     },
     {
@@ -487,7 +488,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna009.m4a",
       "text": "……デレデレしちゃって\n女の子なら誰でもいいんだ",
-      "startTime": 158.63333333333333,
+      "startTime": 161.3,
       "sfxList": []
     },
     {
@@ -522,7 +523,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj005.m4a",
       "text": "その間、麻奈には俺がつく\n麻奈、一週間だけ我慢してくれ",
-      "startTime": 167.46666666666667,
+      "startTime": 170.9,
       "sfxList": []
     },
     {
@@ -532,7 +533,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna011.m4a",
       "text": "いいです。私、{user}くんがいなくても\n勝手に仕事取ってきて勝手に歌うから",
-      "startTime": 174.9,
+      "startTime": 177.53333333333333,
       "sfxList": []
     },
     {
@@ -542,7 +543,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj006.m4a",
       "text": "おいおい。俺としてはこれを機会に\n一週間のんびりしてもらうつもりだったんだが",
-      "startTime": 180.43333333333334,
+      "startTime": 184.56666666666666,
       "sfxList": []
     },
     {
@@ -552,7 +553,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh011.m4a",
       "text": "そうだよ。麻奈は最近、根を詰め過ぎだ\nしばらく新規の仕事は断ったらどうだ？",
-      "startTime": 187.83333333333334,
+      "startTime": 191.8,
       "sfxList": []
     },
     {
@@ -562,7 +563,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna012.m4a",
       "text": "絶対イヤ。星見まつりの時だって\nみんな止めたけど大成功したじゃない",
-      "startTime": 194.8,
+      "startTime": 198,
       "sfxList": []
     },
     {
@@ -572,7 +573,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh012.m4a",
       "text": "あれはたまたまうまくいっただけだ\n本当なら中止にすべきだった",
-      "startTime": 200.73333333333332,
+      "startTime": 203.46666666666667,
       "sfxList": []
     },
     {
@@ -582,7 +583,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna013.m4a",
       "text": "そんなの間違ってる。ファンのみんなが待ってるなら\n長瀬麻奈は歌わない訳にはいかないよ",
-      "startTime": 205.56666666666666,
+      "startTime": 209.06666666666666,
       "sfxList": []
     },
     {
@@ -592,7 +593,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh013.m4a",
       "text": "自分の体も気遣ってくれと言ってるんだ\nそんなことが分からない麻奈じゃないだろ？",
-      "startTime": 212.23333333333332,
+      "startTime": 215.13333333333333,
       "sfxList": []
     },
     {
@@ -622,19 +623,22 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna015.m4a",
       "text": "遙子ちゃんのマネージャーは\nついてこなくていいですから",
-      "startTime": 222,
+      "startTime": 223.46666666666667,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
-          "delay": 4566.666666666662
+          "delay": 4566.666666666662,
+          "startTime": 226.56666666666666
         },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
-          "delay": 5433.333333333338
+          "delay": 5433.333333333338,
+          "startTime": 227.43333333333334
         },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_door-close-01.m4a",
-          "delay": 6566.666666666662
+          "delay": 5099.9999999999945,
+          "startTime": 228.56666666666666
         }
       ]
     },
@@ -645,7 +649,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj007.m4a",
       "text": "麻奈はどうしたんだ？\nやけに感情的になっていたな",
-      "startTime": 229.56666666666666,
+      "startTime": 232.1,
       "sfxList": []
     },
     {
@@ -655,7 +659,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-haruko.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-hrk004.m4a",
       "text": "私が{user}君を取っちゃった\nみたいになったのが嫌だったのかな……？",
-      "startTime": 234.93333333333334,
+      "startTime": 236.7,
       "sfxList": []
     },
     {
@@ -665,7 +669,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh015.m4a",
       "text": "いえ、アイツは元々歌に対しての\n執着心が凄いんで……",
-      "startTime": 239.63333333333333,
+      "startTime": 243.13333333333333,
       "sfxList": []
     },
     {
@@ -675,7 +679,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-shj008.m4a",
       "text": "才能を持っていると自分自身で制御出来ないものだ\nお前がしっかり支えてやってくれ",
-      "startTime": 245.1,
+      "startTime": 251.16666666666666,
       "sfxList": []
     },
     {
@@ -704,13 +708,18 @@
       "sfxList": []
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_office-00-night.webp",
+      "bgName": "env_adv_3d_office-00-000-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh017.m4a",
       "text": "（明日の仕事確認の連絡を……しづらい）\n（麻奈とはケンカしたままだしな）",
-      "startTime": 258.46666666666664,
+      "startTime": 264.1333333333333,
       "sfxList": []
     },
     {
@@ -720,15 +729,17 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh018.m4a",
       "text": "（いや、これは仕事だ。私的な感情は抜きにして）\n（行動しないと――って、麻奈？）",
-      "startTime": 266.96666666666664,
+      "startTime": 270.7,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-fs-01.m4a",
-          "delay": 2466.666666666697
+          "delay": 2466.666666666697,
+          "startTime": 269.43333333333334
         },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
-          "delay": 6066.66666666672
+          "delay": 6066.66666666672,
+          "startTime": 273.03333333333336
         }
       ]
     },
@@ -739,7 +750,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna016.m4a",
       "text": "全然、連絡くれない！\n{user}くん、酷いんじゃない！？",
-      "startTime": 274.5,
+      "startTime": 276.46666666666664,
       "sfxList": []
     },
     {
@@ -749,7 +760,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh019.m4a",
       "text": "ご、ごめん\n今まさにしようと思ってた所で――",
-      "startTime": 279.1,
+      "startTime": 280.3666666666667,
       "sfxList": []
     },
     {
@@ -759,7 +770,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna017.m4a",
       "text": "明日の現場は東京じゃなくて横浜だよ！\n間違って遅れないでよね！",
-      "startTime": 283.1,
+      "startTime": 286.2,
       "sfxList": []
     },
     {
@@ -769,7 +780,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh020.m4a",
       "text": "ははは\n相変わらず長瀬麻奈は強気だな",
-      "startTime": 288.4,
+      "startTime": 290.8666666666667,
       "sfxList": []
     },
     {
@@ -779,7 +790,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna018.m4a",
       "text": "なんで嬉しそうなのよ\n……あのね、{user}くん",
-      "startTime": 293.9,
+      "startTime": 297.26666666666665,
       "sfxList": []
     },
     {
@@ -799,7 +810,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna019.m4a",
       "text": "……やっぱりなんでもない\nおやすみなさい！",
-      "startTime": 301.06666666666666,
+      "startTime": 302.93333333333334,
       "sfxList": []
     },
     {
@@ -809,13 +820,19 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh022.m4a",
       "text": "おい、麻奈？　……もう切れてる\nなんだったんだ……",
-      "startTime": 304.5,
+      "startTime": 309.56666666666666,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
-          "delay": 2133.3333333333258
+          "delay": 2133.3333333333258,
+          "startTime": 306.6333333333333
         }
       ]
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_livecorridor-00-noon.webp",
+      "bgName": "livecorridor-00-noon"
     },
     {
       "type": "background",
@@ -829,7 +846,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-vanurstaffa002.m4a",
       "text": "長瀬さん、到着まだですか？\nこのままだとリハなしで本番するしかないですよ！？",
-      "startTime": 313.93333333333334,
+      "startTime": 316.1,
       "sfxList": []
     },
     {
@@ -839,7 +856,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh023.m4a",
       "text": "すみません！　今、本人は大急ぎで\nこっちに向かっているはずですが",
-      "startTime": 319.3,
+      "startTime": 322.3333333333333,
       "sfxList": []
     },
     {
@@ -859,15 +876,17 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh024.m4a",
       "text": "（ミスった。麻奈の自宅まで迎えに行くべきだった）\n（携帯に何度電話しても出ないし……まさか事故？）",
-      "startTime": 325,
+      "startTime": 329.43333333333334,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-fs-01.m4a",
-          "delay": 9300.000000000011
+          "delay": 9300.000000000011,
+          "startTime": 334.3
         },
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
-          "delay": 12899.999999999978
+          "delay": 12899.999999999978,
+          "startTime": 337.9
         }
       ]
     },
@@ -881,9 +900,19 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh025-b.m4a",
-      "text": "……あっ！？\nもしもし？　おい、麻奈、今どこに",
+      "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh025-a.m4a",
+      "text": "……あっ！？",
       "startTime": 337.43333333333334,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
+      "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-koh025-b.m4a",
+      "text": "もしもし？　おい、麻奈、今どこに",
+      "startTime": 339.1666666666667,
       "sfxList": []
     },
     {
@@ -898,7 +927,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mana.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/extraStoryVoice/sud_vo_adv_group_mna_01_11/sud_vo_adv_group_mna_01_11-mna020.m4a",
       "text": "……助けて\n{user}くん、助けて",
-      "startTime": 342.2,
+      "startTime": 343.73333333333335,
       "sfxList": []
     },
     {
