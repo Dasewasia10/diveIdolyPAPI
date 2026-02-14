@@ -17,14 +17,8 @@ const OUTPUT_DIR = path.join(__dirname, "../data/mainstory");
 const FOLDER_LIST_PATH = path.join(__dirname, "../data/main_folderList.txt");
 
 // --- MAPPING KARAKTER (Bisa dilengkapi) ---
-const CHARACTER_NAMES = {
-    "ai": "Ai Komiyama", "aoi": "Aoi Igawa", "chs": "Chisa Shiraishi",
-    "hrk": "Haruko Saeki", "kkr": "Kokoro Akazaki", "ktn": "Kotono Nagase",
-    "mei": "Mei Hayasaka", "mna": "Mana Nagase", "ngs": "Nagisa Ibuki",
-    "rei": "Rei Ichinose", "rio": "Rio Kanzaki", "rui": "Rui Tendo",
-    "ski": "Saki Shiraishi", "skr": "Sakura Kawasaki", "smr": "Sumire Okuyama",
-    "suz": "Suzu Narumiya", "szk": "Shizuku Hyodo", "yu": "Yuu Suzumura",
-    "kan": "Kana Kojima a.k.a kana", "mhk": "Mihoko Takeda a.k.a miho", "kor": "Kaori (Franziska) Yamada a.k.a fran"
+const GROUP_NAMES = {
+    "01": "Hoshimi Arc", "02": "Tokyo Arc", "03": "BIG4 Arc", "04": "Starry Sky Arc"
 };
 
 const ICON_MAP = {
@@ -358,7 +352,7 @@ const fetchData = (url) => {
         process.exit(1);
     }
 
-    const groupedCharacters = {};
+    const groupedGroups = {};
     let totalFilesProcessed = 0;
 
     console.log(`Starting Main Story sync...`);
@@ -377,8 +371,8 @@ const fetchData = (url) => {
             continue;
         }
 
-        const charCode = parts[2];
-        // const setNum = parts[3]; // Biasanya 01 (Bond Story 1?)
+        const groupCode = parts[2];
+        const setNum = parts[3]; // Biasanya 01 (Bond Story 1?)
         const episodeNum = parseInt(parts[4]); 
 
         try {
@@ -395,7 +389,7 @@ const fetchData = (url) => {
                 path.join(OUTPUT_DIR, jsonFileName),
                 JSON.stringify({
                     id: assetId,
-                    title: displayTitle + episodeNum,
+                    title: displayTitle,
                     script: scriptData
                 }, null, 2)
             );
@@ -403,19 +397,21 @@ const fetchData = (url) => {
             totalFilesProcessed++;
 
             // Grouping Logic
-            if (!groupedCharacters[charCode]) {
-                const charName = CHARACTER_NAMES[charCode] || charCode.toUpperCase();
-                groupedCharacters[charCode] = {
-                    id: charCode,
-                    name: charName,
+            if (!groupedGroups[groupCode]) {
+                const groupName = GROUP_NAMES[groupCode] || groupCode.toUpperCase();
+                groupedGroups[groupCode] = {
+                    id: groupCode,
+                    name: groupName,
                     stories: []
                 };
             }
 
-            groupedCharacters[charCode].stories.push({
+            const epNumIndex = parseInt(setNum) * 10 + parseInt(episodeNum)
+
+            groupedGroups[groupCode].stories.push({
                 id: assetId,
-                title: displayTitle,
-                epNum: episodeNum, // Untuk sorting
+                title: displayTitle + " " + setNum + " " + episodeNum,
+                epNum: epNumIndex,
                 fileName: jsonFileName
             });
 
@@ -425,10 +421,10 @@ const fetchData = (url) => {
     }
 
     // Convert Object to Array & Sort
-    const indexData = Object.values(groupedCharacters).map(charGroup => {
+    const indexData = Object.values(groupedGroups).map(groupGroup => {
         // Sort episodes by number (01, 02, 03...)
-        charGroup.stories.sort((a, b) => a.epNum - b.epNum);
-        return charGroup;
+        groupGroup.stories.sort((a, b) => a.epNum - b.epNum);
+        return groupGroup;
     }).sort((a, b) => a.id.localeCompare(b.id)); // Sort character by ID
 
     fs.writeFileSync(path.join(OUTPUT_DIR, "index_main.json"), JSON.stringify(indexData, null, 2));

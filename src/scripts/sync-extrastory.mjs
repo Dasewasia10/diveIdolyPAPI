@@ -401,10 +401,12 @@ const fetchData = (url) => {
                 };
             }
 
+            const epNumIndex = parseInt(setNum) * 10 + parseInt(episodeNum)
+
             groupedGroups[groupCode].stories.push({
                 id: assetId,
-                title: displayTitle,
-                epNum: episodeNum, // Untuk sorting
+                title: displayTitle + " " + setNum + " " + episodeNum,
+                epNum: epNumIndex,
                 fileName: jsonFileName
             });
 
