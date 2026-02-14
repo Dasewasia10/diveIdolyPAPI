@@ -17,6 +17,8 @@ import stampSources from "./src/data/stamps/stamps.json" with { type: "json" };
 import messageIndex from "./src/data/messages/index.json" with { type: "json" };
 import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json" };
 import bondStoryIndex from "./src/data/bondstory/index_bond.json" with { type: "json" };
+import mainStoryIndex from "./src/data/mainstory/index_main.json" with { type: "json" };
+import extraStoryIndex from "./src/data/extrastory/index_extra.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 import diaryMana from "./src/data/diaryMana/diaryMana.json" with  { type: "json" };
