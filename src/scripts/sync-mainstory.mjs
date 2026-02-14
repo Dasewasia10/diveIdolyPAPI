@@ -16,9 +16,21 @@ const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 const OUTPUT_DIR = path.join(__dirname, "../data/mainstory");
 const FOLDER_LIST_PATH = path.join(__dirname, "../data/main_folderList.txt");
 
-// --- MAPPING KARAKTER (Bisa dilengkapi) ---
+// --- MAPPING KARAKTER & GROUP ---
 const GROUP_NAMES = {
     "01": "Hoshimi Arc", "02": "Tokyo Arc", "03": "BIG4 Arc", "04": "Starry Sky Arc"
+};
+
+const SPEAKER_MAP = {
+    "rio": "Rio Kanzaki", "aoi": "Aoi Igawa", "ai": "Ai Komiyama", "kkr": "Kokoro Akazaki",
+    "rui": "Rui Tendo", "yu": "Yuu Suzumura", "smr": "Sumire Okuyama",
+    "mna": "Mana Nagase", "ktn": "Kotono Nagase", "skr": "Sakura Kawasaki",
+    "rei": "Rei Ichinose", "ngs": "Nagisa Ibuki", "hrk": "Haruko Saeki",
+    "ski": "Saki Shiraishi", "suz": "Suzu Narumiya", "mei": "Mei Hayasaka",
+    "szk": "Shizuku Hyodo", "chs": "Chisa Shiraishi", "chk": "Chika", "cca": "Cocoa",
+    "chn": "Chino", "mhk": "Miho", "kan": "Kana", "kor": "Fran", "mana": "Mana Nagase",
+    "tencho": "Manager", "saegusa": "Saegusa", "asakura": "Asakura", 
+    "koh": "Kohei" 
 };
 
 const ICON_MAP = {
@@ -35,6 +47,12 @@ const ICON_MAP = {
 // --- HELPERS ---
 const getStartTime = (line) => {
     const match = line.match(/_startTime\\?":\s*([0-9.]+)/);
+    return match ? parseFloat(match[1]) : null;
+};
+
+// FUNGSI BARU: Mengambil durasi dari attribut clip
+const getDuration = (line) => {
+    const match = line.match(/_duration\\?":\s*([0-9.]+)/);
     return match ? parseFloat(match[1]) : null;
 };
 
@@ -61,7 +79,17 @@ const extractMessageText = (line) => {
     return content.trim(); 
 };
 
-// --- PARSER (Simplified for Bond Story) ---
+const resolveBackgroundSrc = (rawSrc) => {
+    if (!rawSrc) return null;
+    let cleanSrc = rawSrc;
+    if (cleanSrc.includes("env_adv_3d_")) {
+        cleanSrc = cleanSrc.replace("env_adv_3d_", "env_adv_2d_");
+    }
+    cleanSrc = cleanSrc.replace(/-000(-|$)/, "$1");
+    return `${R2_BG_URL}/${cleanSrc}.webp`;
+};
+
+// --- PARSER ---
 const parseLines = (lines, assetId) => {
     const scriptData = [];
     const backgroundMap = {}; 
@@ -87,7 +115,7 @@ const parseLines = (lines, assetId) => {
         const trimmed = line.trim();
         if (!trimmed) continue;
 
-        // 0. TITLE EXTRACTION (Special for Bond)
+        // 0. TITLE EXTRACTION
         if (trimmed.startsWith("[title")) {
             foundTitle = getAttr(trimmed, "title");
             continue;
@@ -104,14 +132,34 @@ const parseLines = (lines, assetId) => {
         }
 
         // 2. BACKGROUND CHANGE
-        if (trimmed.startsWith("[backgroundsetting") || trimmed.startsWith("[backgroundtween")) {
+        if (
+            trimmed.startsWith("[backgroundsetting") || 
+            trimmed.startsWith("[backgroundtween") ||
+            trimmed.startsWith("[backgroundlayoutgroup")
+        ) {
             flushBuffer();
-            const bgId = getAttr(trimmed, "id");
+            let bgId = null;
+            let finalSrc = null;
+
+            if (trimmed.startsWith("[backgroundlayoutgroup")) {
+                const layoutMatch = trimmed.match(/backgroundlayout\s+id=([^ \]]+)/);
+                if (layoutMatch) bgId = layoutMatch[1];
+            } else {
+                bgId = getAttr(trimmed, "id");
+            }
+
             if (bgId && backgroundMap[bgId]) {
+                finalSrc = resolveBackgroundSrc(backgroundMap[bgId]);
+            } else if (bgId) {
+                let roughSrc = `env_adv_2d_${bgId.replace("-000", "")}`;
+                finalSrc = `${R2_BG_URL}/${roughSrc}.webp`;
+            }
+
+            if (finalSrc) {
                 scriptData.push({
                     type: "background",
-                    src: `${R2_BG_URL}/${backgroundMap[bgId]}.webp`,
-                    bgName: bgId
+                    src: finalSrc,
+                    bgName: bgId || "unknown_bg"
                 });
             }
             continue;
@@ -119,8 +167,7 @@ const parseLines = (lines, assetId) => {
 
         // 3. BGM
         if (trimmed.startsWith("[bgmplay") || (trimmed.startsWith("[bgm ") && !trimmed.startsWith("[bgmstop"))) {
-            flushBuffer();
-            // Handle variasi tag [bgm] atau [bgmplay]
+            flushBuffer(); 
             const bgmId = getAttr(trimmed, "bgm");
             if (bgmId) {
                 scriptData.push({
@@ -150,7 +197,8 @@ const parseLines = (lines, assetId) => {
                 if (currentDialog && currentDialog.startTime !== null && seStartTime !== null) {
                     if (seStartTime >= (currentDialog.startTime - 0.5)) {
                         const delayMs = Math.max(0, (seStartTime - currentDialog.startTime) * 1000);
-                        currentDialog.sfxList.push({ src: seSrc, delay: delayMs });
+                        // Tambahkan properti startTime ke dalam array agar bisa direkalkulasi nanti jika digabung
+                        currentDialog.sfxList.push({ src: seSrc, delay: delayMs, startTime: seStartTime });
                         attached = true;
                     }
                 }
@@ -163,7 +211,7 @@ const parseLines = (lines, assetId) => {
                             if (seStartTime !== null && lastItem.startTime !== null && seStartTime >= (lastItem.startTime - 0.5)) {
                                 const delayMs = Math.max(0, (seStartTime - lastItem.startTime) * 1000);
                                 if (!lastItem.sfxList) lastItem.sfxList = [];
-                                lastItem.sfxList.push({ src: seSrc, delay: delayMs });
+                                lastItem.sfxList.push({ src: seSrc, delay: delayMs, startTime: seStartTime });
                                 attached = true;
                             }
                             break;
@@ -178,9 +226,16 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 5. DIALOGUE & NARRATION (FIX MERGING)
+        // 5. DIALOGUE & NARRATION
         if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
             
+            // HAPUS LOGIKA PENGGABUNGAN MANUAL DI SINI. 
+            // Kita serahkan penggabungan sepenuhnya pada tag [voice] nanti.
+            if (currentDialog) {
+                scriptData.push(currentDialog);
+                currentDialog = null;
+            }
+
             const isNarration = trimmed.startsWith("[narration");
             let inlineText = extractMessageText(trimmed); 
             if (!inlineText) inlineText = getAttr(trimmed, "text");
@@ -190,7 +245,6 @@ const parseLines = (lines, assetId) => {
             let speakerCode = getAttr(trimmed, "window");
             let iconUrl = null;
 
-            // Resolve Speaker
             const thumbRaw = getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
             if (thumbRaw) {
                 const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
@@ -201,44 +255,8 @@ const parseLines = (lines, assetId) => {
             if (isNarration) speakerCode = null;
             if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
-            // --- LOGIKA MERGING ---
-            // Cek apakah dialog sebelumnya punya speaker yang sama DAN belum punya voice.
-            // Jika ya, kemungkinan ini adalah satu kalimat yang terpecah di file teks.
-            if (currentDialog && 
-                currentDialog.speakerCode === speakerCode && 
-                !currentDialog.voiceUrl && 
-                !isNarration // Narasi jarang digabung, biasanya dialog karakter
-            ) {
-                // GABUNGKAN TEKS
-                // Tambahkan spasi atau newline tergantung preferensi. Newline lebih aman untuk VN.
-                currentDialog.text += "\n" + (inlineText || "");
-                
-                // Jika ada SFX yang "mengantri" di antara pecahan kalimat ini, tempelkan ke dialog gabungan
-                if (pendingSfx.length > 0) {
-                    pendingSfx.forEach(sfx => {
-                        let delayMs = 0;
-                        if (currentDialog.startTime !== null && sfx.startTime !== null) {
-                            delayMs = Math.max(0, (sfx.startTime - currentDialog.startTime) * 1000);
-                        }
-                        currentDialog.sfxList.push({ src: sfx.src, delay: delayMs });
-                    });
-                    pendingSfx = [];
-                }
-                
-                // Jangan buat dialog baru, lanjutkan loop
-                continue; 
-            }
-            // ---------------------
-
-            // Jika tidak di-merge, flush yang lama
-            if (currentDialog) {
-                scriptData.push(currentDialog);
-                currentDialog = null;
-            }
-
-            // Resolve Names & Icons for New Dialog
-            if (!displayName && speakerCode && CHARACTER_NAMES[speakerCode]) {
-                displayName = CHARACTER_NAMES[speakerCode];
+            if (!displayName && speakerCode && SPEAKER_MAP[speakerCode]) {
+                displayName = SPEAKER_MAP[speakerCode];
             }
             
             if (speakerCode && ICON_MAP[speakerCode]) {
@@ -260,14 +278,13 @@ const parseLines = (lines, assetId) => {
                 sfxList: []
             };
 
-            // Attach Pending SFX to this new dialog
+            // Attach Pending SFX
             if (pendingSfx.length > 0) {
                 pendingSfx.forEach(sfx => {
                     if (startTime !== null && sfx.startTime !== null && sfx.startTime >= (startTime - 0.5)) {
                         const delayMs = Math.max(0, (sfx.startTime - startTime) * 1000);
-                        newDialog.sfxList.push({ src: sfx.src, delay: delayMs });
+                        newDialog.sfxList.push({ src: sfx.src, delay: delayMs, startTime: sfx.startTime });
                     } else {
-                        // SFX terlalu jauh di belakang, jadikan standalone
                         scriptData.push(sfx); 
                     }
                 });
@@ -278,44 +295,134 @@ const parseLines = (lines, assetId) => {
             continue;
         }
 
-        // 6. VOICE
+        // 6. VOICE & SMART MERGING TIMELINE
         if (trimmed.startsWith("[voice")) {
             const voiceFile = getAttr(trimmed, "voice");
             const actorId = getAttr(trimmed, "actorId");
             const voiceUrl = voiceFile ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a` : null;
 
-            let target = currentDialog;
-            if (!target && scriptData.length > 0) {
-                // Backtrack untuk mencari dialog terakhir
-                for (let j = scriptData.length - 1; j >= 0; j--) {
-                    if (scriptData[j].type === "dialogue") {
-                        target = scriptData[j];
-                        break; 
-                    }
-                }
-            }
+            // Ambil timeline audio
+            const vStart = getStartTime(trimmed);
+            const vDur = getDuration(trimmed);
+            const vEnd = (vStart !== null && vDur !== null) ? (vStart + vDur) : null;
 
-            if (target) {
-                if (voiceUrl) target.voiceUrl = voiceUrl;
-                if (actorId) {
-                    const code = actorId.toLowerCase();
-                    if (!target.speakerCode || target.speakerCode === "unknown") {
-                        target.speakerCode = code;
-                        if (!target.iconUrl && ICON_MAP[code]) {
-                            target.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
+            if (voiceUrl && vStart !== null && vEnd !== null) {
+                let matchingDialogs = [];
+
+                // 1. Cari semua pesan di history scriptData yang masuk ke durasi suara
+                for (let j = 0; j < scriptData.length; j++) {
+                    const item = scriptData[j];
+                    if (item && item.type === "dialogue" && item.startTime !== null) {
+                        // Toleransi 0.5 detik
+                        if (item.startTime >= vStart - 0.5 && item.startTime <= vEnd + 0.5) {
+                            matchingDialogs.push({ source: 'scriptData', index: j, item: item });
                         }
                     }
+                }
+
+                // 2. Cari juga di currentDialog (pesan yang baru saja ditangkap)
+                if (currentDialog && currentDialog.startTime !== null) {
+                    if (currentDialog.startTime >= vStart - 0.5 && currentDialog.startTime <= vEnd + 0.5) {
+                        matchingDialogs.push({ source: 'currentDialog', index: -1, item: currentDialog });
+                    }
+                }
+
+                // 3. LAKUKAN PENGGABUNGAN
+                if (matchingDialogs.length > 0) {
+                    // Jadikan Dialog TERAKHIR sebagai Induk (Primary)
+                    // Mengapa yang terakhir? Agar background/camera yg muncul sebelumnya tetap tereksekusi duluan di layar.
+                    const primaryMatch = matchingDialogs[matchingDialogs.length - 1];
+                    const primary = primaryMatch.item;
+
+                    primary.voiceUrl = voiceUrl;
+                    if (actorId) {
+                        const code = actorId.toLowerCase();
+                        if (!primary.speakerCode || primary.speakerCode === "unknown") {
+                            primary.speakerCode = code;
+                            if (!primary.iconUrl && ICON_MAP[code]) {
+                                primary.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
+                            }
+                        }
+                    }
+
+                    // Gabung teks & rekalkulasi jeda SFX
+                    let mergedText = "";
+                    let mergedSfx = [];
+                    // SFX dihitung relatif terhadap Dialog PERTAMA, karena Audio jalan sejak saat itu.
+                    const baseStartTime = matchingDialogs[0].item.startTime; 
+
+                    for (let k = 0; k < matchingDialogs.length; k++) {
+                        const matchObj = matchingDialogs[k];
+                        const item = matchObj.item;
+
+                        // Gabung Teks
+                        mergedText += (mergedText ? "\n" : "") + (item.text || "");
+
+                        // Rekalkulasi SFX Delay
+                        if (item.sfxList && item.sfxList.length > 0) {
+                            item.sfxList.forEach(sfx => {
+                                let newDelay = 0;
+                                if (sfx.startTime !== undefined && baseStartTime !== null) {
+                                    newDelay = Math.max(0, (sfx.startTime - baseStartTime) * 1000);
+                                } else {
+                                    newDelay = sfx.delay;
+                                }
+                                mergedSfx.push({ ...sfx, delay: newDelay, startTime: sfx.startTime });
+                            });
+                        }
+
+                        // HAPUS dialog pecahan (kecuali si Induk) dari buffer
+                        if (k !== matchingDialogs.length - 1) {
+                            if (matchObj.source === 'scriptData') {
+                                scriptData[matchObj.index] = null; // Tandai untuk dihapus
+                            } else if (matchObj.source === 'currentDialog') {
+                                currentDialog = null;
+                            }
+                        }
+                    }
+
+                    primary.text = mergedText;
+                    primary.sfxList = mergedSfx;
+
+                    // Bersihkan `null` dari scriptData
+                    for (let i = scriptData.length - 1; i >= 0; i--) {
+                        if (scriptData[i] === null) {
+                            scriptData.splice(i, 1);
+                        }
+                    }
+                } else {
+                    // Fallback (jika audio tidak punya dialog yg cocok)
+                    let target = currentDialog;
+                    if (!target && scriptData.length > 0) {
+                        for (let j = scriptData.length - 1; j >= 0; j--) {
+                            if (scriptData[j] && scriptData[j].type === "dialogue") {
+                                target = scriptData[j];
+                                break; 
+                            }
+                        }
+                    }
+                    if (target) {
+                        target.voiceUrl = voiceUrl;
+                    }
+                }
+            } else {
+                // Fallback (jika vStart atau vEnd gagal diparsing)
+                let target = currentDialog;
+                if (!target && scriptData.length > 0) {
+                    for (let j = scriptData.length - 1; j >= 0; j--) {
+                        if (scriptData[j] && scriptData[j].type === "dialogue") {
+                            target = scriptData[j];
+                            break; 
+                        }
+                    }
+                }
+                if (target) {
+                    target.voiceUrl = voiceUrl;
                 }
             }
             continue;
         }
         
-        // 7. JUMPS (Linear story usually minimal jumps, but handle it just in case)
-        if (trimmed.startsWith("[jump")) {
-            flushBuffer();
-            scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
-            continue;
-        }
     }
 
     flushBuffer();
@@ -341,7 +448,6 @@ const fetchData = (url) => {
 (async () => {
     if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-    // 1. Baca daftar file dari folderList.txt
     let FILE_LIST = [];
     try {
         const listContent = fs.readFileSync(FOLDER_LIST_PATH, 'utf-8');
@@ -361,19 +467,16 @@ const fetchData = (url) => {
         const fileName = FILE_LIST[i];
         const assetId = fileName.replace(".txt", ""); 
         
-        // Format: adv_bond_[char]_[set]_[ep].txt
-        // Contoh: adv_bond_ai_01_01.txt -> char=ai, set=01, ep=01
         const parts = assetId.split("_");
         
-        // Validasi format
         if (parts.length < 5) {
             console.warn(`[SKIP] Invalid format: ${fileName}`);
             continue;
         }
 
         const groupCode = parts[2];
-        const setNum = parts[3]; // Biasanya 01 (Bond Story 1?)
-        const episodeNum = parseInt(parts[4]); 
+        const setNum = parts[3];
+        const episodeNum = parts[4]; 
 
         try {
             const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);
@@ -381,7 +484,6 @@ const fetchData = (url) => {
             
             const { scriptData, title } = parseLines(rawContent.replace(/\r\n/g, "\n").split("\n"), assetId);
             
-            // Generate Title jika tidak ada di script
             const displayTitle = title || `Episode ${episodeNum}`;
 
             const jsonFileName = `${assetId}.json`;
@@ -396,7 +498,6 @@ const fetchData = (url) => {
             
             totalFilesProcessed++;
 
-            // Grouping Logic
             if (!groupedGroups[groupCode]) {
                 const groupName = GROUP_NAMES[groupCode] || groupCode.toUpperCase();
                 groupedGroups[groupCode] = {
@@ -406,7 +507,7 @@ const fetchData = (url) => {
                 };
             }
 
-            const epNumIndex = parseInt(setNum) * 10 + parseInt(episodeNum)
+            const epNumIndex = parseInt(setNum) * 10 + parseInt(episodeNum);
 
             groupedGroups[groupCode].stories.push({
                 id: assetId,
@@ -420,12 +521,10 @@ const fetchData = (url) => {
         }
     }
 
-    // Convert Object to Array & Sort
     const indexData = Object.values(groupedGroups).map(groupGroup => {
-        // Sort episodes by number (01, 02, 03...)
         groupGroup.stories.sort((a, b) => a.epNum - b.epNum);
         return groupGroup;
-    }).sort((a, b) => a.id.localeCompare(b.id)); // Sort character by ID
+    }).sort((a, b) => a.id.localeCompare(b.id));
 
     fs.writeFileSync(path.join(OUTPUT_DIR, "index_main.json"), JSON.stringify(indexData, null, 2));
 

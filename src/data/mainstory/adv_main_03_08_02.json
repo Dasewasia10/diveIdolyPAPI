@@ -33,16 +33,6 @@
       "src": "https://api.diveidolypapi.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "司会者",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "さあ、今回の勝者は～～……",
-      "startTime": 0.8,
-      "sfxList": []
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_gpstage-00-noon.webp",
       "bgName": "gpstage-00-noon"
@@ -53,12 +43,13 @@
       "speakerName": "司会者",
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-host001.m4a",
-      "text": "『Oh！ Romantic』です！",
+      "text": "さあ、今回の勝者は～～……\n『Oh！ Romantic』です！",
       "startTime": 4.8,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-          "delay": 1066.6666666999997
+          "delay": 1066.6666666999997,
+          "startTime": 5.8666666667
         }
       ]
     },
@@ -66,16 +57,6 @@
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_gpstage-00-noon.webp",
       "bgName": "gpstage-00-noon"
-    },
-    {
-      "type": "dialogue",
-      "speakerCode": "unknown",
-      "speakerName": "司会者",
-      "iconUrl": null,
-      "voiceUrl": null,
-      "text": "いや～、本当に僅差での勝利でしたね",
-      "startTime": 8.2999996185,
-      "sfxList": []
     },
     {
       "type": "background",
@@ -88,9 +69,14 @@
       "speakerName": "司会者",
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-host002.m4a",
-      "text": "白熱したバトルをありがとうございました！",
+      "text": "いや～、本当に僅差での勝利でしたね\n白熱したバトルをありがとうございました！",
       "startTime": 12.0333333333,
       "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
       "type": "background",
@@ -144,7 +130,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-mei001.m4a",
       "text": "でもさ、ライブは楽しかったよね\nお客さんもすっごい盛り上がってくれたし！",
-      "startTime": 32.1095006467,
+      "startTime": 35.6095010282,
       "sfxList": []
     },
     {
@@ -159,7 +145,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-suzu.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-suz001.m4a",
       "text": "そうですわ。負けたからと言ってくよくよする暇など\n私達にはありませんわよ！",
-      "startTime": 39.6095006467,
+      "startTime": 43.8,
       "sfxList": []
     },
     {
@@ -189,7 +175,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski002.m4a",
       "text": "さっそく事務所に戻って\n映像を観ながら反省会をしましょう！",
-      "startTime": 51.3559616567,
+      "startTime": 53.1333333333,
       "sfxList": []
     },
     {
@@ -204,8 +190,13 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-kohei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-koh002.m4a",
       "text": "会場の外にはマスコミが張ってるから\nいつもとは違う出口を使おう。ついて来てくれ",
-      "startTime": 55.6910862447,
+      "startTime": 58.1333333333,
       "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
       "type": "background",
@@ -234,11 +225,12 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-mei002.m4a",
       "text": "待って。ちょっと戻してもらっていい？\n……ここ、もっとかっこ良く出来るんじゃないかな",
-      "startTime": 69.8787052633,
+      "startTime": 74.9453723115,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
-          "delay": 2621.2947366999942
+          "delay": 2621.2947366999942,
+          "startTime": 72.5
         }
       ]
     },
@@ -264,7 +256,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski003.m4a",
       "text": "今までなら良しとしていた部分でも\nまだまだ改善の余地がありそうですね",
-      "startTime": 83.6935840768,
+      "startTime": 86.3666702271,
       "sfxList": []
     },
     {
@@ -279,7 +271,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ngs003.m4a",
       "text": "あ、ここの振り付け……。私、無意識に\n五人の時と同じ大きさの動きになってたかも",
-      "startTime": 89.0122234506,
+      "startTime": 93.0788904987,
       "sfxList": []
     },
     {
@@ -289,7 +281,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski004.m4a",
       "text": "私もです。つい今までの癖で\n五人いる状態でのステージングにしがちですね",
-      "startTime": 96.7122234506,
+      "startTime": 100.1000035604,
       "sfxList": []
     },
     {
@@ -304,7 +296,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-suzu.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-suz004.m4a",
       "text": "だから、フォーメーションだけ変えても\n動きがこぢんまりして見えるのかもしれませんわね",
-      "startTime": 103.3170757455,
+      "startTime": 106.1666702271,
       "sfxList": []
     },
     {
@@ -343,16 +335,6 @@
       "bgName": "tokyoconference-00-noon"
     },
     {
-      "type": "dialogue",
-      "speakerCode": "ski",
-      "speakerName": "白石沙季",
-      "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
-      "voiceUrl": null,
-      "text": "集中しているとあっという間ですね",
-      "startTime": 121.7219137671,
-      "sfxList": []
-    },
-    {
       "type": "background",
       "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
       "bgName": "tokyoconference-00-noon"
@@ -363,7 +345,7 @@
       "speakerName": "白石沙季",
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski005.m4a",
-      "text": "そろそろ寮に……芽衣ちゃん？　どうしたんですか？",
+      "text": "集中しているとあっという間ですね\nそろそろ寮に……芽衣ちゃん？　どうしたんですか？",
       "startTime": 124.9333368938,
       "sfxList": []
     },
@@ -379,7 +361,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-mei004.m4a",
       "text": "ねえ、ちょっとだけ練習していかない？\nなんだかうずうずしちゃって",
-      "startTime": 129.5870838645,
+      "startTime": 133.987076108,
       "sfxList": []
     },
     {
@@ -419,7 +401,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski006.m4a",
       "text": "……実は私も、反省会で出た内容を\n早く試したいと思っていました",
-      "startTime": 145.5804852966,
+      "startTime": 148.9333333333,
       "sfxList": []
     },
     {
@@ -464,7 +446,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski007.m4a",
       "text": "疲れも溜まっていますから\n無理はしないようにしましょうね",
-      "startTime": 158.118059874,
+      "startTime": 160.0333358765,
       "sfxList": []
     },
     {
@@ -479,11 +461,12 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-mei.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-mei005.m4a",
       "text": "はーい！\nよーし、いっくぞー！",
-      "startTime": 162.1988905117,
+      "startTime": 164.0655575598,
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
-          "delay": 3401.1120314999916
+          "delay": 3401.1120314999916,
+          "startTime": 165.6000025432
         }
       ]
     },
@@ -503,7 +486,8 @@
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
-          "delay": 1934.4357008999964
+          "delay": 1934.4357008999964,
+          "startTime": 169
         }
       ]
     },
@@ -538,9 +522,15 @@
       "sfxList": [
         {
           "src": "https://api.diveidolypapi.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-          "delay": 9265.256738099994
+          "delay": 9265.256738099994,
+          "startTime": 181.9000045776
         }
       ]
+    },
+    {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_gpstage-00-noon.webp",
+      "bgName": "gpstage-00-noon"
     },
     {
       "type": "background",
@@ -564,7 +554,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-host003.m4a",
       "text": "今回の勝者は……\n月のテンペスト！",
-      "startTime": 177.6347498739,
+      "startTime": 180.1500220144,
       "sfxList": []
     },
     {
@@ -593,6 +583,11 @@
       "bgName": "stagesleeves-00-noon"
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "伊吹渚",
@@ -609,7 +604,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski009.m4a",
       "text": "以前勝ったことのあるグループが相手で、なおかつ\n僅差ではありましたけど……それでも嬉しいですね",
-      "startTime": 191.7680872763,
+      "startTime": 195.1,
       "sfxList": []
     },
     {
@@ -664,7 +659,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-nagisa.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ngs009.m4a",
       "text": "……みんな、行こう？　あんまりこういう話は\n聞かない方がいいだろうし",
-      "startTime": 211.2601946359,
+      "startTime": 214.9000035603,
       "sfxList": []
     },
     {
@@ -679,7 +674,7 @@
       "iconUrl": null,
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-vanurstaffb001.m4a",
       "text": "確かに、ちょっと驚いたな\n四人は四人で違う良さがあるというか",
-      "startTime": 217.2601946359,
+      "startTime": 220.260194,
       "sfxList": []
     },
     {
@@ -698,6 +693,11 @@
       "sfxList": []
     },
     {
+      "type": "background",
+      "src": "https://api.diveidolypapi.my.id/storyBackground/env_adv_2d_living-01-night.webp",
+      "bgName": "env_adv_3d_living-01-000-night"
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ski",
       "speakerName": "白石沙季",
@@ -714,7 +714,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-suzu.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-suz009.m4a",
       "text": "どんなものかはまだ分かりませんけれど……\n四人だからこそ出来るパフォーマンスが",
-      "startTime": 238.7130036552,
+      "startTime": 235.700372013,
       "sfxList": []
     },
     {
@@ -744,7 +744,7 @@
       "iconUrl": "https://api.diveidolypapi.my.id/iconCharacter/chara-saki.png",
       "voiceUrl": "https://api.diveidolypapi.my.id/mainStoryVoice/sud_vo_adv_main_03_08_02/sud_vo_adv_main_03_08_02-ski011.m4a",
       "text": "それなら、まずは四人の強みを、私達自身が\n掴むところから始める必要がありますね",
-      "startTime": 251.8166305071,
+      "startTime": 256.0000035603,
       "sfxList": []
     },
     {
