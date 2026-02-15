@@ -60,9 +60,11 @@ app.get("/", (_req, res) => {
       lyrics: "/api/lyrics",
       characters: "/api/characters",
       stamps: "/api/stamps",
-      messages: "/api/messages/index.json",
-      lovestory: "/api/lovestory/index.json", 
-      bondstory: "/api/lovestory/index_bond.json", 
+      // messages: "/api/messages/index.json",
+      // lovestory: "/api/lovestory/index.json", 
+      // bondstory: "/api/bondstory/index_bond.json", 
+      // extrastory: "/api/extrastory/index_extra.json", 
+      // mainstory: "/api/mainstory/index_main.json", 
       musicRouter: "/api/music"
     },
   });
@@ -156,54 +158,6 @@ app.get("/api/characters/group/:groupName", (req, res) => {
 // --- Stamp Endpoints ---
 app.get("/api/stamps", (_req, res) => {
   res.json(stampSources);
-});
-
-app.get("/api/img/stamps/:imageCharacter/:imageExpression", async (req, res) => {
-  const { imageCharacter } = req.params;
-  const { imageExpression } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/stampChat/stamp_${imageCharacter}-${imageExpression}.webp`;
-  
-  // Tambahkan CORS headers sebelum redirect
-  res.set({
-    "Access-Control-Allow-Origin": "*",
-    'Access-Control-Allow-Methods': 'GET'
-  });
-  res.redirect(301, imageUrl);
-});
-
-// -- Image of character details ===
-// Mendapatkan data gambar icon character
-app.get('/api/img/character/icon/:imageName', async (req, res) => {
-  const { imageName } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/iconCharacter/chara-${imageName}.png`;
-  
-  // Tambahkan CORS headers sebelum redirect
-  res.set({
-    "Access-Control-Allow-Origin": "*",
-    'Access-Control-Allow-Methods': 'GET'
-  });
-  res.redirect(301, imageUrl);
-});
-
-// Mendapatkan data gambar banner character
-app.get('/api/img/character/banner/:imageName', (req, res) => {
-  const { imageName } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/bannerCharacter/banner-${imageName}.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar sprite1 character
-app.get('/api/img/character/sprite1/:imageName', (req, res) => {
-  const { imageName } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/spriteCharacter/sprite-${imageName}-01.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
-});
-
-// Mendapatkan data gambar sprite2 character
-app.get('/api/img/character/sprite2/:imageName', (req, res) => {
-  const { imageName } = req.params;
-  const imageUrl = `https://api.diveidolypapi.my.id/spriteCharacter/sprite-${imageName}-02.png`;
-  res.redirect(301, imageUrl); // 301: Permanent Redirect
 });
 
 // --- Message System Endpoints (Dynamic File Reading) ---
