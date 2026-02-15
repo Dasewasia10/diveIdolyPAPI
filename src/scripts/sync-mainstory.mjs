@@ -511,7 +511,7 @@ const fetchData = (url) => {
 
             groupedGroups[groupCode].stories.push({
                 id: assetId,
-                title: displayTitle + " " + setNum + " " + episodeNum,
+                title: displayTitle,
                 epNum: epNumIndex,
                 fileName: jsonFileName
             });
