@@ -207,7 +207,7 @@ app.get("/api/lovestory/stories/:id.json", (req, res) => {
   const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_love_...
   const filePath = path.join(
     process.cwd(),
-    "src/data/lovestory/stories",
+    "src/data/lovestory",
     `${safeId}.json`,
   );
 
