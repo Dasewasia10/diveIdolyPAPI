@@ -1,7 +1,7 @@
 {
-  "id": "message-instant-suz-00031",
+  "id": "message-card-suz-05-msic-00",
   "groupId": "message_group_suz",
-  "name": "番組に出たいんですの",
+  "name": "「星降る夜に誓う夢」",
   "characterId": "char-suz",
   "details": [
     {
@@ -12,7 +12,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "{user}さん",
+      "text": "もしかしてですけど",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -22,15 +22,32 @@
       "delay": 0
     },
     {
-      "id": "10",
+      "id": "10-1",
       "speaker": {
-        "isPlayer": false,
-        "characterId": "char-suz",
-        "name": "Suzu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
       },
-      "text": "わかっていますわ！！！",
-      "isChoice": false,
+      "text": "なぜここで麻奈が？",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "11"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "10-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "どうしてそう思うんだ？",
+      "isChoice": true,
       "stamp": null,
       "image": null,
       "nextIds": [
@@ -46,7 +63,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "さすがの私も",
+      "text": "麻奈様といえば星見まつりのステージ！　そしてその好物はカレー！",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -63,7 +80,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "雫の実力は認めますわ",
+      "text": "その功績を讃えて、星見市のお祭りでカレーを出すようになったんですわ！",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -80,43 +97,25 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "けどですのーーーーー",
+      "text": "それに偶然だとしても",
       "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
-        "14-1",
-        "14-2"
+        "14"
       ],
       "delay": 0
     },
     {
-      "id": "14-1",
+      "id": "14",
       "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
+        "isPlayer": false,
+        "characterId": "char-suz",
+        "name": "Suzu",
+        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "その言い方初めて聞いたよ",
-      "isChoice": true,
-      "stamp": null,
-      "image": null,
-      "nextIds": [
-        "15"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "14-2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "けどですのは新しいね",
-      "isChoice": true,
+      "text": "そう考えた方が嬉しくなれるでしょう？",
+      "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
@@ -132,25 +131,43 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "そんなことどうでもいいんですのよ！",
+      "text": "今も星見市の人々が、麻奈様を忘れないでいるのだと思えますし",
       "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
-        "16"
+        "16-1",
+        "16-2"
       ],
       "delay": 0
     },
     {
-      "id": "16",
+      "id": "16-1",
       "speaker": {
-        "isPlayer": false,
-        "characterId": "char-suz",
-        "name": "Suzu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
       },
-      "text": "いろいろ勉強はしているつもりですわ",
-      "isChoice": false,
+      "text": "確かにそうかもしれない",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "17"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "16-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "麻奈も嬉しいだろうね",
+      "isChoice": true,
       "stamp": null,
       "image": null,
       "nextIds": [
@@ -166,7 +183,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "以前よりも間違いなく知識はついているはずですの",
+      "text": "こうしてはいられませんわ",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -183,43 +200,25 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "以前の私とは違いますのよ！",
+      "text": "麻奈様のようにお祭りの屋台に好物が並ぶくらいのアイドルになってみせます",
       "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
-        "19-1",
-        "19-2"
+        "19"
       ],
       "delay": 0
     },
     {
-      "id": "19-1",
+      "id": "19",
       "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
+        "isPlayer": false,
+        "characterId": "char-suz",
+        "name": "Suzu",
+        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "気づいてあげられなくて申し訳ない",
-      "isChoice": true,
-      "stamp": null,
-      "image": null,
-      "nextIds": [
-        "20"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "19-2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "ごめん。それは知らなかった",
-      "isChoice": true,
+      "text": "ポテトチップスや焼肉で埋め尽くされるお祭り会場",
+      "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
@@ -235,12 +234,13 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "ちょっとちょっと",
+      "text": "カレーの屋台ってめずらしいんですの？",
       "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
-        "3"
+        "3-1",
+        "3-2"
       ],
       "delay": 0
     },
@@ -252,9 +252,9 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "",
+      "text": "素敵ですわね…",
       "isChoice": false,
-      "stamp": "https://apiip.dasewasia.my.id/stampChat/stamp_dog-wow.webp",
+      "stamp": null,
       "image": null,
       "nextIds": [
         "21"
@@ -269,7 +269,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "わかればいいんですのよ",
+      "text": "考えただけでよだれが",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -286,60 +286,60 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "急に謝らないでくださる？",
+      "text": "",
       "isChoice": false,
-      "stamp": null,
+      "stamp": "https://apiip.dasewasia.my.id/stampChat/stamp_dog-love.webp",
       "image": null,
       "nextIds": [
-        "23"
+        "23-1",
+        "23-2"
       ],
       "delay": 0
     },
     {
-      "id": "23",
+      "id": "23-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "素敵…かな？",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "24"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "23-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "少し飛躍し過ぎなような",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "24"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "24",
       "speaker": {
         "isPlayer": false,
         "characterId": "char-suz",
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "やりづらいで��わ",
+      "text": "でも星見市のお祭りの屋台に私と麻奈様の好物だけでなく",
       "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "nextIds": [
-        "24-1",
-        "24-2"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "24-1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "今度雫と話し合っておくよ",
-      "isChoice": true,
-      "stamp": null,
-      "image": null,
-      "nextIds": [
-        "25"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "24-2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "一度すずが出てみようか",
-      "isChoice": true,
       "stamp": null,
       "image": null,
       "nextIds": [
@@ -355,7 +355,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "ほんとですの！！！？",
+      "text": "星見プロのアイドル達の好きな食べ物も並ぶといいですわね",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -372,25 +372,43 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "",
+      "text": "それだけ私達が愛されている証拠にもなりますから",
       "isChoice": false,
-      "stamp": "https://apiip.dasewasia.my.id/stampChat/stamp_dog-love.webp",
+      "stamp": null,
       "image": null,
       "nextIds": [
-        "27"
+        "27-1",
+        "27-2"
       ],
       "delay": 0
     },
     {
-      "id": "27",
+      "id": "27-1",
       "speaker": {
-        "isPlayer": false,
-        "characterId": "char-suz",
-        "name": "Suzu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
       },
-      "text": "スタンプ間違えましたわ！！",
-      "isChoice": false,
+      "text": "楽しそうだな",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "28"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "27-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "俺の好物も置いてほしい",
+      "isChoice": true,
       "stamp": null,
       "image": null,
       "nextIds": [
@@ -406,9 +424,9 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "とにかく感謝ですわ",
+      "text": "",
       "isChoice": false,
-      "stamp": null,
+      "stamp": "https://apiip.dasewasia.my.id/stampChat/stamp_dog-ok.webp",
       "image": null,
       "nextIds": [
         "29"
@@ -423,7 +441,127 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "がんばりますわよ！",
+      "text": "そういう企画、ありかもしれませんわね",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "30"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "メジャーではないかも",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "3-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "あまり見ないかな",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "4"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "30",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-suz",
+        "name": "Suzu",
+        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
+      },
+      "text": "ということで任せましたわよ",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "31-1",
+        "31-2"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "31-1",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "えっ！？",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "32"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "31-2",
+      "speaker": {
+        "isPlayer": true,
+        "characterId": "manager",
+        "name": "Manager",
+        "icon": null
+      },
+      "text": "前向きに検討しよう",
+      "isChoice": true,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "32"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "32",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-suz",
+        "name": "Suzu",
+        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
+      },
+      "text": "さすがに冗談ですわ",
+      "isChoice": false,
+      "stamp": null,
+      "image": null,
+      "nextIds": [
+        "33"
+      ],
+      "delay": 0
+    },
+    {
+      "id": "33",
+      "speaker": {
+        "isPlayer": false,
+        "characterId": "char-suz",
+        "name": "Suzu",
+        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
+      },
+      "text": "ですがいつか叶うのでしたら…やってみたいですわね",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -431,7 +569,7 @@
       "delay": 0
     },
     {
-      "id": "3",
+      "id": "4",
       "speaker": {
         "isPlayer": false,
         "characterId": "char-suz",
@@ -440,42 +578,7 @@
       },
       "text": "",
       "isChoice": false,
-      "stamp": "https://apiip.dasewasia.my.id/stampChat/stamp_dog-hey.webp",
-      "image": null,
-      "nextIds": [
-        "4-1",
-        "4-2"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "4-1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "気づいているよ！",
-      "isChoice": true,
-      "stamp": null,
-      "image": null,
-      "nextIds": [
-        "5"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "4-2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "どうした？",
-      "isChoice": true,
-      "stamp": null,
+      "stamp": "https://apiip.dasewasia.my.id/stampChat/stamp_dog-wow.webp",
       "image": null,
       "nextIds": [
         "5"
@@ -490,7 +593,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "クイズ番組私も出たいんですの",
+      "text": "やはりそうですのね！",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -507,7 +610,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "どうしたらいいんですの？",
+      "text": "理由はやはりいたみやすいからかしら",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -524,7 +627,7 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "いつも雫ばっかり呼ばれて",
+      "text": "星見市のお祭りでよく見ていたからそれが普通だと思っていましたわ",
       "isChoice": false,
       "stamp": null,
       "image": null,
@@ -541,47 +644,30 @@
         "name": "Suzu",
         "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "くやしいんですのよ！！！",
+      "text": "この前の春祭りでも見かけましたし",
       "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
-        "9-1",
-        "9-2"
+        "9"
       ],
       "delay": 0
     },
     {
-      "id": "9-1",
+      "id": "9",
       "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
+        "isPlayer": false,
+        "characterId": "char-suz",
+        "name": "Suzu",
+        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png"
       },
-      "text": "そうは言ってもな",
-      "isChoice": true,
+      "text": "まさか、これも麻奈様の影響だったりするんでしょうか？",
+      "isChoice": false,
       "stamp": null,
       "image": null,
       "nextIds": [
-        "10"
-      ],
-      "delay": 0
-    },
-    {
-      "id": "9-2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "manager",
-        "name": "Manager",
-        "icon": null
-      },
-      "text": "雫が圧倒的だからな",
-      "isChoice": true,
-      "stamp": null,
-      "image": null,
-      "nextIds": [
-        "10"
+        "10-1",
+        "10-2"
       ],
       "delay": 0
     }
