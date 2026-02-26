@@ -19,6 +19,7 @@ import loveStoryIndex from "./src/data/lovestory/index.json" with { type: "json"
 import bondStoryIndex from "./src/data/bondstory/index_bond.json" with { type: "json" };
 import mainStoryIndex from "./src/data/mainstory/index_main.json" with { type: "json" };
 import extraStoryIndex from "./src/data/extrastory/index_extra.json" with { type: "json" };
+import cardStoryIndex from "./src/data/cardstory/index.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 import diaryMana from "./src/data/diaryMana/diaryMana.json" with { type: "json" };
@@ -301,6 +302,37 @@ app.get("/api/extrastory/stories/:id.json", (req, res) => {
   const filePath = path.join(
     process.cwd(),
     "src/data/extrastory",
+    `${safeId}.json`,
+  );
+
+  try {
+    if (fs.existsSync(filePath)) {
+      const fileContent = fs.readFileSync(filePath, "utf-8");
+      const data = JSON.parse(fileContent);
+      res.json(data);
+    } else {
+      res.status(404).json({ error: "Story script not found" });
+    }
+  } catch (error) {
+    console.error("Error reading story file:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+// --- Card Story Endpoints (Dynamic File Reading) ---
+
+// 1. Get Card Story Index
+app.get("/api/cardstory/index.json", (_req, res) => {
+  res.json(cardStoryIndex);
+});
+
+// 2. Get Card Story Script Details
+app.get("/api/cardstory/stories/:id.json", (req, res) => {
+  const { id } = req.params;
+  const safeId = id.replace(/[^a-zA-Z0-9_]/g, ""); // Allow underscores for adv_Card_...
+  const filePath = path.join(
+    process.cwd(),
+    "src/data/cardstory/detail/",
     `${safeId}.json`,
   );
 
