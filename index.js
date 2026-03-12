@@ -20,7 +20,7 @@ import bondStoryIndex from "./src/data/bondstory/index_bond.json" with { type: "
 import mainStoryIndex from "./src/data/mainstory/index_main.json" with { type: "json" };
 import extraStoryIndex from "./src/data/extrastory/index_extra.json" with { type: "json" };
 import cardStoryIndex from "./src/data/cardstory/index.json" with { type: "json" };
-import eventStoryIndex from "./src/data/Eventstory/index.json" with { type: "json" };
+import eventStoryIndex from "./src/data/eventstory/index.json" with { type: "json" };
 import wordleWords from "./src/data/wordle/words.json" with { type: "json" };
 import gachaList from "./src/data/gacha/gachaList.json" with { type: "json" };
 import diaryMana from "./src/data/diaryMana/diaryMana.json" with { type: "json" };
