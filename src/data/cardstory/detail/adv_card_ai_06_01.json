@@ -1,1310 +1,749 @@
 {
   "id": "adv_card_ai_06_01",
-  "groupId": "card_ai_06",
-  "name": "小美山愛 1話 やりとげてみせます！",
-  "background": null,
-  "details": [
+  "title": "小美山愛",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_lesson-01-noon.webp",
+      "bgName": "tokyo_lessonstudio"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_lesson-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh001.m4a",
       "text": "愛、レッスンの調子はどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh001.m4a"
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "あ、{user}さん！　お疲れ様です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh001.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 0
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "今ちょうど一区切りついたところです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai001.m4a",
+      "text": "あ、{user}さん！　お疲れ様です\n今ちょうど一区切りついたところです",
+      "startTime": 6.5492061933,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それなら、次の仕事の打ち合わせをするから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh002.m4a",
+      "text": "それなら、次の仕事の打ち合わせをするから\n着替えたら会議室に来てくれるか？",
+      "startTime": 12.4000005245,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "着替えたら会議室に来てくれるか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai002.m4a",
+      "text": "あのお話、決まったんですね！\n着替えてすぐに行きます！",
+      "startTime": 17.6796825727,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "あのお話、決まったんですね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh002.m4a"
-    },
-    {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "着替えてすぐに行きます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai002.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai003.m4a",
       "text": "そうだ、せっかくならあの衣装に……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai003.m4a"
+      "startTime": 19.7130159061,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 4220.317427199998,
+          "startTime": 23.9333333333
+        }
+      ]
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai004.m4a",
       "text": "お待たせしました、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai004.m4a"
+      "startTime": 24.7463492394,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ、早かったな……って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh003.m4a",
+      "text": "あぁ、早かったな……って\nなんでもう、その衣装を着てるんだ？",
+      "startTime": 30.3666662375,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんでもう、その衣装を着てるんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "次のお仕事は、この衣装で出ますから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai005.m4a",
+      "text": "次のお仕事は、この衣装で出ますから\n今のうちに慣れておこうと思って",
+      "startTime": 35.7584120115,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "今のうちに慣れておこうと思って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "どうですか？　似合ってますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai006.m4a",
+      "text": "どうですか？　似合ってますか？\n私、かっこいいですか？",
+      "startTime": 40.1917468708,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "私、かっこいいですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ、似合ってるしかっこいいぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh004.m4a",
+      "text": "あぁ、似合ってるしかっこいいぞ\nLizNoirのイメージにぴったりだ",
+      "startTime": 45.4666677634,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "LizNoirのイメージにぴったりだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "ですよね？　ですよね！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai007.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai007.m4a",
+      "text": "ですよね？　ですよね！？\n私、この衣装だと凄く強くなれる気がするんです！",
+      "startTime": 49.5610437077,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "私、この衣装だと凄く強くなれる気がするんです！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh005.m4a",
       "text": "それにしても、今回は大分気合いが入ってるみたいだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh005.m4a"
+      "startTime": 54.3943798384,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "えへへ、毎週観てるWeb番組でしたから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai008.m4a",
+      "text": "えへへ、毎週観てるWeb番組でしたから\nいつか出てみたいな～って思ってたんです",
+      "startTime": 62.7341994287,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "いつか出てみたいな～って思ってたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "音楽系バラエティで、ミニゲームが熱いんですよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai009.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai009.m4a",
+      "text": "音楽系バラエティで、ミニゲームが熱いんですよね\n一番になるとアピールタイムがもらえちゃうっていう",
+      "startTime": 69.9008660954,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "一番になるとアピールタイムがもらえちゃうっていう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "LizNoirのライブが近いですし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai010.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai010.m4a",
+      "text": "LizNoirのライブが近いですし\nここで勝って、ちゃんと告知しないと……！",
+      "startTime": 76.2341994287,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "ここで勝って、ちゃんと告知しないと……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ、でもあまり気負い過ぎないようにな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh006.m4a",
+      "text": "あぁ、でもあまり気負い過ぎないようにな\n前もソロの仕事で大分緊張していたようだし",
+      "startTime": 83.4000049114,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "前もソロの仕事で大分緊張していたようだし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "大丈夫です！　この衣装に負けないくらい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai011.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai011.m4a",
+      "text": "大丈夫です！　この衣装に負けないくらい\nかっこよくかちゅやくしましゅから！",
+      "startTime": 89.8,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "かっこよくかちゅやくしましゅから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……ま、まぁほら、俺も同行するから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh007.m4a",
+      "text": "……ま、まぁほら、俺も同行するから\n今からそんなに緊張しなくて大丈夫だ",
+      "startTime": 95.5666715781,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今からそんなに緊張しなくて大丈夫だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai012.m4a",
+      "text": "えっ、同行してもらえるんですか！？\n今、とってもお忙しいって聞いてますけど",
+      "startTime": 101.9244030637,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "えっ、同行してもらえるんですか！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "今、とってもお忙しいって聞いてますけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh008.m4a",
+      "text": "気にしなくていい。収録中はそばにいるよ\nそれが俺の仕事だからな",
+      "startTime": 108.90000542,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "気にしなくていい。収録中はそばにいるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それが俺の仕事だからな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai013.m4a",
+      "text": "……い、いえいえいえいえ！　大丈夫です！\n一人で行ってきますよ！　ご心配なさらず！",
+      "startTime": 113.5685535116,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "……い、いえいえいえいえ！　大丈夫です！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "一人で行ってきますよ！　ご心配なさらず！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai013.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai014.m4a",
+      "text": "いつも観てる番組ですから雰囲気も分かりますし\nリズノワの一人として立派にやり遂げてみせます！",
+      "startTime": 120.5352201782,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "いつも観てる番組ですから雰囲気も分かりますし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh009.m4a",
+      "text": "だから気負わなくていいって\n俺も無理している訳じゃないし",
+      "startTime": 126.80000542,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "リズノワの一人として立派にやり遂げてみせます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だから気負わなくていいって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai015.m4a",
+      "text": "だ、大丈夫ですよっ！\nまかちぇてくだちゃいっ！",
+      "startTime": 130.8410480185,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺も無理している訳じゃないし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "だ、大丈夫ですよっ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh010.m4a",
+      "text": "……噛んでるじゃないか\n愛は緊張しやすいだけだし、他は何も心配してないから",
+      "startTime": 134.60000542,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "まかちぇてくだちゃいっ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……噛んでるじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh010.m4a"
-    },
-    {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "愛は緊張しやすいだけだし、他は何も心配してないから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh010.m4a"
-    },
-    {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai016.m4a",
       "text": "今のはちょっと焦っただけです……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai016.m4a"
+      "startTime": 139.6370342258,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "いつまでも新入り小美山愛じゃないってところを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "見てほしいんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai017.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai017.m4a",
+      "text": "いつまでも新入り小美山愛じゃないってところを\n見てほしいんです",
+      "startTime": 145.437039312,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai018.m4a",
       "text": "だから、今回は一人でやらせて下さい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai018.m4a"
+      "startTime": 147.0037130995,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "うーん。と言っても初めての番組だし一人だし……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "じゃあ現場で見守るだけにするよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh011.m4a",
+      "text": "うーん。と言っても初めての番組だし一人だし……\nじゃあ現場で見守るだけにするよ",
+      "startTime": 156.8333407878,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "そ、そこまで言うなら～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "はっ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai019.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai019.m4a",
+      "text": "そ、そこまで言うなら～……\nはっ",
+      "startTime": 162.5145192467,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "ダメです！　今回ばかりは騙されません！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "いつもそうやって助けてくれるじゃないですか！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai020.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai020.m4a",
+      "text": "ダメです！　今回ばかりは騙されません！\nいつもそうやって助けてくれるじゃないですか！",
+      "startTime": 166.9145192467,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "今回の仕事は私へのオファーです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "だいっじょうぶです、任せて下さい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai021.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai021.m4a",
+      "text": "今回の仕事は私へのオファーです\nだいっじょうぶです、任せて下さい！",
+      "startTime": 172.9811859134,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "ちっとも緊張なんてしてないんですから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai022.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai022.m4a",
+      "text": "ちっとも緊張なんてしてないんですから！\nもう、ずっと平常心ですから！",
+      "startTime": 178.7811859134,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "もう、ずっと平常心ですから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "そう、私は……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai023.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai023.m4a",
+      "text": "そう、私は……\n悟りを開いたんです",
+      "startTime": 184.0811848961,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "悟りを開いたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "心静かに一人で仕事をこなす",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai024.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai024.m4a",
+      "text": "心静かに一人で仕事をこなす\nバラエティであっても、心静かに……",
+      "startTime": 189.9478505455,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "バラエティであっても、心静かに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "心静かにテンションあげて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai025.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai025.m4a",
+      "text": "心静かにテンションあげて\nやり遂げてみせます！",
+      "startTime": 196.0478474937,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "やり遂げてみせます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai025.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "全く平常心じゃないことだけは分かった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh012.m4a",
+      "text": "全く平常心じゃないことだけは分かった\n頼むから一緒に行かせてくれ。な？",
+      "startTime": 201.4666761556,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "頼むから一緒に行かせてくれ。な？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "私、そんなに頼りないですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai026.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai026.m4a",
+      "text": "私、そんなに頼りないですか？\nソロじゃ仕事を任せられませんか？",
+      "startTime": 209.0100613279,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "ソロじゃ仕事を任せられませんか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai026.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai027.m4a",
+      "text": "確かに莉央さん達に比べれば\nまだまだですけど……",
+      "startTime": 214.0100521726,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "確かに莉央さん達に比べれば",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "まだまだですけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai027.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh013.m4a",
+      "text": "（これ以上、渋るのも良くなさそうだ）\n（自信をつけるいい機会かもしれないな）",
+      "startTime": 219.2666731038,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（これ以上、渋るのも良くなさそうだ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh014.m4a",
+      "text": "分かった\n今回は愛に任せるよ",
+      "startTime": 223.5333458739,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（自信をつけるいい機会かもしれないな）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "分かった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai028.m4a",
+      "text": "{user}さん！　ありがとうございます！\nよーし、当たって砕けろです！",
+      "startTime": 228.447509766,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今回は愛に任せるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh014.m4a"
-    },
-    {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "{user}さん！　ありがとうございます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai028.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "よーし、当たって砕けろです！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai028.m4a"
-    },
-    {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh015.m4a",
       "text": "砕けちゃダメだろ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh015.m4a"
+      "startTime": 231.247501628,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "わぁ！？　すみません、間違えました！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "精一杯、頑張ります！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai029.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai029.m4a",
+      "text": "わぁ！？　すみません、間違えました！\n精一杯、頑張ります！",
+      "startTime": 235.4428087795,
+      "sfxList": []
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "うん、いい顔だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai029.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh016.m4a",
+      "text": "うん、いい顔だ\nじゃあ日程の説明をするぞ",
+      "startTime": 239.6667270182,
+      "sfxList": []
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "じゃあ日程の説明をするぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoconference-00-noon.webp",
+      "bgName": "tokyoconference-00-noon"
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "はい！　……って、あれ……す、すみません！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai030.m4a",
+      "text": "はい！　……って、あれ……す、すみません！\n着替えた時に手帳を置いてきちゃいました！？",
+      "startTime": 245.7940061972,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 3345.384263,
+          "startTime": 249.1393904602
+        }
+      ]
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "着替えた時に手帳を置いてきちゃいました！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai030.m4a"
-    },
-    {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai031.m4a",
       "text": "急いで取ってきます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-ai031.m4a"
+      "startTime": 248.7000152589,
+      "sfxList": []
     },
     {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（……念のため、収録時間中は）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh017.m4a",
+      "text": "（……念のため、収録時間中は）\n（他の現場の仕事が被らないようにしておくか）",
+      "startTime": 253.1333936849,
+      "sfxList": []
     },
     {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（他の現場の仕事が被らないようにしておくか）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_shibuya-00-noon.webp",
+      "bgName": "shibuya-00-noon"
     },
     {
-      "id": "msg_89",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――収録当日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 257.3619418547,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 5274.759652700027,
+          "startTime": 262.6367015074
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 1166.6666666000083,
+          "startTime": 258.5286085213
+        }
+      ]
     },
     {
-      "id": "msg_90",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ん？　愛の現場から着信か……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_shibuya-00-noon.webp",
+      "bgName": "shibuya-00-noon"
     },
     {
-      "id": "msg_91",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "星見プロの……はい、お疲れ様です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh018.m4a",
+      "text": "ん？　愛の現場から着信か……\n星見プロの……はい、お疲れ様です",
+      "startTime": 263.7667270182,
+      "sfxList": []
     },
     {
-      "id": "msg_92",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……分かりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh019.m4a"
-    },
-    {
-      "id": "msg_93",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すぐに向かいます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_06_01/sud_vo_adv_card_ai_06_01-koh019.m4a",
+      "text": "……分かりました\nすぐに向かいます！",
+      "startTime": 270.4667229491,
+      "sfxList": []
     }
   ]
 }

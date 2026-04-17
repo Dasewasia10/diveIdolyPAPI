@@ -1,1086 +1,648 @@
 {
   "id": "adv_card_rui_52_01",
-  "groupId": "card_rui_52",
-  "name": "天動瑠依 1話 慰安旅行in京都",
-  "background": null,
-  "details": [
+  "title": "天動瑠依",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "橋本さんの提案で、星見プロからみんなに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "誕生日プレゼントとして慰安旅行を計画したんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "旅行先は俺の方で考えようと思っているけれど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もし、希望があったら受け付けるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "グループは誕生日が近い人達で組ませてもらったが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh003.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "日頃の疲れを存分に癒して来てくれ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh003.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh001.m4a",
+      "text": "橋本さんの提案で、星見プロからみんなに\n誕生日プレゼントとして慰安旅行を計画したんだ",
+      "startTime": 3.9666666667,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh002.m4a",
+      "text": "旅行先は俺の方で考えようと思っているけれど\nもし、希望があったら受け付けるよ",
+      "startTime": 11.3333333333,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh003.m4a",
+      "text": "グループは誕生日が近い人達で組ませてもらったが……\n日頃の疲れを存分に癒して来てくれ！",
+      "startTime": 17.7,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk001.m4a",
       "text": "ん……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-koh003.m4a"
+      "startTime": 20.4,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui001.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui001.m4a"
+      "startTime": 21.5,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "えっ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski001.m4a",
+      "text": "えっ？\nえっ？",
+      "startTime": 22.4333346049,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "えっ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui001.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz001.m4a",
       "text": "ええっ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs001.m4a"
+      "startTime": 24.8666666667,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spa-01.m4a",
+          "delay": 4282.053164500003,
+          "startTime": 29.1487198312
+        }
+      ]
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――星見プロ誕生日慰安旅行in京都",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 27.2153867522,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "イベリコ豚とロースステーキ重……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz002.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz002.m4a",
+      "text": "イベリコ豚とロースステーキ重……\nふわふわのたまごサンドに、シュウマイ弁当……",
+      "startTime": 33.8820517658,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "ふわふわのたまごサンドに、シュウマイ弁当……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "美味しそうな駅弁を諦めたのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz003.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz003.m4a",
+      "text": "美味しそうな駅弁を諦めたのに\n高級料亭の予約が取れていなかったなんて……",
+      "startTime": 41.2153850991,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "高級料亭の予約が取れていなかったなんて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz004.m4a",
       "text": "私、もうお腹ペコペコですわ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz003.m4a"
+      "startTime": 45.3820539273,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "まあまあ、すずちゃん。{user}さんが今",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "別のお店に電話してくれてるから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs002.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs002.m4a",
+      "text": "まあまあ、すずちゃん。{user}さんが今\n別のお店に電話してくれてるから……",
+      "startTime": 55.0487184325,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "さとみさんから慌てて電話がかかってきた時は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "どうなるかと思いましたが、なんとかなりそうですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski002.m4a",
+      "text": "さとみさんから慌てて電話がかかってきた時は\nどうなるかと思いましたが、なんとかなりそうですね",
+      "startTime": 61.2820510029,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ええ。京都出身の優が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "知り合いの料亭を紹介してくれて助かったわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui002.m4a",
+      "text": "ええ。京都出身の優が\n知り合いの料亭を紹介してくれて助かったわ",
+      "startTime": 68.3153850991,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "優ちゃんが紹介してくれた料亭だから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "凄く美味しいんだろうなあ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs003.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs003.m4a",
+      "text": "優ちゃんが紹介してくれた料亭だから\n凄く美味しいんだろうなあ……",
+      "startTime": 74.6623766883,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "きっと、キャビアに、フォアグラ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "フカヒレも、ある……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk002.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk002.m4a",
+      "text": "きっと、キャビアに、フォアグラ……\nフカヒレも、ある……",
+      "startTime": 79.7518882621,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "あまり京料理らしくない食材ばかりですが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "そこまで素晴らしい料亭なら待つほかありませんわね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz005.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz005.m4a",
+      "text": "あまり京料理らしくない食材ばかりですが……\nそこまで素晴らしい料亭なら待つほかありませんわね！",
+      "startTime": 85.8153850991,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs004.m4a",
       "text": "夜泊まる旅館も、優ちゃんのオススメの旅館なんだよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz005.m4a"
+      "startTime": 90.0487170337,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ええ。嵐山の紅葉が部屋から楽しめる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "百五十年続く人気の老舗旅館らしいわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui003.m4a",
+      "text": "ええ。嵐山の紅葉が部屋から楽しめる\n百五十年続く人気の老舗旅館らしいわ",
+      "startTime": 98.8487184325,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "温泉もあるみたいだから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "夜はゆっくり日頃の疲れを癒せそうね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui004.m4a",
+      "text": "温泉もあるみたいだから\n夜はゆっくり日頃の疲れを癒せそうね",
+      "startTime": 104.1820517658,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "でも、なんで京都なんですの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私はハワイとかロサンゼルスを希望しましたのよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz006.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz006.m4a",
+      "text": "でも、なんで京都なんですの？\n私はハワイとかロサンゼルスを希望しましたのよ",
+      "startTime": 110.5820517658,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "ふふっ贅沢だよ、すずちゃん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "京都は、私とお姉ちゃんでリクエストしたんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs005.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs005.m4a",
+      "text": "ふふっ贅沢だよ、すずちゃん\n京都は、私とお姉ちゃんでリクエストしたんだ",
+      "startTime": 118.6820517658,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "ええ。私は京都の寺社仏閣を見たくて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski003.m4a",
+      "text": "ええ。私は京都の寺社仏閣を見たくて……\n千紗は、京都のパワースポットに興味があるのよね",
+      "startTime": 127.0153850991,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "千紗は、京都のパワースポットに興味があるのよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "パワースポットもだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs006.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs006.m4a",
+      "text": "パワースポットもだけど\n心霊スポットも沢山あるみたいなの！",
+      "startTime": 132.9487184325,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "心霊スポットも沢山あるみたいなの！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "し、心霊スポット……！？　怖いですわ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs006.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz007.m4a",
+      "text": "し、心霊スポット……！？　怖いですわ……\n変なもの連れて帰ったら許しませんわ！",
+      "startTime": 141.6153769611,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "変なもの連れて帰ったら許しませんわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "確かに京都は歴史も長く様々な伝承が残っていますから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz007.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski004.m4a",
+      "text": "確かに京都は歴史も長く様々な伝承が残っていますから\nそういった場所があるのも不思議ではありません",
+      "startTime": 150.2820436278,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "そういった場所があるのも不思議ではありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "さとみさんも、京都に行く直前に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski004.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk003.m4a",
+      "text": "さとみさんも、京都に行く直前に\n突然熱を出して倒れたし……",
+      "startTime": 156.5820436278,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "突然熱を出して倒れたし……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "ひー！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz008.m4a",
+      "text": "ひー！\nや、やはり関係あるんですの！？",
+      "startTime": 160.7820507485,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "や、やはり関係あるんですの！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui005.m4a",
       "text": "すず、落ち着いて。関係あるはずないでしょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz008.m4a"
+      "startTime": 164.9153745451,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "さとみさんのことは気の毒だけれど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今回はゆっくり休んで療養してもらいましょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui006.m4a",
+      "text": "さとみさんのことは気の毒だけれど\n今回はゆっくり休んで療養してもらいましょう",
+      "startTime": 171.9153850991,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "うん。さとみさんに、京都拠点のアイドルのチェキ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui006.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk004.m4a",
+      "text": "うん。さとみさんに、京都拠点のアイドルのチェキ\n持って帰るって約束した",
+      "startTime": 179.3153850991,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "持って帰るって約束した",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "明日のお昼は無銭ライブに行って、夕方から定期公演",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk005.m4a",
+      "text": "明日のお昼は無銭ライブに行って、夕方から定期公演\n一分も無駄に出来ない、時間勝負",
+      "startTime": 186.5820517658,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 9633.320109099997,
+          "startTime": 196.2153718749
+        }
+      ]
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "一分も無駄に出来ない、時間勝負",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "雫ちゃん、張り切ってるね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk005.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs007.m4a",
+      "text": "雫ちゃん、張り切ってるね\n私も藁人形で有名な神社には絶対行きたい！",
+      "startTime": 192.3820385415,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "私も藁人形で有名な神社には絶対行きたい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-chs007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "……あ、{user}さん、帰って来ました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski005.m4a",
+      "text": "……あ、{user}さん、帰って来ました\nあの様子だと、無事予約出来たみたいですね",
+      "startTime": 200.0153718749,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "あの様子だと、無事予約出来たみたいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-ski005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "{user}さん、早く早く！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz009.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz009.m4a",
+      "text": "{user}さん、早く早く！\nもう、待ちきれませんわ～！",
+      "startTime": 206.7487052082,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "もう、待ちきれませんわ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "腹が減っては、戦は出来ぬ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-suz009.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk006.m4a",
+      "text": "腹が減っては、戦は出来ぬ……\n一杯食べて、京都、楽しむ",
+      "startTime": 212.2487052082,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "一杯食べて、京都、楽しむ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そうね。まずは美味しいご飯を食べて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-szk006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_kamogawa-00-noon.webp",
+      "bgName": "kamogawa-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "旅行を楽しみましょう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui007.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_event_2409_02_01-rui007.m4a",
+      "text": "そうね。まずは美味しいご飯を食べて\n旅行を楽しみましょう！",
+      "startTime": 218.7153718749,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "昨日の料亭も美味しかったし、ここの温泉も良かったし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "s3"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "部屋からの眺めも最高だったわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "s3"
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "秋の京都って、こんなに色鮮やかなのね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui001.m4a",
+      "text": "昨日の料亭も美味しかったし、ここの温泉も良かったし\n部屋からの眺めも最高だったわね",
+      "startTime": 227.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今日の予定も、凄く楽しみになってきたわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "s3"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今日は、優が特別に教えてくれたロマンチックな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "s3"
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "スポットに行く予定だけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui002.m4a",
+      "text": "秋の京都って、こんなに色鮮やかなのね……\n今日の予定も、凄く楽しみになってきたわ",
+      "startTime": 234.7,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "一人だと、ちょっと行き辛い場所だし……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "s3"
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そうだ、{user}さんを誘ってみようかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui003.m4a",
+      "text": "今日は、優が特別に教えてくれたロマンチックな\nスポットに行く予定だけど……",
+      "startTime": 242.4666585286,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "でも、場所が場所だし変な風に思われるかな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui004.m4a",
+      "text": "一人だと、ちょっと行き辛い場所だし……\nそうだ、{user}さんを誘ってみようかな",
+      "startTime": 248.9666585286,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "なんだか緊張してきたかも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "s3"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_52_01/sud_vo_adv_card_rui_52_01-rui005.m4a",
+      "text": "でも、場所が場所だし変な風に思われるかな……\nなんだか緊張してきたかも……",
+      "startTime": 258.2333251953,
+      "sfxList": []
     }
   ]
 }

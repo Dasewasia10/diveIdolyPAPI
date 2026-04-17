@@ -1,1156 +1,609 @@
 {
   "id": "adv_card_szk_04_02",
-  "groupId": "card_szk_04",
-  "name": "兵藤雫 2話 ドルオタの名に懸けて",
-  "background": null,
-  "details": [
+  "title": "兵藤雫",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "という訳で、かっこ良くなるために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_lesson-01-noon.webp",
+      "bgName": "env_adv_3d_lesson-02-000-night"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "今日から特訓する……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_sneak-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_impact-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk001.m4a",
+      "text": "という訳で、かっこ良くなるために\n今日から特訓する……！",
+      "startTime": 3.9666666667,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk002.m4a",
       "text": "……ところで、特訓って何をすればいい？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk002.m4a"
+      "startTime": 6.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺に聞かれても困るが……そうだな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh001.m4a",
+      "text": "俺に聞かれても困るが……そうだな……\nかっこいい言葉を言ってみるのはどうだ？",
+      "startTime": 14.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "かっこいい言葉を言ってみるのはどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh002.m4a",
+      "text": "そういうセリフを言う時は\n自然と顔つきもかっこ良くなるんじゃないか？",
+      "startTime": 19.4333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そういうセリフを言う時は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh002.m4a"
-    },
-    {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "自然と顔つきもかっこ良くなるんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh002.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk003.m4a",
       "text": "分かった、やってみる……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh002.m4a"
+      "startTime": 22.6,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "――初めての挫折を、私達が味わわせてあげる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk004.m4a",
+      "text": "――初めての挫折を、私達が味わわせてあげる\n……キリッ！",
+      "startTime": 29.8,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "……キリッ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk004.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk005.m4a",
       "text": "……どう、かな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk005.m4a"
+      "startTime": 31.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんというか……微妙だな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh003.m4a",
+      "text": "なんというか……微妙だな……\nもしかして、今のは莉央さんの真似か？",
+      "startTime": 37.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もしかして、今のは莉央さんの真似か？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk006.m4a",
+      "text": "そう。莉央さんをイメージしてみた……\nかっこいいと言えば、リズノワだから……",
+      "startTime": 44.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "そう。莉央さんをイメージしてみた……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh004.m4a",
+      "text": "なるほど、アイドル好きな雫らしいな\nでもここは別の言葉にした方がいいんじゃないか？",
+      "startTime": 51.3,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "かっこいいと言えば、リズノワだから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk006.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk007.m4a",
+      "text": "分かった。違う言葉にする……\nそれじゃあ……",
+      "startTime": 58.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なるほど、アイドル好きな雫らしいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk006.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk008.m4a",
+      "text": "――僕はカニカマとずるいことは嫌いなんだ\n……キリッ！",
+      "startTime": 64.3,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でもここは別の言葉にした方がいいんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh004.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "分かった。違う言葉にする……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk007.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "それじゃあ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk007.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "――僕はカニカマとずるいことは嫌いなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk008.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "……キリッ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk008.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk009.m4a",
       "text": "……どう、かな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk009.m4a"
+      "startTime": 65.7,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "葵の真似になっただけじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh005.m4a",
+      "text": "葵の真似になっただけじゃないか\nそれに、いちいちキメ顔しないといけないのか？",
+      "startTime": 69.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それに、いちいちキメ顔しないといけないのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh005.m4a"
-    },
-    {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk010.m4a",
       "text": "これもダメ……？　難しい……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh005.m4a"
+      "startTime": 73.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "そもそも、かっこいいって何……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk011.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk011.m4a",
+      "text": "そもそも、かっこいいって何……？\n見た目……？　仕草……？　雰囲気……？",
+      "startTime": 81,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "見た目……？　仕草……？　雰囲気……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk011.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk012.m4a",
+      "text": "それが分からないと、特訓にならない……\nもっと勉強しないと……",
+      "startTime": 88.6,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "それが分からないと、特訓にならない……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk012.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk013.m4a",
+      "text": "でも、勉強するって……一体どうしたら……\n……はっ！",
+      "startTime": 96.5333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-01.m4a",
+          "delay": 7566.666666699987,
+          "startTime": 104.1
+        }
+      ]
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "もっと勉強しないと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk012.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk014.m4a",
+      "text": "そういう人を観察して極意を学ぶ……\nうん、それがいい……ちょっと観察して来る……！",
+      "startTime": 101.5666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "でも、勉強するって……一体どうしたら……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh006.m4a",
+      "text": "えっ、雫！？\n……観察するって、何をするつもりだ？",
+      "startTime": 108.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "……はっ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "そういう人を観察して極意を学ぶ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "うん、それがいい……ちょっと観察して来る……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh007.m4a",
+      "text": "雫のやつ、どこに行ったんだ？\n……ん？　あれはスリクスか？",
+      "startTime": 117.7,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 3099.9999999999945,
+          "startTime": 120.8
+        }
+      ]
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "えっ、雫！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……観察するって、何をするつもりだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh008.m4a",
+      "text": "これから出かけるみたいだな\nそして、三人の後ろをこそこそ歩いているのは……",
+      "startTime": 123.3,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "雫のやつ、どこに行ったんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……ん？　あれはスリクスか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh007.m4a"
-    },
-    {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "これから出かけるみたいだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh008.m4a"
-    },
-    {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そして、三人の後ろをこそこそ歩いているのは……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh008.m4a"
-    },
-    {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk015.m4a",
       "text": "……はっ！　{user}さん……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk015.m4a"
+      "startTime": 128.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh009.m4a",
       "text": "雫？　そこで何をしているんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh009.m4a"
+      "startTime": 130.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "今は話し掛けないで……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk016.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk016.m4a",
+      "text": "今は話し掛けないで……\n尾行してるのがバレる",
+      "startTime": 135.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "尾行してるのがバレる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "私はどうしても、かっこ良さの秘訣を知りたい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk017.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk017.m4a",
+      "text": "私はどうしても、かっこ良さの秘訣を知りたい\nだからスリクスを観察してる……",
+      "startTime": 142.5,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "だからスリクスを観察してる……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk017.m4a"
-    },
-    {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh010.m4a",
       "text": "それなら直接話を聞けばいいじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh010.m4a"
+      "startTime": 145.4,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "無理。スリクスは憧れの存在……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "目が合っただけで緊張する……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk018.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk018.m4a",
+      "text": "無理。スリクスは憧れの存在……\n目が合っただけで緊張する……",
+      "startTime": 151.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "だから隠れて観察してる……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "先輩の仕事を見て、技術を盗む……それがプロ……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk019.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk019.m4a",
+      "text": "だから隠れて観察してる……\n先輩の仕事を見て、技術を盗む……それがプロ……！",
+      "startTime": 157.8,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "職人っぽいことを言っているが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh011.m4a",
+      "text": "職人っぽいことを言っているが\n話し掛ける度胸がないだけだよな？",
+      "startTime": 164.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "話し掛ける度胸がないだけだよな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "私は尾行中だから、もう行く……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk020.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk020.m4a",
+      "text": "私は尾行中だから、もう行く……\nそれじゃ……",
+      "startTime": 170,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 3366.6666667000127,
+          "startTime": 170.4666666667
+        }
+      ]
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "それじゃ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ちょっと待った",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh012.m4a",
+      "text": "ちょっと待った\n実はさっき、franさんからメッセージがきたんだ",
+      "startTime": 172.9,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "実はさっき、franさんからメッセージがきたんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh013.m4a",
+      "text": "「変な子にストーカー行為されてるから\nマネージャーならなんとかして」って……",
+      "startTime": 178.4,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "「変な子にストーカー行為されてるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "マネージャーならなんとかして」って……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk021.m4a",
+      "text": "えっ、尾行がバレてた？\nしかも、変な子って……",
+      "startTime": 185.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "えっ、尾行がバレてた？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh014.m4a",
+      "text": "とりあえず、ストーキングするのは迷惑だから\nやめるように",
+      "startTime": 190.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "しかも、変な子って……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk021.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "とりあえず、ストーキングするのは迷惑だから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk021.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk022.m4a",
+      "text": "うぅ……分かった……\nでも、どうしよう……",
+      "startTime": 194.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "やめるように",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk023.m4a",
+      "text": "かっこ良さの秘訣……分からなかった……\nこのままじゃ、今度の撮影は失敗するかも",
+      "startTime": 201.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "うぅ……分かった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "でも、どうしよう……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk022.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk024.m4a",
+      "text": "きっと私だけリテイクの嵐……現場は大混乱……\nfranさんや莉央さんにも嫌われる……あわわわ",
+      "startTime": 210.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "かっこ良さの秘訣……分からなかった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "このままじゃ、今度の撮影は失敗するかも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk023.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh015.m4a",
+      "text": "なぁ、雫。思うんだが……\n魅力っていうのは人それぞれ違うんじゃないか？",
+      "startTime": 217.3,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "きっと私だけリテイクの嵐……現場は大混乱……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk024.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh016.m4a",
+      "text": "人を真似るんじゃなくて\n自分らしいかっこ良さを見つけるんだ",
+      "startTime": 222.6,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "franさんや莉央さんにも嫌われる……あわわわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なぁ、雫。思うんだが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh015.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "魅力っていうのは人それぞれ違うんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh015.m4a"
-    },
-    {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "人を真似るんじゃなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh016.m4a"
-    },
-    {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "自分らしいかっこ良さを見つけるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh016.m4a"
-    },
-    {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk025.m4a",
       "text": "無理だと思う。私にかっこ良さなんてない……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh016.m4a"
+      "startTime": 225.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いいや、雫は気付いていないだけだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk025.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh017.m4a",
+      "text": "いいや、雫は気付いていないだけだ\n雫はアイドルの魅力を見つけるのが得意だろ？",
+      "startTime": 233.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "雫はアイドルの魅力を見つけるのが得意だろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺と一緒に、兵藤雫というアイドルの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh018.m4a",
+      "text": "俺と一緒に、兵藤雫というアイドルの\nかっこ良さを見つけてみないか？",
+      "startTime": 239.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "かっこ良さを見つけてみないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh018.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk026.m4a",
       "text": "私のかっこ良さを……見つける……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-koh018.m4a"
+      "startTime": 241.5666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "……うん。分かった、やってみる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "私は今まで……沢山のアイドルを分析してきた……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk027.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk027.m4a",
+      "text": "……うん。分かった、やってみる\n私は今まで……沢山のアイドルを分析してきた……",
+      "startTime": 249.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "ドルオタの名に懸けて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk028.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyoentrance-00-noon.webp",
+      "bgName": "tokyoentrance-00-noon"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "szk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
-        "name": "兵藤雫"
-      },
-      "text": "アイドル兵藤雫のかっこ良さ……見つけてみせる……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk028.m4a"
+      "type": "dialogue",
+      "speakerCode": "szk",
+      "speakerName": "兵藤雫",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-shizuku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_szk_04_02/sud_vo_adv_card_szk_04_02-szk028.m4a",
+      "text": "ドルオタの名に懸けて……\nアイドル兵藤雫のかっこ良さ……見つけてみせる……！",
+      "startTime": 256.5,
+      "sfxList": []
     }
   ]
 }

@@ -1,1240 +1,802 @@
 {
   "id": "adv_card_mei_04_03",
-  "groupId": "card_mei_04",
-  "name": "早坂芽衣 3話 お姫様だっこ",
-  "background": null,
-  "details": [
+  "title": "早坂芽衣",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――月ストのライブバトル終了後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.8,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 1666.6666667000002,
+          "startTime": 2.4666666667
+        }
+      ]
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "あっ、{user}さん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei001.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei001.m4a",
+      "text": "あっ、{user}さん！\n見ててくれたー！？",
+      "startTime": 5.91,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "見ててくれたー！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh001.m4a",
       "text": "もちろんだ。見事な勝利だったな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh001.m4a"
+      "startTime": 7.8,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei002.m4a",
       "text": "えへへー、ありがと！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei002.m4a"
+      "startTime": 11.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei003.m4a",
       "text": "特訓の成果、出てたかなー？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei003.m4a"
+      "startTime": 14.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei004.m4a",
       "text": "……ぃ、たた……っ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei004.m4a"
+      "startTime": 18.1666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh002.m4a",
       "text": "芽衣？　どこか痛めたのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh002.m4a"
+      "startTime": 21.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "あ、はは……っ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "さっき、月ストのみんなはごまかせたんだけどなー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei005.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei005.m4a",
+      "text": "あ、はは……っ\nさっき、月ストのみんなはごまかせたんだけどなー",
+      "startTime": 27.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "{user}さんには隠せないかー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "ライブ中にちょっとくじいたみたい……いたたた……っ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei006.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei006.m4a",
+      "text": "{user}さんには隠せないかー\nライブ中にちょっとくじいたみたい……いたたた……っ",
+      "startTime": 37.6,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "……どうしよ、バレたって思ったとたんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "どんどん痛くなってきちゃった！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei007.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei007.m4a",
+      "text": "……どうしよ、バレたって思ったとたんに\nどんどん痛くなってきちゃった！",
+      "startTime": 49.11,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんでそんなに明るく言えるんだ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "緊張が解けて痛みを思い出したのかもな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh003.m4a",
+      "text": "なんでそんなに明るく言えるんだ……\n緊張が解けて痛みを思い出したのかもな",
+      "startTime": 55.11,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei008.m4a",
       "text": "いたた……確かにそうかも。でも、歩けるかな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh003.m4a"
+      "startTime": 58.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei009.m4a",
       "text": "あ、そうだ！　ねえねえ、{user}さん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei008.m4a"
+      "startTime": 66.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei010.m4a",
       "text": "医務室まで～、だっこして連れてってほしいな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei010.m4a"
+      "startTime": 70.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh004.m4a",
       "text": "なっ……急に何を言ってるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh004.m4a"
+      "startTime": 76.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "あはは、そうだよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "それじゃあ歩いて医務室に……ぃっ、たた……っ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei011.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei011.m4a",
+      "text": "あはは、そうだよね\nそれじゃあ歩いて医務室に……ぃっ、たた……っ",
+      "startTime": 82.1666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……そこまで酷いのか。すまない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ためらってる場合じゃなかったな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh005.m4a",
+      "text": "……そこまで酷いのか。すまない\nためらってる場合じゃなかったな",
+      "startTime": 91.9,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei012.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei012.m4a"
+      "startTime": 94.3,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh006.m4a",
       "text": "それじゃあ、行く……ぞっ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh006.m4a"
+      "startTime": 95.2,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "ええっ、ちょ、{user}さん！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei013.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei013.m4a",
+      "text": "ええっ、ちょ、{user}さん！？\nほんとに……うひゃぁっ！？",
+      "startTime": 103.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "ほんとに……うひゃぁっ！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei013.m4a"
-    },
-    {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei014.m4a",
       "text": "はわわわ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei014.m4a"
+      "startTime": 107,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "芽衣、振動で痛まないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh007.m4a",
+      "text": "芽衣、振動で痛まないか？\n医務室までちょっと歩くけど、なんとか我慢してくれ",
+      "startTime": 112.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "医務室までちょっと歩くけど、なんとか我慢してくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei015.m4a",
+      "text": "う、うん……大丈夫\nえへへ……",
+      "startTime": 121.6,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "う、うん……大丈夫",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei015.m4a"
-    },
-    {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "えへへ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei015.m4a"
-    },
-    {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh008.m4a",
       "text": "どうしたんだ？　そんな上機嫌に笑って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh008.m4a"
+      "startTime": 123.5,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei016.m4a",
       "text": "なんでもなーい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei016.m4a"
+      "startTime": 127.4,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh009.m4a",
       "text": "芽衣、痛みはどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh009.m4a"
+      "startTime": 131.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "しっかり固定してもらったから大丈夫だよー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei017.m4a",
+      "text": "しっかり固定してもらったから大丈夫だよー\n{user}さん、テーピング上手だね！",
+      "startTime": 137.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "{user}さん、テーピング上手だね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "アイドルは過酷な仕事だからな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh010.m4a",
+      "text": "アイドルは過酷な仕事だからな\nいつ何が起きても対応出来るように勉強してるんだよ",
+      "startTime": 144.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いつ何が起きても対応出来るように勉強してるんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh010.m4a"
-    },
-    {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei018.m4a",
       "text": "そっか、凄いなー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh010.m4a"
+      "startTime": 147.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それにしても……やっぱり練習で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "負荷がかかり過ぎてたのかもな。見抜けなくてすまない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh011.m4a",
+      "text": "それにしても……やっぱり練習で\n負荷がかかり過ぎてたのかもな。見抜けなくてすまない",
+      "startTime": 154.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei019.m4a",
       "text": "ううん、謝んなくていいよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei019.m4a"
+      "startTime": 159.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "それよりさ、{user}さんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "言い忘れてたことがあるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei020.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei020.m4a",
+      "text": "それよりさ、{user}さんに\n言い忘れてたことがあるんだ",
+      "startTime": 166.4,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "芽衣ね、この間のダンススクールでのお仕事がね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei021.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "とっても楽しかったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei021.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei021.m4a",
+      "text": "芽衣ね、この間のダンススクールでのお仕事がね\nとっても楽しかったんだ",
+      "startTime": 174.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ、みんな楽しそうだったな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh012.m4a",
+      "text": "あぁ、みんな楽しそうだったな\nでも、あの仕事がどうしたんだ？",
+      "startTime": 180.3,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも、あの仕事がどうしたんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "……麻奈ちゃんの歌は、きっとああいう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei022.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei022.m4a",
+      "text": "……麻奈ちゃんの歌は、きっとああいう\nちっちゃな子達にも届いてたと思うんだ",
+      "startTime": 187.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "ちっちゃな子達にも届いてたと思うんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "麻奈ちゃんを見たのがきっかけで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei023.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei023.m4a",
+      "text": "麻奈ちゃんを見たのがきっかけで\n今アイドルをやってるすずにゃんみたいに",
+      "startTime": 193.5666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "今アイドルをやってるすずにゃんみたいに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei023.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei024.m4a",
+      "text": "そうやって、一人のアイドルとの出会いが\n人生を変えるきっかけになるんだろうなって",
+      "startTime": 200.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "そうやって、一人のアイドルとの出会いが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "人生を変えるきっかけになるんだろうなって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei024.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei025.m4a",
+      "text": "あの子達のキラキラした目を見てたら\nそんな風に思ったんだ",
+      "startTime": 207.6,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "あの子達のキラキラした目を見てたら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei025.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "そんな風に思ったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei025.m4a"
-    },
-    {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei026.m4a",
       "text": "麻奈ちゃんになれないことは分かってる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei026.m4a"
+      "startTime": 210.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "それでも、芽衣の中ではやっぱり",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "麻奈ちゃんはとっても大きな存在だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei027.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei027.m4a",
+      "text": "それでも、芽衣の中ではやっぱり\n麻奈ちゃんはとっても大きな存在だよ",
+      "startTime": 217.2,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうか、だからダンススクールに行ってから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ますます頑張るようになったんだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh013.m4a",
+      "text": "そうか、だからダンススクールに行ってから\nますます頑張るようになったんだな",
+      "startTime": 224.5,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "うん。芽衣も麻奈ちゃんみたいなステージを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei028.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei028.m4a",
+      "text": "うん。芽衣も麻奈ちゃんみたいなステージを\n届けられるようになりたい",
+      "startTime": 232,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "届けられるようになりたい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei028.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "改めてそう思って、練習をもっともっと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei028.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei029.m4a",
+      "text": "改めてそう思って、練習をもっともっと\n頑張るようになったんだ",
+      "startTime": 238.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "頑張るようになったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei029.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei030.m4a",
+      "text": "{user}さんに心配された時もね\nほんとに大丈夫だと思ってたんだよね",
+      "startTime": 244.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "{user}さんに心配された時もね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei029.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "ほんとに大丈夫だと思ってたんだよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei030.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei031.m4a",
       "text": "今こうやって迷惑を掛けてるのはごめんなさいだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei030.m4a"
+      "startTime": 248.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "自分がどんどん成長するのが分かって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei032.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei032.m4a",
+      "text": "自分がどんどん成長するのが分かって……\n楽しくてしょうがなかったんだ",
+      "startTime": 257.4333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "楽しくてしょうがなかったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei032.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "だから……{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei033.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei033.m4a",
+      "text": "だから……{user}さん\n芽衣を止めないで好きにやらせてくれてありがとう",
+      "startTime": 265.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "芽衣を止めないで好きにやらせてくれてありがとう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei033.m4a"
-    },
-    {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh014.m4a",
       "text": "芽衣……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh014.m4a"
+      "startTime": 269.6,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei034.m4a",
       "text": "今日のライブ……麻奈ちゃんに届いたかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei034.m4a"
+      "startTime": 271.5,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh015.m4a",
       "text": "……ああ、きっと見てくれてるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh015.m4a"
+      "startTime": 276.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei035.m4a",
       "text": "そっか。……うん、そうだといいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei035.m4a"
+      "startTime": 280.2,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei036.m4a",
       "text": "あ……っ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei036.m4a"
+      "startTime": 286,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh016.m4a",
       "text": "ん？　芽衣、どうした？　まだ痛むのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh016.m4a"
+      "startTime": 287.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "あ、ううん、足は大丈夫だけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "お姫様だっこされちゃったなー、って。えへへ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei037.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei037.m4a",
+      "text": "あ、ううん、足は大丈夫だけど……\nお姫様だっこされちゃったなー、って。えへへ",
+      "startTime": 298.1,
+      "sfxList": []
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "仕方ないだろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei037.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh017.m4a",
+      "text": "仕方ないだろ\n緊急事態だったんだから……",
+      "startTime": 305.1666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "緊急事態だったんだから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei038.m4a",
       "text": "えー？　照れなくていいのにー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei038.m4a"
+      "startTime": 307.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hospital-01-noon.webp",
+      "bgName": "stage02"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei039.m4a",
       "text": "お姫様だっこ……か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei039.m4a"
+      "startTime": 311.7,
+      "sfxList": []
     },
     {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "……麻奈ちゃんにバレたら、怒られちゃうかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei040.m4a"
-    },
-    {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
-      "text": "...",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei040.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_04_03/sud_vo_adv_card_mei_04_03-mei040.m4a",
+      "text": "……麻奈ちゃんにバレたら、怒られちゃうかな？\n",
+      "startTime": 320.4333333333,
+      "sfxList": []
     }
   ]
 }

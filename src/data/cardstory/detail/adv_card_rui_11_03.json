@@ -1,1254 +1,633 @@
 {
   "id": "adv_card_rui_11_03",
-  "groupId": "card_rui_11",
-  "name": "天動瑠依 3話 もう一人の私なんだ",
-  "background": null,
-  "details": [
+  "title": "天動瑠依",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "office-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――翌日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "昨日、書店で買った優おすすめの漫画はどうだった？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh001.m4a",
+      "text": "昨日、書店で買った優おすすめの漫画はどうだった？\nん、瑠依？　なんだか眠そうだけど……",
+      "startTime": 6.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ん、瑠依？　なんだか眠そうだけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui001.m4a",
+      "text": "あ……お疲れ様です。実は昨日帰ってから\nつい……全巻、一気読みしてしまって……",
+      "startTime": 14.4333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あ……お疲れ様です。実は昨日帰ってから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh002.m4a",
+      "text": "一気読み！？　全部でニ十巻はあったのに？\nそんなに内容が良かったのか……？",
+      "startTime": 21.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "つい……全巻、一気読みしてしまって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui002.m4a",
+      "text": "はい。私、サキュバスってエッチで品がないものだと\n思ってましたけど……漫画を読んで印象が変わりました",
+      "startTime": 28.8,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "一気読み！？　全部でニ十巻はあったのに？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui003.m4a",
+      "text": "まだ、ちゃんとは掴み切れていませんけど\nあの漫画に出てくるサキュバスは、一途で一生懸命で",
+      "startTime": 35.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そんなに内容が良かったのか……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui004.m4a",
+      "text": "今なら、私が演じるサキュバスのことも\n真っ直ぐに分かってあげられる気がするんです",
+      "startTime": 43.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "はい。私、サキュバスってエッチで品がないものだと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh003.m4a",
+      "text": "その意気だ、瑠依ならきっと\n最高のサキュバスを演じられるはずだ",
+      "startTime": 48.7,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "思ってましたけど……漫画を読んで印象が変わりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui005.m4a",
+      "text": "さ、最高のサキュバスってなんですか？　でもファンや\n{user}さんの期待に、応えてみせます",
+      "startTime": 56.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "まだ、ちゃんとは掴み切れていませんけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui006.m4a",
+      "text": "収録が始まるまでに、しっかり役を作り込んで\nものにしてみせますから！",
+      "startTime": 63.4333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あの漫画に出てくるサキュバスは、一途で一生懸命で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今なら、私が演じるサキュバスのことも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui004.m4a"
-    },
-    {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "真っ直ぐに分かってあげられる気がするんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui004.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "その意気だ、瑠依ならきっと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh003.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "最高のサキュバスを演じられるはずだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh003.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "さ、最高のサキュバスってなんですか？　でもファンや",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh003.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "{user}さんの期待に、応えてみせます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui005.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "収録が始まるまでに、しっかり役を作り込んで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui006.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ものにしてみせますから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui006.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――ゲームの収録三回目",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 66.0628799675,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 1566.6692098000112,
+          "startTime": 67.6295491773
+        }
+      ]
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あ、{user}さんお疲れ様です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "様子を見に来てくれたんですね、ありがとうございます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui007.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui007.m4a",
+      "text": "あ、{user}さんお疲れ様です\n様子を見に来てくれたんですね、ありがとうございます",
+      "startTime": 71.3,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ、もうそろそろ収録も佳境だろう？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh004.m4a",
+      "text": "あぁ、もうそろそろ収録も佳境だろう？\n調子はどうだ？",
+      "startTime": 78.8,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "調子はどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そうですね……最初に脚本をいただいた時は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui008.m4a",
+      "text": "そうですね……最初に脚本をいただいた時は\n私、この役作りに凄く迷走していて……",
+      "startTime": 84.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私、この役作りに凄く迷走していて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "{user}さんが、私にピッタリな役だと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui009.m4a",
+      "text": "{user}さんが、私にピッタリな役だと\n言った時も、何を言ってるんだろうって思いました",
+      "startTime": 91.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "言った時も、何を言ってるんだろうって思いました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh005.m4a",
+      "text": "……す、すまない\nあの時は、言葉が全然足りていなかったな……",
+      "startTime": 96.5,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……す、すまない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あの時は、言葉が全然足りていなかったな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui010.m4a",
+      "text": "でも、今なら、あの時の言葉の意味が分かります\nこのゲームのサキュバスは、私なんです",
+      "startTime": 104.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "でも、今なら、あの時の言葉の意味が分かります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "このゲームのサキュバスは、私なんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui010.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui011.m4a",
+      "text": "傲慢で、高潔で、プライドが高くて……\nでも努力をいとわないし、妥協もしない",
+      "startTime": 111.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "傲慢で、高潔で、プライドが高くて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui011.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui012.m4a",
+      "text": "目標に一直線で、譲れないもののためなら\nいくらでも粘って、頑張って……",
+      "startTime": 118.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "でも努力をいとわないし、妥協もしない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "目標に一直線で、譲れないもののためなら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui013.m4a",
+      "text": "彼女を知れば知るほど、自分に似てると思ったんです\nそうしたらいつの間にか、恥じらいはなくなってました",
+      "startTime": 126.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "いくらでも粘って、頑張って……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui014.m4a",
+      "text": "このサキュバスは、もう一人の私なんだって\n今はそう思っています",
+      "startTime": 133.5666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "彼女を知れば知るほど、自分に似てると思ったんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そうしたらいつの間にか、恥じらいはなくなってました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui013.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui015.m4a",
+      "text": "だから、私の精一杯のサキュバスを\nファンの人達に、全力で届けるつもりです",
+      "startTime": 138.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "このサキュバスは、もう一人の私なんだって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh006.m4a",
+      "text": "もう恥ずかしがっている瑠依はいないんだな\n今の瑠依は、自信があって、凄くカッコいいよ",
+      "startTime": 145.4392655604,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今はそう思っています",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dancestudiocorridor-00-noon.webp",
+      "bgName": "dancestudiocorridor-00-noon"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "だから、私の精一杯のサキュバスを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui015.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui016.m4a",
+      "text": "ふふっ、ありがとうございます。そろそろ収録に\n戻りますね。ゲームの完成、楽しみにしていて下さい",
+      "startTime": 152.7,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ファンの人達に、全力で届けるつもりです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もう恥ずかしがっている瑠依はいないんだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh006.m4a"
-    },
-    {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今の瑠依は、自信があって、凄くカッコいいよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh006.m4a"
-    },
-    {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ふふっ、ありがとうございます。そろそろ収録に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui016.m4a"
-    },
-    {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "戻りますね。ゲームの完成、楽しみにしていて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui016.m4a"
-    },
-    {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――ゲームリリース記念イベント当日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 158.2761570846,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……はぁ。ゲームの中だけじゃなく、ステージでも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "サキュバスになるなんて……思いもしませんでした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui017.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui017.m4a",
+      "text": "……はぁ。ゲームの中だけじゃなく、ステージでも\nサキュバスになるなんて……思いもしませんでした",
+      "startTime": 165.166675822,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "よく似合ってるよ、瑠依。それにその衣装のデザインも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh007.m4a",
+      "text": "よく似合ってるよ、瑠依。それにその衣装のデザインも\nファンの人達の投票で決まったものだろう？",
+      "startTime": 173.9333424886,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ファンの人達の投票で決まったものだろう？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "それはそうですけど、でも、この格好で人前に出るのは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui018.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui018.m4a",
+      "text": "それはそうですけど、でも、この格好で人前に出るのは\n別問題です。さすがに少し……恥ずかしいです",
+      "startTime": 181.2386383023,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "別問題です。さすがに少し……恥ずかしいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……でも、ファンの人達が考えてくれたユニット名と",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui019.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui019.m4a",
+      "text": "……でも、ファンの人達が考えてくれたユニット名と\n衣装ですから……胸を張ってステージに立たないと",
+      "startTime": 190.0000091553,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "衣装ですから……胸を張ってステージに立たないと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……あの、私、ゲームのようなカッコいいサキュバスに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui020.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui020.m4a",
+      "text": "……あの、私、ゲームのようなカッコいいサキュバスに\n見えますか？　あ、でもあんまり見つめないで下さい！",
+      "startTime": 198.4040479753,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "見えますか？　あ、でもあんまり見つめないで下さい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui020.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh008.m4a",
+      "text": "み、見ていいのか悪いのか、どっちなんだ……？\nただ、そうだな。凄くカッコいいサキュバスに見えるよ",
+      "startTime": 206.5666819255,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "み、見ていいのか悪いのか、どっちなんだ……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ただ、そうだな。凄くカッコいいサキュバスに見えるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui021.m4a",
+      "text": "そういう{user}さんは、まるでゲームの\n主人公みたいですね。なんて……ふふっ、冗談です",
+      "startTime": 213.9666819255,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そういう{user}さんは、まるでゲームの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui022.m4a",
+      "text": "今日のステージでは、私がこの役に込めた想いと\nファンの人達への感謝を、精一杯伝えてきますね",
+      "startTime": 223.1666819255,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "主人公みたいですね。なんて……ふふっ、冗談です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui021.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今日のステージでは、私がこの役に込めた想いと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ファンの人達への感謝を、精一杯伝えてきますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui022.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui023.m4a",
+      "text": "最初は、サキュバスという役が恥ずかしくて\n練習していても、なかなか身が入らなかったんです",
+      "startTime": 232.4000152588,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "最初は、サキュバスという役が恥ずかしくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "練習していても、なかなか身が入らなかったんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui023.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui024.m4a",
+      "text": "でも、彼女のことを……ルイのことを考えて、理解を\n深めていく中で、彼女が好きになっていったんです",
+      "startTime": 240.8333485921,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "でも、彼女のことを……ルイのことを考えて、理解を",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "深めていく中で、彼女が好きになっていったんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui024.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui025.m4a",
+      "text": "一般的なサキュバスとは少し違うかもしれませんが\n彼女は高潔で、ひたむきで、そして一生懸命で……",
+      "startTime": 248.5000152588,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "一般的なサキュバスとは少し違うかもしれませんが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui025.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui026.m4a",
+      "text": "そんな彼女と私が似てると言ってくれた方がいたんです\nその言葉を、嘘にしたくなくて",
+      "startTime": 257.4000152588,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "彼女は高潔で、ひたむきで、そして一生懸命で……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui025.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そんな彼女と私が似てると言ってくれた方がいたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui026.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui027.m4a",
+      "text": "だから、頑張りました。気高くて、努力を惜しまない\nアイドルに――サキュバスになるために",
+      "startTime": 264.8987723533,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "その言葉を、嘘にしたくなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui026.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "だから、頑張りました。気高くて、努力を惜しまない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui027.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui028.m4a",
+      "text": "本当に私がそんな風になれたかどうかは\nゲームで確かめてみて下さいね",
+      "startTime": 271.3333465576,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "アイドルに――サキュバスになるために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "本当に私がそんな風になれたかどうかは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui028.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh009.m4a",
+      "text": "（最初は戸惑っていたけど、見事に自分のものにしたな）\n（瑠依は、本当によく頑張った）",
+      "startTime": 278.8666798909,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ゲームで確かめてみて下さいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui028.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui029.m4a",
+      "text": "ゲームの主人公は、まるでここに集まってくれた\nみなさんのようでもあるんです",
+      "startTime": 286.9000132243,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（最初は戸惑っていたけど、見事に自分のものにしたな）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui030.m4a",
+      "text": "慣れない魔界までついて来て、私を支えてくれる\n優しくて、頼もしい存在で……",
+      "startTime": 293.5333607991,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（瑠依は、本当によく頑張った）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui031.m4a",
+      "text": "そんな主人公が、事務所を移籍しても応援して\nくれる、ファンのみなさんに重なりました",
+      "startTime": 300.1000254313,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ゲームの主人公は、まるでここに集まってくれた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui029.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui032.m4a",
+      "text": "このゲームと、そして今日のこの歌で\nファンのみなさんに感謝の気持ちを伝えます",
+      "startTime": 306.833340454,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+          "delay": 4292.81205440003,
+          "startTime": 311.1261525084
+        }
+      ]
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "みなさんのようでもあるんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui029.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "慣れない魔界までついて来て、私を支えてくれる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui030.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui033.m4a",
+      "text": "それでは、聴いて下さい\nせーの……",
+      "startTime": 314.4333017984,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "優しくて、頼もしい存在で……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui030.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そんな主人公が、事務所を移籍しても応援して",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui031.m4a"
-    },
-    {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "くれる、ファンのみなさんに重なりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui031.m4a"
-    },
-    {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "このゲームと、そして今日のこの歌で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui032.m4a"
-    },
-    {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ファンのみなさんに感謝の気持ちを伝えます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui032.m4a"
-    },
-    {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "それでは、聴いて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui033.m4a"
-    },
-    {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "せーの……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui033.m4a"
-    },
-    {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "『Sweet Rouge』で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui033.m4a"
-    },
-    {
-      "id": "msg_89",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "『Colorful×Parallel』！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui034.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_11_03/sud_vo_adv_card_rui_11_03-rui034.m4a",
+      "text": "『Sweet Rouge』で\n『Colorful×Parallel』！",
+      "startTime": 318.0332977294,
+      "sfxList": []
     }
   ]
 }

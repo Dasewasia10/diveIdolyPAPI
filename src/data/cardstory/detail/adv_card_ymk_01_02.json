@@ -1,1184 +1,666 @@
 {
   "id": "adv_card_ymk_01_02",
-  "groupId": "card_ymk_01",
-  "name": "雪ミク 2話 カラオケ大会withミク",
-  "background": null,
-  "details": [
+  "title": "雪ミク",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "それでは、才能が暴走超特急な赤崎こころ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "一番手、歌わせていただきます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr001.m4a",
+      "text": "それでは、才能が暴走超特急な赤崎こころ！\n一番手、歌わせていただきます！",
+      "startTime": 4.9,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-aoi001.m4a",
       "text": "暴走しちゃったらついていけないけどね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr001.m4a"
+      "startTime": 8.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（みんなでいろいろ検討した結果、打ち上げは）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（全員が一緒に楽しめるカラオケに決まった）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh001.m4a",
+      "text": "（みんなでいろいろ検討した結果、打ち上げは）\n（全員が一緒に楽しめるカラオケに決まった）",
+      "startTime": 14.395011282,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（ライブが終わった直後だというのに……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（さすが、みんな体力があるな）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh002.m4a",
+      "text": "（ライブが終わった直後だというのに……）\n（さすが、みんな体力があるな）",
+      "startTime": 20.9218884355,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "――じゃじゃーん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "さあさあ採点結果は～？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr002.m4a",
+      "text": "――じゃじゃーん！\nさあさあ採点結果は～？",
+      "startTime": 27.0584130764,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "93点……凄い！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "かなりの高得点じゃない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ai001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ai001.m4a",
+      "text": "93点……凄い！\nかなりの高得点じゃない？",
+      "startTime": 32.4584130764,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "むむ……予定では95点は堅いはずだったのに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "歌手でも採点で100点取りにくい説は本当でしたか！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr003.m4a",
+      "text": "むむ……予定では95点は堅いはずだったのに……\n歌手でも採点で100点取りにくい説は本当でしたか！",
+      "startTime": 39.8250797431,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio001.m4a",
       "text": "次は私の番ね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio001.m4a"
+      "startTime": 44.1917464097,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "『The Last Chance』……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio002.m4a",
+      "text": "『The Last Chance』……\n自分達の曲だけど",
+      "startTime": 48.5950117906,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "自分達の曲だけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ねぇ、ミク",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio003.m4a",
+      "text": "ねぇ、ミク\nもし歌えるなら、一緒に歌わない？",
+      "startTime": 51.9950117906,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "もし歌えるなら、一緒に歌わない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio003.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk001.m4a",
       "text": "うん、いいよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk001.m4a"
+      "startTime": 54.7011341175,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "それじゃあ、今夜限りのスペシャルデュエット……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "いくわよっ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio004.m4a",
+      "text": "それじゃあ、今夜限りのスペシャルデュエット……\nいくわよっ！",
+      "startTime": 60.8616759142,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ミクはさすが、バーチャル・シンガーだな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "一度聴いただけで、ここまで正確に合わせられるなんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh003.m4a",
+      "text": "ミクはさすが、バーチャル・シンガーだな……\n一度聴いただけで、ここまで正確に合わせられるなんて",
+      "startTime": 67.3283425809,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "いいね、楽しそう。次は僕もミクと一緒に歌おうかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-aoi002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "『Blue sky summer』辺りを……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-aoi002.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-aoi002.m4a",
+      "text": "いいね、楽しそう。次は僕もミクと一緒に歌おうかな\n『Blue sky summer』辺りを……",
+      "startTime": 76.4666671753,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "あー、葵さんズルいです！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ai002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ai002.m4a",
+      "text": "あー、葵さんズルいです！\nじゃあ私も『最高優美ロンリネス』を入れます！",
+      "startTime": 81.3384100677,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "じゃあ私も『最高優美ロンリネス』を入れます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ai002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "――ふぅ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio005.m4a",
+      "text": "――ふぅ！\n何点ぐらいいったかしら？",
+      "startTime": 88.133333842,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "何点ぐらいいったかしら？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "きゅ……98点！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr004.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr004.m4a",
+      "text": "きゅ……98点！？\nしかも、初めてのデュエットなのに……！",
+      "startTime": 92.8594077033,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "しかも、初めてのデュエットなのに……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "このぐらい当然でしょ、私とミクが歌ったんだから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio006.m4a",
+      "text": "このぐらい当然でしょ、私とミクが歌ったんだから\nねぇ、ミク！",
+      "startTime": 99.6989028075,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ねぇ、ミク！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio006.m4a"
-    },
-    {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk002.m4a",
       "text": "ふふっ、そうだね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk002.m4a"
+      "startTime": 101.7666671753,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "くぅ……こころ、完全に火が付きましたよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "リベンジです～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-kkr005.m4a",
+      "text": "くぅ……こころ、完全に火が付きましたよ！\nリベンジです～！",
+      "startTime": 108.8282106639,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（その後も大いに盛り上がったが）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（さすがに疲れが出てしまったんだろう）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh004.m4a",
+      "text": "（その後も大いに盛り上がったが）\n（さすがに疲れが出てしまったんだろう）",
+      "startTime": 114.9269183319,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（莉央さんとミク以外は、早々に脱落）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh005.m4a",
+      "text": "（莉央さんとミク以外は、早々に脱落）\n（俺達は三人で、まったりとした時間を過ごした）",
+      "startTime": 121.2269183319,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（俺達は三人で、まったりとした時間を過ごした）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "改めてにはなるけど……ミク",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio007.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio007.m4a",
+      "text": "改めてにはなるけど……ミク\n今回はライブに出演してくれて、本当にありがとう",
+      "startTime": 128.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "今回はライブに出演してくれて、本当にありがとう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio007.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio008.m4a",
+      "text": "北海道公演だからこそのサプライズとして\n最高に盛り上がったわ",
+      "startTime": 137.4000005086,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "北海道公演だからこそのサプライズとして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio008.m4a"
-    },
-    {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "最高に盛り上がったわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio008.m4a"
-    },
-    {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio009.m4a",
       "text": "アンコールだけだったのが、もったいないぐらい……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio009.m4a"
+      "startTime": 139.2035433058,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "こちらこそ。北海道の冬を盛り上げるために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk003.m4a",
+      "text": "こちらこそ。北海道の冬を盛り上げるために\nいろいろ考えて、協力してくれて、凄く嬉しかったよ",
+      "startTime": 146.4000005086,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "いろいろ考えて、協力してくれて、凄く嬉しかったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio010.m4a",
+      "text": "ミクが登場した時のみんなの反応\n本当に凄かったわよね",
+      "startTime": 154.8666671753,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ミクが登場した時のみんなの反応",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk003.m4a"
-    },
-    {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "本当に凄かったわよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio010.m4a"
-    },
-    {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio011.m4a",
       "text": "それだけ嬉しいサプライズになったということかしら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio011.m4a"
+      "startTime": 156.9395450833,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "かもしれないね。嬉しかったなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk004.m4a",
+      "text": "かもしれないね。嬉しかったなぁ\nもっと共演していたかった……",
+      "startTime": 164.4666671753,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "もっと共演していたかった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio012.m4a",
+      "text": "そうよね\n楽しい時間って、本当にあっという間……",
+      "startTime": 169.233333842,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "そうよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "楽しい時間って、本当にあっという間……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh006.m4a",
+      "text": "いずれまた、共演する機会もありますよ\n今回みたいな偶然があったぐらいですから",
+      "startTime": 177.5935880502,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いずれまた、共演する機会もありますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今回みたいな偶然があったぐらいですから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio013.m4a",
+      "text": "じゃあその時は、今日以上に大々的な\nイベントを企画してくれる……ってことでいいかしら？",
+      "startTime": 183.5602547169,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "じゃあその時は、今日以上に大々的な",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh007.m4a",
+      "text": "う……確約は出来ないけど……分かりました\n最大限、努力します",
+      "startTime": 191.2269213836,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "イベントを企画してくれる……ってことでいいかしら？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "う……確約は出来ないけど……分かりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh007.m4a"
-    },
-    {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "最大限、努力します",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh007.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk005.m4a",
       "text": "ふふっ、その時はよろしくね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk005.m4a"
+      "startTime": 193.1598518931,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "はぁ……けど、本当に寂しいわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "もう明後日には東京に帰るだなんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio014.m4a",
+      "text": "はぁ……けど、本当に寂しいわね\nもう明後日には東京に帰るだなんて",
+      "startTime": 202.1269193491,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "明日はオフだし、ゆっくり観光でもどうです？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh008.m4a",
+      "text": "明日はオフだし、ゆっくり観光でもどうです？\nといっても、札幌市内はあらかた回っちゃいましたけど",
+      "startTime": 209.4602526825,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "といっても、札幌市内はあらかた回っちゃいましたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "……じゃあ、私が直接",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk006.m4a",
+      "text": "……じゃあ、私が直接\n北海道を案内してもいいかな？",
+      "startTime": 216.9666671753,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "北海道を案内してもいいかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh009.m4a",
+      "text": "え……いいのか？\nミクにも自分の仕事があるんじゃ……",
+      "startTime": 221.9602516652,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "え……いいのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ミクにも自分の仕事があるんじゃ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh009.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk007.m4a",
       "text": "平気！　案内もアンバサダーの役目だからね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk007.m4a"
+      "startTime": 224.6718446338,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ありがとう、ミク……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "せっかくだし、お願いしようかしら。いいわよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio015.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio015.m4a",
+      "text": "ありがとう、ミク……！\nせっかくだし、お願いしようかしら。いいわよね？",
+      "startTime": 231.8269264699,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ミクがいいなら、もちろん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ちなみに、どこを案内してくれる予定なんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh010.m4a",
+      "text": "ミクがいいなら、もちろん\nちなみに、どこを案内してくれる予定なんだ？",
+      "startTime": 238.1269264699,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk008.m4a",
       "text": "それはね――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk008.m4a"
+      "startTime": 241.2018752659,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_karaokeroom-00-noon.webp",
+      "bgName": "karaokeroom-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――翌日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 244.0352319961,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "……北海道って、本当に広いのね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio016.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio016.m4a",
+      "text": "……北海道って、本当に広いのね\n私、ちょっと舐めていたかも……",
+      "startTime": 250.0269498667,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "私、ちょっと舐めていたかも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "同じ道内だから、近いと思ってたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio017.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio017.m4a",
+      "text": "同じ道内だから、近いと思ってたけど\n特急列車で三時間もかかるなんて",
+      "startTime": 255.6116211141,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "特急列車で三時間もかかるなんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-rio017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh011.m4a",
+      "text": "北海道旅行の初心者あるあるだなぁ……\n広過ぎて距離感間違えるやつ……",
+      "startTime": 262.3602832001,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "北海道旅行の初心者あるあるだなぁ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "広過ぎて距離感間違えるやつ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-koh011.m4a"
-    },
-    {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "ふふっ、長旅お疲れ様！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk009.m4a"
-    },
-    {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ymk",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "――ようこそ、函館へ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk009.m4a"
+      "type": "dialogue",
+      "speakerCode": "ymk",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ymk.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ymk_01_02/sud_vo_adv_card_ymk_01_02-ymk009.m4a",
+      "text": "ふふっ、長旅お疲れ様！\n――ようこそ、函館へ！",
+      "startTime": 270.0666671753,
+      "sfxList": []
     }
   ]
 }

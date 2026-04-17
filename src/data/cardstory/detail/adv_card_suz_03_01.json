@@ -1,1156 +1,628 @@
 {
   "id": "adv_card_suz_03_01",
-  "groupId": "card_suz_03",
-  "name": "成宮すず 1話 アメリカ留学",
-  "background": null,
-  "details": [
+  "title": "成宮すず",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "おはよう！　ですわ！　{user}さん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "office-01-000-noon"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "今日はよく晴れた気持ちのいい天気ですわね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "おはよう、すず。今日はいつにも増して元気だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "何かいいことでもあったのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz001.m4a",
+      "text": "おはよう！　ですわ！　{user}さん！\n今日はよく晴れた気持ちのいい天気ですわね！",
+      "startTime": 4.1,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh001.m4a",
+      "text": "おはよう、すず。今日はいつにも増して元気だな\n何かいいことでもあったのか？",
+      "startTime": 13.1,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz002.m4a",
       "text": "実は……怜の悩みをこの私が華麗に解決したのですわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh001.m4a"
+      "startTime": 15.5,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "怜がお父様と絶縁状態だという話は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz003.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz003.m4a",
+      "text": "怜がお父様と絶縁状態だという話は\n{user}さんもご存じですわね？",
+      "startTime": 26.366666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "{user}さんもご存じですわね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz003.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz004.m4a",
       "text": "私もその話を聞いて、なんとかしなければと思って……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz004.m4a"
+      "startTime": 28.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "アイドルがいかに素晴らしい職業か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz005.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz005.m4a",
+      "text": "アイドルがいかに素晴らしい職業か\n怜の実家に乗り込んでお父様に説教したのですわ！",
+      "startTime": 36.7,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "怜の実家に乗り込んでお父様に説教したのですわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz005.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz006.m4a",
+      "text": "そんな私の活躍もあって、怜とお父様のわだかまりが\n少しだけ解消されたんですの",
+      "startTime": 45.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "そんな私の活躍もあって、怜とお父様のわだかまりが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh002.m4a",
+      "text": "すずが実家に乗り込んだって聞いた時は驚いたよ\nうまくいってよかったな",
+      "startTime": 52.3,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "少しだけ解消されたんですの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz006.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz007.m4a",
+      "text": "やはり家族仲はいいに越したことはないですわね\n私もいいことをして晴れ晴れとした気分ですの",
+      "startTime": 58.9,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すずが実家に乗り込んだって聞いた時は驚いたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz006.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "うまくいってよかったな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh002.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "やはり家族仲はいいに越したことはないですわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz007.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私もいいことをして晴れ晴れとした気分ですの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz007.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh003.m4a",
       "text": "そう言うすずは、最近ご家族とはどうなんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh003.m4a"
+      "startTime": 63.3,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "相変わらずですわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz008.m4a",
+      "text": "相変わらずですわ\nお父様はともかく、お母様が厳しくて……",
+      "startTime": 69,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "お父様はともかく、お母様が厳しくて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh004.m4a",
+      "text": "すずのお父さんとはまだお会いしたことがないんだが\nどんな人なんだ？",
+      "startTime": 77.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すずのお父さんとはまだお会いしたことがないんだが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh004.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "どんな人なんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh004.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz009.m4a",
       "text": "私が言うのもなんですが、娘に甘い人ですわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh004.m4a"
+      "startTime": 78.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "昔からほしいものはなんでも買ってくれて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz009.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz010.m4a",
+      "text": "昔からほしいものはなんでも買ってくれて\nお小遣いに不自由したことはありませんでした",
+      "startTime": 86.5,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "お小遣いに不自由したことはありませんでした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz010.m4a"
-    },
-    {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh005.m4a",
       "text": "すずの金銭感覚がずれているのはその頃からだったのか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz010.m4a"
+      "startTime": 89.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私がアイドルになることに反対していましたが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz011.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz011.m4a",
+      "text": "私がアイドルになることに反対していましたが\nグランプリ以降は変化があったみたいで",
+      "startTime": 98.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "グランプリ以降は変化があったみたいで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz011.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz012.m4a",
+      "text": "最近は「うちの娘は世界一可愛いアイドルだ」と\n周囲に触れ回っているそうですの",
+      "startTime": 105.9,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "最近は「うちの娘は世界一可愛いアイドルだ」と",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz012.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz013.m4a",
+      "text": "実家の棚に私のCDやグッズ、生写真を飾って\nお客様が来るたびに自慢しているらしいですわ",
+      "startTime": 113.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "周囲に触れ回っているそうですの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh006.m4a",
+      "text": "意外と親馬鹿なんだな……\nでも親子仲が悪い訳じゃなくて安心したよ",
+      "startTime": 120.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "実家の棚に私のCDやグッズ、生写真を飾って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz012.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz014.m4a",
+      "text": "そうですわね\nお父様との仲はそこまで悪くありませんが……",
+      "startTime": 125.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "お客様が来るたびに自慢しているらしいですわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz013.m4a"
-    },
-    {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "意外と親馬鹿なんだな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh006.m4a"
-    },
-    {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも親子仲が悪い訳じゃなくて安心したよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh006.m4a"
-    },
-    {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "そうですわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz014.m4a"
-    },
-    {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "お父様との仲はそこまで悪くありませんが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz014.m4a"
-    },
-    {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz015.m4a",
       "text": "父親が甘い反動で、母親が厳しくなってしまって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz015.m4a"
+      "startTime": 130.1666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私にアイドルを辞めさせようとして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz015.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz016.m4a",
+      "text": "私にアイドルを辞めさせようとして\n仕事現場に乗り込んで来たこともありましたわね",
+      "startTime": 137.9333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "仕事現場に乗り込んで来たこともありましたわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh007.m4a",
+      "text": "あの時はすずを留学させようとしていたが\nそれは今も変わらないのか？",
+      "startTime": 145.1,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あの時はすずを留学させようとしていたが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh007.m4a"
-    },
-    {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それは今も変わらないのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh007.m4a"
-    },
-    {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz017.m4a",
       "text": "……そういえば最近は留学しろと言ってきませんわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh007.m4a"
+      "startTime": 147.4,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "きっと私の活躍を見て、アイドルが私の天職だと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz018.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz018.m4a",
+      "text": "きっと私の活躍を見て、アイドルが私の天職だと\n分かってくださったに違いありませんわ！",
+      "startTime": 157.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "分かってくださったに違いありませんわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz018.m4a"
-    },
-    {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh008.m4a",
       "text": "だといいんだが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh008.m4a"
+      "startTime": 160.5,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――数日後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 163.6333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 1233.3333334000258,
+          "startTime": 164.8666666667
+        }
+      ]
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz019.m4a",
       "text": "大変ですわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz019.m4a"
+      "startTime": 166.5,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh009.m4a",
       "text": "そんなに慌ててどうしたんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz019.m4a"
+      "startTime": 168.3,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz020.m4a",
       "text": "久しぶりにお母様からメールが来たのですが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh009.m4a"
+      "startTime": 170.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "すずはアイドルを辞めて留学するべきだと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz021.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "また言ってきたんですの！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz021.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz021.m4a",
+      "text": "すずはアイドルを辞めて留学するべきだと\nまた言ってきたんですの！",
+      "startTime": 178.6333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 5166.6666667000245,
+          "startTime": 183.8
+        }
+      ]
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "最近、他の子達は単独での露出が増えているのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "すずはあまり見かけませんね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "やはりすずにアイドルは無理だったのです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz022.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz022.m4a",
+      "text": "最近、他の子達は単独での露出が増えているのに\nすずはあまり見かけませんね",
+      "startTime": 190.1,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "アメリカに留学して一からやり直しなさいって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私だけ活躍してないだなんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz024.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz023.m4a",
+      "text": "やはりすずにアイドルは無理だったのです\nアメリカに留学して一からやり直しなさいって……",
+      "startTime": 197.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "失礼にもほどがあるのですわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "単独の仕事か……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz024.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz024.m4a",
+      "text": "私だけ活躍してないだなんて\n失礼にもほどがあるのですわ！",
+      "startTime": 204.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "確かにみんなはソロでの活動が目立ってきているな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh010.m4a",
+      "text": "単独の仕事か……\n確かにみんなはソロでの活動が目立ってきているな",
+      "startTime": 209.6333333333,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz025.m4a",
       "text": "え、そうなんですの！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh010.m4a"
+      "startTime": 213.9333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "センターの琴乃やさくらはもちろん、芽衣や沙季",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh011.m4a",
+      "text": "センターの琴乃やさくらはもちろん、芽衣や沙季\n怜なんかも個性や趣味を活かした仕事が増えてきている",
+      "startTime": 220,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "怜なんかも個性や趣味を活かした仕事が増えてきている",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "最初は不安がっていた雫や千紗も",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh012.m4a",
+      "text": "最初は不安がっていた雫や千紗も\nラジオやグラビアで活動の幅を広げている",
+      "startTime": 227.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ラジオやグラビアで活動の幅を広げている",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "ぐぬぬ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz026.m4a",
+      "text": "ぐぬぬ……\nみなさん、なかなかやってくれますわね……",
+      "startTime": 231.9333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "みなさん、なかなかやってくれますわね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz026.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "でも、そう言われてみると……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz027.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz027.m4a",
+      "text": "でも、そう言われてみると……\n私はみなさんほど活躍出来ていないかも……",
+      "startTime": 239.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私はみなさんほど活躍出来ていないかも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz028.m4a",
       "text": "確かに、現状にあぐらをかいていたかもしれません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz028.m4a"
+      "startTime": 244.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "こんな体たらくでは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz028.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "お母様を説得なんて出来ませんわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz029.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz029.m4a",
+      "text": "こんな体たらくでは\nお母様を説得なんて出来ませんわね",
+      "startTime": 250.2,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私、やりますわ！　もっとソロの仕事を増やして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz030.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "お母様がつけいる隙など与えなくしますわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz030.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz030.m4a",
+      "text": "私、やりますわ！　もっとソロの仕事を増やして\nお母様がつけいる隙など与えなくしますわ！",
+      "startTime": 258.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "という訳で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz031.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私の仕事をもっと増やしてくださいまし！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz031.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz031.m4a",
+      "text": "という訳で\n私の仕事をもっと増やしてくださいまし！",
+      "startTime": 262.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "この際、贅沢は言いません！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz032.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "普段なら断るような仕事もバンバン入れるのですわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz032.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz032.m4a",
+      "text": "この際、贅沢は言いません！\n普段なら断るような仕事もバンバン入れるのですわ！",
+      "startTime": 268.9,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それだと休む暇もなくなるぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz032.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh013.m4a",
+      "text": "それだと休む暇もなくなるぞ\nさすがに仕事は選んだ方がいいんじゃ……",
+      "startTime": 276.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さすがに仕事は選んだ方がいいんじゃ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "いいえ、やりますわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz033.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz033.m4a",
+      "text": "いいえ、やりますわ！\n私へのオファーは全部受けなさい！",
+      "startTime": 281.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "私へのオファーは全部受けなさい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz033.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "どんなにハードスケジュールでも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz034.m4a"
-    },
-    {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "全てやり遂げてみせますわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz034.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_03_01/sud_vo_adv_card_suz_03_01-suz034.m4a",
+      "text": "どんなにハードスケジュールでも\n全てやり遂げてみせますわ！",
+      "startTime": 287.5333333333,
+      "sfxList": []
     }
   ]
 }

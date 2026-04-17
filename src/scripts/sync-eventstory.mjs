@@ -484,6 +484,20 @@ const fetchData = (url) => {
 
   const groupedEvents = {};
   let totalFilesProcessed = 0;
+  let cachedFilesCount = 0;
+
+  // --- BACA CACHE LAMA ---
+  const INDEX_PATH = path.join(OUTPUT_DIR, "index.json");
+  const cacheMap = {};
+  if (fs.existsSync(INDEX_PATH)) {
+    const oldIndex = JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8"));
+    oldIndex.forEach(group => {
+      group.episodes.forEach(ep => {
+        cacheMap[ep.id] = ep;
+      });
+    });
+    console.log(`[CACHE] Ditemukan ${Object.keys(cacheMap).length} cerita di index lama.`);
+  }
 
   // --- FETCH MASTER DATA GITHUB ---
   const BASE_URL =
@@ -547,6 +561,20 @@ const fetchData = (url) => {
     const eventId = match[1];
     const episode = match[2];
     const part = match[3];
+    const jsonFileName = `${assetId}.json`;
+
+    // Pastikan grup dibuat meskipun pakai cache
+    if (!groupedEvents[eventId]) {
+      let eventTitleFinal = eventIdToTitle[eventId] || `Event Story: ${eventId.toUpperCase()}`;
+      groupedEvents[eventId] = { id: eventId, title: eventTitleFinal, episodes: [] };
+    }
+
+    // --- CEK CACHE ---
+    if (cacheMap[assetId] && fs.existsSync(path.join(DETAIL_DIR, jsonFileName))) {
+      groupedEvents[eventId].episodes.push(cacheMap[assetId]);
+      cachedFilesCount++;
+      continue;
+    }
 
     try {
       const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);

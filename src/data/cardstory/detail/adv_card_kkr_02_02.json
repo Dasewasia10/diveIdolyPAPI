@@ -1,1156 +1,556 @@
 {
   "id": "adv_card_kkr_02_02",
-  "groupId": "card_kkr_02",
-  "name": "赤崎こころ 2話 新ユニットのオファー",
-  "background": null,
-  "details": [
+  "title": "赤崎こころ",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――こころに麻奈の昔話を始めて30分後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "――そして、こころ達が加入する前のLizNoirと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh001.m4a",
+      "text": "――そして、こころ達が加入する前のLizNoirと\n麻奈が対決することが決定した。もう何年も前の話だ",
+      "startTime": 7.5,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈が対決することが決定した。もう何年も前の話だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "テレビで観てました～。中断する前の",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr001.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr001.m4a",
+      "text": "テレビで観てました～。中断する前の\nNEXT VENUSグランプリの決勝ですよね",
+      "startTime": 16.066666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "NEXT VENUSグランプリの決勝ですよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh002.m4a",
+      "text": "あぁ。その前日、麻奈と莉央さんは激しくやり合った\n特に麻奈はわざとケンカを売っているように見えた",
+      "startTime": 25.066666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ。その前日、麻奈と莉央さんは激しくやり合った",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "特に麻奈はわざとケンカを売っているように見えた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr002.m4a",
+      "text": "えっ……\n現場ではそんな険悪な雰囲気だったんですか？",
+      "startTime": 29.7,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "えっ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "現場ではそんな険悪な雰囲気だったんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh003.m4a",
+      "text": "莉央さんも対抗心むき出しで\n……俺はいつ止めに入ろうかとはらはらしていたよ",
+      "startTime": 36.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "莉央さんも対抗心むき出しで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh004.m4a",
+      "text": "だから、帰り道、麻奈に強めに注意したんだ\n麻奈は全然反省してなかったみたいだけど",
+      "startTime": 44.8,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……俺はいつ止めに入ろうかとはらはらしていたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だから、帰り道、麻奈に強めに注意したんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr003.m4a",
+      "text": "はぁ～。思ってたよりも勝ち気な方だったんですね\nステージではいつも笑顔だから、ギャップあります",
+      "startTime": 53.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈は全然反省してなかったみたいだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh005.m4a",
+      "text": "当時は俺も、麻奈の負けん気が災いしたと思った\nでも、今は考え方が変わったよ",
+      "startTime": 61.06666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "はぁ～。思ってたよりも勝ち気な方だったんですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr003.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "ステージではいつも笑顔だから、ギャップあります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr003.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "当時は俺も、麻奈の負けん気が災いしたと思った",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh005.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも、今は考え方が変わったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh005.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr004.m4a",
       "text": "……どう変わったんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr004.m4a"
+      "startTime": 64.4,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈は100％の莉央さん――リズノワと競いたかった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だから、わざとそんな態度をとったんだと思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh006.m4a",
+      "text": "麻奈は100％の莉央さん――リズノワと競いたかった\nだから、わざとそんな態度をとったんだと思う",
+      "startTime": 71.76666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈はとにかくファンを大切にしていた……だから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh007.m4a",
+      "text": "麻奈はとにかくファンを大切にしていた……だから\n決勝を最高のステージにしたかったんじゃないかって",
+      "startTime": 79.43333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "決勝を最高のステージにしたかったんじゃないかって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "えっと……つまり、盛り上げるために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr005.m4a",
+      "text": "えっと……つまり、盛り上げるために\n莉央さんの闘志にわざと火をつけたってことですか？",
+      "startTime": 86.4,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "莉央さんの闘志にわざと火をつけたってことですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr006.m4a",
+      "text": "そんなことしたら、不利になるだけじゃないですか\n意味分かりませんよ",
+      "startTime": 93.73333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "そんなことしたら、不利になるだけじゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "意味分かりませんよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh008.m4a",
+      "text": "そういうやつだったんだよ\n……それに、絶対に勝つ自信があったんだろう",
+      "startTime": 98.33333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そういうやつだったんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh008.m4a"
-    },
-    {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……それに、絶対に勝つ自信があったんだろう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh008.m4a"
-    },
-    {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh009.m4a",
       "text": "……今となっては全て、俺の想像だけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh009.m4a"
+      "startTime": 102.43333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "う～ん、麻奈さんって、可愛くて清楚なお嬢さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr007.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "……って感じのイメージだったんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "そんなに激しい一面があったんですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr007.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr007.m4a",
+      "text": "う～ん、麻奈さんって、可愛くて清楚なお嬢さん\n……って感じのイメージだったんですけど",
+      "startTime": 111.73333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "すっごい自信家みたいですし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr008.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr008.m4a",
+      "text": "そんなに激しい一面があったんですね\nすっごい自信家みたいですし",
+      "startTime": 117.46666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それに見合うだけの努力はしていたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "才能だけで伝説のアイドルになった訳じゃないんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh010.m4a",
+      "text": "それに見合うだけの努力はしていたよ\n才能だけで伝説のアイドルになった訳じゃないんだ",
+      "startTime": 122.93333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "私だって努力してます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "才能は……あるかどうか分かりませんけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr009.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr009.m4a",
+      "text": "私だって努力してます！\n才能は……あるかどうか分かりませんけど",
+      "startTime": 129.23333333333332,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "でも、笑顔はアイドルの世界で一番です！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "麻奈さんにだって負けませんよ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr010.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr010.m4a",
+      "text": "でも、笑顔はアイドルの世界で一番です！\n麻奈さんにだって負けませんよ～",
+      "startTime": 137.1,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "はは……一番かどうかは分からないけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "自信を持つのはいいことだと思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh011.m4a",
+      "text": "はは……一番かどうかは分からないけど\n自信を持つのはいいことだと思う",
+      "startTime": 143.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr011.m4a",
       "text": "どうして目を逸らしながら言うんですか～？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr011.m4a"
+      "startTime": 147.1,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "でも感謝です。参考になりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "麻奈さんのいいところを頑張って真似してみます～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr012.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr012.m4a",
+      "text": "でも感謝です。参考になりました\n麻奈さんのいいところを頑張って真似してみます～",
+      "startTime": 154.26666666666668,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ほどほどにな……そういえば仕事の話があったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh012.m4a",
+      "text": "ほどほどにな……そういえば仕事の話があったんだ\n麻奈の話をしていて忘れるところだったよ",
+      "startTime": 163.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈の話をしていて忘れるところだったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "どんなお仕事です？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr013.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr013.m4a",
+      "text": "どんなお仕事です？\n私達LizNoirはお安くありませんよ～？",
+      "startTime": 168.2,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "私達LizNoirはお安くありませんよ～？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh013.m4a",
+      "text": "今回は、LizNoirじゃない\n星見プロの年少組へのオファーだ",
+      "startTime": 174.63333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今回は、LizNoirじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "星見プロの年少組へのオファーだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh013.m4a"
-    },
-    {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr014.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh013.m4a"
+      "startTime": 177.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こころには、他のグループの年少メンバーと組んで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh014.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "テレビで歌ってもらいたいんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "3d_office_noon"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "面白そうですね～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh014.m4a",
+      "text": "こころには、他のグループの年少メンバーと組んで\nテレビで歌ってもらいたいんだ",
+      "startTime": 183.8,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "年少メンバーって、他に誰がいるんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr015.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr015.m4a",
+      "text": "面白そうですね～\n年少メンバーって、他に誰がいるんですか？",
+      "startTime": 188.2,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "トリエルからは奥山さん、月ストからはすず",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh015.m4a",
+      "text": "トリエルからは奥山さん、月ストからはすず\n……サニピからは千紗だ",
+      "startTime": 196.6,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……サニピからは千紗だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr016.m4a",
+      "text": "なるほど～。中学生のフレッシュな若手だけを\n集めたって訳ですか？",
+      "startTime": 202.33333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "なるほど～。中学生のフレッシュな若手だけを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr016.m4a"
-    },
-    {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "集めたって訳ですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr016.m4a"
-    },
-    {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh016.m4a",
       "text": "……高校生だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh016.m4a"
+      "startTime": 204.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "ん～？　誰がですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr017.m4a",
+      "text": "ん～？　誰がですか？\nみんな中学生じゃ……",
+      "startTime": 208,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "みんな中学生じゃ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr017.m4a"
-    },
-    {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh017.m4a",
       "text": "……千紗は、高校二年生だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh017.m4a"
+      "startTime": 210.06666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "そうだったんですね～。千紗ちゃんは可愛らしいから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr018.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr018.m4a",
+      "text": "そうだったんですね～。千紗ちゃんは可愛らしいから\nてっきりこころと同い年くらいだと――",
+      "startTime": 217.46666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "てっきりこころと同い年くらいだと――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh018.m4a",
+      "text": "それは本人には絶対に言うなよ……とにかく\nこの番組だけの一回限りのユニットだけど、どうだ？",
+      "startTime": 225.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それは本人には絶対に言うなよ……とにかく",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr018.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr019.m4a",
+      "text": "もちろんやりますよ！\nこころに目をつけるなんて、センスがありますね～",
+      "startTime": 231.5,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "この番組だけの一回限りのユニットだけど、どうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh019.m4a",
+      "text": "最年長は千紗だけど、ちょっと緊張してるみたいだ\nどうか仲良くな……絶対陰でイジメたりするなよ？",
+      "startTime": 239.83333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "もちろんやりますよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr019.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr020.m4a",
+      "text": "もう、そんなことする訳ないじゃないですか～\n人を腹黒キャラみたいに～",
+      "startTime": 247.9,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "こころに目をつけるなんて、センスがありますね～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh020.m4a",
+      "text": "変なこと言って、いつも愛のせいにしてるのは\n誰だよ……",
+      "startTime": 253.3,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "最年長は千紗だけど、ちょっと緊張してるみたいだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh019.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr021.m4a",
+      "text": "愛ちゃんはこころにかまわれるのが好きなんです\nこころの愛情表現の一バリエーションにすぎませんから",
+      "startTime": 258.2,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "どうか仲良くな……絶対陰でイジメたりするなよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh019.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr022.m4a",
+      "text": "こころは、誰にでも優しい\nみんなのアイドルなんですから～",
+      "startTime": 264.53333333333336,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "もう、そんなことする訳ないじゃないですか～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr020.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr023.m4a",
+      "text": "ふふ～ん、麻奈さんみたいな凄いステージに\nしてみせますから、期待してて下さいね？",
+      "startTime": 270.8333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "人を腹黒キャラみたいに～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr020.m4a"
-    },
-    {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "変なこと言って、いつも愛のせいにしてるのは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh020.m4a"
-    },
-    {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "誰だよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh020.m4a"
-    },
-    {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "愛ちゃんはこころにかまわれるのが好きなんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh020.m4a"
-    },
-    {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "こころの愛情表現の一バリエーションにすぎませんから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr021.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "こころは、誰にでも優しい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr022.m4a"
-    },
-    {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "みんなのアイドルなんですから～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr022.m4a"
-    },
-    {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "ふふ～ん、麻奈さんみたいな凄いステージに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr022.m4a"
-    },
-    {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "してみせますから、期待してて下さいね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-kkr023.m4a"
-    },
-    {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh021.m4a",
       "text": "……大丈夫かなぁ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_02_02/sud_vo_adv_card_kkr_02_02-koh021.m4a"
+      "startTime": 273.96666666666664,
+      "sfxList": []
     }
   ]
 }

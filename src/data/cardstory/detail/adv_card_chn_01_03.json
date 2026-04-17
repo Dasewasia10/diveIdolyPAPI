@@ -1,1128 +1,787 @@
 {
   "id": "adv_card_chn_01_03",
-  "groupId": "card_chn_01",
-  "name": "チノ 3話 ラビットハウスで頑張りますよ",
-  "background": null,
-  "details": [
+  "title": "チノ",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_clb-04.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 0.1333333333
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr001.m4a",
       "text": "ただいまー！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr001.m4a"
+      "startTime": 1.499999988,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "おかえりなさい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "すみれちゃん、街は楽しかった？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs001.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs001.m4a",
+      "text": "おかえりなさい\nすみれちゃん、街は楽しかった？",
+      "startTime": 4.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "チノちゃんにいろんな所を案内してもらって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "とっても楽しかったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr002.m4a",
+      "text": "チノちゃんにいろんな所を案内してもらって\nとっても楽しかったよ",
+      "startTime": 10.6381179094,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr003.m4a",
       "text": "それで、みんなにお土産を買ってきたんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr003.m4a"
+      "startTime": 12.7714512307,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs002.m4a",
       "text": "私達に？　ありがとう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr003.m4a"
+      "startTime": 15.9381170708,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_gasa-03.m4a",
+          "delay": 5546.047977699999,
+          "startTime": 21.4841650485
+        }
+      ]
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn001.m4a",
       "text": "ココアさんにもお土産があります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn001.m4a"
+      "startTime": 18.8936726449,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_gasa-03.m4a",
+          "delay": 5833.8252283,
+          "startTime": 24.7274978732
+        }
+      ]
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "チノちゃんから私に？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "……こ、これは！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca001.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca001.m4a",
+      "text": "チノちゃんから私に？\n……こ、これは！",
+      "startTime": 25.6174978732,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "この街のマスコットキャラクター『きぐみん』の",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "キーホルダーです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn002.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn002.m4a",
+      "text": "この街のマスコットキャラクター『きぐみん』の\nキーホルダーです",
+      "startTime": 31.3174978732,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "なんて言うか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "さくらちゃんが好きそうなキャラクターだね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs003.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chs003.m4a",
+      "text": "なんて言うか……\nさくらちゃんが好きそうなキャラクターだね……",
+      "startTime": 34.9,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 9433.3333333,
+          "startTime": 44.3333333333
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_gasa-03.m4a",
+          "delay": 10235.303362099998,
+          "startTime": 45.1353033621
+        }
+      ]
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "か、か……可愛い～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "ありがとう！　感激だよ！　チノちゃ～ん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "うぅ……ココアさん、抱きつかないで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "離れてくだ……あ、いえ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn003.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca002.m4a",
+      "text": "か、か……可愛い～！\nありがとう！　感激だよ！　チノちゃ～ん！",
+      "startTime": 42.0371917883,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "あれ？　どうしたの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "チノちゃんの反応がいつもと違うような……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca003.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn003.m4a",
+      "text": "うぅ……ココアさん、抱きつかないで\n離れてくだ……あ、いえ……",
+      "startTime": 50.2705241043,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "そう言えば、今朝もちょっとだけ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "いつもと様子が違ったよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca004.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca003.m4a",
+      "text": "あれ？　どうしたの？\nチノちゃんの反応がいつもと違うような……",
+      "startTime": 57.037190771,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca004.m4a",
+      "text": "そう言えば、今朝もちょっとだけ\nいつもと様子が違ったよね？",
+      "startTime": 63.1371917883,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn004.m4a",
       "text": "えっ、気付いていたんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn004.m4a"
+      "startTime": 65.6334982591,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "気付くに決まってるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "なんたって私はチノちゃんのお姉ちゃんなんだから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca005.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca005.m4a",
+      "text": "気付くに決まってるよ\nなんたって私はチノちゃんのお姉ちゃんなんだから！",
+      "startTime": 70.8371917883,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "そうですか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "私のこと、ちゃんと見ていてくれたんですね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn005.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn005.m4a",
+      "text": "そうですか……\n私のこと、ちゃんと見ていてくれたんですね……",
+      "startTime": 77.2371917883,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr004.m4a",
       "text": "ふふ……良かったね、チノちゃん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr004.m4a"
+      "startTime": 81.8988637881,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn006.m4a",
       "text": "はい……良かったです……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr004.m4a"
+      "startTime": 85.2321971215,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "あれー？　なんだか二人とも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "すっごく仲良くなってない？　一体二人で何してたの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca006.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca006.m4a",
+      "text": "あれー？　なんだか二人とも\nすっごく仲良くなってない？　一体二人で何してたの？",
+      "startTime": 90.3371917883,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "いろんな所に行って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "すみれさんのことを沢山聞きました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn007.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn007.m4a",
+      "text": "いろんな所に行って\nすみれさんのことを沢山聞きました",
+      "startTime": 96.9705251216,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "私もチノちゃんのことをいーっぱい聞けて楽しかったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ふふふ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr005.m4a",
+      "text": "私もチノちゃんのことをいーっぱい聞けて楽しかったよ\nふふふ……",
+      "startTime": 104.7007110434,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca007.m4a",
       "text": "いいなあ、私も二人の仲間に入れてよー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca007.m4a"
+      "startTime": 106.2340437289,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "そういうココアさんは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "千紗さんと仲良くなった気がします",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn008.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn008.m4a",
+      "text": "そういうココアさんは\n千紗さんと仲良くなった気がします",
+      "startTime": 112.5038574377,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "そうなの！　聞いてよチノちゃん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "さっきも千紗ちゃんと――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca008.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca008.m4a",
+      "text": "そうなの！　聞いてよチノちゃん！\nさっきも千紗ちゃんと――",
+      "startTime": 117.737190771,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――翌朝",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 120.6937850552,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cooking-02.m4a",
+          "delay": 1333.3338420000018,
+          "startTime": 122.0271188972
+        }
+      ]
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr006.m4a",
       "text": "こうして……これでどうかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr006.m4a"
+      "startTime": 122.6604546345,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "とても上手です、初めてのラテアートで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "これだけ描けるなんて筋がいいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn009.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn009.m4a",
+      "text": "とても上手です、初めてのラテアートで\nこれだけ描けるなんて筋がいいです",
+      "startTime": 130.7705251216,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "チノちゃんの教え方が上手なんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ラテアートって面白いね、もっとやってもいい？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr007.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr007.m4a",
+      "text": "チノちゃんの教え方が上手なんだよ\nラテアートって面白いね、もっとやってもいい？",
+      "startTime": 136.8050821461,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "あ、でも、そんなに沢山カフェラテ作ったら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr007.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr008.m4a",
+      "text": "あ、でも、そんなに沢山カフェラテ作ったら\n飲むのが大変だね",
+      "startTime": 143.8384154794,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "飲むのが大変だね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "それなら、今日のみなさんの朝食は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn010.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn010.m4a",
+      "text": "それなら、今日のみなさんの朝食は\nカフェラテ付きのモーニングセットにしましょう",
+      "startTime": 149.2705251216,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "カフェラテ付きのモーニングセットにしましょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "え、いいの？　じゃあ気合いを入れて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr009.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr009.m4a",
+      "text": "え、いいの？　じゃあ気合いを入れて\nみんなの分のラテアートも描いちゃうよ～！",
+      "startTime": 156.1032320099,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "みんなの分のラテアートも描いちゃうよ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr010.m4a",
       "text": "……あれ？　そう言えばココアさんは？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr010.m4a"
+      "startTime": 159.2365697817,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "ココアさんは……多分まだ寝てます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "よく寝坊するんです、まったく",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn011.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn011.m4a",
+      "text": "ココアさんは……多分まだ寝てます\nよく寝坊するんです、まったく",
+      "startTime": 167.3038584549,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr011.m4a",
       "text": "チノちゃん、起こしに行ってあげたら？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr011.m4a"
+      "startTime": 170.8888098276,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 11944.523505700005,
+          "startTime": 182.8333333333
+        }
+      ]
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "仕方がないですね。ちょっと行って起こしてきます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "まったく、ココアさんは世話が焼けます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "チノちゃん、あんなこと言ってるけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "なんだか楽しそうだったな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr012.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn012.m4a",
+      "text": "仕方がないですね。ちょっと行って起こしてきます\nまったく、ココアさんは世話が焼けます",
+      "startTime": 178.8705241043,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_rabbithouse-00-noon.webp",
+      "bgName": "rabbithouse"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr012.m4a",
+      "text": "チノちゃん、あんなこと言ってるけど\nなんだか楽しそうだったな",
+      "startTime": 187.2756277956,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr013.m4a",
       "text": "あの二人……まるで本当の姉妹みたい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr013.m4a"
+      "startTime": 189.7089889642,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_chnroom-00-noon.webp",
+      "bgName": "chnroom-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_chnroom-00-noon.webp",
+      "bgName": "chnroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn013.m4a",
       "text": "ココアさん、朝ですよ。起きて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn013.m4a"
+      "startTime": 195.8756617344,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_chnroom-00-noon.webp",
+      "bgName": "chnroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca009.m4a",
       "text": "う～ん……あと一時間だけ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca009.m4a"
+      "startTime": 200.5124781326,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "どれだけしっかり寝る気ですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_chnroom-00-noon.webp",
+      "bgName": "chnroom-00-noon"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "早く起きて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn014.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn014.m4a",
+      "text": "どれだけしっかり寝る気ですか\n早く起きて下さい",
+      "startTime": 208.1372060298,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "はぁ……全然起きないですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn015.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn015.m4a",
+      "text": "はぁ……全然起きないですね\n仕方がありません、こうなったら――",
+      "startTime": 216.1705393631,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "仕方がありません、こうなったら――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_chnroom-00-noon.webp",
+      "bgName": "chnroom-00-noon"
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn016.m4a",
       "text": "……お姉ちゃんのねぼすけ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn016.m4a"
+      "startTime": 221.7371806576,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 3546.218057800019,
+          "startTime": 225.2833987154
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 5000.025372200014,
+          "startTime": 226.7372060298
+        }
+      ]
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca010.m4a",
       "text": "待ってよチノちゃん！　今呼んでくれたよね！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca010.m4a"
+      "startTime": 226.116746151,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "うわぁ！？　凄い勢いで起きてきた！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca010.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr014.m4a",
+      "text": "うわぁ！？　凄い勢いで起きてきた！\n一体何があったの？",
+      "startTime": 233.1751545903,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "一体何があったの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr014.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca011.m4a",
+      "text": "聞いてよすみれちゃん！\nチノちゃんが「お姉ちゃん」って呼んでくれたんだよ！",
+      "startTime": 236.9372080643,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "聞いてよすみれちゃん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr014.m4a"
-    },
-    {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "チノちゃんが「お姉ちゃん」って呼んでくれたんだよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca011.m4a"
-    },
-    {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn017.m4a",
       "text": "呼んでません。気のせいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca011.m4a"
+      "startTime": 240.5497509435,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "えー、そんなー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn017.m4a"
+      "type": "dialogue",
+      "speakerCode": "cca",
+      "speakerName": "ココア",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-cca.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca012.m4a",
+      "text": "えー、そんなー\nもう一回呼んでくれていいんだよ？",
+      "startTime": 245.2038726965,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "cca",
-        "icon": null,
-        "name": "ココア"
-      },
-      "text": "もう一回呼んでくれていいんだよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-cca012.m4a"
+      "type": "dialogue",
+      "speakerCode": "chn",
+      "speakerName": "チノ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chn.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn018.m4a",
+      "text": "いいから早く着替えてきて下さい\n今日も一緒に、ラビットハウスで頑張りますよ",
+      "startTime": 251.5038726965,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "いいから早く着替えてきて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn018.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chn",
-        "icon": null,
-        "name": "チノ"
-      },
-      "text": "今日も一緒に、ラビットハウスで頑張りますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-chn018.m4a"
-    },
-    {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ふふふ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr015.m4a"
-    },
-    {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "やっぱり二人は仲がいいな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr015.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_chn_01_03/sud_vo_adv_card_chn_01_03-smr015.m4a",
+      "text": "ふふふ……\nやっぱり二人は仲がいいな～",
+      "startTime": 257.0491031802,
+      "sfxList": []
     }
   ]
 }

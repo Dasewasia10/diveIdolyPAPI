@@ -1,1142 +1,681 @@
 {
   "id": "adv_card_ktn_04_03",
-  "groupId": "card_ktn_04",
-  "name": "長瀬琴乃 3話 黒髪の少女とウエディングドレス",
-  "background": null,
-  "details": [
+  "title": "長瀬琴乃",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ここが、琴乃のご両親のデートコース最後のスポットか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今更だけど、本当に俺が相手役で良かったのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "もちろんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_shed-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "あ、いや、その……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_moon-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+      "startTime": 0
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh001.m4a",
+      "text": "ここが、琴乃のご両親のデートコース最後のスポットか\n今更だけど、本当に俺が相手役で良かったのか？",
+      "startTime": 5.7666666667,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn001.m4a",
+      "text": "もちろんです\nあ、いや、その……",
+      "startTime": 11.7333333333,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn002.m4a",
       "text": "……念のため、もう一度、言っておきますけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn002.m4a"
+      "startTime": 17.1666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "私、家族以外で普段から話す男の人って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn003.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn003.m4a",
+      "text": "私、家族以外で普段から話す男の人って\n{user}さんくらいなんです",
+      "startTime": 25.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "{user}さんくらいなんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "だから、相手役をお願いしたんですからね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn003.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn004.m4a",
+      "text": "だから、相手役をお願いしたんですからね？\n本当ですよ？　……本当ですから！",
+      "startTime": 31.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "本当ですよ？　……本当ですから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn004.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh002.m4a",
       "text": "信じてるって。何度も言っただろう？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh002.m4a"
+      "startTime": 34.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn005.m4a",
       "text": "それは……そう、なんですけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh002.m4a"
+      "startTime": 38.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それにしても、楽器店を見て回って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "コンサートを鑑賞……か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh003.m4a",
+      "text": "それにしても、楽器店を見て回って\nコンサートを鑑賞……か",
+      "startTime": 46.1666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "両親らしいなって思います",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn006.m4a",
+      "text": "両親らしいなって思います\n二人とも、いつも音楽のことを考えてるから",
+      "startTime": 52.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "二人とも、いつも音楽のことを考えてるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn007.m4a",
+      "text": "でも、ここまで回った場所と比べると\n随分と静かな場所ですよね",
+      "startTime": 60.3,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "でも、ここまで回った場所と比べると",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "随分と静かな場所ですよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn007.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn008.m4a",
       "text": "……そういえば、お母さんが言ってました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn008.m4a"
+      "startTime": 63.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "この公園を歩いている時",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "お父さんとの会話が自然となくなったって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn009.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn009.m4a",
+      "text": "この公園を歩いている時\nお父さんとの会話が自然となくなったって",
+      "startTime": 70,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "気まずくなったのかと思ったんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn010.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn010.m4a",
+      "text": "気まずくなったのかと思ったんですけど\nそうじゃなかったらしいんです",
+      "startTime": 76.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "そうじゃなかったらしいんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "二人でただ並んで歩いて、穏やかな風に吹かれて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn011.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn011.m4a",
+      "text": "二人でただ並んで歩いて、穏やかな風に吹かれて……\nそれが凄く心地良かったらしくて",
+      "startTime": 85.3,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "それが凄く心地良かったらしくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn011.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn012.m4a",
+      "text": "「ああ、この人とだったら、ずっと一緒にいられるな\nずっと一緒にいたいな」……って",
+      "startTime": 95.4,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "「ああ、この人とだったら、ずっと一緒にいられるな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn012.m4a"
-    },
-    {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "ずっと一緒にいたいな」……って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn012.m4a"
-    },
-    {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh004.m4a",
       "text": "そうか……素敵な話だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh004.m4a"
+      "startTime": 98.8,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn014.m4a",
       "text": "え、えっと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn014.m4a"
+      "startTime": 105.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうだ、歩きっ放しだし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あそこのベンチでちょっと休憩しないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh005.m4a",
+      "text": "そうだ、歩きっ放しだし\nあそこのベンチでちょっと休憩しないか？",
+      "startTime": 110.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn015.m4a",
       "text": "……はぁ、{user}さんらしいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn015.m4a"
+      "startTime": 117.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh006.m4a",
       "text": "ん、どうした？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh006.m4a"
+      "startTime": 120.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn016.m4a",
       "text": "なんでもありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn016.m4a"
+      "startTime": 122.6,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn017.m4a",
       "text": "……でも、結婚、か……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn017.m4a"
+      "startTime": 124.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh007.m4a",
       "text": "何か掴めそうか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh007.m4a"
+      "startTime": 130,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "うーん……正直、「これだ！」っていう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn018.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn018.m4a",
+      "text": "うーん……正直、「これだ！」っていう\nものが見つかった訳じゃないですけど",
+      "startTime": 136.6,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "ものが見つかった訳じゃないですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-night.webp",
+      "bgName": "tokyopark-00-night"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "でも……ふふ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn019.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn019.m4a",
+      "text": "でも……ふふ\nなんとなくなら、分かったかもしれませんね",
+      "startTime": 143.2,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "なんとなくなら、分かったかもしれませんね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn019.m4a"
-    },
-    {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――撮影当日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 148.3,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "わぁ、これが、私……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "ありがとうございます、こんな素敵に撮っていただいて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn020.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn020.m4a",
+      "text": "わぁ、これが、私……？\nありがとうございます、こんな素敵に撮っていただいて",
+      "startTime": 157.7,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn021.m4a",
       "text": "次はインタビューですね、分かりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn021.m4a"
+      "startTime": 162.3,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "結婚への願望、ですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn022.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn022.m4a",
+      "text": "結婚への願望、ですか\n私にはまだ遠い遠い出来事に思えるんですけど……",
+      "startTime": 170.9,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "私にはまだ遠い遠い出来事に思えるんですけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn022.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn023.m4a",
+      "text": "大切な人と寄り添い、ともに歩いていく\nそれって、とても素敵なことだなって思います",
+      "startTime": 181.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "大切な人と寄り添い、ともに歩いていく",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn023.m4a"
-    },
-    {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "それって、とても素敵なことだなって思います",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn023.m4a"
-    },
-    {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn024.m4a",
       "text": "だから……憧れはありますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn024.m4a"
+      "startTime": 185.9,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お疲れ様。写真ももちろんだし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "インタビューの受け答えも凄く良かったぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "ありがとうございます。うまくいくか不安でしたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh008.m4a",
+      "text": "お疲れ様。写真ももちろんだし\nインタビューの受け答えも凄く良かったぞ",
+      "startTime": 195.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "しっかり出来て良かったです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn025.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn025.m4a",
+      "text": "ありがとうございます。うまくいくか不安でしたけど\nしっかり出来て良かったです",
+      "startTime": 203,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh009.m4a",
       "text": "本当に、良く似合ってる。綺麗だぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh009.m4a"
+      "startTime": 205.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn026.m4a",
       "text": "な……っ！？　な、なんですか、急に……！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh009.m4a"
+      "startTime": 208.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "え？　いや……撮影の時は忙しかっただろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ちゃんと言うタイミングがなかったなって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh010.m4a",
+      "text": "え？　いや……撮影の時は忙しかっただろ？\nちゃんと言うタイミングがなかったなって",
+      "startTime": 217.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "そ、それは、分かりますけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "ああ、もう……っ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn027.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn027.m4a",
+      "text": "そ、それは、分かりますけど……\nああ、もう……っ！",
+      "startTime": 224.9,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "……はぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn028.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_wedding-00-noon.webp",
+      "bgName": "wedding-00-noon"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "でも……ありがとうございます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn028.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn028.m4a",
+      "text": "……はぁ\nでも……ありがとうございます\nとっても嬉しいです",
+      "startTime": 234.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "とっても嬉しいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn028.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh011.m4a",
+      "text": "（いろいろと悩んでたけど、成長して）\n（ちゃんと前に進めたみたいだな。良かった）",
+      "startTime": 238.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（いろいろと悩んでたけど、成長して）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn028.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（ちゃんと前に進めたみたいだな。良かった）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh011.m4a"
-    },
-    {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh012.m4a",
       "text": "琴乃。この間の写真、大反響じゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh012.m4a"
+      "startTime": 244.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "はい、私もびっくりしてます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn029.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn029.m4a",
+      "text": "はい、私もびっくりしてます\n雑誌でもあんなに大々的に取り上げていただいて……",
+      "startTime": 252.7,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "雑誌でもあんなに大々的に取り上げていただいて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn029.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh013.m4a",
+      "text": "あまりの出来の良さに\n急遽扱いを大きくして下さったらしい",
+      "startTime": 258.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あまりの出来の良さに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn029.m4a"
-    },
-    {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "急遽扱いを大きくして下さったらしい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh013.m4a"
-    },
-    {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn030.m4a",
       "text": "嬉しいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh013.m4a"
+      "startTime": 261.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "渚なんて「家宝にするよ～」って、保存用に2冊",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn031.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn031.m4a",
+      "text": "渚なんて「家宝にするよ～」って、保存用に2冊\n観賞用に1冊、布教用に5冊買ってました",
+      "startTime": 268.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "観賞用に1冊、布教用に5冊買ってました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn031.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh014.m4a",
+      "text": "さすがだな……\n琴乃は今回の仕事をやってみてどうだった？",
+      "startTime": 276.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さすがだな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh014.m4a"
-    },
-    {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "琴乃は今回の仕事をやってみてどうだった？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh014.m4a"
-    },
-    {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn032.m4a",
       "text": "悩んでる間は大変でしたけど……楽しかったです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh014.m4a"
+      "startTime": 279.7,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn033.m4a",
       "text": "それに、結婚もいいかもって思いました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn032.m4a"
+      "startTime": 284.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn034.m4a",
       "text": "でも……私はもっと先でいいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn033.m4a"
+      "startTime": 289.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "とにかく今は、月ストのみんなと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn035.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn035.m4a",
+      "text": "とにかく今は、月ストのみんなと\nトップアイドルへの道を突き進みたいんです",
+      "startTime": 297,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "トップアイドルへの道を突き進みたいんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn035.m4a"
-    },
-    {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh015.m4a",
       "text": "それなら、俺は引き続きサポートさせてもらうよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn035.m4a"
+      "startTime": 299.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "はい！　{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-koh015.m4a"
-    },
-    {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "これからもよろしくお願いしますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn036.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_04_03/sud_vo_adv_card_ktn_04_03-ktn036.m4a",
+      "text": "はい！　{user}さん\nこれからもよろしくお願いしますね",
+      "startTime": 305.8,
+      "sfxList": []
     }
   ]
 }

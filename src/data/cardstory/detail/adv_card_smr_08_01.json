@@ -1,1212 +1,668 @@
 {
   "id": "adv_card_smr_08_01",
-  "groupId": "card_smr_08",
-  "name": "奥山すみれ 1話 おもてなしするっちゃ！",
-  "background": null,
-  "details": [
+  "title": "奥山すみれ",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（今日は、観光大使の仕事のために山形に残った）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（すみれの様子を見に来た訳だが……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "{user}さ～～ん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tri-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "お疲れ様です、お待ちしてました！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すみれ、わざわざ待っててくれたのか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "観光大使の仕事もあるのに、ありがとう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "いえいえ！　{user}さんが山形に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "来てくれて、凄く嬉しいです。待ち伏せ作戦成功です！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh001.m4a",
+      "text": "（今日は、観光大使の仕事のために山形に残った）\n（すみれの様子を見に来た訳だが……）",
+      "startTime": 4.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "あ、瑠依ちゃんと優ちゃんは入れ違いで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "今朝別の仕事があるので東京に戻りました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr003.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr001.m4a",
+      "text": "{user}さ～～ん！\nお疲れ様です、お待ちしてました！",
+      "startTime": 8.9229286512,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 199.9999999999993,
+          "startTime": 7.4141270638
+        }
+      ]
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "{user}さんも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh002.m4a",
+      "text": "すみれ、わざわざ待っててくれたのか\n観光大使の仕事もあるのに、ありがとう",
+      "startTime": 15.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "今日はここにお泊りするんですよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああ、山形にいる間はここに滞在する予定だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr004.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr002.m4a",
+      "text": "いえいえ！　{user}さんが山形に\n来てくれて、凄く嬉しいです。待ち伏せ作戦成功です！",
+      "startTime": 21.3235148431,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すみれ達は、昨日泊まったんだよな。どうだった？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "はい！　ここ、すっごくいいお宿ですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr003.m4a",
+      "text": "あ、瑠依ちゃんと優ちゃんは入れ違いで\n今朝別の仕事があるので東京に戻りました",
+      "startTime": 29.9591354294,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "温泉も気持ちいいですし、お鍋も美味しかったな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr004.m4a",
+      "text": "{user}さんも\n今日はここにお泊りするんですよね？",
+      "startTime": 35.1568481764,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "地元の素材を使った山菜鍋なんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "東京だとなかなか食べられないですから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh003.m4a",
+      "text": "ああ、山形にいる間はここに滞在する予定だよ\nすみれ達は、昨日泊まったんだよな。どうだった？",
+      "startTime": 42.2,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "それに、三人でのんびり温泉にも入れましたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "トリエルの大事な思い出がまた一つ増えました！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr007.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr005.m4a",
+      "text": "はい！　ここ、すっごくいいお宿ですよ\n温泉も気持ちいいですし、お鍋も美味しかったな～",
+      "startTime": 50.7246256194,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "{user}さんのおかげですね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr008.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr006.m4a",
+      "text": "地元の素材を使った山菜鍋なんて\n東京だとなかなか食べられないですから",
+      "startTime": 58.8246256194,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "旅館とお鍋を予約してくれて、ありがとうございました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "喜んでもらえて俺も嬉しいよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr008.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr007.m4a",
+      "text": "それに、三人でのんびり温泉にも入れましたよ\nトリエルの大事な思い出がまた一つ増えました！",
+      "startTime": 66.6,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "トリエルの打ち上げっていったら鍋だと思ってな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "やっぱりそうですよね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr009.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr008.m4a",
+      "text": "{user}さんのおかげですね！\n旅館とお鍋を予約してくれて、ありがとうございました",
+      "startTime": 73.3246266367,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "私達も同じことを言いながらお鍋をつつきました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh004.m4a",
+      "text": "喜んでもらえて俺も嬉しいよ\nトリエルの打ち上げっていったら鍋だと思ってな",
+      "startTime": 80.2666692098,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ご飯の後は温泉に入って、温泉の後は……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ふふっ、浴衣で卓球したんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr010.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr009.m4a",
+      "text": "やっぱりそうですよね！\n私達も同じことを言いながらお鍋をつつきました",
+      "startTime": 85.9969619753,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "運動関係は、私達三人の中だと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "瑠依ちゃんが最強……だと思うじゃないですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr011.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr010.m4a",
+      "text": "ご飯の後は温泉に入って、温泉の後は……\nふふっ、浴衣で卓球したんです",
+      "startTime": 95.3302953086,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "瑠依は運動神経がいいからなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr011.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr011.m4a",
+      "text": "運動関係は、私達三人の中だと\n瑠依ちゃんが最強……だと思うじゃないですか？",
+      "startTime": 102.2302953086,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ん？　もしかして違ったのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh005.m4a",
+      "text": "瑠依は運動神経がいいからなぁ\nん？　もしかして違ったのか？",
+      "startTime": 110.0000025432,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr012.m4a",
       "text": "なんと！　温泉ピンポン最強は、優ちゃんでした！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr012.m4a"
+      "startTime": 113.0995695117,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "表情が変わらないし、どこに打ち込むか分からなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "瑠依ちゃんがフェイントに引っかかって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr013.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr013.m4a",
+      "text": "表情が変わらないし、どこに打ち込むか分からなくて\n瑠依ちゃんがフェイントに引っかかって……",
+      "startTime": 122.7329030993,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "気付いたら優ちゃんが勝っていたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr013.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr014.m4a",
+      "text": "気付いたら優ちゃんが勝っていたんです\n瑠依ちゃんも悔しそうだけど楽しそうでした",
+      "startTime": 129.1329030993,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "瑠依ちゃんも悔しそうだけど楽しそうでした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "本当に楽しかった～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr015.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr015.m4a",
+      "text": "本当に楽しかった～……\nおかげで、今日からまた、元気一杯頑張れます！",
+      "startTime": 135.8662364326,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "おかげで、今日からまた、元気一杯頑張れます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "充実したオフを過ごせたみたいで良かったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh006.m4a",
+      "text": "充実したオフを過ごせたみたいで良かったよ\nそういえば、今日からはどこに泊まるんだ？",
+      "startTime": 142.9511227813,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そういえば、今日からはどこに泊まるんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "あ、実家が近いので",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr016.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr016.m4a",
+      "text": "あ、実家が近いので\nしばらくは実家からお仕事に向かいます",
+      "startTime": 148.1135830564,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "しばらくは実家からお仕事に向かいます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr016.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr017.m4a",
+      "text": "チェックアウトは済んでるんですけど\n{user}さんをお迎えしたくて待ってたんです",
+      "startTime": 153.4469163897,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "チェックアウトは済んでるんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "{user}さんをお迎えしたくて待ってたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr017.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr018.m4a",
+      "text": "今の私は『山形の顔』ですから！\nどうですか？　元気の出る顔でしょう？",
+      "startTime": 160.6135830564,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "今の私は『山形の顔』ですから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh007.m4a",
+      "text": "そうだな、すみれの顔を見れて凄く元気がもらえたよ\nさすが、山形の観光大使に指名されるだけのことはある",
+      "startTime": 168.2666692098,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "どうですか？　元気の出る顔でしょう？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうだな、すみれの顔を見れて凄く元気がもらえたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr019.m4a",
+      "text": "えへへ、お仕事のために山形のことを調べ直してみて\n改めて山形っていい所だなぁって思いました",
+      "startTime": 178.0146038058,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さすが、山形の観光大使に指名されるだけのことはある",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr020.m4a",
+      "text": "私、地元が大好きなので、やる気がみなぎってます！\n沢山紹介したい所があるんですよ～！",
+      "startTime": 187.6812704725,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "えへへ、お仕事のために山形のことを調べ直してみて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "改めて山形っていい所だなぁって思いました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr019.m4a"
-    },
-    {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "私、地元が大好きなので、やる気がみなぎってます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr020.m4a"
-    },
-    {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "沢山紹介したい所があるんですよ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr020.m4a"
-    },
-    {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh008.m4a",
       "text": "そういえば、優が凄く羨ましがっていたぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh008.m4a"
+      "startTime": 190.6812717441,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いつか絶対京都の観光大使をやるんだ、って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh009.m4a",
+      "text": "いつか絶対京都の観光大使をやるんだ、って\n優秘蔵の京都観光スポットメモを見せられたよ",
+      "startTime": 198.1666692098,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "優秘蔵の京都観光スポットメモを見せられたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "優ちゃんなら絶対出来ますよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr021.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr021.m4a",
+      "text": "優ちゃんなら絶対出来ますよ！\nその時は三人で、京都のお鍋が食べたいです",
+      "startTime": 204.5134473167,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "その時は三人で、京都のお鍋が食べたいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr021.m4a"
-    },
-    {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh010.m4a",
       "text": "優なら張り切ってもてなしてくれそうだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr021.m4a"
+      "startTime": 208.6467819217,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "そうだ！　まだお仕事まで時間があるんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "良ければ私にもおもてなしをさせて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr022.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr022.m4a",
+      "text": "そうだ！　まだお仕事まで時間があるんです\n良ければ私にもおもてなしをさせて下さい",
+      "startTime": 215.8666692098,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "観光大使にもてなしてもらえるなんて、贅沢だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr022.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh011.m4a",
+      "text": "観光大使にもてなしてもらえるなんて、贅沢だな\nとりあえず、先にチェックインを済ませてくるよ",
+      "startTime": 223.8,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+          "delay": 4747.959788899976,
+          "startTime": 228.5479597889
+        }
+      ]
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "とりあえず、先にチェックインを済ませてくるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr023.m4a",
       "text": "お邪魔しま～す。いいお部屋ですね～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr023.m4a"
+      "startTime": 228.8812943939,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "広くていい部屋だな。くつろげそうだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh012.m4a",
+      "text": "広くていい部屋だな。くつろげそうだ\nそれで、おもてなしって？",
+      "startTime": 238.5666692098,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それで、おもてなしって？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "私が山形の観光スポットをご案内しちゃいます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr024.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr024.m4a",
+      "text": "私が山形の観光スポットをご案内しちゃいます！\n一杯勉強したんですよ～！",
+      "startTime": 245.1331297401,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "一杯勉強したんですよ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr024.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr025.m4a",
+      "text": "空中に浮かんでいるような景色のいいお寺とか\n鏡を配置した幻想的な境内の神社があって",
+      "startTime": 252.0331297401,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "空中に浮かんでいるような景色のいいお寺とか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr025.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "鏡を配置した幻想的な境内の神社があって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr025.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr026.m4a",
+      "text": "都会の空を見上げがちな人ほど\n癒されちゃうと思います！",
+      "startTime": 259.5331297401,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "都会の空を見上げがちな人ほど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr026.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "癒されちゃうと思います！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr026.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr027.m4a",
+      "text": "ちょっとここからの経路を確認しますね\nえ～っと……あれ、思ったより遠いかも……",
+      "startTime": 265.1331297401,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ちょっとここからの経路を確認しますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr026.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "え～っと……あれ、思ったより遠いかも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr027.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+      "startTime": 264.3031297401
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "……すみません。どれも、今日のお仕事の時間までに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "戻ってくるのが難しい場所でした……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr028.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr028.m4a",
+      "text": "……すみません。どれも、今日のお仕事の時間までに\n戻ってくるのが難しい場所でした……",
+      "startTime": 278.0331297401,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr029.m4a",
       "text": "うぅ～！　悔しいっちゃ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr028.m4a"
+      "startTime": 281.7664643451,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "こんなことなら待ち伏せ作戦じゃなく",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr029.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr030.m4a",
+      "text": "こんなことなら待ち伏せ作戦じゃなく\nおもてなし作戦を練っておくべきでした……！",
+      "startTime": 289.2331297401,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "おもてなし作戦を練っておくべきでした……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr030.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "まぁまぁ……観光地は逃げないから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr030.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh013.m4a",
+      "text": "まぁまぁ……観光地は逃げないから\nまた今度、すみれのおすすめの場所を見に来るよ",
+      "startTime": 295.9000025432,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "また今度、すみれのおすすめの場所を見に来るよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "おすすめ……はっ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr031.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr031.m4a",
+      "text": "おすすめ……はっ\nありました、私のおすすめスポット！　すぐ近くに！",
+      "startTime": 303.238798412,
+      "sfxList": []
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "ありました、私のおすすめスポット！　すぐ近くに！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr031.m4a"
-    },
-    {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-koh014.m4a",
       "text": "え？　そんな場所があるのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr031.m4a"
+      "startTime": 307.972133017,
+      "sfxList": []
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "さぁ、行きましょう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr032.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "私の大好きな場所にご案内します！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr032.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_08_01/sud_vo_adv_card_smr_08_01-smr032.m4a",
+      "text": "さぁ、行きましょう！\n私の大好きな場所にご案内します！",
+      "startTime": 313.1535828912,
+      "sfxList": []
     }
   ]
 }

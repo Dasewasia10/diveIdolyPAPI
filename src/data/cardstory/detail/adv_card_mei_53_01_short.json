@@ -1,78 +1,52 @@
 {
   "id": "adv_card_mei_53_01_short",
-  "groupId": "card_mei_53",
-  "name": "早坂芽衣 1話 はっぴーばーすでーだにゃ (Short)",
-  "background": null,
-  "details": [
+  "title": "早坂芽衣 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_living-01-noon.webp",
+      "bgName": "env_adv_3d_living-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――七月七日　朝",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "ふんふんふ～ん。今日は～芽衣の～お誕生日～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_53_01_short/sud_vo_adv_card_mei_53_01-mei001.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_53_01_short/sud_vo_adv_card_mei_53_01-mei001.m4a",
+      "text": "ふんふんふ～ん。今日は～芽衣の～お誕生日～\nお誕生日は～ウキウキ～ラッキ～早起きハッピ～ピ～！",
+      "startTime": 12.0000000437,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+          "delay": 8866.666623,
+          "startTime": 20.8666666667
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "お誕生日は～ウキウキ～ラッキ～早起きハッピ～ピ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_53_01_short/sud_vo_adv_card_mei_53_01-mei001.m4a"
-    },
-    {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ふわぁ……おはよう、芽衣。今日は朝からテンションが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_53_01_short/sud_vo_adv_card_mei_53_01-rui001.m4a"
-    },
-    {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "高いわね。あなたも今からランニング？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_53_01_short/sud_vo_adv_card_mei_53_01-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_53_01_short/sud_vo_adv_card_mei_53_01-rui001.m4a",
+      "text": "ふわぁ……おはよう、芽衣。今日は朝からテンションが\n高いわね。あなたも今からランニング？",
+      "startTime": 26.2666667104,
+      "sfxList": []
     }
   ]
 }

@@ -1,246 +1,136 @@
 {
   "id": "adv_card_ktn_09_01_short",
-  "groupId": "card_ktn_09",
-  "name": "長瀬琴乃 1話 想いに応えたい (Short)",
-  "background": null,
-  "details": [
+  "title": "長瀬琴乃 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――月ストがBIG4になってしばらく経った頃",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "お疲れ様です、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn001.m4a",
+      "text": "お疲れ様です、{user}さん\n今日の収録は長丁場でしたね",
+      "startTime": 5.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "今日の収録は長丁場でしたね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お疲れ様。しかし三本録りの予定が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh001.m4a",
+      "text": "お疲れ様。しかし三本録りの予定が\n急遽一本増えるとは思わなかったよ",
+      "startTime": 12.1999993007,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "急遽一本増えるとは思わなかったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh002.m4a",
+      "text": "疲れているところ悪いんだが、帰る前に\n明日の予定をもう一度確認しておこうか",
+      "startTime": 18.033332634,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "疲れているところ悪いんだが、帰る前に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "明日の予定をもう一度確認しておこうか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn002.m4a",
+      "text": "午前中にライブの打ち合わせ、午後にラジオ収録と\nインタビュー、それから特番のゲスト出演ですよね",
+      "startTime": 25.6666659673,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "午前中にライブの打ち合わせ、午後にラジオ収録と",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn003.m4a",
+      "text": "今までもそれなりに忙しくさせてもらってると思って\nましたけど……BIG4になった影響は大きいですね",
+      "startTime": 34.233332634,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "インタビュー、それから特番のゲスト出演ですよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "今までもそれなりに忙しくさせてもらってると思って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh003.m4a",
+      "text": "朝から分刻みのスケジュールだけど、大丈夫か？\nさすがに休む時間が少な過ぎるよな",
+      "startTime": 43.2666659673,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "ましたけど……BIG4になった影響は大きいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "朝から分刻みのスケジュールだけど、大丈夫か？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn003.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn004.m4a",
+      "text": "大丈夫です。仕事を受けるかどうかは毎回確認を\nとってくれてるじゃないですか",
+      "startTime": 50.6199106369,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さすがに休む時間が少な過ぎるよな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-01-noon.webp",
+      "bgName": "dressingroom-01-noon"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "大丈夫です。仕事を受けるかどうかは毎回確認を",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-koh003.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "とってくれてるじゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn004.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "それに、サニピがBIG4になった時の目の回るような",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn004.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ktn",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
-        "name": "長瀬琴乃"
-      },
-      "text": "忙しさを目の前で見てましたから。想定内です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ktn",
+      "speakerName": "長瀬琴乃",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kotono.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ktn_09_01_short/sud_vo_adv_card_ktn_09_01-ktn005.m4a",
+      "text": "それに、サニピがBIG4になった時の目の回るような\n忙しさを目の前で見てましたから。想定内です",
+      "startTime": 57.3666659673,
+      "sfxList": []
     }
   ]
 }

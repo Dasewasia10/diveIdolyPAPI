@@ -1,162 +1,108 @@
 {
   "id": "adv_card_ngs_05_01_short",
-  "groupId": "card_ngs_05",
-  "name": "伊吹渚 1話 心と体の準備期間 (Short)",
-  "background": null,
-  "details": [
+  "title": "伊吹渚 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "はい、星見プロダクションです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "先日はどうも。いえ、こちらこそ大変お世話に……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh001.m4a",
+      "text": "はい、星見プロダクションです\n先日はどうも。いえ、こちらこそ大変お世話に……",
+      "startTime": 3.5666666667,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 2833.3333333,
+          "startTime": 6.4
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-ngs001.m4a",
       "text": "あっ、えっと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh001.m4a"
+      "startTime": 8.5,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あれ？　伝票の数字が合ってないような……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh002.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 0
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "橋本さんに確認のメッセージを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh002.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-02.m4a",
+      "startTime": 0
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh002.m4a",
+      "text": "あれ？　伝票の数字が合ってないような……？\n橋本さんに確認のメッセージを",
+      "startTime": 15.0355802624,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_keytap-01.m4a",
+          "delay": 5000,
+          "startTime": 15.9
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-ngs002.m4a",
       "text": "……ううっ……どうしよう……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-ngs002.m4a"
+      "startTime": 17.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "はぁ……つい話し込んじゃったな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh003.m4a",
+      "text": "はぁ……つい話し込んじゃったな……\nえ？　もう14時か。昼食を食べないと……",
+      "startTime": 26.9333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "え？　もう14時か。昼食を食べないと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-ngs003.m4a",
+      "text": "とってもお忙しそうですね\n{user}さん",
+      "startTime": 33.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "とってもお忙しそうですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh003.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-ngs003.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-koh004.m4a",
       "text": "わっ！？　渚、いつの間にいたんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ngs_05_01_short/sud_vo_adv_card_ngs_05_01-ngs003.m4a"
+      "startTime": 34.7,
+      "sfxList": []
     }
   ]
 }

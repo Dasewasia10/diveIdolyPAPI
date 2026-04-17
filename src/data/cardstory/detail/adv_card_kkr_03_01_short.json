@@ -1,204 +1,127 @@
 {
   "id": "adv_card_kkr_03_01_short",
-  "groupId": "card_kkr_03",
-  "name": "赤崎こころ 1話 零れる弱音 (Short)",
-  "background": null,
-  "details": [
+  "title": "赤崎こころ (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_lesson-01-noon.webp",
+      "bgName": "lesson-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_studio-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――バレンタインデー前のある日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr001.m4a",
       "text": "1、2……ここで、こう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr001.m4a"
+      "startTime": 2.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr001-02.m4a",
       "text": "このステップにしたら……もっとかっこ良くなるかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr001-02.m4a"
+      "startTime": 9.479711024,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 5000,
+          "startTime": 14.479711024
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 5100,
+          "startTime": 14.579711024
+        }
+      ]
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr002.m4a",
       "text": "あ、{user}さん。お疲れ様で～す",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr002.m4a"
+      "startTime": 15.6463776906,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お疲れ様。バレンタインイベント出演のために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh001.m4a",
+      "text": "お疲れ様。バレンタインイベント出演のために\nこころがリズノワの新曲を企画してるそうじゃないか",
+      "startTime": 23.4130443573,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こころがリズノワの新曲を企画してるそうじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr003.m4a",
+      "text": "そうなんですよ～\nアイデアが溢れ出過ぎて、困っちゃうくらいです！",
+      "startTime": 28.879711024,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "そうなんですよ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh001.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "アイデアが溢れ出過ぎて、困っちゃうくらいです！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr003.m4a"
-    },
-    {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr004.m4a",
       "text": "ふふふ……自分の才能が恐ろしいです～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr004.m4a"
+      "startTime": 32.7463776906,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうか。楽しみにしているからな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh002.m4a",
+      "text": "そうか。楽しみにしているからな\n無理だけはするなよ？",
+      "startTime": 40.879711024,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "無理だけはするなよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh002.m4a"
-    },
-    {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr005.m4a",
       "text": "は～い！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-koh002.m4a"
+      "startTime": 42.8130443573,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "リズノワらしいバレンタインを全力でお見せしますよ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr006.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "期待して待ってて下さいね～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr006.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kkr_03_01_short/sud_vo_adv_card_kkr_03_01-kkr006.m4a",
+      "text": "リズノワらしいバレンタインを全力でお見せしますよ～\n期待して待ってて下さいね～！",
+      "startTime": 48.1463776906,
+      "sfxList": []
     }
   ]
 }

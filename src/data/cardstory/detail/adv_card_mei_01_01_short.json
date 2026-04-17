@@ -1,148 +1,97 @@
 {
   "id": "adv_card_mei_01_01_short",
-  "groupId": "card_mei_01",
-  "name": "早坂芽衣 1話 芽衣のポテンシャル (Short)",
-  "background": null,
-  "details": [
+  "title": "早坂芽衣 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-00-noon.webp",
+      "bgName": "stage1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――時は遡り",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.26666666666666794,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――NEXT VENUSグランプリ予選を控えたある日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 1.7666666666666677,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（事務所での仕事が一段落ついた午後）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_hoshimi-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（騒がしい足音が聞こえてきた）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-koh001.m4a",
+      "text": "（事務所での仕事が一段落ついた午後）\n（騒がしい足音が聞こえてきた）",
+      "startTime": 9.247831635177135,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-in-single-02.m4a",
+          "delay": 2318.835031489533,
+          "startTime": 11.566666666666668
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 2318.835031489531,
+          "startTime": 11.566666666666666
+        }
+      ]
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei001.m4a",
       "text": "{user}さーーーん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-koh001.m4a"
+      "startTime": 11.566666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんだ、芽衣か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-koh002.m4a",
+      "text": "なんだ、芽衣か\n危ないから廊下は走っちゃダメだぞ",
+      "startTime": 17.220480317249894,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "危ないから廊下は走っちゃダメだぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-koh002.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei002.m4a",
       "text": "お、教わったけど……それどころじゃないの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei002.m4a"
+      "startTime": 19.9,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "{user}さん……芽衣を助けて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei002.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "このままじゃ、大変なことに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mei_01_01_short/sud_vo_adv_card_mei_01_01-mei003.m4a",
+      "text": "{user}さん……芽衣を助けて\nこのままじゃ、大変なことに……",
+      "startTime": 29.4,
+      "sfxList": []
     }
   ]
 }

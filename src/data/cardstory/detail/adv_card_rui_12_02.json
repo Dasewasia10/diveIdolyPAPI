@@ -1,1296 +1,914 @@
 {
   "id": "adv_card_rui_12_02",
-  "groupId": "card_rui_12",
-  "name": "天動瑠依 2話 お互いに忘れましょう！",
-  "background": null,
-  "details": [
+  "title": "天動瑠依",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_impact-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――星見プロ全国ツアー北海道公演　前日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "みんな、部屋は決まったか？　それじゃあルームキーを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh001.m4a",
+      "text": "みんな、部屋は決まったか？　それじゃあルームキーを\n配るぞ。……ん？　すず、どうかしたのか？",
+      "startTime": 6.3,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "配るぞ。……ん？　すず、どうかしたのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "くじ引きで決まった部屋割りは……優と私が同室ね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui001.m4a",
+      "text": "くじ引きで決まった部屋割りは……優と私が同室ね\n……{user}さん、今日も忙しそう",
+      "startTime": 17.0397956848,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 6060.2043152,
+          "startTime": 23.1
+        }
+      ]
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……{user}さん、今日も忙しそう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "荷物をバスに忘れた！？　分かった、すぐに行く",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh002.m4a",
+      "text": "荷物をバスに忘れた！？　分かった、すぐに行く\n今度はライブ会場から電話！？　何があったんだ……",
+      "startTime": 24.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今度はライブ会場から電話！？　何があったんだ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ルームキーは私がみんなに配っておきます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui002.m4a",
+      "text": "ルームキーは私がみんなに配っておきます\n他にも何か手伝えることがあれば言って下さいね",
+      "startTime": 31.7250333786,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 5808.299954700001,
+          "startTime": 37.5333333333
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 7874.966621400003,
+          "startTime": 39.6
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 10374.966621400003,
+          "startTime": 42.1
+        }
+      ]
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "他にも何か手伝えることがあれば言って下さいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh003.m4a",
+      "text": "悪い、瑠依。それじゃあ頼むよ。すず、バスに戻るぞ\nまた電話か……はいもしもし……",
+      "startTime": 40.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "悪い、瑠依。それじゃあ頼むよ。すず、バスに戻るぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "また電話か……はいもしもし……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui003.m4a",
+      "text": "みんな、ルームキーを受け取りに来て。キーは\nスペアも含めて二枚あるから、なくさないようにね",
+      "startTime": 47.2220858256,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "みんな、ルームキーを受け取りに来て。キーは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "スペアも含めて二枚あるから、なくさないようにね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui004.m4a",
+      "text": "……おかしいわね。全員にルームキーを\n配り終わったはずなのに、一枚余ってる",
+      "startTime": 56.2220858256,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 10866.666666600004,
+          "startTime": 67.0887524922
+        }
+      ]
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……おかしいわね。全員にルームキーを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "配り終わったはずなのに、一枚余ってる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hokkatown-00-noon.webp",
+      "bgName": "hokkatown-00-noon"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……あ、もしかして{user}さんの部屋の",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui005.m4a",
+      "text": "……あ、もしかして{user}さんの部屋の\nスペアキー？　私が持ってるって、連絡しておかないと",
+      "startTime": 62.8887524922,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 10293.347574899997,
+          "startTime": 73.1821000671
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 15100.014241600007,
+          "startTime": 77.9887667338
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 18503.347574900006,
+          "startTime": 81.3921000671
+        }
+      ]
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "スペアキー？　私が持ってるって、連絡しておかないと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "{user}さんから返事がない。忙しいのね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "スペアキー、渡せないまま夜に……ん、電話？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もしもし、瑠依。メッセをくれたスペアキーなんだが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui006.m4a",
+      "text": "{user}さんから返事がない。忙しいのね\nスペアキー、渡せないまま夜に……ん、電話？",
+      "startTime": 75.1887667338,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "瑠依の言う通り俺のだったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "やっぱりそうですよね！　電話をくれたってことは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh004.m4a",
+      "text": "もしもし、瑠依。メッセをくれたスペアキーなんだが\n瑠依の言う通り俺のだったよ",
+      "startTime": 86.4666748047,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "もう仕事は終わって部屋にいるんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "仕事は終わりそうなんだが、実はカードキーを部屋に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui007.m4a",
+      "text": "やっぱりそうですよね！　電話をくれたってことは\nもう仕事は終わって部屋にいるんですか？",
+      "startTime": 92.3999684651,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "忘れてしまってな。フロントが開いてる間に戻る――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh005.m4a",
+      "text": "仕事は終わりそうなんだが、実はカードキーを部屋に\n忘れてしまってな。フロントが開いてる間に戻る――",
+      "startTime": 98.3333414714,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "えっ、カードキーを部屋に置き忘れたら入れない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui008.m4a",
+      "text": "えっ、カードキーを部屋に置き忘れたら入れない\nじゃないですか！　すぐに部屋の前まで行きますから！",
+      "startTime": 104.7763680457,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-end-02.m4a",
+          "delay": 11056.973425700007,
+          "startTime": 115.8333414714
+        }
+      ]
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "じゃないですか！　すぐに部屋の前まで行きますから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_livecorridor-00-noon.webp",
+      "bgName": "livecorridor-00-noon"
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "瑠依？　フロントでスペアキーを借りるから大丈夫だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_livecorridor-00-noon.webp",
+      "bgName": "livecorridor-00-noon"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それにまだホテルに戻……ああ、電話が切れてしまった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh006.m4a",
+      "text": "瑠依？　フロントでスペアキーを借りるから大丈夫だ\nそれにまだホテルに戻……ああ、電話が切れてしまった",
+      "startTime": 114.3333414714,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-end-03.m4a",
+          "delay": 5717.281667500003,
+          "startTime": 116.093653969
+        }
+      ]
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "優は、もうぐっすり眠っているわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "起こさないように、そーっと……。行ってきます、優",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……夜遅いのに、人の行き来が結構多いわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "廊下で待ってたら、不審に思われるかも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "別に{user}さんの部屋に入りたいとか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui010.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui009.m4a",
+      "text": "優は、もうぐっすり眠っているわね\n起こさないように、そーっと……。行ってきます、優",
+      "startTime": 125.703697745,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 6773.333333300002,
+          "startTime": 132.4770310783
+        }
+      ]
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そういう訳じゃないけど……結構、人目があるし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vancorridor-00-night.webp",
+      "bgName": "vancorridor-00-night"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "優なら、「そんなん中で待たせてもらったらええやん」",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vancorridor-00-night.webp",
+      "bgName": "vancorridor-00-night"
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "って言うはずよ。うん、きっとそう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui010.m4a",
+      "text": "……夜遅いのに、人の行き来が結構多いわね\n廊下で待ってたら、不審に思われるかも……",
+      "startTime": 137.3703644116,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "すみれだって「{user}さんは優しいから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vancorridor-00-night.webp",
+      "bgName": "vancorridor-00-night"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "絶対怒らないよ！　部屋の中で待った方がいいよ」",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui013.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui011.m4a",
+      "text": "別に{user}さんの部屋に入りたいとか\nそういう訳じゃないけど……結構、人目があるし",
+      "startTime": 143.5370310783,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……って言うわ、うん、多分……ホテルの廊下で不審者",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vancorridor-00-night.webp",
+      "bgName": "vancorridor-00-night"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "扱いされても困るし……よしっ、お邪魔しまーす……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui012.m4a",
+      "text": "優なら、「そんなん中で待たせてもらったらええやん」\nって言うはずよ。うん、きっとそう",
+      "startTime": 152.2703644116,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……なかなか戻らないわね、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vancorridor-00-night.webp",
+      "bgName": "vancorridor-00-night"
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "座って待たせてもらおうかな。ベッドの上お邪魔します",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui015.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui013.m4a",
+      "text": "すみれだって「{user}さんは優しいから\n絶対怒らないよ！　部屋の中で待った方がいいよ」",
+      "startTime": 158.4703715324,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 11886.659545899987,
+          "startTime": 170.3570310783
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 11799.99288099998,
+          "startTime": 170.2703644134
+        }
+      ]
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ばたばたして、少し疲れちゃったな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vancorridor-00-night.webp",
+      "bgName": "vancorridor-00-night"
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……{user}さん…………すぅ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui016.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui014.m4a",
+      "text": "……って言うわ、うん、多分……ホテルの廊下で不審者\n扱いされても困るし……よしっ、お邪魔しまーす……！",
+      "startTime": 167.203697745,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_futon-01.m4a",
+          "delay": 15483.327229699995,
+          "startTime": 182.6870249747
+        }
+      ]
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui015.m4a",
+      "text": "……なかなか戻らないわね、{user}さん\n座って待たせてもらおうかな。ベッドの上お邪魔します",
+      "startTime": 177.503697745,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui016.m4a",
+      "text": "ばたばたして、少し疲れちゃったな……\n……{user}さん…………すぅ……",
+      "startTime": 187.8703644115,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 6133.343505800013,
+          "startTime": 194.0037079173
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 6416.675822000002,
+          "startTime": 194.2870402335
+        }
+      ]
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――その日の深夜",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 192.8370361644,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "仕事が長引いてだいぶ遅くなってしまった。フロントで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh007.m4a",
+      "text": "仕事が長引いてだいぶ遅くなってしまった。フロントで\nスペアキーを借りれる時間に戻れて良かったが",
+      "startTime": 199.200008138,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 7326.666666700021,
+          "startTime": 206.5266748047
+        }
+      ]
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "スペアキーを借りれる時間に戻れて良かったが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh008.m4a",
+      "text": "瑠依には、遅くなるから部屋に戻るよう\nメッセを送ったけど……まだ既読が付いてないのか",
+      "startTime": 205.100008138,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "瑠依には、遅くなるから部屋に戻るよう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "メッセを送ったけど……まだ既読が付いてないのか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh009.m4a",
+      "text": "でももう深夜だし、部屋に戻って寝てるだろう\n俺もさっさと寝よう……よし、明日も忙しくなるぞ",
+      "startTime": 213.4333414714,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_futon-01.m4a",
+          "delay": 5062.596420699975,
+          "startTime": 214.700008138
+        }
+      ]
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でももう深夜だし、部屋に戻って寝てるだろう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺もさっさと寝よう……よし、明日も忙しくなるぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui017.m4a",
+      "text": "……つまり、ベッドで先に寝ていた私に気付かず\n{user}さんもすぐに寝てしまったと……",
+      "startTime": 225.9119831401,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……つまり、ベッドで先に寝ていた私に気付かず",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh010.m4a",
+      "text": "バカ！　俺のバカ！\nなんで隣に人が寝ていて気付かなかったんだ！？",
+      "startTime": 231.3333414714,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "{user}さんもすぐに寝てしまったと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "バカ！　俺のバカ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui017.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui018.m4a",
+      "text": "い、いえ、こちらこそすみません！　私、疲れてる時は\n突然寝落ちする癖があって。すぐ部屋に戻りますから！",
+      "startTime": 238.7436158178,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_knock-01.m4a",
+          "delay": 8523.204799700012,
+          "startTime": 247.2668206175
+        }
+      ]
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんで隣に人が寝ていて気付かなかったんだ！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "い、いえ、こちらこそすみません！　私、疲れてる時は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh011.m4a",
+      "text": "そ、そうだな、一夜を共にしたことが誰かにバレたら\n……ん、ノック？　こんな早朝に誰だ！？",
+      "startTime": 248.100008138,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "突然寝落ちする癖があって。すぐ部屋に戻りますから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh012.m4a",
+      "text": "こ、この状況……誰が相手でもマズいぞ……！\n俺が対応するから、瑠依はベッドの中に隠れてくれ！",
+      "startTime": 255.900008138,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_gasa-02.m4a",
+          "delay": 9321.258099699975,
+          "startTime": 265.2212662377
+        }
+      ]
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そ、そうだな、一夜を共にしたことが誰かにバレたら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……ん、ノック？　こんな早朝に誰だ！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こ、この状況……誰が相手でもマズいぞ……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui019.m4a",
+      "text": "は、はい、ごめんなさい、{user}さん\n私がこんな所で寝ちゃったせいで……",
+      "startTime": 262.1546016055,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 7778.755263700021,
+          "startTime": 269.9333568692
+        }
+      ]
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺が対応するから、瑠依はベッドの中に隠れてくれ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "は、はい、ごめんなさい、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh013.m4a",
+      "text": "は、はははははい、ど、どどどなたですか？\n……優！？　ど、どうしたんだ、こんな朝早くに……",
+      "startTime": 270.6333568573,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私がこんな所で寝ちゃったせいで……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "は、はははははい、ど、どどどなたですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh014.m4a",
+      "text": "る、瑠依か？　し、知らないなぁ～それは心配だなぁ\nえ！？　へ、部屋に入りたい？　え、えっと……",
+      "startTime": 281.7333455403,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-close-01.m4a",
+          "delay": 13955.841894700028,
+          "startTime": 295.689187435
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_handcuffs-01.m4a",
+          "delay": 5366.654459700044,
+          "startTime": 287.1
+        }
+      ]
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……優！？　ど、どうしたんだ、こんな朝早くに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "る、瑠依か？　し、知らないなぁ～それは心配だなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh015.m4a",
+      "text": "わ、悪い、ドアチェーンが固くて、なかなか外せなくて\nあ、スマホに連絡がきてるかもしれないから見てくるよ",
+      "startTime": 292.4000284831,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "え！？　へ、部屋に入りたい？　え、えっと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "わ、悪い、ドアチェーンが固くて、なかなか外せなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh016.m4a",
+      "text": "る、瑠依、どうする！？　優が凄く心配してるみたい\nなんだが……。っていうか俺、優に疑われてないか？",
+      "startTime": 300.3000255585,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あ、スマホに連絡がきてるかもしれないから見てくるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "る、瑠依、どうする！？　優が凄く心配してるみたい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui020.m4a",
+      "text": "ラ、ランニングに行ってることにして下さい！\nすぐにメッセージを送りますから！",
+      "startTime": 307.9895654962,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 5777.1267290000305,
+          "startTime": 313.7666922252
+        }
+      ]
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんだが……。っていうか俺、優に疑われてないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ラ、ランニングに行ってることにして下さい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui020.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh017.m4a",
+      "text": "わ、分かったよ、瑠依。それじゃ行ってくる\n……お待たせ、優。瑠依からメッセージが届いてたよ",
+      "startTime": 314.4333588918,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "すぐにメッセージを送りますから！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui020.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh018.m4a",
+      "text": "今、ランニングに出掛けてるらしいから\nもうすぐ部屋に戻るんじゃないかな",
+      "startTime": 321.6999930065,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "わ、分かったよ、瑠依。それじゃ行ってくる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……お待たせ、優。瑠依からメッセージが届いてたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh019.m4a",
+      "text": "……え！？　部屋の中から瑠依の声が聞こえた！？\nし、心配のし過ぎで幻聴が聞こえたんじゃないかな？",
+      "startTime": 328.0922186768,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-close-01.m4a",
+          "delay": 12472.918840200009,
+          "startTime": 340.565137517
+        }
+      ]
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今、ランニングに出掛けてるらしいから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もうすぐ部屋に戻るんじゃないかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh020.m4a",
+      "text": "な、なんだその目は！？　瑠依ちゃんの匂いがする！？\nそそそそそそんなことある訳ないだろ！　それじゃ！",
+      "startTime": 337.0666596731,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……え！？　部屋の中から瑠依の声が聞こえた！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "し、心配のし過ぎで幻聴が聞こえたんじゃないかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh019.m4a"
-    },
-    {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "な、なんだその目は！？　瑠依ちゃんの匂いがする！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh020.m4a"
-    },
-    {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そそそそそそんなことある訳ないだろ！　それじゃ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh020.m4a"
-    },
-    {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "一同"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "一同",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh021.m4a",
       "text": "………………ふぅ～～～～～～～～！！！！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui021.m4a"
+      "startTime": 341.6851375218,
+      "sfxList": []
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あ、危なかった……もうダメかと思いました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "優が引き下がってくれて、本当に良かった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui022.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui022.m4a",
+      "text": "あ、危なかった……もうダメかと思いました\n優が引き下がってくれて、本当に良かった……",
+      "startTime": 351.0333446503,
+      "sfxList": []
     },
     {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺も、いつバレるかと肝が冷えたよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui022.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh022.m4a",
+      "text": "俺も、いつバレるかと肝が冷えたよ……\nなんとか誤魔化せて良かった……",
+      "startTime": 359.1666698456,
+      "sfxList": []
     },
     {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なんとか誤魔化せて良かった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "き、今日の出来事は、その、不幸な事故だった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui023.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui023.m4a",
+      "text": "き、今日の出来事は、その、不幸な事故だった\n……ということで、お、お互いに忘れましょう！",
+      "startTime": 365.9333365123,
+      "sfxList": []
     },
     {
-      "id": "msg_89",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……ということで、お、お互いに忘れましょう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_90",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あ、あぁ！　俺達は昨夜本当に何もしていないし瑠依は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-rui023.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh023.m4a",
+      "text": "あ、あぁ！　俺達は昨夜本当に何もしていないし瑠依は\n早朝ランニング中だった。だ、だから何も問題はない！",
+      "startTime": 374.6000031789,
+      "sfxList": []
     },
     {
-      "id": "msg_91",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "早朝ランニング中だった。だ、だから何も問題はない！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_92",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "一同"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "一同",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh024.m4a",
       "text": "…………はぁ～～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_12_02/sud_vo_adv_card_rui_12_02-koh023.m4a"
+      "startTime": 379.5767182624,
+      "sfxList": []
     }
   ]
 }

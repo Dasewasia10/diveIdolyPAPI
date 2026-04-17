@@ -1,974 +1,640 @@
 {
   "id": "adv_card_aoi_02_01",
-  "groupId": "card_aoi_02",
-  "name": "井川葵 1話 隠し事とカニカマ",
-  "background": null,
-  "details": [
+  "title": "井川葵",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_livecorridor-00-noon.webp",
+      "bgName": "livecorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh001.m4a",
       "text": "葵、いるか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh001.m4a"
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "あぁ、入ってくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh001.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_knock-01.m4a",
+      "startTime": 0
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "ちょうど今着替えてる途中なんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi001.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi001.m4a",
+      "text": "あぁ、入ってくれ\nちょうど今着替えてる途中なんだ",
+      "startTime": 4.4,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや、入っちゃダメだろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh002.m4a",
+      "text": "いや、入っちゃダメだろ\nまずはちゃんと服を着てくれ",
+      "startTime": 8.833333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "まずはちゃんと服を着てくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi002.m4a",
+      "text": "冗談だよ\n君は相変わらず真面目だな",
+      "startTime": 12.3,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 3566.6666666666665,
+          "startTime": 15.866666666666667
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 3966.666666666665,
+          "startTime": 16.266666666666666
+        }
+      ]
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "冗談だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "君は相変わらず真面目だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh003.m4a",
       "text": "……まったく、あまり大人をからかわないでくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh003.m4a"
+      "startTime": 17.233333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "分かってるよ。僕がからかうのは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "君だけだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi003.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi003.m4a",
+      "text": "分かってるよ。僕がからかうのは\n君だけだよ",
+      "startTime": 24.433333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "出来れば俺もやめてほしいんだが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "で、なんだ？　聞いてほしいことって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh004.m4a",
+      "text": "出来れば俺もやめてほしいんだが……\nで、なんだ？　聞いてほしいことって",
+      "startTime": 29.133333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi004.m4a",
       "text": "莉央と愛のことなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi004.m4a"
+      "startTime": 32.9,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh005.m4a",
       "text": "莉央さんと愛？　ああ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh005.m4a"
+      "startTime": 35.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi005.m4a",
       "text": "その顔、察しはついたって感じだね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh005.m4a"
+      "startTime": 40,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今日のライブの出来を見れば分かるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "愛だけダンスが合っていない所があった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh006.m4a",
+      "text": "今日のライブの出来を見れば分かるよ\n愛だけダンスが合っていない所があった",
+      "startTime": 46.6,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "愛ならそのうち必ず合わせられるとは思うけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh007.m4a",
+      "text": "愛ならそのうち必ず合わせられるとは思うけど……\n完璧主義の莉央さんは、見過ごせないだろうな",
+      "startTime": 53.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "完璧主義の莉央さんは、見過ごせないだろうな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "ご明察",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi006.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi006.m4a",
+      "text": "ご明察\nそのことで莉央が、愛にちょっときつく注意してね",
+      "startTime": 58.166666666666664,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "そのことで莉央が、愛にちょっときつく注意してね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh008.m4a",
+      "text": "それで愛が落ち込んだのか。まぁそういうことはあるさ\n葵だって莉央さんと沢山やり合ったろ？",
+      "startTime": 68.2,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それで愛が落ち込んだのか。まぁそういうことはあるさ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "葵だって莉央さんと沢山やり合ったろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh008.m4a"
-    },
-    {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi007.m4a",
       "text": "まあね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh008.m4a"
+      "startTime": 70.93333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "莉央さんから聞いたよ。確か、葵が莉央さんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh009.m4a",
+      "text": "莉央さんから聞いたよ。確か、葵が莉央さんに\n彼女のダンスは重いって、いきなり言ったんだろ？",
+      "startTime": 76.86666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "彼女のダンスは重いって、いきなり言ったんだろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi008.m4a",
       "text": "あぁ、逆に莉央には僕の生活態度をよく注意されたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi008.m4a"
+      "startTime": 80.3,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "でも、僕と莉央はこんな風に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "ギスギスした感じにはならなかったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi009.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi009.m4a",
+      "text": "でも、僕と莉央はこんな風に\nギスギスした感じにはならなかったんだ",
+      "startTime": 88.63333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも、後輩の愛は必要以上に落ち込んでしまったんだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もともと真面目な子だから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh010.m4a",
+      "text": "でも、後輩の愛は必要以上に落ち込んでしまったんだな\nもともと真面目な子だから……",
+      "startTime": 97.2,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "あぁ、こころの方は、愛以上に叱られてるけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi010.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi010.m4a",
+      "text": "あぁ、こころの方は、愛以上に叱られてるけど\n引きずらないから、こんな心配はなかったんだ",
+      "startTime": 103.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "引きずらないから、こんな心配はなかったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "愛の方は……へこみやすいから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi011.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi011.m4a",
+      "text": "愛の方は……へこみやすいから\nグループを抜けるとか言い出さないか、心配だよ",
+      "startTime": 111.73333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "グループを抜けるとか言い出さないか、心配だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi012.m4a",
       "text": "僕はどうすればいいんだろう……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi012.m4a"
+      "startTime": 115.9,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（……こんなに元気のない葵は初めてだ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh011.m4a",
+      "text": "（……こんなに元気のない葵は初めてだ）\n（それだけ深刻ってことか……）",
+      "startTime": 123.26666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（それだけ深刻ってことか……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi013.m4a",
       "text": "ねぇ、もしかしてこんなこと話して、迷惑だった？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi013.m4a"
+      "startTime": 125.86666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そんな訳ないだろう。よし、葵",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh012.m4a",
+      "text": "そんな訳ないだろう。よし、葵\n話を聞くから場所を変えよう",
+      "startTime": 134.8,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_gasa-01.m4a",
+          "delay": 2833.3333333333144,
+          "startTime": 137.63333333333333
+        }
+      ]
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "話を聞くから場所を変えよう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "うん。すぐに着替えるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi014.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi014.m4a",
+      "text": "うん。すぐに着替えるから\n少しそこで待ってて",
+      "startTime": 139.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "少しそこで待ってて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "dressingroom-00-noon"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh013.m4a",
       "text": "だから脱ぐのは俺が出てからにしてくれよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh013.m4a"
+      "startTime": 141.53333333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cafe-01.m4a",
+          "delay": 3699.999999999676,
+          "startTime": 145.233333333333
+        }
+      ]
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "君には言ってなかったかもしれないけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "LizNoirは本来とっくに解散してたはずなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "NEXT VENUSグランプリで負けたあの時",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi016.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi015.m4a",
+      "text": "君には言ってなかったかもしれないけど\nLizNoirは本来とっくに解散してたはずなんだ",
+      "startTime": 149.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "僕も莉央も芸能界を引退するつもりだった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "なのに、愛とこころが突然加入して来たんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi017.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi016.m4a",
+      "text": "NEXT VENUSグランプリで負けたあの時\n僕も莉央も芸能界を引退するつもりだった",
+      "startTime": 157.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "それからなし崩し的に四人体制で続けることになった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi017.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi017.m4a",
+      "text": "なのに、愛とこころが突然加入して来たんだ\nそれからなし崩し的に四人体制で続けることになった",
+      "startTime": 166.06666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも、俺は前より今のLizNoirが好きだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "技術だけじゃない 、情熱を感じる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh014.m4a",
+      "text": "でも、俺は前より今のLizNoirが好きだよ\n技術だけじゃない 、情熱を感じる",
+      "startTime": 175.23333333333332,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "後輩達のおかげさ。僕と莉央は海外に行った時",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi018.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi018.m4a",
+      "text": "後輩達のおかげさ。僕と莉央は海外に行った時\n彼女達からそれを学んだんだ",
+      "startTime": 183.9,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "彼女達からそれを学んだんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "だから、僕は感謝している。僕が今でも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi019.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi019.m4a",
+      "text": "だから、僕は感謝している。僕が今でも\n踊っていられるのは、あの子達のおかげでもある",
+      "startTime": 191.7,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "踊っていられるのは、あの子達のおかげでもある",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なら、愛を励ましてあげればいいんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh015.m4a",
+      "text": "なら、愛を励ましてあげればいいんじゃないか？\n葵に励まされたら、愛は絶対に喜ぶと思うよ",
+      "startTime": 199.73333333333332,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "葵に励まされたら、愛は絶対に喜ぶと思うよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "それは難しいな。莉央の指摘が間違ってた訳じゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi020.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi020.m4a",
+      "text": "それは難しいな。莉央の指摘が間違ってた訳じゃない\n僕が愛の肩を持ったら莉央に対してフェアじゃないよ",
+      "startTime": 209.63333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "僕が愛の肩を持ったら莉央に対してフェアじゃないよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi020.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh016.m4a",
       "text": "莉央さんには内緒で、こそっと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh016.m4a"
+      "startTime": 213.63333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi021.m4a",
       "text": "僕は隠し事とカニカマは大嫌いなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi021.m4a"
+      "startTime": 217.2,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "やれやれ……葵は言い出したら聞かないからな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だったら、他の子の手を借りてみるか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh017.m4a",
+      "text": "やれやれ……葵は言い出したら聞かないからな……\nだったら、他の子の手を借りてみるか",
+      "startTime": 226.26666666666668,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi022.m4a",
       "text": "何をする気？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi022.m4a"
+      "startTime": 229.4,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh018.m4a",
       "text": "隠し事が嫌いな葵の代わりに俺が暗躍する",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh018.m4a"
+      "startTime": 231.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi023.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi023.m4a"
+      "startTime": 236.03333333333336,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 466.66666666664014,
+          "startTime": 236.5
+        }
+      ]
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh019.m4a",
       "text": "あ？　すず、夜分ごめん、実は――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-koh019.m4a"
+      "startTime": 237.4,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "s1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi024.m4a",
       "text": "……どういうつもりなの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_aoi_02_01/sud_vo_adv_card_aoi_02_01-aoi024.m4a"
+      "startTime": 241.9,
+      "sfxList": []
     }
   ]
 }

@@ -1,190 +1,101 @@
 {
   "id": "adv_card_smr_09_01_short",
-  "groupId": "card_smr_09",
-  "name": "奥山すみれ 1話 今の私は挑戦者 (Short)",
-  "background": null,
-  "details": [
+  "title": "奥山すみれ (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr001.m4a",
       "text": "失礼します、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr001.m4a"
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 0.3
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh001.m4a",
       "text": "お疲れ様。すみれはいつも時間ぴったりだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr001.m4a"
+      "startTime": 3.4,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "実は子役時代に、時間は必ず守れって教えられたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr002.m4a",
+      "text": "実は子役時代に、時間は必ず守れって教えられたんです\nそう教わってから、遅刻はゼロなんですよ。えっへん",
+      "startTime": 13,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "そう教わってから、遅刻はゼロなんですよ。えっへん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh002.m4a",
+      "text": "凄いな。俺も今日からすみれを見習うよ\nところで、折り入って相談があるって聞いたけど",
+      "startTime": 22.4000013988,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "凄いな。俺も今日からすみれを見習うよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr003.m4a",
+      "text": "はい。実は……\n今お話しした、子役時代のお仕事に関係してるんです",
+      "startTime": 28.9333347321,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ところで、折り入って相談があるって聞いたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr004.m4a",
+      "text": "無理だったらいいんです。私のわがままですし\nでも、もし可能性があるなら、私……",
+      "startTime": 39.4666695913,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "はい。実は……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh002.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "今お話しした、子役時代のお仕事に関係してるんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr003.m4a"
-    },
-    {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "無理だったらいいんです。私のわがままですし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr003.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
-      "text": "でも、もし可能性があるなら、私……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr004.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "smr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-        "name": "奥山すみれ"
-      },
+      "type": "dialogue",
+      "speakerCode": "smr",
+      "speakerName": "奥山すみれ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr005.m4a",
       "text": "……もう一度、役者のお仕事をやってみたいんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr005.m4a"
+      "startTime": 46.5333352407,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それって今まですみれが自分から断っていた仕事だよな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-smr005.m4a"
-    },
-    {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今はアイドルで、もう役者じゃないからって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_smr_09_01_short/sud_vo_adv_card_smr_09_01-koh003.m4a",
+      "text": "それって今まですみれが自分から断っていた仕事だよな\n今はアイドルで、もう役者じゃないからって",
+      "startTime": 55.8666695913,
+      "sfxList": []
     }
   ]
 }

@@ -1,988 +1,442 @@
 {
   "id": "adv_card_ski_01_01",
-  "groupId": "card_ski_01",
-  "name": "白石沙季 1話 整理整頓",
-  "background": null,
-  "details": [
+  "title": "白石沙季",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-00-noon.webp",
+      "bgName": "3d_office"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――時は遡り",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.3999999999999999,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――月のテンペストがデビューしてしばらく経った頃",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 1.9,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 3500.0000000000005,
+          "startTime": 5.4
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "……今日は{user}さんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_hoshimi-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "物申したいことがあります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "どうしたんだ、沙季。そんな怖い顔して",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski001.m4a",
+      "text": "……今日は{user}さんに\n物申したいことがあります",
+      "startTime": 8.433333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺、何かやらかしたっけ……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh001.m4a",
+      "text": "どうしたんだ、沙季。そんな怖い顔して\n俺、何かやらかしたっけ……？",
+      "startTime": 14.266666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski002.m4a",
       "text": "いいえ、そうではありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski002.m4a"
+      "startTime": 17.733333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "{user}さんの日々の",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski003.m4a",
+      "text": "{user}さんの日々の\nマネージメントは熱意に溢れています",
+      "startTime": 21.233333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "マネージメントは熱意に溢れています",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski003.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski004.m4a",
       "text": "それに、配慮も行き届いていると思います",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski004.m4a"
+      "startTime": 24.5,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "それなのに……いえ、だからこそ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski005.m4a",
+      "text": "それなのに……いえ、だからこそ\n……もったいない",
+      "startTime": 32.666666666666664,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "……もったいない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski006.m4a",
+      "text": "なぜ{user}さんは\n絶妙に締まりがなく、計画性に乏しいのですか？",
+      "startTime": 35.333333333333336,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "なぜ{user}さんは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski007.m4a",
+      "text": "月ストとサニピのグループ分けの時もそうでした\n唐突で、計画性を感じません",
+      "startTime": 42.7,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "絶妙に締まりがなく、計画性に乏しいのですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski008.m4a",
+      "text": "本当は素敵な提案なのに\nあのやり方では全然伝わりません",
+      "startTime": 48.266666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "月ストとサニピのグループ分けの時もそうでした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski006.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "唐突で、計画性を感じません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski007.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "本当は素敵な提案なのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski008.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "あのやり方では全然伝わりません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski008.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski009.m4a",
       "text": "あのままうまく意図が伝わらなければ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski009.m4a"
+      "startTime": 51.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski010.m4a",
       "text": "解散だってあり得たかもしれないんですよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski010.m4a"
+      "startTime": 55.93333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh002.m4a",
       "text": "すまない……返す言葉がないよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski010.m4a"
+      "startTime": 59.1,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "それに、そのあらゆるものが山積みにされた机です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski011.m4a",
+      "text": "それに、そのあらゆるものが山積みにされた机です\n計画性のなさが滲み出ています",
+      "startTime": 67.2,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "計画性のなさが滲み出ています",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski011.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski012.m4a",
+      "text": "仕事用のデスクがこんな状態になるなんて……もうっ\n整理整頓という言葉をどこかに忘れてきたんですか",
+      "startTime": 74.83333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "仕事用のデスクがこんな状態になるなんて……もうっ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh003.m4a",
+      "text": "いや、これは違うんだ。しばらく外出が多かったから\n書類がたまってしまって……",
+      "startTime": 81.8,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "整理整頓という言葉をどこかに忘れてきたんですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski012.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski013.m4a",
+      "text": "だとしても乱雑過ぎます。何事もまずは形から\n机を綺麗にして、仕事の仕方も綺麗にしていきましょう",
+      "startTime": 89.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや、これは違うんだ。しばらく外出が多かったから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh004.m4a",
+      "text": "言うのは簡単だけど……それが出来たら\nこうはなっていない訳で",
+      "startTime": 96.73333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "書類がたまってしまって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh003.m4a"
-    },
-    {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "だとしても乱雑過ぎます。何事もまずは形から",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski013.m4a"
-    },
-    {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "机を綺麗にして、仕事の仕方も綺麗にしていきましょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski013.m4a"
-    },
-    {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "言うのは簡単だけど……それが出来たら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski013.m4a"
-    },
-    {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こうはなっていない訳で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski014.m4a",
       "text": "{user}さん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski014.m4a"
+      "startTime": 99.2,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "もちろん、ただお小言を言うだけではありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski014.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski015.m4a",
+      "text": "もちろん、ただお小言を言うだけではありません\n解決策だって用意してあります。この本をどうぞ",
+      "startTime": 104.46666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "解決策だって用意してあります。この本をどうぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski015.m4a"
-    },
-    {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh005.m4a",
       "text": "『人生を三角定規にする方法』……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh005.m4a"
+      "startTime": 108.66666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "はい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski016.m4a",
+      "text": "はい\nテレビでも紹介された、人生哲学の本です",
+      "startTime": 113.3,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "テレビでも紹介された、人生哲学の本です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski016.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski017.m4a",
+      "text": "規範を守り、きちっとした生活を送るための\n考え方や生活習慣のノウハウが書かれているんです",
+      "startTime": 120.26666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "規範を守り、きちっとした生活を送るための",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski017.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski018.m4a",
+      "text": "私も読んで、とても感銘を受けました\nこれを読めばきっと変わるはずです",
+      "startTime": 127.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "考え方や生活習慣のノウハウが書かれているんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh006.m4a",
+      "text": "なるほど……意外と勉強になるかもしれないな\nよし、これを読んで明日から頑張るよ",
+      "startTime": 134.74272521585226,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "私も読んで、とても感銘を受けました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski018.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski019.m4a",
+      "text": "ふふっ。分かってくれて嬉しいです\n{user}さん",
+      "startTime": 140.06666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "これを読めばきっと変わるはずです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-00-noon.webp",
+      "bgName": "3d_office"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なるほど……意外と勉強になるかもしれないな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski020.m4a",
+      "text": "あの……この間お貸しした本\nそろそろ返していただけますか？",
+      "startTime": 146.63333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "よし、これを読んで明日から頑張るよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh007.m4a",
+      "text": "ああ、あの本な。えっと、どこにやったっけ\n確かこの辺だと思うんだけど……",
+      "startTime": 154.3,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "ふふっ。分かってくれて嬉しいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh006.m4a"
-    },
-    {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski019.m4a"
-    },
-    {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "あの……この間お貸しした本",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski020.m4a"
-    },
-    {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "そろそろ返していただけますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski020.m4a"
-    },
-    {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああ、あの本な。えっと、どこにやったっけ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh007.m4a"
-    },
-    {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "確かこの辺だと思うんだけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh007.m4a"
-    },
-    {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski021.m4a",
       "text": "{user}さん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh007.m4a"
+      "startTime": 158.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "私のお貸しした本は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski021.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski022.m4a",
+      "text": "私のお貸しした本は\n読んだはずですよね？",
+      "startTime": 161.33333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "読んだはずですよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski022.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh008.m4a",
+      "text": "ああ、もちろん。一気に読み終えたよ\nとても勉強になった",
+      "startTime": 166.4,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああ、もちろん。一気に読み終えたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski022.m4a"
-    },
-    {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "とても勉強になった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh008.m4a"
-    },
-    {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski023.m4a",
       "text": "それなのにどうしてこの体たらくなんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski023.m4a"
+      "startTime": 168.43333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや、その……頭で理解するのと、実際に行動を",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh009.m4a",
+      "text": "いや、その……頭で理解するのと、実際に行動を\n起こすのとの間には、大きな壁があってだな……",
+      "startTime": 176.2,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "起こすのとの間には、大きな壁があってだな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski024.m4a",
+      "text": "はあ……もういいです。本の力をもってしても\n改善しないなら、もう荒療治しかないのかも……",
+      "startTime": 185.66666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "はあ……もういいです。本の力をもってしても",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski025.m4a",
+      "text": "{user}さん\n一つ提案があります",
+      "startTime": 190.9,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "改善しないなら、もう荒療治しかないのかも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski024.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski026.m4a",
+      "text": "これからその机を片づけさせてくれますか？\n寮のお部屋の整理整頓も、私にやらせて欲しいんです",
+      "startTime": 196.23333333333332,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski025.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh010.m4a",
+      "text": "ええっ！？　いや、そんな……\n事務所のアイドルにそんなことをさせる訳には……",
+      "startTime": 203.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "一つ提案があります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski025.m4a"
-    },
-    {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "これからその机を片づけさせてくれますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski025.m4a"
-    },
-    {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "寮のお部屋の整理整頓も、私にやらせて欲しいんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski026.m4a"
-    },
-    {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ええっ！？　いや、そんな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh010.m4a"
-    },
-    {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "事務所のアイドルにそんなことをさせる訳には……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh010.m4a"
-    },
-    {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski027.m4a",
       "text": "それが嫌なら、自分でやるようにして下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski027.m4a"
+      "startTime": 207.46666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "{user}さんがやる気になるまで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski027.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski028.m4a",
+      "text": "{user}さんがやる気になるまで\n私がしっかり管理させていただきますからね？",
+      "startTime": 213.1,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "私がしっかり管理させていただきますからね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski028.m4a"
-    },
-    {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（知らぬ間に俺は、何かに火をつけてしまったらしい）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-ski028.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（……これからは気を付けよう）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_01_01/sud_vo_adv_card_ski_01_01-koh011.m4a",
+      "text": "（知らぬ間に俺は、何かに火をつけてしまったらしい）\n（……これからは気を付けよう）",
+      "startTime": 221.13333333333333,
+      "sfxList": []
     }
   ]
 }

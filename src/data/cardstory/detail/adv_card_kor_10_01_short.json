@@ -1,190 +1,98 @@
 {
   "id": "adv_card_kor_10_01_short",
-  "groupId": "card_kor_10",
-  "name": "fran 1話 う、うーん……ぐぅ…… (Short)",
-  "background": null,
-  "details": [
+  "title": "fran (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "―― 一月二日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_message-01.m4a",
+          "delay": 1733.3333333,
+          "startTime": 1.7333333333
+        }
+      ]
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "おっと、正月早々仕事のメールか。先方も大変だなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh001.m4a",
+      "text": "おっと、正月早々仕事のメールか。先方も大変だなぁ\nえーっと、ⅢX宛のMV撮影日変更のお願い、か",
+      "startTime": 8.4666666429,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 5100.000182600001,
+          "startTime": 7.4333333333
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "えーっと、ⅢX宛のMV撮影日変更のお願い、か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh002.m4a",
+      "text": "すぐにfranさん達に連絡しないとな\n確か、年末聞いた時は――",
+      "startTime": 18.9666666429,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すぐにfranさん達に連絡しないとな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh003.m4a",
+      "text": "お疲れ様です。ⅢXはお正月、三人ともオフを\n取るんですよね？　ゆっくり休んで下さいね",
+      "startTime": 27.4666666429,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "確か、年末聞いた時は――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-kor001.m4a",
+      "text": "えぇ、厳密には決めてないけど家でゆっくり過ごします\n漫画を読んだり……いや、まだ仕事があるわね",
+      "startTime": 36.3302980585,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お疲れ様です。ⅢXはお正月、三人ともオフを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-kor002.m4a",
+      "text": "来年の『ERFOLG』の方針を決めないと。トレンド\n予測から需要のリサーチ……まだまだやること一杯だわ",
+      "startTime": 45.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "取るんですよね？　ゆっくり休んで下さいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh003.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "えぇ、厳密には決めてないけど家でゆっくり過ごします",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh003.m4a"
-    },
-    {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "漫画を読んだり……いや、まだ仕事があるわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-kor001.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "来年の『ERFOLG』の方針を決めないと。トレンド",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-kor001.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "予測から需要のリサーチ……まだまだやること一杯だわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-kor002.m4a"
-    },
-    {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お正月も大変ですね。franさん、華やかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-kor002.m4a"
-    },
-    {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "イメージですし、芸能人らしく海外旅行とか行くのかと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_10_01_short/sud_vo_adv_card_kor_10_01-koh004.m4a",
+      "text": "お正月も大変ですね。franさん、華やかな\nイメージですし、芸能人らしく海外旅行とか行くのかと",
+      "startTime": 54.5,
+      "sfxList": []
     }
   ]
 }

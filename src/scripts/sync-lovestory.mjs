@@ -80,6 +80,17 @@ const FILE_LIST = [
   "adv_love_2505_05_08.txt",
   "adv_love_2505_05_09.txt",
   "adv_love_2505_05_10.txt",
+  // 2603
+  "adv_love_2603_01_01.txt",
+  "adv_love_2603_02_01.txt",
+  "adv_love_2603_03_01.txt",
+  "adv_love_2603_04_01.txt",
+  "adv_love_2603_05_01.txt",
+  "adv_love_2603_06_01.txt",
+  "adv_love_2603_07_01.txt",
+  "adv_love_2603_08_01.txt",
+  "adv_love_2603_08_02.txt",
+  "adv_love_2603_08_03.txt",
 ];
 
 const SPEAKER_MAP = {

@@ -1,1100 +1,638 @@
 {
   "id": "adv_card_skr_08_01",
-  "groupId": "card_skr_08",
-  "name": "川咲さくら 1話 頑張ります、コーチ！",
-  "background": null,
-  "details": [
+  "title": "川咲さくら",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今日の練習、凄く良かったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "これなら大阪公演も成功間違いなしだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "{user}さんにそう言ってもらえるなら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "安心です！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "サニーピース初の全国ツアーも、そろそろ折り返しだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だいぶ疲れが溜まってるだろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh001.m4a",
+      "text": "今日の練習、凄く良かったよ\nこれなら大阪公演も成功間違いなしだな",
+      "startTime": 3.6333333333,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr001.m4a",
+      "text": "{user}さんにそう言ってもらえるなら\n安心です！",
+      "startTime": 9.7625168641,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh002.m4a",
+      "text": "サニーピース初の全国ツアーも、そろそろ折り返しだ\nだいぶ疲れが溜まってるだろ",
+      "startTime": 15.5666666667,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh003.m4a",
       "text": "明日と明後日は久しぶりのオフだ。英気を養ってくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh002.m4a"
+      "startTime": 17.4892730712,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "あのー、そのオフなんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "付き合ってほしい所があるんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr002.m4a",
+      "text": "あのー、そのオフなんですけど\n付き合ってほしい所があるんです",
+      "startTime": 25.8474809169,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ん？　別にいいけど、どうして俺なんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh004.m4a",
+      "text": "ん？　別にいいけど、どうして俺なんだ？\nせっかくのオフだし、メンバー同士で行けば……",
+      "startTime": 33.1999992371,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "せっかくのオフだし、メンバー同士で行けば……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "いえ、{user}さんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr003.m4a",
+      "text": "いえ、{user}さんに\nお願いしたいんです",
+      "startTime": 38.3601334571,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "お願いしたいんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr003.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr004.m4a",
       "text": "ファンのためにも、力を貸してもらえませんか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr003.m4a"
+      "startTime": 40.0268016497,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh005.m4a",
       "text": "近い、近いって。分かったから内容を話してくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr004.m4a"
+      "startTime": 43.6934667905,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "私、応援したい人がいるんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "そのために、力を貸してほしくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr005.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr005.m4a",
+      "text": "私、応援したい人がいるんです\nそのために、力を貸してほしくて",
+      "startTime": 52.0046229203,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "応援……？　もしかして、全国ツアーを回りながら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh006.m4a",
+      "text": "応援……？　もしかして、全国ツアーを回りながら\nファンの願いを叶える、あの企画か？",
+      "startTime": 59.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ファンの願いを叶える、あの企画か？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "はい。大阪では私が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr006.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr006.m4a",
+      "text": "はい。大阪では私が\nソフトボール部の応援をすることになったんです",
+      "startTime": 65.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "ソフトボール部の応援をすることになったんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr006.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr007.m4a",
+      "text": "なんでも、今までずっとメンバーが足りなくて\n試合が出来なかったみたいなんですけど",
+      "startTime": 72.3007454235,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "なんでも、今までずっとメンバーが足りなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "試合が出来なかったみたいなんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr007.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr008.m4a",
+      "text": "ようやく九人目のメンバーが見つかったから\n初めての練習試合をするそうなんです",
+      "startTime": 78.327493792,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "ようやく九人目のメンバーが見つかったから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr007.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr009.m4a",
+      "text": "だから、応援のメッセージを下さいって\n私宛にお手紙が届いたんです",
+      "startTime": 84.7007517814,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "初めての練習試合をするそうなんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "だから、応援のメッセージを下さいって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh007.m4a",
+      "text": "（なるほど。つまりソフトボール部に贈る応援動画を）\n（俺に撮影してほしいってことか）",
+      "startTime": 91.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "私宛にお手紙が届いたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr009.m4a"
-    },
-    {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（なるほど。つまりソフトボール部に贈る応援動画を）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr009.m4a"
-    },
-    {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（俺に撮影してほしいってことか）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh007.m4a"
-    },
-    {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh008.m4a",
       "text": "分かった。そういうことなら手伝うよ。明日はよろしく",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh007.m4a"
+      "startTime": 94.576868232,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr010.m4a",
       "text": "ありがとうございます！　助かります！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr010.m4a"
+      "startTime": 99.4777752558,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "動画の撮影には最近慣れてきたんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "編集も多少は出来ると思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh009.m4a",
+      "text": "動画の撮影には最近慣れてきたんだ\n編集も多少は出来ると思う",
+      "startTime": 105.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr011.m4a",
       "text": "動画？　編集？　なんの話ですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr011.m4a"
+      "startTime": 108.1991786478,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh010.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh010.m4a"
+      "startTime": 114.2991786478,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――翌日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 116.4334311303,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 1366.6603088000074,
+          "startTime": 117.8000914391
+        }
+      ]
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "見て下さい、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr012.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr012.m4a",
+      "text": "見て下さい、{user}さん\n立派なグラウンドですね～！",
+      "startTime": 122.6000914391,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "立派なグラウンドですね～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh011.m4a",
+      "text": "まさか現地で直接応援するつもりとは……俺が甘かった\nでも練習試合は明日なんだろ？　どうして今日学校に？",
+      "startTime": 130.8333455403,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "まさか現地で直接応援するつもりとは……俺が甘かった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも練習試合は明日なんだろ？　どうして今日学校に？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh011.m4a"
-    },
-    {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr013.m4a",
       "text": "ソフトボール部のみんなに会うためです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh011.m4a"
+      "startTime": 135.2672784147,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "応援する相手のことをよく知っていた方が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr013.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr014.m4a",
+      "text": "応援する相手のことをよく知っていた方が\n気持ちを一杯込められると思って",
+      "startTime": 141.3339466073,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "気持ちを一杯込められると思って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さくららしいな。分かったよ、ここで待っててくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh012.m4a",
+      "text": "さくららしいな。分かったよ、ここで待っててくれ\n先に学校の先生方に挨拶してくるから",
+      "startTime": 148.6666788737,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "先に学校の先生方に挨拶してくるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr015.m4a",
+      "text": "私も一緒に行かせて下さい！\n先生方にもちゃんとご挨拶したいですし",
+      "startTime": 154.0834247407,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "私も一緒に行かせて下さい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "先生方にもちゃんとご挨拶したいですし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr015.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr016.m4a",
+      "text": "試合に向けて、ソフトボールの勉強も\nみっちりしてきたんですよ。私、頑張りますから！！",
+      "startTime": 160.9500914074,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "試合に向けて、ソフトボールの勉強も",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh013.m4a",
+      "text": "はは、別にさくらが試合に出る訳じゃないんだぞ\nでも分かったよ。一緒に行こう",
+      "startTime": 170.2666788737,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 5042.46902220001,
+          "startTime": 175.3091478959
+        }
+      ]
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "みっちりしてきたんですよ。私、頑張りますから！！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "はは、別にさくらが試合に出る訳じゃないんだぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr016.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr017.m4a",
+      "text": "先生方も部員のみなさんも\nとっても喜んでくれて良かったです",
+      "startTime": 179.4091552711,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも分かったよ。一緒に行こう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "先生方も部員のみなさんも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr017.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr018.m4a",
+      "text": "私も、凄くワクワクしてきました！\n明日の試合が楽しみです！",
+      "startTime": 185.8091552711,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "とっても喜んでくれて良かったです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "私も、凄くワクワクしてきました！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh014.m4a",
+      "text": "喜んでもらえたのは良かったけど……\nさくら、本当に大丈夫なのか？",
+      "startTime": 191.1333455403,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "明日の試合が楽しみです！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr018.m4a"
-    },
-    {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "喜んでもらえたのは良かったけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr018.m4a"
-    },
-    {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さくら、本当に大丈夫なのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh014.m4a"
-    },
-    {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr019.m4a",
       "text": "何がですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh014.m4a"
+      "startTime": 194.1739108539,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だって、応援だけじゃなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "始球式までやることになったじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh015.m4a",
+      "text": "だって、応援だけじゃなくて\n始球式までやることになったじゃないか",
+      "startTime": 198.0333455403,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "練習試合だと、普通は始球式ってやらないんですよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr020.m4a",
+      "text": "練習試合だと、普通は始球式ってやらないんですよね？\nなのにやらせてもらえるなんて、光栄じゃないですか",
+      "startTime": 205.1557967797,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "なのにやらせてもらえるなんて、光栄じゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "……えへへ、それに始球式って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr021.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr021.m4a",
+      "text": "……えへへ、それに始球式って\n実はテレビで観て、ちょっぴり憧れてたんです",
+      "startTime": 213.3891301131,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "実はテレビで観て、ちょっぴり憧れてたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr021.m4a"
-    },
-    {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr022.m4a",
       "text": "有名人になれたみたいで、照れちゃいますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr021.m4a"
+      "startTime": 217.7333485921,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "とっくに有名人なんだけどな……。ところでさくら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ソフトボールの経験は？　勉強したって言ってたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh016.m4a",
+      "text": "とっくに有名人なんだけどな……。ところでさくら\nソフトボールの経験は？　勉強したって言ってたけど",
+      "startTime": 226.4666788737,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr023.m4a",
       "text": "全然ありません！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh016.m4a"
+      "startTime": 230.3735937254,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そ、そうか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ボール、ちゃんとキャッチャーに届くかな……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh017.m4a",
+      "text": "そ、そうか……\nボール、ちゃんとキャッチャーに届くかな……？",
+      "startTime": 234.6666859944,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "本番まで練習あるのみ、ですね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr024.m4a",
+      "text": "本番まで練習あるのみ、ですね！\n{user}さんはお時間ありますか？",
+      "startTime": 241.3037782328,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "{user}さんはお時間ありますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr025.m4a",
       "text": "練習に付き合ってもらえたら嬉しいなって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr024.m4a"
+      "startTime": 244.4704560893,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "確かに……練習はしておいた方がいいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh018.m4a",
+      "text": "確かに……練習はしておいた方がいいな\n道具を借りてくるから、少し待っててくれ",
+      "startTime": 252.5333526611,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "道具を借りてくるから、少し待っててくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_schoolyard-00-noon.webp",
+      "bgName": "schoolyard-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "ありがとうございます、{user}さん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "skr",
+      "speakerName": "川咲さくら",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr026.m4a",
+      "text": "ありがとうございます、{user}さん……\nじゃなくてコーチ！　三振を取れるように頑張ります！",
+      "startTime": 259.0306618827,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "skr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-sakura.png",
-        "name": "川咲さくら"
-      },
-      "text": "じゃなくてコーチ！　三振を取れるように頑張ります！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr026.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-koh019.m4a",
       "text": "（始球式は一球しか投げないんだけどなあ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_skr_08_01/sud_vo_adv_card_skr_08_01-skr026.m4a"
+      "startTime": 264.1973468599,
+      "sfxList": []
     }
   ]
 }

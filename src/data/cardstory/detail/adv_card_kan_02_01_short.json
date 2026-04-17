@@ -1,274 +1,156 @@
 {
   "id": "adv_card_kan_02_01_short",
-  "groupId": "card_kan_02",
-  "name": "kana 1話 二日酔いでもパッキパキ (Short)",
-  "background": null,
-  "details": [
+  "title": "kana (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――ⅢXライブ当日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……まったく、ライブ当日に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "一体何をやってるんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh001.m4a",
+      "text": "……まったく、ライブ当日に\n一体何をやってるんですか？",
+      "startTime": 5.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "あ～もう！　朝から騒がないでよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "ちょっとお酒飲んだだけじゃん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan001.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan001.m4a",
+      "text": "あ～もう！　朝から騒がないでよ\nちょっとお酒飲んだだけじゃん",
+      "startTime": 11.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan002.m4a",
       "text": "……mihoとfranはつぶれちゃったけどさ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan001.m4a"
+      "startTime": 14.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "つぶれる前に止めて下さいよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh002.m4a",
+      "text": "つぶれる前に止めて下さいよ……\nライブ当日なんですから",
+      "startTime": 19.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ライブ当日なんですから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "こんなの顔洗えば",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan003.m4a",
+      "text": "こんなの顔洗えば\nkanaは余裕で復活するから平気だし",
+      "startTime": 23.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "kanaは余裕で復活するから平気だし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh003.m4a",
+      "text": "kanaさんだけ復活しても\n残りの二人がボロボロじゃ、ダメなんですよ",
+      "startTime": 28.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "kanaさんだけ復活しても",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "残りの二人がボロボロじゃ、ダメなんですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh003.m4a"
-    },
-    {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan004.m4a",
       "text": "mihoとfran？　あの二人もへーきへーき",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan004.m4a"
+      "startTime": 31.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "二人ともふらふらだったじゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あれじゃとても今日のステージは……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh004.m4a",
+      "text": "二人ともふらふらだったじゃないですか\nあれじゃとても今日のステージは……",
+      "startTime": 38.0075801032,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "心配性だねー。いざとなったらkana一人でも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan005.m4a",
+      "text": "心配性だねー。いざとなったらkana一人でも\nライブはきっちりこなしてみせるから",
+      "startTime": 45.4,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "ライブはきっちりこなしてみせるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenroom-00-noon.webp",
+      "bgName": "onsenroom-00-noon"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "ん？　そしたらkana、ソロデビューか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan005.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "それはそれで良くない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan006.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_02_01_short/sud_vo_adv_card_kan_02_01-kan006.m4a",
+      "text": "ん？　そしたらkana、ソロデビューか……\nそれはそれで良くない？",
+      "startTime": 53.1,
+      "sfxList": []
     }
   ]
 }

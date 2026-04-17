@@ -1,162 +1,102 @@
 {
   "id": "adv_card_ai_53_01_short",
-  "groupId": "card_ai_53",
-  "name": "小美山愛 1話 熊さーーーーーーん (Short)",
-  "background": null,
-  "details": [
+  "title": "小美山愛 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-noon.webp",
+      "bgName": "tokyohall-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――二月九日　朝",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "こころ遅いなぁ。午前中はショッピングしようって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai001.m4a",
+      "text": "こころ遅いなぁ。午前中はショッピングしようって\n誘ってくれたのはこころの方なのに……",
+      "startTime": 6.2,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+          "delay": 3800,
+          "startTime": 10
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "誘ってくれたのはこころの方なのに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-noon.webp",
+      "bgName": "tokyohall-00-noon"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "愛、お待たせ！　お誕生日おめでとう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai001.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr001.m4a",
+      "text": "愛、お待たせ！　お誕生日おめでとう！\n今日は愛が欲しい物、沢山買おうね！",
+      "startTime": 13.2666672389,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "今日は愛が欲しい物、沢山買おうね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-noon.webp",
+      "bgName": "tokyohall-00-noon"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "それにしても、また一回り成長してない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr001.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr002.m4a",
+      "text": "それにしても、また一回り成長してない？\n熊くらいなら一捻り出来ちゃいそう",
+      "startTime": 19.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "熊くらいなら一捻り出来ちゃいそう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-noon.webp",
+      "bgName": "tokyohall-00-noon"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "確かにプロレスのお仕事はしたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ai",
+      "speakerName": "小美山愛",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai002.m4a",
+      "text": "確かにプロレスのお仕事はしたけど\nさすがに熊は無理だよ！",
+      "startTime": 25.1,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ai",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-ai.png",
-        "name": "小美山愛"
-      },
-      "text": "さすがに熊は無理だよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-noon.webp",
+      "bgName": "tokyohall-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "いやいや、筋肉だって仕上がってるし案外いけるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-ai002.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kkr",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
-        "name": "赤崎こころ"
-      },
-      "text": "いよっ、腹筋爆盛りラーメン替え玉！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kkr",
+      "speakerName": "赤崎こころ",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kokoro.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ai_53_01_short/sud_vo_adv_card_ai_53_01-kkr003.m4a",
+      "text": "いやいや、筋肉だって仕上がってるし案外いけるよ\nいよっ、腹筋爆盛りラーメン替え玉！",
+      "startTime": 32.5333333333,
+      "sfxList": []
     }
   ]
 }

@@ -1,1240 +1,823 @@
 {
   "id": "adv_card_mna_08_02",
-  "groupId": "card_mna_08",
-  "name": "長瀬麻奈 2話 きみと思い出を作りたい",
-  "background": null,
-  "details": [
+  "title": "長瀬麻奈",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tropical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――ホテル缶詰、初日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ここが、今日から麻奈が泊まるホテルだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "新曲の歌詞が完成するまで帰れないから覚悟してくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh001.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 2.1333333333
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh001.m4a",
+      "text": "ここが、今日から麻奈が泊まるホテルだ\n新曲の歌詞が完成するまで帰れないから覚悟してくれ",
+      "startTime": 5.5666666667,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-03.m4a",
       "text": "ぶぅー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh001.m4a"
+      "startTime": 9.5666668415,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……どうして不満顔なんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh002.m4a",
+      "text": "……どうして不満顔なんだ？\nホテルで缶詰したいって言い出したのは麻奈だろ",
+      "startTime": 13.8000007629,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ホテルで缶詰したいって言い出したのは麻奈だろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "そうだけど……どうして市内のホテルなの！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 17.4000009377,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-11.m4a",
       "text": "交通の便がいいだけで、味も素っ気もないじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-11.m4a"
+      "startTime": 21.8085847197,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "もっと豪華なリゾートホテルで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 26.600004371,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_sad-03.m4a",
       "text": "優雅なホテル暮らしが出来ると思って期待してたのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 29.2890855379,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ホテル代はタダじゃないんだぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "リゾートホテルで何泊も出来る訳ないだろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh003.m4a",
+      "text": "ホテル代はタダじゃないんだぞ\nリゾートホテルで何泊も出来る訳ないだろ",
+      "startTime": 37.2666723888,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それから、缶詰中もアイドルの仕事はあるからな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh004.m4a",
+      "text": "それから、缶詰中もアイドルの仕事はあるからな\nここから現場に直行して、終わったらここに戻るんだ",
+      "startTime": 44.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ここから現場に直行して、終わったらここに戻るんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh004.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-07.m4a",
       "text": "それって家に帰るかホテルに帰るかの違いだけじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-07.m4a"
+      "startTime": 48.7000058969,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "なんだか想像してた缶詰と違うなあ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 53.5316134604,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "じゃあ、俺は事務所に戻るから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "大変だと思うが、後は一人で頑張ってくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh005.m4a",
+      "text": "じゃあ、俺は事務所に戻るから\n大変だと思うが、後は一人で頑張ってくれ",
+      "startTime": 59.4196795854,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_surp-02.m4a",
       "text": "えっ、帰っちゃうの！？　マネージャーなのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_surp-02.m4a"
+      "startTime": 62.9333399933,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "アイドルを置き去りにするなんて酷いよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 67.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "マネージャーには",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 71.0333354155,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "アイドルを近くで見守る義務があると思うけどな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 73.0600896101,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_emb-04.m4a",
       "text": "……それに、独りは寂しいって言うか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_emb-04.m4a"
+      "startTime": 78.4333262601,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "きみがいないと寂しいって言うか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 82.5518491427,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_no-01.m4a",
       "text": "と、とにかく、{user}くんも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_no-01.m4a"
+      "startTime": 86.3333323637,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "ここに残るべきだよ！　絶対！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 89.7000030517,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "やれやれ、仕方ないな……。麻奈がさぼらないように",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お目付役として、俺もここに残ることにするよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh006.m4a",
+      "text": "やれやれ、仕方ないな……。麻奈がさぼらないように\nお目付役として、俺もここに残ることにするよ",
+      "startTime": 97.3999891916,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_yes-13.m4a",
       "text": "そうそう……って、私がさぼると思ってるの！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh006.m4a"
+      "startTime": 101.1666560331,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-15.m4a",
       "text": "そんなことないから、ちゃんとそばで私を見ててよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 104.4148046402,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-01.m4a",
       "text": "よーし、バリバリ作詞しちゃうよー！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-01.m4a"
+      "startTime": 109.3666575589,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_coast-00-noon.webp",
+      "bgName": "3d_corridor_night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――ホテル缶詰を始めて二日目",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 114.4999903836,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
+          "delay": 1666.6762831000028,
+          "startTime": 116.1666666667
+        }
+      ]
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "今日はよく晴れてるね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 116.9666539984,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
+          "delay": 866.6793348999988,
+          "startTime": 117.8333333333
+        }
+      ]
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-09.m4a",
       "text": "海水浴には最高の天気だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-09.m4a"
+      "startTime": 119.5986330304,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "海水浴に来たんじゃないだろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh007.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_coast-01.m4a",
+      "startTime": 116.0999902087
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今日は仕事で、海でグラビア撮影だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh007.m4a",
+      "text": "海水浴に来たんじゃないだろ\n今日は仕事で、海でグラビア撮影だ",
+      "startTime": 125.3999785104,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-03.m4a",
       "text": "む……だって、今年は一度も海で遊べてないんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh007.m4a"
+      "startTime": 128.5333089667,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "少しぐらいバカンス気分を味わってもいいじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 133.3333206175,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "残念だけど、バカンスを楽しむ時間はないぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh008.m4a",
+      "text": "残念だけど、バカンスを楽しむ時間はないぞ\n撮影が終わったらすぐホテルに直行だからな",
+      "startTime": 140.5333480834,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "撮影が終わったらすぐホテルに直行だからな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh008.m4a"
-    },
-    {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-04.m4a",
       "text": "それで作詞が終わるまで外出禁止だって言うんでしょ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-04.m4a"
+      "startTime": 143.7666494208,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "せっかく海に来たのにつまんないよ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 148.3855182145,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_sad-01.m4a",
       "text": "はあ～、テンション上がらないな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_sad-01.m4a"
+      "startTime": 151.6333150701,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "こんな気分じゃ撮影もうまくいかないかも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 154.5150047412,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "{user}くんが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 158.0333211736,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "私のモチベーションの上がることをしてくれないかな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 159.9666573839,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "参ったな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh009.m4a",
+      "text": "参ったな……\nそれで、俺が何をすれば麻奈のモチベは上がるんだ？",
+      "startTime": 165.3000147501,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それで、俺が何をすれば麻奈のモチベは上がるんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh009.m4a"
-    },
-    {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_think-05.m4a",
       "text": "そうだなあ……そういえば、今日の私の格好について",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh009.m4a"
+      "startTime": 169.8333140529,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "まだ何も言ってもらってないよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 174.8488691486,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_hey-01.m4a",
       "text": "今をときめくアイドルが水着で目の前にいるんだよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_hey-01.m4a"
+      "startTime": 177.8666514553,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "何か言うことがあるんじゃない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 182.3125147389,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや、水着じゃなくて、水着風の衣装だけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh010.m4a",
+      "text": "いや、水着じゃなくて、水着風の衣装だけど……\n……よく似合ってるよ",
+      "startTime": 190.9333199816,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……よく似合ってるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh010.m4a"
-    },
-    {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "どうして目をそらしてるの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 192.9999837713,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-05.m4a",
       "text": "ちゃんと私を見て言ってよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-05.m4a"
+      "startTime": 195.7112401228,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（そんな姿の麻奈をまじまじと見るなんて）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh011.m4a",
+      "text": "（そんな姿の麻奈をまじまじと見るなんて）\n（恥ずかしくて出来る訳ないだろ……）",
+      "startTime": 201.8999744413,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（恥ずかしくて出来る訳ないだろ……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh011.m4a"
-    },
-    {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "ふーん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 204.766638231,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "……えっち",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 207.5184771535,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なっ！？　俺は何も言ってないだろ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh012.m4a",
+      "text": "なっ！？　俺は何も言ってないだろ！\nそういう麻奈こそ、見られて恥ずかしくないのか！？",
+      "startTime": 212.1999713895,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そういう麻奈こそ、見られて恥ずかしくないのか！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh012.m4a"
-    },
-    {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "恥ずかしいに決まってるじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh012.m4a"
+      "startTime": 215.6666351792,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_emb-04.m4a",
       "text": "恥ずかしいけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_emb-04.m4a"
+      "startTime": 218.373107874,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "それでも{user}くんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 221.5333160873,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-04.m4a",
       "text": "見てほしいし、褒めてほしいんだよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-04.m4a"
+      "startTime": 223.9101389742,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈？　声が小さくてよく聞こえなかったんだが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh013.m4a",
+      "text": "麻奈？　声が小さくてよく聞こえなかったんだが……\nどうしたんだ？　顔が赤いぞ",
+      "startTime": 232.5666814167,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "どうしたんだ？　顔が赤いぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh013.m4a"
-    },
-    {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-05.m4a",
       "text": "う、うるさいなー！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh013.m4a"
+      "startTime": 235.2666422999,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "とにかく、私はもっと夏の海を楽しみたいの！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 237.2910824454,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-03.m4a",
       "text": "今年はお互い、高校生最後の夏なんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_angry-03.m4a"
+      "startTime": 242.1999735987,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "最後の夏の思い出が、お仕事と缶詰だけなんて寂しいよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 246.0333138779,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "せっかくなら、{user}くんと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 250.7666514551,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "もっと学生らしい、夏の思い出も作りたいよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 253.6333470659,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "麻奈……。分かったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh014.m4a",
+      "text": "麻奈……。分かったよ\nじゃあ、星見まつりが終わったら二人でまた海に来よう",
+      "startTime": 260.4666594183,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "じゃあ、星見まつりが終わったら二人でまた海に来よう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh015.m4a",
+      "text": "スケジュールは俺がなんとかするから\n一緒に海で遊ぼう",
+      "startTime": 267.1919596511,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "スケジュールは俺がなんとかするから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh015.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "一緒に海で遊ぼう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh015.m4a"
-    },
-    {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-10.m4a",
       "text": "{user}くん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh015.m4a"
+      "startTime": 268.933323208,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "やれば出来るじゃない、そういうのを待ってたんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 271.3207072019,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-04.m4a",
       "text": "ふふふ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-04.m4a"
+      "startTime": 276.2666789209,
+      "sfxList": []
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "モチベーションがぐんぐん上がってきたよー！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 278.1122594804,
+      "sfxList": []
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-15.m4a",
       "text": "約束、絶対に忘れないでね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_cmn_mna_glad-15.m4a"
+      "startTime": 280.8000163233,
+      "sfxList": []
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "ご褒美を楽しむためにも、お仕事も作詞も頑張るぞー！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 283.4565439555,
+      "sfxList": []
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（俺と海に行くことが）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh016.m4a",
+      "text": "（俺と海に行くことが）\n（ご褒美になるかは疑問だけど……）",
+      "startTime": 290.0282081979,
+      "sfxList": []
     },
     {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（ご褒美になるかは疑問だけど……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh016.m4a"
-    },
-    {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（楽しみに思ってくれたみたいで……夏の太陽みたいに）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh016.m4a"
-    },
-    {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（眩しい笑顔になってくれて、良かった）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_02/sud_vo_adv_card_mna_08_02-koh017.m4a",
+      "text": "（楽しみに思ってくれたみたいで……夏の太陽みたいに）\n（眩しい笑顔になってくれて、良かった）",
+      "startTime": 297.2666814167,
+      "sfxList": []
     }
   ]
 }

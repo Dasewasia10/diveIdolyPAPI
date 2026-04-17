@@ -1,1128 +1,639 @@
 {
   "id": "adv_card_rui_05_01",
-  "groupId": "card_rui_05",
-  "name": "天動瑠依 1話 同じステージに立って",
-  "background": null,
-  "details": [
+  "title": "天動瑠依",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_clb-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――マジカルミライ10th Anniversary",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "in VENUS STAGE",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 2.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh001.m4a",
       "text": "いよいよこの日が来たな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh001.m4a"
+      "startTime": 4.3,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "はい、本当にいろいろありましたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "なんとか、本番に間に合いました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui001.m4a",
+      "text": "はい、本当にいろいろありましたけど\nなんとか、本番に間に合いました",
+      "startTime": 10,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ミクと握手会に出たり、作詞も初めてで大変だったけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui002.m4a",
+      "text": "ミクと握手会に出たり、作詞も初めてで大変だったけど\n何もかもが新鮮で、楽しかったです",
+      "startTime": 17.8,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "何もかもが新鮮で、楽しかったです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh002.m4a",
+      "text": "その全てが、今日のステージのためだ\n期待してるよ",
+      "startTime": 24.1,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "その全てが、今日のステージのためだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "期待してるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui003.m4a",
+      "text": "ええ、ミクと私達TRINITYAiLEで\n最高のステージにしてみせます",
+      "startTime": 29.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ええ、ミクと私達TRINITYAiLEで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "最高のステージにしてみせます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui004.m4a",
+      "text": "本当に、ありがとうございました\nこの日のために、沢山助けてくれて",
+      "startTime": 34.6,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "本当に、ありがとうございました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "この日のために、沢山助けてくれて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui004.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh003.m4a",
       "text": "俺は大したことはしてないよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh003.m4a"
+      "startTime": 37.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui005.m4a",
       "text": "ふふっ、そうですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui005.m4a"
+      "startTime": 40.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ミクとはいろんなことを話しましたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "{user}さんにとても感謝してましたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui006.m4a",
+      "text": "ミクとはいろんなことを話しましたけど\n{user}さんにとても感謝してましたよ",
+      "startTime": 45.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "少しアドバイスを送っただけだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh004.m4a",
+      "text": "少しアドバイスを送っただけだよ\nミクとはどんなことを話したんだ？",
+      "startTime": 50.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ミクとはどんなことを話したんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui007.m4a",
       "text": "気になりますか？　でも、内緒です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh004.m4a"
+      "startTime": 53.1,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "一体何を話したんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……おっと、そろそろ出番だな。準備は出来てるか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh005.m4a",
+      "text": "一体何を話したんだ？\n……おっと、そろそろ出番だな。準備は出来てるか？",
+      "startTime": 59.6333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_knock-01.m4a",
+          "delay": 1866.6666666999986,
+          "startTime": 58.7666666667
+        }
+      ]
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "もちろんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_dressingroom-00-noon.webp",
+      "bgName": "stage01"
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ミクと私達とで、最高のステージを届けてきます！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui008.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui008.m4a",
+      "text": "もちろんです\nミクと私達とで、最高のステージを届けてきます！",
+      "startTime": 65.5,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "{user}さんも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui009.m4a",
+      "text": "{user}さんも\nしっかり観ていて下さいね",
+      "startTime": 71.0866073687,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "しっかり観ていて下さいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui009.m4a"
-    },
-    {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui010.m4a",
       "text": "みなさん、マジカルミライにようこそ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui010.m4a"
+      "startTime": 75.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ミクと私達、四人での初めてのステージですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "楽しんでいただけていますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui011.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+      "startTime": 74.3333333333
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ミクの気持ち――みんなへの感謝の気持ちを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui011.m4a",
+      "text": "ミクと私達、四人での初めてのステージですけど\n楽しんでいただけていますか？",
+      "startTime": 82.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "曲に込めて、歌います",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui012.m4a",
+      "text": "ミクの気持ち――みんなへの感謝の気持ちを\n曲に込めて、歌います",
+      "startTime": 89.1,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui013.m4a",
       "text": "それでは聴いて下さい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui013.m4a"
+      "startTime": 92.0666666667,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+          "delay": 1366.666666599997,
+          "startTime": 93.4333333333
+        }
+      ]
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "（凄い声援……ミクが好きっていう強い気持ちが）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui014.m4a",
+      "text": "（凄い声援……ミクが好きっていう強い気持ちが）\n（観客席から伝わってくる）",
+      "startTime": 100.8,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "（観客席から伝わってくる）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui015.m4a",
+      "text": "（バーチャル・シンガー……誰かのために）\n（歌い続けてきたミクだから、こんなにも……）",
+      "startTime": 106.8,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "（バーチャル・シンガー……誰かのために）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui015.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui016.m4a",
+      "text": "（自分のためじゃなくて）\n（誰かのために歌い続けてきたからこその、強さ――）",
+      "startTime": 113.3,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 6333.333333300005,
+          "startTime": 119.6333333333
+        }
+      ]
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "（歌い続けてきたミクだから、こんなにも……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "（自分のためじゃなくて）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui016.m4a"
-    },
-    {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "（誰かのために歌い続けてきたからこその、強さ――）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui016.m4a"
-    },
-    {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh006.m4a",
       "text": "お疲れ様、とてもいいステージだったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh006.m4a"
+      "startTime": 120.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ありがとうございます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "……今日のライブ、とても勉強になりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui017.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui017.m4a",
+      "text": "ありがとうございます\n……今日のライブ、とても勉強になりました",
+      "startTime": 126.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうか。ミクは――バーチャル・シンガーは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh007.m4a",
+      "text": "そうか。ミクは――バーチャル・シンガーは\n今まで出会ったアイドルとは違うものな",
+      "startTime": 134.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今まで出会ったアイドルとは違うものな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（彼女との共演は、天動さんにとって）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh008.m4a",
+      "text": "（彼女との共演は、天動さんにとって）\n（大きな刺激になったようだな）",
+      "startTime": 140.1,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（大きな刺激になったようだな）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui018.m4a",
       "text": "はい、本当に、凄く違ったんです。私とミクは……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui018.m4a"
+      "startTime": 142.3666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "頭では分っていたんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui019.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui019.m4a",
+      "text": "頭では分っていたんですけど\nミクと同じステージに立って、改めて実感しました",
+      "startTime": 152.1333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ミクと同じステージに立って、改めて実感しました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私達は、トップアイドルを目指して",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui020.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui020.m4a",
+      "text": "私達は、トップアイドルを目指して\nライブバトルで戦って、ランキングを競い合っています",
+      "startTime": 159.9,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ライブバトルで戦って、ランキングを競い合っています",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui020.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui021.m4a",
+      "text": "でも、VENUSプログラムの外側にだって\nあんなに凄い子がいて……",
+      "startTime": 168.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "でも、VENUSプログラムの外側にだって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あんなに凄い子がいて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui021.m4a"
-    },
-    {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh009.m4a",
       "text": "……大丈夫か？　少し元気がないようだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh009.m4a"
+      "startTime": 170.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あ……いえ、少し考え込んでしまって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui022.m4a",
+      "text": "あ……いえ、少し考え込んでしまって……\nあの、{user}さん",
+      "startTime": 179.8,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "あの、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui022.m4a"
-    },
-    {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh010.m4a",
       "text": "どうしたんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui022.m4a"
+      "startTime": 182.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私は、誰のためでもなく、自分のために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "アイドルの道を選びました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui023.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui023.m4a",
+      "text": "私は、誰のためでもなく、自分のために\nアイドルの道を選びました",
+      "startTime": 188.2333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "でも……いつしか、父に認めてもらえるくらい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui024.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui024.m4a",
+      "text": "でも……いつしか、父に認めてもらえるくらい\n凄いアイドルになることに、囚われていたんです",
+      "startTime": 194.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "凄いアイドルになることに、囚われていたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今はもう違うだろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh011.m4a",
+      "text": "今はもう違うだろ？\n誰かに認めてもらうためでも、自分のためでもない",
+      "startTime": 201.4,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "誰かに認めてもらうためでも、自分のためでもない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh012.m4a",
+      "text": "鈴村さんと奥山さんと三人で\nトップに立つために頑張ってるじゃないか",
+      "startTime": 208,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "鈴村さんと奥山さんと三人で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui025.m4a",
+      "text": "そうです。でも……ミクと同じステージに立って\n疑問が浮かんだんです",
+      "startTime": 214.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "トップに立つために頑張ってるじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "そうです。でも……ミクと同じステージに立って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui025.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui026.m4a",
+      "text": "私の歌は、もしかしたらミクの歌ほど\nファンの心に届いてないんじゃないかって",
+      "startTime": 221.6,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "疑問が浮かんだんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui025.m4a"
-    },
-    {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私の歌は、もしかしたらミクの歌ほど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui026.m4a"
-    },
-    {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ファンの心に届いてないんじゃないかって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui026.m4a"
-    },
-    {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh013.m4a",
       "text": "どうしてそんなことを……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh013.m4a"
+      "startTime": 225,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私は父に認めてもらうため、仲間のために歌ってきた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "それと比べて、ミクはずっと純粋です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui027.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui027.m4a",
+      "text": "私は父に認めてもらうため、仲間のために歌ってきた\nそれと比べて、ミクはずっと純粋です",
+      "startTime": 232.4333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "ただファンのことを、強く、純粋に想って歌う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui028.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui028.m4a",
+      "text": "ただファンのことを、強く、純粋に想って歌う\nだから私の歌よりも、心に響くんじゃないかって",
+      "startTime": 241.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "だから私の歌よりも、心に響くんじゃないかって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui028.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "教えて下さい、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui028.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui029.m4a",
+      "text": "教えて下さい、{user}さん\n私、ちゃんとファンに向き合えて、いますか？",
+      "startTime": 249.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私、ちゃんとファンに向き合えて、いますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui029.m4a"
-    },
-    {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh014.m4a",
       "text": "天動さん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui029.m4a"
+      "startTime": 254.9333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "私、何言ってるんだろ。ごめんなさい。忘れて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui030.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stage02"
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rui",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-        "name": "天動瑠依"
-      },
-      "text": "今日はお疲れ様でした。失礼します",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui030.m4a"
+      "type": "dialogue",
+      "speakerCode": "rui",
+      "speakerName": "天動瑠依",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-rui030.m4a",
+      "text": "私、何言ってるんだろ。ごめんなさい。忘れて下さい\n今日はお疲れ様でした。失礼します",
+      "startTime": 262.4,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（……ミクとの共演で受けた刺激が）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh015.m4a"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 264.7333333333
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（いい方向に働けばいいんだけど）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rui_05_01/sud_vo_adv_card_rui_05_01-koh015.m4a",
+      "text": "（……ミクとの共演で受けた刺激が）\n（いい方向に働けばいいんだけど）",
+      "startTime": 269.5666666667,
+      "sfxList": []
     }
   ]
 }

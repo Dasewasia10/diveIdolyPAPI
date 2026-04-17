@@ -1,260 +1,127 @@
 {
   "id": "adv_card_ski_08_01_short",
-  "groupId": "card_ski_08",
-  "name": "白石沙季 1話 中身だけなくなってる (Short)",
-  "background": null,
-  "details": [
+  "title": "白石沙季 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "office-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――年末の、ある日のこと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 1566.6666667,
+          "startTime": 1.5666666667
+        }
+      ]
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "おはようございます、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski001.m4a",
+      "text": "おはようございます、{user}さん\n今日は、事務所の大掃除をするんですよね？",
+      "startTime": 4.8666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "今日は、事務所の大掃除をするんですよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski001.m4a"
-    },
-    {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh001.m4a",
       "text": "ああ。休みなのに、手伝いに来てもらって悪いな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski001.m4a"
+      "startTime": 8.000000012,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "私達も、いつもこの事務所を使ってるんですから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski002.m4a",
+      "text": "私達も、いつもこの事務所を使ってるんですから\n綺麗にするのは当たり前のことです",
+      "startTime": 15.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "綺麗にするのは当たり前のことです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh002.m4a",
+      "text": "俺と橋本さんだけじゃ絶対に終わらないから、助かるよ\n……ところで、そこの大荷物は一体なんなんだ？",
+      "startTime": 22.7,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺と橋本さんだけじゃ絶対に終わらないから、助かるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski003.m4a",
+      "text": "事務所の大掃除をするにあたって\n動画サイトで、お掃除の動画をいくつか観てみたんです",
+      "startTime": 29,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……ところで、そこの大荷物は一体なんなんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski004.m4a",
+      "text": "プロ用の専用洗剤の威力に、隙間の埃を取るコツ……\n重曹がああも万能とは思いませんでした",
+      "startTime": 38.0333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "事務所の大掃除をするにあたって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski005.m4a",
+      "text": "後はもう実践するのみと思って、紹介されていた洗剤や\nスポンジを買ってきたんです。そうだ、他にも――",
+      "startTime": 45.4666684468,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "動画サイトで、お掃除の動画をいくつか観てみたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh003.m4a",
+      "text": "さ、沙季、気合いは十分伝わってきたから\nそろそろ始めようか",
+      "startTime": 53.5855272822,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "プロ用の専用洗剤の威力に、隙間の埃を取るコツ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski004.m4a"
-    },
-    {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "重曹がああも万能とは思いませんでした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski004.m4a"
-    },
-    {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "後はもう実践するのみと思って、紹介されていた洗剤や",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski005.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "スポンジを買ってきたんです。そうだ、他にも――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski005.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さ、沙季、気合いは十分伝わってきたから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski005.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そろそろ始めようか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-koh003.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "なるほど、続きは実践で、ということですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski006.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ski",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
-        "name": "白石沙季"
-      },
-      "text": "では、早速大掃除を始めましょう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ski",
+      "speakerName": "白石沙季",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-saki.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_08_01_short/sud_vo_adv_card_ski_08_01-ski006.m4a",
+      "text": "なるほど、続きは実践で、ということですね\nでは、早速大掃除を始めましょう！",
+      "startTime": 60.5333335876,
+      "sfxList": []
     }
   ]
 }

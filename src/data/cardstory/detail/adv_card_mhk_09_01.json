@@ -1,1142 +1,610 @@
 {
   "id": "adv_card_mhk_09_01",
-  "groupId": "card_mhk_09",
-  "name": "miho 1話 『Friend Glass』",
-  "background": null,
-  "details": [
+  "title": "miho",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "長瀬麻奈が生前、私達……Sundanceについて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_lesson-01-noon.webp",
+      "bgName": "3d_corridor_evening"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "話していたことがあると、以前言っていましたよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "その時、彼女はどんなことを話していたか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "私達をどう評していたか、教えていただけませんか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（まさかmihoさんが、麻奈の感想を聞いてくるとは）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（麻奈はなんと言っていただろうか。確か……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk001.m4a",
+      "text": "長瀬麻奈が生前、私達……Sundanceについて\n話していたことがあると、以前言っていましたよね",
+      "startTime": 5.7,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk002.m4a",
+      "text": "その時、彼女はどんなことを話していたか\n私達をどう評していたか、教えていただけませんか",
+      "startTime": 13.8333333333,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh001.m4a",
+      "text": "（まさかmihoさんが、麻奈の感想を聞いてくるとは）\n（麻奈はなんと言っていただろうか。確か……）",
+      "startTime": 22.7333333333,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "―― 一ヶ月前、NexusFes終了直後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 28.4163606372,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "mihoさんも、今日はイベントお疲れ様でした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh002.m4a",
+      "text": "mihoさんも、今日はイベントお疲れ様でした\nいや本当に、無事に終わって良かったですよ……",
+      "startTime": 34.1000003815,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや本当に、無事に終わって良かったですよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh003.m4a",
+      "text": "みなさんもスリクスを続けると仰ってくれましたし\nこれで俺もなんとか、安心して寝られます",
+      "startTime": 41.5246193502,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "みなさんもスリクスを続けると仰ってくれましたし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "これで俺もなんとか、安心して寝られます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk003.m4a",
+      "text": "……貴方の安眠はどうでもいいですけど\nフェスについては、早速記事になっているようですね",
+      "startTime": 47.7162116689,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 2752.473290499999,
+          "startTime": 47.4333337148
+        }
+      ]
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "……貴方の安眠はどうでもいいですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "フェスについては、早速記事になっているようですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk004.m4a",
+      "text": "ふっ。世界を股にかけて活躍するアイドルというのも\nなかなかいい響きですね",
+      "startTime": 56.1828783355,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "ふっ。世界を股にかけて活躍するアイドルというのも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "なかなかいい響きですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh004.m4a",
+      "text": "そう言えば、mihoさんの経歴を拝見したんですが\n以前も、台湾ツアーに行かれたことがあるそうですね",
+      "startTime": 62.1666670482,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そう言えば、mihoさんの経歴を拝見したんですが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh005.m4a",
+      "text": "その時はどんな感じだったんですか？\n台湾はご飯もうまそうですし、それだけでも羨まし……",
+      "startTime": 68.6000003815,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "以前も、台湾ツアーに行かれたことがあるそうですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "その時はどんな感じだったんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk005.m4a",
+      "text": "確かに以前、台湾を回ったことはありますよ\nただ葉ちゃんはいなくて、私一人でしたけど",
+      "startTime": 77.0930190406,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "台湾はご飯もうまそうですし、それだけでも羨まし……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh005.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "確かに以前、台湾を回ったことはありますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh005.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "ただ葉ちゃんはいなくて、私一人でしたけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk005.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh006.m4a",
       "text": "え！？　……えっと、余計なこと聞いたみたいで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh006.m4a"
+      "startTime": 80.4515002889,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "……葉ちゃんが入院している間も",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "私を暇にさせておく訳にはいかないと言われましてね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk006.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk006.m4a",
+      "text": "……葉ちゃんが入院している間も\n私を暇にさせておく訳にはいかないと言われましてね",
+      "startTime": 88.7334520342,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "休養当初は、しばらく入院すれば治ると思ってましたし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk007.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk007.m4a",
+      "text": "休養当初は、しばらく入院すれば治ると思ってましたし\nまた一緒にステージに立てると思っていたんですよ",
+      "startTime": 97.8001187009,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "また一緒にステージに立てると思っていたんですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk007.m4a"
-    },
-    {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk008.m4a",
       "text": "でも日本に戻ったら、葉ちゃんはもう酷く痩せてて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk008.m4a"
+      "startTime": 100.902318605,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "ツアー中の私を心配させないように",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "元気な顔の写真ばっかり、送ってきていたんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk009.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk009.m4a",
+      "text": "ツアー中の私を心配させないように\n元気な顔の写真ばっかり、送ってきていたんです",
+      "startTime": 109.0333388011,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "……なんで私、友達を置いていってしまったんだろう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "こうなると分かっていたら、側を離れなかったのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk010.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk010.m4a",
+      "text": "……なんで私、友達を置いていってしまったんだろう\nこうなると分かっていたら、側を離れなかったのに",
+      "startTime": 118.2334520342,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "mihoさん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh007.m4a",
+      "text": "mihoさん……\nすみません、話し辛いことを",
+      "startTime": 123.8333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "すみません、話し辛いことを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "別に、貴方の無神経は今に始まったことでもないですし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk011.m4a",
+      "text": "別に、貴方の無神経は今に始まったことでもないですし\nこれ以上株の下がりようもないので、安心して下さい",
+      "startTime": 131.7085794134,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "これ以上株の下がりようもないので、安心して下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "……ここで解散しても構わないと、この前は思ったけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk012.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk012.m4a",
+      "text": "……ここで解散しても構わないと、この前は思ったけど\nまた一人で取り残されるのは、やっぱり嫌ね",
+      "startTime": 139.9085692408,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "また一人で取り残されるのは、やっぱり嫌ね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk012.m4a"
-    },
-    {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk013.m4a",
       "text": "こんなこと、あの子達には絶対に言わないけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk013.m4a"
+      "startTime": 143.8732286774,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh008.m4a",
       "text": "mihoさん？　すみません、よく聞こえなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk013.m4a"
+      "startTime": 147.8560403033,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "私は何も言っていません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_ametown-00-night.webp",
+      "bgName": "ametown-00-night"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "おそらく貴方の気のせいでしょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk014.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk014.m4a",
+      "text": "私は何も言っていません\nおそらく貴方の気のせいでしょう",
+      "startTime": 154.2653836252,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――帰国後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 157.2233420058,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk015.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk015.m4a",
+      "text": "{user}さん\n相談があるのですが、少しお時間をいただけますか？",
+      "startTime": 160.7987169585,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 0,
+          "startTime": 158.966650772
+        }
+      ]
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "相談があるのですが、少しお時間をいただけますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh009.m4a",
+      "text": "ああはい、大丈夫ですよ\nそれで、相談というのは……",
+      "startTime": 167.066650772,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああはい、大丈夫ですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk015.m4a"
-    },
-    {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それで、相談というのは……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh009.m4a"
-    },
-    {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk016.m4a",
       "text": "私達の、新曲についての相談なのですが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk016.m4a"
+      "startTime": 169.7851547244,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "新曲……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh010.m4a",
+      "text": "新曲……\n『Bittersweet Echo』のことですか？",
+      "startTime": 175.1333174387,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "『Bittersweet Echo』のことですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh011.m4a",
+      "text": "あ！　もしかしてVENUSグランプリのことですか\n出場用の曲を、あの曲から変更したいとか……",
+      "startTime": 181.8333174387,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あ！　もしかしてVENUSグランプリのことですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk017.m4a",
+      "text": "いえ『Bittersweet Echo』ではなくて\n昔の私達の曲を、カバーするという話です",
+      "startTime": 189.4329573633,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "出場用の曲を、あの曲から変更したいとか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh012.m4a",
+      "text": "ああ、アメリカでfranさんから聞いてます\nSundanceの曲を、スリクスで歌うんですよね",
+      "startTime": 196.4333174387,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "いえ『Bittersweet Echo』ではなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh011.m4a"
-    },
-    {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "昔の私達の曲を、カバーするという話です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk017.m4a"
-    },
-    {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああ、アメリカでfranさんから聞いてます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh012.m4a"
-    },
-    {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "Sundanceの曲を、スリクスで歌うんですよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh012.m4a"
-    },
-    {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh013.m4a",
       "text": "どの曲にするかは、もう決まってるんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh012.m4a"
+      "startTime": 199.5438628359,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "franとkanaにはこれから確認しますが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk018.m4a",
+      "text": "franとkanaにはこれから確認しますが……\n『Friend Glass』にしようと思っています",
+      "startTime": 206.4333119709,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "『Friend Glass』にしようと思っています",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk018.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk019.m4a",
+      "text": "あの曲は当時、私達の代名詞みたいなものでしたし\n私自身、思い入れもありますから",
+      "startTime": 213.8143857799,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "あの曲は当時、私達の代名詞みたいなものでしたし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh014.m4a",
+      "text": "分かりました。関係者には俺から問い合わせておきます\n多分、使用許可は問題なく出ると思いますよ",
+      "startTime": 221.066650772,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "私自身、思い入れもありますから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk019.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "分かりました。関係者には俺から問い合わせておきます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh014.m4a"
-    },
-    {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "多分、使用許可は問題なく出ると思いますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh014.m4a"
-    },
-    {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk020.m4a",
       "text": "よろしくお願いします",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh014.m4a"
+      "startTime": 224.3525243445,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "『Friend Glass』かぁ、懐かしいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh015.m4a",
+      "text": "『Friend Glass』かぁ、懐かしいですね\n俺も関係者席で聴いた覚えがありますけど",
+      "startTime": 229.8333164214,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺も関係者席で聴いた覚えがありますけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh016.m4a",
+      "text": "お二人の絆と言うか、仲がいいのが伝わってきて\nこちらも温かい気分になるような曲でした",
+      "startTime": 237.5666453043,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お二人の絆と言うか、仲がいいのが伝わってきて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk021.m4a",
+      "text": "貴方から、昔の曲の感想を聞くのは初めてですね\n一応、ありがとうございますと言っておきます",
+      "startTime": 244.9541144214,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こちらも温かい気分になるような曲でした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk022.m4a",
+      "text": "まぁ……今更、昔の曲を引っ張り出してきて\nそれがいいことなのかどうかも分かりませんけど",
+      "startTime": 252.9999786376,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "貴方から、昔の曲の感想を聞くのは初めてですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh017.m4a",
+      "text": "俺は昔好きだった曲を、また聴けたら嬉しいですけどね\nそういうファンの人は多いんじゃないですか",
+      "startTime": 260.366650772,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "一応、ありがとうございますと言っておきます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk021.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk023.m4a",
+      "text": "そのくらいのお気楽さで、済めばいいんですけど\n……ファンだった人達の反応こそ、不安なんですよ",
+      "startTime": 267.5203265352,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "まぁ……今更、昔の曲を引っ張り出してきて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk022.m4a"
-    },
-    {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "それがいいことなのかどうかも分かりませんけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk022.m4a"
-    },
-    {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺は昔好きだった曲を、また聴けたら嬉しいですけどね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk022.m4a"
-    },
-    {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そういうファンの人は多いんじゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh017.m4a"
-    },
-    {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "そのくらいのお気楽さで、済めばいいんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh017.m4a"
-    },
-    {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "……ファンだった人達の反応こそ、不安なんですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-mhk023.m4a"
-    },
-    {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――数日後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 271.7536354544,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（今は確か、スリクスがスタジオで）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（例のカバー曲の練習をしてるはずだ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（様子を見に行くか、いや邪魔者扱いされるかな……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh018.m4a",
+      "text": "（今は確か、スリクスがスタジオで）\n（例のカバー曲の練習をしてるはずだ）",
+      "startTime": 276.6999745685,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 0,
+          "startTime": 273.9666412352
+        }
+      ]
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（え！？　物凄い音がしたけど、何があったんだ！？）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh019.m4a",
+      "text": "（様子を見に行くか、いや邪魔者扱いされるかな……）\n（え！？　物凄い音がしたけど、何があったんだ！？）",
+      "startTime": 283.8666467029,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_ball-01.m4a",
+          "delay": 3843.2284349999577,
+          "startTime": 283.2666402179
+        }
+      ]
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
-      "text": "...",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_09_01/sud_vo_adv_card_mhk_09_01-koh019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "tokyocorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
+      "text": "",
+      "startTime": 287.9459516846,
+      "sfxList": []
     }
   ]
 }

@@ -1,176 +1,116 @@
 {
   "id": "adv_card_mhk_02_01_short",
-  "groupId": "card_mhk_02",
-  "name": "miho 1話 今後は気をつけます (Short)",
-  "background": null,
-  "details": [
+  "title": "miho (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（幽霊旅館での騒動を経て開催された）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_thrx-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（ⅢXのライブは、大盛況のうちに幕を閉じた）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（今朝、酔い潰れてるのを見つけた時は）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
+      "bgName": "flowerstage-00-noon"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（どうなることかと思ったけど、なんとかなったな……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh001.m4a",
+      "text": "（幽霊旅館での騒動を経て開催された）\n（ⅢXのライブは、大盛況のうちに幕を閉じた）",
+      "startTime": 3.2666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+      "startTime": 0
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh002.m4a",
+      "text": "（今朝、酔い潰れてるのを見つけた時は）\n（どうなることかと思ったけど、なんとかなったな……）",
+      "startTime": 9.9,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk001.m4a",
       "text": "お疲れ様です、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk001.m4a"
+      "startTime": 16.2,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いえ、mihoさんこそお疲れ様でした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh003.m4a",
+      "text": "いえ、mihoさんこそお疲れ様でした\nうまくいって安心しましたよ",
+      "startTime": 21.7,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "うまくいって安心しましたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "ふふ、ありがとうございます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk002.m4a",
+      "text": "ふふ、ありがとうございます\n私達が、本番でミスなんてする訳ないでしょう",
+      "startTime": 26.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "私達が、本番でミスなんてする訳ないでしょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "あの……それで、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk003.m4a",
+      "text": "あの……それで、{user}さん\n私、貴方に言わないといけないことがあって……",
+      "startTime": 33.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "私、貴方に言わないといけないことがあって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk003.m4a"
-    },
-    {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk004.m4a",
       "text": "……この後、少しお時間をいただけませんか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_02_01_short/sud_vo_adv_card_mhk_02_01-mhk004.m4a"
+      "startTime": 36.0333333333,
+      "sfxList": []
     }
   ]
 }

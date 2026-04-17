@@ -1,1086 +1,725 @@
 {
   "id": "adv_card_rio_09_02",
-  "groupId": "card_rio_09",
-  "name": "神崎莉央 2話 私が答えを出さないと",
-  "background": null,
-  "details": [
+  "title": "神崎莉央",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "着替えも終わったことだし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ちょっとプールに入ってみてもいい？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "そういうシーンもあるでしょうから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "衣装の耐水性を確認しておきたいの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ええ、構いません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……ちなみに俺は見ててもいいんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spa-01.m4a",
+      "startTime": 0
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio001.m4a",
+      "text": "着替えも終わったことだし\nちょっとプールに入ってみてもいい？",
+      "startTime": 2.8,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio002.m4a",
+      "text": "そういうシーンもあるでしょうから\n衣装の耐水性を確認しておきたいの",
+      "startTime": 7.2333333333,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh001.m4a",
+      "text": "ええ、構いません\n……ちなみに俺は見ててもいいんですか？",
+      "startTime": 12.3333333333,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio003.m4a",
       "text": "え？　それってどういう……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh001.m4a"
+      "startTime": 15.5723131656,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_01-rio025.m4a",
       "text": "っ……じっと見ないでちょうだい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_01-rio025.m4a"
+      "startTime": 19.933333524,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio005.m4a",
       "text": "……清らかな気持ちで見るなら、許します",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio005.m4a"
+      "startTime": 25.4680048624,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh002.m4a",
       "text": "り、了解です、気を付けます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh002.m4a"
+      "startTime": 28.721201976,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spa-01.m4a",
+          "delay": 4521.065958399998,
+          "startTime": 33.2422679344
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-02.m4a",
+          "delay": 4521.065958399998,
+          "startTime": 33.2422679344
+        }
+      ]
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio006.m4a",
       "text": "水深はそんなに深くはないみたいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio006.m4a"
+      "startTime": 34.0756011406,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "莉央さん、あんまり遠くには行かないで下さいよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh003.m4a",
+      "text": "莉央さん、あんまり遠くには行かないで下さいよ\n中心部は結構深いって、パンフレットに……",
+      "startTime": 40.9000005722,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "中心部は結構深いって、パンフレットに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "心配しないで。私は泳ぎは得意な方なの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio007.m4a",
+      "text": "心配しないで。私は泳ぎは得意な方なの\n学生時代は陸上の次に得意だったんだから。……あ",
+      "startTime": 47.5000005722,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-pacha-01.m4a",
+          "delay": 4508.161568600002,
+          "startTime": 52.0081621408
+        }
+      ]
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "学生時代は陸上の次に得意だったんだから。……あ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh004.m4a",
       "text": "莉央さんの姿が水面から消えた！？　莉央さーん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh004.m4a"
+      "startTime": 53.1110655069,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 6046.234273900005,
+          "startTime": 59.1572997808
+        }
+      ]
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio008.m4a",
       "text": "ふぅ……少し焦ったわ。急に深くなるんだもの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio008.m4a"
+      "startTime": 60.590641125,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だから言ったじゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh005.m4a",
+      "text": "だから言ったじゃないですか\n中心部は結構深いって、パンフレットに……",
+      "startTime": 67.9999970118,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "中心部は結構深いって、パンフレットに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "何度も繰り返さなくていいわよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio009.m4a",
+      "text": "何度も繰り返さなくていいわよ！\nちゃんと話を聞いてなくて悪かったわ",
+      "startTime": 73.8333303451,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ちゃんと話を聞いてなくて悪かったわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh006.m4a",
       "text": "そういうの、莉央さんにしてはめずらしいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio009.m4a"
+      "startTime": 76.2565370956,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "仕事だから真面目に取り組んでいるつもりだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio010.m4a",
+      "text": "仕事だから真面目に取り組んでいるつもりだけど\n……少しだけ、はしゃいじゃってたみたい",
+      "startTime": 84.1000010807,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "……少しだけ、はしゃいじゃってたみたい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "私達の他に、お客さんが誰もいないプールなんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio011.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio011.m4a",
+      "text": "私達の他に、お客さんが誰もいないプールなんて\n……ちょっぴりワクワクしちゃうじゃない",
+      "startTime": 90.666664187,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "……ちょっぴりワクワクしちゃうじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh007.m4a",
+      "text": "分かります\n実は俺も、内心テンションが上がってます",
+      "startTime": 94.6333308536,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "分かります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "実は俺も、内心テンションが上がってます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio012.m4a",
+      "text": "貴方もなの？\nふふっ、良かった。私だけじゃなかったのね",
+      "startTime": 99.8333308536,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "貴方もなの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ふふっ、良かった。私だけじゃなかったのね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio012.m4a"
-    },
-    {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio013.m4a",
       "text": "ねぇ、もうチェックするところはないかしら？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio013.m4a"
+      "startTime": 105.7313946961,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh008.m4a",
       "text": "そうですね。あとは撮影本番で勝負です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio013.m4a"
+      "startTime": 108.9154561598,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "なら、そろそろ帰りましょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio014.m4a",
+      "text": "なら、そろそろ帰りましょう\n……あの、{user}さん",
+      "startTime": 116.4999975203,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "……あの、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "今日、私がここに来たことは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio015.m4a",
+      "text": "今日、私がここに来たことは\nあの子達には内緒にしておいてもらえる？",
+      "startTime": 121.566664187,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "あの子達には内緒にしておいてもらえる？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh009.m4a",
       "text": "どうしてですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio015.m4a"
+      "startTime": 124.1649577537,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "二人きりでプールに来て、しかも水着になって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio016.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio016.m4a",
+      "text": "二人きりでプールに来て、しかも水着になって\n水に入って、溺れかけたなんて言ったら……",
+      "startTime": 129.866664187,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "水に入って、溺れかけたなんて言ったら……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "貴方も私も、絶対からかわれるわよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio016.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio017.m4a",
+      "text": "貴方も私も、絶対からかわれるわよ\nそんなの嫌でしょう",
+      "startTime": 136.166664187,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "そんなの嫌でしょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "溺れかけたことまでは、言わなくていいと思いますけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh010.m4a",
+      "text": "溺れかけたことまでは、言わなくていいと思いますけど\n俺は別に構いませんよ。仕事で来たんですから",
+      "startTime": 141.7666672388,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺は別に構いませんよ。仕事で来たんですから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio018.m4a",
       "text": "着替えた私を見て、あんな態度を取っていたのに？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh010.m4a"
+      "startTime": 145.679720799,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh011.m4a",
       "text": "す、すみません、やっぱり秘密にしましょう……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio018.m4a"
+      "startTime": 149.2919777868,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_bigpool-00-noon.webp",
+      "bgName": "bigpool-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio019.m4a",
       "text": "ふふ、冗談よ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh011.m4a"
+      "startTime": 153.3193041959,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-night.webp",
+      "bgName": "tokyohall-00-night"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-night.webp",
+      "bgName": "tokyohall-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――CM撮影の初日終了後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 156.476418646,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（撮影が無事終わったのか気になって、来てしまったが）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh012.m4a",
+      "text": "（撮影が無事終わったのか気になって、来てしまったが）\n（……夜遅いし、中に入るのは迷惑かな……）",
+      "startTime": 162.7333339054,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-out-single-01.m4a",
+          "delay": 4792.787448700011,
+          "startTime": 167.5261213541
+        }
+      ]
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（……夜遅いし、中に入るのは迷惑かな……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-night.webp",
+      "bgName": "tokyohall-00-night"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "今日のコースは……え？　{user}さん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio020.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio020.m4a",
+      "text": "今日のコースは……え？　{user}さん？\nどうしたのよ、こんなに遅く",
+      "startTime": 173.4000005721,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "どうしたのよ、こんなに遅く",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio020.m4a"
-    },
-    {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh013.m4a",
       "text": "あっ、莉央さん……その、今日の撮影が気になって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh013.m4a"
+      "startTime": 175.789553666,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "それで、わざわざ寮まで話を聞きに来たの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio021.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-night.webp",
+      "bgName": "tokyohall-00-night"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "もう……本当に心配性なんだから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio021.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio021.m4a",
+      "text": "それで、わざわざ寮まで話を聞きに来たの？\nもう……本当に心配性なんだから",
+      "startTime": 184.6666672388,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "メッセージで簡単な報告はもらっていますが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio021.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh014.m4a",
+      "text": "メッセージで簡単な報告はもらっていますが……\n大変だったそうですね。話を聞かせてほしくて",
+      "startTime": 191.8666672388,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "大変だったそうですね。話を聞かせてほしくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyohall-00-night.webp",
+      "bgName": "tokyohall-00-night"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ランニングしに行く予定だったけど……まぁいいわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio022.m4a",
+      "text": "ランニングしに行く予定だったけど……まぁいいわ\nここじゃなんだし、場所を変えましょう",
+      "startTime": 200.1000026066,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "ここじゃなんだし、場所を変えましょう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "――っていう感じね。CMのプロデューサーが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "リズノワのことを、よく分かってくれてないみたいなの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio023.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio023.m4a",
+      "text": "――っていう感じね。CMのプロデューサーが\nリズノワのことを、よく分かってくれてないみたいなの",
+      "startTime": 208.5666692733,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio024.m4a",
       "text": "でも、相手のことをよく知らないのはこっちも同じ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio023.m4a"
+      "startTime": 211.7620503503,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "密にコミュニケーションを取って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio025.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio025.m4a",
+      "text": "密にコミュニケーションを取って\n少しずつ、お互いのことを知っていくしかないわよね",
+      "startTime": 218.3666672388,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "少しずつ、お互いのことを知っていくしかないわよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio025.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "立派です。でも同行出来たら、そういう心労を減らして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh015.m4a",
+      "text": "立派です。でも同行出来たら、そういう心労を減らして\n莉央さんがもっと撮影に集中出来たと思うと……",
+      "startTime": 226.3333339054,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "莉央さんがもっと撮影に集中出来たと思うと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio026.m4a",
+      "text": "いいのよ、貴方のせいじゃないわ\nそれに、これは問題の一つでしかないもの",
+      "startTime": 233.4333339054,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "いいのよ、貴方のせいじゃないわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "それに、これは問題の一つでしかないもの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio026.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio027.m4a",
+      "text": "一番の問題は、LizNoirというグループを\nこれからどうしていくかっていうことだから",
+      "startTime": 240.8333339054,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "一番の問題は、LizNoirというグループを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio027.m4a"
-    },
-    {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "これからどうしていくかっていうことだから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio027.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio028.m4a",
       "text": "リーダーとして、私がちゃんと答えを出さないと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio027.m4a"
+      "startTime": 243.7190099794,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "LizNoirのこれから……ですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "答えは出そうなんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh016.m4a",
+      "text": "LizNoirのこれから……ですか\n答えは出そうなんですか？",
+      "startTime": 252.1666672388,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "それが、全然よ。ヒントすら思い浮かばないわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio029.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio029.m4a",
+      "text": "それが、全然よ。ヒントすら思い浮かばないわ\nいつも偉そうなこと言ってるくせに、情けないでしょ",
+      "startTime": 258.9333339054,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "いつも偉そうなこと言ってるくせに、情けないでしょ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio029.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……いえ、そんなことありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh017.m4a",
+      "text": "……いえ、そんなことありません\n悩んでいること自体が成長だと俺は思います",
+      "startTime": 265.6666794458,
+      "sfxList": []
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "悩んでいること自体が成長だと俺は思います",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires-00-night"
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-rio030.m4a",
       "text": "……え？　どういう意味？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rio_09_02/sud_vo_adv_card_rio_09_02-koh017.m4a"
+      "startTime": 269.681833736,
+      "sfxList": []
     }
   ]
 }

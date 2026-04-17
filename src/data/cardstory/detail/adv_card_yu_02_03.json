@@ -1,1338 +1,768 @@
 {
   "id": "adv_card_yu_02_03",
-  "groupId": "card_yu_02",
-  "name": "鈴村優 3話 撮影ごっこ",
-  "background": null,
-  "details": [
+  "title": "鈴村優",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tropical-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――サニーピースの沖縄ライブ終了後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "打ち上げのバーベキューの準備まで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh001.m4a",
+      "text": "打ち上げのバーベキューの準備まで\n手伝ってもらって悪いな",
+      "startTime": 4.833333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "手伝ってもらって悪いな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh001.m4a"
-    },
-    {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu001.m4a",
       "text": "かまへんよ、パーティの準備は嫌いやないから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu001.m4a"
+      "startTime": 6.833333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それにしても鈴村さんの別荘の側にビーチがあるとはな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "おかげで沖縄の海を眺めながらバーベキューが出来るよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh002.m4a",
+      "text": "それにしても鈴村さんの別荘の側にビーチがあるとはな\nおかげで沖縄の海を眺めながらバーベキューが出来るよ",
+      "startTime": 16.233333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ここやったら誰も来ないし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "みんなも人目を気にせずに騒げるやろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu002.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu002.m4a",
+      "text": "ここやったら誰も来ないし\nみんなも人目を気にせずに騒げるやろ",
+      "startTime": 22.6,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu003.m4a",
       "text": "この場所を提供したうちにもっと感謝してもええんやで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu003.m4a"
+      "startTime": 25.533333333333335,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh003.m4a",
       "text": "そうだな、鈴村さんには頭が上がらないよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh003.m4a"
+      "startTime": 30.466666666666665,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今日の機材トラブルも鈴村さんのおかげで乗り切れた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh004.m4a",
+      "text": "今日の機材トラブルも鈴村さんのおかげで乗り切れた\nおかげでライブは大成功だ",
+      "startTime": 39.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "おかげでライブは大成功だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu004.m4a",
+      "text": "うちはたいしたことしてへんよ\nライブが盛り上がったんはサニピの実力やん",
+      "startTime": 44.3,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "うちはたいしたことしてへんよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ライブが盛り上がったんはサニピの実力やん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu004.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu005.m4a",
+      "text": "サニピは夏の太陽みたいに笑顔が眩しくて\n沖縄が似合うええグループやな",
+      "startTime": 52.06666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "サニピは夏の太陽みたいに笑顔が眩しくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu005.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu006.m4a",
+      "text": "野外ライブで盛り上がる会場を見てたら\nうちも歌いたくなってたまらんかったわ",
+      "startTime": 57.7,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "沖縄が似合うええグループやな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "野外ライブで盛り上がる会場を見てたら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu006.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu007.m4a",
+      "text": "せやから、次に沖縄でイベントがある時は\nTRINITYAiLEを参加させてくれへん？",
+      "startTime": 65.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "うちも歌いたくなってたまらんかったわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu006.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "せやから、次に沖縄でイベントがある時は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu006.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "TRINITYAiLEを参加させてくれへん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu007.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu008.m4a",
       "text": "そしたらうちらがサニピ以上のライブを披露したるで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu007.m4a"
+      "startTime": 67.8,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それを見て今度はサニピが刺激を受ける訳か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "刺激して高めあえる相手が身近にいるのはいいことだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh005.m4a",
+      "text": "それを見て今度はサニピが刺激を受ける訳か\n刺激して高めあえる相手が身近にいるのはいいことだ",
+      "startTime": 76.8,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "良きライバルでいてくれて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh006.m4a",
+      "text": "良きライバルでいてくれて\n俺達はトリエルに感謝しなくちゃいけないな",
+      "startTime": 83.46666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺達はトリエルに感謝しなくちゃいけないな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu009.m4a",
       "text": "……感謝するんはうちの方や",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu009.m4a"
+      "startTime": 86.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "トリエルが移籍前と変わらず、いい仕事が出来てるんは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu010.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu010.m4a",
+      "text": "トリエルが移籍前と変わらず、いい仕事が出来てるんは\n星見プロのおかげやし",
+      "startTime": 93.5,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "星見プロのおかげやし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "いいライバルにいいマネージャー……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu011.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu011.m4a",
+      "text": "いいライバルにいいマネージャー……\nうちらが星見プロを選んだんは間違いちゃうかった",
+      "startTime": 98.6,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "うちらが星見プロを選んだんは間違いちゃうかった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "星見プロの一員になれてほんまによかったわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu012.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu012.m4a",
+      "text": "星見プロの一員になれてほんまによかったわ\n瑠依ちゃんとすみれちゃんもきっとそう思ってます",
+      "startTime": 107.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "瑠依ちゃんとすみれちゃんもきっとそう思ってます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu012.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu013.m4a",
+      "text": "{user}さん……\nこれからもうちらをよろしくお願いします",
+      "startTime": 112.86666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "{user}さん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "これからもうちらをよろしくお願いします",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu013.m4a"
-    },
-    {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu014.m4a",
       "text": "……あはは。なんや柄にもないこと言うてしもたなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu014.m4a"
+      "startTime": 116.63333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "しばらく瑠依ちゃん達と会ってへんから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu015.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu015.m4a",
+      "text": "しばらく瑠依ちゃん達と会ってへんから\n調子狂ってしもたんかな？",
+      "startTime": 124.93333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "調子狂ってしもたんかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh007.m4a",
+      "text": "トリエルはいつも三人一緒だったからな\n二人に会えなくて寂しいのか？",
+      "startTime": 131.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "トリエルはいつも三人一緒だったからな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "二人に会えなくて寂しいのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu016.m4a",
+      "text": "せやね……早く二人に会いたいわ\n瑠依ちゃん達、今頃何してるんやろ",
+      "startTime": 138.33333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "せやね……早く二人に会いたいわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh008.m4a",
+      "text": "気になるなら連絡してみたらどうだ？\n沖縄の写真を送ればいいじゃないか",
+      "startTime": 144.3,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "瑠依ちゃん達、今頃何してるんやろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "気になるなら連絡してみたらどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu016.m4a"
-    },
-    {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "沖縄の写真を送ればいいじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh008.m4a"
-    },
-    {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu017.m4a",
       "text": "写真かぁ……せやなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh008.m4a"
+      "startTime": 147.16666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "それやったら一度やってみたかったことがあんねんけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ちょっと手伝ってくれへん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu018.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu018.m4a",
+      "text": "それやったら一度やってみたかったことがあんねんけど\nちょっと手伝ってくれへん？",
+      "startTime": 155.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh009.m4a",
       "text": "それは構わないが……俺に何をさせる気だ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh009.m4a"
+      "startTime": 157.76666666666668,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ふっふっふっ、それはなあ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "グラビア撮影ごっこや！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu019.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu019.m4a",
+      "text": "ふっふっふっ、それはなあ……\nグラビア撮影ごっこや！",
+      "startTime": 166.23333333333332,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_coast-01.m4a",
+          "delay": 3700.0000000000173,
+          "startTime": 169.93333333333334
+        }
+      ]
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "せっかく衣装に着替えたんやから綺麗に撮ってな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu020.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu020.m4a",
+      "text": "せっかく衣装に着替えたんやから綺麗に撮ってな～\nシャッターチャンスを逃したらあかんよ",
+      "startTime": 176.03333333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-camera-01.m4a",
+          "delay": 3966.666666666669,
+          "startTime": 175.5
+        }
+      ]
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "シャッターチャンスを逃したらあかんよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu020.m4a"
-    },
-    {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh010.m4a",
       "text": "何もプライベートでグラビアを撮らなくても……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh010.m4a"
+      "startTime": 179.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "何言うてんの。沖縄、海、水着とくれば",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu021.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu021.m4a",
+      "text": "何言うてんの。沖縄、海、水着とくれば\nグラビア撮影に決まってるやんか",
+      "startTime": 187.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "グラビア撮影に決まってるやんか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu021.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu022.m4a",
+      "text": "瑠依ちゃんに送る写真なんやから\nしっかり撮影してもらうで",
+      "startTime": 192.9,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "瑠依ちゃんに送る写真なんやから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu021.m4a"
-    },
-    {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "しっかり撮影してもらうで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu022.m4a"
-    },
-    {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh011.m4a",
       "text": "そう言われても俺はプロのカメラマンじゃないから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu022.m4a"
+      "startTime": 195.4,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "カメラマンはグラビア撮影しながら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu023.m4a",
+      "text": "カメラマンはグラビア撮影しながら\n被写体をいっぱい褒めるもんやろ",
+      "startTime": 202.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "被写体をいっぱい褒めるもんやろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu023.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu024.m4a",
+      "text": "もっとうちのことを「いいね～」「綺麗だよ～」\n「セクスィ～」とか言ってええんやで",
+      "startTime": 209.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "もっとうちのことを「いいね～」「綺麗だよ～」",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu024.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "「セクスィ～」とか言ってええんやで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu024.m4a"
-    },
-    {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh012.m4a",
       "text": "勘弁してくれ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu024.m4a"
+      "startTime": 212.9,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "そんなへっぴり腰やとええ写真は撮れへんよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu025.m4a",
+      "text": "そんなへっぴり腰やとええ写真は撮れへんよ\nほら、もっと被写体に近づいて",
+      "startTime": 219.23333333333332,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ほら、もっと被写体に近づいて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu025.m4a"
-    },
-    {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh013.m4a",
       "text": "わっ、ちょっ……そ、それは近づき過ぎじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu025.m4a"
+      "startTime": 222.66666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu026.m4a",
       "text": "ふふふ、顔赤いで～。何恥ずかしがってんの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu026.m4a"
+      "startTime": 227.7,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh014.m4a",
       "text": "こ、これだけ撮ればもういいんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh014.m4a"
+      "startTime": 234.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ほな、写真を瑠依ちゃんとすみれちゃんに送信して……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu027.m4a",
+      "text": "ほな、写真を瑠依ちゃんとすみれちゃんに送信して……\n沖縄を満喫してるうちを見たら羨ましがるやろなぁ",
+      "startTime": 243.93333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "沖縄を満喫してるうちを見たら羨ましがるやろなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu027.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu028.m4a",
+      "text": "あ、せや！\nせっかくやし、もう一枚撮ってもらってもええかな？",
+      "startTime": 250.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "あ、せや！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "せっかくやし、もう一枚撮ってもらってもええかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu028.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh015.m4a",
+      "text": "こうなったらとことん付き合うよ\n今度はどんな写真を撮りたいんだ",
+      "startTime": 257.8333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こうなったらとことん付き合うよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu028.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu029.m4a",
+      "text": "うちらのツーショット記念写真やんか\nほら、もっとこっちに寄って",
+      "startTime": 263.46666666666664,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今度はどんな写真を撮りたいんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "うちらのツーショット記念写真やんか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh015.m4a"
-    },
-    {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ほら、もっとこっちに寄って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu029.m4a"
-    },
-    {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh016.m4a",
       "text": "お、おい、そんなにくっつくなって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh016.m4a"
+      "startTime": 266.5,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu030.m4a",
       "text": "くっつかんとツーショットにならへんやん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu030.m4a"
+      "startTime": 270.6666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "仕方ないな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh017.m4a",
+      "text": "仕方ないな……\nいくぞ……はい、チーズ",
+      "startTime": 276.2,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-camera-01.m4a",
+          "delay": 3266.6666666666515,
+          "startTime": 279.46666666666664
+        }
+      ]
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いくぞ……はい、チーズ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "どれどれ……うん、ええ写真が撮れましたわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu031.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu031.m4a",
+      "text": "どれどれ……うん、ええ写真が撮れましたわ\nこの写真大事にします、ありがとう",
+      "startTime": 285.5,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_mail-01.m4a",
+          "delay": 2733.3333333333485,
+          "startTime": 288.23333333333335
+        }
+      ]
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "この写真大事にします、ありがとう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu031.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "あ、瑠依ちゃんから返事や",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu032.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu032.m4a",
+      "text": "あ、瑠依ちゃんから返事や\n「沖縄羨ましい」やって。あはは、羨ましいやろ～",
+      "startTime": 291.56666666666666,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 2666.6666666666856,
+          "startTime": 291.56666666666666
+        }
+      ]
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "「沖縄羨ましい」やって。あはは、羨ましいやろ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu032.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu033.m4a",
+      "text": "すみれちゃんからは\n「誰に写真撮ってもらったの？」やって",
+      "startTime": 298.8,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 6433.333333333338,
+          "startTime": 305.23333333333335
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 11366.666666666675,
+          "startTime": 310.1666666666667
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 8800.000000000011,
+          "startTime": 307.6
+        }
+      ]
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "すみれちゃんからは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu032.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "「誰に写真撮ってもらったの？」やって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu033.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu034.m4a",
+      "text": "えーと「男の人と二人きりで沖縄の海を楽しみました\n相手はヒ・ミ・ツ」と……はい送信！",
+      "startTime": 309.26666666666665,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 11166.666666666686,
+          "startTime": 313.6333333333333
+        }
+      ]
     },
     {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "えーと「男の人と二人きりで沖縄の海を楽しみました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu033.m4a"
-    },
-    {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "相手はヒ・ミ・ツ」と……はい送信！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu034.m4a"
-    },
-    {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh018.m4a",
       "text": "おいおい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh018.m4a"
+      "startTime": 314.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_89",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "うふふ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_90",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "一緒に過ごせてほんまに楽しかったわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu035.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu035.m4a",
+      "text": "うふふ……\n一緒に過ごせてほんまに楽しかったわ",
+      "startTime": 317.9,
+      "sfxList": []
     },
     {
-      "id": "msg_91",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu036.m4a",
       "text": "今度は二人きりで沖縄に来ようなあ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu035.m4a"
+      "startTime": 321,
+      "sfxList": []
     },
     {
-      "id": "msg_92",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "な、何を言ってるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh019.m4a",
+      "text": "な、何を言ってるんだ\nまったく、鈴村さんにはからかわれっぱなしだな……",
+      "startTime": 327.53333333333336,
+      "sfxList": []
     },
     {
-      "id": "msg_93",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "まったく、鈴村さんにはからかわれっぱなしだな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-koh019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "bg1"
     },
     {
-      "id": "msg_94",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu037.m4a",
       "text": "本気かもしれへんで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu037.m4a"
+      "startTime": 332.3666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_95",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu038.m4a",
       "text": "夏の思い出、うちと一緒に作らへん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_02_03/sud_vo_adv_card_yu_02_03-yu038.m4a"
+      "startTime": 334.5,
+      "sfxList": []
     }
   ]
 }

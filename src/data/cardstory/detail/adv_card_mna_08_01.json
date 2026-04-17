@@ -1,1016 +1,751 @@
 {
   "id": "adv_card_mna_08_01",
-  "groupId": "card_mna_08",
-  "name": "長瀬麻奈 1話 ホテルに缶詰だよ！",
-  "background": null,
-  "details": [
+  "title": "長瀬麻奈",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_flashback-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_hoshimi-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_gyo-02.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_gyo-02.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――長瀬麻奈がデビューして数ヶ月後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna001.m4a",
       "text": "私が星見まつりに参加……ですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna001.m4a"
+      "startTime": 2.5333332221,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "三枝信司"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "shj",
+      "speakerName": "三枝信司",
+      "iconUrl": null,
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj001.m4a",
       "text": "ああ、星見市の市長から直々に依頼があってな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna001.m4a"
+      "startTime": 6.3999998887,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（星見まつりは、アーティストのライブも行われる）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（この市唯一の有名な野外イベントだ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh001.m4a",
+      "text": "（星見まつりは、アーティストのライブも行われる）\n（この市唯一の有名な野外イベントだ）",
+      "startTime": 14.8666666746,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh002.m4a",
       "text": "確かに、いい話題作りにはなると思うけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh002.m4a"
+      "startTime": 17.7999997616,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
-      "text": "やったー！　私、一度星見まつりに出たかったんだよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
-      "text": "屋台の客引きなら任せて！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna002.m4a",
+      "text": "やったー！　私、一度星見まつりに出たかったんだよね\n屋台の客引きなら任せて！",
+      "startTime": 27.1756141143,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "三枝信司"
-      },
-      "text": "おいおい、そんなことをやらせるために",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "三枝信司"
-      },
-      "text": "市長がわざわざ連絡してくる訳ないだろう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj002.m4a"
+      "type": "dialogue",
+      "speakerCode": "shj",
+      "speakerName": "三枝信司",
+      "iconUrl": null,
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj002.m4a",
+      "text": "おいおい、そんなことをやらせるために\n市長がわざわざ連絡してくる訳ないだろう",
+      "startTime": 34.2999998808,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "三枝信司"
-      },
-      "text": "今年の星見まつりの目玉は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj002.m4a"
+      "type": "dialogue",
+      "speakerCode": "shj",
+      "speakerName": "三枝信司",
+      "iconUrl": null,
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj003.m4a",
+      "text": "今年の星見まつりの目玉は\n長瀬麻奈の単独ライブだ",
+      "startTime": 40.8269444224,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "三枝信司"
-      },
-      "text": "長瀬麻奈の単独ライブだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj003.m4a"
-    },
-    {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "一同"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "一同",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna003.m4a",
       "text": "ええーっ！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-shj003.m4a"
+      "startTime": 44.4333330949,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（こうして、麻奈は星見まつりで）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（ライブをすることになった。だが……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
-      "text": "早速、セットリスト決めよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh004.m4a",
+      "text": "（こうして、麻奈は星見まつりで）\n（ライブをすることになった。だが……）",
+      "startTime": 48.5686165015,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
-      "text": "あっ、東京のスタジオで先生にも相談しなきゃ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna004.m4a"
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna004.m4a",
+      "text": "早速、セットリスト決めよ！\nあっ、東京のスタジオで先生にも相談しなきゃ",
+      "startTime": 54.2534237703,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
-      "text": "そうだ、このイベント用に新曲も作りたいな！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
-      "text": "やること一杯だよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna005.m4a"
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-mna005.m4a",
+      "text": "そうだ、このイベント用に新曲も作りたいな！\nやること一杯だよ！",
+      "startTime": 61.9221743584,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（星見まつりまで後二週間しかないのに、麻奈は）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh005.m4a",
+      "text": "（星見まつりまで後二週間しかないのに、麻奈は）\n（やる気満々で、新曲を作るなんて言い出して……）",
+      "startTime": 67.8999998808,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（やる気満々で、新曲を作るなんて言い出して……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh005.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――翌日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 72.5999997616,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_think-05.m4a",
       "text": "うーん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_think-05.m4a"
+      "startTime": 74.4999992531,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "うーーーん……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 76.825273204,
+      "sfxList": []
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh006.m4a",
       "text": "麻奈？　一人で何を唸っているんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh006.m4a"
+      "startTime": 80.1333315691,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_emb-03.m4a",
       "text": "星見まつりで歌う新曲のことで悩んでるんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh006.m4a"
+      "startTime": 83.6333315691,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "私からお願いして作詞に挑戦することになったでしょ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 87.8476947812,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_sad-03.m4a",
       "text": "でも、これだーって歌詞が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_sad-03.m4a"
+      "startTime": 92.4666684628,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "なかなか思いつかないんだよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 95.0423565315,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh007.m4a",
       "text": "どういう曲にしたいとか、イメージはあるのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh007.m4a"
+      "startTime": 98.5333351295,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_think-06.m4a",
       "text": "はっきりしたイメージがある訳じゃないけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_think-06.m4a"
+      "startTime": 101.7000017961,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "星見市に生まれた私だから書ける歌詞にしたいかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 105.1949858295,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-14.m4a",
       "text": "だって、星見市で育って、星見市でデビューした私が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-14.m4a"
+      "startTime": 110.2333356382,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "星見市で一番大きなお祭りに招待されて歌うんだよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 114.6999963204,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "みんなには、長瀬麻奈のライブを観に来て良かった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 119.3666526955,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-05.m4a",
       "text": "最高の星見まつりだった、って思ってほしい……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 123.9350860005,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "そのためにも、私の街への想いを込めた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 128.9000017961,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_start-06.m4a",
       "text": "この日のための特別な曲が必要なんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_start-06.m4a"
+      "startTime": 132.2236709913,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "星見市生まれだから書ける歌詞か……だったら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "この街から連想するものを考えてみるのはどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh008.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh008.m4a",
+      "text": "星見市生まれだから書ける歌詞か……だったら\nこの街から連想するものを考えてみるのはどうだ？",
+      "startTime": 140.3666706163,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_yes-02.m4a",
       "text": "星見市から連想するものと言えば、やっぱり海かな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh008.m4a"
+      "startTime": 143.7666755836,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "海、漁港、それから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 148.3600747405,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "あっ、思いついた！　星見市生まれだから書ける",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 151.7666918596,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-04.m4a",
       "text": "星見まつりにぴったりの歌！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-04.m4a"
+      "startTime": 156.4745153949,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "その曲のタイトルは……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 159.4000089169,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-07.m4a",
       "text": "『魚魚っとさん音頭』だよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-07.m4a"
+      "startTime": 162.1911476652,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "海を越えて輝く～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 165.2666786353,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "どこまでも広がっていく～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 170.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "波紋を呼んで～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 174.866685756,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh009.m4a",
       "text": "あソレ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh009.m4a"
+      "startTime": 178.5333432675,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "一同"
-      },
-      "text": "ギョギョッとギョギョッと今日も～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh009.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "一同"
-      },
-      "text": "ギョギョッとギョギョッと踊れ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "unknown",
-        "icon": null,
-        "name": "一同"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "一同",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh010.m4a",
+      "text": "ギョギョッとギョギョッと今日も～\nギョギョッとギョギョッと踊れ～",
+      "startTime": 181.7999856314,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "一同",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh011.m4a",
       "text": "いつも私のそばに～ギョギョッと現れる～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh010.m4a"
+      "startTime": 184.508504741,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-10.m4a",
       "text": "凄い……！　まるで昔から知ってる曲みたいに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-10.m4a"
+      "startTime": 193.9000221413,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-05.m4a",
       "text": "歌詞と振り付けがすらすら思い浮かぶよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 197.9298734229,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "昔から知ってる曲だからな。星見市で育った人なら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "子供の頃に幼稚園やお祭りで散々聴いただろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh012.m4a",
+      "text": "昔から知ってる曲だからな。星見市で育った人なら\n子供の頃に幼稚園やお祭りで散々聴いただろ",
+      "startTime": 205.8000293809,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_yes-01.m4a",
       "text": "そうなんだよね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh012.m4a"
+      "startTime": 209.4000282448,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "本当はタイトルを叫んだ時点で気付いてたよ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 211.7666721424,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_sad-01.m4a",
       "text": "はぁ……いいアイデアだと思ったんだけどな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_sad-01.m4a"
+      "startTime": 215.2000323137,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "魚魚っとさん音頭……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 219.736731281,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "行き詰まっているみたいだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "こういう時は気分転換してみたらどうだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh013.m4a",
+      "text": "行き詰まっているみたいだな\nこういう時は気分転換してみたらどうだ？",
+      "startTime": 225.1000395534,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_think-05.m4a",
       "text": "気分転換かあ……。それなら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh013.m4a"
+      "startTime": 228.0667010149,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "やってみたいことがあるんだけど、手伝ってくれない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 231.3758824667,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺に出来ることならなんでも手伝うよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それで、麻奈は何をやりたいんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_card_mna_08_01-koh014.m4a",
+      "text": "俺に出来ることならなんでも手伝うよ\nそれで、麻奈は何をやりたいんだ？",
+      "startTime": 238.4000476914,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-14.m4a",
       "text": "アレだよアレ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_glad-14.m4a"
+      "startTime": 241.5000465553,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "小説家や漫画家が編集さん付きっ切りでやるやつ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 243.7333810248,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "どんなにアイデアに詰まっていても",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 248.6333941301,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": null,
       "text": "必ず締め切りに間に合わせる、最後の手段……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 251.2724304041,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mna",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
-        "name": "長瀬麻奈"
-      },
+      "type": "dialogue",
+      "speakerCode": "mna",
+      "speakerName": "長瀬麻奈",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_start-04.m4a",
       "text": "――ホテルに缶詰だよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mna_08_01/sud_vo_adv_cmn_mna_start-04.m4a"
+      "startTime": 255.1333951474,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshireception-00-noon.webp",
+      "bgName": "hoshireception-00-noon"
     }
   ]
 }

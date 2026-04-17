@@ -565,6 +565,20 @@ const fetchData = (url) => {
 
   const groupedGroups = {};
   let totalFilesProcessed = 0;
+  let cachedFilesCount = 0;
+
+  // --- BACA CACHE LAMA ---
+  const INDEX_PATH = path.join(OUTPUT_DIR, "index_main.json");
+  const cacheMap = {};
+  if (fs.existsSync(INDEX_PATH)) {
+    const oldIndex = JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8"));
+    oldIndex.forEach(group => {
+      group.stories.forEach(story => {
+        cacheMap[story.id] = story;
+      });
+    });
+    console.log(`[CACHE] Ditemukan ${Object.keys(cacheMap).length} cerita di index lama.`);
+  }
 
   console.log(`Starting Main Story sync...`);
 
@@ -582,6 +596,21 @@ const fetchData = (url) => {
     const groupCode = parts[2];
     const setNum = parts[3];
     const episodeNum = parts[4];
+    const jsonFileName = `${assetId}.json`;
+
+    // Pastikan grup dibuat meskipun pakai cache
+    if (!groupedGroups[groupCode]) {
+      const groupName = GROUP_NAMES[groupCode] || groupCode.toUpperCase();
+      groupedGroups[groupCode] = { id: groupCode, name: groupName, stories: [] };
+    }
+
+    // --- CEK CACHE ---
+    // Jika data ada di index DAN file detailnya ada di disk, SKIP proses berat!
+    if (cacheMap[assetId] && fs.existsSync(path.join(OUTPUT_DIR, jsonFileName))) {
+      groupedGroups[groupCode].stories.push(cacheMap[assetId]);
+      cachedFilesCount++;
+      continue; 
+    }
 
     try {
       const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);

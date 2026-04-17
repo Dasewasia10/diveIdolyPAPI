@@ -1,260 +1,163 @@
 {
   "id": "adv_card_mhk_05_01_short",
-  "groupId": "card_mhk_05",
-  "name": "miho 1話 もうすぐクリスマス (Short)",
-  "background": null,
-  "details": [
+  "title": "miho (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああ、mihoさん。ちょうど良かった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "クリスマスの合同ライブのことで、相談がありまして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh001.m4a",
+      "text": "ああ、mihoさん。ちょうど良かった\nクリスマスの合同ライブのことで、相談がありまして",
+      "startTime": 3.4666666667,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 0,
+          "startTime": 0.3333333333
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 7000,
+          "startTime": 7.8
+        }
+      ]
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh002.m4a",
       "text": "……あの、mihoさん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh001.m4a"
+      "startTime": 7.0168477695,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_down-01.m4a",
+          "delay": 2086.6669813000003,
+          "startTime": 9.1035147508
+        }
+      ]
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk001.m4a",
       "text": "……っ！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh002.m4a"
+      "startTime": 9.1035147508,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "ああ、{user}さんですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "ちゃんと前を見て歩いていただかなければ、困ります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk002.m4a",
+      "text": "ああ、{user}さんですか\nちゃんと前を見て歩いていただかなければ、困ります",
+      "startTime": 13.4035147508,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや、それは俺の台詞……もしかして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh003.m4a",
+      "text": "いや、それは俺の台詞……もしかして\nまたコンタクト落として、前が見えてなかったんですか",
+      "startTime": 20.8,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "またコンタクト落として、前が見えてなかったんですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "人を年がら年中、コンタクトを落とす",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk003.m4a",
+      "text": "人を年がら年中、コンタクトを落とす\n間抜けのように言わないで下さい",
+      "startTime": 26.7,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "間抜けのように言わないで下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "今はちゃんと装着しています。ですからさっき",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk004.m4a",
+      "text": "今はちゃんと装着しています。ですからさっき\n{user}さんと呼んだじゃないですか",
+      "startTime": 32.0358953953,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "{user}さんと呼んだじゃないですか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh004.m4a",
+      "text": "え！？　……あ、確かに\nいやぁ、mihoさんがまたぶつかってるからてっきり",
+      "startTime": 37.5333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "え！？　……あ、確かに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いやぁ、mihoさんがまたぶつかってるからてっきり",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh004.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk005.m4a",
+      "text": "貴方が、私を大間抜けと思っていることは\nよく分かりました",
+      "startTime": 45.0832216104,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "貴方が、私を大間抜けと思っていることは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-koh004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyocorridor-00-noon.webp",
+      "bgName": "s1"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "よく分かりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk005.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "その忌々しい認識は後で話し合うこととして……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk005.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mhk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
-        "name": "miho"
-      },
-      "text": "それで、クリスマスライブの相談とはなんなんです？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk006.m4a"
+      "type": "dialogue",
+      "speakerCode": "mhk",
+      "speakerName": "miho",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-miho.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mhk_05_01_short/sud_vo_adv_card_mhk_05_01-mhk006.m4a",
+      "text": "その忌々しい認識は後で話し合うこととして……\nそれで、クリスマスライブの相談とはなんなんです？",
+      "startTime": 51.1832216104,
+      "sfxList": []
     }
   ]
 }

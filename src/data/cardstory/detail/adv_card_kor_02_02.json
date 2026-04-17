@@ -1,1212 +1,890 @@
 {
   "id": "adv_card_kor_02_02",
-  "groupId": "card_kor_02",
-  "name": "fran 2話 今回は許してあげます",
-  "background": null,
-  "details": [
+  "title": "fran",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spa-01.m4a",
+      "startTime": 0
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-pacha-01.m4a",
+      "startTime": 0
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh001.m4a",
       "text": "ふぅ。あぁ～、これはいい湯だ……最高だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh001.m4a"
+      "startTime": 0.8,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 1266.6666667000002,
+          "startTime": 2.0666666667
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-pacha-01.m4a",
+          "delay": 5233.3333333,
+          "startTime": 6.0333333333
+        }
+      ]
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor001.m4a",
       "text": "あ～……一人で入る温泉って最っ高～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor001.m4a"
+      "startTime": 10.2,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-pacha-01.m4a",
+          "delay": 0,
+          "startTime": 10.2
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 1266.6666667000009,
+          "startTime": 11.4666666667
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh002.m4a",
       "text": "ん？　今の声って、まさか……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh002.m4a"
+      "startTime": 19.6333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "まさか、そこにいないですよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor002.m4a",
+      "text": "{user}さん\nまさか、そこにいないですよね？",
+      "startTime": 25.7333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 3233.333333400001,
+          "startTime": 28.9666666667
+        }
+      ]
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……やっぱりか。すみません男湯はここしかなくて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "壁越しに声が聞こえてしまって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh003.m4a",
+      "text": "……やっぱりか。すみません男湯はここしかなくて……\n壁越しに声が聞こえてしまって……",
+      "startTime": 33.4,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "まぁ、しょうがないですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor003.m4a",
+      "text": "まぁ、しょうがないですね\n今回くらいは許してあげますぅ～",
+      "startTime": 42.5333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-pacha-01.m4a",
+          "delay": 3400.0000000000055,
+          "startTime": 41.1666666667
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 5033.3333333,
+          "startTime": 42.8
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 10000,
+          "startTime": 52.5333333333
+        }
+      ]
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "今回くらいは許してあげますぅ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor004.m4a",
+      "text": "はぁぁ～……気ん持ちいぃ～～……\n柚子の香りもすっごくいい感じぃ～……",
+      "startTime": 52.4666666667,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-02.m4a",
+          "delay": 0,
+          "startTime": 46.8666666667
+        }
+      ]
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "はぁぁ～……気ん持ちいぃ～～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor004.m4a"
-    },
-    {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "柚子の香りもすっごくいい感じぃ～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor004.m4a"
-    },
-    {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor005.m4a",
       "text": "……あ。{user}さんがいたんでした",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor005.m4a"
+      "startTime": 58.2,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "{user}さんって、なんだか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor006.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor006.m4a",
+      "text": "{user}さんって、なんだか\n人を油断させる才能がありますね",
+      "startTime": 64.9666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "人を油断させる才能がありますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor006.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor007.m4a",
+      "text": "途中から、一人でくつろいでる\n気分になってました",
+      "startTime": 70.6,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "途中から、一人でくつろいでる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor007.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "気分になってました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor007.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh004.m4a",
       "text": "それは存在感がないってことでは……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh004.m4a"
+      "startTime": 72.7333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor008.m4a",
       "text": "ふふ、褒めてるんですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor008.m4a"
+      "startTime": 76.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "自分で言うのもなんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor009.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor009.m4a",
+      "text": "自分で言うのもなんですけど\n私達と仕事をするのって大変だと思うんです",
+      "startTime": 82.5,
+      "sfxList": []
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "私達と仕事をするのって大変だと思うんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor009.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor010.m4a",
+      "text": "それでも諦めずにマネジメントを続ける根性は\n素直に凄いと思いますよ",
+      "startTime": 91.7,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "それでも諦めずにマネジメントを続ける根性は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor010.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor011.m4a",
+      "text": "とはいえ、まだまだ至らないところだらけですけどね\nもう少し腕を上げてもらわないと困ります",
+      "startTime": 99,
+      "sfxList": []
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "素直に凄いと思いますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor010.m4a"
-    },
-    {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "とはいえ、まだまだ至らないところだらけですけどね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor011.m4a"
-    },
-    {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "もう少し腕を上げてもらわないと困ります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor011.m4a"
-    },
-    {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh005.m4a",
       "text": "はは……頑張ります",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh005.m4a"
+      "startTime": 102.3666666667,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-02.m4a",
+          "delay": 3333.333333300004,
+          "startTime": 105.7
+        }
+      ]
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor012.m4a",
       "text": "はぁぁ～……とろける～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor012.m4a"
+      "startTime": 106.5333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 1066.6666666999872,
+          "startTime": 107.6
+        }
+      ]
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh006.m4a",
       "text": "（また俺の存在を忘れてないか……？）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh006.m4a"
+      "startTime": 111.5333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_money-01.m4a",
+          "delay": 4199.999999999989,
+          "startTime": 115.7333333333
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_canned-01.m4a",
+          "delay": 5543.517557799987,
+          "startTime": 117.0768508911
+        }
+      ]
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ごく、ごく……ぷはっ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "風呂上りのコーヒー牛乳……美味いな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh007.m4a",
+      "text": "ごく、ごく……ぷはっ\n風呂上りのコーヒー牛乳……美味いな",
+      "startTime": 122.2500427247,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 4400.0000000000055,
+          "startTime": 126.6500427247
+        }
+      ]
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor013.m4a",
       "text": "はぁ～、いいお湯だったぁ～……あら？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor013.m4a"
+      "startTime": 126.6500427247,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "……{user}さん。今、人に見せちゃ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "いけないレベルで気の抜けた顔をしてましたよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor014.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor014.m4a",
+      "text": "……{user}さん。今、人に見せちゃ\nいけないレベルで気の抜けた顔をしてましたよ？",
+      "startTime": 137.1167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh008.m4a",
       "text": "え……そ、そんなにですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh008.m4a"
+      "startTime": 140.5167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "まったく、人前でそんな気の抜けたところを",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "見せないでもらえますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor015.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor015.m4a",
+      "text": "まったく、人前でそんな気の抜けたところを\n見せないでもらえますか？",
+      "startTime": 147.3167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh009.m4a",
       "text": "え？　でも、franさんだって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh009.m4a"
+      "startTime": 149.583376058,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spa-01.m4a",
+          "delay": 4033.333333400009,
+          "startTime": 153.6167093914
+        }
+      ]
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "はぁぁ～……気ん持ちいぃ～～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "柚子の香りもすっごくいい感じぃ～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenbath-00-noon.webp",
+      "bgName": "onsenbath-00-noon"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor016.m4a",
+      "text": "はぁぁ～……気ん持ちいぃ～～……\n柚子の香りもすっごくいい感じぃ～……",
+      "startTime": 160.3500427247,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_water-02.m4a",
+          "delay": 0,
+          "startTime": 154.483376058
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_sisiodoshi-01.m4a",
+          "delay": 5866.6666666999845,
+          "startTime": 160.3500427247
+        }
+      ]
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor017.m4a",
       "text": "どうしたんですか？ 顔、赤いですよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor017.m4a"
+      "startTime": 167.8167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あー、いえ……なんでもありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor017.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh010.m4a",
+      "text": "あー、いえ……なんでもありません\nそ、そうだ、franさんもコーヒー牛乳どうですか？",
+      "startTime": 175.7167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そ、そうだ、franさんもコーヒー牛乳どうですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "コーヒー牛乳……お風呂上りに飲む人が多いって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor018.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor018.m4a",
+      "text": "コーヒー牛乳……お風呂上りに飲む人が多いって\n聞きますけど、私は飲んだことないんですよね",
+      "startTime": 184.8500427247,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "聞きますけど、私は飲んだことないんですよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor018.m4a"
-    },
-    {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor019.m4a",
       "text": "じゃあ、せっかくなのでいただきます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor019.m4a"
+      "startTime": 189.383376058,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_switch-01.m4a",
+          "delay": 4399.999999999977,
+          "startTime": 193.783376058
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_canned-01.m4a",
+          "delay": 4966.666666699979,
+          "startTime": 194.3500427247
+        }
+      ]
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "んっ、んっ……ぷはっ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "なるほど、お風呂上りに飲むと気分がいいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうなんですよ。露天風呂も気持ち良かった分",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor020.m4a",
+      "text": "んっ、んっ……ぷはっ\nなるほど、お風呂上りに飲むと気分がいいですね",
+      "startTime": 202.1833770581,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "より美味しく感じますよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh011.m4a",
+      "text": "そうなんですよ。露天風呂も気持ち良かった分\nより美味しく感じますよね",
+      "startTime": 210.7833860581,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor021.m4a",
       "text": "確かに……露天風呂、とっても気持ち良かったです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor021.m4a"
+      "startTime": 212.783376058,
+      "sfxList": []
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "そういえば、さっきもらったボディソープなんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor022.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "私の肌にとても合うみたいです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor022.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor022.m4a",
+      "text": "そういえば、さっきもらったボディソープなんですけど\n私の肌にとても合うみたいです",
+      "startTime": 223.2500427247,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor023.m4a",
       "text": "詰め替えも売ってるか聞いてみようかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor023.m4a"
+      "startTime": 226.183376058,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "franさんは日頃から美容を意識してますよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ストイックで凄いと思います",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh012.m4a",
+      "text": "franさんは日頃から美容を意識してますよね\nストイックで凄いと思います",
+      "startTime": 232.1500427247,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "これくらい当然ですよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor024.m4a",
+      "text": "これくらい当然ですよ\nトップアイドルになった後のことも見据えて――",
+      "startTime": 236.9500427247,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-02.m4a",
+          "delay": 2199.9999999999886,
+          "startTime": 239.1500427247
+        }
+      ]
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "トップアイドルになった後のことも見据えて――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor024.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor025.m4a",
       "text": "きゃあっ！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor024.m4a"
+      "startTime": 239.683376058,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor026.m4a",
       "text": "あ、す、すみません……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor026.m4a"
+      "startTime": 241.283376058,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（まさか電話の音であんなに驚くとは……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh013.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（昨日の幽霊騒動の件もあるし、仕方ないよな）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh013.m4a",
+      "text": "（まさか電話の音であんなに驚くとは……）\n（昨日の幽霊騒動の件もあるし、仕方ないよな）",
+      "startTime": 248.283376058,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "意識し出すと、気になる音って多いんですよね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "自動ドアが開く音とか、自販機のごぅん……って音とか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor027.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor027.m4a",
+      "text": "意識し出すと、気になる音って多いんですよね……\n自動ドアが開く音とか、自販機のごぅん……って音とか",
+      "startTime": 258.9167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "分かります。家にいても、エアコンとか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh014.m4a",
+      "text": "分かります。家にいても、エアコンとか\n冷蔵庫の音にたまに驚きますよね",
+      "startTime": 268.7566081837,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "冷蔵庫の音にたまに驚きますよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor028.m4a",
       "text": "そ、そうなんです！　分かってくれますか！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor028.m4a"
+      "startTime": 271.7500427247,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "……あ、すみません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor029.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "{user}さんの反応が新鮮で、つい……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor029.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor029.m4a",
+      "text": "……あ、すみません\n{user}さんの反応が新鮮で、つい……",
+      "startTime": 278.583376058,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "私が怖がると、mihoはあっさり流して",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor030.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor030.m4a",
+      "text": "私が怖がると、mihoはあっさり流して\nkanaは思いっきり煽ってくるので……",
+      "startTime": 286.5188100007,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "kanaは思いっきり煽ってくるので……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor030.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "スリクスは……案外、お互いに文句を言い合う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh015.m4a",
+      "text": "スリクスは……案外、お互いに文句を言い合う\n今の距離感がちょうどいいのかもな",
+      "startTime": 293.6167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今の距離感がちょうどいいのかもな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor031.m4a",
       "text": "……なんですか、そのニヤニヤした顔は？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor031.m4a"
+      "startTime": 296.7500427247,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh016.m4a",
       "text": "え。俺、そんな顔してましたか……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh016.m4a"
+      "startTime": 300.783376058,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor032.m4a",
       "text": "そうですよ、まったく",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh016.m4a"
+      "startTime": 304.483376058,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "ああ、そうだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor033.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "今のうちに明日の予定を確認させて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor033.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor033.m4a",
+      "text": "ああ、そうだ\n今のうちに明日の予定を確認させて下さい",
+      "startTime": 309.483376058,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "明日は朝八時にロビー集合",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor033.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh017.m4a",
+      "text": "明日は朝八時にロビー集合\n俺と一件だけ仕事に向かって後はオフです",
+      "startTime": 316.0167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺と一件だけ仕事に向かって後はオフです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor034.m4a",
       "text": "八時ですね。分かりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh017.m4a"
+      "startTime": 319.3167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今晩は大丈夫そうですか？　一人で寝るのが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh018.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh018.m4a",
+      "text": "今晩は大丈夫そうですか？　一人で寝るのが\n怖ければ、mihoさんやkanaさんと――",
+      "startTime": 325.6167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "怖ければ、mihoさんやkanaさんと――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor035.m4a",
       "text": "私があの二人にそんなお願いをすると思いますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh018.m4a"
+      "startTime": 328.0167093914,
+      "sfxList": []
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh019.m4a",
       "text": "お、思わないです……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh019.m4a"
+      "startTime": 332.483376058,
+      "sfxList": []
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor036.m4a",
       "text": "それじゃあ、お休みなさい。また明日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor036.m4a"
+      "startTime": 334.8167093914,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 4333.333333299947,
+          "startTime": 339.1500427247
+        }
+      ]
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "お、お休みなさい。franさんの人柄を掴むには……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-kor036.m4a"
-    },
-    {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "まだまだ時間がかかりそうだな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh020.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_02_02/sud_vo_adv_card_kor_02_02-koh020.m4a",
+      "text": "お、お休みなさい。franさんの人柄を掴むには……\nまだまだ時間がかかりそうだな",
+      "startTime": 345.9500427247,
+      "sfxList": []
     }
   ]
 }

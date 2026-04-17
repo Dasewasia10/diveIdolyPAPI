@@ -1,1198 +1,539 @@
 {
   "id": "adv_card_rei_01_01",
-  "groupId": "card_rei_01",
-  "name": "一ノ瀬怜 1話 認められたい気持ち",
-  "background": null,
-  "details": [
+  "title": "一ノ瀬怜",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_lesson-00-night.webp",
+      "bgName": "env_adv_3d_lesson-00-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_lesson-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――時は遡り",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.5,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――サニーピースがデビューして間もない頃",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 2,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（レッスン終了後。みんな寮に帰ったが、怜だけは）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh001.m4a",
+      "text": "（レッスン終了後。みんな寮に帰ったが、怜だけは）\n（自主練をしているというので、様子を見に来た）",
+      "startTime": 10,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（自主練をしているというので、様子を見に来た）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei001.m4a",
+      "text": "1、2、3、4！　1、2、3、4！\nここでジャンプ。からの、スイッチしてターン……",
+      "startTime": 17.174166748300195,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "1、2、3、4！　1、2、3、4！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei001.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei002.m4a",
+      "text": "はあ……はあ……ダメ。まだ動きが硬い\n……もう一回",
+      "startTime": 25.74164138827473,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_down-01.m4a",
+          "delay": 3858.358611725272,
+          "startTime": 29.6
+        }
+      ]
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "ここでジャンプ。からの、スイッチしてターン……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei001.m4a"
-    },
-    {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "はあ……はあ……ダメ。まだ動きが硬い",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei001.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……もう一回",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei002.m4a"
-    },
-    {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei003.m4a",
       "text": "1、2、3、4！　1、2――きゃっ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei002.m4a"
+      "startTime": 26.8,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh002.m4a",
       "text": "怜、ケガしてないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh002.m4a"
+      "startTime": 32.833333333333336,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "え、{user}さん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei004.m4a",
+      "text": "え、{user}さん？\nなんでここに……",
+      "startTime": 37.1,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "なんでここに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei005.m4a",
+      "text": "……もしかして、また覗きですか？\n本当に警察呼びますよ",
+      "startTime": 42.266666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……もしかして、また覗きですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei005.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh003.m4a",
+      "text": "違う違う。怜が残って練習してるって聞いたから様子を\n見に来て……それより、どこも痛めたりしてないか？",
+      "startTime": 48.733333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "本当に警察呼びますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei006.m4a",
+      "text": "このぐらい平気です\n大げさに心配するほどじゃ……んっ",
+      "startTime": 54.833333333333336,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "違う違う。怜が残って練習してるって聞いたから様子を",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh004.m4a",
+      "text": "無理しちゃダメだ。ちょっと待ってて\n救急箱に冷却剤とテープが……",
+      "startTime": 61.6,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "見に来て……それより、どこも痛めたりしてないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei007.m4a",
+      "text": "……{user}さん\nテーピングなんて出来たんですね。意外です",
+      "startTime": 68.23333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "このぐらい平気です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh005.m4a",
+      "text": "万が一みんなが怪我した時のために覚えたんだ\n……なあ、怜。あまり無理はしないでくれ",
+      "startTime": 76.26666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "大げさに心配するほどじゃ……んっ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei008.m4a",
+      "text": "……別に、無理をしてるつもりはありません\nむしろ私には、まだまだ足りないぐらい",
+      "startTime": 83.76666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "無理しちゃダメだ。ちょっと待ってて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "救急箱に冷却剤とテープが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei007.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "テーピングなんて出来たんですね。意外です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei007.m4a"
-    },
-    {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "万が一みんなが怪我した時のために覚えたんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh005.m4a"
-    },
-    {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……なあ、怜。あまり無理はしないでくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh005.m4a"
-    },
-    {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……別に、無理をしてるつもりはありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh005.m4a"
-    },
-    {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "むしろ私には、まだまだ足りないぐらい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei008.m4a"
-    },
-    {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei009.m4a",
       "text": "だからこうやって残って練習しているんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei009.m4a"
+      "startTime": 87.3,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "もっともっと上手にならないと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei010.m4a",
+      "text": "もっともっと上手にならないと……\nきっと、認めてもらえないから……",
+      "startTime": 92.76666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "きっと、認めてもらえないから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh006.m4a",
+      "text": "ダンスの大会で優勝だってしてるんだ\n怜のことは今でもみんな認めてるよ",
+      "startTime": 98.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ダンスの大会で優勝だってしてるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei011.m4a",
+      "text": "たった一回の優勝に意味なんてありません\n勝ち続けないと生き残れないんですから",
+      "startTime": 104.83333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "怜のことは今でもみんな認めてるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei012.m4a",
+      "text": "それはアイドルだって同じですよね？\nライバルに勝って、トップを目指す",
+      "startTime": 111.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "たった一回の優勝に意味なんてありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei013.m4a",
+      "text": "一回優勝しただけでいい気になるのは怠慢です\nそんなことじゃ、結局誰も……",
+      "startTime": 117.8,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "勝ち続けないと生き残れないんですから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh007.m4a",
+      "text": "……でも上ばかり見て足下がおそろかになっていたら\nまた転んで怪我しちゃうんじゃないか？",
+      "startTime": 123.8,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "それはアイドルだって同じですよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei014.m4a",
+      "text": "く……\nそ、それはそうかもしれませんけど……",
+      "startTime": 128.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "ライバルに勝って、トップを目指す",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh008.m4a",
+      "text": "怜の言う通り、厳しい世界なのは間違いない\n……ただ、誰も認めていないなんて思わないでほしい",
+      "startTime": 135.2,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "一回優勝しただけでいい気になるのは怠慢です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei012.m4a"
-    },
-    {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "そんなことじゃ、結局誰も……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei013.m4a"
-    },
-    {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……でも上ばかり見て足下がおそろかになっていたら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh007.m4a"
-    },
-    {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "また転んで怪我しちゃうんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh007.m4a"
-    },
-    {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "く……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei014.m4a"
-    },
-    {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "そ、それはそうかもしれませんけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei014.m4a"
-    },
-    {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "怜の言う通り、厳しい世界なのは間違いない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei014.m4a"
-    },
-    {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……ただ、誰も認めていないなんて思わないでほしい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh008.m4a"
-    },
-    {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei015.m4a",
       "text": "……{user}さん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh008.m4a"
+      "startTime": 140.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "俺は怜の存在がみんなの起爆剤になると思って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh009.m4a",
+      "text": "俺は怜の存在がみんなの起爆剤になると思って\n認めたから、グループに参加してもらったんだ",
+      "startTime": 144.3,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "認めたから、グループに参加してもらったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei016.m4a",
+      "text": "認めて、くれたから……\n私を……",
+      "startTime": 150.76666666666668,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "認めて、くれたから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei017.m4a",
+      "text": "……ありがとうございます\nでもやっぱり、どこか納得できません",
+      "startTime": 154.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "私を……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei016.m4a"
-    },
-    {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……ありがとうございます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei017.m4a"
-    },
-    {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "でもやっぱり、どこか納得できません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei017.m4a"
-    },
-    {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei018.m4a",
       "text": "私自身がそれを、『認められている』って思えなくて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei017.m4a"
+      "startTime": 157.6,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（怜の実力は、メンバーにも伝わっている）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh010.m4a",
+      "text": "（怜の実力は、メンバーにも伝わっている）\n（もう少し距離を縮めていけば、本人も気付くか……）",
+      "startTime": 166.1,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（もう少し距離を縮めていけば、本人も気付くか……）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei019.m4a",
+      "text": "あの……{user}さん？\nどうしたんですか、人のことジロジロと",
+      "startTime": 172.16666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "あの……{user}さん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh010.m4a"
-    },
-    {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "どうしたんですか、人のことジロジロと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei019.m4a"
-    },
-    {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei020.m4a",
       "text": "正直、その……目つきもなんだか……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei020.m4a"
+      "startTime": 176.06666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "い、いや！　考え事をしてたんだ。その、今日は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh011.m4a",
+      "text": "い、いや！　考え事をしてたんだ。その、今日は\n練習を切り上げて、みんなとご飯を食べないか？",
+      "startTime": 185.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "練習を切り上げて、みんなとご飯を食べないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei021.m4a",
+      "text": "……{user}さん\n私の話、ちゃんと聞いてました？",
+      "startTime": 189.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei021.m4a"
-    },
-    {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "私の話、ちゃんと聞いてました？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei021.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei022.m4a",
       "text": "私は、もっと練習しないと……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei021.m4a"
+      "startTime": 192.7,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "けどその足じゃ今日は無理だ。安静にしないと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei022.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh012.m4a",
+      "text": "けどその足じゃ今日は無理だ。安静にしないと\nそれにそろそろ、お腹も減ってくる時間だろ？",
+      "startTime": 199.83333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それにそろそろ、お腹も減ってくる時間だろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei023.m4a",
+      "text": "大丈夫です。朝もお昼もしっかり食べてますから\nまだ全然――",
+      "startTime": 207.26666666666668,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_hungry-01.m4a",
+          "delay": 1599.9999999999943,
+          "startTime": 208.86666666666667
+        }
+      ]
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "大丈夫です。朝もお昼もしっかり食べてますから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei023.m4a"
-    },
-    {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "まだ全然――",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei023.m4a"
-    },
-    {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――くぅ～……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 208.866666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "あ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei024.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei024.m4a",
+      "text": "あ……\nい、今のは違くって、その……",
+      "startTime": 211.26666666666668,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "い、今のは違くって、その……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei024.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh013.m4a",
+      "text": "サニピは、怜だけじゃない。五人のグループなんだ\nだから、今日はもう寮に帰ろう。ご飯も準備しているし",
+      "startTime": 219,
+      "sfxList": []
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "サニピは、怜だけじゃない。五人のグループなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei024.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だから、今日はもう寮に帰ろう。ご飯も準備しているし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh013.m4a"
-    },
-    {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei025.m4a",
       "text": "同じ釜の飯を食え……ってことですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei025.m4a"
+      "startTime": 223.83333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そう。まずはそうやって仲間同士",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh014.m4a",
+      "text": "そう。まずはそうやって仲間同士\n親睦を深めていくのもいいんじゃないか？",
+      "startTime": 230.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "親睦を深めていくのもいいんじゃないか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei026.m4a",
+      "text": "……はぁ\nそういう時間を作るのも大事……なのかもしれませんね",
+      "startTime": 233.93333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……はぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei027.m4a",
+      "text": "分かりました\nそこまで言うなら、今日はもう切り上げます",
+      "startTime": 240.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "そういう時間を作るのも大事……なのかもしれませんね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei026.m4a"
-    },
-    {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "分かりました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei027.m4a"
-    },
-    {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "そこまで言うなら、今日はもう切り上げます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei027.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei028.m4a",
       "text": "それに……ちょっとお腹も空いてきちゃったし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei027.m4a"
+      "startTime": 244.86666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh015.m4a",
       "text": "ん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-koh015.m4a"
+      "startTime": 249.2,
+      "sfxList": []
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "なんでもないです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei029.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei029.m4a",
+      "text": "なんでもないです\n私、着替えてきますね",
+      "startTime": 252.13333333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-01.m4a",
+          "delay": 3000,
+          "startTime": 253.56666666666666
+        }
+      ]
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "私、着替えてきますね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei029.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei030.m4a",
+      "text": "……なんだかしゃくですけど\nテーピング巻くの上手なんですね",
+      "startTime": 257.03333333333336,
+      "sfxList": []
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……なんだかしゃくですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei029.m4a"
-    },
-    {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "テーピング巻くの上手なんですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei030.m4a"
-    },
-    {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "……ほんのちょっとだけ、見直しました",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei031.m4a"
-    },
-    {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "あ、ありがとうございます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei031.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_01_01/sud_vo_adv_card_rei_01_01-rei031.m4a",
+      "text": "……ほんのちょっとだけ、見直しました\nあ、ありがとうございます",
+      "startTime": 264.06666666666666,
+      "sfxList": []
     }
   ]
 }

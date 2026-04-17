@@ -1,1352 +1,727 @@
 {
   "id": "adv_card_mku_01_01",
-  "groupId": "card_mku_01",
-  "name": "初音ミク 1話 教えて、マネージャーさん",
-  "background": null,
-  "details": [
+  "title": "初音ミク",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "office-01-000-noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tri-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――マジカルミライ10th Anniversary",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "in VENUS STAGE",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 3.4,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "本イベントにトリエル出演が決まった数日後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 5.4666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ええと、ミクの呼び出し方は……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh001.m4a",
+      "text": "ええと、ミクの呼び出し方は……\nこれで良かったかな？",
+      "startTime": 12.6333333333,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-end-01.m4a",
+          "delay": 1993.1654612000002,
+          "startTime": 14.6264987945
+        }
+      ]
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "これで良かったかな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku001.m4a",
+      "text": "こんにちは、{user}さん\nどうしたの？",
+      "startTime": 19.7606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "こんにちは、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh002.m4a",
+      "text": "ミク、いきなり呼び出してすまない\nトリエルのみんなが作詞に苦戦してるみたいなんだ",
+      "startTime": 24.0606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "どうしたの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh003.m4a",
+      "text": "初めての試みだから無理もないが……\nそれで、ミクに相談出来ないかなと思って",
+      "startTime": 30.8606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ミク、いきなり呼び出してすまない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku002.m4a",
+      "text": "もちろん！　私も作詞の経験はないけど……\n協力出来ることがあるなら頑張るよ",
+      "startTime": 38.8273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "トリエルのみんなが作詞に苦戦してるみたいなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku003.m4a",
+      "text": "でも、何か言葉を掛けるなら……\n私はもっといろいろと知らないといけないの",
+      "startTime": 46.5273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "初めての試みだから無理もないが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku004.m4a",
+      "text": "私はバーチャルの世界にいるから\nデータベースで公式情報を調べることが出来るけど……",
+      "startTime": 53.5940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それで、ミクに相談出来ないかなと思って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku005.m4a",
+      "text": "もっと深いこと――トリエルのみんなが\nどんな人なのかを私は知らないなって",
+      "startTime": 62.1273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "もちろん！　私も作詞の経験はないけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku006.m4a",
+      "text": "だから、{user}さんにいろいろと\n教えてほしいな",
+      "startTime": 68.0273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "協力出来ることがあるなら頑張るよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh004.m4a",
+      "text": "なるほど、それもそうか\n分かった、俺が知ってる限りのことを教えるよ",
+      "startTime": 72.7273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "でも、何か言葉を掛けるなら……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku007.m4a",
+      "text": "ありがとう。あ、そうだ\n場所を移動してもいい？",
+      "startTime": 79.7273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "私はもっといろいろと知らないといけないの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku003.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "私はバーチャルの世界にいるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku003.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "データベースで公式情報を調べることが出来るけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku004.m4a"
-    },
-    {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "もっと深いこと――トリエルのみんなが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku005.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "どんな人なのかを私は知らないなって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku005.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "だから、{user}さんにいろいろと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku006.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "教えてほしいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku006.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なるほど、それもそうか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "分かった、俺が知ってる限りのことを教えるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "ありがとう。あ、そうだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku007.m4a"
-    },
-    {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "場所を移動してもいい？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku007.m4a"
-    },
-    {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh005.m4a",
       "text": "ん？　それは……どうして？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku007.m4a"
+      "startTime": 82.0273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "私はまだ、事務所しか見てないから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku008.m4a",
+      "text": "私はまだ、事務所しか見てないから\nこの街の景色をもっと見てみたいな",
+      "startTime": 88.7273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "この街の景色をもっと見てみたいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh006.m4a",
+      "text": "あぁ、分かった\n場所を選ぶ必要はあるけど、大丈夫だよ",
+      "startTime": 93.9606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "あぁ、分かった",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh006.m4a"
-    },
-    {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "場所を選ぶ必要はあるけど、大丈夫だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh006.m4a"
-    },
-    {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku009.m4a",
       "text": "どうして、場所を選ぶ必要があるの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku009.m4a"
+      "startTime": 97.4273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "君のファンは沢山いるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh007.m4a",
+      "text": "君のファンは沢山いるから\n驚かせてしまうと思うんだよ",
+      "startTime": 102.9273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "驚かせてしまうと思うんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh007.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku010.m4a",
+      "text": "そう、なの？\nそれが本当なら、嬉しいな",
+      "startTime": 108.0606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "そう、なの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku010.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku011.m4a",
+      "text": "それじゃあ、場所は{user}さんに\nお任せするね",
+      "startTime": 113.5940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "それが本当なら、嬉しいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "それじゃあ、場所は{user}さんに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "お任せするね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku011.m4a"
-    },
-    {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh008.m4a",
       "text": "よし、今はほとんど人がいないな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh008.m4a"
+      "startTime": 117.2940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "わぁ……素敵な眺め。辺りで鳥が鳴いてて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "賑やかな街の音が遠くに聞こえる……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku012.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku012.m4a",
+      "text": "わぁ……素敵な眺め。辺りで鳥が鳴いてて\n賑やかな街の音が遠くに聞こえる……",
+      "startTime": 128.8606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "気に入ってくれて良かった。それでトリエルのことだが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku012.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "まず、天動さんは真面目でストイックなんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh009.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh009.m4a",
+      "text": "気に入ってくれて良かった。それでトリエルのことだが\nまず、天動さんは真面目でストイックなんだ",
+      "startTime": 137.0940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "でも時々抜けていることもあって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh010.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh010.m4a",
+      "text": "でも時々抜けていることもあって\nそういう面も含めてファンに愛されてるな",
+      "startTime": 143.4940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そういう面も含めてファンに愛されてるな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh010.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku013.m4a",
       "text": "素敵な子なんだね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku013.m4a"
+      "startTime": 146.8273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "次は鈴村さんだな。彼女はおっとりしていて落ち着きが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh011.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ある。それにライブMCの面白さにも定評があるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh011.m4a",
+      "text": "次は鈴村さんだな。彼女はおっとりしていて落ち着きが\nある。それにライブMCの面白さにも定評があるんだ",
+      "startTime": 153.3940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh012.m4a",
       "text": "あと方言……京都弁が特徴的だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh012.m4a"
+      "startTime": 158.5273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "少ししか聞いてないけど、優雅なメロディーみたいで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "とっても素敵な話し方だったよ。もっと聞いてみたいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku014.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku014.m4a",
+      "text": "少ししか聞いてないけど、優雅なメロディーみたいで\nとっても素敵な話し方だったよ。もっと聞いてみたいな",
+      "startTime": 167.1273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "その言葉、ぜひ本人にも言ってあげてくれ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もの凄く喜ぶと思うから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh013.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh013.m4a",
+      "text": "その言葉、ぜひ本人にも言ってあげてくれ\nもの凄く喜ぶと思うから",
+      "startTime": 175.8940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku015.m4a",
       "text": "それは……どうして？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh013.m4a"
+      "startTime": 178.2606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "鈴村さんはミクのことが大好きなんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh014.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh014.m4a",
+      "text": "鈴村さんはミクのことが大好きなんだよ\n今回のライブも彼女の希望で\nトリエルが出演することになったんだ",
+      "startTime": 186.7907675374,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今回のライブも彼女の希望で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh014.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "トリエルが出演することになったんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh014.m4a"
-    },
-    {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku016.m4a",
       "text": "本当？　わぁ、嬉しいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku016.m4a"
+      "startTime": 189.2606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "最後は奥山さんだな。彼女は今も山形の中学校に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh015.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "通っていて、毎週新幹線で東京に来てるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh015.m4a",
+      "text": "最後は奥山さんだな。彼女は今も山形の中学校に\n通っていて、毎週新幹線で東京に来てるんだ",
+      "startTime": 198.3606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "山形の中学校に、新幹線……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku017.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku017.m4a",
+      "text": "山形の中学校に、新幹線……\nすみれちゃんは、大変なの？",
+      "startTime": 207.1940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "すみれちゃんは、大変なの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうだな。家から星見プロに来るのだって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh016.m4a",
+      "text": "そうだな。家から星見プロに来るのだって\n何時間もかかるし、体力も必要だと思う",
+      "startTime": 213.3606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "何時間もかかるし、体力も必要だと思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh016.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "私は距離に関係なく歌を届けてきたから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh016.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku018.m4a",
+      "text": "私は距離に関係なく歌を届けてきたから\nどこかに通ったことがないの",
+      "startTime": 221.3273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "どこかに通ったことがないの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku018.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "でも、すみれちゃんが凄いのは、分かるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku019.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku019.m4a",
+      "text": "でも、すみれちゃんが凄いのは、分かるよ\nどうしてそんなことが出来るの？",
+      "startTime": 227.9273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "どうしてそんなことが出来るの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh017.m4a",
+      "text": "大変でも……続けたいと思える魅力があるんだよ\nアイドルには。ミクも分かるだろ？",
+      "startTime": 234.7606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "大変でも……続けたいと思える魅力があるんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh017.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "アイドルには。ミクも分かるだろ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh017.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku020.m4a",
       "text": "うん、分かるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku020.m4a"
+      "startTime": 238.7606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "沢山の人に歌を届けて、笑顔にして……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku021.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku021.m4a",
+      "text": "沢山の人に歌を届けて、笑顔にして……\nアイドルはとても素敵なお仕事だもんね！",
+      "startTime": 246.0940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "アイドルはとても素敵なお仕事だもんね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku021.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku022.m4a",
       "text": "あ、でも……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku022.m4a"
+      "startTime": 249.8940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "そもそも、トリエルのみんなはどうして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku023.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku023.m4a",
+      "text": "そもそも、トリエルのみんなはどうして\nグループで活動してるの？",
+      "startTime": 255.2273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "グループで活動してるの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku023.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "瑠依ちゃんも、優ちゃんも、すみれちゃんも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku024.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku024.m4a",
+      "text": "瑠依ちゃんも、優ちゃんも、すみれちゃんも\nみんな一人ひとり凄いのに……",
+      "startTime": 261.3273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "みんな一人ひとり凄いのに……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku024.m4a"
-    },
-    {
-      "id": "msg_78",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh018.m4a",
       "text": "なるほど、ソロで活動するミクならではの疑問だな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku024.m4a"
+      "startTime": 264.2273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_79",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "完璧なアイドルなんていないと思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh019.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_80",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "だから、トリエルは足りない部分を補い合ってるんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh019.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh019.m4a",
+      "text": "完璧なアイドルなんていないと思う\nだから、トリエルは足りない部分を補い合ってるんだ",
+      "startTime": 271.9940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_81",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku025.m4a",
       "text": "足りない、部分を……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku025.m4a"
+      "startTime": 275.8940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_82",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そう。そしてお互いに高め合って、あの三人だからこそ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku025.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh020.m4a",
+      "text": "そう。そしてお互いに高め合って、あの三人だからこそ\n出来るパフォーマンスを追求してるんだよ",
+      "startTime": 283.0940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_83",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "出来るパフォーマンスを追求してるんだよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_84",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "あの三人だからこそ出来るパフォーマンス……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku026.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku026.m4a",
+      "text": "あの三人だからこそ出来るパフォーマンス……\nそっか、そういう形もあるんだね",
+      "startTime": 290.5940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_85",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "そっか、そういう形もあるんだね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku026.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_86",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "ありがとう、{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku026.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku027.m4a",
+      "text": "ありがとう、{user}さん\nトリエルのことを、ずっと深く知ることが出来たよ",
+      "startTime": 296.6273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_87",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "トリエルのことを、ずっと深く知ることが出来たよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku027.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_88",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "今なら……作詞のことで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku028.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku028.m4a",
+      "text": "今なら……作詞のことで\n私が言ってあげられることがあるかも",
+      "startTime": 303.3940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_89",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "私が言ってあげられることがあるかも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku028.m4a"
-    },
-    {
-      "id": "msg_90",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh021.m4a",
       "text": "本当か！？　ありがとう、助かるよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku028.m4a"
+      "startTime": 306.5273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_91",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "トリエルのことも分かったけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku029.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_92",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "{user}さんのことも分かったよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku029.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku029.m4a",
+      "text": "トリエルのことも分かったけど\n{user}さんのことも分かったよ",
+      "startTime": 312.6273409526,
+      "sfxList": []
     },
     {
-      "id": "msg_93",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh022.m4a",
       "text": "ん？　俺のこと……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-koh022.m4a"
+      "startTime": 314.9940076192,
+      "sfxList": []
     },
     {
-      "id": "msg_94",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku030.m4a",
       "text": "うん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku030.m4a"
+      "startTime": 317.4606742859,
+      "sfxList": []
     },
     {
-      "id": "msg_95",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "自分が担当するアイドルを、本当に大切に思ってる……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku031.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
+      "bgName": "tokyopark-00-noon"
     },
     {
-      "id": "msg_96",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mku",
-        "icon": null,
-        "name": "初音ミク"
-      },
-      "text": "素敵なマネージャーさんだってこと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku031.m4a"
+      "type": "dialogue",
+      "speakerCode": "mku",
+      "speakerName": "初音ミク",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mku.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_mku_01_01/sud_vo_adv_card_mku_01_01-mku031.m4a",
+      "text": "自分が担当するアイドルを、本当に大切に思ってる……\n素敵なマネージャーさんだってこと",
+      "startTime": 323.9606742859,
+      "sfxList": []
     }
   ]
 }

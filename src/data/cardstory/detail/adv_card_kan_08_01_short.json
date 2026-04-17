@@ -1,246 +1,173 @@
 {
   "id": "adv_card_kan_08_01_short",
-  "groupId": "card_kan_08",
-  "name": "kana 1話 クソ記事をぶっ潰してやんのよ (Short)",
-  "background": null,
-  "details": [
+  "title": "kana (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_thrx-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+      "startTime": 0
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_big4challengestage-00-noon.webp",
+      "bgName": "s1"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――NexusFes本番中",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.8,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_message-01.m4a",
+          "delay": 8733.3334287,
+          "startTime": 9.5333334287
+        }
+      ]
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "さすがスリクス、三人揃った時の迫力は凄いな……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……三枝さんから連絡だ。どうしたんだろう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "スリクスの取材に日本からも記者が来てるらしい、か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ん？　その記者には気を付けろ、だって……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
+      "bgName": "stagesleeves-00-noon"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "……で？　何よ、大事な話って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh001.m4a",
+      "text": "さすがスリクス、三人揃った時の迫力は凄いな……\n……三枝さんから連絡だ。どうしたんだろう",
+      "startTime": 10.6666667621,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "kana、昨日のフェスでまだ疲れてるんだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh002.m4a",
+      "text": "スリクスの取材に日本からも記者が来てるらしい、か\nん？　その記者には気を付けろ、だって……？",
+      "startTime": 19.1412495934,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "その……三枝さんからこんなものが送られてきまして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_preconference-00-noon.webp",
+      "bgName": "preconference-00-noon"
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "来週、週刊誌に載る予定の記事らしいんですけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_preconference-00-noon.webp",
+      "bgName": "preconference-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "何これ、kanaの盗撮写真？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan001.m4a",
+      "text": "……で？　何よ、大事な話って\nkana、昨日のフェスでまだ疲れてるんだけど",
+      "startTime": 29.9230598848,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 3533.3347320999983,
+          "startTime": 33.4563946169
+        }
+      ]
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "この車に乗ってるってことは……会場に向かってる時か",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-koh003.m4a",
+      "text": "その……三枝さんからこんなものが送られてきまして\n来週、週刊誌に載る予定の記事らしいんですけど……",
+      "startTime": 37.9000000954,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "……あの時はお父さんと大事な話してたのに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_preconference-00-noon.webp",
+      "bgName": "preconference-00-noon"
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "尾けられてたとか、最悪",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan002.m4a",
+      "text": "何これ、kanaの盗撮写真？\nこの車に乗ってるってことは……会場に向かってる時か",
+      "startTime": 46.0910642704,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "で、わざわざアメリカまでkana追っかけて来て",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan003.m4a",
+      "text": "……あの時はお父さんと大事な話してたのに\n尾けられてたとか、最悪",
+      "startTime": 54.5577309371,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "どんな記事をでっちあげたっての？　どれどれ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_preconference-00-noon.webp",
+      "bgName": "preconference-00-noon"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "……『ⅢXのkana、知られざる悲劇の生い立ち",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan004.m4a"
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan004.m4a",
+      "text": "で、わざわざアメリカまでkana追っかけて来て\nどんな記事をでっちあげたっての？　どれどれ……",
+      "startTime": 60.5577309371,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kan",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
-        "name": "kana"
-      },
-      "text": "幼少期に母と死別、そして最愛の父に捨てられた過去』",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_preconference-00-noon.webp",
+      "bgName": "preconference-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kan",
+      "speakerName": "kana",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kana.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kan_08_01_short/sud_vo_adv_card_kan_08_01-kan005.m4a",
+      "text": "……『ⅢXのkana、知られざる悲劇の生い立ち\n幼少期に母と死別、そして最愛の父に捨てられた過去』",
+      "startTime": 70.1577309389,
+      "sfxList": []
     }
   ]
 }

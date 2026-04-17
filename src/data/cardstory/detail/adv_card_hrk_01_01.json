@@ -1,1086 +1,451 @@
 {
   "id": "adv_card_hrk_01_01",
-  "groupId": "card_hrk_01",
-  "name": "佐伯遙子 1話 ソロキャンが趣味",
-  "background": null,
-  "details": [
+  "title": "佐伯遙子",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_coast-00-evening.webp",
+      "bgName": "3d_coast_evening"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_coast-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――時は遡って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0.13333333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――月スト、サニピ同時デビュー直後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 1.6333333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（俺達は、海沿いのキャンプ場に来ていた）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh001.m4a",
+      "text": "（俺達は、海沿いのキャンプ場に来ていた）\n（星見市のタウン誌でレジャースポットを紹介する仕事だ）",
+      "startTime": 9.766666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（星見市のタウン誌でレジャースポットを紹介する仕事だ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh002.m4a",
+      "text": "（キャンプのことを綴った遙子さんのブログが）\n（編集者の目に留まり、記事のモデルに指名されたのだ）",
+      "startTime": 15.633333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（キャンプのことを綴った遙子さんのブログが）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk001.m4a",
+      "text": "……あ、{user}君\nこっちのお肉、もういい感じだよ？",
+      "startTime": 21.533333333333335,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（編集者の目に留まり、記事のモデルに指名されたのだ）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk002.m4a",
+      "text": "あとこっちのタマネギも\nお野菜もちゃんと食べなきゃダメだよ？",
+      "startTime": 27.133333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "……あ、{user}君",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh003.m4a",
+      "text": "いや、子供じゃないんですから……\nそれにしても、遙子さん、やけに楽しそうですね",
+      "startTime": 32.63333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "こっちのお肉、もういい感じだよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk001.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk003.m4a",
+      "text": "ふふっ、そうだね\nこういうの、久しぶりだからかなぁ",
+      "startTime": 38.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "あとこっちのタマネギも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk001.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk004.m4a",
+      "text": "近場で日帰りとはいえ、キャンプしてるって思ったら\nなんだか楽しくなっちゃって……",
+      "startTime": 45.5,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "お野菜もちゃんと食べなきゃダメだよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh004.m4a",
+      "text": "けど……意外でしたね\n遙子さんに一人キャンプの心得があったなんて",
+      "startTime": 49.93333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "いや、子供じゃないんですから……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk002.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk005.m4a",
+      "text": "一人キャンプじゃなくって\n最近はソロキャンって言うのよ。覚えておいてね",
+      "startTime": 55.2,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それにしても、遙子さん、やけに楽しそうですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk006.m4a",
+      "text": "サニピの活動が始まる前は\nオフにちょこちょこソロキャンしてたのよ",
+      "startTime": 61.9,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "ふふっ、そうだね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk007.m4a",
+      "text": "最初はなんとな～く、自然の中に帰りたーい！\nって気持ちだけだったんだけど……",
+      "startTime": 68.76666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "こういうの、久しぶりだからかなぁ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk008.m4a",
+      "text": "気付いたら楽しくなっちゃって\nあちこち出かけてみたの",
+      "startTime": 73.1,
+      "sfxList": []
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "近場で日帰りとはいえ、キャンプしてるって思ったら",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk003.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk009.m4a",
+      "text": "あー！　ボーッとしてると\nマシュマロがドロドロになっちゃうよ？",
+      "startTime": 77.36666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "なんだか楽しくなっちゃって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk010.m4a",
+      "text": "ていうか燃えちゃうから気を付けて\nそろそろ食べ頃だと思う",
+      "startTime": 82.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "けど……意外でしたね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk004.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk011.m4a",
+      "text": "……んふふ～、これこれ～っ\nこのトロッとした甘さが病みつきなのよ～！",
+      "startTime": 89.23333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "遙子さんに一人キャンプの心得があったなんて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "一人キャンプじゃなくって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh004.m4a"
-    },
-    {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "最近はソロキャンって言うのよ。覚えておいてね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk005.m4a"
-    },
-    {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "サニピの活動が始まる前は",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk005.m4a"
-    },
-    {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "オフにちょこちょこソロキャンしてたのよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk006.m4a"
-    },
-    {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "最初はなんとな～く、自然の中に帰りたーい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk006.m4a"
-    },
-    {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "って気持ちだけだったんだけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk007.m4a"
-    },
-    {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "気付いたら楽しくなっちゃって",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk007.m4a"
-    },
-    {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "あちこち出かけてみたの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk008.m4a"
-    },
-    {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "あー！　ボーッとしてると",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk009.m4a"
-    },
-    {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "マシュマロがドロドロになっちゃうよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk009.m4a"
-    },
-    {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "ていうか燃えちゃうから気を付けて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk009.m4a"
-    },
-    {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "そろそろ食べ頃だと思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk010.m4a"
-    },
-    {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "……んふふ～、これこれ～っ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk010.m4a"
-    },
-    {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "このトロッとした甘さが病みつきなのよ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk011.m4a"
-    },
-    {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk012.m4a",
       "text": "これも、キャンプ歴一年の知恵よ知恵",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk011.m4a"
+      "startTime": 93.23333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なるほど。確かに今日の撮影も順調でしたし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh005.m4a",
+      "text": "なるほど。確かに今日の撮影も順調でしたし\n先方も遙子さんに頼んで正解だったって喜んでましたよ",
+      "startTime": 100.36666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "先方も遙子さんに頼んで正解だったって喜んでましたよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh005.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk013.m4a",
+      "text": "そう？　それなら良かった……\nっていうか、安心した",
+      "startTime": 107.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "そう？　それなら良かった……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh005.m4a"
-    },
-    {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "っていうか、安心した",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk013.m4a"
-    },
-    {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh006.m4a",
       "text": "安心ですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk013.m4a"
+      "startTime": 110.16666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "うん……自分の趣味が活かせたんだなって思うと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh006.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk014.m4a",
+      "text": "うん……自分の趣味が活かせたんだなって思うと\n凄くホッとしたの",
+      "startTime": 116.23333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "凄くホッとしたの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk014.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk015.m4a",
+      "text": "ほら、私ってその……地味、でしょ？\n趣味がパズルとか、いろいろ……",
+      "startTime": 123.83333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "ほら、私ってその……地味、でしょ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk014.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk016.m4a",
+      "text": "だけど一つぐらいは、こうして活かせるものが\nあったんだなって思って……",
+      "startTime": 130.16666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "趣味がパズルとか、いろいろ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk015.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh007.m4a",
+      "text": "何を言ってるんですか……サニピのお姉さん役として\nみんなを支えてくれている……欠かせない存在です",
+      "startTime": 136.06666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "だけど一つぐらいは、こうして活かせるものが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk015.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk017.m4a",
+      "text": "ちょっと……その言い方だと\n私が歳だって聞こえるんだけど……？",
+      "startTime": 143.03333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "あったんだなって思って……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk016.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk018.m4a",
+      "text": "…………ふふっ、分かってる、冗談よ\n素直に受け止めておくね",
+      "startTime": 149.83333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "何を言ってるんですか……サニピのお姉さん役として",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk016.m4a"
-    },
-    {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "みんなを支えてくれている……欠かせない存在です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh007.m4a"
-    },
-    {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "ちょっと……その言い方だと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh007.m4a"
-    },
-    {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "私が歳だって聞こえるんだけど……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk017.m4a"
-    },
-    {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "…………ふふっ、分かってる、冗談よ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk018.m4a"
-    },
-    {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "素直に受け止めておくね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk018.m4a"
-    },
-    {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk019.m4a",
       "text": "……ありがとう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk019.m4a"
+      "startTime": 152.63333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "……ねえ見て",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk020.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_coast-00-night.webp",
+      "bgName": "3d_coast_night"
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "星、すごいよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk020.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk020.m4a",
+      "text": "……ねえ見て\n星、すごいよ",
+      "startTime": 157.83333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ああ……本当ですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk020.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh008.m4a",
+      "text": "ああ……本当ですね\n東京じゃ、こんなには見えませんよね",
+      "startTime": 163.33333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "東京じゃ、こんなには見えませんよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk021.m4a",
+      "text": "うん……でも、より明るい星だけは\nどこでも輝いて見える……まるでアイドルみたい",
+      "startTime": 169.96666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "うん……でも、より明るい星だけは",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh008.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh009.m4a",
+      "text": "一等星でしたっけ\n確かに、一握りだけの厳しい世界ですね",
+      "startTime": 178.36666666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "どこでも輝いて見える……まるでアイドルみたい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk021.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk022.m4a",
+      "text": "うん……星も、アイドルも\n一握りしか輝き続けることはできない",
+      "startTime": 185.43333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "一等星でしたっけ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk021.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk023.m4a",
+      "text": "でもね、不思議なんだけど……\nさっき褒められたから、かな？",
+      "startTime": 191.1,
+      "sfxList": []
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "確かに、一握りだけの厳しい世界ですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh009.m4a"
-    },
-    {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "うん……星も、アイドルも",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh009.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "一握りしか輝き続けることはできない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk022.m4a"
-    },
-    {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "でもね、不思議なんだけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk022.m4a"
-    },
-    {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "さっき褒められたから、かな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk023.m4a"
-    },
-    {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk024.m4a",
       "text": "今なら私……もっと輝けるって思う",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk023.m4a"
+      "startTime": 193.7,
+      "sfxList": []
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "この星空みたいに沢山のアイドルがいる中で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk024.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk025.m4a",
+      "text": "この星空みたいに沢山のアイドルがいる中で\nその一握りの一等星に……なれるかもしれない、って",
+      "startTime": 201.43333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "その一握りの一等星に……なれるかもしれない、って",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk025.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh010.m4a",
+      "text": "そうですね……なれますよ\nなっていきましょう……なさせてみせます",
+      "startTime": 209.56666666666666,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "そうですね……なれますよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk025.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk026.m4a",
+      "text": "うん……でも、ふふっ……\nなさせてみせる、って、ちょっと日本語変じゃない？",
+      "startTime": 216.53333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "なっていきましょう……なさせてみせます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh010.m4a"
-    },
-    {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "うん……でも、ふふっ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh010.m4a"
-    },
-    {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "なさせてみせる、って、ちょっと日本語変じゃない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk026.m4a"
-    },
-    {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk027.m4a",
       "text": "もう……本当に大丈夫かなぁ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk026.m4a"
+      "startTime": 220.8,
+      "sfxList": []
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "大丈夫です",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk027.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh011.m4a",
+      "text": "大丈夫です\n今日まで一緒にやってきた俺を、信じて下さい",
+      "startTime": 226.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "今日まで一緒にやってきた俺を、信じて下さい",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh011.m4a"
+      "type": "dialogue",
+      "speakerCode": "hrk",
+      "speakerName": "佐伯遙子",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk028.m4a",
+      "text": "うん……分かった。約束だよ\n私も頑張るから",
+      "startTime": 234.33333333333334,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "うん……分かった。約束だよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk028.m4a"
-    },
-    {
-      "id": "msg_75",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "hrk",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-haruko.png",
-        "name": "佐伯遙子"
-      },
-      "text": "私も頑張るから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk028.m4a"
-    },
-    {
-      "id": "msg_76",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（そう言って、遙子さんは柔らかい笑みを浮かべた）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-hrk028.m4a"
-    },
-    {
-      "id": "msg_77",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "（こんな一面をもっとファンに知ってもらいたいな）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh012.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_hrk_01_01/sud_vo_adv_card_hrk_01_01-koh012.m4a",
+      "text": "（そう言って、遙子さんは柔らかい笑みを浮かべた）\n（こんな一面をもっとファンに知ってもらいたいな）",
+      "startTime": 240.6,
+      "sfxList": []
     }
   ]
 }

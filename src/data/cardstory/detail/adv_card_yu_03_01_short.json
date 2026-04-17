@@ -1,148 +1,103 @@
 {
   "id": "adv_card_yu_03_01_short",
-  "groupId": "card_yu_03",
-  "name": "鈴村優 1話 ライブの後は…？ (Short)",
-  "background": null,
-  "details": [
+  "title": "鈴村優 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_lesson-01-noon.webp",
+      "bgName": "3d_lesson_noon"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――クリスマスイブ前日",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_door-open-01.m4a",
+          "delay": 1500,
+          "startTime": 1.5
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+          "delay": 1700,
+          "startTime": 1.7
+        }
+      ]
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "みんな、急で悪いんだけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh001.m4a",
+      "text": "みんな、急で悪いんだけど\nライブの衣装で相談が――あれ？",
+      "startTime": 4.6,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-01.m4a",
+          "delay": 3381.6778977000004,
+          "startTime": 7.9816778977
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "ライブの衣装で相談が――あれ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh001.m4a"
-    },
-    {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu001.m4a",
       "text": "あっ、{user}さん、こんにちは～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu001.m4a"
+      "startTime": 8.7150112311,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu002.m4a",
       "text": "瑠依ちゃんとすみれちゃんなら、今外出してますわ～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu002.m4a"
+      "startTime": 12.657528305,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "あ、そうや",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu003.m4a"
+      "type": "dialogue",
+      "speakerCode": "yu",
+      "speakerName": "鈴村優",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu003.m4a",
+      "text": "あ、そうや\nぶぶ漬けでも食べながらお待ちになります？",
+      "startTime": 18.6666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yu",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-yu.png",
-        "name": "鈴村優"
-      },
-      "text": "ぶぶ漬けでも食べながらお待ちになります？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu003.m4a"
-    },
-    {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh002.m4a",
       "text": "ぶぶ漬けって……え？　……え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-yu003.m4a"
+      "startTime": 21.8,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "確か京都の人がお客を追い返す時の常套句だったよな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh002.m4a"
-    },
-    {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "……鈴村さん、もしかして怒ってる？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yu_03_01_short/sud_vo_adv_card_yu_03_01-koh003.m4a",
+      "text": "確か京都の人がお客を追い返す時の常套句だったよな？\n……鈴村さん、もしかして怒ってる？",
+      "startTime": 31.2333333333,
+      "sfxList": []
     }
   ]
 }

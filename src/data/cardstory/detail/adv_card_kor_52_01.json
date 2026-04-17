@@ -1,1044 +1,634 @@
 {
   "id": "adv_card_kor_52_01",
-  "groupId": "card_kor_52",
-  "name": "fran 1話 慰安旅行in沖縄",
-  "background": null,
-  "details": [
+  "title": "fran",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "橋本さんの提案で、星見プロからみんなに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "誕生日プレゼントとして慰安旅行を計画したんだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "旅行先は俺の方で考えようと思っているけれど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tropical-01.m4a"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "もし、希望があったら受け付けるよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh002.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "グループは誕生日が近い人達で組ませてもらったが……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh003.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "日頃の疲れを存分に癒して来てくれ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh003.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh001.m4a",
+      "text": "橋本さんの提案で、星見プロからみんなに\n誕生日プレゼントとして慰安旅行を計画したんだ",
+      "startTime": 3.9333333333,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh002.m4a",
+      "text": "旅行先は俺の方で考えようと思っているけれど\nもし、希望があったら受け付けるよ",
+      "startTime": 11.3333333333,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-koh003.m4a",
+      "text": "グループは誕生日が近い人達で組ませてもらったが……\n日頃の疲れを存分に癒して来てくれ！",
+      "startTime": 17.8,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs001.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs001.m4a"
+      "startTime": 20.6040805817,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi001.m4a",
       "text": "え？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs001.m4a"
+      "startTime": 21.2976602852,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio001.m4a",
       "text": "ええ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi001.m4a"
+      "startTime": 22.1040758132,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor001.m4a",
       "text": "はあ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio001.m4a"
+      "startTime": 23.037408765,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei001.m4a",
       "text": "わーい！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor001.m4a"
+      "startTime": 24.070742607,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――星見プロ誕生日慰安旅行in沖縄",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 27.1707422891,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_coast-01.m4a",
+          "delay": 1833.3388647999982,
+          "startTime": 29.0040811539
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-coast-single-01.m4a",
+          "delay": 2133.335685799999,
+          "startTime": 29.3040779749
+        }
+      ]
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "わーい、海だー！　ねーねー早くみんなで遊びに",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "行こうよ！　あ、見て見て！　あっちに屋台も出てる！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei002.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei002.m4a",
+      "text": "わーい、海だー！　ねーねー早くみんなで遊びに\n行こうよ！　あ、見て見て！　あっちに屋台も出てる！",
+      "startTime": 34.8374113082,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
+          "delay": 5202.384456100006,
+          "startTime": 40.0397957643
+        }
+      ]
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "あ、芽衣ちゃん！　{user}さんが",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "チェックイン終わるまでもう少しここで待ってよ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs002.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs002.m4a",
+      "text": "あ、芽衣ちゃん！　{user}さんが\nチェックイン終わるまでもう少しここで待ってよ？",
+      "startTime": 42.7707478206,
+      "sfxList": []
     },
     {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "まさか{user}さんも付いてくるなんてね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_18",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "てっきり私達だけで行くのかと思ってたわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio002.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio002.m4a",
+      "text": "まさか{user}さんも付いてくるなんてね\nてっきり私達だけで行くのかと思ってたわ",
+      "startTime": 51.3040811539,
+      "sfxList": []
     },
     {
-      "id": "msg_19",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "私達の誕生日は口実で、単に彼が",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_20",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "休みたかっただけなんじゃない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor002.m4a",
+      "text": "私達の誕生日は口実で、単に彼が\n休みたかっただけなんじゃない？",
+      "startTime": 58.9040811539,
+      "sfxList": []
     },
     {
-      "id": "msg_21",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "芽衣は{user}さんも一緒に来てくれて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_22",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "嬉しいけどなー。人数多い方が楽しいもん！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei003.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei003.m4a",
+      "text": "芽衣は{user}さんも一緒に来てくれて\n嬉しいけどなー。人数多い方が楽しいもん！",
+      "startTime": 63.9374144872,
+      "sfxList": []
     },
     {
-      "id": "msg_23",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "本当はさとみさんが付いてくるはずだったんですけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei003.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs003.m4a",
+      "text": "本当はさとみさんが付いてくるはずだったんですけど\n楽しみにし過ぎて前日に熱を出しちゃったらしくて……",
+      "startTime": 72.4707478206,
+      "sfxList": []
     },
     {
-      "id": "msg_24",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "楽しみにし過ぎて前日に熱を出しちゃったらしくて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_25",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "可哀そうだけど、なんだかさとみらしいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs003.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi002.m4a",
+      "text": "可哀そうだけど、なんだかさとみらしいね\n次の機会があれば一緒に来られるといいな",
+      "startTime": 81.3040811539,
+      "sfxList": []
     },
     {
-      "id": "msg_26",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "次の機会があれば一緒に来られるといいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_27",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "はぁ……次なんてないわよ。なんで毎年あなた達と",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor003.m4a",
+      "text": "はぁ……次なんてないわよ。なんで毎年あなた達と\n旅行になんて行かなきゃいけないのよ",
+      "startTime": 89.9374144872,
+      "sfxList": []
     },
     {
-      "id": "msg_28",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "旅行になんて行かなきゃいけないのよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_29",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "そんなこと言ってるけど{user}君に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi003.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi003.m4a",
+      "text": "そんなこと言ってるけど{user}君に\n「旅行先は沖縄がいい」って言ったのは君じゃないか",
+      "startTime": 95.970745786,
+      "sfxList": []
     },
     {
-      "id": "msg_30",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "「旅行先は沖縄がいい」って言ったのは君じゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor004.m4a",
+      "text": "どーせ断ったって強制的に参加させられるんだから\n自分の希望を言うくらい構わないでしょ？",
+      "startTime": 103.770745786,
+      "sfxList": []
     },
     {
-      "id": "msg_31",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "どーせ断ったって強制的に参加させられるんだから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_32",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "自分の希望を言うくらい構わないでしょ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio003.m4a",
+      "text": "うちの事務所が強制参加させることはないと思うわよ\n行きたくないなら欠席でも良かったんじゃない？",
+      "startTime": 111.070745786,
+      "sfxList": []
     },
     {
-      "id": "msg_33",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "うちの事務所が強制参加させることはないと思うわよ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_34",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "行きたくないなら欠席でも良かったんじゃない？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor005.m4a",
+      "text": "ちょ、うるさいわね！　福利厚生を受けないと損だと\n思っただけよ！　以上！",
+      "startTime": 118.0040775935,
+      "sfxList": []
     },
     {
-      "id": "msg_35",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "ちょ、うるさいわね！　福利厚生を受けないと損だと",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_36",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "思っただけよ！　以上！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs004.m4a",
+      "text": "franさん……飛行機の隣の席で\n凄く楽しそうに沖縄の観光雑誌を見てたような～……？",
+      "startTime": 124.5040775935,
+      "sfxList": []
     },
     {
-      "id": "msg_37",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "franさん……飛行機の隣の席で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor005.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei004.m4a",
+      "text": "昨日、kanaちゃんのSNSでも「浮足立ちの\nfranちゃん」って写真付きの投稿見たような……",
+      "startTime": 133.8040857315,
+      "sfxList": []
     },
     {
-      "id": "msg_38",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "凄く楽しそうに沖縄の観光雑誌を見てたような～……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_39",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "昨日、kanaちゃんのSNSでも「浮足立ちの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs004.m4a"
-    },
-    {
-      "id": "msg_40",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "franちゃん」って写真付きの投稿見たような……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei004.m4a"
-    },
-    {
-      "id": "msg_41",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi004.m4a",
       "text": "なんだ、franにも可愛いところがあるじゃないか",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei004.m4a"
+      "startTime": 138.0707396188,
+      "sfxList": []
     },
     {
-      "id": "msg_42",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "あーもう！　別にいいでしょ！　あんた達はあんた達で",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_43",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "楽しみなさい！　私も一人で勝手に楽しむから。じゃあ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor006.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor006.m4a",
+      "text": "あーもう！　別にいいでしょ！　あんた達はあんた達で\n楽しみなさい！　私も一人で勝手に楽しむから。じゃあ",
+      "startTime": 146.0040806453,
+      "sfxList": []
     },
     {
-      "id": "msg_44",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "えぇー！　franちゃんだけ別行動するの……？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_45",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "せっかくみんなで来たんだからみんなで遊ぼうよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_46",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "一応会社のお金で来てるんだし。私達と一緒に",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei005.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei005.m4a",
+      "text": "えぇー！　franちゃんだけ別行動するの……？\nせっかくみんなで来たんだからみんなで遊ぼうよ！",
+      "startTime": 154.3374190648,
+      "sfxList": []
     },
     {
-      "id": "msg_47",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "居たら色々と経費で落ちるかもしれないわね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_48",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio004.m4a",
+      "text": "一応会社のお金で来てるんだし。私達と一緒に\n居たら色々と経費で落ちるかもしれないわね",
+      "startTime": 162.3707523982,
+      "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei006.m4a",
       "text": "それってタダってこと！？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei006.m4a"
+      "startTime": 166.0707548776,
+      "sfxList": []
     },
     {
-      "id": "msg_49",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "タダとは少し違うけど……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_50",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "会社のお金で遊べるってことだよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs005.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs005.m4a",
+      "text": "タダとは少し違うけど……\n会社のお金で遊べるってことだよ！",
+      "startTime": 171.5040857315,
+      "sfxList": []
     },
     {
-      "id": "msg_51",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "朝早かったし、まだご飯も食べてなかったよね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_52",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
-      "text": "確か{user}君が高級ランチの予約を……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi005.m4a"
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi005.m4a",
+      "text": "朝早かったし、まだご飯も食べてなかったよね\n確か{user}君が高級ランチの予約を……",
+      "startTime": 179.1040826797,
+      "sfxList": []
     },
     {
-      "id": "msg_53",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "その後はさとみさんが予約してくれていた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi005.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio005.m4a",
+      "text": "その後はさとみさんが予約してくれていた\n観光ツアーだったかしら？",
+      "startTime": 185.9374292374,
+      "sfxList": []
     },
     {
-      "id": "msg_54",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "観光ツアーだったかしら？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio005.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_55",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "はい！　金運とか仕事運が上がる",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs006.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs006.m4a",
+      "text": "はい！　金運とか仕事運が上がる\nパワースポットも行くらしいですよ！",
+      "startTime": 190.9707625707,
+      "sfxList": []
     },
     {
-      "id": "msg_56",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "パワースポットも行くらしいですよ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_57",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "……金運が……上がる……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor007.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor007.m4a",
+      "text": "……金運が……上がる……\n急ぎの用事はないしとりあえずお昼までは一緒にいるわ",
+      "startTime": 199.1040898005,
+      "sfxList": []
     },
     {
-      "id": "msg_58",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "急ぎの用事はないしとりあえずお昼までは一緒にいるわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-kor007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_59",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "やったー！　これでみんなで沢山思い出が作れるね！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei007.m4a"
+      "type": "dialogue",
+      "speakerCode": "mei",
+      "speakerName": "早坂芽衣",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei007.m4a",
+      "text": "やったー！　これでみんなで沢山思い出が作れるね！\n芽衣、観光の後は海で遊びたいな～",
+      "startTime": 209.5707564671,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-coast-single-01.m4a",
+          "delay": 7069.03924949998,
+          "startTime": 216.6397957166
+        }
+      ]
     },
     {
-      "id": "msg_60",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "mei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-mei.png",
-        "name": "早坂芽衣"
-      },
-      "text": "芽衣、観光の後は海で遊びたいな～",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei007.m4a"
-    },
-    {
-      "id": "msg_61",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "aoi",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
-        "name": "井川葵"
-      },
+      "type": "dialogue",
+      "speakerCode": "aoi",
+      "speakerName": "井川葵",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-aoi.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-aoi006.m4a",
       "text": "いいね。僕はサーフィンもやってみたいな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-mei007.m4a"
+      "startTime": 213.2040953317,
+      "sfxList": []
     },
     {
-      "id": "msg_62",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "あ、{user}さんが戻って来た！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs007.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_63",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "ngs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-        "name": "伊吹渚"
-      },
-      "text": "チェックイン終わったみたいですね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs007.m4a"
+      "type": "dialogue",
+      "speakerCode": "ngs",
+      "speakerName": "伊吹渚",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-ngs007.m4a",
+      "text": "あ、{user}さんが戻って来た！\nチェックイン終わったみたいですね",
+      "startTime": 220.0040887833,
+      "sfxList": []
     },
     {
-      "id": "msg_64",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "事務所がせっかく用意してくれたんだし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawabeach-00-noon.webp",
+      "bgName": "okinawabeach-00-noon"
     },
     {
-      "id": "msg_65",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rio",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-        "name": "神崎莉央"
-      },
-      "text": "一泊二日の沖縄旅行、みんなで存分に楽しみましょう！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rio",
+      "speakerName": "神崎莉央",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_event_2407_02_01-rio006.m4a",
+      "text": "事務所がせっかく用意してくれたんだし\n一泊二日の沖縄旅行、みんなで存分に楽しみましょう！",
+      "startTime": 225.4040887833,
+      "sfxList": []
     },
     {
-      "id": "msg_66",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――莉央と葵とfranの部屋",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 231.0055558521,
+      "sfxList": []
     },
     {
-      "id": "msg_67",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "ふわぁ……あー、眠っ。って、もう昼過ぎじゃない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_68",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "まったく、芽衣が夜中に部屋に押しかけて来たせいね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_69",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "……はぁ。お子様の相手は疲れるわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor002.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor001.m4a",
+      "text": "ふわぁ……あー、眠っ。って、もう昼過ぎじゃない\nまったく、芽衣が夜中に部屋に押しかけて来たせいね",
+      "startTime": 241.9,
+      "sfxList": []
     },
     {
-      "id": "msg_70",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "莉央はまあ、少しはマシだから助かったけど",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_71",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "今日こそ、一人で自由に観光してやるんだから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
     },
     {
-      "id": "msg_72",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "でなきゃ、なんのために沖縄に来たんだか分からないし",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor002.m4a",
+      "text": "……はぁ。お子様の相手は疲れるわ\n莉央はまあ、少しはマシだから助かったけど",
+      "startTime": 252.2,
+      "sfxList": []
     },
     {
-      "id": "msg_73",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "でも、きっとどこも観光地価格なのよねぇ……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor003.m4a"
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor003.m4a",
+      "text": "今日こそ、一人で自由に観光してやるんだから\nでなきゃ、なんのために沖縄に来たんだか分からないし",
+      "startTime": 260.3333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_74",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "kor",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
-        "name": "fran"
-      },
-      "text": "……あ、そうだわ。ふふっ、いいこと思いついた",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_okinawahotel-00-noon.webp",
+      "bgName": "okinawahotel-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "kor",
+      "speakerName": "fran",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-fran.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_kor_52_01/sud_vo_adv_card_kor_52_01-kor004.m4a",
+      "text": "でも、きっとどこも観光地価格なのよねぇ……\n……あ、そうだわ。ふふっ、いいこと思いついた",
+      "startTime": 269.1,
+      "sfxList": []
     }
   ]
 }

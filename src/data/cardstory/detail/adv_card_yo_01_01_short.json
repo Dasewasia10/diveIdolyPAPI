@@ -1,232 +1,153 @@
 {
   "id": "adv_card_yo_01_01_short",
-  "groupId": "card_yo_01",
-  "name": "渡辺曜 1話 曜ちゃんのおうちに (Short)",
-  "background": null,
-  "details": [
+  "title": "渡辺曜 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tochiman-00-noon.webp",
+      "bgName": "tochiman-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "――サニーピースのライブに特別出演すると",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 0,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "system",
-        "icon": null,
-        "name": "System"
-      },
+      "type": "dialogue",
+      "speakerCode": null,
+      "speakerName": "",
+      "iconUrl": null,
+      "voiceUrl": null,
       "text": "決まった数週間後",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": null
+      "startTime": 1.5666666825,
+      "sfxList": []
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yo",
-        "icon": null,
-        "name": "渡辺曜"
-      },
-      "text": "ふ～、千歌ちゃんと梨子ちゃんと曲作りしてると",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo001.m4a"
+      "type": "dialogue",
+      "speakerCode": "yo",
+      "speakerName": "渡辺曜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yo.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo001.m4a",
+      "text": "ふ～、千歌ちゃんと梨子ちゃんと曲作りしてると\nあっという間に時間が経っちゃうなー",
+      "startTime": 7.4999999881,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-call-01.m4a",
+          "delay": 5666.6666667,
+          "startTime": 13.1666666548
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-02.m4a",
+          "delay": 9266.6666786,
+          "startTime": 16.7666666667
+        }
+      ]
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yo",
-        "icon": null,
-        "name": "渡辺曜"
-      },
-      "text": "あっという間に時間が経っちゃうなー",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo001.m4a"
+      "type": "dialogue",
+      "speakerCode": "yo",
+      "speakerName": "渡辺曜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yo.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo002.m4a",
+      "text": "バスが来るまでもう少しかな……あれ？　電話だ\n誰だろ……って、千紗ちゃん？",
+      "startTime": 16.2666666548,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yo",
-        "icon": null,
-        "name": "渡辺曜"
-      },
-      "text": "バスが来るまでもう少しかな……あれ？　電話だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tochiman-00-noon.webp",
+      "bgName": "tochiman-00-noon"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yo",
-        "icon": null,
-        "name": "渡辺曜"
-      },
-      "text": "誰だろ……って、千紗ちゃん？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tochiman-00-noon.webp",
+      "bgName": "tochiman-00-noon"
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "yo",
-        "icon": null,
-        "name": "渡辺曜"
-      },
+      "type": "dialogue",
+      "speakerCode": "yo",
+      "speakerName": "渡辺曜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-yo.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo003.m4a",
       "text": "もしもーし？　千紗ちゃん、どうしたの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo002.m4a"
+      "startTime": 20.1000025313,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "もしもし、曜ちゃん？　急にごめんね",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-yo003.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs001.m4a",
+      "text": "もしもし、曜ちゃん？　急にごめんね\nえっと……今度、遊びに行ってもいいかな",
+      "startTime": 28.1000035485,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_phone-tap-01.m4a",
+          "delay": 13719.9923983,
+          "startTime": 41.8199959468
+        }
+      ]
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "えっと……今度、遊びに行ってもいいかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "3d_way_night"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "……うん、うん、ありがとう",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs002.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs002.m4a",
+      "text": "……うん、うん、ありがとう\nそれじゃあよろしくね……",
+      "startTime": 38.9333339571,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "それじゃあよろしくね……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs002.m4a"
-    },
-    {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs003.m4a",
       "text": "ふぅ……なんとかバレずに約束出来た……のかな",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs003.m4a"
+      "startTime": 43.6999973178,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "（Aqoursが手作りしてる衣装）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs004.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs004.m4a",
+      "text": "（Aqoursが手作りしてる衣装）\n（とっても素敵だった）",
+      "startTime": 52.8560145259,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "（とっても素敵だった）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs004.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "（せっかく特別ゲストとして三人に来てもらうんだから）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs005.m4a"
-    },
-    {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "chs",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-        "name": "白石千紗"
-      },
-      "text": "（Aqoursとお揃いの衣装を着てみたい）",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs005.m4a"
+      "type": "dialogue",
+      "speakerCode": "chs",
+      "speakerName": "白石千紗",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_yo_01_01_short/sud_vo_adv_card_yo_01_01-chs005.m4a",
+      "text": "（せっかく特別ゲストとして三人に来てもらうんだから）\n（Aqoursとお揃いの衣装を着てみたい）",
+      "startTime": 60.0666680534,
+      "sfxList": []
     }
   ]
 }

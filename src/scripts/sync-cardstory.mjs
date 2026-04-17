@@ -10,6 +10,8 @@ const __dirname = path.dirname(__filename);
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/cardStoryTxt`;
 const R2_VOICE_URL = `${R2_DOMAIN}/cardStoryVoice`;
+const R2_BG_URL = `${R2_DOMAIN}/storyBackground`; // Ditambahkan untuk VN
+const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`; // Ditambahkan untuk VN
 
 const OUTPUT_DIR = path.join(__dirname, "../data/cardstory");
 const DETAIL_DIR = path.join(OUTPUT_DIR, "detail");
@@ -17,7 +19,6 @@ const DETAIL_DIR = path.join(OUTPUT_DIR, "detail");
 const FOLDER_LIST_PATH = path.join(__dirname, "../data/card_folderList.txt");
 const CARD_SOURCES_PATH = path.join(__dirname, "../data/card/cardSources.json");
 
-// URL Master DB untuk mengambil Story.json
 const BASE_URL =
   "https://raw.githubusercontent.com/MalitsPlus/ipr-master-diff/main";
 
@@ -100,39 +101,187 @@ const extractMessageText = (line) => {
   const nextAttrRegex =
     /\s+(name|voice|clip|hide|actorId|window|thumbnial|thumbnail)=/i;
   const nextMatch = rest.match(nextAttrRegex);
-  let content = nextMatch
-    ? rest.substring(0, nextMatch.index)
-    : rest.replace(/\s*\]\s*$/, "");
+  let content = "";
+  if (nextMatch) content = rest.substring(0, nextMatch.index);
+  else content = rest.replace(/\s*\]\s*$/, "");
   return content.trim();
 };
 
-// --- PARSER ---
-const parseLinesToChat = (lines, assetId) => {
-  const details = [];
-  let foundTitle = "Unknown Chapter";
-  let msgCounter = 1;
+const resolveBackgroundSrc = (rawSrc) => {
+  if (!rawSrc) return null;
+  let cleanSrc = rawSrc;
+  if (cleanSrc.includes("env_adv_3d_")) {
+    cleanSrc = cleanSrc.replace("env_adv_3d_", "env_adv_2d_");
+  }
+  cleanSrc = cleanSrc.replace(/-000(-|$)/, "$1");
+  return `${R2_BG_URL}/${cleanSrc}.webp`;
+};
 
-  const rawDialogs = [];
-  const rawVoices = [];
+// --- PARSER (DIADOPSI DARI MAINSTORY) ---
+const parseLines = (lines, assetId) => {
+  const scriptData = [];
+  const backgroundMap = {};
+  let currentDialog = null;
+  let pendingSfx = [];
+  let foundTitle = null;
 
-  for (let line of lines) {
+  const flushBuffer = () => {
+    if (pendingSfx.length > 0) {
+      pendingSfx.forEach((sfxObj) => scriptData.push(sfxObj));
+      pendingSfx = [];
+    }
+    if (currentDialog) {
+      scriptData.push(currentDialog);
+      currentDialog = null;
+    }
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // Menangkap Tittle secara utuh (Fix spasial)
     if (trimmed.startsWith("[title")) {
-      const titleMatch = trimmed.match(/title=([^\]]+)/);
-      if (titleMatch) foundTitle = titleMatch[1].trim();
+      foundTitle = getAttr(trimmed, "title");
+      continue;
+    }
+
+    if (trimmed.startsWith("[backgroundgroup")) {
+      const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
+      let match;
+      while ((match = bgRegex.exec(trimmed)) !== null) {
+        backgroundMap[match[1]] = match[2];
+      }
+      continue;
+    }
+
+    if (
+      trimmed.startsWith("[backgroundsetting") ||
+      trimmed.startsWith("[backgroundtween") ||
+      trimmed.startsWith("[backgroundlayoutgroup")
+    ) {
+      flushBuffer();
+      let bgId = null;
+      let finalSrc = null;
+
+      if (trimmed.startsWith("[backgroundlayoutgroup")) {
+        const layoutMatch = trimmed.match(/backgroundlayout\s+id=([^ \]]+)/);
+        if (layoutMatch) bgId = layoutMatch[1];
+      } else {
+        bgId = getAttr(trimmed, "id");
+      }
+
+      if (bgId && backgroundMap[bgId]) {
+        finalSrc = resolveBackgroundSrc(backgroundMap[bgId]);
+      } else if (bgId) {
+        let roughSrc = `env_adv_2d_${bgId.replace("-000", "")}`;
+        finalSrc = `${R2_BG_URL}/${roughSrc}.webp`;
+      }
+
+      if (finalSrc) {
+        scriptData.push({
+          type: "background",
+          src: finalSrc,
+          bgName: bgId || "unknown_bg",
+        });
+      }
+      continue;
+    }
+
+    if (
+      trimmed.startsWith("[bgmplay") ||
+      (trimmed.startsWith("[bgm ") && !trimmed.startsWith("[bgmstop"))
+    ) {
+      flushBuffer();
+      const bgmId = getAttr(trimmed, "bgm");
+      if (bgmId)
+        scriptData.push({
+          type: "bgm",
+          action: "play",
+          src: `${R2_BGM_URL}/${bgmId}.m4a`,
+        });
+      continue;
+    }
+
+    if (trimmed.startsWith("[bgmstop")) {
+      flushBuffer();
+      scriptData.push({ type: "bgm", action: "stop" });
+      continue;
+    }
+
+    if (trimmed.startsWith("[se")) {
+      const seId = getAttr(trimmed, "se");
+      const seStartTime = getStartTime(trimmed);
+      const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
+
+      if (seId && seSrc) {
+        const sfxItem = { type: "sfx", src: seSrc, startTime: seStartTime };
+        let attached = false;
+
+        if (
+          currentDialog &&
+          currentDialog.startTime !== null &&
+          seStartTime !== null
+        ) {
+          if (seStartTime >= currentDialog.startTime - 0.5) {
+            const delayMs = Math.max(
+              0,
+              (seStartTime - currentDialog.startTime) * 1000,
+            );
+            currentDialog.sfxList.push({
+              src: seSrc,
+              delay: delayMs,
+              startTime: seStartTime,
+            });
+            attached = true;
+          }
+        }
+
+        if (!attached && scriptData.length > 0) {
+          for (let j = scriptData.length - 1; j >= 0; j--) {
+            const lastItem = scriptData[j];
+            if (lastItem.type === "bgm" && lastItem.action === "stop") break;
+            if (lastItem.type === "dialogue") {
+              if (
+                seStartTime !== null &&
+                lastItem.startTime !== null &&
+                seStartTime >= lastItem.startTime - 0.5
+              ) {
+                const delayMs = Math.max(
+                  0,
+                  (seStartTime - lastItem.startTime) * 1000,
+                );
+                if (!lastItem.sfxList) lastItem.sfxList = [];
+                lastItem.sfxList.push({
+                  src: seSrc,
+                  delay: delayMs,
+                  startTime: seStartTime,
+                });
+                attached = true;
+              }
+              break;
+            }
+          }
+        }
+        if (!attached) pendingSfx.push(sfxItem);
+      }
       continue;
     }
 
     if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
+      if (currentDialog) {
+        scriptData.push(currentDialog);
+        currentDialog = null;
+      }
+
       const isNarration = trimmed.startsWith("[narration");
       let inlineText = extractMessageText(trimmed);
+      if (!inlineText) inlineText = getAttr(trimmed, "text");
       if (inlineText) inlineText = inlineText.replace(/\\n/g, "\n");
 
-      let displayName = getAttr(trimmed, "name");
+      let displayName = getAttr(trimmed, "name") || "";
       let speakerCode = getAttr(trimmed, "window");
+      let iconUrl = null;
 
       const thumbRaw =
         getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
@@ -141,75 +290,189 @@ const parseLinesToChat = (lines, assetId) => {
         if (match) speakerCode = match[1];
       }
 
-      if (isNarration) {
-        speakerCode = "system";
-        displayName = "";
-      }
+      if (!speakerCode && !isNarration) speakerCode = "unknown";
+      if (isNarration) speakerCode = null;
+      if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
-      if (!speakerCode) speakerCode = "unknown";
-      speakerCode = speakerCode.toLowerCase();
-
-      let isPlayer = speakerCode === "koh" || displayName === "{user}";
-
-      if (!displayName && SPEAKER_MAP[speakerCode]) {
+      if (!displayName && speakerCode && SPEAKER_MAP[speakerCode])
         displayName = SPEAKER_MAP[speakerCode];
-      }
-
-      let iconUrl = null;
-      if (ICON_MAP[speakerCode]) {
+      if (speakerCode && ICON_MAP[speakerCode])
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[speakerCode]}.png`;
-      }
+      else if (speakerCode && speakerCode !== "unknown" && !isNarration)
+        iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
 
       const startTime = getStartTime(trimmed);
-
-      rawDialogs.push({
-        id: `msg_${msgCounter++}`,
-        speaker: {
-          isPlayer,
-          characterId: speakerCode,
-          icon: iconUrl,
-          name: displayName || "Unknown",
-        },
-        text: inlineText || "...",
-        isChoice: false,
-        stamp: null,
-        image: null,
+      const newDialog = {
+        type: "dialogue",
+        speakerCode,
+        speakerName: displayName,
+        iconUrl,
         voiceUrl: null,
-        _startTime: startTime,
-      });
+        text: inlineText || "",
+        startTime: startTime,
+        sfxList: [],
+      };
+
+      if (pendingSfx.length > 0) {
+        pendingSfx.forEach((sfx) => {
+          if (
+            startTime !== null &&
+            sfx.startTime !== null &&
+            sfx.startTime >= startTime - 0.5
+          ) {
+            const delayMs = Math.max(0, (sfx.startTime - startTime) * 1000);
+            newDialog.sfxList.push({
+              src: sfx.src,
+              delay: delayMs,
+              startTime: sfx.startTime,
+            });
+          } else scriptData.push(sfx);
+        });
+        pendingSfx = [];
+      }
+      currentDialog = newDialog;
+      continue;
     }
 
     if (trimmed.startsWith("[voice")) {
       const voiceFile = getAttr(trimmed, "voice");
+      const actorId = getAttr(trimmed, "actorId");
+      const voiceUrl = voiceFile
+        ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
+        : null;
+
       const vStart = getStartTime(trimmed);
       const vDur = getDuration(trimmed);
+      const vEnd = vStart !== null && vDur !== null ? vStart + vDur : null;
 
-      if (voiceFile && vStart !== null) {
-        rawVoices.push({
-          voiceUrl: `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`,
-          start: vStart,
-          end: vStart + (vDur || 5),
-        });
+      if (voiceUrl && vStart !== null && vEnd !== null) {
+        let matchingDialogs = [];
+        for (let j = 0; j < scriptData.length; j++) {
+          const item = scriptData[j];
+          if (item && item.type === "dialogue" && item.startTime !== null) {
+            if (
+              item.startTime >= vStart - 0.5 &&
+              item.startTime <= vEnd + 0.5
+            ) {
+              matchingDialogs.push({
+                source: "scriptData",
+                index: j,
+                item: item,
+              });
+            }
+          }
+        }
+
+        if (currentDialog && currentDialog.startTime !== null) {
+          if (
+            currentDialog.startTime >= vStart - 0.5 &&
+            currentDialog.startTime <= vEnd + 0.5
+          ) {
+            matchingDialogs.push({
+              source: "currentDialog",
+              index: -1,
+              item: currentDialog,
+            });
+          }
+        }
+
+        if (matchingDialogs.length > 0) {
+          const primaryMatch = matchingDialogs[matchingDialogs.length - 1];
+          const primary = primaryMatch.item;
+          primary.voiceUrl = voiceUrl;
+
+          if (actorId) {
+            const code = actorId.toLowerCase();
+            if (!primary.speakerCode || primary.speakerCode === "unknown") {
+              primary.speakerCode = code;
+              if (!primary.iconUrl && ICON_MAP[code])
+                primary.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
+            }
+          }
+
+          let mergedText = "";
+          let mergedSfx = [];
+          const baseStartTime = matchingDialogs[0].item.startTime;
+
+          for (let k = 0; k < matchingDialogs.length; k++) {
+            const matchObj = matchingDialogs[k];
+            const item = matchObj.item;
+            mergedText += (mergedText ? "\n" : "") + (item.text || "");
+
+            if (item.sfxList && item.sfxList.length > 0) {
+              item.sfxList.forEach((sfx) => {
+                let newDelay =
+                  sfx.startTime !== undefined && baseStartTime !== null
+                    ? Math.max(0, (sfx.startTime - baseStartTime) * 1000)
+                    : sfx.delay;
+                mergedSfx.push({
+                  ...sfx,
+                  delay: newDelay,
+                  startTime: sfx.startTime,
+                });
+              });
+            }
+
+            if (k !== matchingDialogs.length - 1) {
+              if (matchObj.source === "scriptData")
+                scriptData[matchObj.index] = null;
+              else if (matchObj.source === "currentDialog")
+                currentDialog = null;
+            }
+          }
+
+          primary.text = mergedText;
+          primary.sfxList = mergedSfx;
+
+          for (let i = scriptData.length - 1; i >= 0; i--) {
+            if (scriptData[i] === null) scriptData.splice(i, 1);
+          }
+        } else {
+          let target = currentDialog;
+          if (!target && scriptData.length > 0) {
+            for (let j = scriptData.length - 1; j >= 0; j--) {
+              if (scriptData[j] && scriptData[j].type === "dialogue") {
+                target = scriptData[j];
+                break;
+              }
+            }
+          }
+          if (target) target.voiceUrl = voiceUrl;
+        }
+      } else {
+        let target = currentDialog;
+        if (!target && scriptData.length > 0) {
+          for (let j = scriptData.length - 1; j >= 0; j--) {
+            if (scriptData[j] && scriptData[j].type === "dialogue") {
+              target = scriptData[j];
+              break;
+            }
+          }
+        }
+        if (target) target.voiceUrl = voiceUrl;
       }
+      continue;
     }
   }
+  flushBuffer();
+  return { scriptData, title: foundTitle };
+};
 
-  rawDialogs.forEach((dialog) => {
-    if (dialog._startTime !== null) {
-      const matchingVoice = rawVoices.find(
-        (v) =>
-          dialog._startTime >= v.start - 0.5 &&
-          dialog._startTime <= v.end + 0.5,
-      );
-      if (matchingVoice) {
-        dialog.voiceUrl = matchingVoice.voiceUrl;
-      }
-    }
-    delete dialog._startTime;
-    details.push(dialog);
+// --- FETCH HELPER ---
+const fetchData = (url) => {
+  return new Promise((resolve, reject) => {
+    https
+      .get(url, (res) => {
+        if (res.statusCode !== 200) {
+          reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
+          return;
+        }
+        const chunks = [];
+        res.on("data", (chunk) => chunks.push(chunk));
+        res.on("end", () => resolve(Buffer.concat(chunks)));
+      })
+      .on("error", reject);
   });
-
-  return { title: foundTitle, details };
 };
 
 // --- MAIN EXECUTION ---
@@ -217,9 +480,10 @@ const parseLinesToChat = (lines, assetId) => {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   if (!fs.existsSync(DETAIL_DIR)) fs.mkdirSync(DETAIL_DIR, { recursive: true });
 
-  console.log(`Mulai sinkronisasi Card Story ke bentuk Chat...`);
+  console.log(
+    `Mulai sinkronisasi Card Story menggunakan Visual Novel Parser...`,
+  );
 
-  // --- 1. MEMUAT FILE_LIST DARI TXT ---
   let FILE_LIST = [];
   try {
     const listContent = fs.readFileSync(FOLDER_LIST_PATH, "utf-8");
@@ -233,7 +497,22 @@ const parseLinesToChat = (lines, assetId) => {
     process.exit(1);
   }
 
-  // --- 2. MEMUAT DATA KARTU LOKAL (cardSources.json) ---
+  // --- BACA CACHE LAMA ---
+  const INDEX_PATH = path.join(OUTPUT_DIR, "index.json");
+  const cacheMap = {};
+  let cachedFilesCount = 0;
+  if (fs.existsSync(INDEX_PATH)) {
+    const oldIndex = JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8"));
+    oldIndex.forEach((group) => {
+      group.stories.forEach((story) => {
+        cacheMap[story.id] = story;
+      });
+    });
+    console.log(
+      `[CACHE] Ditemukan ${Object.keys(cacheMap).length} cerita di index lama.`,
+    );
+  }
+
   const cardMap = {};
   try {
     const cardSources = JSON.parse(fs.readFileSync(CARD_SOURCES_PATH, "utf-8"));
@@ -242,43 +521,33 @@ const parseLinesToChat = (lines, assetId) => {
         cardMap[card.uniqueId] = card;
       });
     });
-    console.log(
-      `[OK] Memuat ${Object.keys(cardMap).length} data dari cardSources.json`,
-    );
   } catch (err) {
     console.error(`[WARNING] Gagal memuat cardSources.json: ${err.message}`);
   }
 
-  // --- 3. MENGAMBIL Story.json DARI GITHUB UNTUK MAPPING ---
   const assetToCardId = {};
   try {
     console.log(`Mengambil Story.json dari Master Diff...`);
-    const storyRes = await fetch(`${BASE_URL}/Story.json`);
-    const storyData = await storyRes.json();
-
+    const storyData = await (await fetch(`${BASE_URL}/Story.json`)).json();
     storyData.forEach((story) => {
       if (story.id && story.id.startsWith("st-card-")) {
-        // Contoh ID: st-card-ai-05-idol-00-01
         const parts = story.id.split("-");
         if (parts.length >= 6) {
-          const uniqueId = parts.slice(2, 6).join("-"); // Mendapatkan: ai-05-idol-00
-          if (story.advAssetIds && story.advAssetIds.length > 0) {
+          const uniqueId = parts.slice(2, 6).join("-");
+          if (story.advAssetIds) {
             story.advAssetIds.forEach((asset) => {
-              assetToCardId[asset] = uniqueId; // card_ai_01_01 -> ai-05-idol-00
+              assetToCardId[asset] = uniqueId;
             });
           }
         }
       }
     });
-    console.log(`[OK] Berhasil membuat mapping dari Story.json`);
   } catch (err) {
     console.error(`[ERROR] Gagal memuat Story.json dari GitHub:`, err.message);
   }
 
-  // Struktur penampung untuk index.json
   const groupsMap = {};
 
-  // --- 4. PROSES PARSING ---
   for (let fileName of FILE_LIST) {
     const assetId = fileName.replace(".txt", "");
     const parts = assetId.split("_");
@@ -287,32 +556,49 @@ const parseLinesToChat = (lines, assetId) => {
     const charCode = parts[2];
     const cardNum = parts[3];
     const groupId = `card_${charCode}_${cardNum}`;
+    const jsonFileName = `${assetId}.json`;
+
+    // --- CEK CACHE ---
+    if (
+      cacheMap[assetId] &&
+      fs.existsSync(path.join(DETAIL_DIR, jsonFileName))
+    ) {
+      // Pastikan grupnya ada
+      if (!groupsMap[groupId]) {
+        groupsMap[groupId] = {
+          id: groupId,
+          title: `[Story] ${SPEAKER_MAP[charCode] || charCode.toUpperCase()} Card ${cardNum}`,
+          groupIcon: `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[charCode] || charCode}.png`,
+          stories: [],
+        };
+      }
+
+      groupsMap[groupId].stories.push(cacheMap[assetId]);
+      cachedFilesCount++;
+      continue;
+    }
 
     try {
       const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
-
-      if (!response.ok) {
-        throw new Error(`HTTP Error ${response.status}`);
-      }
-
+      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
       const rawContent = await response.text();
 
-      const { title, details } = parseLinesToChat(
+      // PARSING MENGGUNAKAN MESIN VN
+      const { scriptData, title } = parseLines(
         rawContent.replace(/\r\n/g, "\n").split("\n"),
         assetId,
       );
 
-      // Deteksi versi short
       const isShort = assetId.endsWith("_short");
-      const displayTitle = isShort ? `${title} (Short)` : title;
+      const displayTitle = isShort
+        ? `${title || "Story"} (Short)`
+        : title || "Story";
 
-      // Buat file detail chat
+      // SIMPAN FILE DETAIL DENGAN FORMAT SCRIPT VN { id, title, script: [] }
       const detailData = {
         id: assetId,
-        groupId: groupId,
-        name: displayTitle,
-        background: null,
-        details: details,
+        title: displayTitle,
+        script: scriptData,
       };
 
       fs.writeFileSync(
@@ -320,9 +606,8 @@ const parseLinesToChat = (lines, assetId) => {
         JSON.stringify(detailData, null, 2),
       );
 
-      // Kumpulkan data ke index
+      // INDEXING
       if (!groupsMap[groupId]) {
-        // Proses Mapping ID Kartu dari nama txt (contoh: adv_card_ai_01_01 -> card_ai_01_01)
         const baseAssetId = assetId.replace(/^adv_/, "").replace(/_short$/, "");
         const matchedUniqueId = assetToCardId[baseAssetId];
 
@@ -330,36 +615,26 @@ const parseLinesToChat = (lines, assetId) => {
         let groupIcon = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[charCode] || charCode}.png`;
 
         if (matchedUniqueId && cardMap[matchedUniqueId]) {
-          // --- BERHASIL TERSAMBUNG KE DATABASE KARTU ---
-          const cardInfo = cardMap[matchedUniqueId];
-          groupTitle = cardInfo.title.japanese; // Ganti ke .indo jika ingin memakai bahasa Indonesia
-          groupIcon = cardInfo.images.icon; // Memakai ikon kartu!
-        } else {
-          // Fallback ke pemotongan spasi jika mapping gagal (misal file baru)
-          if (title) {
-            const titleMatch = title.match(/^(.*?\s+\d+話)/);
-            if (titleMatch && titleMatch[1]) {
-              groupTitle = titleMatch[1];
-            } else {
-              groupTitle = title;
-            }
-          }
+          groupTitle = cardMap[matchedUniqueId].title.japanese;
+          groupIcon = cardMap[matchedUniqueId].images.icon;
+        } else if (title) {
+          const titleMatch = title.match(/^(.*?\s+\d+話)/);
+          groupTitle = titleMatch && titleMatch[1] ? titleMatch[1] : title;
         }
 
         groupsMap[groupId] = {
           id: groupId,
           title: groupTitle,
           groupIcon: groupIcon,
-          characterIds: [charCode, "koh"],
-          messages: [],
+          stories: [], // Diseragamkan menjadi 'stories'
         };
       }
 
-      groupsMap[groupId].messages.push({
+      groupsMap[groupId].stories.push({
         id: assetId,
         title: displayTitle,
-        type: 0,
-        isShort: isShort, // Untuk sorting nanti
+        fileName: `${assetId}.json`, // Diseragamkan menambahkan fileName
+        isShort: isShort,
       });
 
       console.log(
@@ -370,16 +645,13 @@ const parseLinesToChat = (lines, assetId) => {
     }
   }
 
-  // --- 5. SORTING PESAN DI DALAM GRUP (Short ke Bawah) ---
   for (const groupId in groupsMap) {
-    groupsMap[groupId].messages.sort((a, b) => {
+    groupsMap[groupId].stories.sort((a, b) => {
       if (a.isShort && !b.isShort) return 1;
       if (!a.isShort && b.isShort) return -1;
       return a.id.localeCompare(b.id);
     });
-
-    // Bersihkan metadata internal
-    groupsMap[groupId].messages.forEach((msg) => delete msg.isShort);
+    groupsMap[groupId].stories.forEach((msg) => delete msg.isShort);
   }
 
   const indexArray = Object.values(groupsMap).sort((a, b) =>
@@ -391,5 +663,7 @@ const parseLinesToChat = (lines, assetId) => {
     JSON.stringify(indexArray, null, 2),
   );
 
-  console.log(`\nSelesai! Index dan Detail berhasil dibuat di: ${OUTPUT_DIR}`);
+  console.log(
+    `\nSelesai! Card Story telah disinkronkan ke dalam format Visual Novel!`,
+  );
 })();

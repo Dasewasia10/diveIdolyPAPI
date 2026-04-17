@@ -1,246 +1,141 @@
 {
   "id": "adv_card_rei_09_01_short",
-  "groupId": "card_rei_09",
-  "name": "一ノ瀬怜 1話 恋愛相談があるんですけど (Short)",
-  "background": null,
-  "details": [
+  "title": "一ノ瀬怜 (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "{user}さん",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei001.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
+      "bgName": "env_adv_3d_office-01-000-noon"
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "恋愛相談があるんですけど、聞いてもらえますか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei001.m4a"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyo-01.m4a"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei001.m4a",
+      "text": "{user}さん\n恋愛相談があるんですけど、聞いてもらえますか？",
+      "startTime": 2.4666666667,
+      "sfxList": []
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh001.m4a",
       "text": "恋愛相談？　もちろん、アイドルだからって恋愛しちゃ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei001.m4a"
+      "startTime": 6.7666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": null,
       "text": "いけない訳じゃない。だが、サニピは今大事な時期だ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh001.m4a"
+      "startTime": 11.0666666667,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "恋愛が仕事に悪影響を与えることがあってはいけない",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh001.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh002.m4a",
+      "text": "恋愛が仕事に悪影響を与えることがあってはいけない\nそれは分かるな？",
+      "startTime": 20.2412929376,
+      "sfxList": []
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それは分かるな？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh002.m4a"
-    },
-    {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei003.m4a",
       "text": "真面目な顔で何を言ってるんですか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh002.m4a"
+      "startTime": 22.1000005722,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": null,
       "text": "恋愛してるのは私じゃありません",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei002.m4a"
+      "startTime": 26.2666672389,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": null,
       "text": "相談したいのは私のファンの恋愛についてです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei003.m4a"
+      "startTime": 29.9333339055,
+      "sfxList": []
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh003.m4a",
       "text": "ファン？　どういうことだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei003.m4a"
+      "startTime": 34.2000005722,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "全国ツアー中に、私達がファンの願いを叶える",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei004.m4a",
+      "text": "全国ツアー中に、私達がファンの願いを叶える\nサプライズ企画をすることは知ってますよね？",
+      "startTime": 41.2333330791,
+      "sfxList": []
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "サプライズ企画をすることは知ってますよね？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei004.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei005.m4a",
+      "text": "それで、私も過去にもらったファンレターから\n叶えたい夢や願いが書いてあるものを探したんです",
+      "startTime": 48.4,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "それで、私も過去にもらったファンレターから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei005.m4a"
-    },
-    {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "叶えたい夢や願いが書いてあるものを探したんです",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei005.m4a"
-    },
-    {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh004.m4a",
       "text": "その中に恋愛相談があったのか？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-koh004.m4a"
+      "startTime": 52.1333336513,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "はい……恋愛で悩んでるから",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei006.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "rei",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
-        "name": "一ノ瀬怜"
-      },
-      "text": "私に恋のアドバイスをしてほしいって……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei006.m4a"
+      "type": "dialogue",
+      "speakerCode": "rei",
+      "speakerName": "一ノ瀬怜",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rei.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_rei_09_01_short/sud_vo_adv_card_rei_09_01-rei006.m4a",
+      "text": "はい……恋愛で悩んでるから\n私に恋のアドバイスをしてほしいって……",
+      "startTime": 58.9000015895,
+      "sfxList": []
     }
   ]
 }

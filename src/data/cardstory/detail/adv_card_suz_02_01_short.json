@@ -1,246 +1,162 @@
 {
   "id": "adv_card_suz_02_01_short",
-  "groupId": "card_suz_02",
-  "name": "成宮すず 1話 すず宛ての荷物 (Short)",
-  "background": null,
-  "details": [
+  "title": "成宮すず (Short)",
+  "script": [
     {
-      "id": "msg_1",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh001.m4a",
       "text": "おーい、すず！　ちょっと来てくれないか！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh001.m4a"
+      "startTime": 0.8,
+      "sfxList": []
     },
     {
-      "id": "msg_2",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz001.m4a",
       "text": "大きな声を出して、一体なんですの？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh001.m4a"
+      "startTime": 4.3,
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+          "delay": 0,
+          "startTime": 4.3
+        }
+      ]
     },
     {
-      "id": "msg_3",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "事務所にすず宛ての荷物が届いて……",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
     },
     {
-      "id": "msg_4",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "えっ、すず！？　どうして水着姿なんだ？",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh002.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh002.m4a",
+      "text": "事務所にすず宛ての荷物が届いて……\nえっ、すず！？　どうして水着姿なんだ？",
+      "startTime": 10.633333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_5",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "水着ではありませんわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz002.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
     },
     {
-      "id": "msg_6",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "これは明日の撮影で着る衣装なのですわ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz002.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz002.m4a",
+      "text": "水着ではありませんわ\nこれは明日の撮影で着る衣装なのですわ",
+      "startTime": 16.633333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_7",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
+    },
+    {
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz003.m4a",
       "text": "明日は海に行ってこの格好でMV撮影をしますの",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz003.m4a"
+      "startTime": 20.166666666666668,
+      "sfxList": []
     },
     {
-      "id": "msg_8",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "それは知ってるが、俺が聞きたいのはどうして",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz003.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh003.m4a",
+      "text": "それは知ってるが、俺が聞きたいのはどうして\n明日海で着る衣装を今着てるのかってことだ",
+      "startTime": 28.2,
+      "sfxList": []
     },
     {
-      "id": "msg_9",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "明日海で着る衣装を今着てるのかってことだ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh003.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
     },
     {
-      "id": "msg_10",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "それは……海に行けるのが楽しみ過ぎて",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh003.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz004.m4a",
+      "text": "それは……海に行けるのが楽しみ過ぎて\n居ても立ってもいられなかったからですわ！",
+      "startTime": 35.5,
+      "sfxList": []
     },
     {
-      "id": "msg_11",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "居ても立ってもいられなかったからですわ！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz004.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
     },
     {
-      "id": "msg_12",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz005.m4a",
       "text": "青い海、白い砂浜、照りつける真夏の太陽……！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz004.m4a"
+      "startTime": 38.43333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_13",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "明日は何をして過ごそうかと考えるだけで",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz005.m4a"
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz006.m4a",
+      "text": "明日は何をして過ごそうかと考えるだけで\n胸の高鳴りが止まりませんわ～！",
+      "startTime": 48.13333333333333,
+      "sfxList": []
     },
     {
-      "id": "msg_14",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
-      "text": "胸の高鳴りが止まりませんわ～！",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz006.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyodormcorridor-00-noon.webp",
+      "bgName": "tokyodormcorridor-00-noon"
     },
     {
-      "id": "msg_15",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "明日は撮影をして過ごすに決まってるだろ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz006.m4a"
+      "type": "dialogue",
+      "speakerCode": "koh",
+      "speakerName": "{user}",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh004.m4a",
+      "text": "明日は撮影をして過ごすに決まってるだろ\n遊びに行く訳じゃないんだぞ",
+      "startTime": 54.6,
+      "sfxList": []
     },
     {
-      "id": "msg_16",
-      "speaker": {
-        "isPlayer": true,
-        "characterId": "koh",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-makino.png",
-        "name": "{user}"
-      },
-      "text": "遊びに行く訳じゃないんだぞ",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-koh004.m4a"
-    },
-    {
-      "id": "msg_17",
-      "speaker": {
-        "isPlayer": false,
-        "characterId": "suz",
-        "icon": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
-        "name": "成宮すず"
-      },
+      "type": "dialogue",
+      "speakerCode": "suz",
+      "speakerName": "成宮すず",
+      "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-suzu.png",
+      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz007.m4a",
       "text": "もちろん撮影は完璧にこなしてみせます",
-      "isChoice": false,
-      "stamp": null,
-      "image": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_suz_02_01_short/sud_vo_adv_card_suz_02_01-suz007.m4a"
+      "startTime": 56.9,
+      "sfxList": []
     }
   ]
 }
