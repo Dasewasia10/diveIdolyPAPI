@@ -34,6 +34,8 @@ const STORAGE_DIR = path.join(process.cwd(), "src/data/music");
 const allowedOrigins = [
   "https://polaris.dasewasia.my.id",
   "https://polaris.dasewasia.my.id/",
+  "https://polaristories.dasewasia.my.id",
+  "https://polaristories.dasewasia.my.id/",
   "http://localhost:5173", // [NOTE]: Kept for local development testing
 ];
 
