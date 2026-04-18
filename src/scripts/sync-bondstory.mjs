@@ -521,7 +521,7 @@ const parseLines = (lines, assetId) => {
 
       groupedCharacters[charCode].stories.push({
         id: assetId,
-        title: displayTitle,
+        title: displayTitle + episodeNum,
         epNum: episodeNum, // Untuk sorting
         fileName: jsonFileName,
       });

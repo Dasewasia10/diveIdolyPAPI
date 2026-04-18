@@ -23,7 +23,7 @@ function main() {
 
         // Regex untuk menangkap Tanggal: img_ui_diary_16-06-01.png
         // Group 1: Tahun (16), Group 2: Bulan (06), Group 3: Tanggal (01)
-        const regex = /img_ui_diary_(\d{2})-(\d{2})-(\d{2})\.png/;
+        const regex = /img_ui_diary_(\d{2})-(\d{2})-(\d{2})\.webp/;
 
         files.forEach(file => {
             const match = file.match(regex);
@@ -56,7 +56,7 @@ function main() {
         if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(diaryEntries, null, 2));
-        console.log(`✅ Berhasil generate ${diaryEntries.length} entri diary ke public/data/diaryManifest.json`);
+        console.log(`✅ Berhasil generate ${diaryEntries.length} entri diary ke src/data/diaryMana/diaryMana.json`);
 
     } catch (error) {
         console.error("Error:", error);

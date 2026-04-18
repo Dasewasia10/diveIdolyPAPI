@@ -28,6 +28,14 @@ const model = genAI.getGenerativeModel({
   generationConfig: { responseMimeType: "application/json" },
 });
 
+// Fungsi untuk mengecek apakah sebuah teks mengandung huruf Jepang
+const hasJapaneseCharacters = (text) => {
+  if (!text) return false;
+  // Deteksi Hiragana, Katakana, dan Kanji
+  const jpRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/;
+  return jpRegex.test(text);
+};
+
 // --- MAPPING DASAR ---
 const charIdToName = {
   "char-mna": "Mana",
@@ -359,7 +367,8 @@ ${JSON.stringify(dataPayload)}
 Instructions:
 1. Apply "STRICT SENTENCE PATTERNS" first.
 2. Apply "STRICT GLOSSARY RULES".
-3. Return a JSON Object with keys suffixed with "_id" and "_en".`;
+3. Return a JSON Object with keys suffixed with "_id" and "_en".
+4. If you cannot translate a specific string, return an empty string "". Do not copy the original Japanese text into the English or Indonesian fields under any circumstances.`;
 
       const result = await model.generateContent(prompt);
       const responseText = result.response
@@ -552,24 +561,20 @@ async function main() {
       iconUrl = `${R2_DOMAIN}/iconSkillYell/img_icon_skill-normal_${suffix}.png`;
     }
 
-    // Jika ada cache text, gunakan itu. Jika tidak, proses dengan AI/Regex.
+    // Gunakan operator || agar jika AI gagal/kosong, Regex otomatis mengambil alih tugasnya
     let nameText = cachedText?.name || {
       japanese: raw.name,
-      global: aiRes
-        ? aiRes[`${prefix}_name_en`]
-        : translateWithRegex(raw.name, "en"),
-      indo: aiRes
-        ? aiRes[`${prefix}_name_id`]
-        : translateWithRegex(raw.name, "id"),
+      global: aiRes?.[`${prefix}_name_en`] || "",
+      indo: aiRes?.[`${prefix}_name_id`] || "",
     };
 
     let descText = cachedText?.description || {
       japanese: [raw.desc],
       global: [
-        aiRes ? aiRes[`${prefix}_desc_en`] : translateWithRegex(raw.desc, "en"),
+        aiRes?.[`${prefix}_desc_en`] || translateWithRegex(raw.desc, "en"),
       ],
       indo: [
-        aiRes ? aiRes[`${prefix}_desc_id`] : translateWithRegex(raw.desc, "id"),
+        aiRes?.[`${prefix}_desc_id`] || translateWithRegex(raw.desc, "id"),
       ],
     };
 
@@ -589,18 +594,14 @@ async function main() {
 
     let nameText = cachedText?.name || {
       japanese: raw.name,
-      global: aiRes
-        ? aiRes[`yell_name_en`]
-        : translateWithRegex(raw.name, "en"),
-      indo: aiRes ? aiRes[`yell_name_id`] : translateWithRegex(raw.name, "id"),
+      global: aiRes?.yell_name_en || "",
+      indo: aiRes?.yell_name_id || "",
     };
 
     let descText = cachedText?.description || {
       japanese: raw.desc,
-      global: aiRes
-        ? aiRes[`yell_desc_en`]
-        : translateWithRegex(raw.desc, "en"),
-      indo: aiRes ? aiRes[`yell_desc_id`] : translateWithRegex(raw.desc, "id"),
+      global: aiRes?.yell_desc_en || translateWithRegex(raw.desc, "en"),
+      indo: aiRes?.yell_desc_id || translateWithRegex(raw.desc, "id"),
     };
 
     return {
@@ -673,11 +674,30 @@ async function main() {
     const yellRaw = getRawYellData(card.liveAbilityId, card.activityAbilityId);
 
     // CEK CACHE TEXT TRANSLATION
-    const isTranslated =
-      cachedCard?.title?.indo &&
-      !/[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/.test(
-        cachedCard.title.indo,
-      );
+    let isTranslated = false;
+
+    if (cachedCard && cachedCard.title && cachedCard.description) {
+      const titleIndo = cachedCard.title.indo || "";
+      // Karena description bentuknya array, kita gabungkan jadi string dulu
+      const descIndo = Array.isArray(cachedCard.description.indo)
+        ? cachedCard.description.indo.join(" ")
+        : cachedCard.description.indo || "";
+      const obtainIndo = cachedCard.obtainMessage?.indo || "";
+
+      // Pastikan title dan desc tidak kosong DAN tidak mengandung huruf jepang
+      isTranslated =
+        titleIndo !== "" &&
+        !hasJapaneseCharacters(titleIndo) &&
+        descIndo !== "" &&
+        !hasJapaneseCharacters(descIndo);
+
+      // Cek tambahan untuk obtainMessage jika memang ada
+      if (isTranslated && cachedCard.obtainMessage?.japanese) {
+        if (hasJapaneseCharacters(obtainIndo)) {
+          isTranslated = false; // Gagalkan cache jika obtainMessage bocor huruf Jepang
+        }
+      }
+    }
 
     if (cachedCard && isTranslated) {
       // CACHE HIT: Gabungkan text lama dengan kalkulasi teknis terbaru
@@ -725,26 +745,18 @@ async function main() {
         initialTitle: assetId,
         title: {
           japanese: card.name,
-          global: aiRes?.card_title_en || translateWithRegex(card.name, "en"),
-          indo: aiRes?.card_title_id || translateWithRegex(card.name, "id"),
+          global: aiRes?.card_title_en || "",
+          indo: aiRes?.card_title_id || "",
         },
         description: {
           japanese: [card.description],
-          global: [
-            aiRes?.card_desc_en || translateWithRegex(card.description, "en"),
-          ],
-          indo: [
-            aiRes?.card_desc_id || translateWithRegex(card.description, "id"),
-          ],
+          global: [aiRes?.card_desc_en || ""],
+          indo: [aiRes?.card_desc_id || ""],
         },
         obtainMessage: {
           japanese: card.obtainMessage,
-          global:
-            aiRes?.obtain_message_en ||
-            translateWithRegex(card.obtainMessage, "en"),
-          indo:
-            aiRes?.obtain_message_id ||
-            translateWithRegex(card.obtainMessage, "id"),
+          global: aiRes?.obtain_message_en || "",
+          indo: aiRes?.obtain_message_id || "",
         },
         releaseDate,
         category,

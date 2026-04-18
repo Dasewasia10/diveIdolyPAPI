@@ -9,8 +9,8 @@ const __dirname = path.dirname(__filename);
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/cardStoryTxt`;
 const R2_VOICE_URL = `${R2_DOMAIN}/cardStoryVoice`;
-const R2_BG_URL = `${R2_DOMAIN}/storyBackground`; // Ditambahkan untuk VN
-const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`; // Ditambahkan untuk VN
+const R2_BG_URL = `${R2_DOMAIN}/storyBackground`; 
+const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`; 
 
 const OUTPUT_DIR = path.join(__dirname, "../data/cardstory");
 const DETAIL_DIR = path.join(OUTPUT_DIR, "detail");
@@ -141,7 +141,11 @@ const parseLines = (lines, assetId) => {
     if (!trimmed) continue;
 
     if (trimmed.startsWith("[title")) {
-      foundTitle = getAttr(trimmed, "title");
+      // Menangkap seluruh string untuk judul termasuk jika ada spasi di dalamnya
+      const match = trimmed.match(/title=([^\]]+)/i);
+      if (match) {
+        foundTitle = match[1].trim();
+      }
       continue;
     }
 
@@ -606,15 +610,20 @@ const parseLines = (lines, assetId) => {
 
       // INDEXING
       if (!groupsMap[groupId]) {
-        const baseAssetId = assetId.replace(/^adv_/, "").replace(/_short$/, "");
+        // Hanya membuang '_short' di akhir karena mapping Story.json membutuhkan string utuh 'adv_card_...'
+        const baseAssetId = assetId.replace(/_short$/, "");
         const matchedUniqueId = assetToCardId[baseAssetId];
 
         let groupTitle = `[Story] ${SPEAKER_MAP[charCode] || charCode.toUpperCase()} Card ${cardNum}`;
         let groupIcon = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[charCode] || charCode}.png`;
 
         if (matchedUniqueId && cardMap[matchedUniqueId]) {
-          groupTitle = cardMap[matchedUniqueId].title.japanese;
-          groupIcon = cardMap[matchedUniqueId].images.icon;
+          const cardData = cardMap[matchedUniqueId];
+          groupTitle = cardData.title.japanese;
+          
+          // Memanfaatkan initialTitle atau uniqueId secara langsung untuk base name gambar
+          const uniqueTitle = cardData.initialTitle || cardData.uniqueId;
+          groupIcon = `${R2_DOMAIN}/cardThumb/img_card_thumb_0_${uniqueTitle}.webp`;
         } else if (title) {
           const titleMatch = title.match(/^(.*?\s+\d+話)/);
           groupTitle = titleMatch && titleMatch[1] ? titleMatch[1] : title;
@@ -631,7 +640,7 @@ const parseLines = (lines, assetId) => {
       groupsMap[groupId].stories.push({
         id: assetId,
         title: displayTitle,
-        fileName: `${assetId}.json`, // Diseragamkan menambahkan fileName
+        fileName: `${assetId}.json`, 
         isShort: isShort,
       });
 
