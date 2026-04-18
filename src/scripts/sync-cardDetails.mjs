@@ -649,14 +649,14 @@ async function main() {
     const hasAwk = eIdx !== null;
 
     const images = {
-      icon: `${R2_DOMAIN}/cardThumb/img_card_thumb_${bIdx}_${assetId}.png`,
+      icon: `${R2_DOMAIN}/cardThumb/img_card_thumb_${bIdx}_${assetId}.webp`,
       fullNormal: `${R2_DOMAIN}/cardFull/img_card_full_${bIdx}_${assetId}.webp`,
-      upperNormal: `${R2_DOMAIN}/cardUpper/img_card_upper_${bIdx}_${assetId}.png`,
+      upperNormal: `${R2_DOMAIN}/cardUpper/img_card_upper_${bIdx}_${assetId}.webp`,
       fullEvolved: hasAwk
         ? `${R2_DOMAIN}/cardFull/img_card_full_${eIdx}_${assetId}.webp`
         : null,
       upperEvolved: hasAwk
-        ? `${R2_DOMAIN}/cardUpper/img_card_upper_${eIdx}_${assetId}.png`
+        ? `${R2_DOMAIN}/cardUpper/img_card_upper_${eIdx}_${assetId}.webp`
         : null,
       costume: costumeImageUrl,
     };
