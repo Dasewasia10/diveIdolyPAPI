@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import https from "https";
 import { fileURLToPath } from "url";
 
 // --- KONFIGURASI ---
@@ -163,6 +162,7 @@ const parseLines = (lines, assetId) => {
       flushBuffer();
       let bgId = null;
       let finalSrc = null;
+      const startTime = getStartTime(trimmed);
 
       if (trimmed.startsWith("[backgroundlayoutgroup")) {
         const layoutMatch = trimmed.match(/backgroundlayout\s+id=([^ \]]+)/);
@@ -183,29 +183,31 @@ const parseLines = (lines, assetId) => {
           type: "background",
           src: finalSrc,
           bgName: bgId || "unknown_bg",
+          startTime: startTime,
         });
       }
       continue;
     }
 
-    if (
-      trimmed.startsWith("[bgmplay") ||
-      (trimmed.startsWith("[bgm ") && !trimmed.startsWith("[bgmstop"))
-    ) {
+    if (trimmed.startsWith("[bgmplay")) {
       flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
-      if (bgmId)
+      const startTime = getStartTime(trimmed);
+      if (bgmId) {
         scriptData.push({
           type: "bgm",
           action: "play",
           src: `${R2_BGM_URL}/${bgmId}.m4a`,
+          startTime: startTime,
         });
+      }
       continue;
     }
 
     if (trimmed.startsWith("[bgmstop")) {
       flushBuffer();
-      scriptData.push({ type: "bgm", action: "stop" });
+      const startTime = getStartTime(trimmed);
+      scriptData.push({ type: "bgm", action: "stop", startTime: startTime });
       continue;
     }
 
@@ -455,24 +457,20 @@ const parseLines = (lines, assetId) => {
     }
   }
   flushBuffer();
-  return { scriptData, title: foundTitle };
-};
 
-// --- FETCH HELPER ---
-const fetchData = (url) => {
-  return new Promise((resolve, reject) => {
-    https
-      .get(url, (res) => {
-        if (res.statusCode !== 200) {
-          reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
-          return;
-        }
-        const chunks = [];
-        res.on("data", (chunk) => chunks.push(chunk));
-        res.on("end", () => resolve(Buffer.concat(chunks)));
-      })
-      .on("error", reject);
+  scriptData.sort((a, b) => {
+    const timeA =
+      a.startTime !== undefined && a.startTime !== null
+        ? parseFloat(a.startTime)
+        : 0;
+    const timeB =
+      b.startTime !== undefined && b.startTime !== null
+        ? parseFloat(b.startTime)
+        : 0;
+    return timeA - timeB;
   });
+
+  return { scriptData, title: foundTitle };
 };
 
 // --- MAIN EXECUTION ---

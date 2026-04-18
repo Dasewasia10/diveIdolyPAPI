@@ -29,7 +29,8 @@
     "yn": "^3.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync-all": "node src/scripts/sync-mainstory.mjs && node src/scripts/sync-eventstory.mjs && node src/scripts/sync-lovestory.mjs && node src/scripts/sync-bondstory.mjs && node src/scripts/sync-cardstory.mjs && node src/scripts/sync-extrastory.mjs"
   },
   "keywords": [],
   "author": "",

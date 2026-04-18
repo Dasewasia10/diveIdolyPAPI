@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import https from "https";
 import { fileURLToPath } from "url";
 
 // --- KONFIGURASI ---
@@ -182,11 +181,13 @@ const parseLines = (lines, assetId) => {
     ) {
       flushBuffer();
       const bgId = getAttr(trimmed, "id");
+      const startTime = getStartTime(trimmed);
       if (bgId && backgroundMap[bgId]) {
         scriptData.push({
           type: "background",
           src: `${R2_BG_URL}/${backgroundMap[bgId]}.webp`,
           bgName: bgId,
+          startTime: startTime,
         });
       }
       continue;
@@ -195,11 +196,13 @@ const parseLines = (lines, assetId) => {
     if (trimmed.startsWith("[bgmplay")) {
       flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
+      const startTime = getStartTime(trimmed);
       if (bgmId) {
         scriptData.push({
           type: "bgm",
           action: "play",
           src: `${R2_BGM_URL}/${bgmId}.m4a`,
+          startTime: startTime,
         });
       }
       continue;
@@ -207,7 +210,8 @@ const parseLines = (lines, assetId) => {
 
     if (trimmed.startsWith("[bgmstop")) {
       flushBuffer();
-      scriptData.push({ type: "bgm", action: "stop" });
+      const startTime = getStartTime(trimmed);
+      scriptData.push({ type: "bgm", action: "stop", startTime: startTime });
       continue;
     }
 
@@ -440,30 +444,25 @@ const parseLines = (lines, assetId) => {
   }
 
   flushBuffer();
-  // Kembalikan dua hal: Script Array dan Judulnya
+
+  scriptData.sort((a, b) => {
+    const timeA =
+      a.startTime !== undefined && a.startTime !== null
+        ? parseFloat(a.startTime)
+        : 0;
+    const timeB =
+      b.startTime !== undefined && b.startTime !== null
+        ? parseFloat(b.startTime)
+        : 0;
+    return timeA - timeB;
+  });
+
   return { scriptData, scriptTitle };
 };
 
 const parseScript = (rawText, assetId) => {
   const lines = rawText.replace(/\r\n/g, "\n").split("\n");
   return parseLines(lines, assetId);
-};
-
-// --- FETCH HELPER ---
-const fetchData = (url) => {
-  return new Promise((resolve, reject) => {
-    https
-      .get(url, (res) => {
-        if (res.statusCode !== 200) {
-          reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
-          return;
-        }
-        const chunks = [];
-        res.on("data", (chunk) => chunks.push(chunk));
-        res.on("end", () => resolve(Buffer.concat(chunks)));
-      })
-      .on("error", reject);
-  });
 };
 
 // --- MAIN EXECUTION ---
@@ -491,12 +490,14 @@ const fetchData = (url) => {
   const cacheMap = {};
   if (fs.existsSync(INDEX_PATH)) {
     const oldIndex = JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8"));
-    oldIndex.forEach(group => {
-      group.episodes.forEach(ep => {
+    oldIndex.forEach((group) => {
+      group.episodes.forEach((ep) => {
         cacheMap[ep.id] = ep;
       });
     });
-    console.log(`[CACHE] Ditemukan ${Object.keys(cacheMap).length} cerita di index lama.`);
+    console.log(
+      `[CACHE] Ditemukan ${Object.keys(cacheMap).length} cerita di index lama.`,
+    );
   }
 
   // --- FETCH MASTER DATA GITHUB ---
@@ -565,21 +566,30 @@ const fetchData = (url) => {
 
     // Pastikan grup dibuat meskipun pakai cache
     if (!groupedEvents[eventId]) {
-      let eventTitleFinal = eventIdToTitle[eventId] || `Event Story: ${eventId.toUpperCase()}`;
-      groupedEvents[eventId] = { id: eventId, title: eventTitleFinal, episodes: [] };
+      let eventTitleFinal =
+        eventIdToTitle[eventId] || `Event Story: ${eventId.toUpperCase()}`;
+      groupedEvents[eventId] = {
+        id: eventId,
+        title: eventTitleFinal,
+        episodes: [],
+      };
     }
 
     // --- CEK CACHE ---
-    if (cacheMap[assetId] && fs.existsSync(path.join(DETAIL_DIR, jsonFileName))) {
+    if (
+      cacheMap[assetId] &&
+      fs.existsSync(path.join(DETAIL_DIR, jsonFileName))
+    ) {
       groupedEvents[eventId].episodes.push(cacheMap[assetId]);
       cachedFilesCount++;
       continue;
     }
 
     try {
-      const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);
-      const rawContent = buffer.toString("utf-8");
-
+      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
+      const rawContent = await response.text();
+      
       // Destructure hasil parseScript
       const { scriptData, scriptTitle } = parseScript(rawContent, assetId);
 

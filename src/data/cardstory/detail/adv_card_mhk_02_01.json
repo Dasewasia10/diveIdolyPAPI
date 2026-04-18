@@ -3,39 +3,15 @@
   "title": "miho",
   "script": [
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_thrx-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
-      "bgName": "flowerstage-00-noon"
+      "bgName": "flowerstage-00-noon",
+      "startTime": 0
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -46,11 +22,6 @@
       "text": "（幽霊旅館での騒動を経て開催された）\n（ⅢXのライブは、大盛況のうちに幕を閉じた）",
       "startTime": 3.2666666667,
       "sfxList": []
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -65,12 +36,14 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 15.1333333333
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 15.4
     },
     {
       "type": "dialogue",
@@ -95,7 +68,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 23.7666666667
     },
     {
       "type": "dialogue",
@@ -110,7 +84,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 29.7
     },
     {
       "type": "dialogue",
@@ -135,7 +110,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 39.4333333333
     },
     {
       "type": "dialogue",
@@ -160,7 +136,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 49.7666666667
     },
     {
       "type": "dialogue",
@@ -202,7 +179,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 63.9333333333
     },
     {
       "type": "dialogue",
@@ -215,16 +193,6 @@
       "sfxList": []
     },
     {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
-    },
-    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -233,6 +201,18 @@
       "text": "――その夜、旅館にて",
       "startTime": 67.0666666667,
       "sfxList": []
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 67.3333333333
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 67.3333333333
     },
     {
       "type": "dialogue",
@@ -257,7 +237,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 81.5333333333
     },
     {
       "type": "dialogue",
@@ -292,7 +273,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 94.3333333333
     },
     {
       "type": "dialogue",
@@ -307,7 +289,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 98.6
     },
     {
       "type": "dialogue",
@@ -332,7 +315,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 110.5
     },
     {
       "type": "dialogue",
@@ -347,7 +331,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 116.6666666667
     },
     {
       "type": "dialogue",
@@ -372,7 +357,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 131.2666666667
     },
     {
       "type": "dialogue",
@@ -387,7 +373,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 136.3333333333
     },
     {
       "type": "dialogue",
@@ -412,7 +399,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 148.8
     },
     {
       "type": "dialogue",
@@ -427,7 +415,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 150.5
     },
     {
       "type": "dialogue",
@@ -442,7 +431,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 156.9666666667
     },
     {
       "type": "dialogue",
@@ -467,7 +457,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 167.7333333333
     },
     {
       "type": "dialogue",
@@ -492,7 +483,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 177.2
     },
     {
       "type": "dialogue",
@@ -517,7 +509,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 186.2
     },
     {
       "type": "dialogue",
@@ -542,7 +535,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 197.9666666667
     },
     {
       "type": "dialogue",
@@ -567,7 +561,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 207.2
     },
     {
       "type": "dialogue",
@@ -592,7 +587,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 218.0666666667
     },
     {
       "type": "dialogue",
@@ -607,7 +603,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 224.6666666667
     },
     {
       "type": "dialogue",
@@ -622,7 +619,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_onsenlobby-00-noon.webp",
-      "bgName": "onsenlobby-00-noon"
+      "bgName": "onsenlobby-00-noon",
+      "startTime": 230.3666666667
     },
     {
       "type": "dialogue",

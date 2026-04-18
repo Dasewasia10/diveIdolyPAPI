@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import https from "https";
 import { fileURLToPath } from "url";
 
 // --- KONFIGURASI ---
@@ -152,36 +151,38 @@ const parseLines = (lines, assetId) => {
     ) {
       flushBuffer();
       const bgId = getAttr(trimmed, "id");
+      const startTime = getStartTime(trimmed);
       if (bgId && backgroundMap[bgId]) {
         scriptData.push({
           type: "background",
           src: `${R2_BG_URL}/${backgroundMap[bgId]}.webp`,
           bgName: bgId,
+          startTime: startTime,
         });
       }
       continue;
     }
 
     // 3. BGM
-    if (
-      trimmed.startsWith("[bgmplay") ||
-      (trimmed.startsWith("[bgm ") && !trimmed.startsWith("[bgmstop"))
-    ) {
+    if (trimmed.startsWith("[bgmplay")) {
       flushBuffer();
-      // Handle variasi tag [bgm] atau [bgmplay]
       const bgmId = getAttr(trimmed, "bgm");
+      const startTime = getStartTime(trimmed);
       if (bgmId) {
         scriptData.push({
           type: "bgm",
           action: "play",
           src: `${R2_BGM_URL}/${bgmId}.m4a`,
+          startTime: startTime,
         });
       }
       continue;
     }
+
     if (trimmed.startsWith("[bgmstop")) {
       flushBuffer();
-      scriptData.push({ type: "bgm", action: "stop" });
+      const startTime = getStartTime(trimmed);
+      scriptData.push({ type: "bgm", action: "stop", startTime: startTime });
       continue;
     }
 
@@ -391,29 +392,41 @@ const parseLines = (lines, assetId) => {
   }
 
   flushBuffer();
-  return { scriptData, title: foundTitle };
-};
 
-// --- FETCH HELPER ---
-const fetchData = (url) => {
-  return new Promise((resolve, reject) => {
-    https
-      .get(url, (res) => {
-        if (res.statusCode !== 200) {
-          reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
-          return;
-        }
-        const chunks = [];
-        res.on("data", (chunk) => chunks.push(chunk));
-        res.on("end", () => resolve(Buffer.concat(chunks)));
-      })
-      .on("error", reject);
+  scriptData.sort((a, b) => {
+    const timeA =
+      a.startTime !== undefined && a.startTime !== null
+        ? parseFloat(a.startTime)
+        : 0;
+    const timeB =
+      b.startTime !== undefined && b.startTime !== null
+        ? parseFloat(b.startTime)
+        : 0;
+    return timeA - timeB;
   });
+
+  return { scriptData, title: foundTitle };
 };
 
 // --- MAIN EXECUTION ---
 (async () => {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+
+  // --- BACA CACHE LAMA ---
+  const INDEX_PATH = path.join(OUTPUT_DIR, "index_bond.json");
+  const cacheMap = {};
+  let cachedFilesCount = 0;
+  if (fs.existsSync(INDEX_PATH)) {
+    const oldIndex = JSON.parse(fs.readFileSync(INDEX_PATH, "utf-8"));
+    oldIndex.forEach((group) => {
+      group.stories.forEach((story) => {
+        cacheMap[story.id] = story;
+      });
+    });
+    console.log(
+      `[CACHE] Ditemukan ${Object.keys(cacheMap).length} cerita di index lama.`,
+    );
+  }
 
   // 1. Baca daftar file dari folderList.txt
   let FILE_LIST = [];
@@ -437,9 +450,8 @@ const fetchData = (url) => {
   for (let i = 0; i < FILE_LIST.length; i++) {
     const fileName = FILE_LIST[i];
     const assetId = fileName.replace(".txt", "");
+    const jsonFileName = `${assetId}.json`;
 
-    // Format: adv_bond_[char]_[set]_[ep].txt
-    // Contoh: adv_bond_ai_01_01.txt -> char=ai, set=01, ep=01
     const parts = assetId.split("_");
 
     // Validasi format
@@ -452,9 +464,26 @@ const fetchData = (url) => {
     // const setNum = parts[3]; // Biasanya 01 (Bond Story 1?)
     const episodeNum = parseInt(parts[4]);
 
+    if (
+      cacheMap[assetId] &&
+      fs.existsSync(path.join(OUTPUT_DIR, jsonFileName))
+    ) {
+      if (!groupedCharacters[charCode]) {
+        groupedCharacters[charCode] = {
+          id: charCode,
+          name: CHARACTER_NAMES[charCode] || charCode.toUpperCase(),
+          stories: [],
+        };
+      }
+      groupedCharacters[charCode].stories.push(cacheMap[assetId]);
+      cachedFilesCount++;
+      continue;
+    }
+
     try {
-      const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);
-      const rawContent = buffer.toString("utf-8");
+      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
+      const rawContent = await response.text();
 
       const { scriptData, title } = parseLines(
         rawContent.replace(/\r\n/g, "\n").split("\n"),

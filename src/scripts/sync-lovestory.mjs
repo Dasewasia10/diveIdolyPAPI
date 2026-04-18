@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import https from "https";
 import { fileURLToPath } from "url";
 
 // --- KONFIGURASI ---
@@ -8,8 +7,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
-const R2_TEXT_URL = `${R2_DOMAIN}/lovestoryTxt`;
-const R2_VOICE_URL = `${R2_DOMAIN}/lovestoryVoice`;
+const R2_TEXT_URL = `${R2_DOMAIN}/loveStoryTxt`;
+const R2_VOICE_URL = `${R2_DOMAIN}/loveStoryVoice`;
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 
@@ -250,13 +249,15 @@ const parseLines = (lines, assetId) => {
       trimmed.startsWith("[backgroundsetting") ||
       trimmed.startsWith("[backgroundtween")
     ) {
-      flushBuffer(); // FLUSH WAJIB: Background berubah = scene baru
+      flushBuffer();
       const bgId = getAttr(trimmed, "id");
+      const startTime = getStartTime(trimmed);
       if (bgId && backgroundMap[bgId]) {
         scriptData.push({
           type: "background",
           src: `${R2_BG_URL}/${backgroundMap[bgId]}.webp`,
           bgName: bgId,
+          startTime: startTime,
         });
       }
       continue;
@@ -264,20 +265,24 @@ const parseLines = (lines, assetId) => {
 
     // 3. BGM CONTROL
     if (trimmed.startsWith("[bgmplay")) {
-      flushBuffer(); // FLUSH WAJIB: Memastikan BGM muncul SETELAH dialog sebelumnya selesai
+      flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
+      const startTime = getStartTime(trimmed);
       if (bgmId) {
         scriptData.push({
           type: "bgm",
           action: "play",
           src: `${R2_BGM_URL}/${bgmId}.m4a`,
+          startTime: startTime,
         });
       }
       continue;
     }
+
     if (trimmed.startsWith("[bgmstop")) {
-      flushBuffer(); // FLUSH WAJIB
-      scriptData.push({ type: "bgm", action: "stop" });
+      flushBuffer();
+      const startTime = getStartTime(trimmed);
+      scriptData.push({ type: "bgm", action: "stop", startTime: startTime });
       continue;
     }
 
@@ -535,6 +540,19 @@ const parseLines = (lines, assetId) => {
   }
 
   flushBuffer();
+
+  scriptData.sort((a, b) => {
+    const timeA =
+      a.startTime !== undefined && a.startTime !== null
+        ? parseFloat(a.startTime)
+        : 0;
+    const timeB =
+      b.startTime !== undefined && b.startTime !== null
+        ? parseFloat(b.startTime)
+        : 0;
+    return timeA - timeB;
+  });
+
   return scriptData;
 };
 
@@ -542,23 +560,6 @@ const parseLines = (lines, assetId) => {
 const parseScript = (rawText, assetId, isDebug = false) => {
   const lines = rawText.replace(/\r\n/g, "\n").split("\n");
   return parseLines(lines, assetId);
-};
-
-// --- FETCH ---
-const fetchData = (url) => {
-  return new Promise((resolve, reject) => {
-    https
-      .get(url, (res) => {
-        if (res.statusCode !== 200) {
-          reject(new Error(`Failed to fetch ${url}: ${res.statusCode}`));
-          return;
-        }
-        const chunks = [];
-        res.on("data", (chunk) => chunks.push(chunk));
-        res.on("end", () => resolve(Buffer.concat(chunks)));
-      })
-      .on("error", reject);
-  });
 };
 
 // --- MAIN ---
@@ -580,8 +581,9 @@ const fetchData = (url) => {
     const part = parts[4];
 
     try {
-      const buffer = await fetchData(`${R2_TEXT_URL}/${fileName}`);
-      const rawContent = buffer.toString("utf-8");
+      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
+      const rawContent = await response.text();
 
       const script = parseScript(rawContent, assetId, i === 0);
 

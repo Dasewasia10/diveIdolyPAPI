@@ -3,14 +3,15 @@
   "title": "天動瑠依",
   "script": [
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_office-01-noon.webp",
-      "bgName": "3d_office_noon"
+      "bgName": "3d_office_noon",
+      "startTime": null
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
+      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -21,11 +22,6 @@
       "text": "お、おはようございます、{user}さん",
       "startTime": 0.8,
       "sfxList": []
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-in-single-02.m4a",
-      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -138,11 +134,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "天動瑠依",
@@ -173,19 +164,16 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
+      "bgName": "famires",
+      "startTime": 83.3666666667
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 83.3666666667
     },
     {
       "type": "dialogue",
@@ -210,7 +198,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 92.5666666667
     },
     {
       "type": "dialogue",
@@ -235,7 +224,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 103.6666666667
     },
     {
       "type": "dialogue",
@@ -250,7 +240,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 108.4333333333
     },
     {
       "type": "dialogue",
@@ -275,7 +266,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 121.1666666667
     },
     {
       "type": "dialogue",
@@ -298,14 +290,10 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 127.9
     },
     {
       "type": "dialogue",
@@ -330,7 +318,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 138.9333333333
     },
     {
       "type": "dialogue",
@@ -355,7 +344,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 145.6666666667
     },
     {
       "type": "dialogue",
@@ -380,7 +370,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 154.3
     },
     {
       "type": "dialogue",
@@ -395,7 +386,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 162.2666666667
     },
     {
       "type": "dialogue",
@@ -410,7 +402,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 171.1
     },
     {
       "type": "dialogue",
@@ -435,7 +428,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 177.8666666667
     },
     {
       "type": "dialogue",
@@ -460,7 +454,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 184.0333333333
     },
     {
       "type": "dialogue",
@@ -485,7 +480,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_famires-00-night.webp",
-      "bgName": "famires"
+      "bgName": "famires",
+      "startTime": 190.9
     },
     {
       "type": "dialogue",

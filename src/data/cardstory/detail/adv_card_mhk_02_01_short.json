@@ -3,19 +3,15 @@
   "title": "miho (Short)",
   "script": [
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_thrx-01.m4a"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_backstage-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_flowerstage-00-noon.webp",
-      "bgName": "flowerstage-00-noon"
+      "bgName": "flowerstage-00-noon",
+      "startTime": 0
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -26,11 +22,6 @@
       "text": "（幽霊旅館での騒動を経て開催された）\n（ⅢXのライブは、大盛況のうちに幕を閉じた）",
       "startTime": 3.2666666667,
       "sfxList": []
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -45,12 +36,14 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 15.1333333333
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 15.4
     },
     {
       "type": "dialogue",
@@ -75,7 +68,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 23.7666666667
     },
     {
       "type": "dialogue",
@@ -90,7 +84,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stagesleeves-00-noon"
+      "bgName": "stagesleeves-00-noon",
+      "startTime": 29.7
     },
     {
       "type": "dialogue",

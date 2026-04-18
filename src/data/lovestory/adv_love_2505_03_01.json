@@ -3,14 +3,10 @@
   "title": "Episode 3 Part 1",
   "script": [
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -23,11 +19,327 @@
       "sfxList": []
     },
     {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "ルイを起こす",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a",
+              "startTime": 47.5465366123
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui004.wav",
+              "text": "ん……何ぃ……？\n…………まだ朝じゃない……\nもう……すぅ……すぅ……",
+              "startTime": 47.5465366123,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "様子を見る",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a",
+              "startTime": 60.3779852944
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui005.wav",
+              "text": "ん～……ごちそう……おいひい……\nほら、チサも……ふふふ……",
+              "startTime": 60.3779852944,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "おかげさまで",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a",
+              "startTime": 122.1166827238
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs005.wav",
+              "text": "ふふ、良かったです\n慣れない場所で大丈夫かなって\nちょっとだけ心配だったので",
+              "startTime": 122.1166827238,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "ルイが隣で寝てた",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a",
+              "startTime": 130.630016553
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs006.wav",
+              "text": "えぇ！？　寝ぼけちゃってたのかなぁ\n美味しそうな匂いがしたから\nつられちゃったのかもですね",
+              "startTime": 130.630016553,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "ルイが魅力的だから",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a",
+              "startTime": 220.8444721577
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui009.wav",
+              "text": "ふぅん、思ったより心が動かされてた\nっていうこと？\nふふ、悪い気はしないわね",
+              "startTime": 220.8444721577,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "チサが悪い子に見えなくて",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a",
+              "startTime": 228.9656965928
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs011.wav",
+              "text": "私が……。サキュバス自体は、人間さんから\nすれば、悪い子に見えるんでしょうか……\nでも……そうですね。ありがとうございます",
+              "startTime": 228.9656965928,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "二人のことが知りたいから",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a",
+              "startTime": 242.4223628399
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui010.wav",
+              "text": "興味本位っていうこと？　めずらしいわね\nまぁ人間とは文化も違うし、知ろうとしない\n限りは、理解するのは難しいでしょうけど",
+              "startTime": 242.4223628399,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "分かった",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a",
+              "startTime": 474.6496330138
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs024.wav",
+              "text": "は、はい！　うぅ、注目されてる……\n別にコスプレとかじゃないんだけど……\nと、とりあえず、また後で",
+              "startTime": 474.6496330138,
+              "sfxList": []
+            },
+            {
+              "type": "sfx",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+              "startTime": 487.1145801421
+            }
+          ]
+        },
+        {
+          "text": "それは出来ない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a",
+              "startTime": 488.5812269724
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs025.wav",
+              "text": "ふぇ～！？　で、でも、それだと\n{user}さんまで注目されて\n恥ずかしくなっちゃうかもですけど",
+              "startTime": 488.5812269724,
+              "sfxList": [
+                {
+                  "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
+                  "delay": 19778.557669400016
+                }
+              ]
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "chs",
+              "speakerName": "チサ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs026.wav",
+              "text": "うぅ、優し過ぎますよぉ\n私の方が誘惑されちゃってる気が……\nと、とりあえず、ここを離れましょう",
+              "startTime": 496.947623336,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "綺麗だと思って",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a",
+              "startTime": 654.3460862081
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui028.wav",
+              "text": "え………………\nあぁ、花火のこと？　そうね、とっても綺麗\nパパの前じゃ、こんなこと出来ないわね",
+              "startTime": 654.3460862081,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "なんでもない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_serious-01.m4a",
+              "startTime": 664.4460863989
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui029.wav",
+              "text": "パパ……お父様みたいなことを言うのね\n変なの。人間の考えることは\nよく分からないわ",
+              "startTime": 664.4460863989,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "すみれのことが気になって",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_serious-01.m4a",
+              "startTime": 674.2768115601
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "ルイ",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui030.wav",
+              "text": "私達についてきたくせに\n魔法少女達のことを気にするのね\n……まぁ、家族なら当然ではあるけれど",
+              "startTime": 674.2768115601,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "ルイ",
+          "route": []
+        },
+        {
+          "text": "チサ",
+          "route": []
+        }
+      ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a",
+      "startTime": 2.6000001669
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui001.wav",
       "text": "すぅ……すぅ……んん……\nはふ…………すぅ…………",
       "startTime": 3.4333335002,
       "sfxList": []
@@ -35,7 +347,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 15.2842859984
     },
     {
       "type": "dialogue",
@@ -50,14 +363,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 20.6176199674
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui002.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui002.wav",
       "text": "んん……いい匂い……\n美味しそう…………",
       "startTime": 20.6176199674,
       "sfxList": [
@@ -82,7 +396,7 @@
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui003.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui003.wav",
       "text": "だめぇ……食べるのぉ……\n……んん……今日はごちそう……",
       "startTime": 31.7028799295,
       "sfxList": [
@@ -99,16 +413,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "vanrui-00-noon",
+      "startTime": 39.7798643509
     },
     {
       "type": "dialogue",
@@ -121,54 +427,21 @@
       "sfxList": []
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "ルイを起こす",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui004.wav",
-              "text": "ん……何ぃ……？\n…………まだ朝じゃない……\nもう……すぅ……すぅ……",
-              "startTime": 47.5465366123,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "様子を見る",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui005.wav",
-              "text": "ん～……ごちそう……おいひい……\nほら、チサも……ふふふ……",
-              "startTime": 60.3779852944,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
+      "bgName": "vanrui-00-noon",
+      "startTime": 42.0131976842
+    },
+    {
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 45.6332033553
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 70.9174641368
     },
     {
       "type": "dialogue",
@@ -198,7 +471,7 @@
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs001.wav",
       "text": "～～♪",
       "startTime": 77.1174524383,
       "sfxList": []
@@ -206,7 +479,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 84.4449580229
     },
     {
       "type": "dialogue",
@@ -234,14 +508,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 90.0449554797
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs002.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs002.wav",
       "text": "さてと、服を解除し……て……？\nっ、きゃあああっ！？",
       "startTime": 90.0449554797,
       "sfxList": []
@@ -249,12 +524,14 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 94.2666652679
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 97.3477027294
     },
     {
       "type": "dialogue",
@@ -268,24 +545,27 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+      "action": "stop",
+      "startTime": 102.0143693961
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 103.0477027294
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a",
+      "startTime": 103.3143693961
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs003.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs003.wav",
       "text": "ご、ごめんなさい、大きな声出しちゃって\nちょうどシャワーを浴びようと\nこの魔力で作ってる服を解除しようとしてて",
       "startTime": 104.1810360627,
       "sfxList": []
@@ -293,78 +573,36 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "vanrui-00-noon",
+      "startTime": 114.6552085913
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs004.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs004.wav",
       "text": "えっと、おはようございます\n昨日はよく眠れましたか？",
       "startTime": 114.6552085913,
       "sfxList": []
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "おかげさまで",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs005.wav",
-              "text": "ふふ、良かったです\n慣れない場所で大丈夫かなって\nちょっとだけ心配だったので",
-              "startTime": 122.1166827238,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "ルイが隣で寝てた",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs006.wav",
-              "text": "えぇ！？　寝ぼけちゃってたのかなぁ\n美味しそうな匂いがしたから\nつられちゃったのかもですね",
-              "startTime": 130.630016553,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 120.2166827238
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 140.476684256
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs007.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs007.wav",
       "text": "はい、どうぞ\nトーストと、ベーコンエッグです\n今日は特に、上手に焼けました",
       "startTime": 141.5766766266,
       "sfxList": [
@@ -381,14 +619,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 150.0433465676
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui006.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui006.wav",
       "text": "ふぁ……また人間の食べ物を食べてるの？\nまぁ、この人に食べさせるものがあって\nちょうど良かったけど……",
       "startTime": 151.776645823,
       "sfxList": []
@@ -396,14 +635,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 163.1385741589
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs008.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs008.wav",
       "text": "わっ、ルイちゃん\nさっき寝たばかりだよね、大丈夫？",
       "startTime": 163.1385741589,
       "sfxList": [
@@ -416,14 +656,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 169.4393905677
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui007.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui007.wav",
       "text": "眠いけど……軽く夜にも寝ておいたし……\nこれからのことを話し合わないとでしょ\nうー……グミ、まだあったかしら……",
       "startTime": 169.4393905677,
       "sfxList": []
@@ -441,14 +682,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 187.0793904342
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs009.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs009.wav",
       "text": "人間さんから見たら不思議ですよね\n悪魔は生命エネルギーや、それを加工した\nものを食べるんだけど、こっちにはないから",
       "startTime": 187.0793904342,
       "sfxList": []
@@ -456,14 +698,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 198.5154477157
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui008.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui008.wav",
       "text": "魔力は全然回復しないけど、気は紛れるのよ\nそれより、本題だけど……あなたはどうして\n私達について来ようと思ったの？",
       "startTime": 198.5154477157,
       "sfxList": []
@@ -471,98 +714,36 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "vanrui-00-noon",
+      "startTime": 209.4811394729
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs010.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs010.wav",
       "text": "そうだね。私も、それは聞きたかった……\nどうして魔法少女さん達より\n私達を選んでくれたんですか……？",
       "startTime": 209.4811394729,
       "sfxList": []
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "ルイが魅力的だから",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui009.wav",
-              "text": "ふぅん、思ったより心が動かされてた\nっていうこと？\nふふ、悪い気はしないわね",
-              "startTime": 220.8444721577,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "チサが悪い子に見えなくて",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs011.wav",
-              "text": "私が……。サキュバス自体は、人間さんから\nすれば、悪い子に見えるんでしょうか……\nでも……そうですね。ありがとうございます",
-              "startTime": 228.9656965928,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "二人のことが知りたいから",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui010.wav",
-              "text": "興味本位っていうこと？　めずらしいわね\nまぁ人間とは文化も違うし、知ろうとしない\n限りは、理解するのは難しいでしょうけど",
-              "startTime": 242.4223628399,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 218.9311390914
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 253.6215922074
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui011.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui011.wav",
       "text": "ともかく、無理やり契約させなくて済んで\n私達も助かったわ。心ない契約だと\n生命エネルギーに雑味が出てしまうのよ",
       "startTime": 253.6215922074,
       "sfxList": []
@@ -572,7 +753,7 @@
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui012.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui012.wav",
       "text": "そもそも脅したり、命を奪うことは趣味じゃ\nないし。だから、何が目的にしてもあなたの\n選択を嬉しく思う。それは伝えておくわね",
       "startTime": 263.7280775107,
       "sfxList": []
@@ -580,11 +761,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "vanrui-00-noon",
+      "startTime": 274.9936331467
     },
     {
       "type": "dialogue",
@@ -597,21 +775,28 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 279.8270069794
+    },
+    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 280.5270071701
     },
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a",
+      "startTime": 280.5270071701
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs012.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs012.wav",
       "text": "ふふ、びっくりしちゃいますよね\nルイちゃんって普段はとっても真面目で\n優しくて、凄く友達思いなんです",
       "startTime": 280.5270071701,
       "sfxList": []
@@ -619,14 +804,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 291.3719957388
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs013.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs013.wav",
       "text": "真面目な分、人間や魔法少女の前では\nサキュバスらしく振る舞おうって\nスイッチを入れてるみたいで",
       "startTime": 291.3719957388,
       "sfxList": []
@@ -634,14 +820,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 300.3733974494
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui013.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui013.wav",
       "text": "に、人間の前で余計なことを言わないで！\n眠過ぎて気が緩んでいただけよ\nまったく、後でグミを買ってきてもらうから",
       "startTime": 300.3733974494,
       "sfxList": []
@@ -649,14 +836,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 310.1326041576
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui014.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui014.wav",
       "text": "あと、なごんでいる暇なんてないわよ\n魔法少女には気を付けないといけないし……\n契約だって、私達のどちらかとしか出来ない",
       "startTime": 310.1326041576,
       "sfxList": []
@@ -664,14 +852,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 320.6571621931
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui015.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui015.wav",
       "text": "お前には、次の満月の夜までに\nどちらと契約したいか選んでもらうわよ\nあはっ、まぁ当然、私がえりゃばれ……っ",
       "startTime": 320.6571621931,
       "sfxList": []
@@ -679,14 +868,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 334.0494510051
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs014.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs014.wav",
       "text": "ルイちゃん、眠たいなら\n無理にスイッチ入れなくて大丈夫だよ？",
       "startTime": 334.0494510051,
       "sfxList": []
@@ -694,14 +884,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 340.2347528493
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui016.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui016.wav",
       "text": "もうっ、言われなくても寝るわよ！\nおやすみな……さ…………すぅ……すぅ……",
       "startTime": 340.2347528493,
       "sfxList": []
@@ -709,22 +900,18 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 351.6145942087
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs015.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs015.wav",
       "text": "スイッチ切った瞬間寝ちゃった……\nって、寝るならベッド行かなきゃダメだよ～\nお日様、差し込んできちゃうかもだから",
       "startTime": 351.6145942087,
       "sfxList": []
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
     },
     {
       "type": "dialogue",
@@ -737,30 +924,34 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "stop"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
+      "bgName": "vanrui-00-noon",
+      "startTime": 366.3934971208
     },
     {
       "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spell-weak-01.m4a",
-      "startTime": 372.1333333333
+      "action": "stop",
+      "startTime": 369.6934808447
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 370.7601515804
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a",
+      "startTime": 370.9934808447
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs016.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs016.wav",
       "text": "掃除機さん、お願い\nむこうから、こっちまで\nいつも通りにね",
       "startTime": 371.860143951,
       "sfxList": [
@@ -769,6 +960,11 @@
           "delay": 6330.34040130002
         }
       ]
+    },
+    {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_spell-weak-01.m4a",
+      "startTime": 372.1333333333
     },
     {
       "type": "dialogue",
@@ -783,14 +979,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 380.857130674
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs017.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs017.wav",
       "text": "えへへ。って言っても、手のかわりに\n魔力で掴んで動かしてるだけなんですけどね\n私には、これくらいが限界で……",
       "startTime": 380.857130674,
       "sfxList": [
@@ -805,7 +1002,7 @@
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs018.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs018.wav",
       "text": "でも、そんなにいい反応をされちゃうと\n嬉しくなっちゃいます\nじゃあ思い切って、お皿洗いも！",
       "startTime": 392.2304348185,
       "sfxList": [
@@ -826,14 +1023,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 401.865482763
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs019.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs019.wav",
       "text": "あっ、意外と同時は難しいかも……\nわっ、わっ、わぁ……！？\nうぅ、お皿割っちゃった……",
       "startTime": 401.865482763,
       "sfxList": [
@@ -858,14 +1056,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 413.4163891668
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui017.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui017.wav",
       "text": "きゃあっ！？　ちょっと、これ取って！\n寝てるんだから\n騒がしくしないでよ、もう！",
       "startTime": 413.4163891668,
       "sfxList": [
@@ -887,24 +1086,27 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a"
+      "action": "stop",
+      "startTime": 424.2630655164
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
-      "bgName": "tokyopark-00-noon"
+      "bgName": "tokyopark-00-noon",
+      "startTime": 425.3297321831
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_outside-01.m4a",
+      "startTime": 425.5630655164
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs020.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs020.wav",
       "text": "人間さんは陽の光を浴びないと\nダメって聞きますし\n一緒にお買い物でもしましょうか",
       "startTime": 426.463057887,
       "sfxList": []
@@ -912,14 +1114,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
-      "bgName": "tokyopark-00-noon"
+      "bgName": "tokyopark-00-noon",
+      "startTime": 435.0163910105
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs021.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs021.wav",
       "text": "あ、人間界のお金は支給されてますから\n大丈夫ですよ。それに、姿もこの通り\n角とか隠して、人間さんの姿になれますし",
       "startTime": 435.0163910105,
       "sfxList": []
@@ -942,14 +1145,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
-      "bgName": "tokyopark-00-noon"
+      "bgName": "tokyopark-00-noon",
+      "startTime": 450.4467681124
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs022.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs022.wav",
       "text": "ルイちゃんくらいになると周りの認識の方を\n変えられるんだけど……って、えぇっ！？\nお、おしゃべりに夢中で解けちゃってました",
       "startTime": 450.4467681124,
       "sfxList": []
@@ -957,107 +1161,47 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyopark-00-noon.webp",
-      "bgName": "tokyopark-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "tokyopark-00-noon",
+      "startTime": 464.1745763655
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs023.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs023.wav",
       "text": "す、すみません、注目されてるのは\n私ですし、{user}さんは\n気にせず離れていて下さい……！",
       "startTime": 464.1745763655,
       "sfxList": []
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "分かった",
-          "route": [
-            {
-              "type": "sfx",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
-              "startTime": 487.1145801421
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs024.wav",
-              "text": "は、はい！　うぅ、注目されてる……\n別にコスプレとかじゃないんだけど……\nと、とりあえず、また後で",
-              "startTime": 474.6496330138,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "それは出来ない",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs025.wav",
-              "text": "ふぇ～！？　で、でも、それだと\n{user}さんまで注目されて\n恥ずかしくなっちゃうかもですけど",
-              "startTime": 488.5812269724,
-              "sfxList": [
-                {
-                  "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_run-out-single-01.m4a",
-                  "delay": 19778.557669400016
-                }
-              ]
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "chs",
-              "speakerName": "チサ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs026.wav",
-              "text": "うぅ、優し過ぎますよぉ\n私の方が誘惑されちゃってる気が……\nと、とりあえず、ここを離れましょう",
-              "startTime": 496.947623336,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 472.7496332045
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
+      "action": "stop",
+      "startTime": 509.4397927799
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 510.5064594465
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a",
+      "startTime": 510.7397927799
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui018.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui018.wav",
       "text": "じー……",
       "startTime": 511.6064375756,
       "sfxList": []
@@ -1075,14 +1219,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 517.6264375446
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui019.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui019.wav",
       "text": "え……あ……ち、違うわよ？\n別にこう、起こそうとしてた\nとかじゃなくて……人間観察っていうの？",
       "startTime": 517.6264375446,
       "sfxList": []
@@ -1092,7 +1237,7 @@
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui020.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui020.wav",
       "text": "生活リズムが違うと、話す機会もないから\n名前だって、呼び捨てのままでいいのかも\nよく分かっていないし……",
       "startTime": 525.9063641308,
       "sfxList": []
@@ -1100,14 +1245,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 534.2928039311
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui021.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui021.wav",
       "text": "でも、{user}は私達を\n呼び捨てにしているし、いいのかしら\nまぁ、本題はそこじゃないんだけど……",
       "startTime": 534.2928039311,
       "sfxList": []
@@ -1124,17 +1270,20 @@
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_street-01.m4a"
+      "action": "stop",
+      "startTime": 547.0281146128
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 548.0781146128
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_street-01.m4a",
+      "startTime": 548.3281146128
     },
     {
       "type": "dialogue",
@@ -1154,14 +1303,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 552.094765512
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui022.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui022.wav",
       "text": "これはプリン味……魔界のプリンとは\n大分違うのね。後輩の、ココロっていう\n小悪魔が、プリンが大好きなのよね",
       "startTime": 552.094765512,
       "sfxList": [
@@ -1184,31 +1334,35 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 566.9047693329
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui023.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui023.wav",
       "text": "……あげないわよ？　なんて\n買ってくれたのは{user}\nだけど。ふふ、でももう私のなんだから",
       "startTime": 566.9047693329,
       "sfxList": []
     },
     {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
+      "bgName": "hoshistation-00-night",
+      "startTime": 571.9666856128
+    },
+    {
       "type": "bgm",
-      "action": "stop"
+      "action": "stop",
+      "startTime": 574.7661110954
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 575.4661246377
     },
     {
       "type": "sfx",
@@ -1218,19 +1372,21 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 577.1994483072
     },
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a",
+      "startTime": 577.1994483072
     },
     {
       "type": "dialogue",
       "speakerCode": "smr",
       "speakerName": "すみれ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-sumire.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-smr001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-smr001.wav",
       "text": "あ……いたー！　やっと見つけた！\nお兄ちゃん、学校はサボるし、こんな夜中に\nサキュバスと遊び歩いて、何してるの！？",
       "startTime": 577.1994483072,
       "sfxList": []
@@ -1238,14 +1394,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 587.5802711565
     },
     {
       "type": "dialogue",
       "speakerCode": "ngs",
       "speakerName": "渚",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-nagisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-ngs001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-ngs001.wav",
       "text": "ふぅー！　エッチにゃサキュバスめ！\n二度と人間界に来れにゃいように\n魔法で送り返しちゃおう、すみれちゃん！",
       "startTime": 587.5802711565,
       "sfxList": []
@@ -1253,7 +1410,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 598.4470510879
     },
     {
       "type": "dialogue",
@@ -1268,26 +1426,29 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_hoshistation-00-night.webp",
-      "bgName": "hoshistation-00-night"
+      "bgName": "hoshistation-00-night",
+      "startTime": 601.4803844212
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui024.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui024.wav",
       "text": "何を慌てているの？　これくらい予測済みよ\nほら、掴まって。あ、落ちるかもしれないし\nしがみついた方がいいかもしれないけど",
       "startTime": 601.4803844212,
       "sfxList": []
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "stop",
+      "startTime": 612.361805701
     },
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_occult-01.m4a"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_occult-01.m4a",
+      "startTime": 613.6618057011
     },
     {
       "type": "sfx",
@@ -1314,7 +1475,7 @@
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui025.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui025.wav",
       "text": "飛んで追いかけてくるかもしれないわよね\n透明化して魔力の残滓も消しておこうかしら\nそれと……ふふ、目くらましに……それっ！",
       "startTime": 618.5617899337,
       "sfxList": [
@@ -1341,7 +1502,7 @@
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui026.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui026.wav",
       "text": "あはは、凄い。人間界の空だと\n映えるわね。それ、それそれ！\nもう一つ、大きいの……！",
       "startTime": 634.435678776,
       "sfxList": []
@@ -1361,103 +1522,32 @@
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui027.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui027.wav",
       "text": "……？　どうしたの、そんなにじっと見て",
       "startTime": 648.8449297667,
       "sfxList": []
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "綺麗だと思って",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui028.wav",
-              "text": "え………………\nあぁ、花火のこと？　そうね、とっても綺麗\nパパの前じゃ、こんなこと出来ないわね",
-              "startTime": 654.3460862081,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "なんでもない",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui029.wav",
-              "text": "パパ……お父様みたいなことを言うのね\n変なの。人間の考えることは\nよく分からないわ",
-              "startTime": 664.4460863989,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "すみれのことが気になって",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_serious-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "ルイ",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui030.wav",
-              "text": "私達についてきたくせに\n魔法少女達のことを気にするのね\n……まぁ、家族なら当然ではあるけれど",
-              "startTime": 674.2768115601,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "action": "stop",
+      "startTime": 652.4394196272
     },
     {
       "type": "bgm",
-      "action": "stop"
+      "action": "stop",
+      "startTime": 683.5176826717
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
+      "bgName": "vanrui-00-noon",
+      "startTime": 684.5843554419
     },
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cup-01.m4a",
-      "startTime": 686.0310165137
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_main-01.m4a",
+      "startTime": 684.8176826715
     },
     {
       "type": "dialogue",
@@ -1475,13 +1565,21 @@
       ]
     },
     {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cup-01.m4a",
+      "startTime": 686.0310165137
     },
     {
-      "type": "bgm",
-      "action": "stop"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
+      "bgName": "vanrui-00-noon",
+      "startTime": 686.9510017633
+    },
+    {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
+      "bgName": "vanrui-00-noon",
+      "startTime": 689.6510327896
     },
     {
       "type": "dialogue",
@@ -1494,16 +1592,22 @@
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 691.6710572562
+    },
+    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 692.384390537
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "ルイ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui031.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-rui031.wav",
       "text": "それじゃあ、選んでもらうわ\n私と、チサ……",
       "startTime": 692.384390537,
       "sfxList": []
@@ -1511,30 +1615,18 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_vanrui-00-noon.webp",
-      "bgName": "vanrui-00-noon"
+      "bgName": "vanrui-00-noon",
+      "startTime": 696.779628746
     },
     {
       "type": "dialogue",
       "speakerCode": "chs",
       "speakerName": "チサ",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-chisa.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs027.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2505_03_01/sud_vo_adv_love_2505_03_01-chs027.wav",
       "text": "{user}さんは\nどちらと契約したいですか？",
       "startTime": 696.779628746,
       "sfxList": []
-    },
-    {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "ルイ",
-          "route": []
-        },
-        {
-          "text": "チサ",
-          "route": []
-        }
-      ]
     }
   ]
 }

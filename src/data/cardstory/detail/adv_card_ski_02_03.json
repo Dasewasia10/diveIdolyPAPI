@@ -5,12 +5,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_living-01-night.webp",
-      "bgName": "stage01"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tokyodorm-01.m4a"
+      "bgName": "stage01",
+      "startTime": null
     },
     {
       "type": "dialogue",
@@ -23,6 +19,11 @@
       "sfxList": []
     },
     {
+      "type": "sfx",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
+      "startTime": 1.7
+    },
+    {
       "type": "dialogue",
       "speakerCode": "ski",
       "speakerName": "白石沙季",
@@ -31,11 +32,6 @@
       "text": "あ、{user}さん\nお疲れ様です",
       "startTime": 4,
       "sfxList": []
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_walk-living-single-01.m4a",
-      "startTime": 1.7
     },
     {
       "type": "dialogue",
@@ -248,11 +244,6 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
-    },
-    {
       "type": "dialogue",
       "speakerCode": null,
       "speakerName": "",
@@ -330,17 +321,35 @@
       "voiceUrl": "https://apiip.dasewasia.my.id/cardStoryVoice/sud_vo_adv_card_ski_02_03/sud_vo_adv_card_ski_02_03-ski021.m4a",
       "text": "わたくしは……貴方様にとってなんなのでしょうか？",
       "startTime": 156.3,
-      "sfxList": []
+      "sfxList": [
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
+          "delay": 6033.333333333331,
+          "startTime": 162.33333333333334
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_clap-02.m4a",
+          "delay": 6033.333333333331,
+          "startTime": 162.33333333333334
+        },
+        {
+          "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_clap-03.m4a",
+          "delay": 6033.333333333331,
+          "startTime": 162.33333333333334
+        }
+      ]
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 162.06666666666666
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 162.06666666666666
     },
     {
       "type": "dialogue",
@@ -353,29 +362,10 @@
       "sfxList": []
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_achieve-01.m4a"
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_cheers-in-01.m4a",
-      "startTime": 162.33333333333334
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_clap-02.m4a",
-      "startTime": 162.33333333333334
-    },
-    {
-      "type": "sfx",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_se_adv_clap-03.m4a",
-      "startTime": 162.33333333333334
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 166.83333333333334
     },
     {
       "type": "dialogue",
@@ -396,7 +386,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 172.133333333333
     },
     {
       "type": "dialogue",
@@ -421,7 +412,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 186.5
     },
     {
       "type": "dialogue",
@@ -446,7 +438,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 196
     },
     {
       "type": "dialogue",
@@ -481,7 +474,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 216.23333333333332
     },
     {
       "type": "dialogue",
@@ -496,7 +490,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 225.7
     },
     {
       "type": "dialogue",
@@ -521,7 +516,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 237.2
     },
     {
       "type": "dialogue",
@@ -546,7 +542,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 241.73333333333332
     },
     {
       "type": "dialogue",
@@ -557,11 +554,6 @@
       "text": "……あ、あれっ？\nわ、私、一体何を……っ！？",
       "startTime": 243.13333333333333,
       "sfxList": []
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
     },
     {
       "type": "dialogue",
@@ -576,7 +568,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 249.83333333333334
     },
     {
       "type": "dialogue",
@@ -591,7 +584,8 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_stagesleeves-00-noon.webp",
-      "bgName": "stage03"
+      "bgName": "stage03",
+      "startTime": 257.46666666666664
     },
     {
       "type": "dialogue",

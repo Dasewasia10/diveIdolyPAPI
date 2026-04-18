@@ -3,14 +3,10 @@
   "title": "Episode 3 Part 1",
   "script": [
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a"
-    },
-    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 0
     },
     {
       "type": "dialogue",
@@ -28,11 +24,257 @@
       ]
     },
     {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "うっそぴょーん",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh012.wav",
+              "text": "う、うっそぴょーん\n嫌だなぁ、冗談に決まってるじゃないですか\nあれ？　真に受けちゃいました？",
+              "startTime": 183.9539015691,
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a",
+              "startTime": 192.8205794255
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio014.wav",
+              "text": "そうよね、冗談に決まってるわよね\nこんな私を好きになる訳ないのに……\n私ったら真に受けて……",
+              "startTime": 192.8205794255,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio015.wav",
+              "text": "貴方といると飽きないわね\nでも、そういう冗談ばかり言ってると\nいつか後悔するわよ",
+              "startTime": 202.6872460921,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio016.wav",
+              "text": "あの時、茶化さずに\nちゃんと告白していたら良かった、って……",
+              "startTime": 211.5872460921,
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop",
+              "startTime": 217.6240715583
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh013.wav",
+              "text": "えっ？\nそれって、もしかして……",
+              "startTime": 218.3205794255,
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a",
+              "startTime": 222.1539076725
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh014.wav",
+              "text": "莉央さん。今の告白、やり直させて下さい\n今度は冗談で誤魔化したりしません\nちゃんと本心を言いますから",
+              "startTime": 222.1539076725,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "本気です。俺は莉央さんが好きです",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh015.wav",
+              "text": "もちろん本気です。一人の人間として\n尊敬していますが、それ以上に、一人の\n女性として俺は莉央さんを愛しています！",
+              "startTime": 231.9205743391,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice_selection",
+      "choices": [
+        {
+          "text": "瑠依に頼む",
+          "route": [
+            {
+              "type": "dialogue",
+              "speakerCode": null,
+              "speakerName": "",
+              "iconUrl": null,
+              "voiceUrl": null,
+              "text": "――三十分後",
+              "startTime": 366.0206163406,
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a",
+              "startTime": 367.2206427892
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio020.wav",
+              "text": "天動さんが私を呼び出すなんて\nめずらしいわね\nそれで、私に聞きたいことって何かしら",
+              "startTime": 368.0538730858,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "天動瑠依",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui006.wav",
+              "text": "単刀直入にお尋ねします。莉央さんは\n{user}君のことが\n好きなんですか？",
+              "startTime": 376.0538730858,
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "stop",
+              "startTime": 377.9539496739
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio021.wav",
+              "text": "ど、どうして急にそんなことを……\nそういえば、貴方は彼と仲が良かったわね\nそう……告白のことを聞いたのね？",
+              "startTime": 382.1205397525,
+              "sfxList": []
+            },
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_flashback-01.m4a",
+              "startTime": 387.4539496739
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio022.wav",
+              "text": "実を言うと自分の気持ちがよく分からないの\n彼は悪い人じゃないと思うけど、好きかと\n聞かれると……。貴方は彼をどう思う？",
+              "startTime": 395.6205316144,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "天動瑠依",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui007.wav",
+              "text": "彼は優しくて誠実な人です\n思いやりがあって、自分以外の誰かの\nために頑張ることが出来る人です",
+              "startTime": 409.4871921776,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio023.wav",
+              "text": "そうね……私もそう思うわ\n優しくて誠実で誰かのために頑張れる……\nそういう人だから、私は彼のことを……",
+              "startTime": 417.6538446027,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rio",
+              "speakerName": "神崎莉央",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio024.wav",
+              "text": "ありがとう、天動さん\n貴方と話したおかげで\n自分の気持ちがはっきりしたわ",
+              "startTime": 431.3538344302,
+              "sfxList": []
+            }
+          ]
+        },
+        {
+          "text": "瑠依に頼まない",
+          "route": [
+            {
+              "type": "bgm",
+              "action": "play",
+              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a",
+              "startTime": 439.4205010968
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "koh",
+              "speakerName": "{user}",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh025.wav",
+              "text": "ありがとう。でも遠慮しておくよ\nこういうことは人任せにするんじゃなく\n自分が相手と向き合うべきだと思うから",
+              "startTime": 439.4205010968,
+              "sfxList": []
+            },
+            {
+              "type": "dialogue",
+              "speakerCode": "rui",
+              "speakerName": "天動瑠依",
+              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
+              "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui008.wav",
+              "text": "そうね。私もその方がいいと思う\n……莉央さんとうまくいくといいわね",
+              "startTime": 448.0205010968,
+              "sfxList": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_happy-01.m4a",
+      "startTime": 1.5733334208
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio001.wav",
       "text": "今日も残業に付き合ってくれて助かったわ\nおかげでプロジェクトも一段落ついたから\n今夜はパーッと飲みましょう",
       "startTime": 2.5000000875,
       "sfxList": []
@@ -42,7 +284,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh001.wav",
       "text": "はい！　ところで、今日の飲み会は\n俺と莉央さんだけなんですか？\nてっきり他にも人がいるのかと……",
       "startTime": 11.1000002146,
       "sfxList": []
@@ -50,14 +292,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 19.9000002146
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio002.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio002.wav",
       "text": "前に約束したでしょ？\n貴方が仕事で一人前になったら\n私から飲みに誘ってあげるって",
       "startTime": 19.9000002146,
       "sfxList": []
@@ -67,7 +310,7 @@
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio003.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio003.wav",
       "text": "{user}君のおかげで\nいつも助かってるわ。お礼に今夜は\n私がおごるから好きなものを注文しなさい",
       "startTime": 27.7000002146,
       "sfxList": []
@@ -75,14 +318,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 35.5666668813
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh002.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh002.wav",
       "text": "そんな、悪いですよ\nお金なら俺も半分出しますから",
       "startTime": 35.5666668813,
       "sfxList": []
@@ -90,14 +334,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 40.4333312591
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio004.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio004.wav",
       "text": "いいのよ\nたまには先輩らしいことをさせなさい",
       "startTime": 40.4333312591,
       "sfxList": []
@@ -107,7 +352,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh003.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh003.wav",
       "text": "たまにはだなんて……\n莉央さんは尊敬出来る\n素晴らしい先輩じゃないですか",
       "startTime": 44.4333312591,
       "sfxList": []
@@ -115,14 +360,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 50.5333312591
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio005.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio005.wav",
       "text": "お世辞はいらないわ。裏ではみんな\n私のことを、怖いとか、厳しいとか\n口やかましいって言ってるんでしょ？",
       "startTime": 50.5333312591,
       "sfxList": []
@@ -132,7 +378,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh004.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh004.wav",
       "text": "莉央さんが厳しく叱るのは\n相手のためを思ってのことじゃないですか\nそれくらい莉央さんを見てれば分かります",
       "startTime": 58.6333284617,
       "sfxList": []
@@ -140,14 +386,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 66.566661795
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio006.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio006.wav",
       "text": "貴方は私のことをちゃんと\n見てくれているのね\nありがとう。嬉しいわ",
       "startTime": 66.566661795,
       "sfxList": []
@@ -155,38 +402,42 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "pub-00-night",
+      "startTime": 72.9333284617
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio007.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio007.wav",
       "text": "ふふ……今日は楽しいお酒が飲めそうね\nさあ、今夜は飲み明かすわよ",
       "startTime": 72.9333284617,
       "sfxList": []
     },
     {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
+      "bgName": "pub-00-night",
+      "startTime": 77.5666666667
+    },
+    {
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 80.183328271
+    },
+    {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_stm-01.m4a"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_stm-01.m4a",
+      "startTime": 80.866661795
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
       "iconUrl": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh005.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh005.wav",
       "text": "（素の莉央さんってこんな風に笑うんだ……\n会社では仕事人間のクールな姿しか\n見せないから、なんだか新鮮だな）",
       "startTime": 80.866661795,
       "sfxList": [
@@ -207,14 +458,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 90.3999951284
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
       "iconUrl": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh006.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh006.wav",
       "text": "（綺麗で、仕事が出来て\n人にも自分にも厳しくて\nでも本当は誰よりも優しくて……）",
       "startTime": 90.3999951284,
       "sfxList": []
@@ -222,31 +474,35 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_pub-00-night.webp",
-      "bgName": "pub-00-night"
+      "bgName": "pub-00-night",
+      "startTime": 98.0333284617
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
       "iconUrl": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh007.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh007.wav",
       "text": "（そういう莉央さんに俺は憧れていると\n思っていたけど……もしかしたら\n俺の胸にわき上がるこの気持ちは……）",
       "startTime": 98.0333284617,
       "sfxList": []
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a"
+      "action": "stop",
+      "startTime": 107.2999984741
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 108.4
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_comical-01.m4a",
+      "startTime": 108.5999984741
     },
     {
       "type": "sfx",
@@ -258,7 +514,7 @@
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio008.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio008.wav",
       "text": "もう一軒行くわよ～\n私について来なさい！",
       "startTime": 109.6666648467,
       "sfxList": []
@@ -268,7 +524,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh008.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh008.wav",
       "text": "莉央さん、さすがに飲み過ぎですよ\nもう時間も遅いですし\nそろそろ帰った方が……",
       "startTime": 114.6666653554,
       "sfxList": [
@@ -281,19 +537,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 121.4333279531
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio009.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio009.wav",
       "text": "飲み過ぎ？　こんなに楽しいんだから\nついついお酒が進んでも仕方ないじゃない\nほら、早く次のお店に……きゃっ！",
       "startTime": 121.4333279531,
       "sfxList": [
@@ -306,33 +558,42 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 132
     },
     {
-      "type": "bgm",
-      "action": "stop"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
+      "bgName": "tokyotown-00-night",
+      "startTime": 132.833311677
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh009.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh009.wav",
       "text": "危ない！\nふらついてるじゃないですか\n今夜はもう帰った方がいいです",
       "startTime": 132.833311677,
       "sfxList": []
     },
     {
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 138.2387313128
+    },
+    {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 138.933311677
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio010.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio010.wav",
       "text": "はぁ……分かったわよ\n帰ればいいんでしょ",
       "startTime": 138.933311677,
       "sfxList": []
@@ -340,19 +601,21 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 144.5872582992
     },
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_plan-01.m4a",
+      "startTime": 144.5872582992
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio011.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio011.wav",
       "text": "じゃあ、これから帰って……\n私の部屋で飲み直すわよ！\n貴方も一緒に来なさい！",
       "startTime": 144.5872582992,
       "sfxList": []
@@ -360,14 +623,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 152.9205682357
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh010.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh010.wav",
       "text": "いやいや、ダメですって！\n酔っ払った莉央さんと\n部屋で二人きりなんて、絶対ダメです！",
       "startTime": 152.9205682357,
       "sfxList": []
@@ -375,176 +639,85 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "tokyotown-00-night",
+      "startTime": 158.8539015691
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio012.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio012.wav",
       "text": "どうしてダメなのよ\n私と二人きりになれない理由を言いなさい！",
       "startTime": 158.8539015691,
       "sfxList": []
     },
     {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 163.6867813985
     },
     {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
+      "bgName": "tokyotown-00-night",
+      "startTime": 164.3872349024
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh011.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh011.wav",
       "text": "そ、それは……俺が、莉央さんのことを……\n一人の女性として好きだからです",
       "startTime": 164.3872349024,
       "sfxList": []
     },
     {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pretty-01.m4a",
+      "startTime": 169.7206132889
     },
     {
-      "type": "bgm",
-      "action": "stop"
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
+      "bgName": "tokyotown-00-night",
+      "startTime": 172.8872349024
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio013.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio013.wav",
       "text": "私のことを、好き……？\nえ……それ、本気で言ってるの？",
       "startTime": 172.8872349024,
       "sfxList": []
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "うっそぴょーん",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh012.wav",
-              "text": "う、うっそぴょーん\n嫌だなぁ、冗談に決まってるじゃないですか\nあれ？　真に受けちゃいました？",
-              "startTime": 183.9539015691,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_tension-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio014.wav",
-              "text": "そうよね、冗談に決まってるわよね\nこんな私を好きになる訳ないのに……\n私ったら真に受けて……",
-              "startTime": 192.8205794255,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio015.wav",
-              "text": "貴方といると飽きないわね\nでも、そういう冗談ばかり言ってると\nいつか後悔するわよ",
-              "startTime": 202.6872460921,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio016.wav",
-              "text": "あの時、茶化さずに\nちゃんと告白していたら良かった、って……",
-              "startTime": 211.5872460921,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh013.wav",
-              "text": "えっ？\nそれって、もしかして……",
-              "startTime": 218.3205794255,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh014.wav",
-              "text": "莉央さん。今の告白、やり直させて下さい\n今度は冗談で誤魔化したりしません\nちゃんと本心を言いますから",
-              "startTime": 222.1539076725,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "本気です。俺は莉央さんが好きです",
-          "route": [
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh015.wav",
-              "text": "もちろん本気です。一人の人間として\n尊敬していますが、それ以上に、一人の\n女性として俺は莉央さんを愛しています！",
-              "startTime": 231.9205743391,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 182.0372352839
     },
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 240.4872410058
     },
     {
       "type": "bgm",
       "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a"
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_heart-01.m4a",
+      "startTime": 240.4872410058
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh016.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh016.wav",
       "text": "莉央さんのことが好きです！\n俺と付き合って下さい！",
       "startTime": 240.4872410058,
       "sfxList": []
@@ -554,7 +727,7 @@
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio017.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio017.wav",
       "text": "で、でも、そんな素振り今まで一度も……\nあの、えっと……ごめんなさい……",
       "startTime": 244.4205743391,
       "sfxList": []
@@ -564,7 +737,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh017.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh017.wav",
       "text": "ごめんなさい！？\nそうですよね。莉央さんほどの美人なら当然\n彼氏がいますよね。それなのに俺ときたら",
       "startTime": 253.8872003156,
       "sfxList": []
@@ -572,14 +745,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 262.6538669823
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio018.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio018.wav",
       "text": "違うの！　彼氏はいないわ\nだからそういうごめんなさいじゃなくて……\nこんな時、どう答えたらいいのかしら",
       "startTime": 262.6538669823,
       "sfxList": []
@@ -589,7 +763,7 @@
       "speakerCode": "unknown",
       "speakerName": "{user}",
       "iconUrl": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh018.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh018.wav",
       "text": "（もしかして、動揺してるのか？\n意外だな。莉央さんは美人だから\n告白されることなんて慣れているだろうに）",
       "startTime": 272.6538669823,
       "sfxList": []
@@ -597,14 +771,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_tokyotown-00-night.webp",
-      "bgName": "tokyotown-00-night"
+      "bgName": "tokyotown-00-night",
+      "startTime": 282.4872003156
     },
     {
       "type": "dialogue",
       "speakerCode": "rio",
       "speakerName": "神崎莉央",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio019.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio019.wav",
       "text": "告白の返事、待ってもらってもいいかしら\n{user}君のこと\n真剣に考えてみるから",
       "startTime": 282.4872003156,
       "sfxList": []
@@ -614,24 +789,15 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh019.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh019.wav",
       "text": "もちろんです\n答えは今すぐじゃなくても構いません\n俺はいつまででも待ちますから",
       "startTime": 291.8205275455,
       "sfxList": []
     },
     {
       "type": "bgm",
-      "action": "stop"
-    },
-    {
-      "type": "bgm",
-      "action": "play",
-      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a"
-    },
-    {
-      "type": "background",
-      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
-      "bgName": "designcorridor-00-noon"
+      "action": "stop",
+      "startTime": 298.1539496739
     },
     {
       "type": "dialogue",
@@ -649,11 +815,23 @@
       ]
     },
     {
+      "type": "background",
+      "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
+      "bgName": "designcorridor-00-noon",
+      "startTime": 300.1206163406
+    },
+    {
+      "type": "bgm",
+      "action": "play",
+      "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_dangerous-01.m4a",
+      "startTime": 300.2539618809
+    },
+    {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "天動瑠依",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui001.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui001.wav",
       "text": "ねえ、{user}君\n昨日、莉央さんと何かあったの？",
       "startTime": 301.120553994,
       "sfxList": []
@@ -663,7 +841,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh020.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh020.wav",
       "text": "えっ！　どうしてそう思うんだ？",
       "startTime": 304.5872003156,
       "sfxList": []
@@ -671,14 +849,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
-      "bgName": "designcorridor-00-noon"
+      "bgName": "designcorridor-00-noon",
+      "startTime": 307.7538669823
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "天動瑠依",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui002.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui002.wav",
       "text": "今日の莉央さんはずっと上の空で\n普段ならやらないようなミスをしているのよ",
       "startTime": 307.7538669823,
       "sfxList": []
@@ -688,7 +867,7 @@
       "speakerCode": "rui",
       "speakerName": "天動瑠依",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui003.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui003.wav",
       "text": "それで{user}君なら\n原因に心当たりがあるかと思ったんだけど\n……やっぱり昨日、何かあったのね？",
       "startTime": 313.220533649,
       "sfxList": []
@@ -696,14 +875,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
-      "bgName": "designcorridor-00-noon"
+      "bgName": "designcorridor-00-noon",
+      "startTime": 321.9205397525
     },
     {
       "type": "dialogue",
       "speakerCode": "unknown",
       "speakerName": "{user}",
       "iconUrl": null,
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh021.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh021.wav",
       "text": "（本当のことを話しても、瑠依なら\n言いふらしたりしないだろう。それに俺も\n誰かに話を聞いてほしかったし……）",
       "startTime": 321.9205397525,
       "sfxList": []
@@ -713,7 +893,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh022.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh022.wav",
       "text": "分かった、話すよ\n実は昨日……",
       "startTime": 330.2205397525,
       "sfxList": []
@@ -721,14 +901,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
-      "bgName": "designcorridor-00-noon"
+      "bgName": "designcorridor-00-noon",
+      "startTime": 335.3872830073
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "天動瑠依",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui004.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui004.wav",
       "text": "莉央さんに告白を……\nそれで様子がおかしかったのね",
       "startTime": 336.4871840396,
       "sfxList": []
@@ -736,14 +917,15 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
-      "bgName": "designcorridor-00-noon"
+      "bgName": "designcorridor-00-noon",
+      "startTime": 341.7205173729
     },
     {
       "type": "dialogue",
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh023.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh023.wav",
       "text": "莉央さんって凄い美人だろ？\nだから俺なんて相手にされないだろうと\n覚悟してたけど……",
       "startTime": 341.7205173729,
       "sfxList": []
@@ -753,7 +935,7 @@
       "speakerCode": "koh",
       "speakerName": "{user}",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh024.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh024.wav",
       "text": "こんなに悩んでるってことは\n少しは脈があると思っていいのかな？",
       "startTime": 348.3205173729,
       "sfxList": []
@@ -761,155 +943,23 @@
     {
       "type": "background",
       "src": "https://apiip.dasewasia.my.id/storyBackground/env_adv_2d_designcorridor-00-noon.webp",
-      "bgName": "designcorridor-00-noon"
-    },
-    {
-      "type": "bgm",
-      "action": "stop"
+      "bgName": "designcorridor-00-noon",
+      "startTime": 354.1538507062
     },
     {
       "type": "dialogue",
       "speakerCode": "rui",
       "speakerName": "天動瑠依",
       "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-      "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui005.wav",
+      "voiceUrl": "https://apiip.dasewasia.my.id/loveStoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui005.wav",
       "text": "どうかしら。私も恋愛関係は疎いから……\nでも気になるなら、私からそれとなく\n莉央さんに聞いてみましょうか？",
       "startTime": 354.1538507062,
       "sfxList": []
     },
     {
-      "type": "choice_selection",
-      "choices": [
-        {
-          "text": "瑠依に頼む",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_pop-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": null,
-              "speakerName": "",
-              "iconUrl": null,
-              "voiceUrl": null,
-              "text": "――三十分後",
-              "startTime": 366.0206163406,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio020.wav",
-              "text": "天動さんが私を呼び出すなんて\nめずらしいわね\nそれで、私に聞きたいことって何かしら",
-              "startTime": 368.0538730858,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "stop"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "天動瑠依",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui006.wav",
-              "text": "単刀直入にお尋ねします。莉央さんは\n{user}君のことが\n好きなんですか？",
-              "startTime": 376.0538730858,
-              "sfxList": []
-            },
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_flashback-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio021.wav",
-              "text": "ど、どうして急にそんなことを……\nそういえば、貴方は彼と仲が良かったわね\nそう……告白のことを聞いたのね？",
-              "startTime": 382.1205397525,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio022.wav",
-              "text": "実を言うと自分の気持ちがよく分からないの\n彼は悪い人じゃないと思うけど、好きかと\n聞かれると……。貴方は彼をどう思う？",
-              "startTime": 395.6205316144,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "天動瑠依",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui007.wav",
-              "text": "彼は優しくて誠実な人です\n思いやりがあって、自分以外の誰かの\nために頑張ることが出来る人です",
-              "startTime": 409.4871921776,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio023.wav",
-              "text": "そうね……私もそう思うわ\n優しくて誠実で誰かのために頑張れる……\nそういう人だから、私は彼のことを……",
-              "startTime": 417.6538446027,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rio",
-              "speakerName": "神崎莉央",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rio.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rio024.wav",
-              "text": "ありがとう、天動さん\n貴方と話したおかげで\n自分の気持ちがはっきりしたわ",
-              "startTime": 431.3538344302,
-              "sfxList": []
-            }
-          ]
-        },
-        {
-          "text": "瑠依に頼まない",
-          "route": [
-            {
-              "type": "bgm",
-              "action": "play",
-              "src": "https://apiip.dasewasia.my.id/storyBgm/sud_bgm_adv_meeting-01.m4a"
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "koh",
-              "speakerName": "{user}",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-kohei.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-koh025.wav",
-              "text": "ありがとう。でも遠慮しておくよ\nこういうことは人任せにするんじゃなく\n自分が相手と向き合うべきだと思うから",
-              "startTime": 439.4205010968,
-              "sfxList": []
-            },
-            {
-              "type": "dialogue",
-              "speakerCode": "rui",
-              "speakerName": "天動瑠依",
-              "iconUrl": "https://apiip.dasewasia.my.id/iconCharacter/chara-rui.png",
-              "voiceUrl": "https://apiip.dasewasia.my.id/lovestoryVoice/sud_vo_adv_love_2603_03_01/sud_vo_adv_love_2603_03_01-rui008.wav",
-              "text": "そうね。私もその方がいいと思う\n……莉央さんとうまくいくといいわね",
-              "startTime": 448.0205010968,
-              "sfxList": []
-            }
-          ]
-        }
-      ]
+      "type": "bgm",
+      "action": "stop",
+      "startTime": 363.2802447873
     }
   ]
 }
