@@ -440,7 +440,7 @@ const parseLines = (lines, assetId) => {
       const voiceFile = getAttr(trimmed, "voice");
       const actorId = getAttr(trimmed, "actorId");
       const voiceUrl = voiceFile
-        ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.wav`
+        ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
         : null;
 
       let target = currentDialog;
