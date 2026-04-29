@@ -8,12 +8,13 @@ const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/bondStoryTxt`;
+const R2_TEXT_EN_URL = `${R2_DOMAIN}/bondStoryTxtGlobal`;
 const R2_VOICE_URL = `${R2_DOMAIN}/bondStoryVoice`;
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 
 const OUTPUT_DIR = path.join(__dirname, "../data/bondstory");
-const FOLDER_LIST_PATH = path.join(__dirname, "../data/bond_folderList.txt"); // Asumsi file ada di folder yang sama
+const FOLDER_LIST_PATH = path.join(__dirname, "../data/bond_folderList.txt");
 
 // --- MAPPING KARAKTER (Bisa dilengkapi) ---
 const CHARACTER_NAMES = {
@@ -94,11 +95,8 @@ const extractMessageText = (line) => {
     /\s+(name|voice|clip|hide|actorId|window|thumbnial|thumbnail)=/i;
   const nextMatch = rest.match(nextAttrRegex);
   let content = "";
-  if (nextMatch) {
-    content = rest.substring(0, nextMatch.index);
-  } else {
-    content = rest.replace(/\s*\]\s*$/, "");
-  }
+  if (nextMatch) content = rest.substring(0, nextMatch.index);
+  else content = rest.replace(/\s*\]\s*$/, "");
   return content.trim();
 };
 
@@ -106,9 +104,9 @@ const extractMessageText = (line) => {
 const parseLines = (lines, assetId) => {
   const scriptData = [];
   const backgroundMap = {};
-
   let currentDialog = null;
   let pendingSfx = [];
+  let foundTitle = null;
 
   const flushBuffer = () => {
     if (pendingSfx.length > 0) {
@@ -121,20 +119,16 @@ const parseLines = (lines, assetId) => {
     }
   };
 
-  let foundTitle = null;
-
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // 0. TITLE EXTRACTION (Special for Bond)
     if (trimmed.startsWith("[title")) {
       foundTitle = getAttr(trimmed, "title");
       continue;
     }
 
-    // 1. BACKGROUND DEF
     if (trimmed.startsWith("[backgroundgroup")) {
       const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
       let match;
@@ -144,7 +138,6 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 2. BACKGROUND CHANGE
     if (
       trimmed.startsWith("[backgroundsetting") ||
       trimmed.startsWith("[backgroundtween")
@@ -163,7 +156,6 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 3. BGM
     if (trimmed.startsWith("[bgmplay")) {
       flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
@@ -186,7 +178,6 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 4. SFX
     if (trimmed.startsWith("[se")) {
       const seId = getAttr(trimmed, "se");
       const seStartTime = getStartTime(trimmed);
@@ -233,15 +224,11 @@ const parseLines = (lines, assetId) => {
             }
           }
         }
-
-        if (!attached) {
-          pendingSfx.push(sfxItem);
-        }
+        if (!attached) pendingSfx.push(sfxItem);
       }
       continue;
     }
 
-    // 5. DIALOGUE & NARRATION (FIX MERGING)
     if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
       const isNarration = trimmed.startsWith("[narration");
       let inlineText = extractMessageText(trimmed);
@@ -252,7 +239,6 @@ const parseLines = (lines, assetId) => {
       let speakerCode = getAttr(trimmed, "window");
       let iconUrl = null;
 
-      // Resolve Speaker
       const thumbRaw =
         getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
       if (thumbRaw) {
@@ -264,20 +250,14 @@ const parseLines = (lines, assetId) => {
       if (isNarration) speakerCode = null;
       if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
-      // --- LOGIKA MERGING ---
-      // Cek apakah dialog sebelumnya punya speaker yang sama DAN belum punya voice.
-      // Jika ya, kemungkinan ini adalah satu kalimat yang terpecah di file teks.
+      // LOGIKA MERGING
       if (
         currentDialog &&
         currentDialog.speakerCode === speakerCode &&
         !currentDialog.voiceUrl &&
-        !isNarration // Narasi jarang digabung, biasanya dialog karakter
+        !isNarration
       ) {
-        // GABUNGKAN TEKS
-        // Tambahkan spasi atau newline tergantung preferensi. Newline lebih aman untuk VN.
         currentDialog.text += "\n" + (inlineText || "");
-
-        // Jika ada SFX yang "mengantri" di antara pecahan kalimat ini, tempelkan ke dialog gabungan
         if (pendingSfx.length > 0) {
           pendingSfx.forEach((sfx) => {
             let delayMs = 0;
@@ -291,43 +271,38 @@ const parseLines = (lines, assetId) => {
           });
           pendingSfx = [];
         }
-
-        // Jangan buat dialog baru, lanjutkan loop
         continue;
       }
-      // ---------------------
 
-      // Jika tidak di-merge, flush yang lama
       if (currentDialog) {
         scriptData.push(currentDialog);
         currentDialog = null;
       }
 
-      // Resolve Names & Icons for New Dialog
-      if (!displayName && speakerCode && CHARACTER_NAMES[speakerCode]) {
+      if (!displayName && speakerCode && CHARACTER_NAMES[speakerCode])
         displayName = CHARACTER_NAMES[speakerCode];
-      }
-
-      if (speakerCode && ICON_MAP[speakerCode]) {
+      if (speakerCode && ICON_MAP[speakerCode])
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[speakerCode]}.png`;
-      } else if (speakerCode && speakerCode !== "unknown" && !isNarration) {
+      else if (speakerCode && speakerCode !== "unknown" && !isNarration)
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
-      }
 
       const startTime = getStartTime(trimmed);
-
       const newDialog = {
         type: "dialogue",
         speakerCode,
         speakerName: displayName,
+        speakerNameEn:
+          speakerCode && CHARACTER_NAMES[speakerCode]
+            ? CHARACTER_NAMES[speakerCode]
+            : "",
         iconUrl,
         voiceUrl: null,
         text: inlineText || "",
+        translations: { en: "", id: "" },
         startTime: startTime,
         sfxList: [],
       };
 
-      // Attach Pending SFX to this new dialog
       if (pendingSfx.length > 0) {
         pendingSfx.forEach((sfx) => {
           if (
@@ -337,10 +312,7 @@ const parseLines = (lines, assetId) => {
           ) {
             const delayMs = Math.max(0, (sfx.startTime - startTime) * 1000);
             newDialog.sfxList.push({ src: sfx.src, delay: delayMs });
-          } else {
-            // SFX terlalu jauh di belakang, jadikan standalone
-            scriptData.push(sfx);
-          }
+          } else scriptData.push(sfx);
         });
         pendingSfx = [];
       }
@@ -349,21 +321,22 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 6. VOICE
     if (trimmed.startsWith("[voice")) {
       const voiceFile = getAttr(trimmed, "voice");
       const actorId = getAttr(trimmed, "actorId");
+      const targetActorId = actorId ? actorId.toLowerCase() : null;
       const voiceUrl = voiceFile
         ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
         : null;
 
       let target = currentDialog;
       if (!target && scriptData.length > 0) {
-        // Backtrack untuk mencari dialog terakhir
         for (let j = scriptData.length - 1; j >= 0; j--) {
           if (scriptData[j].type === "dialogue") {
-            target = scriptData[j];
-            break;
+            if (!targetActorId || scriptData[j].speakerCode === targetActorId) {
+              target = scriptData[j];
+              break;
+            }
           }
         }
       }
@@ -374,16 +347,14 @@ const parseLines = (lines, assetId) => {
           const code = actorId.toLowerCase();
           if (!target.speakerCode || target.speakerCode === "unknown") {
             target.speakerCode = code;
-            if (!target.iconUrl && ICON_MAP[code]) {
+            if (!target.iconUrl && ICON_MAP[code])
               target.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
-            }
           }
         }
       }
       continue;
     }
 
-    // 7. JUMPS (Linear story usually minimal jumps, but handle it just in case)
     if (trimmed.startsWith("[jump")) {
       flushBuffer();
       scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
@@ -412,7 +383,6 @@ const parseLines = (lines, assetId) => {
 (async () => {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
-  // --- BACA CACHE LAMA ---
   const INDEX_PATH = path.join(OUTPUT_DIR, "index_bond.json");
   const cacheMap = {};
   let cachedFilesCount = 0;
@@ -428,7 +398,6 @@ const parseLines = (lines, assetId) => {
     );
   }
 
-  // 1. Baca daftar file dari folderList.txt
   let FILE_LIST = [];
   try {
     const listContent = fs.readFileSync(FOLDER_LIST_PATH, "utf-8");
@@ -453,15 +422,12 @@ const parseLines = (lines, assetId) => {
     const jsonFileName = `${assetId}.json`;
 
     const parts = assetId.split("_");
-
-    // Validasi format
     if (parts.length < 5) {
       console.warn(`[SKIP] Invalid format: ${fileName}`);
       continue;
     }
 
     const charCode = parts[2];
-    // const setNum = parts[3]; // Biasanya 01 (Bond Story 1?)
     const episodeNum = parseInt(parts[4]);
 
     if (
@@ -481,26 +447,57 @@ const parseLines = (lines, assetId) => {
     }
 
     try {
-      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
-      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
-      const rawContent = await response.text();
+      const jpResponse = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!jpResponse.ok) throw new Error(`HTTP Error ${jpResponse.status}`);
+      const jpRawContent = await jpResponse.text();
 
-      const { scriptData, title } = parseLines(
-        rawContent.replace(/\r\n/g, "\n").split("\n"),
+      const { scriptData: jpScriptData, title: jpTitle } = parseLines(
+        jpRawContent.replace(/\r\n/g, "\n").split("\n"),
         assetId,
       );
 
-      // Generate Title jika tidak ada di script
-      const displayTitle = title || `Episode ${episodeNum}`;
+      // TRANSLATION ZIPPING LOGIC
+      let enScriptData = [];
+      try {
+        const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
+        if (enResponse.ok) {
+          const enRawContent = await enResponse.text();
+          const parsedEn = parseLines(
+            enRawContent.replace(/\r\n/g, "\n").split("\n"),
+            assetId,
+          );
+          enScriptData = parsedEn.scriptData;
+        }
+      } catch (e) {
+        console.warn(`\n[WARN] Failed to fetch English TXT for ${fileName}`);
+      }
 
-      const jsonFileName = `${assetId}.json`;
+      if (enScriptData.length > 0) {
+        const jpDialogues = jpScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+        const enDialogues = enScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+
+        for (let idx = 0; idx < jpDialogues.length; idx++) {
+          if (enDialogues[idx]) {
+            jpDialogues[idx].translations.en = enDialogues[idx].text;
+            if (enDialogues[idx].speakerName) {
+              jpDialogues[idx].speakerNameEn = enDialogues[idx].speakerName;
+            }
+          }
+        }
+      }
+
+      const displayTitle = jpTitle || `Episode ${episodeNum}`;
       fs.writeFileSync(
         path.join(OUTPUT_DIR, jsonFileName),
         JSON.stringify(
           {
             id: assetId,
             title: displayTitle + episodeNum,
-            script: scriptData,
+            script: jpScriptData,
           },
           null,
           2,
@@ -509,7 +506,6 @@ const parseLines = (lines, assetId) => {
 
       totalFilesProcessed++;
 
-      // Grouping Logic
       if (!groupedCharacters[charCode]) {
         const charName = CHARACTER_NAMES[charCode] || charCode.toUpperCase();
         groupedCharacters[charCode] = {
@@ -522,7 +518,7 @@ const parseLines = (lines, assetId) => {
       groupedCharacters[charCode].stories.push({
         id: assetId,
         title: displayTitle + episodeNum,
-        epNum: episodeNum, // Untuk sorting
+        epNum: episodeNum,
         fileName: jsonFileName,
       });
     } catch (err) {
@@ -530,14 +526,12 @@ const parseLines = (lines, assetId) => {
     }
   }
 
-  // Convert Object to Array & Sort
   const indexData = Object.values(groupedCharacters)
     .map((charGroup) => {
-      // Sort episodes by number (01, 02, 03...)
       charGroup.stories.sort((a, b) => a.epNum - b.epNum);
       return charGroup;
     })
-    .sort((a, b) => a.id.localeCompare(b.id)); // Sort character by ID
+    .sort((a, b) => a.id.localeCompare(b.id));
 
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "index_bond.json"),

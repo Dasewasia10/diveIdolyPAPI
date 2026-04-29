@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/mainStoryTxt`;
+const R2_TEXT_EN_URL = `${R2_DOMAIN}/mainStoryTxtGlobal`; // Folder baru untuk Raw TXT Inggris
 const R2_VOICE_URL = `${R2_DOMAIN}/mainStoryVoice`;
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
@@ -53,6 +54,7 @@ const SPEAKER_MAP = {
   saegusa: "Saegusa",
   asakura: "Asakura",
   koh: "Kohei",
+  stm: "Satomi Hashimoto",
 };
 
 const ICON_MAP = {
@@ -93,7 +95,6 @@ const getStartTime = (line) => {
   return match ? parseFloat(match[1]) : null;
 };
 
-// FUNGSI BARU: Mengambil durasi dari attribut clip
 const getDuration = (line) => {
   const match = line.match(/_duration\\?":\s*([0-9.]+)/);
   return match ? parseFloat(match[1]) : null;
@@ -137,9 +138,9 @@ const resolveBackgroundSrc = (rawSrc) => {
 const parseLines = (lines, assetId) => {
   const scriptData = [];
   const backgroundMap = {};
-
   let currentDialog = null;
   let pendingSfx = [];
+  let foundTitle = null;
 
   const flushBuffer = () => {
     if (pendingSfx.length > 0) {
@@ -152,20 +153,16 @@ const parseLines = (lines, assetId) => {
     }
   };
 
-  let foundTitle = null;
-
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // 0. TITLE EXTRACTION
     if (trimmed.startsWith("[title")) {
       foundTitle = getAttr(trimmed, "title");
       continue;
     }
 
-    // 1. BACKGROUND DEF
     if (trimmed.startsWith("[backgroundgroup")) {
       const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
       let match;
@@ -175,7 +172,6 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 2. BACKGROUND CHANGE
     if (
       trimmed.startsWith("[backgroundsetting") ||
       trimmed.startsWith("[backgroundtween") ||
@@ -184,7 +180,6 @@ const parseLines = (lines, assetId) => {
       flushBuffer();
       let bgId = null;
       let finalSrc = null;
-
       const startTime = getStartTime(trimmed);
 
       if (trimmed.startsWith("[backgroundlayoutgroup")) {
@@ -202,7 +197,6 @@ const parseLines = (lines, assetId) => {
       }
 
       if (finalSrc) {
-        // 2. MASUKKAN startTime KE DALAM PUSH
         scriptData.push({
           type: "background",
           src: finalSrc,
@@ -213,16 +207,13 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 3. BGM
     if (
       trimmed.startsWith("[bgmplay") ||
       (trimmed.startsWith("[bgm ") && !trimmed.startsWith("[bgmstop"))
     ) {
       flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
-
       const startTime = getStartTime(trimmed);
-
       if (bgmId)
         scriptData.push({
           type: "bgm",
@@ -235,14 +226,11 @@ const parseLines = (lines, assetId) => {
 
     if (trimmed.startsWith("[bgmstop")) {
       flushBuffer();
-
       const startTime = getStartTime(trimmed);
-
       scriptData.push({ type: "bgm", action: "stop", startTime: startTime });
       continue;
     }
 
-    // 4. SFX
     if (trimmed.startsWith("[se")) {
       const seId = getAttr(trimmed, "se");
       const seStartTime = getStartTime(trimmed);
@@ -262,7 +250,6 @@ const parseLines = (lines, assetId) => {
               0,
               (seStartTime - currentDialog.startTime) * 1000,
             );
-            // Tambahkan properti startTime ke dalam array agar bisa direkalkulasi nanti jika digabung
             currentDialog.sfxList.push({
               src: seSrc,
               delay: delayMs,
@@ -299,17 +286,12 @@ const parseLines = (lines, assetId) => {
           }
         }
 
-        if (!attached) {
-          pendingSfx.push(sfxItem);
-        }
+        if (!attached) pendingSfx.push(sfxItem);
       }
       continue;
     }
 
-    // 5. DIALOGUE & NARRATION
     if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
-      // HAPUS LOGIKA PENGGABUNGAN MANUAL DI SINI.
-      // Kita serahkan penggabungan sepenuhnya pada tag [voice] nanti.
       if (currentDialog) {
         scriptData.push(currentDialog);
         currentDialog = null;
@@ -351,14 +333,15 @@ const parseLines = (lines, assetId) => {
         type: "dialogue",
         speakerCode,
         speakerName: displayName,
+        speakerNameEn: speakerCode ? SPEAKER_MAP[speakerCode] || "" : "",
         iconUrl,
         voiceUrl: null,
         text: inlineText || "",
+        translations: { en: "", id: "" },
         startTime: startTime,
         sfxList: [],
       };
 
-      // Attach Pending SFX
       if (pendingSfx.length > 0) {
         pendingSfx.forEach((sfx) => {
           if (
@@ -387,6 +370,7 @@ const parseLines = (lines, assetId) => {
     if (trimmed.startsWith("[voice")) {
       const voiceFile = getAttr(trimmed, "voice");
       const actorId = getAttr(trimmed, "actorId");
+      const targetActorId = actorId ? actorId.toLowerCase() : null; // FILTER PENTING
       const voiceUrl = voiceFile
         ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
         : null;
@@ -403,16 +387,18 @@ const parseLines = (lines, assetId) => {
         for (let j = 0; j < scriptData.length; j++) {
           const item = scriptData[j];
           if (item && item.type === "dialogue" && item.startTime !== null) {
-            // Toleransi 0.5 detik
             if (
               item.startTime >= vStart - 0.5 &&
               item.startTime <= vEnd + 0.5
             ) {
-              matchingDialogs.push({
-                source: "scriptData",
-                index: j,
-                item: item,
-              });
+              // HANYA GABUNGKAN JIKA SPEAKER SAMA DENGAN ACTOR ID VOICE (Mencegah Pencaplokan)
+              if (!targetActorId || item.speakerCode === targetActorId) {
+                matchingDialogs.push({
+                  source: "scriptData",
+                  index: j,
+                  item: item,
+                });
+              }
             }
           }
         }
@@ -423,18 +409,18 @@ const parseLines = (lines, assetId) => {
             currentDialog.startTime >= vStart - 0.5 &&
             currentDialog.startTime <= vEnd + 0.5
           ) {
-            matchingDialogs.push({
-              source: "currentDialog",
-              index: -1,
-              item: currentDialog,
-            });
+            if (!targetActorId || currentDialog.speakerCode === targetActorId) {
+              matchingDialogs.push({
+                source: "currentDialog",
+                index: -1,
+                item: currentDialog,
+              });
+            }
           }
         }
 
         // 3. LAKUKAN PENGGABUNGAN
         if (matchingDialogs.length > 0) {
-          // Jadikan Dialog TERAKHIR sebagai Induk (Primary)
-          // Mengapa yang terakhir? Agar background/camera yg muncul sebelumnya tetap tereksekusi duluan di layar.
           const primaryMatch = matchingDialogs[matchingDialogs.length - 1];
           const primary = primaryMatch.item;
 
@@ -449,20 +435,16 @@ const parseLines = (lines, assetId) => {
             }
           }
 
-          // Gabung teks & rekalkulasi jeda SFX
           let mergedText = "";
           let mergedSfx = [];
-          // SFX dihitung relatif terhadap Dialog PERTAMA, karena Audio jalan sejak saat itu.
           const baseStartTime = matchingDialogs[0].item.startTime;
 
           for (let k = 0; k < matchingDialogs.length; k++) {
             const matchObj = matchingDialogs[k];
             const item = matchObj.item;
 
-            // Gabung Teks
             mergedText += (mergedText ? "\n" : "") + (item.text || "");
 
-            // Rekalkulasi SFX Delay
             if (item.sfxList && item.sfxList.length > 0) {
               item.sfxList.forEach((sfx) => {
                 let newDelay = 0;
@@ -482,10 +464,9 @@ const parseLines = (lines, assetId) => {
               });
             }
 
-            // HAPUS dialog pecahan (kecuali si Induk) dari buffer
             if (k !== matchingDialogs.length - 1) {
               if (matchObj.source === "scriptData") {
-                scriptData[matchObj.index] = null; // Tandai untuk dihapus
+                scriptData[matchObj.index] = null;
               } else if (matchObj.source === "currentDialog") {
                 currentDialog = null;
               }
@@ -495,20 +476,30 @@ const parseLines = (lines, assetId) => {
           primary.text = mergedText;
           primary.sfxList = mergedSfx;
 
-          // Bersihkan `null` dari scriptData
           for (let i = scriptData.length - 1; i >= 0; i--) {
             if (scriptData[i] === null) {
               scriptData.splice(i, 1);
             }
           }
         } else {
-          // Fallback (jika audio tidak punya dialog yg cocok)
+          // Fallback dengan Filter Actor ID
           let target = currentDialog;
-          if (!target && scriptData.length > 0) {
-            for (let j = scriptData.length - 1; j >= 0; j--) {
-              if (scriptData[j] && scriptData[j].type === "dialogue") {
-                target = scriptData[j];
-                break;
+          if (
+            !target ||
+            (targetActorId && target.speakerCode !== targetActorId)
+          ) {
+            target = null;
+            if (scriptData.length > 0) {
+              for (let j = scriptData.length - 1; j >= 0; j--) {
+                if (scriptData[j] && scriptData[j].type === "dialogue") {
+                  if (
+                    !targetActorId ||
+                    scriptData[j].speakerCode === targetActorId
+                  ) {
+                    target = scriptData[j];
+                    break;
+                  }
+                }
               }
             }
           }
@@ -517,13 +508,24 @@ const parseLines = (lines, assetId) => {
           }
         }
       } else {
-        // Fallback (jika vStart atau vEnd gagal diparsing)
+        // Fallback dengan Filter Actor ID
         let target = currentDialog;
-        if (!target && scriptData.length > 0) {
-          for (let j = scriptData.length - 1; j >= 0; j--) {
-            if (scriptData[j] && scriptData[j].type === "dialogue") {
-              target = scriptData[j];
-              break;
+        if (
+          !target ||
+          (targetActorId && target.speakerCode !== targetActorId)
+        ) {
+          target = null;
+          if (scriptData.length > 0) {
+            for (let j = scriptData.length - 1; j >= 0; j--) {
+              if (scriptData[j] && scriptData[j].type === "dialogue") {
+                if (
+                  !targetActorId ||
+                  scriptData[j].speakerCode === targetActorId
+                ) {
+                  target = scriptData[j];
+                  break;
+                }
+              }
             }
           }
         }
@@ -537,7 +539,6 @@ const parseLines = (lines, assetId) => {
 
   flushBuffer();
 
-  // Mengubah urutan array dari berbasis Trek (Timeline) menjadi berbasis Urutan (Sequential)
   scriptData.sort((a, b) => {
     const timeA =
       a.startTime !== undefined && a.startTime !== null
@@ -549,7 +550,7 @@ const parseLines = (lines, assetId) => {
         : 0;
     return timeA - timeB;
   });
-  // ----------------------------------
+
   return { scriptData, title: foundTitle };
 };
 
@@ -574,7 +575,6 @@ const parseLines = (lines, assetId) => {
   let totalFilesProcessed = 0;
   let cachedFilesCount = 0;
 
-  // --- BACA CACHE LAMA ---
   const INDEX_PATH = path.join(OUTPUT_DIR, "index_main.json");
   const cacheMap = {};
   if (fs.existsSync(INDEX_PATH)) {
@@ -594,7 +594,6 @@ const parseLines = (lines, assetId) => {
   for (let i = 0; i < FILE_LIST.length; i++) {
     const fileName = FILE_LIST[i];
     const assetId = fileName.replace(".txt", "");
-
     const parts = assetId.split("_");
 
     if (parts.length < 5) {
@@ -607,7 +606,6 @@ const parseLines = (lines, assetId) => {
     const episodeNum = parts[4];
     const jsonFileName = `${assetId}.json`;
 
-    // Pastikan grup dibuat meskipun pakai cache
     if (!groupedGroups[groupCode]) {
       const groupName = GROUP_NAMES[groupCode] || groupCode.toUpperCase();
       groupedGroups[groupCode] = {
@@ -617,8 +615,6 @@ const parseLines = (lines, assetId) => {
       };
     }
 
-    // --- CEK CACHE ---
-    // Jika data ada di index DAN file detailnya ada di disk, SKIP proses berat!
     if (
       cacheMap[assetId] &&
       fs.existsSync(path.join(OUTPUT_DIR, jsonFileName))
@@ -627,27 +623,69 @@ const parseLines = (lines, assetId) => {
       cachedFilesCount++;
       continue;
     }
-    try {
-      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
-      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
-      const rawContent = await response.text();
 
-      const { scriptData, title } = parseLines(
-        rawContent.replace(/\r\n/g, "\n").split("\n"),
+    try {
+      // 1. Eksekusi Parsing File Jepang
+      const jpResponse = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!jpResponse.ok) throw new Error(`HTTP Error ${jpResponse.status}`);
+      const jpRawContent = await jpResponse.text();
+
+      const { scriptData: jpScriptData, title: jpTitle } = parseLines(
+        jpRawContent.replace(/\r\n/g, "\n").split("\n"),
         assetId,
       );
 
-      const displayTitle = title || `Episode ${episodeNum}`;
+      const displayTitle = jpTitle || `Episode ${episodeNum}`;
 
-      const jsonFileName = `${assetId}.json`;
+      // 2. Eksekusi Parsing File Inggris dengan Parser yang Sama Persis
+      let enScriptData = [];
+      try {
+        const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
+        if (enResponse.ok) {
+          const enRawContent = await enResponse.text();
+          const parsedEn = parseLines(
+            enRawContent.replace(/\r\n/g, "\n").split("\n"),
+            assetId,
+          );
+          enScriptData = parsedEn.scriptData;
+        }
+      } catch (e) {
+        console.warn(`\n[WARN] Failed to fetch English TXT for ${fileName}`);
+      }
+
+      // 3. Suntikkan (Zip) Translasi berdasarkan Urutan Index!
+      if (enScriptData.length > 0) {
+        const jpDialogues = jpScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+        const enDialogues = enScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+
+        if (jpDialogues.length !== enDialogues.length) {
+          console.warn(
+            `\n[WARN MISMATCH] ${fileName} -> JP Dialogs: ${jpDialogues.length}, EN Dialogs: ${enDialogues.length}`,
+          );
+        }
+
+        for (let idx = 0; idx < jpDialogues.length; idx++) {
+          if (enDialogues[idx]) {
+            // Suntik teks terjemahan ke objek aslinya
+            jpDialogues[idx].translations.en = enDialogues[idx].text;
+
+            // Timpa speakerNameEn jika nama Inggris tertera jelas pada file raw (seperti "Satomi Hashimoto")
+            // Mengatasi isu {user} sekaligus karena file raw juga mendefinisikan "name={user}" di versi Inggrisnya!
+            if (enDialogues[idx].speakerName) {
+              jpDialogues[idx].speakerNameEn = enDialogues[idx].speakerName;
+            }
+          }
+        }
+      }
+
       fs.writeFileSync(
         path.join(OUTPUT_DIR, jsonFileName),
         JSON.stringify(
-          {
-            id: assetId,
-            title: displayTitle,
-            script: scriptData,
-          },
+          { id: assetId, title: displayTitle, script: jpScriptData },
           null,
           2,
         ),
@@ -655,23 +693,15 @@ const parseLines = (lines, assetId) => {
 
       totalFilesProcessed++;
 
-      if (!groupedGroups[groupCode]) {
-        const groupName = GROUP_NAMES[groupCode] || groupCode.toUpperCase();
-        groupedGroups[groupCode] = {
-          id: groupCode,
-          name: groupName,
-          stories: [],
-        };
-      }
-
       const epNumIndex = parseInt(setNum) * 10 + parseInt(episodeNum);
-
       groupedGroups[groupCode].stories.push({
         id: assetId,
         title: displayTitle,
         epNum: epNumIndex,
         fileName: jsonFileName,
       });
+
+      console.log(`[SUCCESS] Processed ${fileName}`);
     } catch (err) {
       console.error(`[ERROR] Failed processing ${fileName}:`, err.message);
     }
@@ -689,5 +719,7 @@ const parseLines = (lines, assetId) => {
     JSON.stringify(indexData, null, 2),
   );
 
-  console.log(`\nSync Completed! Processed ${totalFilesProcessed} files.`);
+  console.log(
+    `\nSync Completed! Processed ${totalFilesProcessed} files. (Cached: ${cachedFilesCount})`,
+  );
 })();

@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/loveStoryTxt`;
+const R2_TEXT_EN_URL = `${R2_DOMAIN}/loveStoryTxtGlobal`;
 const R2_VOICE_URL = `${R2_DOMAIN}/loveStoryVoice`;
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
@@ -16,7 +17,6 @@ const OUTPUT_DIR = path.join(__dirname, "../data/lovestory");
 
 // --- DAFTAR FILE (Sesuai list Anda) ---
 const FILE_LIST = [
-  // 2305
   "adv_love_2305_01_01.txt",
   "adv_love_2305_02_01.txt",
   "adv_love_2305_03_01.txt",
@@ -27,7 +27,6 @@ const FILE_LIST = [
   "adv_love_2305_08_01.txt",
   "adv_love_2305_08_02.txt",
   "adv_love_2305_08_03.txt",
-  // 2311
   "adv_love_2311_01_01.txt",
   "adv_love_2311_02_01.txt",
   "adv_love_2311_03_01.txt",
@@ -38,7 +37,6 @@ const FILE_LIST = [
   "adv_love_2311_08_01.txt",
   "adv_love_2311_08_02.txt",
   "adv_love_2311_08_03.txt",
-  // 2405
   "adv_love_2405_01_01.txt",
   "adv_love_2405_02_01.txt",
   "adv_love_2405_03_01.txt",
@@ -49,7 +47,6 @@ const FILE_LIST = [
   "adv_love_2405_08_01.txt",
   "adv_love_2405_08_02.txt",
   "adv_love_2405_08_03.txt",
-  // 2411
   "adv_love_2411_01_01.txt",
   "adv_love_2411_02_01.txt",
   "adv_love_2411_03_01.txt",
@@ -60,7 +57,6 @@ const FILE_LIST = [
   "adv_love_2411_08_01.txt",
   "adv_love_2411_08_02.txt",
   "adv_love_2411_08_03.txt",
-  // 2505
   "adv_love_2505_01_01.txt",
   "adv_love_2505_02_01.txt",
   "adv_love_2505_03_01.txt",
@@ -79,7 +75,6 @@ const FILE_LIST = [
   "adv_love_2505_05_08.txt",
   "adv_love_2505_05_09.txt",
   "adv_love_2505_05_10.txt",
-  // 2603
   "adv_love_2603_01_01.txt",
   "adv_love_2603_02_01.txt",
   "adv_love_2603_03_01.txt",
@@ -178,25 +173,31 @@ const extractMessageText = (line) => {
     /\s+(name|voice|clip|hide|actorId|window|thumbnial|thumbnail)=/i;
   const nextMatch = rest.match(nextAttrRegex);
   let content = "";
-  if (nextMatch) {
-    content = rest.substring(0, nextMatch.index);
-  } else {
-    content = rest.replace(/\s*\]\s*$/, "");
-  }
+  if (nextMatch) content = rest.substring(0, nextMatch.index);
+  else content = rest.replace(/\s*\]\s*$/, "");
   return content.trim();
 };
 
 const detectMainHeroine = (script) => {
   const counts = {};
   const excluded = ["koh", "mob", "narration", "unknown", "tencho", "staff"];
-  script.forEach((line) => {
-    if (line.type === "dialogue" && line.speakerCode) {
-      const code = line.speakerCode.toLowerCase();
-      if (!excluded.includes(code)) {
-        counts[code] = (counts[code] || 0) + 1;
+
+  // Deteksi Heroine dari semua layer
+  const countHeroines = (arr) => {
+    arr.forEach((line) => {
+      if (line.type === "dialogue" && line.speakerCode) {
+        const code = line.speakerCode.toLowerCase();
+        if (!excluded.includes(code)) counts[code] = (counts[code] || 0) + 1;
+      } else if (line.type === "choice_selection" && line.choices) {
+        line.choices.forEach((c) => {
+          if (c.route) countHeroines(c.route);
+        });
       }
-    }
-  });
+    });
+  };
+
+  countHeroines(script);
+
   let maxCount = 0;
   let mainHeroineCode = null;
   for (const [code, count] of Object.entries(counts)) {
@@ -212,13 +213,10 @@ const detectMainHeroine = (script) => {
 const parseLines = (lines, assetId) => {
   const scriptData = [];
   const backgroundMap = {};
-
   let currentDialog = null;
-  // Buffer untuk menyimpan SFX yang muncul SEBELUM dialog (kasus edge case)
   let pendingSfx = [];
 
   const flushBuffer = () => {
-    // Jika ada SFX yang menggantung dan tidak menemukan induk dialog, dorong sebagai standalone
     if (pendingSfx.length > 0) {
       pendingSfx.forEach((sfxObj) => scriptData.push(sfxObj));
       pendingSfx = [];
@@ -234,7 +232,6 @@ const parseLines = (lines, assetId) => {
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // 1. BACKGROUND DEF
     if (trimmed.startsWith("[backgroundgroup")) {
       const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
       let match;
@@ -244,7 +241,6 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 2. BACKGROUND CHANGE
     if (
       trimmed.startsWith("[backgroundsetting") ||
       trimmed.startsWith("[backgroundtween")
@@ -263,19 +259,17 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 3. BGM CONTROL
     if (trimmed.startsWith("[bgmplay")) {
       flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
       const startTime = getStartTime(trimmed);
-      if (bgmId) {
+      if (bgmId)
         scriptData.push({
           type: "bgm",
           action: "play",
           src: `${R2_BGM_URL}/${bgmId}.m4a`,
           startTime: startTime,
         });
-      }
       continue;
     }
 
@@ -286,30 +280,20 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 4. SFX HANDLING (Improved Retroactive & Pending)
     if (trimmed.startsWith("[se")) {
-      // JANGAN flushBuffer di sini agar bisa menempel ke dialog aktif
       const seId = getAttr(trimmed, "se");
       const seStartTime = getStartTime(trimmed);
       const seSrc = seId ? `${R2_BGM_URL}/${seId}.m4a` : null;
 
       if (seId && seSrc) {
-        const sfxItem = {
-          type: "sfx",
-          src: seSrc,
-          startTime: seStartTime,
-        };
-
+        const sfxItem = { type: "sfx", src: seSrc, startTime: seStartTime };
         let attached = false;
 
-        // STRATEGI 1: Tempel ke Dialog yang SEDANG aktif (belum di-flush)
         if (
           currentDialog &&
           currentDialog.startTime !== null &&
           seStartTime !== null
         ) {
-          // Cek waktu: SFX harus terjadi SETELAH atau BERSAMAAN dengan dialog
-          // (Toleransi -0.5s jaga-jaga pembulatan float)
           if (seStartTime >= currentDialog.startTime - 0.5) {
             const delayMs = Math.max(
               0,
@@ -320,19 +304,15 @@ const parseLines = (lines, assetId) => {
           }
         }
 
-        // STRATEGI 2: Jika tidak ada dialog aktif, cari Dialog TERAKHIR di scriptData (Backtracking)
-        // Ini untuk kasus: Dialog -> Background Change -> SFX (SFX harusnya milik dialog tadi)
         if (!attached && scriptData.length > 0) {
           for (let j = scriptData.length - 1; j >= 0; j--) {
             const lastItem = scriptData[j];
-            // Stop jika ketemu batas scene keras (Pilihan/Jump/Stop BGM)
             if (
               lastItem.type === "choice_selection" ||
               lastItem.type === "jump" ||
               (lastItem.type === "bgm" && lastItem.action === "stop")
             )
               break;
-
             if (lastItem.type === "dialogue") {
               if (
                 seStartTime !== null &&
@@ -347,22 +327,16 @@ const parseLines = (lines, assetId) => {
                 lastItem.sfxList.push({ src: seSrc, delay: delayMs });
                 attached = true;
               }
-              break; // Hanya cek dialog terakhir yang relevan
+              break;
             }
           }
         }
-
-        // STRATEGI 3: Jika belum nempel juga (mungkin SFX muncul sebelum Text di file), simpan di Pending
-        if (!attached) {
-          pendingSfx.push(sfxItem);
-        }
+        if (!attached) pendingSfx.push(sfxItem);
       }
       continue;
     }
 
-    // 5. DIALOGUE & NARRATION
     if (trimmed.startsWith("[message") || trimmed.startsWith("[narration")) {
-      // Jangan flushBuffer() standar, kita proses manual
       if (currentDialog) {
         scriptData.push(currentDialog);
         currentDialog = null;
@@ -388,45 +362,39 @@ const parseLines = (lines, assetId) => {
       if (isNarration) speakerCode = null;
       if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
-      if (!displayName && speakerCode && SPEAKER_MAP[speakerCode]) {
+      if (!displayName && speakerCode && SPEAKER_MAP[speakerCode])
         displayName = SPEAKER_MAP[speakerCode];
-      }
-
-      if (speakerCode && ICON_MAP[speakerCode]) {
+      if (speakerCode && ICON_MAP[speakerCode])
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[speakerCode]}.png`;
-      } else if (speakerCode && speakerCode !== "unknown" && !isNarration) {
+      else if (speakerCode && speakerCode !== "unknown" && !isNarration)
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
-      }
 
       const startTime = getStartTime(trimmed);
-
       const newDialog = {
         type: "dialogue",
         speakerCode,
         speakerName: displayName,
+        speakerNameEn:
+          speakerCode && SPEAKER_MAP[speakerCode]
+            ? SPEAKER_MAP[speakerCode]
+            : "",
         iconUrl,
         voiceUrl: null,
         text: inlineText || "",
+        translations: { en: "", id: "" },
         startTime: startTime,
         sfxList: [],
       };
 
-      // CEK PENDING SFX (Forward Attachment)
-      // Cek apakah ada SFX yang "mengantri" dan waktunya cocok dengan dialog ini
       if (pendingSfx.length > 0 && startTime !== null) {
         pendingSfx.forEach((sfx) => {
-          // Logic: Jika SFX terjadi SETELAH atau BERSAMAAN dengan dialog ini (toleransi 0.5s)
           if (sfx.startTime !== null && sfx.startTime >= startTime - 0.5) {
             const delayMs = Math.max(0, (sfx.startTime - startTime) * 1000);
             newDialog.sfxList.push({ src: sfx.src, delay: delayMs });
-          } else {
-            // Jika SFX terjadi JAUH SEBELUM dialog ini, berarti dia standalone
-            scriptData.push(sfx);
-          }
+          } else scriptData.push(sfx);
         });
-        pendingSfx = []; // Kosongkan buffer
+        pendingSfx = [];
       } else if (pendingSfx.length > 0) {
-        // Jika dialog ini tidak punya startTime, flush semua pending sebagai standalone
         pendingSfx.forEach((sfx) => scriptData.push(sfx));
         pendingSfx = [];
       }
@@ -435,10 +403,10 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 6. VOICE
     if (trimmed.startsWith("[voice")) {
       const voiceFile = getAttr(trimmed, "voice");
       const actorId = getAttr(trimmed, "actorId");
+      const targetActorId = actorId ? actorId.toLowerCase() : null;
       const voiceUrl = voiceFile
         ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
         : null;
@@ -447,10 +415,16 @@ const parseLines = (lines, assetId) => {
       if (!target && scriptData.length > 0) {
         for (let j = scriptData.length - 1; j >= 0; j--) {
           if (scriptData[j].type === "dialogue") {
-            target = scriptData[j];
-            break;
+            if (!targetActorId || scriptData[j].speakerCode === targetActorId) {
+              target = scriptData[j];
+              break;
+            }
           }
-          if (scriptData[j].type === "choice_selection") break;
+          if (
+            scriptData[j].type === "choice_selection" ||
+            scriptData[j].type === "jump"
+          )
+            break;
         }
       }
 
@@ -460,27 +434,23 @@ const parseLines = (lines, assetId) => {
           const code = actorId.toLowerCase();
           if (target.speakerCode === "unknown" || !target.speakerCode) {
             target.speakerCode = code;
-            if (!target.iconUrl && ICON_MAP[code]) {
+            if (!target.iconUrl && ICON_MAP[code])
               target.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
-            }
-            if (!target.speakerName && SPEAKER_MAP[code]) {
+            if (!target.speakerName && SPEAKER_MAP[code])
               target.speakerName = SPEAKER_MAP[code];
-            }
           }
         }
       }
       continue;
     }
 
-    // 7. CHOICE
     if (trimmed.startsWith("[choicegroup")) {
       flushBuffer();
       const choices = [];
       const choiceRegex = /text=([^\]]+)/g;
       let match;
-      while ((match = choiceRegex.exec(trimmed)) !== null) {
+      while ((match = choiceRegex.exec(trimmed)) !== null)
         choices.push({ text: match[1].trim(), route: [] });
-      }
 
       if (
         i + 1 < lines.length &&
@@ -491,9 +461,8 @@ const parseLines = (lines, assetId) => {
           while (
             i + 1 < lines.length &&
             !lines[i + 1].trim().startsWith("[branch")
-          ) {
+          )
             i++;
-          }
           if (i + 1 < lines.length) {
             i++;
             const branchLine = lines[i].trim();
@@ -508,13 +477,11 @@ const parseLines = (lines, assetId) => {
           }
         }
       }
-      if (choices.length > 0) {
+      if (choices.length > 0)
         scriptData.push({ type: "choice_selection", choices: choices });
-      }
       continue;
     }
 
-    // 8. JUMPS
     if (trimmed.startsWith("[jump")) {
       flushBuffer();
       scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
@@ -526,7 +493,6 @@ const parseLines = (lines, assetId) => {
       continue;
     }
 
-    // 9. TEXT APPEND
     if (!trimmed.startsWith("[")) {
       if (currentDialog) {
         const cleanText = trimmed.replace(/\\n/g, "\n");
@@ -556,10 +522,26 @@ const parseLines = (lines, assetId) => {
   return scriptData;
 };
 
-// --- WRAPPER ---
-const parseScript = (rawText, assetId, isDebug = false) => {
+const parseScript = (rawText, assetId) => {
   const lines = rawText.replace(/\r\n/g, "\n").split("\n");
   return parseLines(lines, assetId);
+};
+
+// FUNGSI REKURSIF UNTUK MENDAPATKAN SEMUA DIALOGUE DARI BERBAGAI LAYER
+const extractAllDialogues = (scriptArray) => {
+  let dialogues = [];
+  scriptArray.forEach((item) => {
+    if (item.type === "dialogue") {
+      dialogues.push(item);
+    } else if (item.type === "choice_selection" && item.choices) {
+      item.choices.forEach((choice) => {
+        if (choice.route && choice.route.length > 0) {
+          dialogues.push(...extractAllDialogues(choice.route));
+        }
+      });
+    }
+  });
+  return dialogues;
 };
 
 // --- MAIN ---
@@ -581,11 +563,38 @@ const parseScript = (rawText, assetId, isDebug = false) => {
     const part = parts[4];
 
     try {
-      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
-      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
-      const rawContent = await response.text();
+      const jpResponse = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!jpResponse.ok) throw new Error(`HTTP Error ${jpResponse.status}`);
+      const jpRawContent = await jpResponse.text();
+      const jpScriptData = parseScript(jpRawContent, assetId);
 
-      const script = parseScript(rawContent, assetId, i === 0);
+      // TRANSLATION ZIPPING LOGIC DENGAN RECURSIVE
+      let enScriptData = [];
+      try {
+        const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
+        if (enResponse.ok) {
+          const enRawContent = await enResponse.text();
+          enScriptData = parseScript(enRawContent, assetId);
+        }
+      } catch (e) {
+        console.warn(`\n[WARN] Failed to fetch English TXT for ${fileName}`);
+      }
+
+      if (enScriptData.length > 0) {
+        // Gunakan ekstrak rekursif agar percabangan (choices) ikut ditangkap!
+        const jpDialogues = extractAllDialogues(jpScriptData);
+        const enDialogues = extractAllDialogues(enScriptData);
+
+        for (let idx = 0; idx < jpDialogues.length; idx++) {
+          if (enDialogues[idx]) {
+            // Karena ini by reference, merubah jpDialogues akan merubah juga yang ada di dalam tree jpScriptData asli!
+            jpDialogues[idx].translations.en = enDialogues[idx].text;
+            if (enDialogues[idx].speakerName) {
+              jpDialogues[idx].speakerNameEn = enDialogues[idx].speakerName;
+            }
+          }
+        }
+      }
 
       const jsonFileName = `${assetId}.json`;
       fs.writeFileSync(
@@ -594,7 +603,7 @@ const parseScript = (rawText, assetId, isDebug = false) => {
           {
             id: assetId,
             title: `Episode ${parseInt(episode)} Part ${parseInt(part)}`,
-            script,
+            script: jpScriptData,
           },
           null,
           2,
@@ -604,18 +613,17 @@ const parseScript = (rawText, assetId, isDebug = false) => {
       totalFilesProcessed++;
 
       if (!groupedEvents[eventId]) {
-        const mainHeroineCode = detectMainHeroine(script);
+        const mainHeroineCode = detectMainHeroine(jpScriptData);
         const heroineName =
           mainHeroineCode && SPEAKER_MAP[mainHeroineCode]
             ? SPEAKER_MAP[mainHeroineCode]
             : "Unknown Story";
 
         let eventTitle = "";
-        if (eventId === "2505") {
+        if (eventId === "2505")
           eventTitle = "Mintsuku 2025 (Magical Girl & Succubus)";
-        } else {
+        else
           eventTitle = `Moshikoi 20${eventId.substring(0, 2)} (${heroineName})`;
-        }
 
         groupedEvents[eventId] = {
           id: eventId,

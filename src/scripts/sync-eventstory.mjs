@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/eventStoryTxt`;
+const R2_TEXT_EN_URL = `${R2_DOMAIN}/eventStoryTxtGlobal`; // Folder teks Inggris
 const R2_VOICE_URL = `${R2_DOMAIN}/eventStoryVoice`;
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
@@ -18,7 +19,6 @@ const DETAIL_DIR = path.join(OUTPUT_DIR, "detail");
 const FOLDER_LIST_PATH = path.join(__dirname, "../data/event_folderList.txt");
 
 // --- MAPPING KARAKTER ---
-
 const SPEAKER_MAP = {
   rio: "Rio Kanzaki",
   aoi: "Aoi Igawa",
@@ -48,7 +48,6 @@ const SPEAKER_MAP = {
   tencho: "Manager",
   saegusa: "Saegusa",
   asakura: "Asakura",
-  koh: "Kohei",
   koh: "{user}",
   system: "System",
 };
@@ -141,7 +140,7 @@ const parseLines = (lines, assetId) => {
   const backgroundMap = {};
   let currentDialog = null;
   let pendingSfx = [];
-  let scriptTitle = null; // Menyimpan judul dari file .txt
+  let scriptTitle = null;
 
   const flushBuffer = () => {
     if (pendingSfx.length > 0) {
@@ -159,7 +158,6 @@ const parseLines = (lines, assetId) => {
     const trimmed = line.trim();
     if (!trimmed) continue;
 
-    // 0. TANGKAP JUDUL DARI DALAM FILE
     if (trimmed.startsWith("[title ")) {
       const titleMatch = trimmed.match(/title=([^\]]+)/i);
       if (titleMatch) scriptTitle = titleMatch[1].trim();
@@ -309,9 +307,14 @@ const parseLines = (lines, assetId) => {
         type: "dialogue",
         speakerCode,
         speakerName: displayName,
+        speakerNameEn:
+          speakerCode && SPEAKER_MAP[speakerCode]
+            ? SPEAKER_MAP[speakerCode]
+            : "",
         iconUrl,
         voiceUrl: null,
         text: inlineText || "",
+        translations: { en: "", id: "" },
         startTime: startTime,
         sfxList: [],
       };
@@ -400,9 +403,7 @@ const parseLines = (lines, assetId) => {
             const length = lengthStr ? parseInt(lengthStr, 10) : 0;
             if (length > 0) {
               const branchContentLines = lines.slice(i + 1, i + 1 + length);
-              // REKURSIF
               const branchScript = parseLines(branchContentLines, assetId);
-              // Destructure the returned object to get just the scriptData
               choices[c].route = branchScript.scriptData;
               i += length;
             }
@@ -564,7 +565,6 @@ const parseScript = (rawText, assetId) => {
     const part = match[3];
     const jsonFileName = `${assetId}.json`;
 
-    // Pastikan grup dibuat meskipun pakai cache
     if (!groupedEvents[eventId]) {
       let eventTitleFinal =
         eventIdToTitle[eventId] || `Event Story: ${eventId.toUpperCase()}`;
@@ -575,7 +575,6 @@ const parseScript = (rawText, assetId) => {
       };
     }
 
-    // --- CEK CACHE ---
     if (
       cacheMap[assetId] &&
       fs.existsSync(path.join(DETAIL_DIR, jsonFileName))
@@ -586,12 +585,45 @@ const parseScript = (rawText, assetId) => {
     }
 
     try {
-      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
-      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
-      const rawContent = await response.text();
-      
-      // Destructure hasil parseScript
-      const { scriptData, scriptTitle } = parseScript(rawContent, assetId);
+      const jpResponse = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!jpResponse.ok) throw new Error(`HTTP Error ${jpResponse.status}`);
+      const jpRawContent = await jpResponse.text();
+
+      const { scriptData: jpScriptData, scriptTitle } = parseScript(
+        jpRawContent,
+        assetId,
+      );
+
+      // TRANSLATION ZIPPING LOGIC
+      let enScriptData = [];
+      try {
+        const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
+        if (enResponse.ok) {
+          const enRawContent = await enResponse.text();
+          const parsedEn = parseScript(enRawContent, assetId);
+          enScriptData = parsedEn.scriptData;
+        }
+      } catch (e) {
+        console.warn(`\n[WARN] Failed to fetch English TXT for ${fileName}`);
+      }
+
+      if (enScriptData.length > 0) {
+        const jpDialogues = jpScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+        const enDialogues = enScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+
+        for (let idx = 0; idx < jpDialogues.length; idx++) {
+          if (enDialogues[idx]) {
+            jpDialogues[idx].translations.en = enDialogues[idx].text;
+            if (enDialogues[idx].speakerName) {
+              jpDialogues[idx].speakerNameEn = enDialogues[idx].speakerName;
+            }
+          }
+        }
+      }
 
       // LOGIKA PENENTUAN JUDUL EPISODE
       const epFormatted = isNaN(parseInt(episode))
@@ -601,21 +633,15 @@ const parseScript = (rawText, assetId) => {
         ? part.charAt(0).toUpperCase() + part.slice(1)
         : parseInt(part);
 
-      // Prioritas 1: Master Github, 2: Teks [title], 3: Fallback Format
       const episodeTitleFinal =
         assetToEpisodeTitle[assetId] ||
         scriptTitle ||
         `Episode ${epFormatted} Part ${partFormatted}`;
 
-      const jsonFileName = `${assetId}.json`;
       fs.writeFileSync(
         path.join(DETAIL_DIR, jsonFileName),
         JSON.stringify(
-          {
-            id: assetId,
-            title: episodeTitleFinal,
-            script: scriptData,
-          },
+          { id: assetId, title: episodeTitleFinal, script: jpScriptData },
           null,
           2,
         ),
@@ -627,9 +653,8 @@ const parseScript = (rawText, assetId) => {
       if (!groupedEvents[eventId]) {
         let eventTitleFinal = eventIdToTitle[eventId];
 
-        // Fallback jika tidak ditemukan di Github
         if (!eventTitleFinal) {
-          const mainHeroineCode = detectMainHeroine(scriptData);
+          const mainHeroineCode = detectMainHeroine(jpScriptData);
           const heroineName =
             mainHeroineCode && SPEAKER_MAP[mainHeroineCode]
               ? SPEAKER_MAP[mainHeroineCode]

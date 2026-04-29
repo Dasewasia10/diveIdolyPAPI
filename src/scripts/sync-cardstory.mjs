@@ -8,9 +8,10 @@ const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/cardStoryTxt`;
+const R2_TEXT_EN_URL = `${R2_DOMAIN}/cardStoryTxtGlobal`;
 const R2_VOICE_URL = `${R2_DOMAIN}/cardStoryVoice`;
-const R2_BG_URL = `${R2_DOMAIN}/storyBackground`; 
-const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`; 
+const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
+const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 
 const OUTPUT_DIR = path.join(__dirname, "../data/cardstory");
 const DETAIL_DIR = path.join(OUTPUT_DIR, "detail");
@@ -109,14 +110,13 @@ const extractMessageText = (line) => {
 const resolveBackgroundSrc = (rawSrc) => {
   if (!rawSrc) return null;
   let cleanSrc = rawSrc;
-  if (cleanSrc.includes("env_adv_3d_")) {
+  if (cleanSrc.includes("env_adv_3d_"))
     cleanSrc = cleanSrc.replace("env_adv_3d_", "env_adv_2d_");
-  }
   cleanSrc = cleanSrc.replace(/-000(-|$)/, "$1");
   return `${R2_BG_URL}/${cleanSrc}.webp`;
 };
 
-// --- PARSER (DIADOPSI DARI MAINSTORY) ---
+// --- PARSER ---
 const parseLines = (lines, assetId) => {
   const scriptData = [];
   const backgroundMap = {};
@@ -141,20 +141,16 @@ const parseLines = (lines, assetId) => {
     if (!trimmed) continue;
 
     if (trimmed.startsWith("[title")) {
-      // Menangkap seluruh string untuk judul termasuk jika ada spasi di dalamnya
       const match = trimmed.match(/title=([^\]]+)/i);
-      if (match) {
-        foundTitle = match[1].trim();
-      }
+      if (match) foundTitle = match[1].trim();
       continue;
     }
 
     if (trimmed.startsWith("[backgroundgroup")) {
       const bgRegex = /id=([^ ]+)\s+src=([^ \]]+)/g;
       let match;
-      while ((match = bgRegex.exec(trimmed)) !== null) {
+      while ((match = bgRegex.exec(trimmed)) !== null)
         backgroundMap[match[1]] = match[2];
-      }
       continue;
     }
 
@@ -171,25 +167,22 @@ const parseLines = (lines, assetId) => {
       if (trimmed.startsWith("[backgroundlayoutgroup")) {
         const layoutMatch = trimmed.match(/backgroundlayout\s+id=([^ \]]+)/);
         if (layoutMatch) bgId = layoutMatch[1];
-      } else {
-        bgId = getAttr(trimmed, "id");
-      }
+      } else bgId = getAttr(trimmed, "id");
 
-      if (bgId && backgroundMap[bgId]) {
+      if (bgId && backgroundMap[bgId])
         finalSrc = resolveBackgroundSrc(backgroundMap[bgId]);
-      } else if (bgId) {
+      else if (bgId) {
         let roughSrc = `env_adv_2d_${bgId.replace("-000", "")}`;
         finalSrc = `${R2_BG_URL}/${roughSrc}.webp`;
       }
 
-      if (finalSrc) {
+      if (finalSrc)
         scriptData.push({
           type: "background",
           src: finalSrc,
           bgName: bgId || "unknown_bg",
           startTime: startTime,
         });
-      }
       continue;
     }
 
@@ -197,14 +190,13 @@ const parseLines = (lines, assetId) => {
       flushBuffer();
       const bgmId = getAttr(trimmed, "bgm");
       const startTime = getStartTime(trimmed);
-      if (bgmId) {
+      if (bgmId)
         scriptData.push({
           type: "bgm",
           action: "play",
           src: `${R2_BGM_URL}/${bgmId}.m4a`,
           startTime: startTime,
         });
-      }
       continue;
     }
 
@@ -312,9 +304,14 @@ const parseLines = (lines, assetId) => {
         type: "dialogue",
         speakerCode,
         speakerName: displayName,
+        speakerNameEn:
+          speakerCode && SPEAKER_MAP[speakerCode]
+            ? SPEAKER_MAP[speakerCode]
+            : "",
         iconUrl,
         voiceUrl: null,
         text: inlineText || "",
+        translations: { en: "", id: "" },
         startTime: startTime,
         sfxList: [],
       };
@@ -336,6 +333,7 @@ const parseLines = (lines, assetId) => {
         });
         pendingSfx = [];
       }
+
       currentDialog = newDialog;
       continue;
     }
@@ -343,6 +341,7 @@ const parseLines = (lines, assetId) => {
     if (trimmed.startsWith("[voice")) {
       const voiceFile = getAttr(trimmed, "voice");
       const actorId = getAttr(trimmed, "actorId");
+      const targetActorId = actorId ? actorId.toLowerCase() : null;
       const voiceUrl = voiceFile
         ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
         : null;
@@ -360,11 +359,13 @@ const parseLines = (lines, assetId) => {
               item.startTime >= vStart - 0.5 &&
               item.startTime <= vEnd + 0.5
             ) {
-              matchingDialogs.push({
-                source: "scriptData",
-                index: j,
-                item: item,
-              });
+              if (!targetActorId || item.speakerCode === targetActorId) {
+                matchingDialogs.push({
+                  source: "scriptData",
+                  index: j,
+                  item: item,
+                });
+              }
             }
           }
         }
@@ -374,11 +375,13 @@ const parseLines = (lines, assetId) => {
             currentDialog.startTime >= vStart - 0.5 &&
             currentDialog.startTime <= vEnd + 0.5
           ) {
-            matchingDialogs.push({
-              source: "currentDialog",
-              index: -1,
-              item: currentDialog,
-            });
+            if (!targetActorId || currentDialog.speakerCode === targetActorId) {
+              matchingDialogs.push({
+                source: "currentDialog",
+                index: -1,
+                item: currentDialog,
+              });
+            }
           }
         }
 
@@ -407,10 +410,13 @@ const parseLines = (lines, assetId) => {
 
             if (item.sfxList && item.sfxList.length > 0) {
               item.sfxList.forEach((sfx) => {
-                let newDelay =
-                  sfx.startTime !== undefined && baseStartTime !== null
-                    ? Math.max(0, (sfx.startTime - baseStartTime) * 1000)
-                    : sfx.delay;
+                let newDelay = 0;
+                if (sfx.startTime !== undefined && baseStartTime !== null) {
+                  newDelay = Math.max(
+                    0,
+                    (sfx.startTime - baseStartTime) * 1000,
+                  );
+                } else newDelay = sfx.delay;
                 mergedSfx.push({
                   ...sfx,
                   delay: newDelay,
@@ -435,11 +441,22 @@ const parseLines = (lines, assetId) => {
           }
         } else {
           let target = currentDialog;
-          if (!target && scriptData.length > 0) {
-            for (let j = scriptData.length - 1; j >= 0; j--) {
-              if (scriptData[j] && scriptData[j].type === "dialogue") {
-                target = scriptData[j];
-                break;
+          if (
+            !target ||
+            (targetActorId && target.speakerCode !== targetActorId)
+          ) {
+            target = null;
+            if (scriptData.length > 0) {
+              for (let j = scriptData.length - 1; j >= 0; j--) {
+                if (scriptData[j] && scriptData[j].type === "dialogue") {
+                  if (
+                    !targetActorId ||
+                    scriptData[j].speakerCode === targetActorId
+                  ) {
+                    target = scriptData[j];
+                    break;
+                  }
+                }
               }
             }
           }
@@ -447,11 +464,22 @@ const parseLines = (lines, assetId) => {
         }
       } else {
         let target = currentDialog;
-        if (!target && scriptData.length > 0) {
-          for (let j = scriptData.length - 1; j >= 0; j--) {
-            if (scriptData[j] && scriptData[j].type === "dialogue") {
-              target = scriptData[j];
-              break;
+        if (
+          !target ||
+          (targetActorId && target.speakerCode !== targetActorId)
+        ) {
+          target = null;
+          if (scriptData.length > 0) {
+            for (let j = scriptData.length - 1; j >= 0; j--) {
+              if (scriptData[j] && scriptData[j].type === "dialogue") {
+                if (
+                  !targetActorId ||
+                  scriptData[j].speakerCode === targetActorId
+                ) {
+                  target = scriptData[j];
+                  break;
+                }
+              }
             }
           }
         }
@@ -459,7 +487,58 @@ const parseLines = (lines, assetId) => {
       }
       continue;
     }
+
+    if (trimmed.startsWith("[choicegroup")) {
+      flushBuffer();
+      const choices = [];
+      const choiceRegex = /text=([^\]]+)/g;
+      let match;
+      while ((match = choiceRegex.exec(trimmed)) !== null) {
+        choices.push({ text: match[1].trim(), route: [] });
+      }
+
+      if (
+        i + 1 < lines.length &&
+        lines[i + 1].trim().startsWith("[branchgroup")
+      ) {
+        i++;
+        for (let c = 0; c < choices.length; c++) {
+          while (
+            i + 1 < lines.length &&
+            !lines[i + 1].trim().startsWith("[branch")
+          )
+            i++;
+          if (i + 1 < lines.length) {
+            i++;
+            const branchLine = lines[i].trim();
+            const lengthStr = getAttr(branchLine, "groupLength");
+            const length = lengthStr ? parseInt(lengthStr, 10) : 0;
+            if (length > 0) {
+              const branchContentLines = lines.slice(i + 1, i + 1 + length);
+              const branchScript = parseLines(branchContentLines, assetId);
+              choices[c].route = branchScript.scriptData;
+              i += length;
+            }
+          }
+        }
+      }
+      if (choices.length > 0)
+        scriptData.push({ type: "choice_selection", choices: choices });
+      continue;
+    }
+
+    if (trimmed.startsWith("[jump")) {
+      flushBuffer();
+      scriptData.push({ type: "jump", nextLabel: getAttr(trimmed, "next") });
+      continue;
+    }
+    if (trimmed.startsWith("[label")) {
+      flushBuffer();
+      scriptData.push({ type: "anchor", labelName: getAttr(trimmed, "name") });
+      continue;
+    }
   }
+
   flushBuffer();
 
   scriptData.sort((a, b) => {
@@ -499,7 +578,6 @@ const parseLines = (lines, assetId) => {
     process.exit(1);
   }
 
-  // --- BACA CACHE LAMA ---
   const INDEX_PATH = path.join(OUTPUT_DIR, "index.json");
   const cacheMap = {};
   let cachedFilesCount = 0;
@@ -515,6 +593,7 @@ const parseLines = (lines, assetId) => {
     );
   }
 
+  // --- MENGAMBIL DATA DARI CARDSOURCES.JSON LOKAL ---
   const cardMap = {};
   try {
     const cardSources = JSON.parse(fs.readFileSync(CARD_SOURCES_PATH, "utf-8"));
@@ -523,27 +602,38 @@ const parseLines = (lines, assetId) => {
         cardMap[card.uniqueId] = card;
       });
     });
+    console.log(
+      `[OK] Berhasil memuat ${Object.keys(cardMap).length} data kartu dari cardSources.json`,
+    );
   } catch (err) {
-    console.error(`[WARNING] Gagal memuat cardSources.json: ${err.message}`);
+    console.warn(`[WARNING] Gagal memuat cardSources.json`);
   }
 
+  // --- MENGAMBIL STORY.JSON DARI GITHUB UNTUK MAPPING ASSET -> UNIQUE_ID ---
   const assetToCardId = {};
   try {
-    console.log(`Mengambil Story.json dari Master Diff...`);
+    console.log(`Mengambil Story.json dari Master Diff untuk mapping...`);
     const storyData = await (await fetch(`${BASE_URL}/Story.json`)).json();
+
     storyData.forEach((story) => {
       if (story.id && story.id.startsWith("st-card-")) {
         const parts = story.id.split("-");
+        // Contoh: "st-card-mna-05-wedd-00-01" -> parts = ["st", "card", "mna", "05", "wedd", "00", "01"]
         if (parts.length >= 6) {
+          // uniqueId yang dituju adalah "mna-05-wedd-00"
           const uniqueId = parts.slice(2, 6).join("-");
-          if (story.advAssetIds) {
+          if (story.advAssetIds && story.advAssetIds.length > 0) {
             story.advAssetIds.forEach((asset) => {
+              // asset berbentuk "card_mna_06_01" (tanpa awalan adv_)
               assetToCardId[asset] = uniqueId;
             });
           }
         }
       }
     });
+    console.log(
+      `[OK] Berhasil memetakan ${Object.keys(assetToCardId).length} asset ke uniqueId kartu.`,
+    );
   } catch (err) {
     console.error(`[ERROR] Gagal memuat Story.json dari GitHub:`, err.message);
   }
@@ -560,12 +650,10 @@ const parseLines = (lines, assetId) => {
     const groupId = `card_${charCode}_${cardNum}`;
     const jsonFileName = `${assetId}.json`;
 
-    // --- CEK CACHE ---
     if (
       cacheMap[assetId] &&
       fs.existsSync(path.join(DETAIL_DIR, jsonFileName))
     ) {
-      // Pastikan grupnya ada
       if (!groupsMap[groupId]) {
         groupsMap[groupId] = {
           id: groupId,
@@ -574,44 +662,78 @@ const parseLines = (lines, assetId) => {
           stories: [],
         };
       }
-
       groupsMap[groupId].stories.push(cacheMap[assetId]);
       cachedFilesCount++;
       continue;
     }
 
     try {
-      const response = await fetch(`${R2_TEXT_URL}/${fileName}`);
-      if (!response.ok) throw new Error(`HTTP Error ${response.status}`);
-      const rawContent = await response.text();
+      const jpResponse = await fetch(`${R2_TEXT_URL}/${fileName}`);
+      if (!jpResponse.ok) throw new Error(`HTTP Error ${jpResponse.status}`);
+      const jpRawContent = await jpResponse.text();
 
-      // PARSING MENGGUNAKAN MESIN VN
-      const { scriptData, title } = parseLines(
-        rawContent.replace(/\r\n/g, "\n").split("\n"),
+      const { scriptData: jpScriptData, title: jpTitle } = parseLines(
+        jpRawContent.replace(/\r\n/g, "\n").split("\n"),
         assetId,
       );
 
+      // TRANSLATION ZIPPING LOGIC
+      let enScriptData = [];
+      try {
+        const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
+        if (enResponse.ok) {
+          const enRawContent = await enResponse.text();
+          const parsedEn = parseLines(
+            enRawContent.replace(/\r\n/g, "\n").split("\n"),
+            assetId,
+          );
+          enScriptData = parsedEn.scriptData;
+        }
+      } catch (e) {
+        console.warn(`\n[WARN] Failed to fetch English TXT for ${fileName}`);
+      }
+
+      if (enScriptData.length > 0) {
+        const jpDialogues = jpScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+        const enDialogues = enScriptData.filter(
+          (item) => item.type === "dialogue",
+        );
+
+        for (let idx = 0; idx < jpDialogues.length; idx++) {
+          if (enDialogues[idx]) {
+            jpDialogues[idx].translations.en = enDialogues[idx].text;
+            if (enDialogues[idx].speakerName) {
+              jpDialogues[idx].speakerNameEn = enDialogues[idx].speakerName;
+            }
+          }
+        }
+      }
+
       const isShort = assetId.endsWith("_short");
       const displayTitle = isShort
-        ? `${title || "Story"} (Short)`
-        : title || "Story";
+        ? `${jpTitle || "Story"} (Short)`
+        : jpTitle || "Story";
 
-      // SIMPAN FILE DETAIL DENGAN FORMAT SCRIPT VN { id, title, script: [] }
       const detailData = {
         id: assetId,
         title: displayTitle,
-        script: scriptData,
+        script: jpScriptData,
       };
-
       fs.writeFileSync(
         path.join(DETAIL_DIR, `${assetId}.json`),
         JSON.stringify(detailData, null, 2),
       );
 
-      // INDEXING
       if (!groupsMap[groupId]) {
-        // Hanya membuang '_short' di akhir karena mapping Story.json membutuhkan string utuh 'adv_card_...'
-        const baseAssetId = assetId.replace(/_short$/, "");
+        // --- LOGIKA PENGGABUNGAN GITHUB & LOCAL JSON ---
+
+        // 1. Ekstrak baseAssetId tanpa awalan "adv_" dan akhiran "_short"
+        // Dari "adv_card_mna_06_01" -> "card_mna_06_01"
+        const baseAssetId = assetId.replace(/^adv_/, "").replace(/_short$/, "");
+
+        // 2. Gunakan assetToCardId (dari Story.json) untuk mendapatkan uniqueId aslinya
         const matchedUniqueId = assetToCardId[baseAssetId];
 
         let groupTitle = `[Story] ${SPEAKER_MAP[charCode] || charCode.toUpperCase()} Card ${cardNum}`;
@@ -619,28 +741,28 @@ const parseLines = (lines, assetId) => {
 
         if (matchedUniqueId && cardMap[matchedUniqueId]) {
           const cardData = cardMap[matchedUniqueId];
+          // Ambil judul kartu dari cardSources.json
           groupTitle = cardData.title.japanese;
-          
-          // Memanfaatkan initialTitle atau uniqueId secara langsung untuk base name gambar
+
           const uniqueTitle = cardData.initialTitle || cardData.uniqueId;
-          groupIcon = `${R2_DOMAIN}/cardThumb/img_card_thumb_0_${uniqueTitle}.webp`;
-        } else if (title) {
-          const titleMatch = title.match(/^(.*?\s+\d+話)/);
-          groupTitle = titleMatch && titleMatch[1] ? titleMatch[1] : title;
+          groupIcon = `${R2_DOMAIN}/cardThumb/img_card_thumb_1_${uniqueTitle}.webp`;
+        } else if (jpTitle) {
+          const titleMatch = jpTitle.match(/^(.*?\s+\d+話)/);
+          groupTitle = titleMatch && titleMatch[1] ? titleMatch[1] : jpTitle;
         }
 
         groupsMap[groupId] = {
           id: groupId,
           title: groupTitle,
           groupIcon: groupIcon,
-          stories: [], // Diseragamkan menjadi 'stories'
+          stories: [],
         };
       }
 
       groupsMap[groupId].stories.push({
         id: assetId,
         title: displayTitle,
-        fileName: `${assetId}.json`, 
+        fileName: `${assetId}.json`,
         isShort: isShort,
       });
 
@@ -664,7 +786,6 @@ const parseLines = (lines, assetId) => {
   const indexArray = Object.values(groupsMap).sort((a, b) =>
     a.id.localeCompare(b.id),
   );
-
   fs.writeFileSync(
     path.join(OUTPUT_DIR, "index.json"),
     JSON.stringify(indexArray, null, 2),
