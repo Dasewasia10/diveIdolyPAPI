@@ -8,12 +8,11 @@ const __dirname = path.dirname(__filename);
 
 const R2_DOMAIN = "https://apiip.dasewasia.my.id";
 const R2_TEXT_URL = `${R2_DOMAIN}/eventStoryTxt`;
-const R2_TEXT_EN_URL = `${R2_DOMAIN}/eventStoryTxtGlobal`; // Folder teks Inggris
+const R2_TEXT_EN_URL = `${R2_DOMAIN}/eventStoryTxtGlobal`;
 const R2_VOICE_URL = `${R2_DOMAIN}/eventStoryVoice`;
 const R2_BG_URL = `${R2_DOMAIN}/storyBackground`;
 const R2_BGM_URL = `${R2_DOMAIN}/storyBgm`;
 
-// --- RESTORED PATHS ---
 const OUTPUT_DIR = path.join(__dirname, "../data/eventstory");
 const DETAIL_DIR = path.join(OUTPUT_DIR, "detail");
 const FOLDER_LIST_PATH = path.join(__dirname, "../data/event_folderList.txt");
@@ -91,6 +90,12 @@ const getStartTime = (line) => {
   return match ? parseFloat(match[1]) : null;
 };
 
+// HELPER TAMBAHAN: Untuk mendapatkan Durasi
+const getDuration = (line) => {
+  const match = line.match(/_duration\\?":\s*([0-9.]+)/);
+  return match ? parseFloat(match[1]) : null;
+};
+
 const getAttr = (line, key) => {
   const regex = new RegExp(`${key}\\s*=\\s*(?:"([^"]*)"|([^\\s\\]]+))`, "i");
   const match = line.match(regex);
@@ -115,14 +120,22 @@ const extractMessageText = (line) => {
 const detectMainHeroine = (script) => {
   const counts = {};
   const excluded = ["koh", "mob", "narration", "unknown", "tencho", "staff"];
-  script.forEach((line) => {
-    if (line.type === "dialogue" && line.speakerCode) {
-      const code = line.speakerCode.toLowerCase();
-      if (!excluded.includes(code)) {
-        counts[code] = (counts[code] || 0) + 1;
+
+  const countHeroines = (arr) => {
+    arr.forEach((line) => {
+      if (line.type === "dialogue" && line.speakerCode) {
+        const code = line.speakerCode.toLowerCase();
+        if (!excluded.includes(code)) counts[code] = (counts[code] || 0) + 1;
+      } else if (line.type === "choice_selection" && line.choices) {
+        line.choices.forEach((c) => {
+          if (c.route) countHeroines(c.route);
+        });
       }
-    }
-  });
+    });
+  };
+
+  countHeroines(script);
+
   let maxCount = 0;
   let mainHeroineCode = null;
   for (const [code, count] of Object.entries(counts)) {
@@ -302,7 +315,11 @@ const parseLines = (lines, assetId) => {
       else if (speakerCode && speakerCode !== "unknown" && !isNarration)
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
 
+      // TAMBAHAN: Kalkulasi endTime
       const startTime = getStartTime(trimmed);
+      const duration = getDuration(trimmed) || 0;
+      const endTime = startTime !== null ? startTime + duration : null;
+
       const newDialog = {
         type: "dialogue",
         speakerCode,
@@ -316,6 +333,7 @@ const parseLines = (lines, assetId) => {
         text: inlineText || "",
         translations: { en: "", id: "" },
         startTime: startTime,
+        endTime: endTime,
         sfxList: [],
       };
 
@@ -341,37 +359,159 @@ const parseLines = (lines, assetId) => {
     if (trimmed.startsWith("[voice")) {
       const voiceFile = getAttr(trimmed, "voice");
       const actorId = getAttr(trimmed, "actorId");
+      const targetActorId = actorId ? actorId.toLowerCase() : null;
       const voiceUrl = voiceFile
         ? `${R2_VOICE_URL}/sud_vo_${assetId}/${voiceFile}.m4a`
         : null;
 
-      let target = currentDialog;
-      if (!target && scriptData.length > 0) {
-        for (let j = scriptData.length - 1; j >= 0; j--) {
-          if (scriptData[j].type === "dialogue") {
-            target = scriptData[j];
-            break;
-          }
-          if (
-            scriptData[j].type === "choice_selection" ||
-            scriptData[j].type === "jump"
-          )
-            break;
-        }
-      }
+      const vStart = getStartTime(trimmed);
+      const vDur = getDuration(trimmed);
+      const vEnd = vStart !== null && vDur !== null ? vStart + vDur : null;
 
-      if (target) {
-        if (voiceUrl) target.voiceUrl = voiceUrl;
-        if (actorId) {
-          const code = actorId.toLowerCase();
-          if (target.speakerCode === "unknown" || !target.speakerCode) {
-            target.speakerCode = code;
-            if (!target.iconUrl && ICON_MAP[code])
-              target.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
-            if (!target.speakerName && SPEAKER_MAP[code])
-              target.speakerName = SPEAKER_MAP[code];
+      // LOGIKA BOUNDING BOX MERGING
+      if (voiceUrl && vStart !== null && vEnd !== null) {
+        let matchingDialogs = [];
+
+        for (let j = 0; j < scriptData.length; j++) {
+          const item = scriptData[j];
+          if (item && item.type === "dialogue" && item.startTime !== null) {
+            if (
+              item.startTime >= vStart - 0.5 &&
+              item.startTime <= vEnd + 0.5
+            ) {
+              if (!targetActorId || item.speakerCode === targetActorId) {
+                matchingDialogs.push({
+                  source: "scriptData",
+                  index: j,
+                  item: item,
+                });
+              }
+            }
           }
         }
+
+        if (currentDialog && currentDialog.startTime !== null) {
+          if (
+            currentDialog.startTime >= vStart - 0.5 &&
+            currentDialog.startTime <= vEnd + 0.5
+          ) {
+            if (!targetActorId || currentDialog.speakerCode === targetActorId) {
+              matchingDialogs.push({
+                source: "currentDialog",
+                index: -1,
+                item: currentDialog,
+              });
+            }
+          }
+        }
+
+        if (matchingDialogs.length > 0) {
+          const primaryMatch = matchingDialogs[0]; // Selalu gunakan Index 0 untuk start time sejati
+          const primary = primaryMatch.item;
+          primary.voiceUrl = voiceUrl;
+
+          if (actorId) {
+            const code = actorId.toLowerCase();
+            if (!primary.speakerCode || primary.speakerCode === "unknown") {
+              primary.speakerCode = code;
+              if (!primary.iconUrl && ICON_MAP[code])
+                primary.iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${ICON_MAP[code]}.png`;
+            }
+          }
+
+          let mergedText = "";
+          let mergedSfx = [];
+          let minStart = vStart;
+          let maxEnd = vEnd;
+
+          for (let k = 0; k < matchingDialogs.length; k++) {
+            const matchObj = matchingDialogs[k];
+            const item = matchObj.item;
+
+            if (item.startTime !== null && item.startTime < minStart)
+              minStart = item.startTime;
+            if (item.endTime !== null && item.endTime > maxEnd)
+              maxEnd = item.endTime;
+
+            mergedText += (mergedText ? "\n" : "") + (item.text || "");
+
+            if (item.sfxList && item.sfxList.length > 0) {
+              item.sfxList.forEach((sfx) => {
+                let newDelay =
+                  sfx.startTime !== undefined && minStart !== null
+                    ? Math.max(0, (sfx.startTime - minStart) * 1000)
+                    : sfx.delay;
+                mergedSfx.push({
+                  ...sfx,
+                  delay: newDelay,
+                  startTime: sfx.startTime,
+                });
+              });
+            }
+
+            if (k !== 0) {
+              if (matchObj.source === "scriptData")
+                scriptData[matchObj.index] = null;
+              else if (matchObj.source === "currentDialog")
+                currentDialog = null;
+            }
+          }
+
+          primary.text = mergedText;
+          primary.sfxList = mergedSfx;
+          primary.startTime = minStart;
+          primary.endTime = maxEnd;
+
+          for (let i = scriptData.length - 1; i >= 0; i--) {
+            if (scriptData[i] === null) scriptData.splice(i, 1);
+          }
+        } else {
+          // Fallback Target
+          let target = currentDialog;
+          if (
+            !target ||
+            (targetActorId && target.speakerCode !== targetActorId)
+          ) {
+            target = null;
+            if (scriptData.length > 0) {
+              for (let j = scriptData.length - 1; j >= 0; j--) {
+                if (scriptData[j] && scriptData[j].type === "dialogue") {
+                  if (
+                    !targetActorId ||
+                    scriptData[j].speakerCode === targetActorId
+                  ) {
+                    target = scriptData[j];
+                    break;
+                  }
+                }
+              }
+            }
+          }
+          if (target) target.voiceUrl = voiceUrl;
+        }
+      } else {
+        // Fallback klasik tanpa durasi
+        let target = currentDialog;
+        if (
+          !target ||
+          (targetActorId && target.speakerCode !== targetActorId)
+        ) {
+          target = null;
+          if (scriptData.length > 0) {
+            for (let j = scriptData.length - 1; j >= 0; j--) {
+              if (scriptData[j] && scriptData[j].type === "dialogue") {
+                if (
+                  !targetActorId ||
+                  scriptData[j].speakerCode === targetActorId
+                ) {
+                  target = scriptData[j];
+                  break;
+                }
+              }
+            }
+          }
+        }
+        if (target) target.voiceUrl = voiceUrl;
       }
       continue;
     }
@@ -466,6 +606,23 @@ const parseScript = (rawText, assetId) => {
   return parseLines(lines, assetId);
 };
 
+// HELPER ZIPPING: Mengekstrak Dialog dari Seluruh Layer Termasuk Percabangan
+const extractAllDialogues = (scriptArray) => {
+  let dialogues = [];
+  scriptArray.forEach((item) => {
+    if (item.type === "dialogue") {
+      dialogues.push(item);
+    } else if (item.type === "choice_selection" && item.choices) {
+      item.choices.forEach((choice) => {
+        if (choice.route && choice.route.length > 0) {
+          dialogues.push(...extractAllDialogues(choice.route));
+        }
+      });
+    }
+  });
+  return dialogues;
+};
+
 // --- MAIN EXECUTION ---
 (async () => {
   if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -521,7 +678,7 @@ const parseScript = (rawText, assetId) => {
       storyData.forEach((story) => {
         if (story.advAssetIds) {
           story.advAssetIds.forEach((asset) => {
-            assetToEpisodeTitle[asset] = story.title;
+            assetToEpisodeTitle[asset] = story.title || story.name;
           });
         }
       });
@@ -530,17 +687,26 @@ const parseScript = (rawText, assetId) => {
     if (eventRes.ok) {
       const eventData = await eventRes.json();
       eventData.forEach((ev) => {
-        if (ev.id) {
-          const match = ev.id.match(/event_(.+)/);
-          if (match) {
-            eventIdToTitle[match[1]] = ev.title || ev.name;
-          } else {
-            eventIdToTitle[ev.id] = ev.title || ev.name;
-          }
+        // PENYELESAIAN MASALAH TITLE: Ambil 'description' alih-alih 'name'
+        let trueTitle = ev.description;
+        if (!trueTitle || trueTitle === "") {
+          trueTitle = ev.name; // Fallback jika description benar-benar kosong
+        }
+
+        // Pengecekan via Episodes untuk mapping presisi!
+        if (ev.episodes && ev.episodes.length > 0) {
+          ev.episodes.forEach((ep) => {
+            // ep.assetId berbentuk "event_2107_01_01" (Tanpa awalan adv_)
+            const match = ep.assetId.match(/^event_([^_]+)_/);
+            if (match) {
+              const evId = match[1]; // misal "2107"
+              eventIdToTitle[evId] = trueTitle;
+            }
+          });
         }
       });
     }
-    console.log(`[OK] Berhasil memetakan judul asli.`);
+    console.log(`[OK] Berhasil memetakan judul asli dari EventStory.json.`);
   } catch (err) {
     console.warn(
       `[WARN] Gagal memuat Master Diff, akan menggunakan judul cadangan.`,
@@ -594,7 +760,7 @@ const parseScript = (rawText, assetId) => {
         assetId,
       );
 
-      // TRANSLATION ZIPPING LOGIC
+      // TRANSLATION ZIPPING LOGIC (Recursive)
       let enScriptData = [];
       try {
         const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
@@ -608,12 +774,8 @@ const parseScript = (rawText, assetId) => {
       }
 
       if (enScriptData.length > 0) {
-        const jpDialogues = jpScriptData.filter(
-          (item) => item.type === "dialogue",
-        );
-        const enDialogues = enScriptData.filter(
-          (item) => item.type === "dialogue",
-        );
+        const jpDialogues = extractAllDialogues(jpScriptData);
+        const enDialogues = extractAllDialogues(enScriptData);
 
         for (let idx = 0; idx < jpDialogues.length; idx++) {
           if (enDialogues[idx]) {
@@ -633,8 +795,10 @@ const parseScript = (rawText, assetId) => {
         ? part.charAt(0).toUpperCase() + part.slice(1)
         : parseInt(part);
 
+      // Cocokkan tanpa awalan "adv_" seperti pada Story.json
+      const baseAssetId = assetId.replace(/^adv_/, "");
       const episodeTitleFinal =
-        assetToEpisodeTitle[assetId] ||
+        assetToEpisodeTitle[baseAssetId] ||
         scriptTitle ||
         `Episode ${epFormatted} Part ${partFormatted}`;
 

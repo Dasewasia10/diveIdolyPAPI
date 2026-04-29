@@ -97,6 +97,7 @@ const getStartTime = (line) => {
   return match ? parseFloat(match[1]) : null;
 };
 
+// TAMBAHAN: Helper Durasi
 const getDuration = (line) => {
   const match = line.match(/_duration\\?":\s*([0-9.]+)/);
   return match ? parseFloat(match[1]) : null;
@@ -280,7 +281,6 @@ const parseLines = (lines, assetId) => {
             }
           }
         }
-
         if (!attached) pendingSfx.push(sfxItem);
       }
       continue;
@@ -319,7 +319,11 @@ const parseLines = (lines, assetId) => {
       else if (speakerCode && speakerCode !== "unknown" && !isNarration)
         iconUrl = `${R2_DOMAIN}/iconCharacter/chara-${speakerCode}.png`;
 
+      // TAMBAHAN: Simpan durasi dan endTime
       const startTime = getStartTime(trimmed);
+      const duration = getDuration(trimmed) || 0;
+      const endTime = startTime !== null ? startTime + duration : null;
+
       const newDialog = {
         type: "dialogue",
         speakerCode,
@@ -333,6 +337,7 @@ const parseLines = (lines, assetId) => {
         text: inlineText || "",
         translations: { en: "", id: "" },
         startTime: startTime,
+        endTime: endTime,
         sfxList: [],
       };
 
@@ -370,6 +375,7 @@ const parseLines = (lines, assetId) => {
       const vDur = getDuration(trimmed);
       const vEnd = vStart !== null && vDur !== null ? vStart + vDur : null;
 
+      // LOGIKA SMART BOUNDING BOX MERGING
       if (voiceUrl && vStart !== null && vEnd !== null) {
         let matchingDialogs = [];
 
@@ -407,10 +413,10 @@ const parseLines = (lines, assetId) => {
         }
 
         if (matchingDialogs.length > 0) {
-          const primaryMatch = matchingDialogs[matchingDialogs.length - 1];
+          const primaryMatch = matchingDialogs[0]; // Selalu gunakan Index 0 untuk start time absolut
           const primary = primaryMatch.item;
-
           primary.voiceUrl = voiceUrl;
+
           if (actorId) {
             const code = actorId.toLowerCase();
             if (!primary.speakerCode || primary.speakerCode === "unknown") {
@@ -422,23 +428,26 @@ const parseLines = (lines, assetId) => {
 
           let mergedText = "";
           let mergedSfx = [];
-          const baseStartTime = matchingDialogs[0].item.startTime;
+          let minStart = vStart;
+          let maxEnd = vEnd;
 
           for (let k = 0; k < matchingDialogs.length; k++) {
             const matchObj = matchingDialogs[k];
             const item = matchObj.item;
 
+            if (item.startTime !== null && item.startTime < minStart)
+              minStart = item.startTime;
+            if (item.endTime !== null && item.endTime > maxEnd)
+              maxEnd = item.endTime;
+
             mergedText += (mergedText ? "\n" : "") + (item.text || "");
 
             if (item.sfxList && item.sfxList.length > 0) {
               item.sfxList.forEach((sfx) => {
-                let newDelay = 0;
-                if (sfx.startTime !== undefined && baseStartTime !== null) {
-                  newDelay = Math.max(
-                    0,
-                    (sfx.startTime - baseStartTime) * 1000,
-                  );
-                } else newDelay = sfx.delay;
+                let newDelay =
+                  sfx.startTime !== undefined && minStart !== null
+                    ? Math.max(0, (sfx.startTime - minStart) * 1000)
+                    : sfx.delay;
                 mergedSfx.push({
                   ...sfx,
                   delay: newDelay,
@@ -447,7 +456,7 @@ const parseLines = (lines, assetId) => {
               });
             }
 
-            if (k !== matchingDialogs.length - 1) {
+            if (k !== 0) {
               if (matchObj.source === "scriptData")
                 scriptData[matchObj.index] = null;
               else if (matchObj.source === "currentDialog")
@@ -457,11 +466,14 @@ const parseLines = (lines, assetId) => {
 
           primary.text = mergedText;
           primary.sfxList = mergedSfx;
+          primary.startTime = minStart;
+          primary.endTime = maxEnd;
 
           for (let i = scriptData.length - 1; i >= 0; i--) {
             if (scriptData[i] === null) scriptData.splice(i, 1);
           }
         } else {
+          // Fallback Target dengan Actor ID Filter
           let target = currentDialog;
           if (
             !target ||
@@ -485,6 +497,7 @@ const parseLines = (lines, assetId) => {
           if (target) target.voiceUrl = voiceUrl;
         }
       } else {
+        // Fallback klasik tanpa info durasi
         let target = currentDialog;
         if (
           !target ||
@@ -507,6 +520,45 @@ const parseLines = (lines, assetId) => {
         }
         if (target) target.voiceUrl = voiceUrl;
       }
+      continue;
+    }
+
+    if (trimmed.startsWith("[choicegroup")) {
+      flushBuffer();
+      const choices = [];
+      const choiceRegex = /text=([^\]]+)/g;
+      let match;
+      while ((match = choiceRegex.exec(trimmed)) !== null) {
+        choices.push({ text: match[1].trim(), route: [] });
+      }
+
+      if (
+        i + 1 < lines.length &&
+        lines[i + 1].trim().startsWith("[branchgroup")
+      ) {
+        i++;
+        for (let c = 0; c < choices.length; c++) {
+          while (
+            i + 1 < lines.length &&
+            !lines[i + 1].trim().startsWith("[branch")
+          )
+            i++;
+          if (i + 1 < lines.length) {
+            i++;
+            const branchLine = lines[i].trim();
+            const lengthStr = getAttr(branchLine, "groupLength");
+            const length = lengthStr ? parseInt(lengthStr, 10) : 0;
+            if (length > 0) {
+              const branchContentLines = lines.slice(i + 1, i + 1 + length);
+              const branchScript = parseLines(branchContentLines, assetId);
+              choices[c].route = branchScript.scriptData;
+              i += length;
+            }
+          }
+        }
+      }
+      if (choices.length > 0)
+        scriptData.push({ type: "choice_selection", choices: choices });
       continue;
     }
 
@@ -537,6 +589,23 @@ const parseLines = (lines, assetId) => {
   });
 
   return { scriptData, title: foundTitle };
+};
+
+// HELPER ZIPPING: Ekstrak Dialog secara Rekursif dari Seluruh Layer Termasuk Percabangan
+const extractAllDialogues = (scriptArray) => {
+  let dialogues = [];
+  scriptArray.forEach((item) => {
+    if (item.type === "dialogue") {
+      dialogues.push(item);
+    } else if (item.type === "choice_selection" && item.choices) {
+      item.choices.forEach((choice) => {
+        if (choice.route && choice.route.length > 0) {
+          dialogues.push(...extractAllDialogues(choice.route));
+        }
+      });
+    }
+  });
+  return dialogues;
 };
 
 // --- MAIN EXECUTION ---
@@ -576,6 +645,7 @@ const parseLines = (lines, assetId) => {
     const episodeNum = parts[4];
 
     try {
+      // 1. Fetch File Jepang
       const jpResponse = await fetch(`${R2_TEXT_URL}/${fileName}`);
       if (!jpResponse.ok) throw new Error(`HTTP Error ${jpResponse.status}`);
       const jpRawContent = await jpResponse.text();
@@ -585,7 +655,7 @@ const parseLines = (lines, assetId) => {
         assetId,
       );
 
-      // TRANSLATION ZIPPING LOGIC
+      // 2. Fetch File Inggris (TRANSLATION ZIPPING LOGIC DENGAN RECURSIVE)
       let enScriptData = [];
       try {
         const enResponse = await fetch(`${R2_TEXT_EN_URL}/${fileName}`);
@@ -602,12 +672,8 @@ const parseLines = (lines, assetId) => {
       }
 
       if (enScriptData.length > 0) {
-        const jpDialogues = jpScriptData.filter(
-          (item) => item.type === "dialogue",
-        );
-        const enDialogues = enScriptData.filter(
-          (item) => item.type === "dialogue",
-        );
+        const jpDialogues = extractAllDialogues(jpScriptData);
+        const enDialogues = extractAllDialogues(enScriptData);
 
         for (let idx = 0; idx < jpDialogues.length; idx++) {
           if (enDialogues[idx]) {
