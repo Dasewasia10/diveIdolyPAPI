@@ -309,7 +309,7 @@ const parseLines = (lines, assetId) => {
       const thumbRaw =
         getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
       if (thumbRaw) {
-        const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
+        const match = thumbRaw.match(/img_(?:chr|mob)_adv_([a-z0-9]+)/i);
         if (match) speakerCode = match[1];
       }
 

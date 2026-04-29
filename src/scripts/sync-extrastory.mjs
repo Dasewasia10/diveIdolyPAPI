@@ -86,9 +86,9 @@ const SPEAKER_MAP = {
   kor: "Fran",
   mana: "Mana Nagase",
   tencho: "Manager",
-  shj: "Saegusa",
+  shj: "Shinji Saegusa",
   kyi: "Asakura",
-  koh: "Kohei",
+  koh: "Kohei Makino",
   stm: "Satomi Hashimoto",
   krk: "Kiriko Himeno",
 };
@@ -306,7 +306,9 @@ const parseLines = (lines, assetId) => {
       const thumbRaw =
         getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
       if (thumbRaw) {
-        const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
+        // Regex diperluas untuk mendeteksi karakter "chr" (utama) maupun "mob" (NPC)
+        // dan cukup mengambil kode alfabet pertama setelah "adv_"
+        const match = thumbRaw.match(/img_(?:chr|mob)_adv_([a-z0-9]+)/i);
         if (match) speakerCode = match[1];
       }
 

@@ -45,8 +45,8 @@ const SPEAKER_MAP = {
   kor: "Fran",
   mana: "Mana Nagase",
   tencho: "Manager",
-  saegusa: "Saegusa",
-  asakura: "Asakura",
+  shj: "Saegusa",
+  kyi: "Asakura",
   koh: "{user}",
   system: "System",
 };
@@ -77,8 +77,8 @@ const ICON_MAP = {
   kan: "kana",
   kor: "fran",
   mana: "mana",
-  saegusa: "saegusa",
-  asakura: "asakura",
+  shj: "saegusa",
+  kyi: "asakura",
   stm: "satomi",
   koh: "makino",
   system: null,
@@ -300,7 +300,7 @@ const parseLines = (lines, assetId) => {
       const thumbRaw =
         getAttr(trimmed, "thumbnial") || getAttr(trimmed, "thumbnail");
       if (thumbRaw) {
-        const match = thumbRaw.match(/img_chr_adv_([a-z0-9]+)-/i);
+        const match = thumbRaw.match(/img_(?:chr|mob)_adv_([a-z0-9]+)/i);
         if (match) speakerCode = match[1];
       }
 
