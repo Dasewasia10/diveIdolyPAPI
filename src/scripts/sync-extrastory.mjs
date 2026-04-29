@@ -52,10 +52,11 @@ const ICON_MAP = {
   kan: "kana",
   kor: "fran",
   mana: "mana",
-  saegusa: "saegusa",
-  asakura: "asakura",
+  shj: "saegusa",
+  kyi: "asakura",
   koh: "kohei",
   stm: "satomi",
+  krk: "kiriko",
 };
 
 const SPEAKER_MAP = {
@@ -85,10 +86,11 @@ const SPEAKER_MAP = {
   kor: "Fran",
   mana: "Mana Nagase",
   tencho: "Manager",
-  saegusa: "Saegusa",
-  asakura: "Asakura",
+  shj: "Saegusa",
+  kyi: "Asakura",
   koh: "Kohei",
   stm: "Satomi Hashimoto",
+  krk: "Kiriko Himeno",
 };
 
 // --- HELPERS ---
