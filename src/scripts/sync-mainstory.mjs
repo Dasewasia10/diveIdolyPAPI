@@ -317,6 +317,15 @@ const parseLines = (lines, assetId) => {
       if (isNarration) speakerCode = null;
       if (speakerCode) speakerCode = speakerCode.toLowerCase();
 
+      // --- PENGECUALIAN KHUSUS ---
+      // Override wmob menjadi karakter sebenarnya khusus untuk chapter ini
+      // Gunakan string.startsWith() jika pengecualian ini berlaku untuk beberapa chapter berurutan di arc ini
+      if (assetId.startsWith("adv_main_04_12")) {
+        if (speakerCode === "wmob1") speakerCode = "same";
+        if (speakerCode === "wmob2") speakerCode = "hibari";
+        if (speakerCode === "wmob3") speakerCode = "hituzi";
+      }
+
       if (!displayName && speakerCode && SPEAKER_MAP[speakerCode]) {
         displayName = SPEAKER_MAP[speakerCode];
       }
